@@ -8,18 +8,26 @@ This page asks how to analyze an accident, incident, or near miss in a disciplin
 ## Key Takeaways
 
 - Investigation moves from facts to timeline to causal layers to interventions.
-- The NTSB-style discipline is evidence first, explanation second.
-- One outcome usually has multiple contributing paths, so analysis cannot collapse too early.
-- Strong error analysis ends in design, workflow, training, or policy change rather than in a report alone.
+- The NTSB-style discipline is evidence first,
+  explanation second.
+- One outcome usually has multiple contributing paths,
+  so analysis cannot collapse too early.
+- Strong error analysis ends in design,
+  workflow,
+  training,
+  or policy change rather than in a report alone.
 
 ## What This Method Is For
 
 !!! tip "Start with the Purpose"
-    Start with the purpose of the method: investigation is not about reaching a conclusion quickly, but about grounding the conclusion in reliable facts and an explainable causal chain.
+    Start with the purpose of the method:
+    investigation is not about reaching a conclusion quickly,
+    but about grounding the conclusion in reliable facts and an explainable causal chain.
 
 ## What Problem This Method Solves
 
-Error analysis and investigation are valuable because they turn a complex event into a verifiable structure. The method asks:
+Error analysis and investigation are valuable because they turn a complex event into a verifiable structure.
+The method asks:
 
 - what state the system was in
 - how the event unfolded over time
@@ -28,7 +36,13 @@ Error analysis and investigation are valuable because they turn a complex event 
 
 ## What the Inputs and Outputs Are
 
-Typical inputs include interviews, records, logs, timing information, procedures, environmental conditions, and equipment state.
+Typical inputs include interviews,
+records,
+logs,
+timing information,
+procedures,
+environmental conditions,
+and equipment state.
 
 The output should not be only a “most likely cause.” It should include:
 
@@ -44,38 +58,84 @@ The flow can be remembered in four steps:
 1. gather facts without rushing into explanation
 2. build the timeline so the sequence is clear
 3. separate triggers, preconditions, and organizational or design contributors
-4. translate the findings into interventions across interface, procedure, training, resources, or policy
+4.
+translate the findings into interventions across interface,
+procedure,
+training,
+resources,
+or policy
 
 !!! note "One-Sentence Conclusion"
-    The main thing an investigation must avoid is not too much information, but the premature feeling that the answer is already obvious.
+    The main thing an investigation must avoid is not too much information,
+    but the premature feeling that the answer is already obvious.
 
 !!! warning "The Most Common Failure Mode"
     The most common failure is to see one visible human action and immediately write it down as “the cause.” That collapses a system explanation into a description of the last visible move.
 
 !!! example "Worked Example: How a Medication Error Gets Decomposed"
-    If the report only says “the nurse selected the wrong medication,” the output is blame. A stronger investigation adds the timeline, packaging similarity, verification process, workload, shift fatigue, and alarm context, turning one visible action into an explainable causal chain.
+    If the report only says “the nurse selected the wrong medication,” the output is blame.
+    A stronger investigation adds the timeline,
+    packaging similarity,
+    verification process,
+    workload,
+    shift fatigue,
+    and alarm context,
+    turning one visible action into an explainable causal chain.
 
 ## How It Connects to Later Methods
 
-This page explains how a completed event is interpreted. Later pages such as task analysis, URRA, and operational risk push the same logic forward so risk can be recognized before an event fully unfolds.
+This page explains how a completed event is interpreted.
+Later pages such as task analysis,
+URRA,
+and operational risk push the same logic forward so risk can be recognized before an event fully unfolds.
 
-## How to Tell Whether This Method Has Actually Been Applied Well
+## Why Strong Investigation Always Starts with Evidence Discipline
 
-You can judge whether a method has actually been applied by checking four things:
+The hard part of investigation is not knowing that facts should come first.
+The hard part is that,
+under pressure,
+teams often stop honoring that rule.
+Once one visible action grabs attention,
+the rest of the investigation can get pulled toward it and later evidence is interpreted mainly as support for that early conclusion.
 
-- are the inputs concrete rather than generic
-- do the rows or steps return to specific tasks and contexts
-- does the output connect error, consequence, and control clearly
-- can the result directly support redesign, validation, review, or risk communication
+Strong investigation therefore separates material into layers:
 
-If several of these are missing, the method usually remains a surface process rather than an executable analysis.
+- confirmed facts
+- subjective recall from participants
+- interpretation and causal inference from investigators
+
+Once those layers are separated,
+the timeline becomes more stable and later causal analysis is less likely to turn into “start with the answer and collect supporting material.”
+
+## How to Tell Whether an Investigation Output Is Only a Story
+
+Many reports look structured on the surface while still behaving like polished stories.
+Three signals help distinguish stronger analysis:
+
+- does the report separate timeline, conditions, and actions rather than writing only conclusion sentences
+- does it include direct causes, contributing factors, and upstream design or organizational conditions together
+- do the recommendations connect clearly back to the earlier causal chain
+
+If a report contains only “what happened” followed by “be more careful next time,” it is usually not the kind of error analysis this course is teaching.
+
+!!! example "Example: Why the Same Material Can Become Either an Event Retelling or a System Analysis"
+    The same medication event can be written weakly as “the nurse selected the wrong medication and the patient received the wrong treatment,” or strongly as an analysis of packaging similarity,
+    shift fatigue,
+    realism of verification procedure,
+    salience of warnings,
+    and why those factors were not intercepted earlier.
+    The source material may be the same,
+    but the analytic quality is completely different.
 
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"
     - Investigation clarifies facts before explaining causes.
-    - One outcome often has multiple causal paths, so early closure is dangerous.
-    - The strongest output combines timeline, layered causation, and intervention.
+    - One outcome often has multiple causal paths,
+      so early closure is dangerous.
+    - The strongest output combines timeline,
+      layered causation,
+      and intervention.
     - This method provides the base logic for the more proactive risk-analysis pages that follow.
 
 

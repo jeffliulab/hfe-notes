@@ -3,23 +3,43 @@
 The 737 Max belongs in the ethics section not because it is separate from technology, but because technology, organization, training, regulation, and responsibility allocation are inseparable in this case.
 
 !!! note "Core Question"
-    Why should the 737 Max not be read as a mere design-defect case, but as a system case where technical, human-factors, organizational, and ethical failures are intertwined?
+    Why should the 737 Max not be read as a mere design-defect case,
+    but as a system case where technical,
+    human-factors,
+    organizational,
+    and ethical failures are intertwined?
 
 ## The Most Important Case Conclusions
 
-- The 737 Max case combines technical design, pilot understanding, training assumptions, certification, and organizational responsibility.
+- The 737 Max case combines technical design,
+  pilot understanding,
+  training assumptions,
+  certification,
+  and organizational responsibility.
 - It shows that HFE cannot be separated from governance and responsibility.
-- What matters is not only MCAS itself, but how state visibility, alerting, single-failure tolerance, and training assumptions combined.
+- What matters is not only MCAS itself,
+  but how state visibility,
+  alerting,
+  single-failure tolerance,
+  and training assumptions combined.
 - Ethics discussion becomes meaningful only when it returns to concrete engineering decisions.
 
 ## Start with the Case Verdict
 
 !!! tip "Keep This Case Judgment in Mind"
-    Keep this case judgment in mind: the deepest problem in the 737 Max was not one isolated technical component, but several interacting system assumptions that transferred risk to the flight crew and operating system.
+    Keep this case judgment in mind:
+    the deepest problem in the 737 Max was not one isolated technical component,
+    but several interacting system assumptions that transferred risk to the flight crew and operating system.
 
 ## Background and Stakes
 
-The 737 Max material combines accident background, post-accident technical assessment, studies of pilot response, certification reflection, and engineering ethics. That shows the course does not read it as a narrow technical accident, but as a multi-layer system case.
+The 737 Max material combines accident background,
+post-accident technical assessment,
+studies of pilot response,
+certification reflection,
+and engineering ethics.
+That shows the course does not read it as a narrow technical accident,
+but as a multi-layer system case.
 
 <figure class="note-inline-figure">
   <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/boeing-737max-and-ethics-2-23-26/page-01.png" alt="This preview should make clear that the page is not only a technical discussion; from the beginning it places accident context, review, and ethics side by side as one system case." loading="lazy">
@@ -28,14 +48,24 @@ The 737 Max material combines accident background, post-accident technical asses
 
 ## How to Read the Event Chain and the Mismatch Chain
 
-This page cannot stop at “what technical fault occurred.” It must continue into whether system state was sufficiently visible, whether a single information source carried too much weight, whether the crew had enough training and cognitive room to understand the abnormal state, and how organization and regulation amplified or failed to stop the chain.
+This page cannot stop at “what technical fault occurred.” It must continue into whether system state was sufficiently visible,
+whether a single information source carried too much weight,
+whether the crew had enough training and cognitive room to understand the abnormal state,
+and how organization and regulation amplified or failed to stop the chain.
 
 !!! example "Case Anchor: Why Prior-Flight Information Did Not Automatically Become Later Safety"
-    The material notes that the previous flight had already experienced stick shaker and trim issues, yet that information did not reliably become a defense for the later crew. This illustrates a crucial lesson: information having appeared somewhere in the system does not mean the risk has actually been managed.
+    The material notes that the previous flight had already experienced stick shaker and trim issues,
+    yet that information did not reliably become a defense for the later crew.
+    This illustrates a crucial lesson:
+    information having appeared somewhere in the system does not mean the risk has actually been managed.
 
 ## Where the Ethical Question Actually Lands
 
-The ethics discussion here is not an abstract claim that “engineers should be responsible.” It returns to concrete decisions: was system behavior fully disclosed, did training assumptions match real operations, was too much risk transferred to frontline crews, and did certification adequately identify and correct those mismatches?
+The ethics discussion here is not an abstract claim that “engineers should be responsible.” It returns to concrete decisions:
+was system behavior fully disclosed,
+did training assumptions match real operations,
+was too much risk transferred to frontline crews,
+and did certification adequately identify and correct those mismatches?
 
 <figure class="note-inline-figure">
   <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/boeing-737max-and-ethics-2-23-26/page-05.png" alt="This preview should show that the real landing point of ethics discussion is concrete failure classification, mitigation, and responsibility allocation rather than abstract slogans." loading="lazy">
@@ -43,27 +73,61 @@ The ethics discussion here is not an abstract claim that “engineers should be 
 </figure>
 
 !!! note "One-Sentence Conclusion"
-    The deepest lesson of the 737 Max page is how to read technology, human factors, and responsibility allocation as one system mismatch chain.
+    The deepest lesson of the 737 Max page is how to read technology,
+    human factors,
+    and responsibility allocation as one system mismatch chain.
 
 !!! warning "The Most Common Misunderstanding"
-    If ethics remains only at the level of value judgment and never returns to concrete design and certification decisions, it becomes empty rhetoric. This case demands that ethics and engineering detail be analyzed together.
+    If ethics remains only at the level of value judgment and never returns to concrete design and certification decisions,
+    it becomes empty rhetoric.
+    This case demands that ethics and engineering detail be analyzed together.
 
-## Which Layers to Review Every Time in a Case
+## What This Page Really Wants You to See Is Assumption Mismatch
 
-When reviewing a case, work backward through four layers:
+The 737 Max becomes a system case because several layers depend simultaneously on assumptions that do not hold together securely:
 
-1. how the event chain unfolded
-2. where information, interface, and procedure worsened the situation
-3. how team, organization, and operating conditions amplified the risk
-4. whether improvement belongs in design, procedure, training, resources, or governance
+- design assumptions about how the crew will understand system state
+- training assumptions about what knowledge and response paths the crew already possesses
+- operational assumptions about how quickly the anomaly will emerge
+- certification assumptions that these conditions have been adequately demonstrated
 
-That keeps the case from collapsing into a story and brings it back to the systems analysis the course is actually teaching.
+Once those assumptions become misaligned,
+the issue is no longer only one component.
+The entire system begins transferring risk downstream.
+
+## Why This Page Ultimately Has to Land on Governance and Responsibility Allocation
+
+The ethics discussion in the 737 Max case cannot be separated from engineering because many of the risks did not emerge spontaneously.
+They were permitted,
+amplified,
+or left uncorrected by decisions.
+In other words,
+the chain contains not only technical failure,
+but decision failure.
+
+That is why the course brings regulator,
+manufacturer,
+operator,
+and training assumptions into the same discussion.
+Responsibility is not an abstract label;
+it is about who had the power to change the conditions and failed to do so in time.
+
+!!! example "Example: Why “The Previous Flight Already Had Trouble” Still Failed to Become a Reliable Defense"
+    The fact that prior-flight information existed but did not reliably become a defense for the later crew is itself evidence of system mismatch.
+    It shows that the steps from “information appeared” to “information was understood” to “information became an operational defense” were never fully connected.
+    That is why this page cannot stop at hardware failure alone and must also discuss governance and transmission mechanisms.
 
 ## What To Take Away from This Case
 
 !!! tip "What To Carry Forward"
-    - The 737 Max is a system case where technology, human factors, organization, and ethics intertwine.
-    - The key is not only the failed component, but also state visibility, training assumptions, and responsibility allocation.
+    - The 737 Max is a system case where technology,
+      human factors,
+      organization,
+      and ethics intertwine.
+    - The key is not only the failed component,
+      but also state visibility,
+      training assumptions,
+      and responsibility allocation.
     - Ethics discussion must return to concrete engineering decisions.
     - This page teaches how to read the whole system mismatch chain together.
 

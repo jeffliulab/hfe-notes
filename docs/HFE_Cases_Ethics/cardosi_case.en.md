@@ -3,23 +3,44 @@
 The real value of the Cardosi page is that it brings concrete ATC and aviation issues back under a human-factors lens, showing how communication, displays, procedure, and shared understanding interact inside one system.
 
 !!! note "Core Question"
-    In this case setting, why does something that seems like a technical communication detail become a system problem involving human factors, procedure, and situation awareness all at once?
+    In this case setting,
+    why does something that seems like a technical communication detail become a system problem involving human factors,
+    procedure,
+    and situation awareness all at once?
 
 ## The Most Important Case Conclusions
 
-- The point of the Cardosi page is not memorizing a story, but learning to decompose the ATC setting into communication, display, procedure, and SA problems.
-- Blocked, stepped-on, or incompletely received communications are classic entry points for human-factors risk.
+- The point of the Cardosi page is not memorizing a story,
+  but learning to decompose the ATC setting into communication,
+  display,
+  procedure,
+  and SA problems.
+- Blocked,
+  stepped-on,
+  or incompletely received communications are classic entry points for human-factors risk.
 - Case pages train the ability to recognize abstract concepts inside real events.
 - Hindsight clarity does not mean the people in the moment had the same information conditions.
 
 ## Start with the Case Verdict
 
 !!! tip "Keep This Case Judgment in Mind"
-    Keep this case judgment in mind: in aviation communication settings, once information is blocked, stepped on, or misread, later displays, procedures, and team understanding are all affected in cascade.
+    Keep this case judgment in mind:
+    in aviation communication settings,
+    once information is blocked,
+    stepped on,
+    or misread,
+    later displays,
+    procedures,
+    and team understanding are all affected in cascade.
 
 ## Background and Stakes
 
-The Cardosi material focuses on how information is transmitted, received, interrupted, and misunderstood inside the ATC environment. Because aviation communication is already a time-critical task, any partial information loss can quickly affect later judgment and action.
+The Cardosi material focuses on how information is transmitted,
+received,
+interrupted,
+and misunderstood inside the ATC environment.
+Because aviation communication is already a time-critical task,
+any partial information loss can quickly affect later judgment and action.
 
 <figure class="note-inline-figure">
   <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/cardosi-2-2-2026/page-01.png" alt="This preview should make clear that communication in the ATC setting is not background noise; it is the core workflow shaping later understanding and action." loading="lazy">
@@ -28,7 +49,13 @@ The Cardosi material focuses on how information is transmitted, received, interr
 
 ## How to Read the Event Chain in This Case
 
-Cases like this cannot stop at “who misspoke” or “who did not hear correctly.” A stronger reading combines communication channel, display support, procedural requirements, and team mental model: where was the information weakened, who built the wrong picture because of that, and which layer could have recovered earlier?
+Cases like this cannot stop at “who misspoke” or “who did not hear correctly.” A stronger reading combines communication channel,
+display support,
+procedural requirements,
+and team mental model:
+where was the information weakened,
+who built the wrong picture because of that,
+and which layer could have recovered earlier?
 
 <figure class="note-inline-figure">
   <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/cardosi-2-2-2026/page-02.png" alt="This preview should show that once the communication channel is blocked or stepped on, the later human-factors problems propagate along the whole chain." loading="lazy">
@@ -36,33 +63,75 @@ Cases like this cannot stop at “who misspoke” or “who did not hear correct
 </figure>
 
 !!! example "Case Anchor: Why a Stepped-On Transmission Amplifies Later Risk"
-    The Cardosi material highlights blocked and stepped-on communication. The danger is not only that one message is incomplete, but that later display interpretation, procedure execution, and team understanding may all continue forward on top of that damaged information.
+    The Cardosi material highlights blocked and stepped-on communication.
+    The danger is not only that one message is incomplete,
+    but that later display interpretation,
+    procedure execution,
+    and team understanding may all continue forward on top of that damaged information.
 
 ## The System-Level Lesson of the Case
 
-The importance of the Cardosi case lies in turning what looks like a local communication problem back into a system-design problem: how vulnerable is the channel to blockage, whether critical content has redundancy, whether procedure supports a shared team picture, and whether displays and workflow create recovery opportunities.
+The importance of the Cardosi case lies in turning what looks like a local communication problem back into a system-design problem:
+how vulnerable is the channel to blockage,
+whether critical content has redundancy,
+whether procedure supports a shared team picture,
+and whether displays and workflow create recovery opportunities.
 
 !!! note "One-Sentence Conclusion"
-    What the Cardosi page teaches is not one final answer, but a reading method: move from a local communication problem back to the system-level human-factors structure underneath it.
+    What the Cardosi page teaches is not one final answer,
+    but a reading method:
+    move from a local communication problem back to the system-level human-factors structure underneath it.
 
 !!! warning "The Most Common Misunderstanding"
-    The easiest trap is hindsight: it feels obvious after the fact. Case analysis has to return as closely as possible to what people actually saw, heard, and understood in the moment.
+    The easiest trap is hindsight:
+    it feels obvious after the fact.
+    Case analysis has to return as closely as possible to what people actually saw,
+    heard,
+    and understood in the moment.
 
-## Which Layers to Review Every Time in a Case
+## The Key to This Type of Communication Case Is Reconstructing the Chain
 
-When reviewing a case, work backward through four layers:
+If the Cardosi case is read only through the final outcome,
+it quickly collapses into “someone did not hear clearly.” The stronger reading rebuilds the communication chain layer by layer:
 
-1. how the event chain unfolded
-2. where information, interface, and procedure worsened the situation
-3. how team, organization, and operating conditions amplified the risk
-4. whether improvement belongs in design, procedure, training, resources, or governance
+- how the information was originally expressed
+- how it was weakened, blocked, or stepped on in the channel
+- which actors therefore received only a partial picture
+- whether later procedure or displays had any chance to repair that picture
 
-That keeps the case from collapsing into a story and brings it back to the systems analysis the course is actually teaching.
+Once rebuilt that way,
+the case stops being a single communication mistake and returns to a multi-layer system problem.
+
+## Why Critical Communication Needs Redundancy and Confirmation
+
+Aviation communication environments are already vulnerable to noise,
+overlapping speech,
+and time pressure.
+If critical content appears in only one fragile expression format,
+it becomes too easy for the message to vanish somewhere in the chain.
+One important lesson of the Cardosi material is that communication should be treated as a barrier,
+not as neutral background.
+
+Once communication is treated as a barrier,
+redundancy,
+read-back,
+confirmation,
+and recovery design become necessary.
+
+!!! example "Example: Why “It Was Said Once” Does Not Mean the Risk Was Controlled"
+    In a high-load communication environment,
+    a critical message may be spoken and still fail to become a real team defense because the channel is blocked,
+    reception is partial,
+    or shared understanding never forms.
+    One of the core lessons in the Cardosi case is that information having existed is not the same as information having been absorbed by the system.
 
 ## What To Take Away from This Case
 
 !!! tip "What To Carry Forward"
-    - The Cardosi case sits at the intersection of communication, display, procedure, and SA.
+    - The Cardosi case sits at the intersection of communication,
+      display,
+      procedure,
+      and SA.
     - Stepped-on or incompletely received information is a major risk entry point.
     - Case analysis must return to the information conditions available in the moment.
     - The real skill is moving from a local issue back to the system structure underneath it.

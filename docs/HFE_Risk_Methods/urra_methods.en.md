@@ -3,23 +3,41 @@
 URRA is not merely a table format. It is a full risk chain that links task steps, use errors, hazardous situations, harms, and controls in one structure.
 
 !!! note "Core Question"
-    How does Use-Related Risk Analysis connect tasks, errors, hazards, and controls into a chain that is traceable, verifiable, and reviewable?
+    How does Use-Related Risk Analysis connect tasks,
+    errors,
+    hazards,
+    and controls into a chain that is traceable,
+    verifiable,
+    and reviewable?
 
 ## Key Takeaways
 
-- The central job of URRA is linking use step, use error, hazardous situation, harm, and control in one chain.
-- The writing order must keep task and scenario first, error and consequence next, and controls last.
+- The central job of URRA is linking use step,
+  use error,
+  hazardous situation,
+  harm,
+  and control in one chain.
+- The writing order must keep task and scenario first,
+  error and consequence next,
+  and controls last.
 - A strong URRA is specific enough to support validation work directly.
 - A weak URRA uses vague language and supports neither real risk understanding nor later testing.
 
 ## What This Method Is For
 
 !!! tip "Start with the Purpose"
-    Remember the purpose of URRA this way: it is not about putting risk into a table, but about writing the risk path clearly enough to support design and validation.
+    Remember the purpose of URRA this way:
+    it is not about putting risk into a table,
+    but about writing the risk path clearly enough to support design and validation.
 
 ## What Problem This Method Solves
 
-URRA solves the problem of risk information being scattered across documents. It places the use flow, possible errors, hazardous situations, harms, and controls in one chain so the team can see how risk develops step by step.
+URRA solves the problem of risk information being scattered across documents.
+It places the use flow,
+possible errors,
+hazardous situations,
+harms,
+and controls in one chain so the team can see how risk develops step by step.
 
 ## What the Inputs and Outputs Are
 
@@ -44,39 +62,82 @@ The order matters a lot when writing URRA:
 1. start from the task and use scenario
 2. write the specific use error rather than a vague label like “improper use”
 3. push the error forward into hazardous situation and harm
-4. only then assess whether current controls are sufficient and what more is needed
+4.
+only then assess whether current controls are sufficient and what more is needed
 
 !!! note "One-Sentence Conclusion"
-    If controls are written first, URRA becomes design justification. If the risk chain is written first, URRA behaves like real risk analysis.
+    If controls are written first,
+    URRA becomes design justification.
+    If the risk chain is written first,
+    URRA behaves like real risk analysis.
 
 !!! warning "The Most Common Failure Mode"
-    Two failures appear constantly: writing the error too vaguely, such as “misuse,” and stopping the harm too early, such as writing only “wrong dose” without the patient consequence.
+    Two failures appear constantly:
+    writing the error too vaguely,
+    such as “misuse,” and stopping the harm too early,
+    such as writing only “wrong dose” without the patient consequence.
 
 !!! example "Worked Example: What One Strong URRA Row Looks Like"
-    Suppose the step is “set dose.” A strong URRA row does not stop at “possible user error.” It says the user reads 1.0 mL as 10 mL, leading to an overdose hazardous situation and harm such as hypoglycemia or more severe injury; only then does it return to dose-window design, visual differentiation, confirmation steps, and validation testing.
+    Suppose the step is “set dose.” A strong URRA row does not stop at “possible user error.” It says the user reads 1.0 mL as 10 mL,
+    leading to an overdose hazardous situation and harm such as hypoglycemia or more severe injury;
+    only then does it return to dose-window design,
+    visual differentiation,
+    confirmation steps,
+    and validation testing.
 
 ## How It Connects to Earlier and Later Methods
 
-Task analysis provides the task skeleton for URRA; the medical-device pages place the same logic inside a regulatory context; the EpiPen workbook shows what a concrete URRA row looks like in practice.
+Task analysis provides the task skeleton for URRA;
+the medical-device pages place the same logic inside a regulatory context;
+the EpiPen workbook shows what a concrete URRA row looks like in practice.
 
-## How to Tell Whether This Method Has Actually Been Applied Well
+## Why URRA Fails When It Stays at a Vague Level
 
-You can judge whether a method has actually been applied by checking four things:
+Once URRA is written in vague labels such as “misuse,” “incorrect use,” or “possible injury,” nearly every later column loses focus.
+The team can no longer see which step is failing,
+what specific error is happening,
+or which harm path is in play,
+so controls also become vague.
 
-- are the inputs concrete rather than generic
-- do the rows or steps return to specific tasks and contexts
-- does the output connect error, consequence, and control clearly
-- can the result directly support redesign, validation, review, or risk communication
+Strong URRA rows therefore stay concrete:
+concrete scenario,
+concrete action,
+concrete misjudgment,
+concrete consequence,
+and concrete control.
+At that level,
+validation scenarios and risk communication can emerge naturally from the analysis.
 
-If several of these are missing, the method usually remains a surface process rather than an executable analysis.
+## Why URRA Ultimately Has to Feed Validation
+
+The course does not treat URRA as archive management.
+It treats it as an interface between design and validation.
+The reason is simple:
+once a risk chain has been written,
+the team must be able to answer how it will demonstrate that the control is actually effective.
+
+That means URRA is not finished when the row is written.
+It should continue to drive:
+
+- which controls must appear in prototype or final design
+- which critical tasks need focused observation in validation
+- which scenarios need to be reproduced with representative users under representative conditions
+
+!!! warning "Another Common Failure"
+    Some teams produce URRA tables that look complete but do not yield a single usable validation scenario.
+    That usually means the entries are still too vague or the controls are written at too abstract a level.
 
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"
-    - URRA is about clarifying the risk chain, not about filling a table for its own sake.
-    - Its inputs come from task flow, user context, and known problems.
+    - URRA is about clarifying the risk chain,
+      not about filling a table for its own sake.
+    - Its inputs come from task flow,
+      user context,
+      and known problems.
     - The writing order must stay task/error/consequence/control rather than reversing that logic.
-    - The more specific the URRA, the stronger the later validation work becomes.
+    - The more specific the URRA,
+      the stronger the later validation work becomes.
 
 
 ## Source Scope and Related Topics

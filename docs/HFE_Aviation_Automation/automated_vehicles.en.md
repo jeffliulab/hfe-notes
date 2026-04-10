@@ -3,51 +3,114 @@
 The automated-vehicles page does not merely repeat aviation automation. It examines how risk is reorganized when takeover, trust calibration, and responsibility allocation enter the driving context.
 
 !!! note "Core Question"
-    Why is the most dangerous point in automated vehicles often not normal automated performance, but the handoff boundary where responsibility shifts between the human and the system?
+    Why is the most dangerous point in automated vehicles often not normal automated performance,
+    but the handoff boundary where responsibility shifts between the human and the system?
 
 ## The Most Important Case Conclusions
 
 - The central problem in automated vehicles is handoff rather than stable cruise.
-- Trust calibration matters more than simply making users trust the system; it requires avoiding both over-trust and under-use.
-- Mode confusion, monitoring decay, and automation surprise from aviation transfer strongly into this domain.
-- If responsibility boundaries stay unclear, takeover failure becomes a gray zone jointly produced by design and use.
+- Trust calibration matters more than simply making users trust the system;
+  it requires avoiding both over-trust and under-use.
+- Mode confusion,
+  monitoring decay,
+  and automation surprise from aviation transfer strongly into this domain.
+- If responsibility boundaries stay unclear,
+  takeover failure becomes a gray zone jointly produced by design and use.
 
 ## Start with the Case Verdict
 
 !!! tip "Keep This Case Judgment in Mind"
-    Keep this case judgment in mind: the most dangerous moment in automated vehicles often arrives when the system says “take over now” while the human is no longer cognitively in the same situation.
+    Keep this case judgment in mind:
+    the most dangerous moment in automated vehicles often arrives when the system says “take over now” while the human is no longer cognitively in the same situation.
 
 ## Background and Stakes
 
-Driving automation and aviation automation share the same basic shift: humans are moved into a low-engagement role that still carries high responsibility at critical moments. The difference is that the roadway environment changes faster, users are more heterogeneous, and the boundary is easier to misunderstand, making the takeover window especially fragile.
+Driving automation and aviation automation share the same basic shift:
+humans are moved into a low-engagement role that still carries high responsibility at critical moments.
+The difference is that the roadway environment changes faster,
+users are more heterogeneous,
+and the boundary is easier to misunderstand,
+making the takeover window especially fragile.
 
 ## Where the Event Chain Most Easily Breaks
 
-The real question in automated vehicles is not whether the system can drive itself for a while, but whether the user retains enough situation awareness, mode understanding, and action readiness to resume control once the ODD boundary arrives.
+The real question in automated vehicles is not whether the system can drive itself for a while,
+but whether the user retains enough situation awareness,
+mode understanding,
+and action readiness to resume control once the ODD boundary arrives.
 
 !!! example "Example: Why Handoff Becomes a High-Risk Window"
-    A user spends a long period in passive supervision while the automated mode is active. When a takeover request arrives, the user must rapidly rebuild environmental understanding, identify the system boundary, and act. If any link in that chain is delayed, risk escalates quickly.
+    A user spends a long period in passive supervision while the automated mode is active.
+    When a takeover request arrives,
+    the user must rapidly rebuild environmental understanding,
+    identify the system boundary,
+    and act.
+    If any link in that chain is delayed,
+    risk escalates quickly.
 
 ## The System-Level Lesson of the Case
 
-If the system assumes the human will remain suitably vigilant while the design itself pushes the human out of the primary task for long periods, the design assumption becomes self-contradictory. Automated vehicles therefore become a classic HFE problem: interface, alerts, mode explanation, handoff timing, and responsibility allocation must be designed together.
+If the system assumes the human will remain suitably vigilant while the design itself pushes the human out of the primary task for long periods,
+the design assumption becomes self-contradictory.
+Automated vehicles therefore become a classic HFE problem:
+interface,
+alerts,
+mode explanation,
+handoff timing,
+and responsibility allocation must be designed together.
 
 !!! note "One-Sentence Conclusion"
-    The hardest part of automated vehicles is not making the system do more, but making the human and system line up at the takeover boundary.
+    The hardest part of automated vehicles is not making the system do more,
+    but making the human and system line up at the takeover boundary.
 
 !!! warning "The Most Common Misunderstanding"
-    Do not reduce the issue to “the driver was inattentive.” If the system is designed to make sustained attention unnecessary and then suddenly demands high-quality takeover, the design assumption itself is the problem.
+    Do not reduce the issue to “the driver was inattentive.” If the system is designed to make sustained attention unnecessary and then suddenly demands high-quality takeover,
+    the design assumption itself is the problem.
 
-## Which Layers to Review Every Time in a Case
+## Why Automated-Vehicle Analysis Cannot Be Separated from ODD Boundaries
 
-When reviewing a case, work backward through four layers:
+One of the most important premises in automated vehicles is the ODD,
+the conditions under which the system is assumed to function.
+Once that boundary is unclear,
+users can continue believing they are inside normal automation even as the system approaches its actual edge of capability.
 
-1. how the event chain unfolded
-2. where information, interface, and procedure worsened the situation
-3. how team, organization, and operating conditions amplified the risk
-4. whether improvement belongs in design, procedure, training, resources, or governance
+ODD is therefore not decorative regulatory language.
+It is the starting point of takeover risk:
+the less visible the boundary,
+the more abrupt and fragile the handoff becomes.
 
-That keeps the case from collapsing into a story and brings it back to the systems analysis the course is actually teaching.
+## Why Driver Monitoring and System Design Cannot Really Be Separated
+
+In automated-vehicle analysis,
+teams often rush toward “the driver was inattentive.” The deeper question is what role the system actually assigns to the driver:
+continuously engaged participant,
+backup takeover agent,
+or nominally responsible person who is effectively detached from the task most of the time.
+
+If that role definition is unclear,
+even strong driver-monitoring logic cannot fully repair the structural weakness in the handoff model.
+
+!!! example "Example: Why “Be Ready to Take Over at Any Time” Can Be a Weak Design Assumption"
+    If the system keeps the person in a low-engagement state for long periods while still expecting immediate high-quality takeover at the edge of capability,
+    then “be ready to take over” is not just a warning phrase.
+    It may be assigning a structurally unrealistic task to the driver.
+    The problem is not attention alone,
+    but role design itself.
+
+## Why Automated-Vehicle Design Also Has to Solve Trust Calibration
+
+Automated vehicles also face a characteristic problem:
+how much should the human trust the system.
+Too little trust creates frequent interruption,
+low efficiency,
+and unnecessary takeover.
+Too much trust pushes the person beyond the ODD boundary and slows response when takeover is actually required.
+
+Automated-vehicle design therefore is not only about whether the system performs,
+but also about whether the person can form the right trust calibration.
+The system has to communicate its boundary,
+capability,
+and uncertainty clearly enough that the user neither over-relies nor under-relies on it.
 
 ## What To Take Away from This Case
 

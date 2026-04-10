@@ -1026,6 +1026,44 @@ def indent_markdown_block(text: str) -> list[str]:
     return [f"    {line}" if line else "    " for line in text.splitlines()]
 
 
+def split_note_sentences(text: str) -> list[str]:
+    if not text:
+        return []
+    lines: list[str] = []
+    for raw_line in text.splitlines():
+        stripped = raw_line.strip()
+        if not stripped:
+            lines.append("")
+            continue
+        if stripped.startswith(("- ", "* ", "1. ", "2. ", "3. ", "### ", "#### ", "|", "<")):
+            lines.append(stripped)
+            continue
+        parts = re.split(
+            r"(?<=[。！？；：])\s*|(?<=[.!?;:])\s+|(?<=[，、])\s*|(?<=,)\s+(?=[A-Za-z0-9`])",
+            stripped,
+        )
+        for part in parts:
+            clean = part.strip()
+            if clean:
+                lines.append(clean)
+    return lines
+
+
+def indent_note_block(text: str) -> list[str]:
+    if not text:
+        return []
+    return [f"    {line}" if line else "    " for line in split_note_sentences(text)]
+
+
+def render_bullet_lines(text: str, bullet_prefix: str = "- ", continuation_prefix: str = "  ") -> list[str]:
+    if not text:
+        return []
+    parts = split_note_sentences(text)
+    if not parts:
+        return []
+    return [f"{bullet_prefix}{parts[0]}", *[f"{continuation_prefix}{part}" for part in parts[1:]]]
+
+
 def render_callout_block(callout: dict, lang: str) -> list[str]:
     if not callout:
         return []
@@ -1033,9 +1071,9 @@ def render_callout_block(callout: dict, lang: str) -> list[str]:
     lines = [f'!!! {callout["kind"]} "{title}"']
     body = localized_lookup(callout.get("body"), lang)
     if body:
-        lines.extend(indent_markdown_block(body))
+        lines.extend(indent_note_block(body))
     for bullet in localized_lines_lookup(callout.get("bullets"), lang):
-        lines.append(f"    - {bullet}")
+        lines.extend(render_bullet_lines(bullet, bullet_prefix="    - ", continuation_prefix="      "))
     lines.append("")
     return lines
 
@@ -1271,14 +1309,14 @@ def render_blueprint_content(page: dict, blueprint: dict, manifest: dict[str, di
 
     lines = [
         f'!!! note "{"本页主问题" if lang == "zh" else "Core Question"}"',
-        *indent_markdown_block(localized_lookup(blueprint.get("core_question"), lang)),
+        *indent_note_block(localized_lookup(blueprint.get("core_question"), lang)),
         "",
         headings["highlights"],
         "",
     ]
 
     for point in localized_lines_lookup(blueprint.get("must_learn_points"), lang):
-        lines.append(f"- {point}")
+        lines.extend(render_bullet_lines(point))
 
     lines.extend(
         [
@@ -1286,7 +1324,7 @@ def render_blueprint_content(page: dict, blueprint: dict, manifest: dict[str, di
             headings["anchor"],
             "",
             f'!!! tip "{headings["anchor_title"]}"',
-            *indent_markdown_block(localized_lookup(blueprint.get("memory_anchor"), lang)),
+            *indent_note_block(localized_lookup(blueprint.get("memory_anchor"), lang)),
             "",
         ]
     )
@@ -1311,11 +1349,11 @@ def render_blueprint_content(page: dict, blueprint: dict, manifest: dict[str, di
 
         body = localized_lookup(section_block.get("body"), lang)
         if body:
-            lines.extend(body.splitlines())
+            lines.extend(split_note_sentences(body))
             lines.append("")
 
         for bullet in localized_lines_lookup(section_block.get("bullets"), lang):
-            lines.append(f"- {bullet}")
+            lines.extend(render_bullet_lines(bullet))
         if localized_lines_lookup(section_block.get("bullets"), lang):
             lines.append("")
 
@@ -1345,7 +1383,7 @@ def render_blueprint_content(page: dict, blueprint: dict, manifest: dict[str, di
         ]
     )
     for point in localized_lines_lookup(blueprint.get("summary_points"), lang):
-        lines.append(f"    - {point}")
+        lines.extend(render_bullet_lines(point, bullet_prefix="    - ", continuation_prefix="      "))
     lines.append("")
     return lines
 

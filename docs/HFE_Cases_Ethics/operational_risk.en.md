@@ -3,23 +3,39 @@
 This page asks you to see that operational risk does not live only inside one visible error. It lives over time in operating conditions, organizational constraints, and work as done.
 
 !!! note "Core Question"
-    Why does real operational risk usually not appear only at the moment of one event, but accumulate gradually inside everyday operations?
+    Why does real operational risk usually not appear only at the moment of one event,
+    but accumulate gradually inside everyday operations?
 
 ## Key Takeaways
 
 - Operational risk focuses on the ongoing operating system rather than on one isolated error.
 - Work as imagined and work as done often diverge structurally.
-- Organizational constraints, time pressure, environmental change, and frontline workaround behavior continuously reshape risk.
-- This page pulls Swiss Cheese, fatigue, stress, and procedure pages back into one operating view.
+- Organizational constraints,
+  time pressure,
+  environmental change,
+  and frontline workaround behavior continuously reshape risk.
+- This page pulls Swiss Cheese,
+  fatigue,
+  stress,
+  and procedure pages back into one operating view.
 
 ## Remember This First
 
 !!! tip "Keep This Sentence in Mind"
-    Keep one sentence in mind: operational risk does not begin when the accident happens; it usually lives in the work conditions long before the event surfaces.
+    Keep one sentence in mind:
+    operational risk does not begin when the accident happens;
+    it usually lives in the work conditions long before the event surfaces.
 
 ## What Operational Risk Actually Looks At
 
-The page is not mainly about whether one isolated action was right or wrong. It asks whether the system is becoming more fragile while it operates continuously. In other words, are shifts, resources, procedures, organizational goals, and frontline adaptations eroding the safety boundary that design originally assumed?
+The page is not mainly about whether one isolated action was right or wrong.
+It asks whether the system is becoming more fragile while it operates continuously.
+In other words,
+are shifts,
+resources,
+procedures,
+organizational goals,
+and frontline adaptations eroding the safety boundary that design originally assumed?
 
 <figure class="note-inline-figure">
   <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/operational-risk-2-18-2026/page-01.png" alt="This figure should make clear that operational risk is not a single-point problem but a set of system constraints that shift with operating conditions." loading="lazy">
@@ -27,31 +43,82 @@ The page is not mainly about whether one isolated action was right or wrong. It 
 </figure>
 
 !!! warning "The Most Common Misunderstanding"
-    Do not treat operational risk as just another checklist. It is better understood as a viewpoint that continuously asks whether operating conditions are eroding defenses.
+    Do not treat operational risk as just another checklist.
+    It is better understood as a viewpoint that continuously asks whether operating conditions are eroding defenses.
 
 ## Why the Gap Between Work as Imagined and Work as Done Becomes Risk
 
-Management and design often start with an ideal workflow, but frontline work is shaped by time pressure, equipment state, environmental change, and resource limits. If the system checks only whether the ideal procedure was followed and not how real work is being squeezed and reshaped, risk gets underestimated.
+Management and design often start with an ideal workflow,
+but frontline work is shaped by time pressure,
+equipment state,
+environmental change,
+and resource limits.
+If the system checks only whether the ideal procedure was followed and not how real work is being squeezed and reshaped,
+risk gets underestimated.
 
 !!! example "Example: Why Persistent Workarounds Become an Operational-Risk Signal"
-    If frontline staff repeatedly rely on a workaround to bypass a procedure, the signal is usually deeper than “people are not following the rules.” It may mean the procedure no longer fits real task rhythm and the system is maintaining normality through fragile patches.
+    If frontline staff repeatedly rely on a workaround to bypass a procedure,
+    the signal is usually deeper than “people are not following the rules.” It may mean the procedure no longer fits real task rhythm and the system is maintaining normality through fragile patches.
 
 ## Why This Page Becomes the Base Layer for Many Case Pages
 
-Many case pages eventually return to operational risk because frontline errors are rarely isolated. Behind them, there are often long-standing organizational tensions, workload patterns, and real-world constraints that have already been reshaping the risk structure over time.
+Many case pages eventually return to operational risk because frontline errors are rarely isolated.
+Behind them,
+there are often long-standing organizational tensions,
+workload patterns,
+and real-world constraints that have already been reshaping the risk structure over time.
 
 !!! note "One-Sentence Conclusion"
     The value of operational risk is that it makes you read the event as a product of the operating system rather than as a one-off deviation.
 
-## How to Actually Use This Concept to Judge a Real Problem
+## Why Operational Risk Often Appears as Slow Drift Rather Than Sudden Collapse
 
-To use a concept page well, do not stop at the definition. A stronger reading follows three steps:
+The most important feature of operational risk is not the disaster moment itself,
+but how long the system has already been drifting before the disaster.
+Many risks do not appear suddenly.
+They become normalized through daily operation:
 
-1. identify the task and context
-2. ask how the mechanism, limit, or risk described on the page appears in that context
-3. translate the judgment back into design, workflow, training, or organizational change
+- workarounds become default practice
+- time pressure eats away the original buffer
+- resource strain makes the team accept more fragile operating modes
+- deviations that began as exceptions get reclassified as ordinary reality
 
-That is how the concept moves from “knowing the term” to “analyzing the problem.”
+Drift is dangerous because the system still appears to function during the slide,
+and therefore underestimates how fragile it has already become.
+
+!!! example "Example: Why “Everyone Does It This Way” Can Itself Be a High-Risk Signal"
+    When frontline staff widely rely on the same workaround,
+    this does not automatically mean they are careless.
+    A more important explanation may be that the formal process has long ceased to fit work as done and the system is relying on an unofficial but fragile operating mode to preserve apparent stability.
+
+## Why Operational Risk Eventually Becomes a Governance Problem
+
+Operational risk does not remain only at the frontline.
+Once resource allocation,
+production pressure,
+scheduling,
+maintenance windows,
+and oversight mechanisms shape local conditions over time,
+the issue has already become a governance problem.
+
+That is why this page matters so much in the course.
+Repeated frontline failure should no longer be treated only as discipline failure.
+It should be treated as management of operating conditions.
+
+## Which Early Signals Actually Matter in Operational Risk
+
+Operational risk is rarely without warning.
+The difficulty is that the warnings often look small in everyday work:
+rushed handoffs,
+shrinking maintenance windows,
+more frequent exception handling,
+and growing dependence on personal experience instead of the formal process.
+
+Any one of those signals may not look like an accident seed by itself.
+But when they appear together over time,
+the system is losing buffer.
+That is why one of the most valuable parts of operational-risk management is not post-event blame,
+but pre-event recognition of these slow fragility signals.
 
 ## Chapter Summary
 

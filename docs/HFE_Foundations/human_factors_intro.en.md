@@ -3,24 +3,39 @@
 This chapter should first be read as a design discipline rather than a catalog of human weakness. It asks how real people interact with systems and how systems should be adapted to real people in return.
 
 !!! note "Core Question"
-    If systems are ultimately perceived, interpreted, judged, executed, and recovered by real people, which human characteristics and limits must be brought back into design?
+    If systems are ultimately perceived,
+    interpreted,
+    judged,
+    executed,
+    and recovered by real people,
+    which human characteristics and limits must be brought back into design?
 
 ## Key Takeaways
 
 - Human factors studies the interaction between people and the rest of the system rather than studying the person alone.
 - It cares about well-being and performance together because those two often move together in real systems.
 - The field shifted from “fit the human to the task” toward “fit the task and equipment to the human.”
-- Design must account not only for body size and strength but also for attention, perception, memory, judgment, and habit.
-- Training is supportive, but good system design is the primary mitigation layer.
+- Design must account not only for body size and strength but also for attention,
+  perception,
+  memory,
+  judgment,
+  and habit.
+- Training is supportive,
+  but good system design is the primary mitigation layer.
 
 ## Remember This First
 
 !!! tip "Keep This Sentence in Mind"
-    The shortest memory line is this: human factors does not ask people to keep adapting endlessly to the system; it asks the system to fit real human capabilities, limits, and work conditions.
+    The shortest memory line is this:
+    human factors does not ask people to keep adapting endlessly to the system;
+    it asks the system to fit real human capabilities,
+    limits,
+    and work conditions.
 
 ## What Human Factors Actually Studies
 
-In plain language, `human factors` studies how people interact with the other parts of a system and then feeds that understanding back into design.
+In plain language,
+`human factors` studies how people interact with the other parts of a system and then feeds that understanding back into design.
 
 Those “other parts” include at least:
 
@@ -29,43 +44,71 @@ Those “other parts” include at least:
 - instructions, training, and procedures
 - environment, time pressure, and organizational constraints
 
-Human factors therefore does not study “the human” in isolation. It studies what happens when a real person is placed inside a real system.
+Human factors therefore does not study “the human” in isolation.
+It studies what happens when a real person is placed inside a real system.
 
 ## Why the Field Shifted Toward Fitting the System to the Human
 
-The lecture highlights an important historical shift. Early work often followed a `fit the human to the task` model, relying on selection and training to make people adapt to work demands.
+The lecture highlights an important historical shift.
+Early work often followed a `fit the human to the task` model,
+relying on selection and training to make people adapt to work demands.
 
-That approach eventually ran into a practical limit: as equipment became more complex, selection and training could not reliably compensate for poor interfaces, weak information design, or bad control logic. The field therefore moved toward a stronger position:
+That approach eventually ran into a practical limit:
+as equipment became more complex,
+selection and training could not reliably compensate for poor interfaces,
+weak information design,
+or bad control logic.
+The field therefore moved toward a stronger position:
 
-the system, equipment, and task design must fit human capabilities and boundaries.
+the system,
+equipment,
+and task design must fit human capabilities and boundaries.
 
-That shift matters because it prevents later analysis from treating training as the default answer. It pushes the analysis back toward design quality.
+That shift matters because it prevents later analysis from treating training as the default answer.
+It pushes the analysis back toward design quality.
 
 !!! warning "The Most Common Misunderstanding"
-    Do not reduce human factors to “better training.” If the interface, workflow, and environment are generating difficulty, training can only patch some of the gap and cannot replace design correction over time.
+    Do not reduce human factors to “better training.” If the interface,
+    workflow,
+    and environment are generating difficulty,
+    training can only patch some of the gap and cannot replace design correction over time.
 
 ## Which Layers of the Human Matter in Design
 
-The lecture divides the human-factors lens into three useful layers: `physical`, `cognitive`, and `behavioral`.
+The lecture divides the human-factors lens into three useful layers:
+`physical`,
+`cognitive`,
+and `behavioral`.
 
 - `physical`: body size, strength, reach, sensory capability, and posture
 - `cognitive`: perception, attention, memory, judgment, and decision making
 - `behavioral`: habits, shortcuts, coordination patterns, and real work strategies
 
-Design problems often appear when one of these layers is ignored. A system may satisfy physical requirements while remaining cognitively difficult to use, or it may look clear on paper while inducing risky habits in real work.
+Design problems often appear when one of these layers is ignored.
+A system may satisfy physical requirements while remaining cognitively difficult to use,
+or it may look clear on paper while inducing risky habits in real work.
 
 !!! note "The Main Conclusion of This Section"
-    Human factors is neither only body measurement nor only cognitive psychology. It brings body, cognition, and behavior back into real use conditions together.
+    Human factors is neither only body measurement nor only cognitive psychology.
+    It brings body,
+    cognition,
+    and behavior back into real use conditions together.
 
 ## Why Perception and Attention Become Design Problems
 
-The second half of the lecture lays groundwork for a crucial fact: humans do not receive information in a passive, complete, or stable way.
+The second half of the lecture lays groundwork for a crucial fact:
+humans do not receive information in a passive,
+complete,
+or stable way.
 
 - color discrimination varies across users
 - repeated stimuli lose salience through habituation
 - interpretation is shaped by both incoming signals and prior expectation
 
-That means “the information was shown” is not the same as “the user saw and understood it.” Poor color choice, weak contrast, weak layout, or expectation mismatches create problems at both the perceptual and cognitive levels.
+That means “the information was shown” is not the same as “the user saw and understood it.” Poor color choice,
+weak contrast,
+weak layout,
+or expectation mismatches create problems at both the perceptual and cognitive levels.
 
 <figure class="note-inline-figure">
   <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-24-image7.png" alt="This figure should make one point obvious: the same colors can be interpreted very differently across visual conditions, so critical design cannot rely on color as the only cue." loading="lazy">
@@ -78,14 +121,27 @@ That means “the information was shown” is not the same as “the user saw an
 </figure>
 
 !!! warning "Another Common Misjudgment"
-    Do not assume that “if I can read it, every user can read it.” Color, contrast, type, layout, and expectation can radically change how the same information is perceived.
+    Do not assume that “if I can read it,
+    every user can read it.” Color,
+    contrast,
+    type,
+    layout,
+    and expectation can radically change how the same information is perceived.
 
 !!! example "Example: Why a Critical Warning Should Not Depend on Color Alone"
-    If a high-risk state is communicated only through red-versus-green coding, users with color-vision differences, users in low-light conditions, and even ordinary users under pressure may misread it. The stronger design move is to combine color with text, position, shape, and clear priority cues.
+    If a high-risk state is communicated only through red-versus-green coding,
+    users with color-vision differences,
+    users in low-light conditions,
+    and even ordinary users under pressure may misread it.
+    The stronger design move is to combine color with text,
+    position,
+    shape,
+    and clear priority cues.
 
 ## Where Human Factors Lands in Design
 
-When the earlier ideas are translated into practice, they become design questions such as:
+When the earlier ideas are translated into practice,
+they become design questions such as:
 
 - whether critical information appears at the right time and in the right place
 - whether control-to-outcome mapping feels natural
@@ -93,7 +149,9 @@ When the earlier ideas are translated into practice, they become design question
 - whether the workflow preserves checking, correction, and recovery space
 - whether instructions, labels, and interface elements support one another
 
-Human factors therefore does not stop at “understanding people.” It converts that understanding into more reliable design, workflow, and environment decisions.
+Human factors therefore does not stop at “understanding people.” It converts that understanding into more reliable design,
+workflow,
+and environment decisions.
 
 <figure class="note-inline-figure">
   <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-36-image14.jpg" alt="This figure should make clear that a strong interface suggests how it should be used through appearance and layout; the design itself teaches the interaction." loading="lazy">
@@ -101,16 +159,29 @@ Human factors therefore does not stop at “understanding people.” It converts
 </figure>
 
 !!! example "Example: Why an Infusion-Pump Problem Is Not Solved by Telling the Nurse to Be More Careful"
-    If an infusion pump uses similar button labels, an overlong confirmation flow, and low-salience status information, a trained user may still mis-select or overlook critical information in a busy ward. Human factors is not asking for one more reminder; it is asking whether the interface itself makes correct action easier.
+    If an infusion pump uses similar button labels,
+    an overlong confirmation flow,
+    and low-salience status information,
+    a trained user may still mis-select or overlook critical information in a busy ward.
+    Human factors is not asking for one more reminder;
+    it is asking whether the interface itself makes correct action easier.
 
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"
     - Human factors studies the interaction between people and the rest of the system rather than the isolated person.
-    - A key shift in the field is that tasks and equipment must fit human limits, not only the other way around.
-    - Body, cognition, and behavior all have to be brought back into design.
-    - Design cannot assume users will always see, remember, or understand every cue.
-    - Training is supportive; interface, workflow, and environmental design remain the first mitigation layer.
+    - A key shift in the field is that tasks and equipment must fit human limits,
+      not only the other way around.
+    - Body,
+      cognition,
+      and behavior all have to be brought back into design.
+    - Design cannot assume users will always see,
+      remember,
+      or understand every cue.
+    - Training is supportive;
+      interface,
+      workflow,
+      and environmental design remain the first mitigation layer.
 
 
 ## Source Scope and Related Topics

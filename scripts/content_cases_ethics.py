@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from note_blueprints import callout, formalize_blueprint, page_blueprint, section, visual
+from note_blueprints import callout, page_blueprint, section, visual
 
 
 CASES_ETHICS_CONTENT: dict[str, dict] = {
@@ -367,6 +367,254 @@ CASES_ETHICS_CONTENT: dict[str, dict] = {
     ),
 }
 
-CASES_ETHICS_CONTENT = {
-    slug: formalize_blueprint(blueprint) for slug, blueprint in CASES_ETHICS_CONTENT.items()
-}
+CASES_ETHICS_CONTENT["operational_risk"]["sections"].extend(
+    [
+        section(
+            "drift",
+            "## 为什么运行风险经常以“慢慢偏掉”的形式出现",
+            "## Why Operational Risk Often Appears as Slow Drift Rather Than Sudden Collapse",
+            body_zh="""
+            operational risk 最值得注意的，不是灾难时刻本身，而是系统在灾难前已经偏了多久。很多风险不会突然生成，而是在日常运行中一点点被正常化：
+
+            - workaround 变成默认做法
+            - 时间压力逐渐吞掉缓冲
+            - 资源紧张让团队接受更脆弱的运行方式
+            - 原本只是例外的偏差开始被当成“正常现实”
+
+            这种 drift 最危险的地方在于，它平时看起来还能工作，所以系统会越来越低估自己已经变脆了多少。
+            """,
+            body_en="""
+            The most important feature of operational risk is not the disaster moment itself, but how long the system has already been drifting before the disaster. Many risks do not appear suddenly. They become normalized through daily operation:
+
+            - workarounds become default practice
+            - time pressure eats away the original buffer
+            - resource strain makes the team accept more fragile operating modes
+            - deviations that began as exceptions get reclassified as ordinary reality
+
+            Drift is dangerous because the system still appears to function during the slide, and therefore underestimates how fragile it has already become.
+            """,
+        ),
+        section(
+            "management",
+            "## 为什么 operational risk 最后会变成治理问题",
+            "## Why Operational Risk Eventually Becomes a Governance Problem",
+            body_zh="""
+            运行风险不会只停留在一线层。只要资源配置、目标压力、排班、维护窗口和监督机制长期塑造了现场条件，那么 operational risk 本质上就已经进入治理层。
+
+            这也是为什么这页在课程里位置很重要：它提醒你，很多一线失误如果反复出现，问题就不该再被看成 frontline discipline，而要被看成 management of operating conditions。
+            """,
+            body_en="""
+            Operational risk does not remain only at the frontline. Once resource allocation, production pressure, scheduling, maintenance windows, and oversight mechanisms shape local conditions over time, the issue has already become a governance problem.
+
+            That is why this page matters so much in the course. Repeated frontline failure should no longer be treated only as discipline failure. It should be treated as management of operating conditions.
+            """,
+        ),
+    ]
+)
+CASES_ETHICS_CONTENT["operational_risk"]["examples"].append(
+    callout(
+        "example",
+        "drift",
+        "案例：为什么“大家都这么做”本身就可能是高风险信号",
+        "Example: Why “Everyone Does It This Way” Can Itself Be a High-Risk Signal",
+        body_zh="当一线人员普遍用某种 workaround 完成任务时，这并不自动说明他们不专业。更重要的解释可能是：正式流程已经长期不贴合 work as done，而系统正在依赖一套没有被正式承认的脆弱运行方式维持表面稳定。",
+        body_en="When frontline staff widely rely on the same workaround, this does not automatically mean they are careless. A more important explanation may be that the formal process has long ceased to fit work as done and the system is relying on an unofficial but fragile operating mode to preserve apparent stability.",
+    )
+)
+CASES_ETHICS_CONTENT["operational_risk"]["sections"].append(
+    section(
+        "signals",
+        "## 运行风险真正该盯住哪些早期信号",
+        "## Which Early Signals Actually Matter in Operational Risk",
+        body_zh="""
+        operational risk 很少没有前兆。真正难的是，这些前兆平时看起来往往像“小问题”：交接越来越赶、维护窗口越来越短、例外审批越来越频繁、现场越来越依赖个人经验而不是正式流程。
+
+        这些信号单独看都不一定像事故种子，但只要它们长期一起出现，就说明系统正在失去缓冲。也因此，运行风险管理最有价值的部分往往不是事故后追责，而是事故前识别这些慢性变脆的信号。
+        """,
+        body_en="""
+        Operational risk is rarely without warning. The difficulty is that the warnings often look small in everyday work: rushed handoffs, shrinking maintenance windows, more frequent exception handling, and growing dependence on personal experience instead of the formal process.
+
+        Any one of those signals may not look like an accident seed by itself. But when they appear together over time, the system is losing buffer. That is why one of the most valuable parts of operational-risk management is not post-event blame, but pre-event recognition of these slow fragility signals.
+        """,
+    )
+)
+
+CASES_ETHICS_CONTENT["cardosi_case"]["sections"].extend(
+    [
+        section(
+            "reconstruct",
+            "## 这类通信案例最重要的是把链条重新搭出来",
+            "## The Key to This Type of Communication Case Is Reconstructing the Chain",
+            body_zh="""
+            Cardosi 案例如果只看最后结果，会很容易落成“有人没听清”。真正有价值的读法，是把 communication chain 一层层重新搭出来：
+
+            - 信息最初是怎样表达的
+            - 在通道里怎样被削弱、遮挡或踩断
+            - 哪些成员因此拿到了不完整 picture
+            - 后面的程序和显示有没有机会把它补回来
+
+            一旦这样重建，案例就会从“单句 communication mistake”重新变回多层系统问题。
+            """,
+            body_en="""
+            If the Cardosi case is read only through the final outcome, it quickly collapses into “someone did not hear clearly.” The stronger reading rebuilds the communication chain layer by layer:
+
+            - how the information was originally expressed
+            - how it was weakened, blocked, or stepped on in the channel
+            - which actors therefore received only a partial picture
+            - whether later procedure or displays had any chance to repair that picture
+
+            Once rebuilt that way, the case stops being a single communication mistake and returns to a multi-layer system problem.
+            """,
+        ),
+        section(
+            "redundancy",
+            "## 为什么关键通信必须有冗余表达和确认机制",
+            "## Why Critical Communication Needs Redundancy and Confirmation",
+            body_zh="""
+            航空通信环境本来就容易受噪声、重叠发话和时间压力影响，所以如果关键内容只以一种脆弱表达形式出现，它就太容易在链条里丢失。Cardosi 材料的价值之一，就是提醒你把 communication 当成 barrier，而不是当成中性背景。
+
+            只要通信承担 barrier 角色，它就应该有冗余、回读、确认和补救设计。
+            """,
+            body_en="""
+            Aviation communication environments are already vulnerable to noise, overlapping speech, and time pressure. If critical content appears in only one fragile expression format, it becomes too easy for the message to vanish somewhere in the chain. One important lesson of the Cardosi material is that communication should be treated as a barrier, not as neutral background.
+
+            Once communication is treated as a barrier, redundancy, read-back, confirmation, and recovery design become necessary.
+            """,
+        ),
+    ]
+)
+CASES_ETHICS_CONTENT["cardosi_case"]["examples"].append(
+    callout(
+        "example",
+        "redundancy",
+        "案例：为什么一条信息“说过了”并不等于风险已经被管住",
+        "Example: Why “It Was Said Once” Does Not Mean the Risk Was Controlled",
+        body_zh="在高负荷通信环境里，一条关键消息即使已经被说出口，也可能因为通道遮挡、接收不完整或共享局面缺失而没有真正成为团队防线。Cardosi 案例的一个核心提醒就是：信息存在过，不等于信息真的被系统吸收了。",
+        body_en="In a high-load communication environment, a critical message may be spoken and still fail to become a real team defense because the channel is blocked, reception is partial, or shared understanding never forms. One of the core lessons in the Cardosi case is that information having existed is not the same as information having been absorbed by the system.",
+    )
+)
+
+CASES_ETHICS_CONTENT["f16_analysis_prompts"]["sections"].extend(
+    [
+        section(
+            "order",
+            "## prompts 真正提供的是分析顺序，而不只是问题清单",
+            "## Prompts Provide an Order of Analysis, Not Just a List of Questions",
+            body_zh="""
+            这页最容易被低估的地方，是 prompts 看起来像很多问题，但其实它们更像一条顺序。先看事件和任务，再看信息和界面，再看团队与组织，最后才回到改进建议。这个顺序能防止讨论一开始就跳去结论或责任归因。
+
+            所以 prompt 的价值不在数量，而在它能不能稳住案例分析的展开节奏。
+            """,
+            body_en="""
+            The most underestimated part of the prompts is that they look like many separate questions, but they really provide an order. Start with the event and task, then move to information and interface, then to team and organization, and only afterward to recommendations. That order prevents the discussion from jumping too early to conclusion or blame.
+
+            The value of prompts therefore is not their count, but whether they stabilize the rhythm of case analysis.
+            """,
+        ),
+        section(
+            "output",
+            "## 用 prompts 做完分析后，应该产出什么",
+            "## What a Prompted Analysis Should Produce",
+            body_zh="""
+            一套 prompts 用得好，最后不应只留下“讨论过很多问题”，而应留下一个更清楚的输出：
+
+            - 哪些证据支持哪条因果链
+            - 哪些层级的问题最值得优先改
+            - 哪些结论还只是推测，需要继续补证据
+
+            这也是为什么 prompts 适合课堂讨论和案例复盘，它能把发散观察压回结构化输出。
+            """,
+            body_en="""
+            When prompts are used well, the result should not be merely “we discussed many questions.” The analysis should produce something clearer:
+
+            - which evidence supports which causal chain
+            - which layers are the highest-priority targets for change
+            - which conclusions remain tentative and still need more evidence
+
+            That is why prompts fit both classroom discussion and case review. They compress scattered observation back into structured output.
+            """,
+        ),
+    ]
+)
+CASES_ETHICS_CONTENT["f16_analysis_prompts"]["examples"].append(
+    callout(
+        "example",
+        "output",
+        "案例：为什么 prompts 能把“各说各话”压回同一张分析图上",
+        "Example: Why Prompts Pull a Discussion Back from Fragmentation",
+        body_zh="没有 prompts 时，团队可能一会儿讲界面、一会儿讲程序、一会儿讲培训，最后谁也不知道这些观察之间是什么关系。用了 prompts 之后，大家会被迫把每条观察放回同一分析顺序里，这样案例才会从散点意见变成可执行复盘。",
+        body_en="Without prompts, a team may jump from interface to procedure to training and end with no clear relationship among those observations. With prompts, each observation is forced back into one analysis order, and the case becomes an actionable review instead of a cloud of disconnected opinions.",
+    )
+)
+CASES_ETHICS_CONTENT["f16_analysis_prompts"]["sections"].append(
+    section(
+        "evidence_limits",
+        "## 为什么 prompts 还在提醒你区分“看见了什么”和“推断了什么”",
+        "## Why the Prompts Keep Reminding You to Separate Observation from Inference",
+        body_zh="""
+        prompts 的一个隐藏作用，是防止案例讨论在中途悄悄把推断当成事实。因为只要团队已经有了强烈直觉，后面的所有问题都可能被用来支持这个直觉，而不是检验它。
+
+        所以 prompts 真正成熟的用法，不是快速把答案说出来，而是逼自己反复区分：哪些是明确证据，哪些只是当前最合理的解释。这个区分一旦守住，后面的责任判断和改进建议才更稳。
+        """,
+        body_en="""
+        One hidden function of the prompts is preventing the discussion from quietly treating inference as fact. Once a team forms a strong intuition early, later questions can be used to support that intuition rather than test it.
+
+        The more mature use of prompts therefore is not producing a fast answer, but repeatedly separating what is directly evidenced from what is only the best current interpretation. Once that line is protected, later responsibility judgments and recommendations become much more stable.
+        """,
+    )
+)
+
+CASES_ETHICS_CONTENT["boeing_737max_and_ethics"]["sections"].extend(
+    [
+        section(
+            "mismatch",
+            "## 这页真正要你看到的是“假设失配”",
+            "## What This Page Really Wants You to See Is Assumption Mismatch",
+            body_zh="""
+            737 Max 之所以是系统案例，是因为多个层级都在同时依赖一些彼此并不稳的假设：
+
+            - 设计假设飞行员会怎样理解系统状态
+            - 培训假设飞行员已经具备哪些知识与反应路径
+            - 运行假设异常会以怎样的速度出现
+            - 认证假设这些条件已经被充分验证
+
+            一旦这些假设互相错位，问题就不再只是单个元件，而是整套系统在把风险往下游转移。
+            """,
+            body_en="""
+            The 737 Max becomes a system case because several layers depend simultaneously on assumptions that do not hold together securely:
+
+            - design assumptions about how the crew will understand system state
+            - training assumptions about what knowledge and response paths the crew already possesses
+            - operational assumptions about how quickly the anomaly will emerge
+            - certification assumptions that these conditions have been adequately demonstrated
+
+            Once those assumptions become misaligned, the issue is no longer only one component. The entire system begins transferring risk downstream.
+            """,
+        ),
+        section(
+            "governance",
+            "## 为什么这页最后一定会落到治理和责任分配",
+            "## Why This Page Ultimately Has to Land on Governance and Responsibility Allocation",
+            body_zh="""
+            737 Max 的伦理讨论之所以不能和工程分开，是因为这里的很多风险并不是自然发生，而是被某些决策允许、放大或未被及时纠正。换句话说，风险链里不仅有 technical failure，也有 decision failure。
+
+            这就是为什么课程把 regulator、manufacturer、operator 和 training assumptions 都拉进来讨论。责任不是抽象标签，而是系统里谁有能力改变条件、谁却没有及时改变。
+            """,
+            body_en="""
+            The ethics discussion in the 737 Max case cannot be separated from engineering because many of the risks did not emerge spontaneously. They were permitted, amplified, or left uncorrected by decisions. In other words, the chain contains not only technical failure, but decision failure.
+
+            That is why the course brings regulator, manufacturer, operator, and training assumptions into the same discussion. Responsibility is not an abstract label; it is about who had the power to change the conditions and failed to do so in time.
+            """,
+        ),
+    ]
+)
+CASES_ETHICS_CONTENT["boeing_737max_and_ethics"]["examples"].append(
+    callout(
+        "example",
+        "governance",
+        "案例：为什么“前一航班已经出过问题”仍然没能变成可靠防线",
+        "Example: Why “The Previous Flight Already Had Trouble” Still Failed to Become a Reliable Defense",
+        body_zh="前一班次信息存在过，却没有稳定变成后一班次的保护，这件事本身就是系统失配证据。它说明系统里“信息出现”“信息被理解”“信息被转化成行动防线”这三步并没有真正接上。也正因为如此，这页才不能只讲硬件故障，而必须讲治理和传递机制。",
+        body_en="The fact that prior-flight information existed but did not reliably become a defense for the later crew is itself evidence of system mismatch. It shows that the steps from “information appeared” to “information was understood” to “information became an operational defense” were never fully connected. That is why this page cannot stop at hardware failure alone and must also discuss governance and transmission mechanisms.",
+    )
+)

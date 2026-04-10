@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from note_blueprints import callout, formalize_blueprint, page_blueprint, section
+from note_blueprints import callout, page_blueprint, section
 
 
 MEDICAL_DEVICES_CONTENT: dict[str, dict] = {
@@ -420,6 +420,250 @@ When reading a workbook like this, use a fixed sequence:
     ),
 }
 
-MEDICAL_DEVICES_CONTENT = {
-    slug: formalize_blueprint(blueprint) for slug, blueprint in MEDICAL_DEVICES_CONTENT.items()
-}
+MEDICAL_DEVICES_CONTENT["iso_14971"]["sections"].extend(
+    [
+        section(
+            "controls",
+            "## 风险控制在这个标准里为什么不是“想到什么就补什么”",
+            "## Why Risk Control in This Standard Is Not “Add Whatever Control Comes to Mind”",
+            body_zh="""
+            ISO 14971 真正强调的，不是风险列得够不够多，而是控制有没有逻辑顺序。课程里反复暗示的一条判断是：如果危险可以通过设计本身被消掉，就不应该先把希望寄托在标签提醒或培训上。
+
+            这背后其实是在建立一个控制层级：
+
+            - 先改设计本身，尽量从源头降低风险
+            - 再看 protective measure 或系统层防线
+            - 最后才是信息、说明、培训和告警
+
+            这样做不是因为后面的手段没用，而是因为越靠近源头的控制，通常越稳定、越不依赖用户在高压下始终做对。
+            """,
+            body_en="""
+            ISO 14971 does not mainly reward the team for listing many risks. It rewards the team for thinking clearly about control logic. One recurring course judgment is that if a hazard can be reduced through design itself, the analysis should not start by relying on labeling or training.
+
+            That creates a control hierarchy:
+
+            - redesign the source of risk where possible
+            - then add protective measures or system defenses
+            - only then depend on information, instructions, training, or alerts
+
+            The reason is not that the later methods never help. It is that source-level controls are usually more stable and less dependent on perfect user behavior under pressure.
+            """,
+        ),
+        section(
+            "language",
+            "## 为什么标准语言必须这么严格",
+            "## Why the Standard’s Language Has to Be So Strict",
+            body_zh="""
+            很多人第一次看 ISO 14971 会觉得定义太细、太烦。但这恰恰是标准有用的原因。只要团队在 `hazard`、`hazardous situation`、`harm` 之间说混了，后面就会出现三个连锁问题：
+
+            - 控制措施不知道该控哪一层
+            - 验证活动不知道要证明什么
+            - 剩余风险讨论会变成不同部门各说各话
+
+            所以标准语言看起来像术语要求，本质上其实是在保护团队的因果结构不被写乱。
+            """,
+            body_en="""
+            Many people see ISO 14971 for the first time and feel the definitions are overly fine-grained. That precision is exactly why the standard is useful. Once the team blurs `hazard`, `hazardous situation`, and `harm`, three problems appear quickly:
+
+            - controls no longer target the right layer
+            - verification no longer knows what it is supposed to demonstrate
+            - residual-risk discussion turns into several departments speaking past each other
+
+            The language rule therefore looks like terminology discipline, but in practice it protects the causal structure of the analysis from collapsing.
+            """,
+        ),
+    ]
+)
+MEDICAL_DEVICES_CONTENT["iso_14971"]["examples"].append(
+    callout(
+        "example",
+        "controls",
+        "案例：为什么“说明书里写清楚了”通常不能算第一层主控制",
+        "Example: Why “It Is Clearly Stated in the IFU” Usually Cannot Be the Primary Control",
+        body_zh="如果一个高风险误用本来就可以通过窗口设计、结构限制、接口区分或强制确认来降低，那么把主控制写成“在 IFU 中提醒用户注意”通常不够。这不是否定 IFU，而是说明标准更关心稳定控制，而不是事后把风险交给阅读和记忆。",
+        body_en="If a high-risk misuse can already be reduced through display design, physical constraint, interface separation, or forced confirmation, then writing the primary control as “warn the user in the IFU” is usually weak. This does not mean the IFU is useless; it means the standard prefers stable controls over handing risk back to reading and memory.",
+    )
+)
+
+MEDICAL_DEVICES_CONTENT["medical_device_urra"]["sections"].extend(
+    [
+        section(
+            "critical",
+            "## 为什么医疗器械 URRA 特别强调 critical task",
+            "## Why Medical-Device URRA Puts Special Weight on Critical Tasks",
+            body_zh="""
+            在医疗器械里，critical task 不是“重要步骤”的口语说法，而是风险管理里的分水岭。因为一旦某一步做错就可能直接影响 patient safety 或 treatment effectiveness，这一步就必须被放大看。
+
+            这会直接影响后面的三个动作：
+
+            - 设计时是否要给更强的防错或确认机制
+            - 说明书、标签和界面是不是需要更明确地支持这一步
+            - validation 时是否必须把这一步放进高优先级观察情境
+            """,
+            body_en="""
+            In medical devices, a critical task is not just an “important step” in everyday language. It is a threshold inside risk management. If performing the step incorrectly could directly affect patient safety or treatment effectiveness, the step must be elevated analytically.
+
+            That changes at least three later decisions:
+
+            - whether design needs stronger error-prevention or confirmation logic
+            - whether IFU, labeling, and interface need stronger support around that step
+            - whether validation must observe that step as a high-priority use scenario
+            """,
+        ),
+        section(
+            "regulatory",
+            "## 为什么这页比一般 URRA 更强调可追踪性",
+            "## Why This Page Cares More About Traceability Than Generic URRA",
+            body_zh="""
+            一般风险分析如果写得粗糙，问题已经不小；医疗器械场景里再写得粗糙，就会同时影响设计决策、验证计划和监管沟通。正因为如此，这页特别强调 traceability。
+
+            团队必须能顺着一条链回看：
+
+            - 这个步骤为什么被视为 critical
+            - 这个 use error 是从哪个任务和场景推出的
+            - 这个 control 是否真的对应这条风险链
+            - 这个 control 又在哪里被验证
+            """,
+            body_en="""
+            When generic risk analysis is weak, the consequences are already serious. In medical devices, weak analysis also distorts design decisions, validation planning, and regulatory communication. That is why this page cares so much about traceability.
+
+            The team has to be able to trace one chain backward:
+
+            - why the step was judged critical
+            - which task and scenario the use error came from
+            - whether the control really answers that risk path
+            - where the control was later validated
+            """,
+        ),
+    ]
+)
+MEDICAL_DEVICES_CONTENT["medical_device_urra"]["examples"].append(
+    callout(
+        "example",
+        "critical",
+        "案例：为什么“拔帽”和“确认方向”有时会比真正注射动作更关键",
+        "Example: Why “Remove the Cap” and “Confirm Orientation” Can Matter More Than the Injection Itself",
+        body_zh="在自注射装置里，真正高风险的节点未必是最后按压那一下。更早的方向确认、端部识别、拔帽顺序和装置朝向，往往一旦做错就会把后续所有动作带偏。这也是为什么医疗器械 URRA 不能只盯最显眼的使用动作。",
+        body_en="In self-injection devices, the highest-risk node is not always the final act of pressing. Earlier actions such as orientation confirmation, end recognition, cap-removal sequence, and device alignment may matter more because once they fail, every later action is pulled off track. That is why medical-device URRA cannot focus only on the most visible use action.",
+    )
+)
+
+MEDICAL_DEVICES_CONTENT["medical_device_use_errors"]["sections"].extend(
+    [
+        section(
+            "boundary",
+            "## 为什么这页真正难的是划清边界",
+            "## Why the Hard Part of This Page Is Drawing the Boundaries Correctly",
+            body_zh="""
+            医疗器械 use error 分析最容易被写浅的地方，就是团队太快把所有坏结果都装进“user error”这个桶里。真正的分析难点在于区分：
+
+            - 是器械自己没有按设计工作
+            - 还是用户在可预见场景里被设计推向了错误
+            - 还是发生了明显超出预期的 abnormal use
+            - 还是操作者明知规则却故意偏离
+
+            这几个边界一旦没划清，后面的控制、责任判断和验证重点都会跟着乱掉。
+            """,
+            body_en="""
+            The easiest way to write medical-device use-error analysis badly is to place every bad outcome into one bucket called “user error.” The real difficulty is drawing the boundary between:
+
+            - device malfunction
+            - design-induced error inside foreseeable use
+            - clearly abnormal use beyond the intended context
+            - deliberate rule departure
+
+            Once those boundaries are blurred, later controls, accountability judgments, and validation priorities also become blurred.
+            """,
+        ),
+        section(
+            "control_logic",
+            "## 为什么分类会直接改变你最后改什么",
+            "## Why Classification Directly Changes What Gets Redesigned",
+            body_zh="""
+            这页最实用的价值在这里：不同类型的问题，对应的控制策略完全不同。
+
+            - 如果是 device failure，重点回到 engineering reliability
+            - 如果是 design-induced use error，重点回到界面、标签、流程和可恢复性
+            - 如果是 abnormal use，重点回到边界说明和风险沟通
+            - 如果是 violation，重点还要看激励、文化和程序现实性
+
+            所以分类不是学术洁癖，而是决定后面到底改哪里。
+            """,
+            body_en="""
+            The most practical value of this page is that different problem types lead to different control strategies.
+
+            - device failure pushes the response toward engineering reliability
+            - design-induced use error pushes toward interface, labeling, workflow, and recoverability
+            - abnormal use shifts attention toward boundary communication and foreseeable misuse management
+            - violation forces the analysis to examine incentives, culture, and procedure realism
+
+            Classification therefore is not academic purity. It determines what gets changed next.
+            """,
+        ),
+    ]
+)
+MEDICAL_DEVICES_CONTENT["medical_device_use_errors"]["examples"].append(
+    callout(
+        "example",
+        "control_logic",
+        "案例：同样是“剂量不对”，为什么可能导向完全不同的改进",
+        "Example: Why the Same “Wrong Dose” Outcome Can Lead to Completely Different Fixes",
+        body_zh="如果剂量错误来自设备内部故障，改进重点应是硬件或软件可靠性；如果来自用户把 1.0 读成 10，重点就应回到显示、对比度、标记和确认流程；如果来自故意跳过检查，则还要看流程是不是过于脱离现实。结果一样，但控制路径完全不同。",
+        body_en="If the wrong dose comes from internal device failure, the redesign focus belongs to hardware or software reliability. If it comes from reading 1.0 as 10, the focus belongs to display, contrast, marking, and confirmation workflow. If it comes from deliberately bypassing a check, the procedure may also be unrealistic. The outcome looks the same, but the control path is completely different.",
+    )
+)
+
+MEDICAL_DEVICES_CONTENT["epipen_workbook"]["sections"].extend(
+    [
+        section(
+            "translation",
+            "## workbook 真正训练的是“翻译能力”",
+            "## The Workbook Is Really Training Translation",
+            body_zh="""
+            这页的核心价值，不是让你认识表头，而是让你练习把前面学过的抽象概念翻译成工作文件。很多学生到了这里才会真正发现：知道 `critical task`、`hazardous situation` 和 `mitigation` 的定义，不等于会把它们写成一行清楚、能被团队继续使用的记录。
+
+            workbook 的作用，就是逼你完成这一步翻译。
+            """,
+            body_en="""
+            The core value of the workbook is not recognizing column headers. It is practicing translation from abstract concepts into working documentation. Many students only realize at this point that knowing the definitions of `critical task`, `hazardous situation`, and `mitigation` is not the same as writing them into one clear row that a team can actually use.
+
+            The workbook forces that translation step to happen.
+            """,
+        ),
+        section(
+            "review",
+            "## 一张 workbook 应该怎样被团队拿来审",
+            "## How a Team Should Review a Workbook",
+            body_zh="""
+            一张好的 workbook 不是个人作业，而应该能支持多人审读。设计、人因、法规和临床如果一起看同一行，至少应该能对四件事达成共识：
+
+            - 这一步到底在做什么
+            - 错误路径写得是否具体
+            - patient harm 有没有被写到位
+            - 这个 mitigation 是不是足够强
+
+            如果一行写出来后没人能稳定复述这四点，那它通常还不够好。
+            """,
+            body_en="""
+            A strong workbook is not a private note. It should support multi-role review. If design, human factors, regulatory, and clinical reviewers look at the same row, they should at least be able to align on four things:
+
+            - what the step actually is
+            - whether the error path is specific enough
+            - whether patient harm has been written clearly enough
+            - whether the mitigation is strong enough
+
+            If the row cannot support shared understanding on those points, it is usually still weak.
+            """,
+        ),
+    ]
+)
+MEDICAL_DEVICES_CONTENT["epipen_workbook"]["examples"].append(
+    callout(
+        "example",
+        "review",
+        "案例：为什么 workbook 里最怕出现“表面完整、实质空心”的行",
+        "Example: Why the Most Dangerous Workbook Row Is the One That Looks Complete but Says Very Little",
+        body_zh="有些条目看起来每一列都填了，但 error 写成“improper use”，harm 写成“injury”，mitigation 写成“training”。这种行表面完整，实际上既不能指导设计，也不能指导验证。真正好的 workbook 行应该让团队一眼就知道下一步该改什么、该测什么。",
+        body_en="Some rows look complete because every column contains text, but the error is written as “improper use,” the harm as “injury,” and the mitigation as “training.” Such rows are complete on the surface but analytically hollow. A strong row should let the team see immediately what must be redesigned and what must be tested next.",
+    )
+)

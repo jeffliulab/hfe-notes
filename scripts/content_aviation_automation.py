@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from note_blueprints import callout, formalize_blueprint, page_blueprint, section
+from note_blueprints import callout, page_blueprint, section
 
 
 AVIATION_AUTOMATION_CONTENT: dict[str, dict] = {
@@ -464,6 +464,317 @@ Good checklist and procedure design:
     ),
 }
 
-AVIATION_AUTOMATION_CONTENT = {
-    slug: formalize_blueprint(blueprint) for slug, blueprint in AVIATION_AUTOMATION_CONTENT.items()
-}
+AVIATION_AUTOMATION_CONTENT["aviation_automation_intro"]["sections"].extend(
+    [
+        section(
+            "monitoring",
+            "## 自动化为什么会把“剩余的人类任务”变得更难",
+            "## Why Automation Makes the Remaining Human Tasks Harder",
+            body_zh="""
+            自动化最反直觉的地方在这里：系统做得越多，人的工作不一定越轻松。很多时候，人的工作从“持续参与”变成了“长时间低参与 + 突然高责任”的组合。
+
+            这会带来至少三种后果：
+
+            - 平时更难维持足够的状态把握
+            - 一旦模式切换，理解成本突然升高
+            - 真正要接管时，动作窗口反而更短
+
+            所以自动化的问题不是系统会不会工作，而是人还来不来得及重新进入工作。
+            """,
+            body_en="""
+            The most counterintuitive part of automation is that the more the system does, the easier the human role does not necessarily become. In many cases the human role shifts from continuous engagement to a combination of long low-engagement periods and sudden high-responsibility moments.
+
+            That produces at least three consequences:
+
+            - it becomes harder to maintain strong state awareness during normal operation
+            - when a mode change occurs, the understanding burden rises sharply
+            - when takeover is required, the action window is often shorter
+
+            The real automation problem is therefore not simply whether the system can perform, but whether the human can get back into the loop in time.
+            """,
+        ),
+        section(
+            "handoff",
+            "## 这页真正要你固定检查的 handoff 问题",
+            "## The Handoff Questions This Page Wants You to Keep Asking",
+            body_zh="""
+            以后看到任何自动化系统，都可以固定问四件事：
+
+            - 系统什么时候会把控制权还给人
+            - 到那个时刻，人已经丢掉了多少情境意识
+            - 模式状态是不是足够清楚
+            - 如果人接不住，系统是否还有缓冲空间
+
+            只要这四个问题里有两个答不上来，自动化就很可能只是把风险从手工操作换成了 handoff failure。
+            """,
+            body_en="""
+            For any automated system you see later, keep four questions in mind:
+
+            - when does the system hand control back to the human
+            - by that moment, how much situation awareness has the human already lost
+            - is the active mode clear enough
+            - if the human cannot take over cleanly, does the system still preserve any buffer
+
+            If two or more of those questions cannot be answered clearly, the automation may simply be moving risk from manual control into handoff failure.
+            """,
+        ),
+    ]
+)
+AVIATION_AUTOMATION_CONTENT["aviation_automation_intro"]["examples"].append(
+    callout(
+        "example",
+        "handoff",
+        "案例：为什么“平时很稳”并不能证明自动化设计安全",
+        "Example: Why “It Works Well Most of the Time” Does Not Prove the Automation Is Safe",
+        body_zh="一个自动化系统如果在正常工况下长期稳定运行，很容易给团队一种“整体设计没问题”的感觉。但真正高风险的部分往往不在稳定阶段，而在模式异常、边界逼近和突然接管时刻。换句话说，正常表现不能自动证明异常交接也被设计好了。",
+        body_en="If an automated system runs smoothly for long periods in nominal conditions, teams are easily lulled into thinking the overall design is strong. But the highest-risk portion often lives not in the stable phase, but at mode anomalies, edge-of-envelope moments, and sudden takeover demands. Normal performance therefore does not automatically prove that abnormal handoff has been designed well.",
+    )
+)
+
+AVIATION_AUTOMATION_CONTENT["crew_resource_management"]["sections"].extend(
+    [
+        section(
+            "briefing",
+            "## 为什么 brief 和 debrief 不是形式步骤",
+            "## Why Briefs and Debriefs Are Not Formalities",
+            body_zh="""
+            CRM 很容易被误读成“出事时怎么沟通”，但课程其实把它放得更早、更后。brief 的价值，是在任务开始前就把角色、预期、异常标准和挑战权限对齐；debrief 的价值，是让团队在任务后把差点出错的地方重新变成共享经验。
+
+            如果缺少这两个环节，团队就更容易在执行中临时猜测彼此理解是否一致，风险会沿着模糊分工不断放大。
+            """,
+            body_en="""
+            CRM is often misread as “how to communicate during an emergency,” but the course places it both earlier and later. The brief aligns roles, expectations, abnormality thresholds, and challenge authority before the task begins. The debrief turns near misses and weak coordination moments into shared learning afterward.
+
+            Without those two stages, teams are more likely to guess during execution whether their understanding is aligned, and risk grows along that ambiguity.
+            """,
+        ),
+        section(
+            "challenge",
+            "## 为什么 challenge-response 会成为真正的安全机制",
+            "## Why Challenge-Response Becomes a Real Safety Mechanism",
+            body_zh="""
+            CRM 不是鼓励“多说话”而已，它更强调说话必须能进入团队决策。challenge-response 之所以重要，是因为它把一句提醒从个人意见变成团队必须处理的输入。
+
+            真正强的团队不是没人犯错，而是当有人看到偏差时，系统允许这条信息被提出来、被确认、被吸收，并最终改变行动。
+            """,
+            body_en="""
+            CRM is not simply asking people to talk more. It is asking that speech actually enter team decision making. Challenge-response matters because it turns a concern from one person’s opinion into an input that the team must process.
+
+            Strong teams are not teams where nobody ever errs. They are teams where observed deviation can be voiced, confirmed, absorbed, and turned into changed action.
+            """,
+        ),
+    ]
+)
+AVIATION_AUTOMATION_CONTENT["crew_resource_management"]["examples"].append(
+    callout(
+        "example",
+        "challenge",
+        "案例：为什么“有人看见了问题”还远远不够",
+        "Example: Why “Someone Noticed the Problem” Is Still Not Enough",
+        body_zh="很多团队失败并不是因为没人注意到异常，而是注意到的人没能让异常进入集体决策。可能是 authority gradient 太陡、语言太模糊、时间太紧，或者团队默认不会被真正听进去。CRM 的目标，就是切断这条从“看见”到“没被吸收”的断裂链。",
+        body_en="Many teams fail not because nobody noticed the anomaly, but because the person who noticed it could not get that signal into collective decision making. Authority gradient may be too steep, language too weak, time too short, or the team may implicitly expect not to be heard. CRM exists to break that chain from “noticed” to “not absorbed.”",
+    )
+)
+AVIATION_AUTOMATION_CONTENT["crew_resource_management"]["sections"].append(
+    section(
+        "authority_gradient",
+        "## 为什么 authority gradient 会直接决定 CRM 是否真正生效",
+        "## Why Authority Gradient Directly Determines Whether CRM Actually Works",
+        body_zh="""
+        很多团队表面上允许成员发声，但一旦 authority gradient 太陡，提醒就会变成礼貌性意见，而不是必须处理的安全输入。此时 CRM 看起来存在，实际上最关键的 challenge function 仍然是弱的。
+
+        所以 CRM 评估不能只看团队有没有交流，还要看低位成员提出担忧后，团队是不是会真的停下来重看局面、重新分配注意力，或者修正原计划。
+        """,
+        body_en="""
+        Many teams appear to allow people to speak, but when the authority gradient is too steep, a concern becomes a polite opinion rather than a safety input that must be processed. In that condition CRM appears to exist while its most important challenge function remains weak.
+
+        CRM evaluation therefore cannot stop at whether the team exchanged words. It also has to ask whether a lower-status concern actually causes the team to reassess the picture, redirect attention, or revise the plan.
+        """,
+    )
+)
+
+AVIATION_AUTOMATION_CONTENT["displays_and_alerts"]["sections"].extend(
+    [
+        section(
+            "priority",
+            "## 告警真正难的不是被听见，而是被正确排序",
+            "## The Hardest Part of Alerting Is Not Being Heard but Being Prioritized Correctly",
+            body_zh="""
+            很多系统以为只要把告警做得更醒目，问题就解决了。但操作者真正面对的不是单一告警，而是一堆同时竞争注意力的信号。告警设计真正要解决的是：哪个最先处理、哪个只是背景噪声、哪个必须立即转动作。
+
+            也就是说，alerting 本质上不是感官刺激设计，而是优先级设计。
+            """,
+            body_en="""
+            Many systems assume that making an alert more salient is enough. But operators rarely face one signal at a time. They face multiple cues competing for limited attention. The real design question is which signal should be handled first, which one is background, and which one must convert immediately into action.
+
+            In that sense, alerting is not primarily about sensory stimulation. It is about priority design.
+            """,
+        ),
+        section(
+            "mapping",
+            "## 为什么显示和告警必须一起看",
+            "## Why Displays and Alerts Have to Be Evaluated Together",
+            body_zh="""
+            一条告警如果只会响，却不能把人带到正确状态信息上，它就只是打断，不是真正帮助。好的系统会让告警和显示之间形成清楚 mapping：听到或看到提醒后，操作者能立刻找到最关键的状态解释和后续动作线索。
+
+            所以课程把 display 和 alert 放在一起讲，不是巧合，而是因为二者共同决定了“注意到之后能不能理解并行动”。
+            """,
+            body_en="""
+            An alert that only makes noise but does not guide the operator toward the right state information is merely interruption, not support. Strong systems create a clear mapping between alert and display so that once the alert is noticed, the operator can quickly locate the critical state explanation and the next action cue.
+
+            That is why the course treats displays and alerts together. Together they determine whether attention turns into understanding and action.
+            """,
+        ),
+    ]
+)
+AVIATION_AUTOMATION_CONTENT["displays_and_alerts"]["examples"].append(
+    callout(
+        "example",
+        "mapping",
+        "案例：为什么“听见警报”不等于“知道现在该做什么”",
+        "Example: Why Hearing the Alert Does Not Mean Knowing What to Do Next",
+        body_zh="如果告警只有声音强度差别，却没有把人快速引向故障位置、状态趋势和推荐动作，操作者就可能先被打断，再花额外时间重新找状态。这样一来，告警反而会制造二次负担。好的设计会让告警和显示解释一起出现。",
+        body_en="If alerts differ only in loudness but do not guide the operator toward fault location, state trend, and the recommended action, the operator is first interrupted and then forced to spend extra time reconstructing the state. In that case the alert creates secondary burden. Strong design lets the alert and the explanatory display work together.",
+    )
+)
+AVIATION_AUTOMATION_CONTENT["displays_and_alerts"]["sections"].append(
+    section(
+        "false_alarm",
+        "## 为什么 false alarm 和 nuisance alarm 会慢慢掏空整个告警系统",
+        "## Why False and Nuisance Alarms Gradually Hollow Out the Whole Alerting System",
+        body_zh="""
+        告警系统真正的长期风险，不只是漏报，也包括太多不值得响应的报文。只要操作者持续接触 false alarm 或 nuisance alarm，系统就会一点点消耗他们对提醒的信任和处理速度。
+
+        这就是为什么告警设计既要考虑“有没有报出来”，也要考虑“报出来的东西是否值得打断人”。如果系统频繁让人白白切换注意力，真正的关键警报到来时就更容易被延迟处理。
+        """,
+        body_en="""
+        The long-term danger in an alerting system is not only missed detection, but also too many signals that never deserved interruption in the first place. Once operators are repeatedly exposed to false or nuisance alerts, the system gradually erodes both trust and response speed.
+
+        That is why alert design has to ask not only whether the signal appears, but whether it deserves to interrupt. If the system repeatedly forces unnecessary attention switching, the truly critical alert is more likely to be delayed when it finally arrives.
+        """,
+    )
+)
+
+AVIATION_AUTOMATION_CONTENT["checklists_and_procedures"]["sections"].extend(
+    [
+        section(
+            "types",
+            "## checklist 和 procedure 在团队里分别承担什么不同角色",
+            "## What Different Roles Checklists and Procedures Play in a Team",
+            body_zh="""
+            这两个词经常被混用，但在实际工作里并不完全一样。procedure 更像系统对任务顺序和责任边界的稳定规定；checklist 更像把其中最容易漏掉、最需要协同确认的部分外显出来。
+
+            所以 checklist 不是 procedure 的缩略版，而是程序在认知与协作层的一种执行支架。
+            """,
+            body_en="""
+            These two terms are often used together, but they are not identical in practice. A procedure is the system’s stable specification of task order and responsibility boundaries. A checklist externalizes the portions most vulnerable to omission and most dependent on coordination.
+
+            A checklist is therefore not just a shorter procedure. It is an execution scaffold for the cognitive and collaborative parts of the procedure.
+            """,
+        ),
+        section(
+            "drift",
+            "## 为什么真正危险的是“程序还在，但大家已经不再靠它工作”",
+            "## Why the Real Danger Is When the Procedure Still Exists but No One Truly Works Through It",
+            body_zh="""
+            系统里最难发现的一类风险，是 procedure 在文件里仍然完整存在，但现场已经形成绕行、压缩和默认跳步。表面上程序没有被删除，实际上它已经失去屏障作用。
+
+            所以复盘程序问题时，不能只检查“有没有 procedure”，还要问一线到底有没有把它当成现实工具，而不是当成形式要求。
+            """,
+            body_en="""
+            One of the hardest risks to notice is when the procedure still exists in documentation but real work has shifted toward workaround, compression, and default skipping. On paper the procedure is still present; in practice it has lost its barrier function.
+
+            That is why procedure review cannot stop at asking whether a procedure exists. It must also ask whether frontline work still treats it as a usable tool rather than a formal requirement to be routed around.
+            """,
+        ),
+    ]
+)
+AVIATION_AUTOMATION_CONTENT["checklists_and_procedures"]["examples"].append(
+    callout(
+        "example",
+        "drift",
+        "案例：为什么一张 checklist 会从“防线”慢慢变成“背景纸面”",
+        "Example: How a Checklist Slowly Stops Being a Defense and Turns into Background Paper",
+        body_zh="如果 checklist 太长、节奏不匹配真实任务、关键步骤不突出，团队很容易先是压缩执行，后来变成默认跳读，最后只在形式上“有做过”。这时 checklist 还在，但它已经不再真正塑造行动。",
+        body_en="If a checklist is too long, poorly aligned with task rhythm, or fails to highlight the critical steps, teams often begin by compressing it, then drift into default skipping, and finally keep only the appearance of compliance. The checklist still exists, but it no longer shapes action in a meaningful way.",
+    )
+)
+AVIATION_AUTOMATION_CONTENT["checklists_and_procedures"]["sections"].append(
+    section(
+        "timing",
+        "## 为什么 checklist 的时机和节奏跟内容本身一样重要",
+        "## Why Checklist Timing and Rhythm Matter as Much as the Content",
+        body_zh="""
+        一张 checklist 就算内容正确，如果放在错误时机使用，也可能失去大部分价值。过早读会让关键项在真正执行时已经从工作记忆里掉出去，过晚读又可能因为任务已经推进太快而无法纠正。
+
+        所以 checklist 设计不仅是“写什么”，也是“什么时候读、谁来读、怎么和动作节奏配合”。这也是程序页和团队页会彼此连起来的原因。
+        """,
+        body_en="""
+        A checklist can contain correct content and still lose most of its value if it is used at the wrong time. Read too early, the critical items may fall out of working memory before execution. Read too late, the task may already have advanced too far for correction.
+
+        Checklist design therefore is not only about what gets written. It is also about when it is read, who reads it, and how it aligns with action rhythm. That is one reason the procedure page connects so closely to the team page.
+        """,
+    )
+)
+
+AVIATION_AUTOMATION_CONTENT["automated_vehicles"]["sections"].extend(
+    [
+        section(
+            "odd",
+            "## 为什么 automated vehicle 讨论离不开 ODD 边界",
+            "## Why Automated-Vehicle Analysis Cannot Be Separated from ODD Boundaries",
+            body_zh="""
+            自动化车辆最关键的前提之一是 ODD，也就是系统到底在哪些条件下被假定可以工作。一旦这个边界不清楚，用户就很容易在系统其实已经接近能力边缘时，仍然误以为它处在“正常自动化”状态。
+
+            所以 ODD 不是法规术语点缀，而是 handoff 风险的起点：越不清楚边界，越容易把接管做成措手不及。
+            """,
+            body_en="""
+            One of the most important premises in automated vehicles is the ODD, the conditions under which the system is assumed to function. Once that boundary is unclear, users can continue believing they are inside normal automation even as the system approaches its actual edge of capability.
+
+            ODD is therefore not decorative regulatory language. It is the starting point of takeover risk: the less visible the boundary, the more abrupt and fragile the handoff becomes.
+            """,
+        ),
+        section(
+            "monitoring_driver",
+            "## 为什么驾驶员监控问题和系统设计问题其实分不开",
+            "## Why Driver Monitoring and System Design Cannot Really Be Separated",
+            body_zh="""
+            automated vehicle 场景里，团队很容易把问题写成“driver was inattentive”。但更深一层的问题通常是：系统究竟把驾驶员放在什么角色上？是持续参与者、后备接管者，还是名义上负责但实际上长期脱离任务的人？
+
+            只要这个角色定义不清，driver monitoring 再强，也很难真正补上 handoff 逻辑里的结构漏洞。
+            """,
+            body_en="""
+            In automated-vehicle analysis, teams often rush toward “the driver was inattentive.” The deeper question is what role the system actually assigns to the driver: continuously engaged participant, backup takeover agent, or nominally responsible person who is effectively detached from the task most of the time.
+
+            If that role definition is unclear, even strong driver-monitoring logic cannot fully repair the structural weakness in the handoff model.
+            """,
+        ),
+    ]
+)
+AVIATION_AUTOMATION_CONTENT["automated_vehicles"]["examples"].append(
+    callout(
+        "example",
+        "monitoring_driver",
+        "案例：为什么“请随时准备接管”这句话本身可能就是弱设计",
+        "Example: Why “Be Ready to Take Over at Any Time” Can Be a Weak Design Assumption",
+        body_zh="如果系统让人长时间低参与，却又要求在边界逼近时立即高质量接管，那么“请准备接管”就不只是提示语，而可能是在把一个结构上难以完成的任务压给驾驶员。问题不只在注意力，而在角色设计本身。",
+        body_en="If the system keeps the person in a low-engagement state for long periods while still expecting immediate high-quality takeover at the edge of capability, then “be ready to take over” is not just a warning phrase. It may be assigning a structurally unrealistic task to the driver. The problem is not attention alone, but role design itself.",
+    )
+)
+AVIATION_AUTOMATION_CONTENT["automated_vehicles"]["sections"].append(
+    section(
+        "trust_calibration",
+        "## 为什么 automated vehicle 设计还要解决 trust calibration",
+        "## Why Automated-Vehicle Design Also Has to Solve Trust Calibration",
+        body_zh="""
+        自动化车辆里还有一个特别典型的问题：人到底该信系统多少。信得太少，会导致频繁打断、低效和不必要的人工接管；信得太多，又会让人跨过 ODD 边界，或者在真正需要接管时反应太慢。
+
+        所以 automated vehicle 设计不仅要让系统能工作，还要让人形成合适的 trust calibration。换句话说，系统必须把自己的边界、能力和不确定性表达得足够清楚，让人既不过度依赖，也不过度怀疑。
+        """,
+        body_en="""
+        Automated vehicles also face a characteristic problem: how much should the human trust the system. Too little trust creates frequent interruption, low efficiency, and unnecessary takeover. Too much trust pushes the person beyond the ODD boundary and slows response when takeover is actually required.
+
+        Automated-vehicle design therefore is not only about whether the system performs, but also about whether the person can form the right trust calibration. The system has to communicate its boundary, capability, and uncertainty clearly enough that the user neither over-relies nor under-relies on it.
+        """,
+    )
+)

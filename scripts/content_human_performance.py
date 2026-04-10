@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from note_blueprints import callout, formalize_blueprint, page_blueprint, section
+from note_blueprints import callout, page_blueprint, section
 
 
 HUMAN_PERFORMANCE_CONTENT: dict[str, dict] = {
@@ -418,6 +418,341 @@ The three layers in the course are:
     ),
 }
 
-HUMAN_PERFORMANCE_CONTENT = {
-    slug: formalize_blueprint(blueprint) for slug, blueprint in HUMAN_PERFORMANCE_CONTENT.items()
-}
+HUMAN_PERFORMANCE_CONTENT["attention_and_monitoring"]["sections"].extend(
+    [
+        section(
+            "decrement",
+            "## vigilance decrement 为什么不是主观懒散，而是任务规律",
+            "## Why Vigilance Decrement Is a Task Pattern Rather Than Mere Laziness",
+            body_zh="""
+            vigilance decrement 最值得记住的一点，是它并不需要操作者态度很差才会出现。只要任务满足几个条件，它就会自然变脆：
+
+            - 关键事件出现频率低
+            - 大部分时间没有即时反馈
+            - 操作者只能被动等待异常出现
+
+            这说明监控衰退并不是道德问题，而是任务规律。设计如果假装不存在这条规律，就会把本来就难做的任务继续交给人硬扛。
+            """,
+            body_en="""
+            The most important thing about vigilance decrement is that it does not require a poor attitude to appear. Once several task conditions exist, performance naturally becomes fragile:
+
+            - critical events are rare
+            - immediate feedback is weak most of the time
+            - the operator mainly waits for abnormality to appear
+
+            That means monitoring decay is not a moral problem; it is a task pattern. If design pretends this pattern does not exist, it hands an already fragile role back to the operator without support.
+            """,
+        ),
+        section(
+            "mitigation",
+            "## 真正有效的监控支持通常长什么样",
+            "## What Effective Monitoring Support Usually Looks Like",
+            body_zh="""
+            如果系统知道监控任务本身容易衰退，那么 mitigation 不应只停在“提醒更专心”。更成熟的支持通常包括：
+
+            - 让状态变化更容易被 detect
+            - 用更有意义的反馈告诉操作者系统是否正在偏离
+            - 让团队内的交叉监控更容易启动
+            - 在关键阶段减少无关负担，让注意资源不被噪声吞掉
+
+            这也是为什么 monitoring 这页和 display、alert、automation 几页会反复互相连接。
+            """,
+            body_en="""
+            If the system already knows that monitoring tasks decay, mitigation cannot stop at “pay closer attention.” More mature support usually includes:
+
+            - making state changes easier to detect
+            - using feedback that tells the operator whether the system is drifting
+            - making cross-monitoring easier to trigger inside the team
+            - reducing irrelevant burden during critical phases so attention is not consumed by noise
+
+            That is also why the monitoring page keeps reconnecting to the display, alert, and automation pages.
+            """,
+        ),
+    ]
+)
+HUMAN_PERFORMANCE_CONTENT["attention_and_monitoring"]["examples"].append(
+    callout(
+        "example",
+        "mitigation",
+        "案例：为什么“多看着点”不是一个完整 mitigation",
+        "Example: Why “Watch More Carefully” Is Not a Complete Mitigation",
+        body_zh="如果一个监控任务本身是低事件率、低反馈、长时持续的，那么要求操作者“更警觉”只能短期起作用。真正有用的改进通常是改变信号、反馈和协作结构，让问题更容易在正确时间被看见。",
+        body_en="If a monitoring task is inherently low-event-rate, low-feedback, and long-duration, telling the operator to “stay more alert” can only help briefly. Stronger improvement usually changes the signals, feedback, and coordination structure so the problem becomes easier to detect at the right time.",
+    )
+)
+
+HUMAN_PERFORMANCE_CONTENT["fatigue_and_sleep"]["sections"].extend(
+    [
+        section(
+            "sleep_debt",
+            "## 为什么 sleep debt 会让人比自己感觉中更差",
+            "## Why Sleep Debt Can Make Performance Worse Than the Person Feels",
+            body_zh="""
+            疲劳最麻烦的地方之一，是主观体验和客观下降并不总同步。人可能觉得“还撑得住”，但反应速度、记忆稳定性和监控耐力已经明显下降。
+
+            这也是为什么疲劳风险不能只靠自评。只要班次、夜班和睡眠债长期叠加，系统就不该假设操作者会准确知道自己还能否稳定完成高风险任务。
+            """,
+            body_en="""
+            One of the hardest parts of fatigue is that subjective experience and objective decline do not always move together. People may feel that they are still functioning adequately while reaction speed, memory stability, and monitoring endurance have already degraded.
+
+            That is why fatigue risk cannot rely only on self-report. Once shifts, night work, and sleep debt accumulate, the system should not assume the operator can accurately judge whether high-risk performance is still stable.
+            """,
+        ),
+        section(
+            "countermeasure",
+            "## 疲劳管理真正应该落到哪些系统动作上",
+            "## Which System Actions Real Fatigue Management Should Reach",
+            body_zh="""
+            课程讲 fatigue，不是为了给出健康建议，而是为了推动设计动作。真正有效的管理通常会落到：
+
+            - 排班长度和轮转节奏
+            - 夜班和清晨高风险任务的分配
+            - 交接设计和关键任务前的状态确认
+            - 必要时的二人确认、休息窗口或任务重分配
+
+            一旦这些动作没有进入系统层，疲劳管理就很容易停留在“大家自己注意休息”的空话上。
+            """,
+            body_en="""
+            The point of teaching fatigue is not to offer general wellness advice; it is to drive system action. Stronger management usually reaches:
+
+            - shift length and rotation rhythm
+            - allocation of high-risk tasks during night and early-morning windows
+            - handoff design and state confirmation before critical work
+            - where needed, two-person confirmation, rest windows, or task redistribution
+
+            If those actions never move into the system layer, fatigue management easily stalls at the empty phrase “everyone should rest more.”
+            """,
+        ),
+    ]
+)
+HUMAN_PERFORMANCE_CONTENT["fatigue_and_sleep"]["examples"].append(
+    callout(
+        "example",
+        "countermeasure",
+        "案例：为什么真正的 fatigue management 往往先改班次，不是先改态度",
+        "Example: Why Real Fatigue Management Often Starts with Scheduling Rather Than Attitude",
+        body_zh="如果夜班长度、交替节奏和关键任务安排本身就持续把人放在生理低谷窗口，那么再多个人层面的“注意保持状态”都只能补一小部分漏洞。真正强的控制，通常要先改排班和任务配置。",
+        body_en="If shift length, rotation rhythm, and critical-task timing continually place people into physiological low points, then personal advice about maintaining alertness can only patch a small portion of the risk. Stronger control usually starts by changing scheduling and task allocation.",
+    )
+)
+HUMAN_PERFORMANCE_CONTENT["fatigue_and_sleep"]["sections"].append(
+    section(
+        "microsleep",
+        "## 为什么 microsleep 对高风险任务特别致命",
+        "## Why Microsleep Is Especially Dangerous in High-Risk Tasks",
+        body_zh="""
+        fatigue 讨论里一个很关键但常被低估的点，是 microsleep。对当事人来说，它可能只是几秒的意识断裂；对系统来说，这几秒已经足够让监控、驾驶、核对或流程保持完全失守。
+
+        这也是为什么疲劳风险不能只按“还能不能继续工作”去看，而要按任务类型去看。只要任务依赖持续监控、快速响应或精准时机，短暂掉线就已经可能构成高风险。
+        """,
+        body_en="""
+        One critical but often underestimated part of fatigue is microsleep. To the individual it may feel like only a few seconds of broken awareness. To the system those seconds can be enough for monitoring, driving, verification, or procedural holding to fail completely.
+
+        That is why fatigue cannot be judged only by whether the person can still continue working. It also has to be judged by task type. If the task depends on continuous monitoring, rapid response, or precise timing, even a brief lapse can already create high risk.
+        """,
+    )
+)
+
+HUMAN_PERFORMANCE_CONTENT["stress_and_decision_making"]["sections"].extend(
+    [
+        section(
+            "closure",
+            "## 为什么压力下最危险的是过早收束",
+            "## Why Premature Closure Is One of the Biggest Dangers Under Stress",
+            body_zh="""
+            在高压力和高时间压力下，人不一定会立刻停工，相反常常会更快做出一个“足够可用”的解释。问题在于，这个解释很可能建立在过窄的信息搜索和过少的替代方案比较上。
+
+            这就是 premature closure 的危险：人不是没有在想，而是太快停止继续想。
+            """,
+            body_en="""
+            Under high stress and time pressure, people do not always freeze. Many instead form a “good enough” explanation very quickly. The danger is that the explanation may rest on a narrow search of information and too little comparison with alternatives.
+
+            That is the risk of premature closure: the person is still thinking, but stops thinking further too early.
+            """,
+        ),
+        section(
+            "recovery",
+            "## 为什么分心真正可怕的是让人丢掉中间状态",
+            "## Why Distraction Is Dangerous Because It Destroys Intermediate State",
+            body_zh="""
+            分心不只是把注意力挪走几秒，更麻烦的是它会切断任务连续性。人一旦被打断，再回来时往往要重新找：我做到哪了、哪些步骤已经完成、哪些判断还没做。
+
+            如果系统没有帮助保存这些中间状态，分心就很容易变成漏步、重复动作、错误顺序和错误确认。
+            """,
+            body_en="""
+            Distraction is not only a temporary redirection of attention. The bigger problem is that it breaks task continuity. When people return, they often have to reconstruct where they were, which steps were completed, and which judgments remain unfinished.
+
+            If the system does not preserve that intermediate state, distraction easily turns into omission, repeated action, sequence error, or wrong confirmation.
+            """,
+        ),
+    ]
+)
+HUMAN_PERFORMANCE_CONTENT["stress_and_decision_making"]["examples"].append(
+    callout(
+        "example",
+        "closure",
+        "案例：为什么“很果断”有时只是很快收错",
+        "Example: Why a Decision That Looks Decisive May Simply Be Fast Wrong Closure",
+        body_zh="在压力场景里，一个快速明确的决定看起来像高水平表现，但如果它建立在很少的线索、没有第二视角和没有再核对，就可能只是更快地把错误解释固定下来。系统如果不能保留复核空间，果断本身就会变成风险放大器。",
+        body_en="In a pressure-filled situation, a fast and explicit decision may look like strong performance. But if it rests on very few cues, no second perspective, and no cross-check, it may simply be a faster way to lock in the wrong explanation. If the system does not preserve review space, decisiveness itself can amplify risk.",
+    )
+)
+HUMAN_PERFORMANCE_CONTENT["stress_and_decision_making"]["sections"].append(
+    section(
+        "team_buffer",
+        "## 为什么团队缓冲能显著降低压力下的判断失真",
+        "## Why Team Buffer Can Reduce Judgment Distortion Under Stress",
+        body_zh="""
+        压力下的错误不一定只能靠个人硬撑。很多时候，更有效的防线来自团队缓冲，例如第二视角、口头复述、短暂停顿、任务重分配和明确的 cross-check。
+
+        这些做法的价值在于，它们能在高压时刻给人重新看一眼问题的机会。也就是说，系统不是假设个人一定不会收错，而是主动给决策留出被纠正的空间。
+        """,
+        body_en="""
+        Errors under stress do not have to be managed only by asking the individual to cope harder. Many stronger defenses come from team buffer, such as a second perspective, verbal restatement, a brief pause, task redistribution, or an explicit cross-check.
+
+        Their value is that they create another chance to look again at the problem under pressure. The system is therefore not assuming that the individual will never close too early. It is creating room for the decision to be corrected before it hardens.
+        """,
+    )
+)
+
+HUMAN_PERFORMANCE_CONTENT["situation_awareness"]["sections"].extend(
+    [
+        section(
+            "breakdowns",
+            "## 三层 SA 断裂在实际分析里怎样分别出现",
+            "## How the Three SA Breakdowns Appear in Real Analysis",
+            body_zh="""
+            这页最值得带走的，不只是三层定义，而是复盘时如何用它们定位断裂点：
+
+            - 如果关键线索根本没被 notice，通常是 Level 1 问题
+            - 如果线索被看见却被解释错，通常是 Level 2 问题
+            - 如果当前状态理解得差不多，但未来走势判断错了，通常是 Level 3 问题
+
+            一旦断裂层级被找准，后面的 mitigation 才不会乱：是改 detectability、改 mental model 支持，还是改 projection 支持。
+            """,
+            body_en="""
+            The most useful takeaway is not only the three-layer definition, but how to use the layers during review:
+
+            - if the critical cue was never noticed, the breakdown is often Level 1
+            - if the cue was seen but interpreted wrongly, the breakdown is often Level 2
+            - if current state was understood reasonably well but the future path was predicted badly, the breakdown is often Level 3
+
+            Once the break layer is identified, mitigation becomes far more targeted: improve detectability, improve mental-model support, or improve projection support.
+            """,
+        ),
+        section(
+            "team_sa",
+            "## 为什么 SA 不只是个人状态，也可能是团队状态",
+            "## Why SA Is Not Only an Individual State but Also a Team State",
+            body_zh="""
+            课程后半段会反复出现一个提醒：即使每个人都各自看见了一部分信息，团队仍然可能没有形成共享局面。也就是说，个人 SA 和 team SA 之间并不自动相等。
+
+            这时问题就不再只在显示，而也在沟通、briefing、cross-check 和权限结构上。团队有没有把分散线索重新拼成同一个 picture，这往往决定了后续动作是否一致。
+            """,
+            body_en="""
+            Later in the course a recurring reminder appears: even if individuals each notice part of the information, the team may still fail to form one shared picture. Individual SA and team SA are therefore not automatically the same thing.
+
+            At that point the problem is no longer only in the display. It also belongs to communication, briefing, cross-check, and authority structure. Whether the team rebuilds one common picture from distributed cues often determines whether later action becomes coordinated.
+            """,
+        ),
+    ]
+)
+HUMAN_PERFORMANCE_CONTENT["situation_awareness"]["examples"].append(
+    callout(
+        "example",
+        "team_sa",
+        "案例：为什么团队里每个人都看见一点，不等于团队真的知道发生了什么",
+        "Example: Why “Everyone Saw a Piece of It” Does Not Mean the Team Understood the Situation",
+        body_zh="一个人可能看到速度异常，另一个人注意到告警，第三个人知道程序状态变化，但如果这些线索没有被及时拼成共享局面，团队仍然可能继续沿着错误判断走下去。SA 的关键不是线索分散存在，而是线索有没有被组织成同一 picture。",
+        body_en="One person may notice the speed anomaly, another the alert, and a third the procedure-state change, yet the team can still continue along the wrong path if those cues are never assembled into one shared picture. The key to SA is not whether cues exist in distributed form, but whether they are organized into one coherent picture.",
+    )
+)
+HUMAN_PERFORMANCE_CONTENT["situation_awareness"]["sections"].append(
+    section(
+        "update",
+        "## 为什么 SA 还要看 picture 更新得够不够快",
+        "## Why SA Also Depends on How Fast the Picture Gets Updated",
+        body_zh="""
+        SA 不是静态拥有一张 picture，而是要不断更新 picture。高风险系统里，状态经常在变，如果团队还停留在几分钟前的理解，就算当时理解过也可能已经落后于系统现实。
+
+        所以 SA 分析不能只问“有没有建立 picture”，还要问“picture 更新速度够不够快”。很多事故不是从完全不知道开始，而是从来不及把旧 picture 替换成新 picture 开始。
+        """,
+        body_en="""
+        SA is not the static possession of one picture. It is the continuous updating of that picture. In high-risk systems the state keeps changing, and if the team is still operating from the understanding of a few minutes earlier, the picture may already be stale even if it was once correct.
+
+        SA analysis therefore cannot ask only whether a picture existed. It also has to ask whether the picture was updated quickly enough. Many events do not begin with total ignorance, but with failure to replace the old picture in time.
+        """,
+    )
+)
+
+HUMAN_PERFORMANCE_CONTENT["spatial_disorientation"]["sections"].extend(
+    [
+        section(
+            "illusion_strength",
+            "## 为什么这类错觉特别难靠主观意志克服",
+            "## Why This Type of Illusion Is So Hard to Overcome by Willpower Alone",
+            body_zh="""
+            空间定向错觉的难点不在于“理论上知道会发生”，而在于当它真的发生时，身体感觉会非常强，甚至比仪表信息更像“真相”。人在这种状态下不是故意忽视仪表，而是主观体验本身在和系统信息竞争。
+
+            所以这页不断强调程序、仪表扫描和训练，是因为这些外部结构必须足够强，才能压过错觉带来的主观确定感。
+            """,
+            body_en="""
+            The difficulty of spatial disorientation is not merely knowing in theory that it can happen. When it actually happens, the bodily sensation can feel so compelling that it appears more truthful than the instrument indications. The person is not deliberately ignoring the instruments; subjective experience is actively competing with system information.
+
+            That is why the page keeps returning to procedure, instrument scan, and training. Those external structures must be strong enough to override the false certainty created by the illusion.
+            """,
+        ),
+        section(
+            "design_link",
+            "## 为什么这页最终还是会回到显示和程序设计",
+            "## Why This Page Ultimately Returns to Display and Procedure Design",
+            body_zh="""
+            只要人的感官在某些情境下会失真，系统就必须准备替代路径。这条替代路径通常不是一句“相信仪表”，而是更具体的支持：
+
+            - 仪表状态是否足够容易扫读
+            - 关键阶段是否有固定 cross-check 程序
+            - 培训是否让人提前预期错觉类型
+            - 团队成员是否能在异常时帮助彼此回到仪表
+
+            这也说明空间定向错觉并不是孤立专题，而是把 perception、display、procedure 和 CRM 连在一起的综合页。
+            """,
+            body_en="""
+            Once it is accepted that human sensation can distort under certain conditions, the system has to provide an alternate path. That alternate path is more concrete than the phrase “trust the instruments.” It includes support such as:
+
+            - whether the instrument state is easy enough to scan quickly
+            - whether fixed cross-check procedure exists for critical phases
+            - whether training has already normalized the expected illusion types
+            - whether team members can help one another return to instrument-based control
+
+            That is why spatial disorientation is not an isolated topic. It connects perception, display, procedure, and CRM into one integrated page.
+            """,
+        ),
+    ]
+)
+HUMAN_PERFORMANCE_CONTENT["spatial_disorientation"]["examples"].append(
+    callout(
+        "example",
+        "illusion_strength",
+        "案例：为什么“我明明感觉飞机在转”本身就可能是风险信号",
+        "Example: Why “I Clearly Feel the Aircraft Turning” Can Itself Be a Risk Signal",
+        body_zh="在空间定向错觉里，最危险的不是完全没感觉，而是感觉异常确定。当操作者非常确信自己的身体感受时，反而更可能去怀疑仪表。这正是为什么课程反复强调：越强烈的主观确定感，有时越需要更强的仪表纪律和程序约束。",
+        body_en="In spatial disorientation, the dangerous state is not feeling nothing. It is feeling something with great certainty. When the operator becomes highly convinced by bodily sensation, the instruments are more likely to be doubted. That is why the course repeatedly emphasizes that the stronger the subjective certainty, the stronger the need for instrument discipline and procedural support.",
+    )
+)
+HUMAN_PERFORMANCE_CONTENT["spatial_disorientation"]["sections"].append(
+    section(
+        "transition",
+        "## 为什么从主观感觉重新切回仪表读取这么难",
+        "## Why the Transition Back from Bodily Sensation to Instrument Reading Is So Hard",
+        body_zh="""
+        空间定向错觉里最难的瞬间，往往不是第一次出现异常感觉，而是已经产生强烈感觉之后，要把控制重新交回仪表。这个切换之所以难，是因为人需要在几乎不相信自己身体的前提下继续行动。
+
+        也因此，训练和程序设计的重点不能只停在“知道有错觉”，还要让操作者提前练习这类切换动作。真正关键的是在高压和高确定感下，仍然能回到外部参考系。
+        """,
+        body_en="""
+        In spatial disorientation, the hardest moment is often not the first appearance of an abnormal sensation, but the later moment when control has to be handed back to the instruments despite the sensation feeling convincing. The transition is hard because the person has to continue acting while no longer trusting the body as the main reference.
+
+        That is why training and procedure cannot stop at merely teaching that illusions exist. Operators need practice in making this transition itself. The real challenge is returning to the external reference system under both pressure and false certainty.
+        """,
+    )
+)

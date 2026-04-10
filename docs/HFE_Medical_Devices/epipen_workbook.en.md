@@ -3,64 +3,134 @@
 The EpiPen workbook page is not a new theory page. It compresses task analysis, critical tasks, and URRA writing into one concrete working document.
 
 !!! note "Core Question"
-    How does one workbook translate abstract concepts into risk entries that a team can actually write, review, and validate?
+    How does one workbook translate abstract concepts into risk entries that a team can actually write,
+    review,
+    and validate?
 
 ## The Most Important Case Conclusions
 
 - The value of the example is that it shows what a strong URRA row actually looks like.
-- The workbook compresses task steps, critical tasks, use errors, harms, and mitigation into collaborative table language.
-- When reading it, distinguish descriptive fields from evaluative risk-judgment fields.
-- It is not an answer key template; it is a demonstration of writing order and discipline.
+- The workbook compresses task steps,
+  critical tasks,
+  use errors,
+  harms,
+  and mitigation into collaborative table language.
+- When reading it,
+  distinguish descriptive fields from evaluative risk-judgment fields.
+- It is not an answer key template;
+  it is a demonstration of writing order and discipline.
 
 ## Start with the Case Verdict
 
 !!! tip "Keep This Case Judgment in Mind"
-    Keep this case-level judgment in mind: the example matters not because its format can be copied blindly, but because it teaches the writing order of task first, error second, harm third, and control last.
+    Keep this case-level judgment in mind:
+    the example matters not because its format can be copied blindly,
+    but because it teaches the writing order of task first,
+    error second,
+    harm third,
+    and control last.
 
 ## Background and Stakes
 
-For a product such as the EpiPen, risk documentation matters because use often occurs in urgent settings, the user may not be a professional, time pressure is high, and the consequence lands directly on the patient. The workbook is therefore not paperwork rehearsal; it is an attempt to write the risk judgment realistically in advance.
+For a product such as the EpiPen,
+risk documentation matters because use often occurs in urgent settings,
+the user may not be a professional,
+time pressure is high,
+and the consequence lands directly on the patient.
+The workbook is therefore not paperwork rehearsal;
+it is an attempt to write the risk judgment realistically in advance.
 
 ## What the Workbook Actually Connects
 
-The workbook connects use step, potential use error, hazard, harm, severity, critical task, and mitigation into a single row. Its value is that the team can see, in one place, how one step may fail, where the consequence path goes, and how the design intends to stop it.
+The workbook connects use step,
+potential use error,
+hazard,
+harm,
+severity,
+critical task,
+and mitigation into a single row.
+Its value is that the team can see,
+in one place,
+how one step may fail,
+where the consequence path goes,
+and how the design intends to stop it.
 
 !!! example "Example: Why One Strong Row Matters More than a Fully Filled Sheet"
-    If one row clearly links the task step, the concrete error, the patient harm, and the mitigation, the team can design a meaningful validation scenario from it. If the entire sheet is filled with vague phrases such as “improper use,” “possible harm,” and “training required,” the workbook looks complete but adds little analytic value.
+    If one row clearly links the task step,
+    the concrete error,
+    the patient harm,
+    and the mitigation,
+    the team can design a meaningful validation scenario from it.
+    If the entire sheet is filled with vague phrases such as “improper use,” “possible harm,” and “training required,” the workbook looks complete but adds little analytic value.
 
 ## How to Read the Example Effectively
 
-When reading a workbook like this, use a fixed sequence:
+When reading a workbook like this,
+use a fixed sequence:
 
 1. check whether the task steps are decomposed finely enough
 2. identify which steps are marked as critical tasks
 3. inspect whether error, hazard, and harm truly form a chain
-4. judge whether mitigation comes back to design, instructions, workflow, or validation
+4.
+judge whether mitigation comes back to design,
+instructions,
+workflow,
+or validation
 
 !!! note "One-Sentence Conclusion"
-    This page is not about memorizing workbook column names. It is about learning how to translate abstract HFE concepts into executable documentation.
+    This page is not about memorizing workbook column names.
+    It is about learning how to translate abstract HFE concepts into executable documentation.
 
 !!! warning "The Most Common Failure Mode"
-    The most common misunderstanding is to treat the example as a template to copy line by line. What matters is the sequence and discipline behind it, not the surface phrasing.
+    The most common misunderstanding is to treat the example as a template to copy line by line.
+    What matters is the sequence and discipline behind it,
+    not the surface phrasing.
 
-## Which Layers to Review Every Time in a Case
+## The Workbook Is Really Training Translation
 
-When reviewing a case, work backward through four layers:
+The core value of the workbook is not recognizing column headers.
+It is practicing translation from abstract concepts into working documentation.
+Many students only realize at this point that knowing the definitions of `critical task`,
+`hazardous situation`,
+and `mitigation` is not the same as writing them into one clear row that a team can actually use.
 
-1. how the event chain unfolded
-2. where information, interface, and procedure worsened the situation
-3. how team, organization, and operating conditions amplified the risk
-4. whether improvement belongs in design, procedure, training, resources, or governance
+The workbook forces that translation step to happen.
 
-That keeps the case from collapsing into a story and brings it back to the systems analysis the course is actually teaching.
+## How a Team Should Review a Workbook
+
+A strong workbook is not a private note.
+It should support multi-role review.
+If design,
+human factors,
+regulatory,
+and clinical reviewers look at the same row,
+they should at least be able to align on four things:
+
+- what the step actually is
+- whether the error path is specific enough
+- whether patient harm has been written clearly enough
+- whether the mitigation is strong enough
+
+If the row cannot support shared understanding on those points,
+it is usually still weak.
+
+!!! example "Example: Why the Most Dangerous Workbook Row Is the One That Looks Complete but Says Very Little"
+    Some rows look complete because every column contains text,
+    but the error is written as “improper use,” the harm as “injury,” and the mitigation as “training.” Such rows are complete on the surface but analytically hollow.
+    A strong row should let the team see immediately what must be redesigned and what must be tested next.
 
 ## What To Take Away from This Case
 
 !!! tip "What To Carry Forward"
     - The workbook page is about seeing what a strong URRA row actually looks like.
-    - It compresses task flow, critical task, harm, and mitigation into collaborative document language.
-    - When reading the example, separate descriptive fields from evaluative fields.
-    - What matters most is the writing order, not blind format copying.
+    - It compresses task flow,
+      critical task,
+      harm,
+      and mitigation into collaborative document language.
+    - When reading the example,
+      separate descriptive fields from evaluative fields.
+    - What matters most is the writing order,
+      not blind format copying.
 
 
 ## Source Scope and Related Topics

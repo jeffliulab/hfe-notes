@@ -3,61 +3,123 @@
 This page is about classifying what “used incorrectly” really means. Device failure, unintended use error, abnormal use, and deliberate deviation cannot all be thrown into one bucket.
 
 !!! note "Core Question"
-    When medical-device use goes wrong, how do we distinguish design-induced use error from device failure, abnormal use, and deliberate rule deviation?
+    When medical-device use goes wrong,
+    how do we distinguish design-induced use error from device failure,
+    abnormal use,
+    and deliberate rule deviation?
 
 ## Key Takeaways
 
 - Not every bad use episode is a use error.
-- The classification depends on foreseeability, design contribution, and whether recovery opportunities existed.
+- The classification depends on foreseeability,
+  design contribution,
+  and whether recovery opportunities existed.
 - Good use-error analysis pushes the discussion back to specific tasks and contexts.
-- If the problem type is misclassified, the later controls will drift as well.
+- If the problem type is misclassified,
+  the later controls will drift as well.
 
 ## Remember This First
 
 !!! tip "Keep This Sentence in Mind"
-    The shortest way to remember this page is: before saying “the user used it incorrectly,” ask whether design, environment, and context already made correct use unusually hard.
+    The shortest way to remember this page is:
+    before saying “the user used it incorrectly,” ask whether design,
+    environment,
+    and context already made correct use unusually hard.
 
 ## What Use Error Means in Medical Devices
 
-This page is not broadening blame; it is reducing misclassification. It asks the team to place the visible behavior back into the foreseeable use context and judge whether it reflects unintended deviation, device failure, abnormal use, or deliberate rule departure.
+This page is not broadening blame;
+it is reducing misclassification.
+It asks the team to place the visible behavior back into the foreseeable use context and judge whether it reflects unintended deviation,
+device failure,
+abnormal use,
+or deliberate rule departure.
 
 ## Why the Distinction Directly Changes the Control Strategy
 
-Once the classification is wrong, the response drifts with it:
+Once the classification is wrong,
+the response drifts with it:
 
 - if an interface-induced error is treated as a training problem, the risk returns
 - if abnormal use is treated as ordinary use error, controls lose focus
 - if device failure is pushed onto the user, the design problem is hidden
 
 !!! warning "The Most Common Failure Mode"
-    The most common mistake is compressing every bad outcome into the phrase “user error.” Once that happens, interface, labeling, environment, and organizational conditions disappear from view.
+    The most common mistake is compressing every bad outcome into the phrase “user error.” Once that happens,
+    interface,
+    labeling,
+    environment,
+    and organizational conditions disappear from view.
 
 ## The Analytical Habit This Page Tries to Build
 
-When a visible error appears, do not label it immediately. Return first to the specific use step, scenario, display context, and environment, and then ask whether design made mis-selection, omission, misjudgment, or sequence error easier.
+When a visible error appears,
+do not label it immediately.
+Return first to the specific use step,
+scenario,
+display context,
+and environment,
+and then ask whether design made mis-selection,
+omission,
+misjudgment,
+or sequence error easier.
 
 !!! note "One-Sentence Conclusion"
     Medical-device use-error analysis is fundamentally about judging whether the system pushed the user into an error-prone position.
 
 !!! example "Example: It Looks Like “Wrong Use,” but the Interface Is Doing the Pushing"
-    If two dosing modes are separated only by small textual labels, and the user selects the wrong mode in an urgent setting, the surface description is “the user selected the wrong mode.” The more important conclusion may be that the system made a high-consequence choice too difficult to discriminate.
+    If two dosing modes are separated only by small textual labels,
+    and the user selects the wrong mode in an urgent setting,
+    the surface description is “the user selected the wrong mode.” The more important conclusion may be that the system made a high-consequence choice too difficult to discriminate.
 
-## How to Actually Use This Concept to Judge a Real Problem
+## Why the Hard Part of This Page Is Drawing the Boundaries Correctly
 
-To use a concept page well, do not stop at the definition. A stronger reading follows three steps:
+The easiest way to write medical-device use-error analysis badly is to place every bad outcome into one bucket called “user error.” The real difficulty is drawing the boundary between:
 
-1. identify the task and context
-2. ask how the mechanism, limit, or risk described on the page appears in that context
-3. translate the judgment back into design, workflow, training, or organizational change
+- device malfunction
+- design-induced error inside foreseeable use
+- clearly abnormal use beyond the intended context
+- deliberate rule departure
 
-That is how the concept moves from “knowing the term” to “analyzing the problem.”
+Once those boundaries are blurred,
+later controls,
+accountability judgments,
+and validation priorities also become blurred.
+
+## Why Classification Directly Changes What Gets Redesigned
+
+The most practical value of this page is that different problem types lead to different control strategies.
+
+- device failure pushes the response toward engineering reliability
+- design-induced use error pushes toward interface, labeling, workflow, and recoverability
+- abnormal use shifts attention toward boundary communication and foreseeable misuse management
+- violation forces the analysis to examine incentives, culture, and procedure realism
+
+Classification therefore is not academic purity.
+It determines what gets changed next.
+
+!!! example "Example: Why the Same “Wrong Dose” Outcome Can Lead to Completely Different Fixes"
+    If the wrong dose comes from internal device failure,
+    the redesign focus belongs to hardware or software reliability.
+    If it comes from reading 1.0 as 10,
+    the focus belongs to display,
+    contrast,
+    marking,
+    and confirmation workflow.
+    If it comes from deliberately bypassing a check,
+    the procedure may also be unrealistic.
+    The outcome looks the same,
+    but the control path is completely different.
 
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"
     - Not every poor use episode is a use error.
-    - Classification depends on foreseeability, design contribution, and recovery opportunity.
-    - If the problem definition is wrong, the control strategy will also be wrong.
+    - Classification depends on foreseeability,
+      design contribution,
+      and recovery opportunity.
+    - If the problem definition is wrong,
+      the control strategy will also be wrong.
     - Analysis must return to the concrete task and context.
 
 

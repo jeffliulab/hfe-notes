@@ -7,46 +7,101 @@ The most important conclusion of this page is that sustained monitoring is not a
 
 ## Key Takeaways
 
-- Attention is a limited resource and is continuously reallocated by priority, fatigue, time, and alert strategy.
+- Attention is a limited resource and is continuously reallocated by priority,
+  fatigue,
+  time,
+  and alert strategy.
 - Monitoring tasks are especially vulnerable to vigilance decrement because stimuli are rare and feedback is sparse.
-- The stronger the automation, the easier it becomes for humans to drift into passive supervision and complacency.
+- The stronger the automation,
+  the easier it becomes for humans to drift into passive supervision and complacency.
 - Monitoring failure is often a task-design problem rather than a pure attitude problem.
 
 ## Remember This First
 
 !!! tip "Keep This Sentence in Mind"
-    Keep one sentence in mind: if a system designs the human role as long periods of watching followed by sudden intervention, it is already working against the structure of human attention.
+    Keep one sentence in mind:
+    if a system designs the human role as long periods of watching followed by sudden intervention,
+    it is already working against the structure of human attention.
 
 ## Why Attention Is Limited by Default
 
-Attention is not a perfectly stable beam that can be extended indefinitely. It is a resource that gets redistributed by priority, workload, time, and fatigue. The point of the page is not memorizing cognitive terminology; it is recognizing that system design must treat this limitation as a starting assumption.
+Attention is not a perfectly stable beam that can be extended indefinitely.
+It is a resource that gets redistributed by priority,
+workload,
+time,
+and fatigue.
+The point of the page is not memorizing cognitive terminology;
+it is recognizing that system design must treat this limitation as a starting assumption.
 
 ## Why Monitoring Tasks Decay So Easily
 
-Monitoring tasks look easy, but they are difficult because stimuli are sparse, critical events are infrequent, and feedback is weak. The brain struggles to maintain the same alertness level for long periods, which means the operator may be at the lowest engagement point when the real anomaly appears.
+Monitoring tasks look easy,
+but they are difficult because stimuli are sparse,
+critical events are infrequent,
+and feedback is weak.
+The brain struggles to maintain the same alertness level for long periods,
+which means the operator may be at the lowest engagement point when the real anomaly appears.
 
 !!! example "Example: Why Low-Event-Rate Monitoring Fails So Easily"
-    When the system stays stable for a long time and the operator mainly waits for trouble to appear, attention naturally declines. When the truly critical anomaly finally arrives, its signal may be recognized late. That is one of the most typical system expressions of vigilance decrement.
+    When the system stays stable for a long time and the operator mainly waits for trouble to appear,
+    attention naturally declines.
+    When the truly critical anomaly finally arrives,
+    its signal may be recognized late.
+    That is one of the most typical system expressions of vigilance decrement.
 
 ## What This Implies for System Design
 
-If the task itself is vulnerable to monitoring decay, design cannot leave the burden at “the person should pay more attention.” A stronger response is to make state changes more visible, critical events more distinguishable, cross-checking easier to trigger, and recovery paths clearer.
+If the task itself is vulnerable to monitoring decay,
+design cannot leave the burden at “the person should pay more attention.” A stronger response is to make state changes more visible,
+critical events more distinguishable,
+cross-checking easier to trigger,
+and recovery paths clearer.
 
 !!! note "One-Sentence Conclusion"
     Monitoring failure is often a failure of task and signal design rather than a simple moral judgment that the operator was not serious enough.
 
 !!! warning "The Most Common Misunderstanding"
-    “Ask the operator to stay vigilant” is not a design solution. If the system does not actively support state awareness, telling people to stay focused rarely works over time.
+    “Ask the operator to stay vigilant” is not a design solution.
+    If the system does not actively support state awareness,
+    telling people to stay focused rarely works over time.
 
-## How to Actually Use This Concept to Judge a Real Problem
+## Why Vigilance Decrement Is a Task Pattern Rather Than Mere Laziness
 
-To use a concept page well, do not stop at the definition. A stronger reading follows three steps:
+The most important thing about vigilance decrement is that it does not require a poor attitude to appear.
+Once several task conditions exist,
+performance naturally becomes fragile:
 
-1. identify the task and context
-2. ask how the mechanism, limit, or risk described on the page appears in that context
-3. translate the judgment back into design, workflow, training, or organizational change
+- critical events are rare
+- immediate feedback is weak most of the time
+- the operator mainly waits for abnormality to appear
 
-That is how the concept moves from “knowing the term” to “analyzing the problem.”
+That means monitoring decay is not a moral problem;
+it is a task pattern.
+If design pretends this pattern does not exist,
+it hands an already fragile role back to the operator without support.
+
+## What Effective Monitoring Support Usually Looks Like
+
+If the system already knows that monitoring tasks decay,
+mitigation cannot stop at “pay closer attention.” More mature support usually includes:
+
+- making state changes easier to detect
+- using feedback that tells the operator whether the system is drifting
+- making cross-monitoring easier to trigger inside the team
+- reducing irrelevant burden during critical phases so attention is not consumed by noise
+
+That is also why the monitoring page keeps reconnecting to the display,
+alert,
+and automation pages.
+
+!!! example "Example: Why “Watch More Carefully” Is Not a Complete Mitigation"
+    If a monitoring task is inherently low-event-rate,
+    low-feedback,
+    and long-duration,
+    telling the operator to “stay more alert” can only help briefly.
+    Stronger improvement usually changes the signals,
+    feedback,
+    and coordination structure so the problem becomes easier to detect at the right time.
 
 ## Chapter Summary
 

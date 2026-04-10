@@ -3,51 +3,113 @@
 The F16 prompts page is essentially a scaffold for case analysis. It does not give the answer directly; it gives a questioning path that prevents the analyst from missing key dimensions.
 
 !!! note "Core Question"
-    When facing a complex case, how can prompts organize observation, explanation, and recommendation into a structure rather than a random list of thoughts?
+    When facing a complex case,
+    how can prompts organize observation,
+    explanation,
+    and recommendation into a structure rather than a random list of thoughts?
 
 ## The Most Important Case Conclusions
 
 - The value of prompts lies in structured questioning rather than in the sheer number of questions.
-- They help analysts examine information, interface, procedure, team, and organizational factors together.
+- They help analysts examine information,
+  interface,
+  procedure,
+  team,
+  and organizational factors together.
 - The essence of prompting is moving case analysis away from single-cause explanation toward layered explanation.
 - This page teaches an analysis framework rather than one case-specific answer.
 
 ## Start with the Case Verdict
 
 !!! tip "Keep This Case Judgment in Mind"
-    Keep this case judgment in mind: a good prompt does not simply make you ask more questions; it makes you ask questions that are less likely to miss important layers.
+    Keep this case judgment in mind:
+    a good prompt does not simply make you ask more questions;
+    it makes you ask questions that are less likely to miss important layers.
 
 ## Background and Stakes
 
-Complex cases are vulnerable to structureless analysis, where everyone contributes fragments of observation but no coherent causal logic emerges. Prompts help the team share one observation frame and one unfolding order during discussion.
+Complex cases are vulnerable to structureless analysis,
+where everyone contributes fragments of observation but no coherent causal logic emerges.
+Prompts help the team share one observation frame and one unfolding order during discussion.
 
 ## What These Prompts Actually Help You Do
 
-The prompts decompose the case into stable dimensions such as background, task, information, interface, procedure, team, organization, and recommendations. That prevents the analysis from circling only around the most visible explanation.
+The prompts decompose the case into stable dimensions such as background,
+task,
+information,
+interface,
+procedure,
+team,
+organization,
+and recommendations.
+That prevents the analysis from circling only around the most visible explanation.
 
 !!! warning "The Most Common Misunderstanding"
-    Do not treat prompts as a “more questions is better” list. A large number of unstructured questions only diffuses discussion; the useful part is the sequence and dimensional coverage.
+    Do not treat prompts as a “more questions is better” list.
+    A large number of unstructured questions only diffuses discussion;
+    the useful part is the sequence and dimensional coverage.
 
 ## Why This Structure Improves Review Quality
 
-Once the team aligns on the questioning path, the discussion can move from “who was right or wrong” toward “which evidence supports which causal chain and which intervention is most targeted.” That is the real value of the prompts.
+Once the team aligns on the questioning path,
+the discussion can move from “who was right or wrong” toward “which evidence supports which causal chain and which intervention is most targeted.” That is the real value of the prompts.
 
 !!! note "One-Sentence Conclusion"
-    The F16 prompts do not teach one event answer; they teach how to move course concepts reliably into complex case analysis.
+    The F16 prompts do not teach one event answer;
+    they teach how to move course concepts reliably into complex case analysis.
 
 !!! example "Example: Why Prompted Analysis Looks More Like Engineering Review"
-    Without prompts, a team often stops at “someone made the wrong judgment.” With prompts, the discussion is forced to fill in information, interface, procedure, team, and organizational layers, so the case becomes an actionable engineering review rather than only a story.
+    Without prompts,
+    a team often stops at “someone made the wrong judgment.” With prompts,
+    the discussion is forced to fill in information,
+    interface,
+    procedure,
+    team,
+    and organizational layers,
+    so the case becomes an actionable engineering review rather than only a story.
 
-## Which Layers to Review Every Time in a Case
+## Prompts Provide an Order of Analysis, Not Just a List of Questions
 
-When reviewing a case, work backward through four layers:
+The most underestimated part of the prompts is that they look like many separate questions,
+but they really provide an order.
+Start with the event and task,
+then move to information and interface,
+then to team and organization,
+and only afterward to recommendations.
+That order prevents the discussion from jumping too early to conclusion or blame.
 
-1. how the event chain unfolded
-2. where information, interface, and procedure worsened the situation
-3. how team, organization, and operating conditions amplified the risk
-4. whether improvement belongs in design, procedure, training, resources, or governance
+The value of prompts therefore is not their count,
+but whether they stabilize the rhythm of case analysis.
 
-That keeps the case from collapsing into a story and brings it back to the systems analysis the course is actually teaching.
+## What a Prompted Analysis Should Produce
+
+When prompts are used well,
+the result should not be merely “we discussed many questions.” The analysis should produce something clearer:
+
+- which evidence supports which causal chain
+- which layers are the highest-priority targets for change
+- which conclusions remain tentative and still need more evidence
+
+That is why prompts fit both classroom discussion and case review.
+They compress scattered observation back into structured output.
+
+!!! example "Example: Why Prompts Pull a Discussion Back from Fragmentation"
+    Without prompts,
+    a team may jump from interface to procedure to training and end with no clear relationship among those observations.
+    With prompts,
+    each observation is forced back into one analysis order,
+    and the case becomes an actionable review instead of a cloud of disconnected opinions.
+
+## Why the Prompts Keep Reminding You to Separate Observation from Inference
+
+One hidden function of the prompts is preventing the discussion from quietly treating inference as fact.
+Once a team forms a strong intuition early,
+later questions can be used to support that intuition rather than test it.
+
+The more mature use of prompts therefore is not producing a fast answer,
+but repeatedly separating what is directly evidenced from what is only the best current interpretation.
+Once that line is protected,
+later responsibility judgments and recommendations become much more stable.
 
 ## What To Take Away from This Case
 

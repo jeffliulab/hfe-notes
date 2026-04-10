@@ -3,27 +3,50 @@
 This page places URRA inside the medical-device regulatory context, where use-related risk is tied more explicitly to patient harm, critical tasks, and traceable controls.
 
 !!! note "Core Question"
-    Inside medical devices, what additional judgment demands does URRA impose beyond a generic task-risk analysis?
+    Inside medical devices,
+    what additional judgment demands does URRA impose beyond a generic task-risk analysis?
 
 ## Key Takeaways
 
-- Medical-device URRA places stronger emphasis on foreseeable use scenarios, critical tasks, and patient-harm pathways.
-- Controls cannot stop at training; interface, labeling, IFU, and physical design changes take priority.
-- The regulatory context requires the risk chain to be traceable, verifiable, and reviewable.
+- Medical-device URRA places stronger emphasis on foreseeable use scenarios,
+  critical tasks,
+  and patient-harm pathways.
+- Controls cannot stop at training;
+  interface,
+  labeling,
+  IFU,
+  and physical design changes take priority.
+- The regulatory context requires the risk chain to be traceable,
+  verifiable,
+  and reviewable.
 - This page bridges ISO 14971 and concrete use-error work.
 
 ## What This Method Is For
 
 !!! tip "Start with the Purpose"
-    Remember the purpose of medical-device URRA this way: it is not a generic risk table; it must be written clearly enough to show how patients may be harmed and how design should respond.
+    Remember the purpose of medical-device URRA this way:
+    it is not a generic risk table;
+    it must be written clearly enough to show how patients may be harmed and how design should respond.
 
 ## What Problem This Method Solves
 
-Medical-device URRA solves the problem of turning use risk into evidence that is acceptable in a regulated setting. It requires the team to write use scenario, critical task, use error, hazardous situation, harm, and control as one complete chain.
+Medical-device URRA solves the problem of turning use risk into evidence that is acceptable in a regulated setting.
+It requires the team to write use scenario,
+critical task,
+use error,
+hazardous situation,
+harm,
+and control as one complete chain.
 
 ## What the Inputs and Outputs Are
 
-Typical inputs include task analysis, user groups, use environment, device design, labeling and IFU, known issues, and harm assessment.
+Typical inputs include task analysis,
+user groups,
+use environment,
+device design,
+labeling and IFU,
+known issues,
+and harm assessment.
 
 The output should make it clear:
 
@@ -34,37 +57,85 @@ The output should make it clear:
 
 ## How the Method Proceeds
 
-The logic is similar to generic URRA but held to a stricter standard: begin with the use scenario, identify the critical task, define the concrete use error, push the chain into hazardous situation, harm, and control, and then feed the row back into validation planning.
+The logic is similar to generic URRA but held to a stricter standard:
+begin with the use scenario,
+identify the critical task,
+define the concrete use error,
+push the chain into hazardous situation,
+harm,
+and control,
+and then feed the row back into validation planning.
 
 !!! note "One-Sentence Conclusion"
-    The key move in medical-device URRA is not simply stating that risk exists, but specifying how the patient may be harmed and how the system intends to intercept that path.
+    The key move in medical-device URRA is not simply stating that risk exists,
+    but specifying how the patient may be harmed and how the system intends to intercept that path.
 
 !!! warning "The Most Common Failure Mode"
-    The weakest recurring control is to write everything as “better training.” If interface, feedback, labeling, or physical form can be redesigned, the primary risk should not be left to training and attention.
+    The weakest recurring control is to write everything as “better training.” If interface,
+    feedback,
+    labeling,
+    or physical form can be redesigned,
+    the primary risk should not be left to training and attention.
 
 !!! example "Worked Example: Why a Critical Task Must Be Marked Explicitly"
-    Suppose the syringe step is “set dose.” If failure there can lead directly to patient harm, that step must be marked as a critical task. Only then will the design review and validation plan allocate the higher level of control and testing attention it deserves.
+    Suppose the syringe step is “set dose.” If failure there can lead directly to patient harm,
+    that step must be marked as a critical task.
+    Only then will the design review and validation plan allocate the higher level of control and testing attention it deserves.
 
 ## How It Connects to the Neighboring Pages
 
-This page inherits the standardized language of ISO 14971 and feeds forward into use-error analysis and the EpiPen workbook. It is the hub page inside the medical-device section.
+This page inherits the standardized language of ISO 14971 and feeds forward into use-error analysis and the EpiPen workbook.
+It is the hub page inside the medical-device section.
 
-## How to Tell Whether This Method Has Actually Been Applied Well
+## Why Medical-Device URRA Puts Special Weight on Critical Tasks
 
-You can judge whether a method has actually been applied by checking four things:
+In medical devices,
+a critical task is not just an “important step” in everyday language.
+It is a threshold inside risk management.
+If performing the step incorrectly could directly affect patient safety or treatment effectiveness,
+the step must be elevated analytically.
 
-- are the inputs concrete rather than generic
-- do the rows or steps return to specific tasks and contexts
-- does the output connect error, consequence, and control clearly
-- can the result directly support redesign, validation, review, or risk communication
+That changes at least three later decisions:
 
-If several of these are missing, the method usually remains a surface process rather than an executable analysis.
+- whether design needs stronger error-prevention or confirmation logic
+- whether IFU, labeling, and interface need stronger support around that step
+- whether validation must observe that step as a high-priority use scenario
+
+!!! example "Example: Why “Remove the Cap” and “Confirm Orientation” Can Matter More Than the Injection Itself"
+    In self-injection devices,
+    the highest-risk node is not always the final act of pressing.
+    Earlier actions such as orientation confirmation,
+    end recognition,
+    cap-removal sequence,
+    and device alignment may matter more because once they fail,
+    every later action is pulled off track.
+    That is why medical-device URRA cannot focus only on the most visible use action.
+
+## Why This Page Cares More About Traceability Than Generic URRA
+
+When generic risk analysis is weak,
+the consequences are already serious.
+In medical devices,
+weak analysis also distorts design decisions,
+validation planning,
+and regulatory communication.
+That is why this page cares so much about traceability.
+
+The team has to be able to trace one chain backward:
+
+- why the step was judged critical
+- which task and scenario the use error came from
+- whether the control really answers that risk path
+- where the control was later validated
 
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"
     - Medical-device URRA places stronger emphasis on critical tasks and patient harm.
-    - Its inputs include task flow, user context, design, and labeling information.
+    - Its inputs include task flow,
+      user context,
+      design,
+      and labeling information.
     - Its outputs must support both controls and validation planning.
     - Training cannot become the default primary control.
 

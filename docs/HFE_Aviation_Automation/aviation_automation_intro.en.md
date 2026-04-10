@@ -3,61 +3,126 @@
 The introduction to aviation and automation starts by correcting a common intuition: automation does not remove the human; it changes the human role toward monitoring, mode understanding, takeover, and exception management.
 
 !!! note "Core Question"
-    When automation takes over more functions, what work remains for the human, and do those residual tasks become harder rather than easier?
+    When automation takes over more functions,
+    what work remains for the human,
+    and do those residual tasks become harder rather than easier?
 
 ## Key Takeaways
 
-- Automation can reduce repetitive burden while introducing monitoring, mode-understanding, and takeover risk.
-- The key question is not how much the system does, but whether the human’s remaining work is still realistically doable.
-- Aviation is a classic HFE laboratory for automation because role redistribution, time pressure, and consequence are all vivid here.
-- Automation risk often appears not as direct manual error, but as automation surprise, mode confusion, and handoff failure.
+- Automation can reduce repetitive burden while introducing monitoring,
+  mode-understanding,
+  and takeover risk.
+- The key question is not how much the system does,
+  but whether the human’s remaining work is still realistically doable.
+- Aviation is a classic HFE laboratory for automation because role redistribution,
+  time pressure,
+  and consequence are all vivid here.
+- Automation risk often appears not as direct manual error,
+  but as automation surprise,
+  mode confusion,
+  and handoff failure.
 
 ## Remember This First
 
 !!! tip "Keep This Sentence in Mind"
-    Keep one sentence in mind: automation does not delete the human from the system; it changes human failure modes into forms that are often less visible and harder to recover from.
+    Keep one sentence in mind:
+    automation does not delete the human from the system;
+    it changes human failure modes into forms that are often less visible and harder to recover from.
 
 ## Why Automation Can Improve and Increase Risk at the Same Time
 
-The benefits of automation are usually obvious: more consistency, speed, and relief from repetitive load. The cost emerges later, because it rewrites the human role into low-engagement work that suddenly becomes high-demand when intervention is needed.
+The benefits of automation are usually obvious:
+more consistency,
+speed,
+and relief from repetitive load.
+The cost emerges later,
+because it rewrites the human role into low-engagement work that suddenly becomes high-demand when intervention is needed.
 
 ## Which Three Questions Should Guide the Reading
 
-When looking at an automated system, ask three fixed questions:
+When looking at an automated system,
+ask three fixed questions:
 
 1. what has automation taken over?
 2. what has the human retained?
 3. are the remaining human tasks still doable under real conditions?
 
 !!! warning "The Most Common Misunderstanding"
-    “More automation means more safety” is not a reliable conclusion. What matters is whether the remaining human tasks are visible, understandable, and take-overable.
+    “More automation means more safety” is not a reliable conclusion.
+    What matters is whether the remaining human tasks are visible,
+    understandable,
+    and take-overable.
 
 ## Why Aviation Is the Classic Setting for This Problem
 
-In aviation, there are many automation states, fast mode transitions, large information loads, and short takeover windows. That makes the “last remaining human role” especially difficult. Later pages on CRM, displays, situation awareness, and automated vehicles all continue this same line from different angles.
+In aviation,
+there are many automation states,
+fast mode transitions,
+large information loads,
+and short takeover windows.
+That makes the “last remaining human role” especially difficult.
+Later pages on CRM,
+displays,
+situation awareness,
+and automated vehicles all continue this same line from different angles.
 
 !!! note "One-Sentence Conclusion"
-    The real difficulty in automation is not whether the system can perform, but whether the human can reconnect with it effectively at the critical moment.
+    The real difficulty in automation is not whether the system can perform,
+    but whether the human can reconnect with it effectively at the critical moment.
 
 !!! example "Example: Why the Most Dangerous Automation Moment Is Often Takeover, Not Cruise"
-    When an automated system runs stably for a long time, the human drifts toward passive monitoring. If the system then demands immediate takeover, the operator may lack current situation awareness and may not fully understand the active mode or system intent. That window is where many automation accidents become possible.
+    When an automated system runs stably for a long time,
+    the human drifts toward passive monitoring.
+    If the system then demands immediate takeover,
+    the operator may lack current situation awareness and may not fully understand the active mode or system intent.
+    That window is where many automation accidents become possible.
 
-## How to Actually Use This Concept to Judge a Real Problem
+## Why Automation Makes the Remaining Human Tasks Harder
 
-To use a concept page well, do not stop at the definition. A stronger reading follows three steps:
+The most counterintuitive part of automation is that the more the system does,
+the easier the human role does not necessarily become.
+In many cases the human role shifts from continuous engagement to a combination of long low-engagement periods and sudden high-responsibility moments.
 
-1. identify the task and context
-2. ask how the mechanism, limit, or risk described on the page appears in that context
-3. translate the judgment back into design, workflow, training, or organizational change
+That produces at least three consequences:
 
-That is how the concept moves from “knowing the term” to “analyzing the problem.”
+- it becomes harder to maintain strong state awareness during normal operation
+- when a mode change occurs, the understanding burden rises sharply
+- when takeover is required, the action window is often shorter
+
+The real automation problem is therefore not simply whether the system can perform,
+but whether the human can get back into the loop in time.
+
+## The Handoff Questions This Page Wants You to Keep Asking
+
+For any automated system you see later,
+keep four questions in mind:
+
+- when does the system hand control back to the human
+- by that moment, how much situation awareness has the human already lost
+- is the active mode clear enough
+- if the human cannot take over cleanly, does the system still preserve any buffer
+
+If two or more of those questions cannot be answered clearly,
+the automation may simply be moving risk from manual control into handoff failure.
+
+!!! example "Example: Why “It Works Well Most of the Time” Does Not Prove the Automation Is Safe"
+    If an automated system runs smoothly for long periods in nominal conditions,
+    teams are easily lulled into thinking the overall design is strong.
+    But the highest-risk portion often lives not in the stable phase,
+    but at mode anomalies,
+    edge-of-envelope moments,
+    and sudden takeover demands.
+    Normal performance therefore does not automatically prove that abnormal handoff has been designed well.
 
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"
     - Automation rewrites the human role rather than eliminating it.
     - The critical question is whether the remaining human tasks are realistically doable.
-    - Aviation-automation problems continue into CRM, displays, SA, and automated-vehicle pages.
+    - Aviation-automation problems continue into CRM,
+      displays,
+      SA,
+      and automated-vehicle pages.
     - Monitoring and takeover are often more dangerous than normal cruise.
 
 

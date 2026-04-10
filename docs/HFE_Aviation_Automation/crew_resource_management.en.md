@@ -3,23 +3,38 @@
 This CRM page is not simply about better interpersonal harmony. It is about how teams turn communication, authority, monitoring, and cross-checking into real safety barriers.
 
 !!! note "Core Question"
-    Why can technically competent crews still fail because communication, authority structure, and shared situation awareness break down?
+    Why can technically competent crews still fail because communication,
+    authority structure,
+    and shared situation awareness break down?
 
 ## Key Takeaways
 
 - CRM extends safety from individual skill to collective team performance.
-- Authority gradient, assertiveness, briefing, debriefing, workload sharing, and mutual monitoring form one system.
-- Many major accidents do not happen because nobody saw the problem, but because someone saw it and the team failed to absorb the signal.
-- CRM does not begin only in the emergency; it begins in the brief and continues into the debrief.
+- Authority gradient,
+  assertiveness,
+  briefing,
+  debriefing,
+  workload sharing,
+  and mutual monitoring form one system.
+- Many major accidents do not happen because nobody saw the problem,
+  but because someone saw it and the team failed to absorb the signal.
+- CRM does not begin only in the emergency;
+  it begins in the brief and continues into the debrief.
 
 ## Remember This First
 
 !!! tip "Keep This Sentence in Mind"
-    Keep one sentence in mind: CRM exists to convert “someone in the team noticed the problem” into “the team actually changed action because of that signal.”
+    Keep one sentence in mind:
+    CRM exists to convert “someone in the team noticed the problem” into “the team actually changed action because of that signal.”
 
 ## What CRM Actually Solves
 
-If safety depends only on the strongest individual, the team is fragile. CRM matters because it turns communication, challenge, confirmation, and backup into a stable practice that lets a multi-person system compensate for individual limits.
+If safety depends only on the strongest individual,
+the team is fragile.
+CRM matters because it turns communication,
+challenge,
+confirmation,
+and backup into a stable practice that lets a multi-person system compensate for individual limits.
 
 ## The Elements This Page Wants You to Hold Onto
 
@@ -35,26 +50,72 @@ The course keeps returning to a small set of elements:
 
 ## Why Authority Gradient Becomes a Safety Problem
 
-If the authority gradient is too steep, junior members may fail to challenge even when they see the problem. If it is too flat, critical moments may lack real leadership. CRM is not about erasing authority; it is about preserving role structure while still letting risk information move upward effectively.
+If the authority gradient is too steep,
+junior members may fail to challenge even when they see the problem.
+If it is too flat,
+critical moments may lack real leadership.
+CRM is not about erasing authority;
+it is about preserving role structure while still letting risk information move upward effectively.
 
 !!! note "One-Sentence Conclusion"
     Strong CRM is not “everyone talks more.” It is that the right risk information reaches the right person at the right time and is actually used.
 
 !!! warning "The Most Common Misunderstanding"
-    Do not treat CRM as a soft-skills add-on. In high-load team systems, it is itself one of the central safety mechanisms.
+    Do not treat CRM as a soft-skills add-on.
+    In high-load team systems,
+    it is itself one of the central safety mechanisms.
 
 !!! example "Example: Why Tenerife Is a Classic CRM Teaching Case"
-    Tenerife remains a CRM teaching case not because the technical details are unimportant, but because it vividly shows how authority gradient, ambiguous communication, and failed shared situation awareness can combine into catastrophic risk.
+    Tenerife remains a CRM teaching case not because the technical details are unimportant,
+    but because it vividly shows how authority gradient,
+    ambiguous communication,
+    and failed shared situation awareness can combine into catastrophic risk.
 
-## How to Actually Use This Concept to Judge a Real Problem
+## Why Briefs and Debriefs Are Not Formalities
 
-To use a concept page well, do not stop at the definition. A stronger reading follows three steps:
+CRM is often misread as “how to communicate during an emergency,” but the course places it both earlier and later.
+The brief aligns roles,
+expectations,
+abnormality thresholds,
+and challenge authority before the task begins.
+The debrief turns near misses and weak coordination moments into shared learning afterward.
 
-1. identify the task and context
-2. ask how the mechanism, limit, or risk described on the page appears in that context
-3. translate the judgment back into design, workflow, training, or organizational change
+Without those two stages,
+teams are more likely to guess during execution whether their understanding is aligned,
+and risk grows along that ambiguity.
 
-That is how the concept moves from “knowing the term” to “analyzing the problem.”
+## Why Challenge-Response Becomes a Real Safety Mechanism
+
+CRM is not simply asking people to talk more.
+It is asking that speech actually enter team decision making.
+Challenge-response matters because it turns a concern from one person’s opinion into an input that the team must process.
+
+Strong teams are not teams where nobody ever errs.
+They are teams where observed deviation can be voiced,
+confirmed,
+absorbed,
+and turned into changed action.
+
+!!! example "Example: Why “Someone Noticed the Problem” Is Still Not Enough"
+    Many teams fail not because nobody noticed the anomaly,
+    but because the person who noticed it could not get that signal into collective decision making.
+    Authority gradient may be too steep,
+    language too weak,
+    time too short,
+    or the team may implicitly expect not to be heard.
+    CRM exists to break that chain from “noticed” to “not absorbed.”
+
+## Why Authority Gradient Directly Determines Whether CRM Actually Works
+
+Many teams appear to allow people to speak,
+but when the authority gradient is too steep,
+a concern becomes a polite opinion rather than a safety input that must be processed.
+In that condition CRM appears to exist while its most important challenge function remains weak.
+
+CRM evaluation therefore cannot stop at whether the team exchanged words.
+It also has to ask whether a lower-status concern actually causes the team to reassess the picture,
+redirect attention,
+or revise the plan.
 
 ## Chapter Summary
 
@@ -62,7 +123,8 @@ That is how the concept moves from “knowing the term” to “analyzing the pr
     - CRM extends safety from individual performance to team performance.
     - Its key function is turning risk signals into coordinated team action.
     - Authority gradient is a structural team-safety variable.
-    - CRM starts in the brief, not only in the emergency.
+    - CRM starts in the brief,
+      not only in the emergency.
 
 
 ## Source Scope and Related Topics

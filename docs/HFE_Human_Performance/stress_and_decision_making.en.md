@@ -3,50 +3,119 @@
 This page is not simply about people becoming worse under pressure. It examines how stress narrows attention and strategy space, making suboptimal judgment more likely.
 
 !!! note "Core Question"
-    Why do high pressure, time pressure, and distraction make omission, bias, premature closure, or delayed decision more likely?
+    Why do high pressure,
+    time pressure,
+    and distraction make omission,
+    bias,
+    premature closure,
+    or delayed decision more likely?
 
 ## Key Takeaways
 
 - Stress consumes cognitive resources and narrows search and comparison space.
-- Distraction interrupts plan execution and increases omission, timeline loss, and state forgetting.
+- Distraction interrupts plan execution and increases omission,
+  timeline loss,
+  and state forgetting.
 - Time pressure pushes people toward heuristics and satisficing.
-- The key question is not only whether the person stayed calm, but whether the system reduced or intensified cognitive burden.
+- The key question is not only whether the person stayed calm,
+  but whether the system reduced or intensified cognitive burden.
 
 ## Remember This First
 
 !!! tip "Keep This Sentence in Mind"
-    Keep one sentence in mind: the most dangerous thing about stress is not how it feels, but how it leaves the person with fewer usable cues and fewer workable strategies.
+    Keep one sentence in mind:
+    the most dangerous thing about stress is not how it feels,
+    but how it leaves the person with fewer usable cues and fewer workable strategies.
 
 ## Why Stress, Distraction, and Decision Making Belong Together
 
-Stress consumes cognitive resources, distraction interrupts the execution chain, and time pressure shortens the comparison window. When all three combine, operators are more likely to rely on familiar paths rather than continue searching and correcting.
+Stress consumes cognitive resources,
+distraction interrupts the execution chain,
+and time pressure shortens the comparison window.
+When all three combine,
+operators are more likely to rely on familiar paths rather than continue searching and correcting.
 
 ## Why People Often See the Signal but Still Fail to Use It
 
-In high-pressure settings, the problem is often not that the signal was completely unseen, but that it never entered the active judgment frame. Stress and expectation bias the person toward the current explanation instead of re-organizing the situation around new evidence.
+In high-pressure settings,
+the problem is often not that the signal was completely unseen,
+but that it never entered the active judgment frame.
+Stress and expectation bias the person toward the current explanation instead of re-organizing the situation around new evidence.
 
 !!! warning "The Most Common Misunderstanding"
-    Stress does not always degrade performance immediately. The more dangerous pattern is sustained pressure plus incomplete information, which drives increasing reliance on familiar paths while underweighting new cues.
+    Stress does not always degrade performance immediately.
+    The more dangerous pattern is sustained pressure plus incomplete information,
+    which drives increasing reliance on familiar paths while underweighting new cues.
 
 ## What This Page Demands from System Design
 
-In high-load settings, systems should not add more ambiguous information and extra tasks. They should preserve critical cues, reduce needless switching, clarify priority, and let teamwork genuinely remove burden.
+In high-load settings,
+systems should not add more ambiguous information and extra tasks.
+They should preserve critical cues,
+reduce needless switching,
+clarify priority,
+and let teamwork genuinely remove burden.
 
 !!! note "One-Sentence Conclusion"
-    Poor decisions under stress often reflect not that the person is weak, but that the system failed to preserve adequate judgment conditions.
+    Poor decisions under stress often reflect not that the person is weak,
+    but that the system failed to preserve adequate judgment conditions.
 
 !!! example "Example: Why “Decide Faster” Can Become More Dangerous"
-    Under extreme time pressure, an operator may reach a quick and seemingly decisive answer, but that answer may rest on a very narrow information search. If the system does not preserve critical cues and a second perspective, fast decision making may simply become fast wrong closure.
+    Under extreme time pressure,
+    an operator may reach a quick and seemingly decisive answer,
+    but that answer may rest on a very narrow information search.
+    If the system does not preserve critical cues and a second perspective,
+    fast decision making may simply become fast wrong closure.
 
-## How to Actually Use This Concept to Judge a Real Problem
+## Why Premature Closure Is One of the Biggest Dangers Under Stress
 
-To use a concept page well, do not stop at the definition. A stronger reading follows three steps:
+Under high stress and time pressure,
+people do not always freeze.
+Many instead form a “good enough” explanation very quickly.
+The danger is that the explanation may rest on a narrow search of information and too little comparison with alternatives.
 
-1. identify the task and context
-2. ask how the mechanism, limit, or risk described on the page appears in that context
-3. translate the judgment back into design, workflow, training, or organizational change
+That is the risk of premature closure:
+the person is still thinking,
+but stops thinking further too early.
 
-That is how the concept moves from “knowing the term” to “analyzing the problem.”
+!!! example "Example: Why a Decision That Looks Decisive May Simply Be Fast Wrong Closure"
+    In a pressure-filled situation,
+    a fast and explicit decision may look like strong performance.
+    But if it rests on very few cues,
+    no second perspective,
+    and no cross-check,
+    it may simply be a faster way to lock in the wrong explanation.
+    If the system does not preserve review space,
+    decisiveness itself can amplify risk.
+
+## Why Distraction Is Dangerous Because It Destroys Intermediate State
+
+Distraction is not only a temporary redirection of attention.
+The bigger problem is that it breaks task continuity.
+When people return,
+they often have to reconstruct where they were,
+which steps were completed,
+and which judgments remain unfinished.
+
+If the system does not preserve that intermediate state,
+distraction easily turns into omission,
+repeated action,
+sequence error,
+or wrong confirmation.
+
+## Why Team Buffer Can Reduce Judgment Distortion Under Stress
+
+Errors under stress do not have to be managed only by asking the individual to cope harder.
+Many stronger defenses come from team buffer,
+such as a second perspective,
+verbal restatement,
+a brief pause,
+task redistribution,
+or an explicit cross-check.
+
+Their value is that they create another chance to look again at the problem under pressure.
+The system is therefore not assuming that the individual will never close too early.
+It is creating room for the decision to be corrected before it hardens.
 
 ## Chapter Summary
 

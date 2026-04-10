@@ -3,24 +3,49 @@
 This chapter establishes the course map first: the course is not mainly about memorizing terminology, but about using a systems lens to explain accidents, analyze breakdowns, and propose mitigations.
 
 !!! note "Core Question"
-    What capability is this course really training, and why do the later method pages, application pages, and case pages keep answering the same set of questions?
+    What capability is this course really training,
+    and why do the later method pages,
+    application pages,
+    and case pages keep answering the same set of questions?
 
 ## Key Takeaways
 
-- The course is not centered on “who made the mistake,” but on how the person interacts with task, tools, environment, and organization.
-- The course arc is shared language first, analytic methods second, domain applications third, and accident plus ethics analysis last.
-- Many later pages look different on the surface, but they keep asking the same thing: how failure emerged, why it was not intercepted, and what should be changed.
-- The course trains not only explanation of events, but also the ability to propose workable mitigations.
-- Without the overview, the later terminology becomes harder to connect into one line of reasoning.
+- The course is not centered on “who made the mistake,” but on how the person interacts with task,
+  tools,
+  environment,
+  and organization.
+- The course arc is shared language first,
+  analytic methods second,
+  domain applications third,
+  and accident plus ethics analysis last.
+- Many later pages look different on the surface,
+  but they keep asking the same thing:
+  how failure emerged,
+  why it was not intercepted,
+  and what should be changed.
+- The course trains not only explanation of events,
+  but also the ability to propose workable mitigations.
+- Without the overview,
+  the later terminology becomes harder to connect into one line of reasoning.
 
 ## Remember This First
 
 !!! tip "Keep This Sentence in Mind"
-    The shortest memory line for the course is this: when an event happens, do not stop at who failed; keep asking how the system allowed the failure to appear, expand, or slip past defenses.
+    The shortest memory line for the course is this:
+    when an event happens,
+    do not stop at who failed;
+    keep asking how the system allowed the failure to appear,
+    expand,
+    or slip past defenses.
 
 ## Why the Course Has a Forensic Flavor
 
-The word `forensic` does not turn the course into a courtroom-process class. It signals an analytic stance: when harm, near misses, or accidents occur, the analysis should not stop at the visible outcome.
+The word `forensic` does not turn the course into a courtroom-process class.
+It signals an analytic stance:
+when harm,
+near misses,
+or accidents occur,
+the analysis should not stop at the visible outcome.
 
 The recurring questions are:
 
@@ -30,18 +55,26 @@ The recurring questions are:
 - why those defenses failed
 - whether mitigation belongs in design, process, organization, or some combination
 
-That is why the course touches cases, responsibility, and investigation while still remaining fundamentally an engineering-analysis course.
+That is why the course touches cases,
+responsibility,
+and investigation while still remaining fundamentally an engineering-analysis course.
 
 ## How the Course Architecture Hangs Together
 
-The easiest misreading is to treat the course as “a new topic every week.” The lecture materials actually present four recurring elements: `issues / theory`, `analysis methods and frameworks`, `mitigations`, and `cases`.
+The easiest misreading is to treat the course as “a new topic every week.” The lecture materials actually present four recurring elements:
+`issues / theory`,
+`analysis methods and frameworks`,
+`mitigations`,
+and `cases`.
 
-Once those are linked, the structure becomes clear:
+Once those are linked,
+the structure becomes clear:
 
 1. foundation pages explain how to see the human in the system
 2. method pages turn that view into concrete analytic steps
 3. application pages show how the same logic operates in aviation, automation, and medical devices
-4. case pages pull the earlier frameworks back into real events and ethical judgment
+4.
+case pages pull the earlier frameworks back into real events and ethical judgment
 
 <figure class="note-inline-figure">
   <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/course-intro-1-14-26/page-07.png" alt="This figure should make one thing visible: theory, methods, mitigation, and cases are not separate silos but mutually supporting elements of the course." loading="lazy">
@@ -49,7 +82,11 @@ Once those are linked, the structure becomes clear:
 </figure>
 
 !!! note "One-Sentence Conclusion"
-    The course is not split into disconnected industries; it keeps reapplying the sequence of theory, methods, mitigation, and cases across different contexts.
+    The course is not split into disconnected industries;
+    it keeps reapplying the sequence of theory,
+    methods,
+    mitigation,
+    and cases across different contexts.
 
 ## What You Are Supposed to Be Able to Do by the End
 
@@ -60,32 +97,63 @@ The course goals point to four practical capabilities:
 - proposing corrective actions and countermeasures rather than only restating the problem
 - evaluating how design tradeoffs influence safety and performance
 
-So the course is not just about “reading cases.” It is about explaining them well, structuring them clearly, and turning them into defensible improvement paths.
+So the course is not just about “reading cases.” It is about explaining them well,
+structuring them clearly,
+and turning them into defensible improvement paths.
 
 !!! example "Example: How the Course Would Unpack the Same Medication Error"
-    A medication error is not supposed to produce an immediate conclusion. The foundation pages separate human error from system conditions; the method pages ask for task steps, failure points, and risk controls; the application pages pull in device design, labeling, environment, and workflow; the case pages add organization, responsibility, and ethics. The course is therefore not repeatedly retelling one story. It is training you to decompose the same event across several layers.
+    A medication error is not supposed to produce an immediate conclusion.
+    The foundation pages separate human error from system conditions;
+    the method pages ask for task steps,
+    failure points,
+    and risk controls;
+    the application pages pull in device design,
+    labeling,
+    environment,
+    and workflow;
+    the case pages add organization,
+    responsibility,
+    and ethics.
+    The course is therefore not repeatedly retelling one story.
+    It is training you to decompose the same event across several layers.
 
 ## How to Study the Course Without Losing the Thread
 
-The most effective reading strategy is not simply following the weekly order. Instead, keep the same question chain active on every page:
+The most effective reading strategy is not simply following the weekly order.
+Instead,
+keep the same question chain active on every page:
 
 - what kind of failure or limitation is this page about
 - what analytic tool does it introduce
 - what mitigation path does it imply
 - how does it connect back to the earlier foundations
 
-If that line is preserved, `Swiss Cheese` stops being only a metaphor, `URRA` stops being only a form, and the case pages stop being only stories.
+If that line is preserved,
+`Swiss Cheese` stops being only a metaphor,
+`URRA` stops being only a form,
+and the case pages stop being only stories.
 
 !!! warning "The Most Common Reading Trap"
-    Do not read the course as “one new term per page.” If the terms are collected without the logic, later accident analysis turns into an unstructured pile of concepts.
+    Do not read the course as “one new term per page.” If the terms are collected without the logic,
+    later accident analysis turns into an unstructured pile of concepts.
 
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"
     - The course has a forensic flavor because it demands sustained questioning rather than a quick conclusion.
-    - Its architecture remains stable: foundational language, analytic methods, application contexts, and cases plus ethics.
-    - The target capability includes explaining causes, proposing mitigation, and evaluating tradeoffs.
-    - Read the whole site through one line: how failure emerged, how it spread, how it should have been intercepted, and what should change.
+    - Its architecture remains stable:
+      foundational language,
+      analytic methods,
+      application contexts,
+      and cases plus ethics.
+    - The target capability includes explaining causes,
+      proposing mitigation,
+      and evaluating tradeoffs.
+    - Read the whole site through one line:
+      how failure emerged,
+      how it spread,
+      how it should have been intercepted,
+      and what should change.
 
 
 ## Source Scope and Related Topics

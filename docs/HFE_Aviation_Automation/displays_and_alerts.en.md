@@ -3,27 +3,43 @@
 The central tension in displays and alerts is that critical information must be salient without drowning the operator in noise.
 
 !!! note "Core Question"
-    How do we make sure that, at the critical moment, the operator notices the important signal, understands system state, and knows the next action?
+    How do we make sure that,
+    at the critical moment,
+    the operator notices the important signal,
+    understands system state,
+    and knows the next action?
 
 ## Key Takeaways
 
-- Displays make system state visible, and alerts reallocate attention at critical moments.
-- A good alert is not simply louder or brighter; it is more trustworthy, interpretable, and action-guiding.
+- Displays make system state visible,
+  and alerts reallocate attention at critical moments.
+- A good alert is not simply louder or brighter;
+  it is more trustworthy,
+  interpretable,
+  and action-guiding.
 - False alarms erode trust until even important alerts get ignored.
 - Display hierarchy and alert design are both forms of attention-resource management.
 
 ## Remember This First
 
 !!! tip "Keep This Sentence in Mind"
-    Keep one sentence in mind: the goal of alert design is not to create stimulation, but to move attention toward the right place at the right time while supporting the next action.
+    Keep one sentence in mind:
+    the goal of alert design is not to create stimulation,
+    but to move attention toward the right place at the right time while supporting the next action.
 
 ## What Displays and Alerts Each Need to Do
 
-The job of a display is to make state visible, comparable, and inferable. The job of an alert is to pull attention at the critical moment. If the two are disconnected, the operator may notice the signal without understanding it or hear it without knowing what to do next.
+The job of a display is to make state visible,
+comparable,
+and inferable.
+The job of an alert is to pull attention at the critical moment.
+If the two are disconnected,
+the operator may notice the signal without understanding it or hear it without knowing what to do next.
 
 ## Which Three Questions Should Guide the Reading
 
-When reading an alert system, ask:
+When reading an alert system,
+ask:
 
 1. does this alert truly indicate a high-priority risk?
 2. once it appears, can the operator quickly understand system state?
@@ -31,34 +47,82 @@ When reading an alert system, ask:
 
 ## Why False Alarms Become a Trust Problem
 
-If the system produces frequent low-value alerts, operators learn to delay response, ignore selectively, or distrust the alerting system altogether. Once that happens, truly critical alerts are also handled more slowly.
+If the system produces frequent low-value alerts,
+operators learn to delay response,
+ignore selectively,
+or distrust the alerting system altogether.
+Once that happens,
+truly critical alerts are also handled more slowly.
 
 !!! note "One-Sentence Conclusion"
-    The essence of display and alert design is not making the system more dramatic, but realigning attention, understanding, and action.
+    The essence of display and alert design is not making the system more dramatic,
+    but realigning attention,
+    understanding,
+    and action.
 
 !!! warning "The Most Common Misunderstanding"
-    “More alerts mean more safety” is usually false. Once low-value alerts become excessive, the system is consuming attention rather than protecting it.
+    “More alerts mean more safety” is usually false.
+    Once low-value alerts become excessive,
+    the system is consuming attention rather than protecting it.
 
 !!! example "Example: Why Alarm Fatigue Slows Response to the Truly Critical Signal"
-    If a ward monitoring system constantly emits loud low-priority alerts, staff gradually lower their overall responsiveness to the alerting channel. By the time a life-critical signal appears, the system has already lost the privilege of immediate serious attention.
+    If a ward monitoring system constantly emits loud low-priority alerts,
+    staff gradually lower their overall responsiveness to the alerting channel.
+    By the time a life-critical signal appears,
+    the system has already lost the privilege of immediate serious attention.
 
-## How to Actually Use This Concept to Judge a Real Problem
+## The Hardest Part of Alerting Is Not Being Heard but Being Prioritized Correctly
 
-To use a concept page well, do not stop at the definition. A stronger reading follows three steps:
+Many systems assume that making an alert more salient is enough.
+But operators rarely face one signal at a time.
+They face multiple cues competing for limited attention.
+The real design question is which signal should be handled first,
+which one is background,
+and which one must convert immediately into action.
 
-1. identify the task and context
-2. ask how the mechanism, limit, or risk described on the page appears in that context
-3. translate the judgment back into design, workflow, training, or organizational change
+In that sense,
+alerting is not primarily about sensory stimulation.
+It is about priority design.
 
-That is how the concept moves from “knowing the term” to “analyzing the problem.”
+## Why Displays and Alerts Have to Be Evaluated Together
+
+An alert that only makes noise but does not guide the operator toward the right state information is merely interruption,
+not support.
+Strong systems create a clear mapping between alert and display so that once the alert is noticed,
+the operator can quickly locate the critical state explanation and the next action cue.
+
+That is why the course treats displays and alerts together.
+Together they determine whether attention turns into understanding and action.
+
+!!! example "Example: Why Hearing the Alert Does Not Mean Knowing What to Do Next"
+    If alerts differ only in loudness but do not guide the operator toward fault location,
+    state trend,
+    and the recommended action,
+    the operator is first interrupted and then forced to spend extra time reconstructing the state.
+    In that case the alert creates secondary burden.
+    Strong design lets the alert and the explanatory display work together.
+
+## Why False and Nuisance Alarms Gradually Hollow Out the Whole Alerting System
+
+The long-term danger in an alerting system is not only missed detection,
+but also too many signals that never deserved interruption in the first place.
+Once operators are repeatedly exposed to false or nuisance alerts,
+the system gradually erodes both trust and response speed.
+
+That is why alert design has to ask not only whether the signal appears,
+but whether it deserves to interrupt.
+If the system repeatedly forces unnecessary attention switching,
+the truly critical alert is more likely to be delayed when it finally arrives.
 
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"
-    - Displays make state visible; alerts redirect attention to critical conditions.
+    - Displays make state visible;
+      alerts redirect attention to critical conditions.
     - A good alert supports both understanding and action.
     - False alarms erode long-term trust.
-    - At its core, this page is about managing limited attentional resources.
+    - At its core,
+      this page is about managing limited attentional resources.
 
 
 ## Source Scope and Related Topics

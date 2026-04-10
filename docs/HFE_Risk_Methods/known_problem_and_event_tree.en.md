@@ -3,28 +3,40 @@
 This page pairs two gap-finding methods: Known Problem Analysis looks backward to historical issues, while Event Tree analysis looks forward from an initiating event into downstream consequence branches.
 
 !!! note "Core Question"
-    Once the main workflow analysis is complete, how does the team continue asking what historical issues and downstream consequence branches may still be missing?
+    Once the main workflow analysis is complete,
+    how does the team continue asking what historical issues and downstream consequence branches may still be missing?
 
 ## Key Takeaways
 
 - Known Problem Analysis prevents the team from rediscovering old failure modes too late.
 - Event Trees prevent the team from underestimating the downstream branches of an initiating event.
 - Together they expand the view from the main path to edge paths and missed risk.
-- These methods are not administrative extras; they are deliberate blind-spot checks.
+- These methods are not administrative extras;
+  they are deliberate blind-spot checks.
 
 ## What This Method Is For
 
 !!! tip "Start with the Purpose"
-    Remember the role of these methods this way: main workflow analysis clarifies the main path, while Known Problem Analysis and Event Trees protect against forgetting the edges and branches of the system.
+    Remember the role of these methods this way:
+    main workflow analysis clarifies the main path,
+    while Known Problem Analysis and Event Trees protect against forgetting the edges and branches of the system.
 
 ## What Each Method Adds
 
-`Known Problem Analysis` captures what the team may already know through complaints, incidents, CAPA records, literature, or competitor history.
+`Known Problem Analysis` captures what the team may already know through complaints,
+incidents,
+CAPA records,
+literature,
+or competitor history.
 
-`Event Tree` expands what happens after an initiating event: if one barrier fails, what branches follow, and which nodes function as real defenses?
+`Event Tree` expands what happens after an initiating event:
+if one barrier fails,
+what branches follow,
+and which nodes function as real defenses?
 
 !!! warning "The Most Common Failure Mode"
-    The most common misunderstanding is to treat known problems as an old-issue list and event trees as a drawing exercise. Their real function is to change the team’s sensitivity to missed risk.
+    The most common misunderstanding is to treat known problems as an old-issue list and event trees as a drawing exercise.
+    Their real function is to change the team’s sensitivity to missed risk.
 
 ## How the Methods Proceed
 
@@ -33,33 +45,68 @@ The two methods can be remembered separately:
 1. Known Problem: scan historical problems first, then decide which still apply to the current design.
 2. Event Tree: define the initiating event first, then expand the downstream branches, intercept points, and consequence severity.
 
-Neither method is about free-form brainstorming. Both force the team back toward evidence and foreseeable pathways.
+Neither method is about free-form brainstorming.
+Both force the team back toward evidence and foreseeable pathways.
 
 !!! example "Worked Example: The Main Path Looks Fine, but the Edge Path Still Fails"
-    Suppose the normal use flow of a device is well analyzed, but complaint history shows users often reverse a component after cleaning and reassembly. Main-path analysis may miss that low-frequency branch. Known Problem Analysis pulls it back into view, and Event Tree analysis then asks what happens if that reversed assembly is not detected.
+    Suppose the normal use flow of a device is well analyzed,
+    but complaint history shows users often reverse a component after cleaning and reassembly.
+    Main-path analysis may miss that low-frequency branch.
+    Known Problem Analysis pulls it back into view,
+    and Event Tree analysis then asks what happens if that reversed assembly is not detected.
 
 ## How They Relate to the Main Workflow Analysis
 
-Main workflow analysis is strongest on the normal task path. These two methods are strongest at exposing historical blind spots and branch consequences outside that main path. They complement rather than replace the main analysis.
+Main workflow analysis is strongest on the normal task path.
+These two methods are strongest at exposing historical blind spots and branch consequences outside that main path.
+They complement rather than replace the main analysis.
 
 !!! note "One-Sentence Conclusion"
     The real value of this page is that it forces the team to step back from “we already analyzed it” and ask “what might still be missing?”
 
-## How to Tell Whether This Method Has Actually Been Applied Well
+## Why Known Problem Analysis Prevents the Team from Repeating Old Failures
 
-You can judge whether a method has actually been applied by checking four things:
+Many system risks are not novel.
+They have already appeared as complaints,
+CAPA records,
+accidents,
+literature findings,
+or competitor failures.
+Known Problem Analysis matters because it forces the team to recognize that history is itself risk evidence;
+every project does not begin from zero.
 
-- are the inputs concrete rather than generic
-- do the rows or steps return to specific tasks and contexts
-- does the output connect error, consequence, and control clearly
-- can the result directly support redesign, validation, review, or risk communication
+When done well,
+this step makes the team notice problems that are not new,
+but are still likely to recur in the present environment.
 
-If several of these are missing, the method usually remains a surface process rather than an executable analysis.
+## Why Event Trees Pull Side-Branch Risk Back into View
+
+Main workflow analysis often stays focused on the most common path,
+but many serious system outcomes emerge on the branches.
+The value of an Event Tree is that it begins with one initiating event and keeps asking:
+
+- what happens if this defense succeeds
+- what happens if it fails
+- which outcomes are rare but extremely costly
+
+Event Trees therefore do more than predict consequences.
+They force the team to reinterpret what each defense branch actually means.
+
+!!! example "Example: Why “An Alarm Occurs” Is Not the End but the Start of an Event Tree"
+    If the initiating event is “a critical alarm occurs,” the real analysis begins afterward:
+    was it noticed,
+    was it understood,
+    was the correct action taken,
+    did the system continue degrading,
+    and did backup defenses engage?
+    Once expanded this way,
+    the team sees that the real risk is not the alarm itself but the whole chain of later defense branches.
 
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"
-    - Known Problem Analysis looks backward to prior issues; Event Trees look forward to consequence branches.
+    - Known Problem Analysis looks backward to prior issues;
+      Event Trees look forward to consequence branches.
     - Together they fill gaps rather than replace main workflow analysis.
     - Both methods force the team back to evidence and foreseeable paths.
     - The true target is discovering what the team still missed.

@@ -3,55 +3,131 @@
 This page asks you to see fatigue not as a vague feeling of tiredness, but as a physiological constraint that systematically alters reaction, judgment, memory, and monitoring.
 
 !!! note "Core Question"
-    Why can fatigue management not rely on personal discipline alone, but must be treated as a system problem created by scheduling, task length, timing, and organizational demands?
+    Why can fatigue management not rely on personal discipline alone,
+    but must be treated as a system problem created by scheduling,
+    task length,
+    timing,
+    and organizational demands?
 
 ## Key Takeaways
 
 - Sleep loss degrades critical cognitive functions even when the person still feels capable of working.
 - Circadian rhythm changes the risk window across different times of day.
-- Fatigue is often jointly produced by shifts, night work, task duration, and organizational demand.
-- Fatigue management belongs in scheduling, handoff design, and high-risk task planning rather than only in wellness advice.
+- Fatigue is often jointly produced by shifts,
+  night work,
+  task duration,
+  and organizational demand.
+- Fatigue management belongs in scheduling,
+  handoff design,
+  and high-risk task planning rather than only in wellness advice.
 
 ## Remember This First
 
 !!! tip "Keep This Sentence in Mind"
-    Keep one sentence in mind: even the best interface, procedure, and training must still pass through a human who may already be fatigued.
+    Keep one sentence in mind:
+    even the best interface,
+    procedure,
+    and training must still pass through a human who may already be fatigued.
 
 ## What Fatigue Actually Alters
 
-Fatigue alters reaction time, working memory, judgment quality, monitoring endurance, and recovery ability. The danger is that people do not always recognize how much they have declined, so subjective feeling and actual performance may diverge sharply.
+Fatigue alters reaction time,
+working memory,
+judgment quality,
+monitoring endurance,
+and recovery ability.
+The danger is that people do not always recognize how much they have declined,
+so subjective feeling and actual performance may diverge sharply.
 
 ## Why the Same Task Carries Different Risk at Different Times
 
-Circadian rhythm matters because risk is not uniformly distributed across the day. Night work, early-morning lows, long-duration tasks, and accumulated sleep debt all change how vulnerable the same task becomes over time.
+Circadian rhythm matters because risk is not uniformly distributed across the day.
+Night work,
+early-morning lows,
+long-duration tasks,
+and accumulated sleep debt all change how vulnerable the same task becomes over time.
 
 !!! example "Example: Why the Same Task Becomes More Dangerous on a Night Shift"
-    The same monitoring or operational task is not equivalent on day shift and night shift. Circadian low points degrade alertness, judgment, and recovery speed, turning what seemed like an acceptable workload into a higher-risk window.
+    The same monitoring or operational task is not equivalent on day shift and night shift.
+    Circadian low points degrade alertness,
+    judgment,
+    and recovery speed,
+    turning what seemed like an acceptable workload into a higher-risk window.
 
 ## Why Fatigue Management Is a Design Problem
 
-If scheduling, task duration, night-work burden, and high-risk task timing are poorly designed, telling people to rest more will not solve the problem. A stronger approach treats fatigue as a risk source that must be designed around and buffered against.
+If scheduling,
+task duration,
+night-work burden,
+and high-risk task timing are poorly designed,
+telling people to rest more will not solve the problem.
+A stronger approach treats fatigue as a risk source that must be designed around and buffered against.
 
 !!! note "One-Sentence Conclusion"
-    Fatigue is not personal weakness; it is a physiological constraint the system must take seriously.
+    Fatigue is not personal weakness;
+    it is a physiological constraint the system must take seriously.
 
 !!! warning "The Most Common Misunderstanding"
-    Reducing fatigue management to “tell people to sleep more” is not enough. The more dangerous variables usually sit inside scheduling and task design.
+    Reducing fatigue management to “tell people to sleep more” is not enough.
+    The more dangerous variables usually sit inside scheduling and task design.
 
-## How to Actually Use This Concept to Judge a Real Problem
+## Why Sleep Debt Can Make Performance Worse Than the Person Feels
 
-To use a concept page well, do not stop at the definition. A stronger reading follows three steps:
+One of the hardest parts of fatigue is that subjective experience and objective decline do not always move together.
+People may feel that they are still functioning adequately while reaction speed,
+memory stability,
+and monitoring endurance have already degraded.
 
-1. identify the task and context
-2. ask how the mechanism, limit, or risk described on the page appears in that context
-3. translate the judgment back into design, workflow, training, or organizational change
+That is why fatigue risk cannot rely only on self-report.
+Once shifts,
+night work,
+and sleep debt accumulate,
+the system should not assume the operator can accurately judge whether high-risk performance is still stable.
 
-That is how the concept moves from “knowing the term” to “analyzing the problem.”
+## Which System Actions Real Fatigue Management Should Reach
+
+The point of teaching fatigue is not to offer general wellness advice;
+it is to drive system action.
+Stronger management usually reaches:
+
+- shift length and rotation rhythm
+- allocation of high-risk tasks during night and early-morning windows
+- handoff design and state confirmation before critical work
+- where needed, two-person confirmation, rest windows, or task redistribution
+
+If those actions never move into the system layer,
+fatigue management easily stalls at the empty phrase “everyone should rest more.”
+
+!!! example "Example: Why Real Fatigue Management Often Starts with Scheduling Rather Than Attitude"
+    If shift length,
+    rotation rhythm,
+    and critical-task timing continually place people into physiological low points,
+    then personal advice about maintaining alertness can only patch a small portion of the risk.
+    Stronger control usually starts by changing scheduling and task allocation.
+
+## Why Microsleep Is Especially Dangerous in High-Risk Tasks
+
+One critical but often underestimated part of fatigue is microsleep.
+To the individual it may feel like only a few seconds of broken awareness.
+To the system those seconds can be enough for monitoring,
+driving,
+verification,
+or procedural holding to fail completely.
+
+That is why fatigue cannot be judged only by whether the person can still continue working.
+It also has to be judged by task type.
+If the task depends on continuous monitoring,
+rapid response,
+or precise timing,
+even a brief lapse can already create high risk.
 
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"
-    - Fatigue systematically alters reaction, memory, judgment, and monitoring.
+    - Fatigue systematically alters reaction,
+      memory,
+      judgment,
+      and monitoring.
     - Circadian rhythm changes the risk window.
     - Fatigue is often co-produced by scheduling and organizational conditions.
     - Fatigue management has to move into system design.

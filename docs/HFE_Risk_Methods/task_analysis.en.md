@@ -3,27 +3,47 @@
 The job of task analysis is to decompose a continuous use episode into a sequence of observable, discussable, and risk-mappable steps.
 
 !!! note "Core Question"
-    If the task itself is not decomposed clearly, how can we know where errors may arise, which steps are critical, or where controls should land?
+    If the task itself is not decomposed clearly,
+    how can we know where errors may arise,
+    which steps are critical,
+    or where controls should land?
 
 ## Key Takeaways
 
-- Task analysis does not rewrite the manual; it decomposes the real task into steps, judgments, and information demands.
-- It is the prerequisite for critical tasks, use errors, and URRA.
+- Task analysis does not rewrite the manual;
+  it decomposes the real task into steps,
+  judgments,
+  and information demands.
+- It is the prerequisite for critical tasks,
+  use errors,
+  and URRA.
 - Strong task analysis compares ideal flow with real work and likely deviations.
-- The more concrete the decomposition, the more actionable later risk analysis becomes.
+- The more concrete the decomposition,
+  the more actionable later risk analysis becomes.
 
 ## What This Method Is For
 
 !!! tip "Start with the Purpose"
-    Remember the purpose of the method this way: if the task flow has not been decomposed, the later risk analysis will float without anchors.
+    Remember the purpose of the method this way:
+    if the task flow has not been decomposed,
+    the later risk analysis will float without anchors.
 
 ## What Problem This Method Solves
 
-Task analysis breaks the apparently continuous act of “using a product” into analyzable use steps, subtasks, information demands, and action requirements. That lets later discussion stay tied to concrete moments instead of vague judgments.
+Task analysis breaks the apparently continuous act of “using a product” into analyzable use steps,
+subtasks,
+information demands,
+and action requirements.
+That lets later discussion stay tied to concrete moments instead of vague judgments.
 
 ## What the Inputs and Outputs Are
 
-Inputs usually include the task goal, user characteristics, use environment, device instructions, current workflow, and observed real behavior.
+Inputs usually include the task goal,
+user characteristics,
+use environment,
+device instructions,
+current workflow,
+and observed real behavior.
 
 Outputs usually include:
 
@@ -39,39 +59,93 @@ The method can be run in this order:
 1. define the user goal and the task boundaries
 2. decompose the flow into observable use steps
 3. add what must be seen, judged, and done at each step
-4. mark the steps whose failure would affect safety or effectiveness
-5. carry those steps into use-error and risk analysis work
+4.
+mark the steps whose failure would affect safety or effectiveness
+5.
+carry those steps into use-error and risk analysis work
 
 !!! warning "The Most Common Failure Mode"
-    The most common mistake is to copy the instruction sequence verbatim without asking how users actually skip, recover, backtrack, or improvise in real conditions.
+    The most common mistake is to copy the instruction sequence verbatim without asking how users actually skip,
+    recover,
+    backtrack,
+    or improvise in real conditions.
 
 !!! example "Worked Example: Why a Syringe Task Cannot Be Written as Simply “Deliver Dose”"
-    If the worksheet only says “deliver dose,” later analysis cannot see assembly, dose setting, confirmation, hold time, and disposal as distinct failure points. Once the task is decomposed, critical tasks and controls finally have concrete landing points.
+    If the worksheet only says “deliver dose,” later analysis cannot see assembly,
+    dose setting,
+    confirmation,
+    hold time,
+    and disposal as distinct failure points.
+    Once the task is decomposed,
+    critical tasks and controls finally have concrete landing points.
 
 ## How It Connects to Earlier and Later Methods
 
-The human-error framework explains how to read failure types, while task analysis explains where in the task flow those failures can emerge. Later URRA, critical-task, and workbook pages directly reuse this decomposition.
+The human-error framework explains how to read failure types,
+while task analysis explains where in the task flow those failures can emerge.
+Later URRA,
+critical-task,
+and workbook pages directly reuse this decomposition.
 
 !!! note "One-Sentence Conclusion"
-    The value of task analysis is not merely listing steps; it is binding risk analysis to the real workflow.
+    The value of task analysis is not merely listing steps;
+    it is binding risk analysis to the real workflow.
 
-## How to Tell Whether This Method Has Actually Been Applied Well
+## Why Task Analysis Eventually Has to Reach Critical Tasks
 
-You can judge whether a method has actually been applied by checking four things:
+Task analysis cannot stop at “the steps have been listed.” Its real value appears when the team continues asking which steps,
+if performed incorrectly,
+would directly affect safety,
+effectiveness,
+dose,
+identification,
+or recovery opportunity.
 
-- are the inputs concrete rather than generic
-- do the rows or steps return to specific tasks and contexts
-- does the output connect error, consequence, and control clearly
-- can the result directly support redesign, validation, review, or risk communication
+That is where critical tasks come from.
+They are not just one extra spreadsheet column.
+They are the practical landing point of the analysis because they tell the team where stronger interface design,
+confirmation logic,
+training,
+and validation attention belong.
 
-If several of these are missing, the method usually remains a surface process rather than an executable analysis.
+!!! example "Example: Why “Confirm the Needle Is Properly Assembled” May Matter More Than “Press to Deliver”"
+    Teams often treat the most visible action as the main step,
+    but task analysis frequently shows that the higher-risk point sits earlier.
+    Assembly confirmation,
+    dose verification,
+    unlock sequence,
+    and pre-use preparation may matter more because once they fail,
+    later execution quality cannot fully recover the situation.
+    That is why task analysis has to decompose the preparatory steps in detail.
+
+## Why the PB&J Example Actually Matters
+
+The PB&J example is not there because the course wanted a casual illustration.
+It proves something important:
+once a task is decomposed seriously,
+many supposedly obvious but unstated steps become visible.
+
+Hand washing,
+checking ingredient condition,
+preparation order,
+and cleanup are not decorative details.
+They show that task analysis is not only about writing the main visible actions.
+It is about writing the full support conditions required to complete the task reliably.
+The same logic applies in medical devices,
+aviation procedures,
+and automation systems.
 
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"
     - Task analysis clarifies task structure before risk is discussed.
-    - Its inputs include users, environment, workflow, and real behavior.
-    - Its outputs should support critical tasks, URRA, and validation.
+    - Its inputs include users,
+      environment,
+      workflow,
+      and real behavior.
+    - Its outputs should support critical tasks,
+      URRA,
+      and validation.
     - The main trap is treating the ideal manual as if it were the real workflow.
 
 

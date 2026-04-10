@@ -7,15 +7,23 @@ This page breaks “seeing information” into three layers: perception, compreh
 
 ## Key Takeaways
 
-- Situation awareness includes at least perception, comprehension, and projection.
-- Visible information does not guarantee meaning, and meaning does not guarantee prediction.
-- Many display, CRM, monitoring, and automation problems ultimately return to breaks in SA.
+- Situation awareness includes at least perception,
+  comprehension,
+  and projection.
+- Visible information does not guarantee meaning,
+  and meaning does not guarantee prediction.
+- Many display,
+  CRM,
+  monitoring,
+  and automation problems ultimately return to breaks in SA.
 - The essence of SA is not information quantity but whether information is organized into an actionable mental model.
 
 ## Remember This First
 
 !!! tip "Keep This Sentence in Mind"
-    Keep one sentence in mind: situation awareness is not merely about looking harder; it is about turning seen cues into an accurate current picture and one step of forward projection.
+    Keep one sentence in mind:
+    situation awareness is not merely about looking harder;
+    it is about turning seen cues into an accurate current picture and one step of forward projection.
 
 ## What the Three Layers Actually Mean
 
@@ -27,35 +35,92 @@ The three layers in the course are:
 
 ## Why the Second and Third Layers Break So Easily
 
-Operators may see the readings, alerts, and state changes yet still not know which cue has priority, how several signals relate, or how the situation will evolve over the next seconds. In other words, the hard part of SA is often not noticing but organizing and projecting.
+Operators may see the readings,
+alerts,
+and state changes yet still not know which cue has priority,
+how several signals relate,
+or how the situation will evolve over the next seconds.
+In other words,
+the hard part of SA is often not noticing but organizing and projecting.
 
 !!! warning "The Most Common Misunderstanding"
-    Seeing the data does not mean SA has been achieved. Many accidents unfold in the state where the data is present but the situation has not actually been assembled in the operator’s mind.
+    Seeing the data does not mean SA has been achieved.
+    Many accidents unfold in the state where the data is present but the situation has not actually been assembled in the operator’s mind.
 
 !!! example "Example: Why “Visible Information” Is Still Not Enough"
-    A flight crew may see altitude, speed, and alerts and still fail to realize that the signals collectively point to a diverging flight state. The issue is not whether the data exists, but whether it has been integrated into the right picture and converted into early intervention.
+    A flight crew may see altitude,
+    speed,
+    and alerts and still fail to realize that the signals collectively point to a diverging flight state.
+    The issue is not whether the data exists,
+    but whether it has been integrated into the right picture and converted into early intervention.
 
 ## Why So Many Course Topics Return to SA
 
-The display page asks how information becomes visible, the CRM page asks how information becomes shared across the team, the monitoring page asks how state awareness is sustained, and the spatial-disorientation page asks whether the operator can still build the correct picture when sensory intuition conflicts with instruments. At root they all ask whether the system helps people form sufficient SA.
+The display page asks how information becomes visible,
+the CRM page asks how information becomes shared across the team,
+the monitoring page asks how state awareness is sustained,
+and the spatial-disorientation page asks whether the operator can still build the correct picture when sensory intuition conflicts with instruments.
+At root they all ask whether the system helps people form sufficient SA.
 
 !!! note "One-Sentence Conclusion"
     The core of situation awareness is not “more information,” but whether information has been organized into understanding and prediction that support action.
 
-## How to Actually Use This Concept to Judge a Real Problem
+## How the Three SA Breakdowns Appear in Real Analysis
 
-To use a concept page well, do not stop at the definition. A stronger reading follows three steps:
+The most useful takeaway is not only the three-layer definition,
+but how to use the layers during review:
 
-1. identify the task and context
-2. ask how the mechanism, limit, or risk described on the page appears in that context
-3. translate the judgment back into design, workflow, training, or organizational change
+- if the critical cue was never noticed, the breakdown is often Level 1
+- if the cue was seen but interpreted wrongly, the breakdown is often Level 2
+- if current state was understood reasonably well but the future path was predicted badly, the breakdown is often Level 3
 
-That is how the concept moves from “knowing the term” to “analyzing the problem.”
+Once the break layer is identified,
+mitigation becomes far more targeted:
+improve detectability,
+improve mental-model support,
+or improve projection support.
+
+## Why SA Is Not Only an Individual State but Also a Team State
+
+Later in the course a recurring reminder appears:
+even if individuals each notice part of the information,
+the team may still fail to form one shared picture.
+Individual SA and team SA are therefore not automatically the same thing.
+
+At that point the problem is no longer only in the display.
+It also belongs to communication,
+briefing,
+cross-check,
+and authority structure.
+Whether the team rebuilds one common picture from distributed cues often determines whether later action becomes coordinated.
+
+!!! example "Example: Why “Everyone Saw a Piece of It” Does Not Mean the Team Understood the Situation"
+    One person may notice the speed anomaly,
+    another the alert,
+    and a third the procedure-state change,
+    yet the team can still continue along the wrong path if those cues are never assembled into one shared picture.
+    The key to SA is not whether cues exist in distributed form,
+    but whether they are organized into one coherent picture.
+
+## Why SA Also Depends on How Fast the Picture Gets Updated
+
+SA is not the static possession of one picture.
+It is the continuous updating of that picture.
+In high-risk systems the state keeps changing,
+and if the team is still operating from the understanding of a few minutes earlier,
+the picture may already be stale even if it was once correct.
+
+SA analysis therefore cannot ask only whether a picture existed.
+It also has to ask whether the picture was updated quickly enough.
+Many events do not begin with total ignorance,
+but with failure to replace the old picture in time.
 
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"
-    - SA includes perception, comprehension, and projection.
+    - SA includes perception,
+      comprehension,
+      and projection.
     - Visible information does not equal true understanding.
     - Many HFE topics ultimately return to whether SA breaks down.
     - The key is forming an actionable mental model.

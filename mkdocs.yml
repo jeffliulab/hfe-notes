@@ -29,7 +29,6 @@ plugins:
           site_name: HFE Course Notes
           nav_translations:
             首页: "Home"
-            笔记开发手册: "Note Development Guide"
             HFE基础: "HFE Foundations"
             HFE基础总览: "HFE Foundations Overview"
             风险方法: "Risk Methods"
@@ -68,6 +67,7 @@ plugins:
             Cardosi案例: "Cardosi Case"
             F16分析提示: "F16 Analysis Prompts"
             Boeing 737 Max与伦理: "Boeing 737 Max and Ethics"
+            笔记开发手册: "Note Development Guide"
 
 markdown_extensions:
   - attr_list

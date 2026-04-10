@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from note_blueprints import callout, formalize_blueprint, page_blueprint, section
+from note_blueprints import callout, page_blueprint, section
 
 
 RISK_METHODS_CONTENT: dict[str, dict] = {
@@ -491,6 +491,218 @@ Neither method is about free-form brainstorming. Both force the team back toward
     ),
 }
 
-RISK_METHODS_CONTENT = {
-    slug: formalize_blueprint(blueprint) for slug, blueprint in RISK_METHODS_CONTENT.items()
-}
+RISK_METHODS_CONTENT["error_analysis_methods"]["sections"].extend(
+    [
+        section(
+            "evidence",
+            "## 真正好的调查为什么总是先守住证据纪律",
+            "## Why Strong Investigation Always Starts with Evidence Discipline",
+            body_zh="""
+            这页真正难的地方，不是“知道该先收事实”，而是很多团队在压力下会不自觉跳过这一步。只要一个显眼动作先进入视野，整个调查就很容易被它带偏，后面收集到的材料也会被拿来支持这个先入结论。
+
+            所以好的调查通常会刻意把材料分层：
+
+            - 哪些是确认过的客观事实
+            - 哪些是当事人的主观回忆
+            - 哪些是调查者的解释与推断
+
+            只有把这三层分开，时间线才会稳，后面的因果分析也才不会变成“先有答案，再去找支持”。
+            """,
+            body_en="""
+            The hard part of investigation is not knowing that facts should come first. The hard part is that, under pressure, teams often stop honoring that rule. Once one visible action grabs attention, the rest of the investigation can get pulled toward it and later evidence is interpreted mainly as support for that early conclusion.
+
+            Strong investigation therefore separates material into layers:
+
+            - confirmed facts
+            - subjective recall from participants
+            - interpretation and causal inference from investigators
+
+            Once those layers are separated, the timeline becomes more stable and later causal analysis is less likely to turn into “start with the answer and collect supporting material.”
+            """,
+        ),
+        section(
+            "quality",
+            "## 怎样判断一份调查结果是不是只写了故事",
+            "## How to Tell Whether an Investigation Output Is Only a Story",
+            body_zh="""
+            很多报告表面上看结构完整，但其实只是在讲一个更正式的故事。判断它有没有真正分析到位，可以看三个信号：
+
+            - 报告里有没有把时间线、条件和动作拆开，而不是只写结论句
+            - 有没有同时写 direct cause、contributing factors 和更上游的组织/设计条件
+            - 改进建议是不是能直接对应回前面的因果链
+
+            如果一份报告里只有“发生了什么”和“以后注意”，那通常还不是课程里要求的 error analysis，而只是带结论的复述。
+            """,
+            body_en="""
+            Many reports look structured on the surface while still behaving like polished stories. Three signals help distinguish stronger analysis:
+
+            - does the report separate timeline, conditions, and actions rather than writing only conclusion sentences
+            - does it include direct causes, contributing factors, and upstream design or organizational conditions together
+            - do the recommendations connect clearly back to the earlier causal chain
+
+            If a report contains only “what happened” followed by “be more careful next time,” it is usually not the kind of error analysis this course is teaching.
+            """,
+        ),
+    ]
+)
+RISK_METHODS_CONTENT["error_analysis_methods"]["examples"].append(
+    callout(
+        "example",
+        "quality",
+        "案例：为什么同一份材料会被写成“事故复述”和“系统分析”两种完全不同的东西",
+        "Example: Why the Same Material Can Become Either an Event Retelling or a System Analysis",
+        body_zh="同样是一次给药错误，弱调查会写成“护士误选药物，导致患者受到错误治疗”；强调查会继续拆出包装相似性、班次疲劳、核对程序是否现实、警示信息是否足够显眼，以及为什么这些因素没有在更早节点被拦住。两者材料来源可能一样，但分析质量完全不同。",
+        body_en="The same medication event can be written weakly as “the nurse selected the wrong medication and the patient received the wrong treatment,” or strongly as an analysis of packaging similarity, shift fatigue, realism of verification procedure, salience of warnings, and why those factors were not intercepted earlier. The source material may be the same, but the analytic quality is completely different.",
+    )
+)
+
+RISK_METHODS_CONTENT["task_analysis"]["sections"].extend(
+    [
+        section(
+            "critical",
+            "## 为什么 task analysis 最后一定会走到 critical task",
+            "## Why Task Analysis Eventually Has to Reach Critical Tasks",
+            body_zh="""
+            任务分析不能停在“步骤列完了”。真正有价值的地方，是在步骤表里继续问：哪一步一旦出错，就会直接影响安全、疗效、剂量、识别或恢复机会。
+
+            这就是 critical task 的来源。它不是额外附加的一列，而是 task analysis 真正的落点。因为只有把关键步骤标出来，团队才知道哪些节点值得投入更强的界面设计、确认机制、培训和验证资源。
+            """,
+            body_en="""
+            Task analysis cannot stop at “the steps have been listed.” Its real value appears when the team continues asking which steps, if performed incorrectly, would directly affect safety, effectiveness, dose, identification, or recovery opportunity.
+
+            That is where critical tasks come from. They are not just one extra spreadsheet column. They are the practical landing point of the analysis because they tell the team where stronger interface design, confirmation logic, training, and validation attention belong.
+            """,
+        ),
+        section(
+            "reality",
+            "## 为什么课堂里的 PB&J 例子其实很重要",
+            "## Why the PB&J Example Actually Matters",
+            body_zh="""
+            课件里用 PB&J 不是为了讲一个轻松例子，而是为了证明一件事：只要任务开始被认真拆开，很多原本“理所当然”的隐含步骤就会浮出来。
+
+            例如洗手、检查原料状态、准备顺序、清理和收尾，这些都不是装饰步骤。它们说明 task analysis 的核心不是“把主要动作写出来”，而是把真实完成任务所需要的全部支撑条件也写出来。医疗器械、航空程序和自动化系统里的任务分析，逻辑上完全一样。
+            """,
+            body_en="""
+            The PB&J example is not there because the course wanted a casual illustration. It proves something important: once a task is decomposed seriously, many supposedly obvious but unstated steps become visible.
+
+            Hand washing, checking ingredient condition, preparation order, and cleanup are not decorative details. They show that task analysis is not only about writing the main visible actions. It is about writing the full support conditions required to complete the task reliably. The same logic applies in medical devices, aviation procedures, and automation systems.
+            """,
+        ),
+    ]
+)
+RISK_METHODS_CONTENT["task_analysis"]["examples"].append(
+    callout(
+        "example",
+        "critical",
+        "案例：为什么“确认针头已装好”这种步骤常常比“按压给药”更值得盯住",
+        "Example: Why “Confirm the Needle Is Properly Assembled” May Matter More Than “Press to Deliver”",
+        body_zh="很多团队天然会把最显眼的动作当成主步骤，但任务分析常常会发现，真正高风险的点在更早环节。例如装配确认、剂量核对、解锁顺序和使用前准备，一旦漏掉，后面的执行再熟练也救不回来。这正是为什么 task analysis 必须把前置步骤写细。",
+        body_en="Teams often treat the most visible action as the main step, but task analysis frequently shows that the higher-risk point sits earlier. Assembly confirmation, dose verification, unlock sequence, and pre-use preparation may matter more because once they fail, later execution quality cannot fully recover the situation. That is why task analysis has to decompose the preparatory steps in detail.",
+    )
+)
+
+RISK_METHODS_CONTENT["urra_methods"]["sections"].extend(
+    [
+        section(
+            "discipline",
+            "## 为什么 URRA 最怕写成抽象大词",
+            "## Why URRA Fails When It Stays at a Vague Level",
+            body_zh="""
+            URRA 一旦写成“误用”“使用不当”“可能受伤”这种大词，后面几乎所有栏位都会一起失焦。因为团队看不出到底是哪一步、哪种错误、哪条 harm path，也就不知道控制到底该落在哪个设计点上。
+
+            所以一条好的 URRA 记录通常都有很强的具体性：具体场景、具体动作、具体误判、具体后果、具体控制。写到这个程度时，验证场景和风险沟通才会自然长出来。
+            """,
+            body_en="""
+            Once URRA is written in vague labels such as “misuse,” “incorrect use,” or “possible injury,” nearly every later column loses focus. The team can no longer see which step is failing, what specific error is happening, or which harm path is in play, so controls also become vague.
+
+            Strong URRA rows therefore stay concrete: concrete scenario, concrete action, concrete misjudgment, concrete consequence, and concrete control. At that level, validation scenarios and risk communication can emerge naturally from the analysis.
+            """,
+        ),
+        section(
+            "validation",
+            "## 为什么 URRA 最终一定要回到验证",
+            "## Why URRA Ultimately Has to Feed Validation",
+            body_zh="""
+            这门课不把 URRA 当成档案管理，而把它当成设计与验证的接口。原因很简单：如果一条风险链已经被写出来，团队就必须能回答“我们准备怎样证明控制真的有效”。
+
+            这意味着 URRA 不是写完就结束，而是还要继续推动：
+
+            - 哪些 risk control 需要在原型或正式产品里被体现
+            - 哪些关键任务需要在 validation 中被专门观察
+            - 哪些情境需要通过 representative user 和 representative use condition 去复现
+            """,
+            body_en="""
+            The course does not treat URRA as archive management. It treats it as an interface between design and validation. The reason is simple: once a risk chain has been written, the team must be able to answer how it will demonstrate that the control is actually effective.
+
+            That means URRA is not finished when the row is written. It should continue to drive:
+
+            - which controls must appear in prototype or final design
+            - which critical tasks need focused observation in validation
+            - which scenarios need to be reproduced with representative users under representative conditions
+            """,
+        ),
+    ]
+)
+RISK_METHODS_CONTENT["urra_methods"]["warnings"].append(
+    callout(
+        "warning",
+        "validation",
+        "另一个常见失误",
+        "Another Common Failure",
+        body_zh="有些团队会把 URRA 写得看起来很完整，但没有任何一条真正能转进验证。这通常说明条目还不够具体，或者控制写得太空泛。",
+        body_en="Some teams produce URRA tables that look complete but do not yield a single usable validation scenario. That usually means the entries are still too vague or the controls are written at too abstract a level.",
+    )
+)
+
+RISK_METHODS_CONTENT["known_problem_and_event_tree"]["sections"].extend(
+    [
+        section(
+            "history",
+            "## 为什么 known problem analysis 能防止团队重复踩坑",
+            "## Why Known Problem Analysis Prevents the Team from Repeating Old Failures",
+            body_zh="""
+            很多系统风险并不是第一次出现，而是曾经以投诉、CAPA、事故、文献或竞品失败的形式已经出现过。Known Problem Analysis 的价值，就是逼团队承认：历史本身就是风险证据，不能假装每个项目都从零开始。
+
+            这一步做得好时，团队会更早看到那些“并不新，但这次环境里仍然可能复现”的问题。
+            """,
+            body_en="""
+            Many system risks are not novel. They have already appeared as complaints, CAPA records, accidents, literature findings, or competitor failures. Known Problem Analysis matters because it forces the team to recognize that history is itself risk evidence; every project does not begin from zero.
+
+            When done well, this step makes the team notice problems that are not new, but are still likely to recur in the present environment.
+            """,
+        ),
+        section(
+            "branching",
+            "## 为什么 event tree 会把主路径外的风险拉回来",
+            "## Why Event Trees Pull Side-Branch Risk Back into View",
+            body_zh="""
+            主流程分析往往盯着“最常见的一条路径”，但系统真正危险的时候，经常恰恰发生在分支上。Event Tree 的价值，就是从一个 initiating event 出发，继续往后问：
+
+            - 这一层防线如果成功，会怎样
+            - 如果失败，又会走向哪里
+            - 哪些后果虽然不常见，但一旦发生代价极高
+
+            所以 Event Tree 不只是预测结果，而是在逼团队重新认识防线分支的含义。
+            """,
+            body_en="""
+            Main workflow analysis often stays focused on the most common path, but many serious system outcomes emerge on the branches. The value of an Event Tree is that it begins with one initiating event and keeps asking:
+
+            - what happens if this defense succeeds
+            - what happens if it fails
+            - which outcomes are rare but extremely costly
+
+            Event Trees therefore do more than predict consequences. They force the team to reinterpret what each defense branch actually means.
+            """,
+        ),
+    ]
+)
+RISK_METHODS_CONTENT["known_problem_and_event_tree"]["examples"].append(
+    callout(
+        "example",
+        "branching",
+        "案例：为什么“警报出现”不是终点，而只是 event tree 的起点",
+        "Example: Why “An Alarm Occurs” Is Not the End but the Start of an Event Tree",
+        body_zh="一旦起始事件是“关键警报出现”，后面真正要展开的是：操作者有没有注意到、有没有理解、有没有采取正确动作、系统有没有继续恶化、以及备用防线有没有接上。这样一展开，团队就会发现真正的风险不只在告警本身，而在后面一连串防线分支。",
+        body_en="If the initiating event is “a critical alarm occurs,” the real analysis begins afterward: was it noticed, was it understood, was the correct action taken, did the system continue degrading, and did backup defenses engage? Once expanded this way, the team sees that the real risk is not the alarm itself but the whole chain of later defense branches.",
+    )
+)

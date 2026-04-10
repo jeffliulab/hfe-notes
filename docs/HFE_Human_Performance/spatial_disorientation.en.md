@@ -3,57 +3,122 @@
 The central reminder of this page is that human sensory systems are not always reliable in flight; felt orientation and actual orientation can diverge completely.
 
 !!! note "Core Question"
-    Why do people in flight develop strong but wrong bodily sensations about aircraft attitude, and how should the system help them still make correct judgments inside that illusion?
+    Why do people in flight develop strong but wrong bodily sensations about aircraft attitude,
+    and how should the system help them still make correct judgments inside that illusion?
 
 ## Key Takeaways
 
-- Vestibular and bodily cues can mislead operators under certain acceleration, turning, and low-visibility conditions.
-- Instruments are usually more reliable than bodily intuition, but stress and surprise can reduce the operator’s ability to shift to them.
+- Vestibular and bodily cues can mislead operators under certain acceleration,
+  turning,
+  and low-visibility conditions.
+- Instruments are usually more reliable than bodily intuition,
+  but stress and surprise can reduce the operator’s ability to shift to them.
 - Spatial disorientation is a classic case of conflict between human sensing and system information.
-- Effective control depends on training, displays, and procedure rather than on willpower in the moment.
+- Effective control depends on training,
+  displays,
+  and procedure rather than on willpower in the moment.
 
 ## Remember This First
 
 !!! tip "Keep This Sentence in Mind"
-    Keep one sentence in mind: in spatial disorientation, the danger is not the absence of feeling, but the presence of a very convincing feeling that is nevertheless wrong.
+    Keep one sentence in mind:
+    in spatial disorientation,
+    the danger is not the absence of feeling,
+    but the presence of a very convincing feeling that is nevertheless wrong.
 
 ## Why Sensory Systems and Instruments Conflict
 
-Under some flight conditions, vestibular and bodily cues provide signals that do not match the actual attitude. Instruments provide the more reliable state information, but the bodily experience may feel stronger and more convincing.
+Under some flight conditions,
+vestibular and bodily cues provide signals that do not match the actual attitude.
+Instruments provide the more reliable state information,
+but the bodily experience may feel stronger and more convincing.
 
 ## Why This Illusion Becomes Especially Dangerous
 
-Spatial disorientation is dangerous not only because it misleads perception, but because the person often trusts the sensation strongly. Once the operator uses that sensation to reinterpret the instruments, the control loop can deteriorate quickly.
+Spatial disorientation is dangerous not only because it misleads perception,
+but because the person often trusts the sensation strongly.
+Once the operator uses that sensation to reinterpret the instruments,
+the control loop can deteriorate quickly.
 
 !!! warning "The Most Common Misunderstanding"
-    Do not interpret spatial disorientation as something a pilot could solve merely by trying harder. The illusion is dangerous precisely because it feels deeply real to the person experiencing it.
+    Do not interpret spatial disorientation as something a pilot could solve merely by trying harder.
+    The illusion is dangerous precisely because it feels deeply real to the person experiencing it.
 
 ## How the System Helps Counter the Illusion
 
-Effective control cannot depend only on “stay calm in the moment.” More realistic defenses include training for anticipated illusions, disciplined instrument scan, display support, procedural cross-checking, and explicit suspicion toward bodily intuition in high-risk phases.
+Effective control cannot depend only on “stay calm in the moment.” More realistic defenses include training for anticipated illusions,
+disciplined instrument scan,
+display support,
+procedural cross-checking,
+and explicit suspicion toward bodily intuition in high-risk phases.
 
 !!! note "One-Sentence Conclusion"
     The essence of spatial disorientation is whether the system offers a strong enough alternative path back to correct judgment when sensory intuition becomes unreliable.
 
 !!! example "Example: Why Instrument Scan Is a Critical Defense Against Illusion"
-    When the body tells the operator that the aircraft is banking in a certain direction, instrument scan offers a structured alternative path that pulls judgment back to system information. If that scan habit is weak, the illusion more easily drives the action.
+    When the body tells the operator that the aircraft is banking in a certain direction,
+    instrument scan offers a structured alternative path that pulls judgment back to system information.
+    If that scan habit is weak,
+    the illusion more easily drives the action.
 
-## How to Actually Use This Concept to Judge a Real Problem
+## Why This Type of Illusion Is So Hard to Overcome by Willpower Alone
 
-To use a concept page well, do not stop at the definition. A stronger reading follows three steps:
+The difficulty of spatial disorientation is not merely knowing in theory that it can happen.
+When it actually happens,
+the bodily sensation can feel so compelling that it appears more truthful than the instrument indications.
+The person is not deliberately ignoring the instruments;
+subjective experience is actively competing with system information.
 
-1. identify the task and context
-2. ask how the mechanism, limit, or risk described on the page appears in that context
-3. translate the judgment back into design, workflow, training, or organizational change
+That is why the page keeps returning to procedure,
+instrument scan,
+and training.
+Those external structures must be strong enough to override the false certainty created by the illusion.
 
-That is how the concept moves from “knowing the term” to “analyzing the problem.”
+!!! example "Example: Why “I Clearly Feel the Aircraft Turning” Can Itself Be a Risk Signal"
+    In spatial disorientation,
+    the dangerous state is not feeling nothing.
+    It is feeling something with great certainty.
+    When the operator becomes highly convinced by bodily sensation,
+    the instruments are more likely to be doubted.
+    That is why the course repeatedly emphasizes that the stronger the subjective certainty,
+    the stronger the need for instrument discipline and procedural support.
+
+## Why This Page Ultimately Returns to Display and Procedure Design
+
+Once it is accepted that human sensation can distort under certain conditions,
+the system has to provide an alternate path.
+That alternate path is more concrete than the phrase “trust the instruments.” It includes support such as:
+
+- whether the instrument state is easy enough to scan quickly
+- whether fixed cross-check procedure exists for critical phases
+- whether training has already normalized the expected illusion types
+- whether team members can help one another return to instrument-based control
+
+That is why spatial disorientation is not an isolated topic.
+It connects perception,
+display,
+procedure,
+and CRM into one integrated page.
+
+## Why the Transition Back from Bodily Sensation to Instrument Reading Is So Hard
+
+In spatial disorientation,
+the hardest moment is often not the first appearance of an abnormal sensation,
+but the later moment when control has to be handed back to the instruments despite the sensation feeling convincing.
+The transition is hard because the person has to continue acting while no longer trusting the body as the main reference.
+
+That is why training and procedure cannot stop at merely teaching that illusions exist.
+Operators need practice in making this transition itself.
+The real challenge is returning to the external reference system under both pressure and false certainty.
 
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"
     - Spatial disorientation arises from conflict between sensory intuition and actual state.
     - Its danger lies in how convincing the illusion feels.
-    - Instruments, training, and procedure are the primary defenses.
+    - Instruments,
+      training,
+      and procedure are the primary defenses.
     - This page is a classic case of conflict between human perception and system information.
 
 

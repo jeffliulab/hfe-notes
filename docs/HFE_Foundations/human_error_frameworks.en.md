@@ -3,26 +3,43 @@
 This chapter focuses on two questions: why people make errors and why error analysis cannot stop at the individual who happened to fail.
 
 !!! note "Core Question"
-    Why do people make errors, why can we not simply blame the individual, and how does this framework help us identify what should actually be fixed?
+    Why do people make errors,
+    why can we not simply blame the individual,
+    and how does this framework help us identify what should actually be fixed?
 
 ## Key Takeaways
 
 - People making errors does not mean the whole problem sits inside the person.
-- `slip`, `lapse`, `mistake`, and `violation` all look like failure, but they are not the same type of failure.
-- The goal of classification is not labeling; it is finding root cause and mitigation.
-- The same surface error may emerge from perception, cognition, or action failure.
-- If analysis stops at who failed, the larger system causes are usually missed.
+- `slip`,
+  `lapse`,
+  `mistake`,
+  and `violation` all look like failure,
+  but they are not the same type of failure.
+- The goal of classification is not labeling;
+  it is finding root cause and mitigation.
+- The same surface error may emerge from perception,
+  cognition,
+  or action failure.
+- If analysis stops at who failed,
+  the larger system causes are usually missed.
 
 ## Remember This First
 
 !!! tip "Keep This Sentence in Mind"
-    People do not err simply because they are “bad operators.” Attention, memory, and judgment all have limits, and poor design, unclear information, and weak workflows magnify those limits into visible failure.
+    People do not err simply because they are “bad operators.” Attention,
+    memory,
+    and judgment all have limits,
+    and poor design,
+    unclear information,
+    and weak workflows magnify those limits into visible failure.
     
-    This page therefore answers a single question: how should we read an error if we actually want to improve the system?
+    This page therefore answers a single question:
+    how should we read an error if we actually want to improve the system?
 
 ## What Counts as Human Error
 
-In plain language, `human error` means a person intended to do the task correctly but failed to produce the intended result.
+In plain language,
+`human error` means a person intended to do the task correctly but failed to produce the intended result.
 
 Two parts matter:
 
@@ -35,13 +52,20 @@ The two course definitions are enough to carry forward:
 - `Hagen & Mays (1981)`: the action fails under constraints such as `accuracy`, `sequence`, or `time`
 
 !!! note "One-Sentence Conclusion"
-    Human error is not mainly a blame term; it is an analytic term. Its value lies in separating wrong action, omitted action, wrong judgment, and system-created error opportunity.
+    Human error is not mainly a blame term;
+    it is an analytic term.
+    Its value lies in separating wrong action,
+    omitted action,
+    wrong judgment,
+    and system-created error opportunity.
 
 ## Why We Cannot Stop at Blaming the Person
 
 If analysis starts with “the whole problem is inside the person,” every later category becomes a more refined version of blame.
 
-That is why the lecture connects `old view / new view`, `internal / external`, and `sharp end / blunt end` in one line:
+That is why the lecture connects `old view / new view`,
+`internal / external`,
+and `sharp end / blunt end` in one line:
 
 - `old view`: the system is basically fine and failure mainly reflects operator carelessness or weakness
 - `new view`: people do err, but the deeper question is why the system made the error easy to produce or hard to stop
@@ -56,30 +80,49 @@ That is why the lecture connects `old view / new view`, `internal / external`, a
 </figure>
 
 !!! note "The Main Conclusion of This Section"
-    The visible failure may belong to the person, but the deeper vulnerability often belongs to the system creating error-prone conditions.
+    The visible failure may belong to the person,
+    but the deeper vulnerability often belongs to the system creating error-prone conditions.
 
 !!! example "Example: Why the Wrong-Medication Event Cannot Stop at Blaming the Nurse"
-    A hospital stores two look-alike medications next to each other. Nothing happens for a while, until a fatigued nurse selects the wrong one during a shift and the patient is harmed. The shallow summary is “the nurse picked the wrong drug.” The better questions are why the medications were stored together, why the packaging was so confusable, why a fatigued operator had to perform the high-risk discrimination, and why stronger checks failed to intercept the error.
+    A hospital stores two look-alike medications next to each other.
+    Nothing happens for a while,
+    until a fatigued nurse selects the wrong one during a shift and the patient is harmed.
+    The shallow summary is “the nurse picked the wrong drug.” The better questions are why the medications were stored together,
+    why the packaging was so confusable,
+    why a fatigued operator had to perform the high-risk discrimination,
+    and why stronger checks failed to intercept the error.
 
 ## How to Distinguish the Four Error Types
 
-Once the analysis stops blaming the person, the next step is classification. Classification matters because different failure types require different fixes.
+Once the analysis stops blaming the person,
+the next step is classification.
+Classification matters because different failure types require different fixes.
 
 ### 1. `slip`
-The plan is correct, but the action execution goes wrong.  
-Typical example: intending to press A but touching B.
+The plan is correct,
+but the action execution goes wrong.
+Typical example:
+intending to press A but touching B.
 
 ### 2. `lapse`
-The plan is correct, but the needed action never happens.  
-Typical example: omitting a check or forgetting a confirmation.
+The plan is correct,
+but the needed action never happens.
+Typical example:
+omitting a check or forgetting a confirmation.
 
 ### 3. `mistake`
-Execution is smooth, but the understanding, judgment, or plan is wrong from the start.  
-Typical example: consistently acting on the wrong interpretation.
+Execution is smooth,
+but the understanding,
+judgment,
+or plan is wrong from the start.
+Typical example:
+consistently acting on the wrong interpretation.
 
 ### 4. `violation`
-The rule is known, but the operator deliberately departs from it.  
-Typical example: skipping a step to save time.
+The rule is known,
+but the operator deliberately departs from it.
+Typical example:
+skipping a step to save time.
 
 The shortest memory line is:
 
@@ -94,20 +137,31 @@ The shortest memory line is:
 </figure>
 
 !!! warning "The Most Common Confusions"
-    - `slip` is not not knowing what to do; it is knowing what to do and still deviating during execution.
-    - `lapse` is not a wrong action; it is an omitted action, usually tied to memory or attention dropout.
-    - `mistake` can look smooth because execution itself may be consistent; the problem sits earlier in rule use or mental model.
-    - `violation` carries intent, so it differs from the other three, but that does not mean the analysis ends there.
+    - `slip` is not not knowing what to do;
+      it is knowing what to do and still deviating during execution.
+    - `lapse` is not a wrong action;
+      it is an omitted action,
+      usually tied to memory or attention dropout.
+    - `mistake` can look smooth because execution itself may be consistent;
+      the problem sits earlier in rule use or mental model.
+    - `violation` carries intent,
+      so it differs from the other three,
+      but that does not mean the analysis ends there.
 
 !!! example "Four Mini Cases"
-    - `slip`: a nurse intends to press “silence alarm” but hits “stop infusion” instead.
-    - `lapse`: the operator knows a double-check is required but moves on after the previous task and omits it entirely.
-    - `mistake`: a physician interprets the situation incorrectly and then acts consistently on that wrong understanding.
-    - `violation`: an operator knows scanning is required but skips it during a rush.
+    - `slip`:
+      a nurse intends to press “silence alarm” but hits “stop infusion” instead.
+    - `lapse`:
+      the operator knows a double-check is required but moves on after the previous task and omits it entirely.
+    - `mistake`:
+      a physician interprets the situation incorrectly and then acts consistently on that wrong understanding.
+    - `violation`:
+      an operator knows scanning is required but skips it during a rush.
 
 ## Why the PCA Model Matters
 
-The previous section answers “what kind of error is this?” The PCA model asks a deeper question: where did the problem start to grow?
+The previous section answers “what kind of error is this?” The PCA model asks a deeper question:
+where did the problem start to grow?
 
 `PCA` stands for `Perception - Cognition - Action`:
 
@@ -129,43 +183,70 @@ That matters because the same surface failure can have completely different root
 </figure>
 
 !!! note "The Main Conclusion of This Section"
-    The value of PCA is not the acronym itself. It is the reminder not to stare only at the final action, but to ask where the error started to develop.
+    The value of PCA is not the acronym itself.
+    It is the reminder not to stare only at the final action,
+    but to ask where the error started to develop.
 
 !!! example "Example: The Same Early Injection Stop Can Have Different Roots"
-    - If the finger slips unintentionally, the root is closer to `Action`.
-    - If the user wrongly perceives that the plunger is already fully depressed, the root is closer to `Perception`.
+    - If the finger slips unintentionally,
+      the root is closer to `Action`.
+    - If the user wrongly perceives that the plunger is already fully depressed,
+      the root is closer to `Perception`.
     - If the user remembers “hold for 10 seconds” as “hold for 6 seconds,” the root is closer to `Cognition`.
 
 ## How to Use the Framework
 
-When analyzing a real event, walk the framework in order:
+When analyzing a real event,
+walk the framework in order:
 
 ```mermaid
 flowchart TD
-    A[Observe a visible failure] --> B{Was there a deliberate rule deviation?}
-    B -- Yes --> C[Start from violation]
-    B -- No --> D{Was the plan itself correct?}
-    D -- Yes --> E[Differentiate slip vs lapse]
-    D -- No --> F[Classify as mistake]
-    E --> G[Trace action, memory, interface, and workload]
-    F --> H[Trace understanding, rules, information, and mental model]
-    C --> I[Trace workflow pressure, organization, and constraints]
-    G --> J[Identify root cause]
-    H --> J
-    I --> J
-    J --> K[Design the mitigation]
+A[Observe a visible failure] --> B{Was there a deliberate rule deviation?}
+B -- Yes --> C[Start from violation]
+B -- No --> D{Was the plan itself correct?}
+D -- Yes --> E[Differentiate slip vs lapse]
+D -- No --> F[Classify as mistake]
+E --> G[Trace action,
+memory,
+interface,
+and workload]
+F --> H[Trace understanding,
+rules,
+information,
+and mental model]
+C --> I[Trace workflow pressure,
+organization,
+and constraints]
+G --> J[Identify root cause]
+H --> J
+I --> J
+J --> K[Design the mitigation]
 ```
 
-The practical point is simple: do not jump straight to “more training.” Classify first, trace the deeper cause second, and only then decide whether the right response is interface change, workflow change, prompting, documentation, or organizational redesign.
+The practical point is simple:
+do not jump straight to “more training.” Classify first,
+trace the deeper cause second,
+and only then decide whether the right response is interface change,
+workflow change,
+prompting,
+documentation,
+or organizational redesign.
 
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"
-    - Human error analysis is about why failure happened, not about who is “bad.”
+    - Human error analysis is about why failure happened,
+      not about who is “bad.”
     - Stopping at the failing individual usually misses the larger system causes.
-    - `slip`, `lapse`, `mistake`, and `violation` must be separated because they lead to different mitigations.
-    - The `old view` compresses failure into blame; the `new view` asks how the system created or amplified the risk.
-    - The PCA model reminds us that the same surface error may begin in perception, cognition, or action.
+    - `slip`,
+      `lapse`,
+      `mistake`,
+      and `violation` must be separated because they lead to different mitigations.
+    - The `old view` compresses failure into blame;
+      the `new view` asks how the system created or amplified the risk.
+    - The PCA model reminds us that the same surface error may begin in perception,
+      cognition,
+      or action.
     - Classification is only useful if it leads to better root-cause analysis and mitigation.
 
 
