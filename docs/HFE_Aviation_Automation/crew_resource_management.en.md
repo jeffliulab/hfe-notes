@@ -36,6 +36,11 @@ challenge,
 confirmation,
 and backup into a stable practice that lets a multi-person system compensate for individual limits.
 
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/crm-1-28-2026/page-04.png" alt="This figure should show that CRM is not merely an interpersonal topic. It is a coordination problem that reconnects people, environment, rules, and equipment as one operating system." loading="lazy">
+  <figcaption>This figure should show that CRM is not merely an interpersonal topic. It is a coordination problem that reconnects people, environment, rules, and equipment as one operating system.</figcaption>
+</figure>
+
 ## The Elements This Page Wants You to Hold Onto
 
 The course keeps returning to a small set of elements:
@@ -116,6 +121,28 @@ CRM evaluation therefore cannot stop at whether the team exchanged words.
 It also has to ask whether a lower-status concern actually causes the team to reassess the picture,
 redirect attention,
 or revise the plan.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/crm-1-28-2026/page-14.png" alt="This figure should make one thing concrete: CRM is not a single trick but a trainable set of observable team behaviors including communication, briefing, monitoring, leadership, and shared situation awareness." loading="lazy">
+  <figcaption>This figure should make one thing concrete: CRM is not a single trick but a trainable set of observable team behaviors including communication, briefing, monitoring, leadership, and shared situation awareness.</figcaption>
+</figure>
+
+## Why CRM Ultimately Has to Be Defined in Observable Behaviors Rather Than Principles Alone
+
+If CRM remains only at the level of principles like “communication matters” or “teamwork should improve,” both training and evaluation become vague.
+What the course really emphasizes is that team behavior has to be visible,
+describable,
+and feedback-ready,
+for example whether communication was closed loop,
+whether cross-checking happened,
+or whether abnormality thresholds were aligned in the brief.
+
+CRM therefore cannot exist only as a value statement.
+It also has to become a set of trainable,
+observable,
+and reviewable behavior markers.
+Without that translation,
+teamwork easily collapses into abstract slogans.
 
 ## Chapter Summary
 

@@ -114,6 +114,30 @@ but whether it deserves to interrupt.
 If the system repeatedly forces unnecessary attention switching,
 the truly critical alert is more likely to be delayed when it finally arrives.
 
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/displays-and-alerts-2-4-26/page-09.png" alt="This figure should make alarm fatigue concrete: in clinical care, excessive nuisance alarms directly erode trust, disrupt work, and slow the response to truly critical signals." loading="lazy">
+  <figcaption>This figure should make alarm fatigue concrete: in clinical care, excessive nuisance alarms directly erode trust, disrupt work, and slow the response to truly critical signals.</figcaption>
+</figure>
+
+## Why High-Quality Display Design Connects State Perception Directly to Action
+
+Mature display design does not force the operator to first notice scattered numbers and then reconstruct the situation from scratch.
+A stronger design organizes the critical relationships and action cues directly in the interface so the operator can see where the state is degrading,
+what the relative direction of risk is,
+and which action deserves priority.
+
+That is why many aviation displays integrate traffic,
+speed tapes,
+alert zones,
+and state trend in one place.
+Once the display can connect noticing directly to understanding and action,
+the burden on the alerting system decreases as well.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/displays-and-alerts-2-4-26/page-21.png" alt="This figure should show that an integrated display such as TCAS is not merely putting more data on one screen. It organizes traffic conflict, vertical-speed information, and resolution cues into an interface that supports direct action." loading="lazy">
+  <figcaption>This figure should show that an integrated display such as TCAS is not merely putting more data on one screen. It organizes traffic conflict, vertical-speed information, and resolution cues into an interface that supports direct action.</figcaption>
+</figure>
+
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"

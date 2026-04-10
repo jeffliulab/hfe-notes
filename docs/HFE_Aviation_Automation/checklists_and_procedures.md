@@ -39,6 +39,11 @@ checklist 和 procedure 的作用，
 可确认、
 可共享的结构。
 
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/checklists-and-procedures-3-23-26/page-02.png" alt="这张图要看懂的是：checklist 与 procedure 不只是个体记忆工具，它们属于组织层 mitigation，和培训、CRM、display 一样都是系统防线的一部分。" loading="lazy">
+  <figcaption>这张图要看懂的是：checklist 与 procedure 不只是个体记忆工具，它们属于组织层 mitigation，和培训、CRM、display 一样都是系统防线的一部分。</figcaption>
+</figure>
+
 ## 好的程序设计具体在做什么
 
 好的 checklist / procedure 会：
@@ -124,6 +129,29 @@ checklist 更像把其中最容易漏掉、
 谁来读、
 怎么和动作节奏配合”。
 这也是程序页和团队页会彼此连起来的原因。
+
+## 为什么真实 checklist 设计差异会直接改变执行质量
+
+课程里拿不同 checklist 样式做对比，
+不是为了展示版式差异，
+而是为了提醒一件事：
+同样叫“before start checklist”，
+其长度、
+分组方式、
+可扫读性和节奏匹配程度都会直接影响执行效果。
+
+这意味着 checklist 不是只要“有”就行。
+版面结构、
+项目聚类、
+字量密度、
+读答节奏和任务阶段的对齐，
+都会决定它究竟是高质量支架，
+还是一张只会被快速跳过的纸。
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/checklists-and-procedures-3-23-26/page-15.png" alt="这张图要看懂的是：两张同样用于 B-757 的 before-start checklist，在长度、结构和可扫读性上的差异会直接改变机组执行时的认知负担。" loading="lazy">
+  <figcaption>这张图要看懂的是：两张同样用于 B-757 的 before-start checklist，在长度、结构和可扫读性上的差异会直接改变机组执行时的认知负担。</figcaption>
+</figure>
 
 ## 本章总结
 

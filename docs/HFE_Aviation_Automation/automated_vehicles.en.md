@@ -32,6 +32,11 @@ users are more heterogeneous,
 and the boundary is easier to misunderstand,
 making the takeover window especially fragile.
 
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/automated-vehicles-3-11-26-2/page-02.png" alt="This figure should make one point intuitive: the stronger the automation feels, the easier it is for the human to drift toward spectator status, which is exactly the fragile cognitive position at takeover." loading="lazy">
+  <figcaption>This figure should make one point intuitive: the stronger the automation feels, the easier it is for the human to drift toward spectator status, which is exactly the fragile cognitive position at takeover.</figcaption>
+</figure>
+
 ## Where the Event Chain Most Easily Breaks
 
 The real question in automated vehicles is not whether the system can drive itself for a while,
@@ -111,6 +116,24 @@ but also about whether the person can form the right trust calibration.
 The system has to communicate its boundary,
 capability,
 and uncertainty clearly enough that the user neither over-relies nor under-relies on it.
+
+## Why the SAE Automation-Level Diagram Is Useful but Also Easy to Misread
+
+The SAE level diagram is useful because it quickly clarifies when the human is still responsible for continuous supervision and when the system is actually taking over the driving task.
+But it is also easy to misread as a simple ladder of technical progress,
+as if higher levels automatically mean greater safety and less human burden.
+
+The course wants to emphasize something else:
+level changes are role changes.
+If the human role,
+takeover timing,
+and responsibility boundary are not made explicit,
+even a clear level diagram cannot solve handoff risk.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/automated-vehicles-3-11-26-2/page-08.png" alt="This figure should show that SAE levels are not just marketing labels. They define who is continuously monitoring, who is controlling, and who must take over when the boundary arrives." loading="lazy">
+  <figcaption>This figure should show that SAE levels are not just marketing labels. They define who is continuously monitoring, who is controlling, and who must take over when the boundary arrives.</figcaption>
+</figure>
 
 ## What To Take Away from This Case
 

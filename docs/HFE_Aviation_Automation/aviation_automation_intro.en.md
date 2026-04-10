@@ -114,6 +114,29 @@ the automation may simply be moving risk from manual control into handoff failur
     and sudden takeover demands.
     Normal performance therefore does not automatically prove that abnormal handoff has been designed well.
 
+## Why the Course Starts with Aviation Before Moving to Other Automated Domains
+
+The course begins with aviation not because aviation is the only important domain,
+but because aviation exposes many automation problems with unusual clarity.
+Role redistribution,
+mode shifts,
+short takeover windows,
+dense information,
+and high consequence all appear together there,
+which makes aviation a strong prototype for later domains.
+
+That is why this page is not merely industry history.
+It functions more like a methodological entry point.
+Once this page is understood,
+later issues in automated driving,
+clinical alarms,
+or complex-device takeover become easier to recognize as repetitions of the same human-factors patterns.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/intro-to-aviation-and-automation-1-26-26-2/page-02.png" alt="This figure should show why the course starts with aviation: human-factors work matured early there, so many automation problems become visible in aviation before being transferred to other transport and complex systems." loading="lazy">
+  <figcaption>This figure should show why the course starts with aviation: human-factors work matured early there, so many automation problems become visible in aviation before being transferred to other transport and complex systems.</figcaption>
+</figure>
+
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"

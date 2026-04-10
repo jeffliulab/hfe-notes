@@ -36,6 +36,11 @@ CRM 的价值在于让沟通、
 确认和补位变成一套稳定做法，
 让多人系统能够抵消单个人的注意和判断局限。
 
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/crm-1-28-2026/page-04.png" alt="这张图要看懂的是：CRM 的问题从一开始就不是纯“人际技巧”，而是把 liveware、环境、规则和设备重新接到一起的系统协调问题。" loading="lazy">
+  <figcaption>这张图要看懂的是：CRM 的问题从一开始就不是纯“人际技巧”，而是把 liveware、环境、规则和设备重新接到一起的系统协调问题。</figcaption>
+</figure>
+
 ## 这页真正想让你抓住的几个元素
 
 课程反复强调的元素包括：
@@ -128,6 +133,31 @@ challenge-response 之所以重要，
 团队是不是会真的停下来重看局面、
 重新分配注意力，
 或者修正原计划。
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/crm-1-28-2026/page-14.png" alt="这张图要看懂的是：CRM 不是单一技巧，而是一组可以被观察和训练的团队行为，包括沟通、brief、监控、领导与共享情境意识。" loading="lazy">
+  <figcaption>这张图要看懂的是：CRM 不是单一技巧，而是一组可以被观察和训练的团队行为，包括沟通、brief、监控、领导与共享情境意识。</figcaption>
+</figure>
+
+## 为什么 CRM 最后要落实成“可观察行为”而不只是原则
+
+CRM 如果只停在“沟通很重要”“团队协作要更好”这种原则层，
+培训和评估都会变空。
+课程真正强调的是，
+团队行为必须能被看见、
+被描述、
+被反馈，
+例如是否有 closed-loop communication、
+是否做了 cross-check、
+是否在 brief 中提前对齐了异常标准。
+
+也就是说，
+CRM 不能只作为价值观存在，
+它还必须转成一组可训练、
+可观察、
+可复盘的行为指标。
+只有这样，
+团队协作才不会沦为抽象口号。
 
 ## 本章总结
 

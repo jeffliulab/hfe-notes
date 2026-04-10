@@ -35,6 +35,11 @@ readable,
 confirmable,
 and shareable structures.
 
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/checklists-and-procedures-3-23-26/page-02.png" alt="This figure should make one point visible: checklists and procedures are not only personal memory aids. They are organizational mitigations and part of the same defense system as training, CRM, and displays." loading="lazy">
+  <figcaption>This figure should make one point visible: checklists and procedures are not only personal memory aids. They are organizational mitigations and part of the same defense system as training, CRM, and displays.</figcaption>
+</figure>
+
 ## What Good Procedure Design Actually Does
 
 Good checklist and procedure design:
@@ -112,6 +117,27 @@ It is also about when it is read,
 who reads it,
 and how it aligns with action rhythm.
 That is one reason the procedure page connects so closely to the team page.
+
+## Why Real Differences in Checklist Design Directly Change Execution Quality
+
+The course compares different checklist formats not to make a typographic point,
+but to show something operationally important:
+even when two artifacts are both called “before start checklist,” their length,
+grouping,
+scanability,
+and rhythm fit can change execution quality substantially.
+
+That means a checklist does not become useful simply because it exists.
+Layout structure,
+item clustering,
+text density,
+read-response rhythm,
+and alignment with task phase all determine whether it functions as a strong scaffold or becomes paper that crews skim past.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/checklists-and-procedures-3-23-26/page-15.png" alt="This figure should show that two before-start checklists for the same B-757 can create very different cognitive burdens because of differences in length, structure, and scanability." loading="lazy">
+  <figcaption>This figure should show that two before-start checklists for the same B-757 can create very different cognitive burdens because of differences in length, structure, and scanability.</figcaption>
+</figure>
 
 ## Chapter Summary
 

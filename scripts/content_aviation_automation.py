@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from note_blueprints import callout, page_blueprint, section
+from note_blueprints import callout, page_blueprint, section, visual
 
 
 AVIATION_AUTOMATION_CONTENT: dict[str, dict] = {
@@ -777,4 +777,177 @@ AVIATION_AUTOMATION_CONTENT["automated_vehicles"]["sections"].append(
         Automated-vehicle design therefore is not only about whether the system performs, but also about whether the person can form the right trust calibration. The system has to communicate its boundary, capability, and uncertainty clearly enough that the user neither over-relies nor under-relies on it.
         """,
     )
+)
+
+AVIATION_AUTOMATION_CONTENT["aviation_automation_intro"]["sections"].append(
+    section(
+        "transfer",
+        "## 为什么课程要先从航空谈自动化，再谈其他行业",
+        "## Why the Course Starts with Aviation Before Moving to Other Automated Domains",
+        body_zh="""
+        课程先从航空谈自动化，不是因为只有航空重要，而是因为航空把许多自动化问题暴露得最清楚。角色重分配、模式切换、短接管窗口、信息密集和高后果，在这里都同时出现，所以很多后续行业问题都能先在航空里看到原型。
+
+        这也是为什么航空页不是单独行业史，而更像一页方法学入口。只要这页读懂了，后面看到自动驾驶、临床报警或复杂设备接管时，你会更容易认出那些重复出现的人因模式。
+        """,
+        body_en="""
+        The course begins with aviation not because aviation is the only important domain, but because aviation exposes many automation problems with unusual clarity. Role redistribution, mode shifts, short takeover windows, dense information, and high consequence all appear together there, which makes aviation a strong prototype for later domains.
+
+        That is why this page is not merely industry history. It functions more like a methodological entry point. Once this page is understood, later issues in automated driving, clinical alarms, or complex-device takeover become easier to recognize as repetitions of the same human-factors patterns.
+        """,
+    )
+)
+AVIATION_AUTOMATION_CONTENT["aviation_automation_intro"]["inline_visuals"].extend(
+    [
+        visual(
+            "transfer",
+            "Intro to Aviation and Automation 1-26-26-2.pdf",
+            "这张图要看懂的是：课程先从航空出发，是因为航空里的人因研究起步早、积累深，很多自动化问题会先在这里被看清，再迁移到其他交通和复杂系统。",
+            "This figure should show why the course starts with aviation: human-factors work matured early there, so many automation problems become visible in aviation before being transferred to other transport and complex systems.",
+            asset_name_contains="page-02",
+        ),
+    ]
+)
+
+AVIATION_AUTOMATION_CONTENT["crew_resource_management"]["sections"].append(
+    section(
+        "behaviors",
+        "## 为什么 CRM 最后要落实成“可观察行为”而不只是原则",
+        "## Why CRM Ultimately Has to Be Defined in Observable Behaviors Rather Than Principles Alone",
+        body_zh="""
+        CRM 如果只停在“沟通很重要”“团队协作要更好”这种原则层，培训和评估都会变空。课程真正强调的是，团队行为必须能被看见、被描述、被反馈，例如是否有 closed-loop communication、是否做了 cross-check、是否在 brief 中提前对齐了异常标准。
+
+        也就是说，CRM 不能只作为价值观存在，它还必须转成一组可训练、可观察、可复盘的行为指标。只有这样，团队协作才不会沦为抽象口号。
+        """,
+        body_en="""
+        If CRM remains only at the level of principles like “communication matters” or “teamwork should improve,” both training and evaluation become vague. What the course really emphasizes is that team behavior has to be visible, describable, and feedback-ready, for example whether communication was closed loop, whether cross-checking happened, or whether abnormality thresholds were aligned in the brief.
+
+        CRM therefore cannot exist only as a value statement. It also has to become a set of trainable, observable, and reviewable behavior markers. Without that translation, teamwork easily collapses into abstract slogans.
+        """,
+    )
+)
+AVIATION_AUTOMATION_CONTENT["crew_resource_management"]["inline_visuals"].extend(
+    [
+        visual(
+            "authority_gradient",
+            "CRM 1-28-2026.pdf",
+            "这张图要看懂的是：CRM 不是单一技巧，而是一组可以被观察和训练的团队行为，包括沟通、brief、监控、领导与共享情境意识。",
+            "This figure should make one thing concrete: CRM is not a single trick but a trainable set of observable team behaviors including communication, briefing, monitoring, leadership, and shared situation awareness.",
+            asset_name_contains="page-14",
+        ),
+        visual(
+            "logic",
+            "CRM 1-28-2026.pdf",
+            "这张图要看懂的是：CRM 的问题从一开始就不是纯“人际技巧”，而是把 liveware、环境、规则和设备重新接到一起的系统协调问题。",
+            "This figure should show that CRM is not merely an interpersonal topic. It is a coordination problem that reconnects people, environment, rules, and equipment as one operating system.",
+            asset_name_contains="page-04",
+        ),
+    ]
+)
+
+AVIATION_AUTOMATION_CONTENT["displays_and_alerts"]["sections"].append(
+    section(
+        "integration",
+        "## 为什么高质量 display 设计会把“看到状态”和“采取动作”直接连起来",
+        "## Why High-Quality Display Design Connects State Perception Directly to Action",
+        body_zh="""
+        display 设计真正成熟时，不会让操作者先看到一堆分散数据，再自己艰难拼出局面。更强的做法，是让最关键的状态关系和行动线索在界面里被组织出来，让人一眼知道哪里正在变差、风险相对方向是什么、下一步该优先处理什么。
+
+        这也是为什么很多航空显示会把交通、速度带、告警区和状态趋势整合在一起。显示一旦能把“注意到”直接接到“理解并行动”，告警系统整体的负担就会下降。
+        """,
+        body_en="""
+        Mature display design does not force the operator to first notice scattered numbers and then reconstruct the situation from scratch. A stronger design organizes the critical relationships and action cues directly in the interface so the operator can see where the state is degrading, what the relative direction of risk is, and which action deserves priority.
+
+        That is why many aviation displays integrate traffic, speed tapes, alert zones, and state trend in one place. Once the display can connect noticing directly to understanding and action, the burden on the alerting system decreases as well.
+        """,
+    )
+)
+AVIATION_AUTOMATION_CONTENT["displays_and_alerts"]["inline_visuals"].extend(
+    [
+        visual(
+            "integration",
+            "Displays and Alerts 2-4-26.pdf",
+            "这张图要看懂的是：像 TCAS 这样的集成显示，不只是把更多信息放进一个屏，而是把交通冲突、垂直速度和回避指令组织成能直接支持动作的界面。",
+            "This figure should show that an integrated display such as TCAS is not merely putting more data on one screen. It organizes traffic conflict, vertical-speed information, and resolution cues into an interface that supports direct action.",
+            asset_name_contains="page-21",
+        ),
+        visual(
+            "false_alarm",
+            "Displays and Alerts 2-4-26.pdf",
+            "这张图要看懂的是：alarm fatigue 不是抽象概念，临床环境里过多 nuisance alarm 会直接侵蚀信任、干扰工作并拖慢真正关键的响应。",
+            "This figure should make alarm fatigue concrete: in clinical care, excessive nuisance alarms directly erode trust, disrupt work, and slow the response to truly critical signals.",
+            asset_name_contains="page-09",
+        ),
+    ]
+)
+
+AVIATION_AUTOMATION_CONTENT["checklists_and_procedures"]["sections"].append(
+    section(
+        "comparison",
+        "## 为什么真实 checklist 设计差异会直接改变执行质量",
+        "## Why Real Differences in Checklist Design Directly Change Execution Quality",
+        body_zh="""
+        课程里拿不同 checklist 样式做对比，不是为了展示版式差异，而是为了提醒一件事：同样叫“before start checklist”，其长度、分组方式、可扫读性和节奏匹配程度都会直接影响执行效果。
+
+        这意味着 checklist 不是只要“有”就行。版面结构、项目聚类、字量密度、读答节奏和任务阶段的对齐，都会决定它究竟是高质量支架，还是一张只会被快速跳过的纸。
+        """,
+        body_en="""
+        The course compares different checklist formats not to make a typographic point, but to show something operationally important: even when two artifacts are both called “before start checklist,” their length, grouping, scanability, and rhythm fit can change execution quality substantially.
+
+        That means a checklist does not become useful simply because it exists. Layout structure, item clustering, text density, read-response rhythm, and alignment with task phase all determine whether it functions as a strong scaffold or becomes paper that crews skim past.
+        """,
+    )
+)
+AVIATION_AUTOMATION_CONTENT["checklists_and_procedures"]["inline_visuals"].extend(
+    [
+        visual(
+            "comparison",
+            "Checklists and Procedures 3-23-26.pdf",
+            "这张图要看懂的是：两张同样用于 B-757 的 before-start checklist，在长度、结构和可扫读性上的差异会直接改变机组执行时的认知负担。",
+            "This figure should show that two before-start checklists for the same B-757 can create very different cognitive burdens because of differences in length, structure, and scanability.",
+            asset_name_contains="page-15",
+        ),
+        visual(
+            "problem",
+            "Checklists and Procedures 3-23-26.pdf",
+            "这张图要看懂的是：checklist 与 procedure 不只是个体记忆工具，它们属于组织层 mitigation，和培训、CRM、display 一样都是系统防线的一部分。",
+            "This figure should make one point visible: checklists and procedures are not only personal memory aids. They are organizational mitigations and part of the same defense system as training, CRM, and displays.",
+            asset_name_contains="page-02",
+        ),
+    ]
+)
+
+AVIATION_AUTOMATION_CONTENT["automated_vehicles"]["sections"].append(
+    section(
+        "levels",
+        "## 为什么 SAE 自动化等级图很有用，但也容易被误读",
+        "## Why the SAE Automation-Level Diagram Is Useful but Also Easy to Misread",
+        body_zh="""
+        SAE 等级图很有用，因为它能快速告诉人“什么时候还是人负责持续监控，什么时候系统才真正接管驾驶任务”。但它也容易被误读成一条简单的技术升级阶梯，好像等级越高就自然越安全、越省心。
+
+        课程更想强调的是另一点：等级变化代表角色变化。只要人的角色、接管时机和责任边界没有被讲清楚，再漂亮的等级图也不能替系统解决 handoff 风险。
+        """,
+        body_en="""
+        The SAE level diagram is useful because it quickly clarifies when the human is still responsible for continuous supervision and when the system is actually taking over the driving task. But it is also easy to misread as a simple ladder of technical progress, as if higher levels automatically mean greater safety and less human burden.
+
+        The course wants to emphasize something else: level changes are role changes. If the human role, takeover timing, and responsibility boundary are not made explicit, even a clear level diagram cannot solve handoff risk.
+        """,
+    )
+)
+AVIATION_AUTOMATION_CONTENT["automated_vehicles"]["inline_visuals"].extend(
+    [
+        visual(
+            "levels",
+            "Automated Vehicles 3-11-26-2.pdf",
+            "这张图要看懂的是：SAE 等级的真正意义不是营销标签，而是不同等级下谁在持续监控、谁在负责控制、谁在边界到来时必须接手。",
+            "This figure should show that SAE levels are not just marketing labels. They define who is continuously monitoring, who is controlling, and who must take over when the boundary arrives.",
+            asset_name_contains="page-08",
+        ),
+        visual(
+            "background",
+            "Automated Vehicles 3-11-26-2.pdf",
+            "这张图要看懂的是：自动化越强，人越容易退成“旁观者”，而这正是接管时最脆弱的认知位置。",
+            "This figure should make one point intuitive: the stronger the automation feels, the easier it is for the human to drift toward spectator status, which is exactly the fragile cognitive position at takeover.",
+            asset_name_contains="page-02",
+        ),
+    ]
 )

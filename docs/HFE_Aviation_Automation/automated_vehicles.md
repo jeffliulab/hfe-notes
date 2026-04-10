@@ -37,6 +37,11 @@
 边界更容易被误解，
 所以接管窗口通常更脆弱。
 
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/automated-vehicles-3-11-26-2/page-02.png" alt="这张图要看懂的是：自动化越强，人越容易退成“旁观者”，而这正是接管时最脆弱的认知位置。" loading="lazy">
+  <figcaption>这张图要看懂的是：自动化越强，人越容易退成“旁观者”，而这正是接管时最脆弱的认知位置。</figcaption>
+</figure>
+
 ## 事件链真正容易断在哪里
 
 自动化车辆的问题通常不是“系统能不能自己开一会儿”，
@@ -128,6 +133,26 @@ driver monitoring 再强，
 能力和不确定性表达得足够清楚，
 让人既不过度依赖，
 也不过度怀疑。
+
+## 为什么 SAE 自动化等级图很有用，但也容易被误读
+
+SAE 等级图很有用，
+因为它能快速告诉人“什么时候还是人负责持续监控，
+什么时候系统才真正接管驾驶任务”。
+但它也容易被误读成一条简单的技术升级阶梯，
+好像等级越高就自然越安全、
+越省心。
+
+课程更想强调的是另一点：
+等级变化代表角色变化。
+只要人的角色、
+接管时机和责任边界没有被讲清楚，
+再漂亮的等级图也不能替系统解决 handoff 风险。
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/automated-vehicles-3-11-26-2/page-08.png" alt="这张图要看懂的是：SAE 等级的真正意义不是营销标签，而是不同等级下谁在持续监控、谁在负责控制、谁在边界到来时必须接手。" loading="lazy">
+  <figcaption>这张图要看懂的是：SAE 等级的真正意义不是营销标签，而是不同等级下谁在持续监控、谁在负责控制、谁在边界到来时必须接手。</figcaption>
+</figure>
 
 ## 这个案例最后要带走什么
 

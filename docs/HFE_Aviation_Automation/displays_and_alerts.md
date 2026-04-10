@@ -124,6 +124,33 @@ alerting 本质上不是感官刺激设计，
 如果系统频繁让人白白切换注意力，
 真正的关键警报到来时就更容易被延迟处理。
 
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/displays-and-alerts-2-4-26/page-09.png" alt="这张图要看懂的是：alarm fatigue 不是抽象概念，临床环境里过多 nuisance alarm 会直接侵蚀信任、干扰工作并拖慢真正关键的响应。" loading="lazy">
+  <figcaption>这张图要看懂的是：alarm fatigue 不是抽象概念，临床环境里过多 nuisance alarm 会直接侵蚀信任、干扰工作并拖慢真正关键的响应。</figcaption>
+</figure>
+
+## 为什么高质量 display 设计会把“看到状态”和“采取动作”直接连起来
+
+display 设计真正成熟时，
+不会让操作者先看到一堆分散数据，
+再自己艰难拼出局面。
+更强的做法，
+是让最关键的状态关系和行动线索在界面里被组织出来，
+让人一眼知道哪里正在变差、
+风险相对方向是什么、
+下一步该优先处理什么。
+
+这也是为什么很多航空显示会把交通、
+速度带、
+告警区和状态趋势整合在一起。
+显示一旦能把“注意到”直接接到“理解并行动”，
+告警系统整体的负担就会下降。
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/displays-and-alerts-2-4-26/page-21.png" alt="这张图要看懂的是：像 TCAS 这样的集成显示，不只是把更多信息放进一个屏，而是把交通冲突、垂直速度和回避指令组织成能直接支持动作的界面。" loading="lazy">
+  <figcaption>这张图要看懂的是：像 TCAS 这样的集成显示，不只是把更多信息放进一个屏，而是把交通冲突、垂直速度和回避指令组织成能直接支持动作的界面。</figcaption>
+</figure>
+
 ## 本章总结
 
 !!! tip "复习时重点记这几条"
