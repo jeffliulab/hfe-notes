@@ -35,6 +35,11 @@ and time pressure shortens the comparison window.
 When all three combine,
 operators are more likely to rely on familiar paths rather than continue searching and correcting.
 
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-stressdecisionmaking-20260225/page-03.png" alt="This figure should show that high task demand simultaneously drives attentional narrowing, distraction, working-memory loss, and degraded SA, which is why stress is never a single-capacity problem." loading="lazy">
+  <figcaption>This figure should show that high task demand simultaneously drives attentional narrowing, distraction, working-memory loss, and degraded SA, which is why stress is never a single-capacity problem.</figcaption>
+</figure>
+
 ## Why People Often See the Signal but Still Fail to Use It
 
 In high-pressure settings,
@@ -87,6 +92,24 @@ but stops thinking further too early.
     it may simply be a faster way to lock in the wrong explanation.
     If the system does not preserve review space,
     decisiveness itself can amplify risk.
+
+## Why the Relationship Between Stress and Performance Is Not Linear
+
+One easy-to-miss point on this page is that stress and performance do not move in a simple straight line.
+Within a certain range,
+higher arousal can indeed sharpen focus.
+But once the level crosses a manageable band,
+attention narrows,
+information processing slows,
+and working memory plus flexibility degrade together.
+
+That also explains why many high-pressure failures do not begin with total incapacity.
+They begin with performance that initially looks acceptable and then quickly crosses a threshold into cascading distortion.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-stressdecisionmaking-20260225/page-04.png" alt="This figure should show that stress and performance follow a curve with a turning point. Once the threshold is crossed, adding more pressure no longer improves performance and instead accelerates distortion." loading="lazy">
+  <figcaption>This figure should show that stress and performance follow a curve with a turning point. Once the threshold is crossed, adding more pressure no longer improves performance and instead accelerates distortion.</figcaption>
+</figure>
 
 ## Why Distraction Is Dangerous Because It Destroys Intermediate State
 

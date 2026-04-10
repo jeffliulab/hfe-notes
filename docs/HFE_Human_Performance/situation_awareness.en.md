@@ -33,6 +33,11 @@ The three layers in the course are:
 2. `comprehension`: whether the cues were integrated into the correct current picture
 3. `projection`: where the system is likely to go next if nobody intervenes
 
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-situationawareness-20260325/page-04.png" alt="This figure should show that Levels 1, 2, and 3 are not parallel labels. They are a progression from noticing cues, to understanding the situation, to projecting where it is going." loading="lazy">
+  <figcaption>This figure should show that Levels 1, 2, and 3 are not parallel labels. They are a progression from noticing cues, to understanding the situation, to projecting where it is going.</figcaption>
+</figure>
+
 ## Why the Second and Third Layers Break So Easily
 
 Operators may see the readings,
@@ -64,6 +69,28 @@ At root they all ask whether the system helps people form sufficient SA.
 
 !!! note "One-Sentence Conclusion"
     The core of situation awareness is not “more information,” but whether information has been organized into understanding and prediction that support action.
+
+## Why the Endsley Model Places SA on the Chain Between Environment, Decision, and Action
+
+The value of the Endsley model is not only that it divides SA into three levels,
+but that it places SA explicitly on the chain of environment input,
+SA,
+decision,
+action,
+and feedback.
+That turns SA from an abstract mental state into an intermediate mechanism that directly shapes judgment and action quality.
+
+That also explains why the course connects workload,
+stress,
+automation,
+and interface design to SA.
+These factors are not merely influencing mood from the side.
+They are changing whether the person can form an adequate picture of the situation at all.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-situationawareness-20260325/page-03.png" alt="This figure should show that SA is not an isolated state. It sits between environmental input, decision, and action, shaped upstream by displays and workload and shaping downstream behavior directly." loading="lazy">
+  <figcaption>This figure should show that SA is not an isolated state. It sits between environmental input, decision, and action, shaped upstream by displays and workload and shaping downstream behavior directly.</figcaption>
+</figure>
 
 ## How the Three SA Breakdowns Appear in Real Analysis
 

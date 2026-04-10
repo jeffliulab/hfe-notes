@@ -37,6 +37,11 @@
 操作者更容易依赖最熟悉的路径，
 而不是继续搜索和修正。
 
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-stressdecisionmaking-20260225/page-03.png" alt="这张图要看懂的是：高任务需求会同时带来注意收缩、分心、工作记忆下降和 SA 受损，所以压力问题从来不是单点能力下降。" loading="lazy">
+  <figcaption>这张图要看懂的是：高任务需求会同时带来注意收缩、分心、工作记忆下降和 SA 受损，所以压力问题从来不是单点能力下降。</figcaption>
+</figure>
+
 ## 为什么很多人明明看见了信息却没用上
 
 高压力场景里，
@@ -92,6 +97,26 @@
     就可能只是更快地把错误解释固定下来。
     系统如果不能保留复核空间，
     果断本身就会变成风险放大器。
+
+## 为什么压力和表现不是线性关系
+
+这页一个很容易被忽略的点是：
+压力和表现不是简单的“压力越大越差”或“越忙越好”。
+在一定范围内，
+唤醒水平上升确实可能让人更专注；
+但一旦超过可承受区间，
+注意会缩窄、
+信息处理变慢、
+工作记忆和灵活调整一起下降。
+
+这也解释了为什么很多高压事故不是从“完全不会做”开始，
+而是从一开始还能撑住，
+随后迅速跨过临界点开始连锁失真。
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-stressdecisionmaking-20260225/page-04.png" alt="这张图要看懂的是：压力和表现之间更像一条带拐点的曲线，超过阈值后，继续加压不会带来更好表现，只会更快失真。" loading="lazy">
+  <figcaption>这张图要看懂的是：压力和表现之间更像一条带拐点的曲线，超过阈值后，继续加压不会带来更好表现，只会更快失真。</figcaption>
+</figure>
 
 ## 为什么分心真正可怕的是让人丢掉中间状态
 

@@ -100,6 +100,11 @@
 一旦这些动作没有进入系统层，
 疲劳管理就很容易停留在“大家自己注意休息”的空话上。
 
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-fatigue-sleep-20260211/page-05.png" alt="这张图要看懂的是：疲劳管理真正有效时，会先改班次结构和连续工作时长，而不是只要求个人更努力扛住疲劳。" loading="lazy">
+  <figcaption>这张图要看懂的是：疲劳管理真正有效时，会先改班次结构和连续工作时长，而不是只要求个人更努力扛住疲劳。</figcaption>
+</figure>
+
 !!! example "案例：为什么真正的 fatigue management 往往先改班次，不是先改态度"
     如果夜班长度、
     交替节奏和关键任务安排本身就持续把人放在生理低谷窗口，
@@ -123,6 +128,27 @@ fatigue 讨论里一个很关键但常被低估的点，
 只要任务依赖持续监控、
 快速响应或精准时机，
 短暂掉线就已经可能构成高风险。
+
+## 为什么 fatigue 讨论要反复拿驾驶和医疗错误做证据
+
+课程反复拿疲劳驾驶和医疗错误做例子，
+不是为了堆统计数字，
+而是为了说明 fatigue 风险跨场景存在。
+只要任务依赖持续监控、
+及时判断和稳定执行，
+睡眠不足就会在非常不同的行业里表现出相似的脆弱性。
+
+这也是为什么 fatigue 不能被理解成某个行业的特殊难题。
+它更像一个底层限制，
+会穿透驾驶、
+医疗、
+航空和工业任务，
+把原本还能控制的任务窗口推向更高风险。
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-fatigue-sleep-20260211/page-04.png" alt="这张图要看懂的是：疲劳驾驶不是抽象警告，而是已经在事故、伤亡和时间窗口上表现出稳定模式的现实风险。" loading="lazy">
+  <figcaption>这张图要看懂的是：疲劳驾驶不是抽象警告，而是已经在事故、伤亡和时间窗口上表现出稳定模式的现实风险。</figcaption>
+</figure>
 
 ## 本章总结
 

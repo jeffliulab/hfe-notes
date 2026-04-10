@@ -33,6 +33,11 @@ and fatigue.
 The point of the page is not memorizing cognitive terminology;
 it is recognizing that system design must treat this limitation as a starting assumption.
 
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/attention-and-monitoring-2-9-2026/page-04.png" alt="This figure should show that attention is not one isolated faculty. It sits inside the full chain from perception to cognition to action, so burden at any stage feeds back into monitoring performance." loading="lazy">
+  <figcaption>This figure should show that attention is not one isolated faculty. It sits inside the full chain from perception to cognition to action, so burden at any stage feeds back into monitoring performance.</figcaption>
+</figure>
+
 ## Why Monitoring Tasks Decay So Easily
 
 Monitoring tasks look easy,
@@ -102,6 +107,22 @@ and automation pages.
     Stronger improvement usually changes the signals,
     feedback,
     and coordination structure so the problem becomes easier to detect at the right time.
+
+## Why Monitoring Problems Often Appear in Supervisory Rather Than Manual Control
+
+The course keeps attention and automation together because people are especially likely to drift into passive supervision under supervisory control.
+The more stable and automatic the system feels,
+the easier it is for the operator to move from active controller to occasional overseer.
+
+That role migration itself increases vigilance-decrement and complacency risk.
+In other words,
+attention is not only a psychology problem.
+It is often a role-design problem.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/attention-and-monitoring-2-9-2026/page-03.png" alt="This figure should show that as control shifts from manual toward full automation, the human does not simply disappear. The role is pushed toward supervision, which is exactly where monitoring vulnerability often grows." loading="lazy">
+  <figcaption>This figure should show that as control shifts from manual toward full automation, the human does not simply disappear. The role is pushed toward supervision, which is exactly where monitoring vulnerability often grows.</figcaption>
+</figure>
 
 ## Chapter Summary
 

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from note_blueprints import callout, page_blueprint, section
+from note_blueprints import callout, page_blueprint, section, visual
 
 
 HUMAN_PERFORMANCE_CONTENT: dict[str, dict] = {
@@ -552,6 +552,41 @@ HUMAN_PERFORMANCE_CONTENT["fatigue_and_sleep"]["sections"].append(
         """,
     )
 )
+HUMAN_PERFORMANCE_CONTENT["fatigue_and_sleep"]["sections"].append(
+    section(
+        "evidence",
+        "## 为什么 fatigue 讨论要反复拿驾驶和医疗错误做证据",
+        "## Why the Page Keeps Returning to Driving and Medical Error Evidence",
+        body_zh="""
+        课程反复拿疲劳驾驶和医疗错误做例子，不是为了堆统计数字，而是为了说明 fatigue 风险跨场景存在。只要任务依赖持续监控、及时判断和稳定执行，睡眠不足就会在非常不同的行业里表现出相似的脆弱性。
+
+        这也是为什么 fatigue 不能被理解成某个行业的特殊难题。它更像一个底层限制，会穿透驾驶、医疗、航空和工业任务，把原本还能控制的任务窗口推向更高风险。
+        """,
+        body_en="""
+        The course keeps returning to drowsy driving and medical error not to pile up statistics, but to show that fatigue risk generalizes across domains. Whenever a task depends on sustained monitoring, timely judgment, and stable execution, sleep loss creates similar vulnerability even in very different industries.
+
+        That is why fatigue should not be understood as a niche problem for one sector. It behaves more like an underlying constraint that cuts across driving, medicine, aviation, and industrial work, pushing otherwise manageable task windows toward higher risk.
+        """,
+    )
+)
+HUMAN_PERFORMANCE_CONTENT["fatigue_and_sleep"]["inline_visuals"].extend(
+    [
+        visual(
+            "evidence",
+            "Sp26_Fatigue+Sleep_20260211.pdf",
+            "这张图要看懂的是：疲劳驾驶不是抽象警告，而是已经在事故、伤亡和时间窗口上表现出稳定模式的现实风险。",
+            "This figure should make one point concrete: drowsy driving is not an abstract warning. It is a real risk that already shows a stable pattern in crashes, injuries, and time-of-day windows.",
+            asset_name_contains="page-04",
+        ),
+        visual(
+            "countermeasure",
+            "Sp26_Fatigue+Sleep_20260211.pdf",
+            "这张图要看懂的是：疲劳管理真正有效时，会先改班次结构和连续工作时长，而不是只要求个人更努力扛住疲劳。",
+            "This figure should show that strong fatigue management changes schedule structure and continuous-duty duration first, rather than only asking individuals to cope harder.",
+            asset_name_contains="page-05",
+        ),
+    ]
+)
 
 HUMAN_PERFORMANCE_CONTENT["stress_and_decision_making"]["sections"].extend(
     [
@@ -568,6 +603,21 @@ HUMAN_PERFORMANCE_CONTENT["stress_and_decision_making"]["sections"].extend(
             Under high stress and time pressure, people do not always freeze. Many instead form a “good enough” explanation very quickly. The danger is that the explanation may rest on a narrow search of information and too little comparison with alternatives.
 
             That is the risk of premature closure: the person is still thinking, but stops thinking further too early.
+            """,
+        ),
+        section(
+            "curve",
+            "## 为什么压力和表现不是线性关系",
+            "## Why the Relationship Between Stress and Performance Is Not Linear",
+            body_zh="""
+            这页一个很容易被忽略的点是：压力和表现不是简单的“压力越大越差”或“越忙越好”。在一定范围内，唤醒水平上升确实可能让人更专注；但一旦超过可承受区间，注意会缩窄、信息处理变慢、工作记忆和灵活调整一起下降。
+
+            这也解释了为什么很多高压事故不是从“完全不会做”开始，而是从一开始还能撑住，随后迅速跨过临界点开始连锁失真。
+            """,
+            body_en="""
+            One easy-to-miss point on this page is that stress and performance do not move in a simple straight line. Within a certain range, higher arousal can indeed sharpen focus. But once the level crosses a manageable band, attention narrows, information processing slows, and working memory plus flexibility degrade together.
+
+            That also explains why many high-pressure failures do not begin with total incapacity. They begin with performance that initially looks acceptable and then quickly crosses a threshold into cascading distortion.
             """,
         ),
         section(
@@ -614,9 +664,42 @@ HUMAN_PERFORMANCE_CONTENT["stress_and_decision_making"]["sections"].append(
         """,
     )
 )
+HUMAN_PERFORMANCE_CONTENT["stress_and_decision_making"]["inline_visuals"].extend(
+    [
+        visual(
+            "chain",
+            "Sp26_StressDecisionMaking_20260225.pdf",
+            "这张图要看懂的是：高任务需求会同时带来注意收缩、分心、工作记忆下降和 SA 受损，所以压力问题从来不是单点能力下降。",
+            "This figure should show that high task demand simultaneously drives attentional narrowing, distraction, working-memory loss, and degraded SA, which is why stress is never a single-capacity problem.",
+            asset_name_contains="page-03",
+        ),
+        visual(
+            "curve",
+            "Sp26_StressDecisionMaking_20260225.pdf",
+            "这张图要看懂的是：压力和表现之间更像一条带拐点的曲线，超过阈值后，继续加压不会带来更好表现，只会更快失真。",
+            "This figure should show that stress and performance follow a curve with a turning point. Once the threshold is crossed, adding more pressure no longer improves performance and instead accelerates distortion.",
+            asset_name_contains="page-04",
+        ),
+    ]
+)
 
 HUMAN_PERFORMANCE_CONTENT["situation_awareness"]["sections"].extend(
     [
+        section(
+            "model",
+            "## 为什么 Endsley 模型把 SA 放在“决策之前、动作之后”这条链上",
+            "## Why the Endsley Model Places SA on the Chain Between Environment, Decision, and Action",
+            body_zh="""
+            Endsley 模型的价值，不只是把 SA 分成三层，而是把它明确放到“环境输入 -> SA -> 决策 -> 动作 -> 反馈”这条链上。这样一来，SA 就不再是抽象心理状态，而是直接决定后续判断和动作质量的中间机制。
+
+            这也解释了为什么课程里会把 workload、stress、automation 和 interface design 都接到 SA 上。它们不是在旁边“影响一下心情”，而是在改变人能否形成足够好的局面理解。
+            """,
+            body_en="""
+            The value of the Endsley model is not only that it divides SA into three levels, but that it places SA explicitly on the chain of environment input, SA, decision, action, and feedback. That turns SA from an abstract mental state into an intermediate mechanism that directly shapes judgment and action quality.
+
+            That also explains why the course connects workload, stress, automation, and interface design to SA. These factors are not merely influencing mood from the side. They are changing whether the person can form an adequate picture of the situation at all.
+            """,
+        ),
         section(
             "breakdowns",
             "## 三层 SA 断裂在实际分析里怎样分别出现",
@@ -684,9 +767,42 @@ HUMAN_PERFORMANCE_CONTENT["situation_awareness"]["sections"].append(
         """,
     )
 )
+HUMAN_PERFORMANCE_CONTENT["situation_awareness"]["inline_visuals"].extend(
+    [
+        visual(
+            "model",
+            "Sp26_SituationAwareness_20260325.pdf",
+            "这张图要看懂的是：SA 不是孤立状态，它夹在环境输入、决策和动作之间，前面受显示与负荷影响，后面直接影响行为结果。",
+            "This figure should show that SA is not an isolated state. It sits between environmental input, decision, and action, shaped upstream by displays and workload and shaping downstream behavior directly.",
+            asset_name_contains="page-03",
+        ),
+        visual(
+            "layers",
+            "Sp26_SituationAwareness_20260325.pdf",
+            "这张图要看懂的是：Level 1、2、3 不是三个平行标签，而是从看见线索、理解局面到预测走势的一条递进链。",
+            "This figure should show that Levels 1, 2, and 3 are not parallel labels. They are a progression from noticing cues, to understanding the situation, to projecting where it is going.",
+            asset_name_contains="page-04",
+        ),
+    ]
+)
 
 HUMAN_PERFORMANCE_CONTENT["spatial_disorientation"]["sections"].extend(
     [
+        section(
+            "mechanism",
+            "## 为什么空间定向错觉首先是一个生理机制问题",
+            "## Why Spatial Disorientation Starts as a Physiological Mechanism Problem",
+            body_zh="""
+            空间定向错觉不是单纯“心理感觉不准”，它首先是一个生理机制问题。内耳和前庭系统在加速度、转弯和低外部参照条件下，本来就可能给出和真实姿态不一致的信号。
+
+            这意味着错觉不是个别人偶尔主观想错，而是人的感觉系统在特定环境下确实存在系统性失真。理解这一层之后，才会知道为什么仪表和程序必须成为主参考系。
+            """,
+            body_en="""
+            Spatial disorientation is not merely a vague psychological feeling. It starts as a physiological mechanism problem. Under acceleration, turning, and low external-reference conditions, the inner ear and vestibular system can legitimately produce signals that do not match the actual aircraft attitude.
+
+            That means the illusion is not a random personal mistake. It is a systematic distortion that can emerge from the sensing system itself under specific conditions. Once that is understood, the need for instruments and procedure as the main reference becomes much clearer.
+            """,
+        ),
         section(
             "illusion_strength",
             "## 为什么这类错觉特别难靠主观意志克服",
@@ -755,4 +871,58 @@ HUMAN_PERFORMANCE_CONTENT["spatial_disorientation"]["sections"].append(
         That is why training and procedure cannot stop at merely teaching that illusions exist. Operators need practice in making this transition itself. The real challenge is returning to the external reference system under both pressure and false certainty.
         """,
     )
+)
+HUMAN_PERFORMANCE_CONTENT["spatial_disorientation"]["inline_visuals"].extend(
+    [
+        visual(
+            "mechanism",
+            "Sp26_SpDisorientation_20260330.pdf",
+            "这张图要看懂的是：空间定向错觉不是抽象概念，它和内耳结构、半规管等具体生理通道直接相关。",
+            "This figure should show that spatial disorientation is not an abstract idea. It connects directly to concrete physiology such as the inner ear and semicircular canals.",
+            asset_name_contains="page-02",
+        ),
+        visual(
+            "mechanism",
+            "Sp26_SpDisorientation_20260330.pdf",
+            "这张图要看懂的是：前庭系统本来就是姿态与运动感的重要来源，所以一旦它被误导，主观感觉会非常有说服力。",
+            "This figure should show that the vestibular system is a primary source of motion and attitude sensation, which is why its distortion can feel so convincing to the operator.",
+            asset_name_contains="page-03",
+        ),
+    ]
+)
+
+HUMAN_PERFORMANCE_CONTENT["attention_and_monitoring"]["sections"].append(
+    section(
+        "supervisory",
+        "## 为什么监控任务常常出现在“监督式控制”而不是手动控制里",
+        "## Why Monitoring Problems Often Appear in Supervisory Rather Than Manual Control",
+        body_zh="""
+        课程里会把 attention 和 automation 放到一起讲，是因为人最容易在监督式控制里滑向被动监视者。系统越稳定、越自动，人越容易从持续操作者变成偶尔插手的监督者。
+
+        这类角色迁移本身就会提高 vigilance decrement 和 complacency 风险。也就是说，注意问题并不是单纯心理学问题，它经常是角色设计问题。
+        """,
+        body_en="""
+        The course keeps attention and automation together because people are especially likely to drift into passive supervision under supervisory control. The more stable and automatic the system feels, the easier it is for the operator to move from active controller to occasional overseer.
+
+        That role migration itself increases vigilance-decrement and complacency risk. In other words, attention is not only a psychology problem. It is often a role-design problem.
+        """,
+    )
+)
+HUMAN_PERFORMANCE_CONTENT["attention_and_monitoring"]["inline_visuals"].extend(
+    [
+        visual(
+            "supervisory",
+            "Attention and Monitoring 2-9- 2026.pdf",
+            "这张图要看懂的是：从手动控制到全自动控制，人的位置不是简单消失，而是逐步被推向监督式角色，而这正是监控脆弱性最常出现的地方。",
+            "This figure should show that as control shifts from manual toward full automation, the human does not simply disappear. The role is pushed toward supervision, which is exactly where monitoring vulnerability often grows.",
+            asset_name_contains="page-03",
+        ),
+        visual(
+            "limits",
+            "Attention and Monitoring 2-9- 2026.pdf",
+            "这张图要看懂的是：注意并不是单独一块能力，它嵌在从感知、认知到动作的整个信息处理链里，所以任何一环的负担都会回头影响监控表现。",
+            "This figure should show that attention is not one isolated faculty. It sits inside the full chain from perception to cognition to action, so burden at any stage feeds back into monitoring performance.",
+            asset_name_contains="page-04",
+        ),
+    ]
 )

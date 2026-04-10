@@ -98,6 +98,11 @@ Stronger management usually reaches:
 If those actions never move into the system layer,
 fatigue management easily stalls at the empty phrase “everyone should rest more.”
 
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-fatigue-sleep-20260211/page-05.png" alt="This figure should show that strong fatigue management changes schedule structure and continuous-duty duration first, rather than only asking individuals to cope harder." loading="lazy">
+  <figcaption>This figure should show that strong fatigue management changes schedule structure and continuous-duty duration first, rather than only asking individuals to cope harder.</figcaption>
+</figure>
+
 !!! example "Example: Why Real Fatigue Management Often Starts with Scheduling Rather Than Attitude"
     If shift length,
     rotation rhythm,
@@ -120,6 +125,27 @@ If the task depends on continuous monitoring,
 rapid response,
 or precise timing,
 even a brief lapse can already create high risk.
+
+## Why the Page Keeps Returning to Driving and Medical Error Evidence
+
+The course keeps returning to drowsy driving and medical error not to pile up statistics,
+but to show that fatigue risk generalizes across domains.
+Whenever a task depends on sustained monitoring,
+timely judgment,
+and stable execution,
+sleep loss creates similar vulnerability even in very different industries.
+
+That is why fatigue should not be understood as a niche problem for one sector.
+It behaves more like an underlying constraint that cuts across driving,
+medicine,
+aviation,
+and industrial work,
+pushing otherwise manageable task windows toward higher risk.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-fatigue-sleep-20260211/page-04.png" alt="This figure should make one point concrete: drowsy driving is not an abstract warning. It is a real risk that already shows a stable pattern in crashes, injuries, and time-of-day windows." loading="lazy">
+  <figcaption>This figure should make one point concrete: drowsy driving is not an abstract warning. It is a real risk that already shows a stable pattern in crashes, injuries, and time-of-day windows.</figcaption>
+</figure>
 
 ## Chapter Summary
 

@@ -61,6 +61,30 @@ and explicit suspicion toward bodily intuition in high-risk phases.
     If that scan habit is weak,
     the illusion more easily drives the action.
 
+## Why Spatial Disorientation Starts as a Physiological Mechanism Problem
+
+Spatial disorientation is not merely a vague psychological feeling.
+It starts as a physiological mechanism problem.
+Under acceleration,
+turning,
+and low external-reference conditions,
+the inner ear and vestibular system can legitimately produce signals that do not match the actual aircraft attitude.
+
+That means the illusion is not a random personal mistake.
+It is a systematic distortion that can emerge from the sensing system itself under specific conditions.
+Once that is understood,
+the need for instruments and procedure as the main reference becomes much clearer.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-spdisorientation-20260330/page-02.png" alt="This figure should show that spatial disorientation is not an abstract idea. It connects directly to concrete physiology such as the inner ear and semicircular canals." loading="lazy">
+  <figcaption>This figure should show that spatial disorientation is not an abstract idea. It connects directly to concrete physiology such as the inner ear and semicircular canals.</figcaption>
+</figure>
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-spdisorientation-20260330/page-03.png" alt="This figure should show that the vestibular system is a primary source of motion and attitude sensation, which is why its distortion can feel so convincing to the operator." loading="lazy">
+  <figcaption>This figure should show that the vestibular system is a primary source of motion and attitude sensation, which is why its distortion can feel so convincing to the operator.</figcaption>
+</figure>
+
 ## Why This Type of Illusion Is So Hard to Overcome by Willpower Alone
 
 The difficulty of spatial disorientation is not merely knowing in theory that it can happen.

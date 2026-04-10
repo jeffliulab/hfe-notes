@@ -68,6 +68,29 @@
     如果这条扫描习惯没建立，
     错觉就更容易主导动作。
 
+## 为什么空间定向错觉首先是一个生理机制问题
+
+空间定向错觉不是单纯“心理感觉不准”，
+它首先是一个生理机制问题。
+内耳和前庭系统在加速度、
+转弯和低外部参照条件下，
+本来就可能给出和真实姿态不一致的信号。
+
+这意味着错觉不是个别人偶尔主观想错，
+而是人的感觉系统在特定环境下确实存在系统性失真。
+理解这一层之后，
+才会知道为什么仪表和程序必须成为主参考系。
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-spdisorientation-20260330/page-02.png" alt="这张图要看懂的是：空间定向错觉不是抽象概念，它和内耳结构、半规管等具体生理通道直接相关。" loading="lazy">
+  <figcaption>这张图要看懂的是：空间定向错觉不是抽象概念，它和内耳结构、半规管等具体生理通道直接相关。</figcaption>
+</figure>
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-spdisorientation-20260330/page-03.png" alt="这张图要看懂的是：前庭系统本来就是姿态与运动感的重要来源，所以一旦它被误导，主观感觉会非常有说服力。" loading="lazy">
+  <figcaption>这张图要看懂的是：前庭系统本来就是姿态与运动感的重要来源，所以一旦它被误导，主观感觉会非常有说服力。</figcaption>
+</figure>
+
 ## 为什么这类错觉特别难靠主观意志克服
 
 空间定向错觉的难点不在于“理论上知道会发生”，

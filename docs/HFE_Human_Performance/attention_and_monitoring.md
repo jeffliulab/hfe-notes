@@ -41,6 +41,11 @@
 而是要你承认：
 系统设计必须把这种资源限制当成前提。
 
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/attention-and-monitoring-2-9-2026/page-04.png" alt="这张图要看懂的是：注意并不是单独一块能力，它嵌在从感知、认知到动作的整个信息处理链里，所以任何一环的负担都会回头影响监控表现。" loading="lazy">
+  <figcaption>这张图要看懂的是：注意并不是单独一块能力，它嵌在从感知、认知到动作的整个信息处理链里，所以任何一环的负担都会回头影响监控表现。</figcaption>
+</figure>
+
 ## 为什么监控任务特别容易衰退
 
 监控任务看起来轻松，
@@ -118,6 +123,24 @@ automation 几页会反复互相连接。
     真正有用的改进通常是改变信号、
     反馈和协作结构，
     让问题更容易在正确时间被看见。
+
+## 为什么监控任务常常出现在“监督式控制”而不是手动控制里
+
+课程里会把 attention 和 automation 放到一起讲，
+是因为人最容易在监督式控制里滑向被动监视者。
+系统越稳定、
+越自动，
+人越容易从持续操作者变成偶尔插手的监督者。
+
+这类角色迁移本身就会提高 vigilance decrement 和 complacency 风险。
+也就是说，
+注意问题并不是单纯心理学问题，
+它经常是角色设计问题。
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/attention-and-monitoring-2-9-2026/page-03.png" alt="这张图要看懂的是：从手动控制到全自动控制，人的位置不是简单消失，而是逐步被推向监督式角色，而这正是监控脆弱性最常出现的地方。" loading="lazy">
+  <figcaption>这张图要看懂的是：从手动控制到全自动控制，人的位置不是简单消失，而是逐步被推向监督式角色，而这正是监控脆弱性最常出现的地方。</figcaption>
+</figure>
 
 ## 本章总结
 

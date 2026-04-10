@@ -36,6 +36,11 @@
 2. `comprehension`：这些线索有没有被拼成正确的当前局面。
 3. `projection`：如果不干预，系统接下来会往哪里走。
 
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-situationawareness-20260325/page-04.png" alt="这张图要看懂的是：Level 1、2、3 不是三个平行标签，而是从看见线索、理解局面到预测走势的一条递进链。" loading="lazy">
+  <figcaption>这张图要看懂的是：Level 1、2、3 不是三个平行标签，而是从看见线索、理解局面到预测走势的一条递进链。</figcaption>
+</figure>
+
 ## 为什么第二层和第三层最容易断
 
 操作者可能已经看到了读数、
@@ -71,6 +76,26 @@ spatial disorientation 页在问感官和仪表冲突时还能不能建立正确
 !!! note "一句话结论"
     情境意识的核心不是“信息多”，
     而是“信息有没有被组织成可行动的理解和预测”。
+
+## 为什么 Endsley 模型把 SA 放在“决策之前、动作之后”这条链上
+
+Endsley 模型的价值，
+不只是把 SA 分成三层，
+而是把它明确放到“环境输入 -> SA -> 决策 -> 动作 -> 反馈”这条链上。
+这样一来，
+SA 就不再是抽象心理状态，
+而是直接决定后续判断和动作质量的中间机制。
+
+这也解释了为什么课程里会把 workload、
+stress、
+automation 和 interface design 都接到 SA 上。
+它们不是在旁边“影响一下心情”，
+而是在改变人能否形成足够好的局面理解。
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-situationawareness-20260325/page-03.png" alt="这张图要看懂的是：SA 不是孤立状态，它夹在环境输入、决策和动作之间，前面受显示与负荷影响，后面直接影响行为结果。" loading="lazy">
+  <figcaption>这张图要看懂的是：SA 不是孤立状态，它夹在环境输入、决策和动作之间，前面受显示与负荷影响，后面直接影响行为结果。</figcaption>
+</figure>
 
 ## 三层 SA 断裂在实际分析里怎样分别出现
 
