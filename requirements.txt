@@ -1,0 +1,6 @@
+mkdocs-material[all]
+mkdocs-static-i18n[material]
+mdx-truly-sane-lists
+PyYAML
+PyMuPDF
+openpyxl

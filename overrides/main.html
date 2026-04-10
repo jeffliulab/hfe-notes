@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+  {{ super() }}
+  
+  {# 仅在非首页时显示评论 #}
+  {% if not page.is_homepage %}
+    
+    <hr>
+    
+    <h2 id="__comments">
+      评论
+      <a href="#__comments" class="headerlink" title="评论">#</a>
+    </h2>
+    
+    {# ⬇️ 您提供的 Giscus <script> 标签代码 ⬇️ #}
+    <script src="https://giscus.app/client.js"
+            data-repo="jeffliulab/ai-notes-discussion"
+            data-repo-id="R_kgDOQnsUAQ"
+            data-category="General"
+            data-category-id="DIC_kwDOQnsUAc4Cztsg"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="preferred_color_scheme"
+            data-lang="zh-CN"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+    
+  {% endif %}
+{% endblock %}

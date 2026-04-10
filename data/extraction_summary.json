@@ -1,0 +1,515 @@
+{
+  "expected_counts": {
+    "pptx": 10,
+    "pdf": 19,
+    "xlsx": 1
+  },
+  "observed_counts": {
+    "pptx": 10,
+    "xlsx": 1,
+    "pdf": 19
+  },
+  "total_sources": 30,
+  "total_units": 8374,
+  "warnings": [
+    "01 Intro to HF and Risk (1).pptx: notesSlide 1 has no extracted text",
+    "01 Intro to HF and Risk (1).pptx: notesSlide 5 has no extracted text",
+    "01 Intro to HF and Risk (1).pptx: notesSlide 6 has no extracted text",
+    "01 Intro to HF and Risk (1).pptx: notesSlide 11 has no extracted text",
+    "01 Intro to HF and Risk (1).pptx: notesSlide 15 has no extracted text",
+    "01 Intro to HF and Risk (1).pptx: notesSlide 17 has no extracted text",
+    "01 Intro to HF and Risk (1).pptx: notesSlide 21 has no extracted text",
+    "10 Write URRA.pptx: notesSlide 5 has no extracted text",
+    "08 Task Analysis.pptx: notesSlide 5 has no extracted text",
+    "11 Known Problem Analysis.pptx: notesSlide 2 has no extracted text",
+    "11 Known Problem Analysis.pptx: notesSlide 3 has no extracted text",
+    "11 Known Problem Analysis.pptx: notesSlide 4 has no extracted text",
+    "11 Known Problem Analysis.pptx: notesSlide 5 has no extracted text",
+    "11 Known Problem Analysis.pptx: notesSlide 6 has no extracted text",
+    "06 URRA in Medical Devices.pptx: notesSlide 12 has no extracted text",
+    "06 URRA in Medical Devices.pptx: notesSlide 14 has no extracted text",
+    "06 URRA in Medical Devices.pptx: notesSlide 17 has no extracted text",
+    "06 URRA in Medical Devices.pptx: notesSlide 18 has no extracted text",
+    "06 URRA in Medical Devices.pptx: notesSlide 19 has no extracted text",
+    "06 URRA in Medical Devices.pptx: notesSlide 21 has no extracted text",
+    "06 URRA in Medical Devices.pptx: notesSlide 25 has no extracted text",
+    "06 URRA in Medical Devices.pptx: notesSlide 31 has no extracted text",
+    "06 URRA in Medical Devices.pptx: notesSlide 33 has no extracted text",
+    "06 URRA in Medical Devices.pptx: notesSlide 35 has no extracted text",
+    "06 URRA in Medical Devices.pptx: notesSlide 36 has no extracted text",
+    "Event Tree Supplemental.pptx: notesSlide 2 has no extracted text",
+    "Event Tree Supplemental.pptx: notesSlide 3 has no extracted text",
+    "Event Tree Supplemental.pptx: notesSlide 4 has no extracted text",
+    "Event Tree Supplemental.pptx: notesSlide 5 has no extracted text",
+    "Event Tree Supplemental.pptx: notesSlide 6 has no extracted text",
+    "Event Tree Supplemental.pptx: notesSlide 7 has no extracted text",
+    "10 URRA EpiPen.xlsx: worksheet 'IFU' has no extracted text",
+    "02 Intro to Human Error (1).pptx: notesSlide 2 has no extracted text",
+    "02 Intro to Human Error (1).pptx: notesSlide 3 has no extracted text",
+    "02 Intro to Human Error (1).pptx: notesSlide 4 has no extracted text",
+    "02 Intro to Human Error (1).pptx: notesSlide 6 has no extracted text",
+    "02 Intro to Human Error (1).pptx: notesSlide 7 has no extracted text",
+    "02 Intro to Human Error (1).pptx: notesSlide 8 has no extracted text",
+    "02 Intro to Human Error (1).pptx: notesSlide 9 has no extracted text",
+    "02 Intro to Human Error (1).pptx: notesSlide 13 has no extracted text",
+    "02 Intro to Human Error (1).pptx: notesSlide 15 has no extracted text",
+    "07 Use Errors.pptx: notesSlide 2 has no extracted text",
+    "07 Use Errors.pptx: notesSlide 3 has no extracted text",
+    "07 Use Errors.pptx: notesSlide 4 has no extracted text",
+    "07 Use Errors.pptx: notesSlide 5 has no extracted text",
+    "07 Use Errors.pptx: notesSlide 6 has no extracted text",
+    "07 Use Errors.pptx: notesSlide 7 has no extracted text",
+    "07 Use Errors.pptx: notesSlide 8 has no extracted text",
+    "07 Use Errors.pptx: notesSlide 9 has no extracted text",
+    "07 Use Errors.pptx: notesSlide 15 has no extracted text",
+    "07 Use Errors.pptx: notesSlide 16 has no extracted text",
+    "05 Swiss Cheese Model.pdf: page 14 produced no text",
+    "03 HE Frameworks (2).pptx: notesSlide 1 has no extracted text",
+    "03 HE Frameworks (2).pptx: notesSlide 2 has no extracted text",
+    "03 HE Frameworks (2).pptx: notesSlide 4 has no extracted text",
+    "03 HE Frameworks (2).pptx: notesSlide 5 has no extracted text",
+    "03 HE Frameworks (2).pptx: notesSlide 9 has no extracted text",
+    "03 HE Frameworks (2).pptx: notesSlide 11 has no extracted text",
+    "03 HE Frameworks (2).pptx: notesSlide 13 has no extracted text",
+    "03 HE Frameworks (2).pptx: notesSlide 14 has no extracted text",
+    "Cardosi 2-2-2026.pdf: page 46 produced no text",
+    "Cardosi 2-2-2026.pdf: page 51 produced no text",
+    "Cardosi 2-2-2026.pdf: page 52 produced no text",
+    "Cardosi 2-2-2026.pdf: page 53 produced no text",
+    "Cardosi 2-2-2026.pdf: page 54 produced no text"
+  ],
+  "pages": {
+    "course_overview": {
+      "section": "HFE_Foundations",
+      "source_files": [
+        "Course intro 1-14-26.pdf"
+      ]
+    },
+    "human_factors_intro": {
+      "section": "HFE_Foundations",
+      "source_files": [
+        "01 Intro to HF and Risk (1).pptx"
+      ]
+    },
+    "human_error_frameworks": {
+      "section": "HFE_Foundations",
+      "source_files": [
+        "02 Intro to Human Error (1).pptx",
+        "03 HE Frameworks (2).pptx"
+      ]
+    },
+    "swiss_cheese": {
+      "section": "HFE_Foundations",
+      "source_files": [
+        "05 Swiss Cheese Model.pdf"
+      ]
+    },
+    "error_analysis_methods": {
+      "section": "HFE_Risk_Methods",
+      "source_files": [
+        "Sp26_Investigative Process-NTSB_20260121.pdf",
+        "Sp26_ErrorAnalysisMethods_20260121.pdf"
+      ]
+    },
+    "task_analysis": {
+      "section": "HFE_Risk_Methods",
+      "source_files": [
+        "08 Task Analysis.pptx"
+      ]
+    },
+    "urra_methods": {
+      "section": "HFE_Risk_Methods",
+      "source_files": [
+        "10 Write URRA.pptx"
+      ]
+    },
+    "known_problem_and_event_tree": {
+      "section": "HFE_Risk_Methods",
+      "source_files": [
+        "11 Known Problem Analysis.pptx",
+        "Event Tree Supplemental.pptx"
+      ]
+    },
+    "iso_14971": {
+      "section": "HFE_Medical_Devices",
+      "source_files": [
+        "ISO 14971 and Medical Device RM.pptx"
+      ]
+    },
+    "medical_device_urra": {
+      "section": "HFE_Medical_Devices",
+      "source_files": [
+        "06 URRA in Medical Devices.pptx"
+      ]
+    },
+    "medical_device_use_errors": {
+      "section": "HFE_Medical_Devices",
+      "source_files": [
+        "07 Use Errors.pptx"
+      ]
+    },
+    "epipen_workbook": {
+      "section": "HFE_Medical_Devices",
+      "source_files": [
+        "10 URRA EpiPen.xlsx"
+      ]
+    },
+    "aviation_automation_intro": {
+      "section": "HFE_Aviation_Automation",
+      "source_files": [
+        "Intro to Aviation and Automation 1-26-26-2.pdf"
+      ]
+    },
+    "crew_resource_management": {
+      "section": "HFE_Aviation_Automation",
+      "source_files": [
+        "CRM 1-28-2026.pdf"
+      ]
+    },
+    "displays_and_alerts": {
+      "section": "HFE_Aviation_Automation",
+      "source_files": [
+        "Displays and Alerts 2-4-26.pdf"
+      ]
+    },
+    "checklists_and_procedures": {
+      "section": "HFE_Aviation_Automation",
+      "source_files": [
+        "Checklists and Procedures 3-23-26.pdf"
+      ]
+    },
+    "automated_vehicles": {
+      "section": "HFE_Aviation_Automation",
+      "source_files": [
+        "Automated Vehicles 3-11-26-2.pdf"
+      ]
+    },
+    "attention_and_monitoring": {
+      "section": "HFE_Human_Performance",
+      "source_files": [
+        "Attention and Monitoring 2-9- 2026.pdf"
+      ]
+    },
+    "fatigue_and_sleep": {
+      "section": "HFE_Human_Performance",
+      "source_files": [
+        "Sp26_Fatigue+Sleep_20260211.pdf"
+      ]
+    },
+    "stress_and_decision_making": {
+      "section": "HFE_Human_Performance",
+      "source_files": [
+        "Sp26_StressDecisionMaking_20260225.pdf",
+        "Sp26_DecisionMakingDistraction_20260302.pdf"
+      ]
+    },
+    "situation_awareness": {
+      "section": "HFE_Human_Performance",
+      "source_files": [
+        "Sp26_SituationAwareness_20260325.pdf"
+      ]
+    },
+    "spatial_disorientation": {
+      "section": "HFE_Human_Performance",
+      "source_files": [
+        "Sp26_SpDisorientation_20260330.pdf"
+      ]
+    },
+    "operational_risk": {
+      "section": "HFE_Cases_Ethics",
+      "source_files": [
+        "Operational Risk 2-18-2026.pdf"
+      ]
+    },
+    "cardosi_case": {
+      "section": "HFE_Cases_Ethics",
+      "source_files": [
+        "Cardosi 2-2-2026.pdf"
+      ]
+    },
+    "f16_analysis_prompts": {
+      "section": "HFE_Cases_Ethics",
+      "source_files": [
+        "Sp26_F16-AnalysisPrompts_20260219.pdf"
+      ]
+    },
+    "boeing_737max_and_ethics": {
+      "section": "HFE_Cases_Ethics",
+      "source_files": [
+        "Boeing 737Max and Ethics 2-23-26.pdf"
+      ]
+    }
+  },
+  "sources": {
+    "01 Intro to HF and Risk (1).pptx": {
+      "source_file": "01 Intro to HF and Risk (1).pptx",
+      "source_type": "pptx",
+      "topic_slug": "human_factors_intro",
+      "archive_zip": "ENP 111 Use-related Risks.zip",
+      "archive_entry": "ENP 111 Use-related Risks/01 Intro to HF and Risk (1).pptx",
+      "asset_rel_path": "assets/source_files/ENP_111_Use_related_Risks/01 Intro to HF and Risk (1).pptx",
+      "unit_count": 322
+    },
+    "ISO 14971 and Medical Device RM.pptx": {
+      "source_file": "ISO 14971 and Medical Device RM.pptx",
+      "source_type": "pptx",
+      "topic_slug": "iso_14971",
+      "archive_zip": "ENP 111 Use-related Risks.zip",
+      "archive_entry": "ENP 111 Use-related Risks/ISO 14971 and Medical Device RM.pptx",
+      "asset_rel_path": "assets/source_files/ENP_111_Use_related_Risks/ISO 14971 and Medical Device RM.pptx",
+      "unit_count": 425
+    },
+    "10 Write URRA.pptx": {
+      "source_file": "10 Write URRA.pptx",
+      "source_type": "pptx",
+      "topic_slug": "urra_methods",
+      "archive_zip": "ENP 111 Use-related Risks.zip",
+      "archive_entry": "ENP 111 Use-related Risks/10 Write URRA.pptx",
+      "asset_rel_path": "assets/source_files/ENP_111_Use_related_Risks/10 Write URRA.pptx",
+      "unit_count": 52
+    },
+    "08 Task Analysis.pptx": {
+      "source_file": "08 Task Analysis.pptx",
+      "source_type": "pptx",
+      "topic_slug": "task_analysis",
+      "archive_zip": "ENP 111 Use-related Risks.zip",
+      "archive_entry": "ENP 111 Use-related Risks/08 Task Analysis.pptx",
+      "asset_rel_path": "assets/source_files/ENP_111_Use_related_Risks/08 Task Analysis.pptx",
+      "unit_count": 80
+    },
+    "11 Known Problem Analysis.pptx": {
+      "source_file": "11 Known Problem Analysis.pptx",
+      "source_type": "pptx",
+      "topic_slug": "known_problem_and_event_tree",
+      "archive_zip": "ENP 111 Use-related Risks.zip",
+      "archive_entry": "ENP 111 Use-related Risks/11 Known Problem Analysis.pptx",
+      "asset_rel_path": "assets/source_files/ENP_111_Use_related_Risks/11 Known Problem Analysis.pptx",
+      "unit_count": 43
+    },
+    "06 URRA in Medical Devices.pptx": {
+      "source_file": "06 URRA in Medical Devices.pptx",
+      "source_type": "pptx",
+      "topic_slug": "medical_device_urra",
+      "archive_zip": "ENP 111 Use-related Risks.zip",
+      "archive_entry": "ENP 111 Use-related Risks/06 URRA in Medical Devices.pptx",
+      "asset_rel_path": "assets/source_files/ENP_111_Use_related_Risks/06 URRA in Medical Devices.pptx",
+      "unit_count": 477
+    },
+    "Event Tree Supplemental.pptx": {
+      "source_file": "Event Tree Supplemental.pptx",
+      "source_type": "pptx",
+      "topic_slug": "known_problem_and_event_tree",
+      "archive_zip": "ENP 111 Use-related Risks.zip",
+      "archive_entry": "ENP 111 Use-related Risks/Event Tree Supplemental.pptx",
+      "asset_rel_path": "assets/source_files/ENP_111_Use_related_Risks/Event Tree Supplemental.pptx",
+      "unit_count": 69
+    },
+    "10 URRA EpiPen.xlsx": {
+      "source_file": "10 URRA EpiPen.xlsx",
+      "source_type": "xlsx",
+      "topic_slug": "epipen_workbook",
+      "archive_zip": "ENP 111 Use-related Risks.zip",
+      "archive_entry": "ENP 111 Use-related Risks/10 URRA EpiPen.xlsx",
+      "asset_rel_path": "assets/source_files/ENP_111_Use_related_Risks/10 URRA EpiPen.xlsx",
+      "unit_count": 168
+    },
+    "02 Intro to Human Error (1).pptx": {
+      "source_file": "02 Intro to Human Error (1).pptx",
+      "source_type": "pptx",
+      "topic_slug": "human_error_frameworks",
+      "archive_zip": "ENP 111 Use-related Risks.zip",
+      "archive_entry": "ENP 111 Use-related Risks/02 Intro to Human Error (1).pptx",
+      "asset_rel_path": "assets/source_files/ENP_111_Use_related_Risks/02 Intro to Human Error (1).pptx",
+      "unit_count": 234
+    },
+    "07 Use Errors.pptx": {
+      "source_file": "07 Use Errors.pptx",
+      "source_type": "pptx",
+      "topic_slug": "medical_device_use_errors",
+      "archive_zip": "ENP 111 Use-related Risks.zip",
+      "archive_entry": "ENP 111 Use-related Risks/07 Use Errors.pptx",
+      "asset_rel_path": "assets/source_files/ENP_111_Use_related_Risks/07 Use Errors.pptx",
+      "unit_count": 156
+    },
+    "05 Swiss Cheese Model.pdf": {
+      "source_file": "05 Swiss Cheese Model.pdf",
+      "source_type": "pdf",
+      "topic_slug": "swiss_cheese",
+      "archive_zip": "ENP 111 Use-related Risks.zip",
+      "archive_entry": "ENP 111 Use-related Risks/05 Swiss Cheese Model.pdf",
+      "asset_rel_path": "assets/source_files/ENP_111_Use_related_Risks/05 Swiss Cheese Model.pdf",
+      "unit_count": 145
+    },
+    "03 HE Frameworks (2).pptx": {
+      "source_file": "03 HE Frameworks (2).pptx",
+      "source_type": "pptx",
+      "topic_slug": "human_error_frameworks",
+      "archive_zip": "ENP 111 Use-related Risks.zip",
+      "archive_entry": "ENP 111 Use-related Risks/03 HE Frameworks (2).pptx",
+      "asset_rel_path": "assets/source_files/ENP_111_Use_related_Risks/03 HE Frameworks (2).pptx",
+      "unit_count": 209
+    },
+    "Sp26_Fatigue+Sleep_20260211.pdf": {
+      "source_file": "Sp26_Fatigue+Sleep_20260211.pdf",
+      "source_type": "pdf",
+      "topic_slug": "fatigue_and_sleep",
+      "archive_zip": "Lectures_Spring____6_export.zip",
+      "archive_entry": "Lectures_Spring____6_export/Sp26_Fatigue+Sleep_20260211.pdf",
+      "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Sp26_Fatigue+Sleep_20260211.pdf",
+      "unit_count": 481
+    },
+    "Sp26_StressDecisionMaking_20260225.pdf": {
+      "source_file": "Sp26_StressDecisionMaking_20260225.pdf",
+      "source_type": "pdf",
+      "topic_slug": "stress_and_decision_making",
+      "archive_zip": "Lectures_Spring____6_export.zip",
+      "archive_entry": "Lectures_Spring____6_export/Sp26_StressDecisionMaking_20260225.pdf",
+      "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Sp26_StressDecisionMaking_20260225.pdf",
+      "unit_count": 342
+    },
+    "Sp26_SituationAwareness_20260325.pdf": {
+      "source_file": "Sp26_SituationAwareness_20260325.pdf",
+      "source_type": "pdf",
+      "topic_slug": "situation_awareness",
+      "archive_zip": "Lectures_Spring____6_export.zip",
+      "archive_entry": "Lectures_Spring____6_export/Sp26_SituationAwareness_20260325.pdf",
+      "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Sp26_SituationAwareness_20260325.pdf",
+      "unit_count": 200
+    },
+    "Intro to Aviation and Automation 1-26-26-2.pdf": {
+      "source_file": "Intro to Aviation and Automation 1-26-26-2.pdf",
+      "source_type": "pdf",
+      "topic_slug": "aviation_automation_intro",
+      "archive_zip": "Lectures_Spring____6_export.zip",
+      "archive_entry": "Lectures_Spring____6_export/Intro to Aviation and Automation 1-26-26-2.pdf",
+      "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Intro to Aviation and Automation 1-26-26-2.pdf",
+      "unit_count": 465
+    },
+    "CRM 1-28-2026.pdf": {
+      "source_file": "CRM 1-28-2026.pdf",
+      "source_type": "pdf",
+      "topic_slug": "crew_resource_management",
+      "archive_zip": "Lectures_Spring____6_export.zip",
+      "archive_entry": "Lectures_Spring____6_export/CRM 1-28-2026.pdf",
+      "asset_rel_path": "assets/source_files/Lectures_Spring_2026/CRM 1-28-2026.pdf",
+      "unit_count": 307
+    },
+    "Sp26_F16-AnalysisPrompts_20260219.pdf": {
+      "source_file": "Sp26_F16-AnalysisPrompts_20260219.pdf",
+      "source_type": "pdf",
+      "topic_slug": "f16_analysis_prompts",
+      "archive_zip": "Lectures_Spring____6_export.zip",
+      "archive_entry": "Lectures_Spring____6_export/Sp26_F16-AnalysisPrompts_20260219.pdf",
+      "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Sp26_F16-AnalysisPrompts_20260219.pdf",
+      "unit_count": 241
+    },
+    "Cardosi 2-2-2026.pdf": {
+      "source_file": "Cardosi 2-2-2026.pdf",
+      "source_type": "pdf",
+      "topic_slug": "cardosi_case",
+      "archive_zip": "Lectures_Spring____6_export.zip",
+      "archive_entry": "Lectures_Spring____6_export/Cardosi 2-2-2026.pdf",
+      "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Cardosi 2-2-2026.pdf",
+      "unit_count": 396
+    },
+    "Attention and Monitoring 2-9- 2026.pdf": {
+      "source_file": "Attention and Monitoring 2-9- 2026.pdf",
+      "source_type": "pdf",
+      "topic_slug": "attention_and_monitoring",
+      "archive_zip": "Lectures_Spring____6_export.zip",
+      "archive_entry": "Lectures_Spring____6_export/Attention and Monitoring 2-9- 2026.pdf",
+      "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Attention and Monitoring 2-9- 2026.pdf",
+      "unit_count": 227
+    },
+    "Operational Risk 2-18-2026.pdf": {
+      "source_file": "Operational Risk 2-18-2026.pdf",
+      "source_type": "pdf",
+      "topic_slug": "operational_risk",
+      "archive_zip": "Lectures_Spring____6_export.zip",
+      "archive_entry": "Lectures_Spring____6_export/Operational Risk 2-18-2026.pdf",
+      "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Operational Risk 2-18-2026.pdf",
+      "unit_count": 251
+    },
+    "Boeing 737Max and Ethics 2-23-26.pdf": {
+      "source_file": "Boeing 737Max and Ethics 2-23-26.pdf",
+      "source_type": "pdf",
+      "topic_slug": "boeing_737max_and_ethics",
+      "archive_zip": "Lectures_Spring____6_export.zip",
+      "archive_entry": "Lectures_Spring____6_export/Boeing 737Max and Ethics 2-23-26.pdf",
+      "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Boeing 737Max and Ethics 2-23-26.pdf",
+      "unit_count": 245
+    },
+    "Sp26_Investigative Process-NTSB_20260121.pdf": {
+      "source_file": "Sp26_Investigative Process-NTSB_20260121.pdf",
+      "source_type": "pdf",
+      "topic_slug": "error_analysis_methods",
+      "archive_zip": "Lectures_Spring____6_export.zip",
+      "archive_entry": "Lectures_Spring____6_export/Sp26_Investigative Process-NTSB_20260121.pdf",
+      "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Sp26_Investigative Process-NTSB_20260121.pdf",
+      "unit_count": 267
+    },
+    "Sp26_SpDisorientation_20260330.pdf": {
+      "source_file": "Sp26_SpDisorientation_20260330.pdf",
+      "source_type": "pdf",
+      "topic_slug": "spatial_disorientation",
+      "archive_zip": "Lectures_Spring____6_export.zip",
+      "archive_entry": "Lectures_Spring____6_export/Sp26_SpDisorientation_20260330.pdf",
+      "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Sp26_SpDisorientation_20260330.pdf",
+      "unit_count": 281
+    },
+    "Course intro 1-14-26.pdf": {
+      "source_file": "Course intro 1-14-26.pdf",
+      "source_type": "pdf",
+      "topic_slug": "course_overview",
+      "archive_zip": "Lectures_Spring____6_export.zip",
+      "archive_entry": "Lectures_Spring____6_export/Course intro 1-14-26.pdf",
+      "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Course intro 1-14-26.pdf",
+      "unit_count": 388
+    },
+    "Sp26_DecisionMakingDistraction_20260302.pdf": {
+      "source_file": "Sp26_DecisionMakingDistraction_20260302.pdf",
+      "source_type": "pdf",
+      "topic_slug": "stress_and_decision_making",
+      "archive_zip": "Lectures_Spring____6_export.zip",
+      "archive_entry": "Lectures_Spring____6_export/Sp26_DecisionMakingDistraction_20260302.pdf",
+      "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Sp26_DecisionMakingDistraction_20260302.pdf",
+      "unit_count": 263
+    },
+    "Checklists and Procedures 3-23-26.pdf": {
+      "source_file": "Checklists and Procedures 3-23-26.pdf",
+      "source_type": "pdf",
+      "topic_slug": "checklists_and_procedures",
+      "archive_zip": "Lectures_Spring____6_export.zip",
+      "archive_entry": "Lectures_Spring____6_export/Checklists and Procedures 3-23-26.pdf",
+      "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Checklists and Procedures 3-23-26.pdf",
+      "unit_count": 330
+    },
+    "Displays and Alerts 2-4-26.pdf": {
+      "source_file": "Displays and Alerts 2-4-26.pdf",
+      "source_type": "pdf",
+      "topic_slug": "displays_and_alerts",
+      "archive_zip": "Lectures_Spring____6_export.zip",
+      "archive_entry": "Lectures_Spring____6_export/Displays and Alerts 2-4-26.pdf",
+      "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Displays and Alerts 2-4-26.pdf",
+      "unit_count": 619
+    },
+    "Automated Vehicles 3-11-26-2.pdf": {
+      "source_file": "Automated Vehicles 3-11-26-2.pdf",
+      "source_type": "pdf",
+      "topic_slug": "automated_vehicles",
+      "archive_zip": "Lectures_Spring____6_export.zip",
+      "archive_entry": "Lectures_Spring____6_export/Automated Vehicles 3-11-26-2.pdf",
+      "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Automated Vehicles 3-11-26-2.pdf",
+      "unit_count": 374
+    },
+    "Sp26_ErrorAnalysisMethods_20260121.pdf": {
+      "source_file": "Sp26_ErrorAnalysisMethods_20260121.pdf",
+      "source_type": "pdf",
+      "topic_slug": "error_analysis_methods",
+      "archive_zip": "Lectures_Spring____6_export.zip",
+      "archive_entry": "Lectures_Spring____6_export/Sp26_ErrorAnalysisMethods_20260121.pdf",
+      "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Sp26_ErrorAnalysisMethods_20260121.pdf",
+      "unit_count": 317
+    }
+  }
+}
