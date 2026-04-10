@@ -98,6 +98,11 @@ The most practical value of this page is that different problem types lead to di
 Classification therefore is not academic purity.
 It determines what gets changed next.
 
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-13-image5.jpeg" alt="This figure should make one point concrete: devices such as AEDs embed guidance directly into the product, showing that many so-called user errors can be reduced substantially through interface and workflow design." loading="lazy">
+  <figcaption>This figure should make one point concrete: devices such as AEDs embed guidance directly into the product, showing that many so-called user errors can be reduced substantially through interface and workflow design.</figcaption>
+</figure>
+
 !!! example "Example: Why the Same “Wrong Dose” Outcome Can Lead to Completely Different Fixes"
     If the wrong dose comes from internal device failure,
     the redesign focus belongs to hardware or software reliability.
@@ -110,6 +115,26 @@ It determines what gets changed next.
     the procedure may also be unrealistic.
     The outcome looks the same,
     but the control path is completely different.
+
+## Why the PCA Model Helps You Write Use Errors More Precisely
+
+Many medical-device errors look on the surface like “the action was performed incorrectly,” but the real source may be missed perception,
+wrong interpretation,
+or unstable physical execution.
+The PCA model matters because it re-separates those layers.
+
+Once the layers are separated,
+the team no longer stops at phrases like “the user pressed incorrectly.” It asks whether the user failed to notice the cue,
+misread the interface meaning,
+or faced an action posture that was inherently unstable.
+That difference directly changes whether mitigation should improve display,
+cognitive support,
+or physical operation.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-16-image6.png" alt="This figure should show that one visible use error may trace back to a break in perception, cognition, or action, which is why the analysis cannot focus only on the final move." loading="lazy">
+  <figcaption>This figure should show that one visible use error may trace back to a break in perception, cognition, or action, which is why the analysis cannot focus only on the final move.</figcaption>
+</figure>
 
 ## Chapter Summary
 

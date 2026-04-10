@@ -105,6 +105,11 @@
 所以分类不是学术洁癖，
 而是决定后面到底改哪里。
 
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-13-image5.jpeg" alt="这张图要看懂的是：像 AED 这类设备会把引导直接做进产品里，说明很多所谓 user error 实际上可以通过界面与流程设计显著降低。" loading="lazy">
+  <figcaption>这张图要看懂的是：像 AED 这类设备会把引导直接做进产品里，说明很多所谓 user error 实际上可以通过界面与流程设计显著降低。</figcaption>
+</figure>
+
 !!! example "案例：同样是“剂量不对”，为什么可能导向完全不同的改进"
     如果剂量错误来自设备内部故障，
     改进重点应是硬件或软件可靠性；
@@ -116,6 +121,31 @@
     则还要看流程是不是过于脱离现实。
     结果一样，
     但控制路径完全不同。
+
+## 为什么 PCA 模型会帮助你把 use error 写得更准
+
+很多医疗器械错误表面上都像“动作做错了”，
+但真正导致动作错掉的，
+可能是前面的 perception 没抓到、
+cognition 解释错了，
+或者 action 执行本身不稳定。
+PCA 模型的价值，
+就是把这些层级重新拆开。
+
+一旦拆开，
+团队就不会停在“用户按错了”这种表述，
+而会继续问：
+是没有看到关键信息、
+理解错了界面含义，
+还是姿态与动作本身就容易失稳。
+这个差别会直接决定 mitigation 应该改显示、
+改理解支持，
+还是改物理操作。
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-16-image6.png" alt="这张图要看懂的是：同一个 visible use error 可以向前追到 perception、cognition 或 action 三层里的不同断裂点，所以分析不能只盯最后那个动作。" loading="lazy">
+  <figcaption>这张图要看懂的是：同一个 visible use error 可以向前追到 perception、cognition 或 action 三层里的不同断裂点，所以分析不能只盯最后那个动作。</figcaption>
+</figure>
 
 ## 本章总结
 

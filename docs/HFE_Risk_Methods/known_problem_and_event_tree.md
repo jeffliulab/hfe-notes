@@ -73,6 +73,22 @@ CAPA、
     是逼团队从“我们已经分析完了”退一步，
     重新问“我们还可能漏了什么”。
 
+## 为什么 known problem analysis 还要学会筛信号
+
+已知问题来源很多，
+但并不是所有历史信息都同样重要。
+真正成熟的做法，
+是学会从投诉、
+召回、
+文献和竞品案例里分辨哪些只是零散噪声，
+哪些已经在重复指向同一类结构问题。
+
+所以这页除了教你“去哪里找历史问题”，
+还在训练另一件事：
+看到历史材料后，
+能不能把它重新压缩成可操作的风险线索，
+而不是只做资料堆积。
+
 ## 为什么 known problem analysis 能防止团队重复踩坑
 
 很多系统风险并不是第一次出现，
@@ -88,6 +104,11 @@ Known Problem Analysis 的价值，
 这一步做得好时，
 团队会更早看到那些“并不新，
 但这次环境里仍然可能复现”的问题。
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-06-image17.png" alt="这张图要看懂的是：known problem analysis 不是凭印象回忆旧问题，而是要进到像 MAUDE 这样的真实数据库里找重复出现的设备问题与投诉模式。" loading="lazy">
+  <figcaption>这张图要看懂的是：known problem analysis 不是凭印象回忆旧问题，而是要进到像 MAUDE 这样的真实数据库里找重复出现的设备问题与投诉模式。</figcaption>
+</figure>
 
 ## 为什么 event tree 会把主路径外的风险拉回来
 

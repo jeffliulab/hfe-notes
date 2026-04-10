@@ -64,6 +64,18 @@ They complement rather than replace the main analysis.
 !!! note "One-Sentence Conclusion"
     The real value of this page is that it forces the team to step back from “we already analyzed it” and ask “what might still be missing?”
 
+## Why Known Problem Analysis Also Has to Learn Signal Selection
+
+Known problems come from many places,
+but not every historical signal carries the same weight.
+A more mature practice is learning how to separate scattered noise from repeated signals that point to the same structural weakness across complaints,
+recalls,
+literature,
+and competitor events.
+
+This page therefore teaches more than where to look.
+It also trains you to compress historical material into actionable risk cues rather than accumulating sources without analytic direction.
+
 ## Why Known Problem Analysis Prevents the Team from Repeating Old Failures
 
 Many system risks are not novel.
@@ -78,6 +90,11 @@ every project does not begin from zero.
 When done well,
 this step makes the team notice problems that are not new,
 but are still likely to recur in the present environment.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-06-image17.png" alt="This figure should show that known problem analysis is not casual memory. It requires going into real databases such as MAUDE to identify recurring device problems and complaint patterns." loading="lazy">
+  <figcaption>This figure should show that known problem analysis is not casual memory. It requires going into real databases such as MAUDE to identify recurring device problems and complaint patterns.</figcaption>
+</figure>
 
 ## Why Event Trees Pull Side-Branch Risk Back into View
 

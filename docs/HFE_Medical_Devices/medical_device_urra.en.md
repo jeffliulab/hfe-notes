@@ -66,6 +66,11 @@ harm,
 and control,
 and then feed the row back into validation planning.
 
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-09-image30.png" alt="This figure should show that medical-device URRA loops repeatedly between user definition, critical-task identification, control design, and validation rather than ending once a row has been written." loading="lazy">
+  <figcaption>This figure should show that medical-device URRA loops repeatedly between user definition, critical-task identification, control design, and validation rather than ending once a row has been written.</figcaption>
+</figure>
+
 !!! note "One-Sentence Conclusion"
     The key move in medical-device URRA is not simply stating that risk exists,
     but specifying how the patient may be harmed and how the system intends to intercept that path.
@@ -127,6 +132,29 @@ The team has to be able to trace one chain backward:
 - which task and scenario the use error came from
 - whether the control really answers that risk path
 - where the control was later validated
+
+## Why Medical-Device URRA Demands Very Specific Scenario and Action Wording
+
+In medical-device URRA,
+the phrase “the user misused the device” carries almost no analytic value.
+Wording that can support design and validation has to specify the action,
+interface object,
+environment,
+and direction of error,
+such as misreading the dose,
+reversing the orientation,
+withdrawing too early,
+or failing to complete confirmation.
+
+This is not about making the table more complicated.
+Patient harm often grows out of those concrete moves.
+If the action wording stays vague,
+later controls and validation plans inevitably become vague as well.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-02-image5.png" alt="This figure should make one point concrete: device interfaces and physical forms differ widely, so use-related risk cannot stay abstract and has to return to the actual device and task." loading="lazy">
+  <figcaption>This figure should make one point concrete: device interfaces and physical forms differ widely, so use-related risk cannot stay abstract and has to return to the actual device and task.</figcaption>
+</figure>
 
 ## Chapter Summary
 

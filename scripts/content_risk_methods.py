@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from note_blueprints import callout, page_blueprint, section
+from note_blueprints import callout, page_blueprint, section, visual
 
 
 RISK_METHODS_CONTENT: dict[str, dict] = {
@@ -494,6 +494,21 @@ Neither method is about free-form brainstorming. Both force the team back toward
 RISK_METHODS_CONTENT["error_analysis_methods"]["sections"].extend(
     [
         section(
+            "timeline",
+            "## 为什么时间线是错误分析里最不能省的一层",
+            "## Why the Timeline Is the One Layer You Cannot Skip in Error Analysis",
+            body_zh="""
+            很多团队以为时间线只是“把事情按先后写出来”。实际上时间线的作用更深，它是后面所有因果判断的骨架。只要事件顺序没理清，团队就很容易把后果错当原因，把后见之明错当事前可见性。
+
+            所以真正好的调查不会急着总结，而会先问：异常最早在哪里出现、谁最先接触到关键信息、哪一步本来有机会恢复、以及恢复窗口是什么时候真正关闭的。时间线一旦稳住，后面的 system conditions 才能被放回正确位置。
+            """,
+            body_en="""
+            Many teams treat the timeline as merely putting events into chronological order. Its role is deeper than that. The timeline becomes the skeleton for every later causal judgment. Once the sequence is unclear, teams begin mistaking outcomes for causes and hindsight for real-time visibility.
+
+            Strong investigation therefore does not rush into summary. It first asks where the anomaly appeared earliest, who encountered the critical information first, where recovery was still possible, and when that recovery window actually closed. Once the timeline is stable, the later system conditions can be placed correctly.
+            """,
+        ),
+        section(
             "evidence",
             "## 真正好的调查为什么总是先守住证据纪律",
             "## Why Strong Investigation Always Starts with Evidence Discipline",
@@ -555,9 +570,35 @@ RISK_METHODS_CONTENT["error_analysis_methods"]["examples"].append(
         body_en="The same medication event can be written weakly as “the nurse selected the wrong medication and the patient received the wrong treatment,” or strongly as an analysis of packaging similarity, shift fatigue, realism of verification procedure, salience of warnings, and why those factors were not intercepted earlier. The source material may be the same, but the analytic quality is completely different.",
     )
 )
+RISK_METHODS_CONTENT["error_analysis_methods"]["inline_visuals"].extend(
+    [
+        visual(
+            "relation",
+            "Sp26_ErrorAnalysisMethods_20260121.pdf",
+            "这张图要看懂的是：错误分析不是独立存在的方法，它处在理论、案例和 mitigation 之间，调查输出必须最终回到改进动作。",
+            "This figure should make one thing visible: error analysis does not stand alone. It sits between theory, cases, and mitigation, so the investigation output has to return to concrete change.",
+            asset_name_contains="page-02",
+        ),
+    ]
+)
 
 RISK_METHODS_CONTENT["task_analysis"]["sections"].extend(
     [
+        section(
+            "granularity",
+            "## 为什么 task analysis 的颗粒度会直接决定后面分析质量",
+            "## Why the Granularity of Task Analysis Directly Determines Later Analysis Quality",
+            body_zh="""
+            task analysis 写得太粗时，后面所有风险判断都会被迫写粗。因为只要任务步骤仍然停在“准备设备”“完成给药”这种大块上，团队就看不见真正高风险的感知、确认、对齐、保持和恢复节点。
+
+            所以这页真正要练的，不只是会拆步骤，而是会把步骤拆到足以支撑后续 use error、critical task 和 validation 的层级。颗粒度不是写得越碎越好，而是要碎到能支撑判断、但又不碎到失去任务结构。
+            """,
+            body_en="""
+            When task analysis remains too coarse, every later risk judgment also becomes coarse. If the steps stay at the level of “prepare device” or “deliver medication,” the team cannot see the real high-risk moments of perception, confirmation, alignment, holding, and recovery.
+
+            The practical skill on this page is therefore not just decomposing steps, but decomposing them to the level that can support later use-error analysis, critical-task identification, and validation. Granularity does not mean making the list as small as possible. It means going fine enough to support judgment without destroying the task structure.
+            """,
+        ),
         section(
             "critical",
             "## 为什么 task analysis 最后一定会走到 critical task",
@@ -600,9 +641,35 @@ RISK_METHODS_CONTENT["task_analysis"]["examples"].append(
         body_en="Teams often treat the most visible action as the main step, but task analysis frequently shows that the higher-risk point sits earlier. Assembly confirmation, dose verification, unlock sequence, and pre-use preparation may matter more because once they fail, later execution quality cannot fully recover the situation. That is why task analysis has to decompose the preparatory steps in detail.",
     )
 )
+RISK_METHODS_CONTENT["task_analysis"]["inline_visuals"].extend(
+    [
+        visual(
+            "steps",
+            "08 Task Analysis.pptx",
+            "这张图要看懂的是：一张看似简单的操作说明，其实已经包含准备、姿态、方向、按压、保持和收尾等多个可拆分步骤。",
+            "This figure should make one point concrete: even a simple-looking instruction poster already contains multiple analyzable steps such as preparation, orientation, posture, pressing, holding, and finish actions.",
+            asset_name_contains="slide-08-image8",
+        ),
+    ]
+)
 
 RISK_METHODS_CONTENT["urra_methods"]["sections"].extend(
     [
+        section(
+            "rows",
+            "## 为什么一条 URRA 行本身就应该读得出完整风险故事",
+            "## Why One URRA Row Should Read Like a Complete Risk Story",
+            body_zh="""
+            写 URRA 时，一个常见问题是每一列都填了字，但合起来仍然看不出真正发生了什么。强的 URRA 行应该让人顺着一条线读下去：谁在什么场景下做哪一步、会错成什么、错后会进入什么 hazardous situation、最终伤害是什么、现在靠什么拦。
+
+            如果一行读完后团队还看不见这条完整路径，通常说明场景、动作、错误或 harm 写得还不够具体。URRA 的质量，不是表有多满，而是链是否完整。
+            """,
+            body_en="""
+            A common URRA problem is that every column contains text while the row still fails to show what actually happens. A strong row should read as one line: who is doing which step in which scenario, what goes wrong, which hazardous situation follows, what the harm is, and what now stands in the way.
+
+            If the team still cannot see that full path after reading the row, the scenario, action, error, or harm is usually still too vague. URRA quality is not about how full the table is. It is about whether the chain is complete.
+            """,
+        ),
         section(
             "discipline",
             "## 为什么 URRA 最怕写成抽象大词",
@@ -653,9 +720,35 @@ RISK_METHODS_CONTENT["urra_methods"]["warnings"].append(
         body_en="Some teams produce URRA tables that look complete but do not yield a single usable validation scenario. That usually means the entries are still too vague or the controls are written at too abstract a level.",
     )
 )
+RISK_METHODS_CONTENT["urra_methods"]["inline_visuals"].extend(
+    [
+        visual(
+            "validation",
+            "10 Write URRA.pptx",
+            "这张图要看懂的是：URRA 不是单向填表，它会在风险不可接受或引入新风险时反复回到控制和验证，直到链条站得住。",
+            "This figure should make the loop visible: URRA is not one-way form filling. It keeps returning to controls and validation whenever risk remains unacceptable or a new risk has been introduced.",
+            asset_name_contains="slide-02-image2",
+        ),
+    ]
+)
 
 RISK_METHODS_CONTENT["known_problem_and_event_tree"]["sections"].extend(
     [
+        section(
+            "selection",
+            "## 为什么 known problem analysis 还要学会筛信号",
+            "## Why Known Problem Analysis Also Has to Learn Signal Selection",
+            body_zh="""
+            已知问题来源很多，但并不是所有历史信息都同样重要。真正成熟的做法，是学会从投诉、召回、文献和竞品案例里分辨哪些只是零散噪声，哪些已经在重复指向同一类结构问题。
+
+            所以这页除了教你“去哪里找历史问题”，还在训练另一件事：看到历史材料后，能不能把它重新压缩成可操作的风险线索，而不是只做资料堆积。
+            """,
+            body_en="""
+            Known problems come from many places, but not every historical signal carries the same weight. A more mature practice is learning how to separate scattered noise from repeated signals that point to the same structural weakness across complaints, recalls, literature, and competitor events.
+
+            This page therefore teaches more than where to look. It also trains you to compress historical material into actionable risk cues rather than accumulating sources without analytic direction.
+            """,
+        ),
         section(
             "history",
             "## 为什么 known problem analysis 能防止团队重复踩坑",
@@ -705,4 +798,15 @@ RISK_METHODS_CONTENT["known_problem_and_event_tree"]["examples"].append(
         body_zh="一旦起始事件是“关键警报出现”，后面真正要展开的是：操作者有没有注意到、有没有理解、有没有采取正确动作、系统有没有继续恶化、以及备用防线有没有接上。这样一展开，团队就会发现真正的风险不只在告警本身，而在后面一连串防线分支。",
         body_en="If the initiating event is “a critical alarm occurs,” the real analysis begins afterward: was it noticed, was it understood, was the correct action taken, did the system continue degrading, and did backup defenses engage? Once expanded this way, the team sees that the real risk is not the alarm itself but the whole chain of later defense branches.",
     )
+)
+RISK_METHODS_CONTENT["known_problem_and_event_tree"]["inline_visuals"].extend(
+    [
+        visual(
+            "history",
+            "11 Known Problem Analysis.pptx",
+            "这张图要看懂的是：known problem analysis 不是凭印象回忆旧问题，而是要进到像 MAUDE 这样的真实数据库里找重复出现的设备问题与投诉模式。",
+            "This figure should show that known problem analysis is not casual memory. It requires going into real databases such as MAUDE to identify recurring device problems and complaint patterns.",
+            asset_name_contains="slide-06-image17",
+        ),
+    ]
 )

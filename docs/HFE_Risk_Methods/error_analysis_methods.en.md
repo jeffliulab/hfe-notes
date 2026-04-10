@@ -58,12 +58,7 @@ The flow can be remembered in four steps:
 1. gather facts without rushing into explanation
 2. build the timeline so the sequence is clear
 3. separate triggers, preconditions, and organizational or design contributors
-4.
-translate the findings into interventions across interface,
-procedure,
-training,
-resources,
-or policy
+4. translate the findings into interventions across interface, procedure, training, resources, or policy
 
 !!! note "One-Sentence Conclusion"
     The main thing an investigation must avoid is not too much information,
@@ -88,6 +83,27 @@ This page explains how a completed event is interpreted.
 Later pages such as task analysis,
 URRA,
 and operational risk push the same logic forward so risk can be recognized before an event fully unfolds.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-erroranalysismethods-20260121/page-02.png" alt="This figure should make one thing visible: error analysis does not stand alone. It sits between theory, cases, and mitigation, so the investigation output has to return to concrete change." loading="lazy">
+  <figcaption>This figure should make one thing visible: error analysis does not stand alone. It sits between theory, cases, and mitigation, so the investigation output has to return to concrete change.</figcaption>
+</figure>
+
+## Why the Timeline Is the One Layer You Cannot Skip in Error Analysis
+
+Many teams treat the timeline as merely putting events into chronological order.
+Its role is deeper than that.
+The timeline becomes the skeleton for every later causal judgment.
+Once the sequence is unclear,
+teams begin mistaking outcomes for causes and hindsight for real-time visibility.
+
+Strong investigation therefore does not rush into summary.
+It first asks where the anomaly appeared earliest,
+who encountered the critical information first,
+where recovery was still possible,
+and when that recovery window actually closed.
+Once the timeline is stable,
+the later system conditions can be placed correctly.
 
 ## Why Strong Investigation Always Starts with Evidence Discipline
 

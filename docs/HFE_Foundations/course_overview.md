@@ -79,8 +79,7 @@
 1. 基础页先告诉你该怎样看人和系统。
 2. 方法页把这种视角变成可操作的分析步骤。
 3. 应用页让你看到同一套逻辑在航空、自动化和医疗器械里怎样落地。
-4.
-案例页再把前面的框架拉回真实事故和伦理判断。
+4. 案例页再把前面的框架拉回真实事故和伦理判断。
 
 <figure class="note-inline-figure">
   <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/course-intro-1-14-26/page-07.png" alt="这张图要看懂的是：课程的四个元素不是彼此分开的模块，而是理论、方法、改进和案例互相支撑的结构。" loading="lazy">

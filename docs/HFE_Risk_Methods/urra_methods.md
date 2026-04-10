@@ -66,9 +66,7 @@ URRA 的输入通常来自：
 1. 先从任务和 use scenario 出发。
 2. 明确写出具体 use error，而不是“使用不当”这种大词。
 3. 继续把错误推到 hazardous situation 和 harm。
-4.
-最后再看现有 control 是否足够，
-以及还要不要加设计或验证措施。
+4. 最后再看现有 control 是否足够，以及还要不要加设计或验证措施。
 
 !!! note "一句话结论"
     如果控制措施写在前面，
@@ -99,6 +97,26 @@ URRA 的输入通常来自：
 task analysis 给 URRA 提供任务骨架；
 medical-device pages 会进一步把这套逻辑放到监管语境里；
 EpiPen workbook 页则展示一条 URRA 记录实际长什么样。
+
+## 为什么一条 URRA 行本身就应该读得出完整风险故事
+
+写 URRA 时，
+一个常见问题是每一列都填了字，
+但合起来仍然看不出真正发生了什么。
+强的 URRA 行应该让人顺着一条线读下去：
+谁在什么场景下做哪一步、
+会错成什么、
+错后会进入什么 hazardous situation、
+最终伤害是什么、
+现在靠什么拦。
+
+如果一行读完后团队还看不见这条完整路径，
+通常说明场景、
+动作、
+错误或 harm 写得还不够具体。
+URRA 的质量，
+不是表有多满，
+而是链是否完整。
 
 ## 为什么 URRA 最怕写成抽象大词
 
@@ -132,6 +150,11 @@ URRA 一旦写成“误用”“使用不当”“可能受伤”这种大词，
 - 哪些 risk control 需要在原型或正式产品里被体现
 - 哪些关键任务需要在 validation 中被专门观察
 - 哪些情境需要通过 representative user 和 representative use condition 去复现
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/10-write-urra/slide-02-image2.png" alt="这张图要看懂的是：URRA 不是单向填表，它会在风险不可接受或引入新风险时反复回到控制和验证，直到链条站得住。" loading="lazy">
+  <figcaption>这张图要看懂的是：URRA 不是单向填表，它会在风险不可接受或引入新风险时反复回到控制和验证，直到链条站得住。</figcaption>
+</figure>
 
 !!! warning "另一个常见失误"
     有些团队会把 URRA 写得看起来很完整，

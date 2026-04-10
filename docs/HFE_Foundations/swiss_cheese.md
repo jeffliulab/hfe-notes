@@ -137,10 +137,7 @@ Swiss Cheese 模型之所以流行，
 1. 先找 harm vector，也就是最后伤害是怎样形成的。
 2. 再往回找原本应该拦截它的屏障有哪些。
 3. 对每一层继续追问：它是不存在、失效了，还是看似存在但在真实条件下无效。
-4.
-最后区分哪些是 latent conditions，
-哪些是 active failures，
-并把 mitigation 对应回具体层级。
+4. 最后区分哪些是 latent conditions，哪些是 active failures，并把 mitigation 对应回具体层级。
 
 这样做的结果是，
 事故分析就不会只剩一个“最后责任人”，

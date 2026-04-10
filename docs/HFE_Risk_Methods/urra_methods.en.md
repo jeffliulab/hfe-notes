@@ -62,8 +62,7 @@ The order matters a lot when writing URRA:
 1. start from the task and use scenario
 2. write the specific use error rather than a vague label like “improper use”
 3. push the error forward into hazardous situation and harm
-4.
-only then assess whether current controls are sufficient and what more is needed
+4. only then assess whether current controls are sufficient and what more is needed
 
 !!! note "One-Sentence Conclusion"
     If controls are written first,
@@ -90,6 +89,24 @@ only then assess whether current controls are sufficient and what more is needed
 Task analysis provides the task skeleton for URRA;
 the medical-device pages place the same logic inside a regulatory context;
 the EpiPen workbook shows what a concrete URRA row looks like in practice.
+
+## Why One URRA Row Should Read Like a Complete Risk Story
+
+A common URRA problem is that every column contains text while the row still fails to show what actually happens.
+A strong row should read as one line:
+who is doing which step in which scenario,
+what goes wrong,
+which hazardous situation follows,
+what the harm is,
+and what now stands in the way.
+
+If the team still cannot see that full path after reading the row,
+the scenario,
+action,
+error,
+or harm is usually still too vague.
+URRA quality is not about how full the table is.
+It is about whether the chain is complete.
 
 ## Why URRA Fails When It Stays at a Vague Level
 
@@ -122,6 +139,11 @@ It should continue to drive:
 - which controls must appear in prototype or final design
 - which critical tasks need focused observation in validation
 - which scenarios need to be reproduced with representative users under representative conditions
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/10-write-urra/slide-02-image2.png" alt="This figure should make the loop visible: URRA is not one-way form filling. It keeps returning to controls and validation whenever risk remains unacceptable or a new risk has been introduced." loading="lazy">
+  <figcaption>This figure should make the loop visible: URRA is not one-way form filling. It keeps returning to controls and validation whenever risk remains unacceptable or a new risk has been introduced.</figcaption>
+</figure>
 
 !!! warning "Another Common Failure"
     Some teams produce URRA tables that look complete but do not yield a single usable validation scenario.

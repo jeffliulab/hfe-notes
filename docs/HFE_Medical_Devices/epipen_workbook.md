@@ -71,10 +71,7 @@ critical task 和 mitigation 串成一行。
 1. 先看任务步骤是否拆得够细。
 2. 再看哪些步骤被标成 critical task。
 3. 接着看 error、hazard、harm 有没有真的连成链。
-4.
-最后看 mitigation 是不是回到了设计、
-说明、
-流程或验证上。
+4. 最后看 mitigation 是不是回到了设计、说明、流程或验证上。
 
 !!! note "一句话结论"
     这页不是让你背 workbook 栏位名称，
@@ -127,6 +124,26 @@ workbook 的作用，
     也不能指导验证。
     真正好的 workbook 行应该让团队一眼就知道下一步该改什么、
     该测什么。
+
+## 为什么 EpiPen workbook 特别适合练“从说明图到风险条目”
+
+EpiPen 场景特别适合训练 workbook 写法，
+因为它既有很清楚的步骤图，
+又有高时间压力和高后果环境。
+也就是说，
+团队既能看到任务分解本身，
+也能看到某一步一旦做错，
+后果会怎样迅速放大。
+
+这正是 workbook 最想训练的能力：
+不是抽象地说“可能误用”，
+而是把每一步 instruction 背后的失败点、
+harm path 和 mitigation 都真正写进文档里。
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-08-image8.png" alt="这张图要看懂的是：EpiPen 使用说明里已经自然包含准备、方向、解锁、按压、保持和移除等多个关键步骤，这些步骤都可以直接翻成 workbook 条目。" loading="lazy">
+  <figcaption>这张图要看懂的是：EpiPen 使用说明里已经自然包含准备、方向、解锁、按压、保持和移除等多个关键步骤，这些步骤都可以直接翻成 workbook 条目。</figcaption>
+</figure>
 
 ## 这个案例最后要带走什么
 

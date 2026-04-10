@@ -122,8 +122,7 @@ a practical sequence is:
 1. identify the harm vector, meaning how the final harm path formed
 2. work backward through the barriers that should have intercepted it
 3. ask for each layer whether it was absent, failed, or only looked effective on paper
-4.
-separate latent conditions from active failures and map mitigation back to specific layers
+4. separate latent conditions from active failures and map mitigation back to specific layers
 
 The result is that the analysis no longer ends with a single “responsible operator.” It becomes a system vulnerability map.
 

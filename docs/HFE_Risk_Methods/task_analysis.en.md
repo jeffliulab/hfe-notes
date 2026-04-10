@@ -59,10 +59,13 @@ The method can be run in this order:
 1. define the user goal and the task boundaries
 2. decompose the flow into observable use steps
 3. add what must be seen, judged, and done at each step
-4.
-mark the steps whose failure would affect safety or effectiveness
-5.
-carry those steps into use-error and risk analysis work
+4. mark the steps whose failure would affect safety or effectiveness
+5. carry those steps into use-error and risk analysis work
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-08-image8.png" alt="This figure should make one point concrete: even a simple-looking instruction poster already contains multiple analyzable steps such as preparation, orientation, posture, pressing, holding, and finish actions." loading="lazy">
+  <figcaption>This figure should make one point concrete: even a simple-looking instruction poster already contains multiple analyzable steps such as preparation, orientation, posture, pressing, holding, and finish actions.</figcaption>
+</figure>
 
 !!! warning "The Most Common Failure Mode"
     The most common mistake is to copy the instruction sequence verbatim without asking how users actually skip,
@@ -90,6 +93,23 @@ and workbook pages directly reuse this decomposition.
 !!! note "One-Sentence Conclusion"
     The value of task analysis is not merely listing steps;
     it is binding risk analysis to the real workflow.
+
+## Why the Granularity of Task Analysis Directly Determines Later Analysis Quality
+
+When task analysis remains too coarse,
+every later risk judgment also becomes coarse.
+If the steps stay at the level of “prepare device” or “deliver medication,” the team cannot see the real high-risk moments of perception,
+confirmation,
+alignment,
+holding,
+and recovery.
+
+The practical skill on this page is therefore not just decomposing steps,
+but decomposing them to the level that can support later use-error analysis,
+critical-task identification,
+and validation.
+Granularity does not mean making the list as small as possible.
+It means going fine enough to support judgment without destroying the task structure.
 
 ## Why Task Analysis Eventually Has to Reach Critical Tasks
 

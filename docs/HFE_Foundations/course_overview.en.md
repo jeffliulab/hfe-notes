@@ -73,8 +73,7 @@ the structure becomes clear:
 1. foundation pages explain how to see the human in the system
 2. method pages turn that view into concrete analytic steps
 3. application pages show how the same logic operates in aviation, automation, and medical devices
-4.
-case pages pull the earlier frameworks back into real events and ethical judgment
+4. case pages pull the earlier frameworks back into real events and ethical judgment
 
 <figure class="note-inline-figure">
   <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/course-intro-1-14-26/page-07.png" alt="This figure should make one thing visible: theory, methods, mitigation, and cases are not separate silos but mutually supporting elements of the course." loading="lazy">

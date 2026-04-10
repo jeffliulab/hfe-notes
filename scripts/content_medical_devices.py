@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from note_blueprints import callout, page_blueprint, section
+from note_blueprints import callout, page_blueprint, section, visual
 
 
 MEDICAL_DEVICES_CONTENT: dict[str, dict] = {
@@ -666,4 +666,134 @@ MEDICAL_DEVICES_CONTENT["epipen_workbook"]["examples"].append(
         body_zh="有些条目看起来每一列都填了，但 error 写成“improper use”，harm 写成“injury”，mitigation 写成“training”。这种行表面完整，实际上既不能指导设计，也不能指导验证。真正好的 workbook 行应该让团队一眼就知道下一步该改什么、该测什么。",
         body_en="Some rows look complete because every column contains text, but the error is written as “improper use,” the harm as “injury,” and the mitigation as “training.” Such rows are complete on the surface but analytically hollow. A strong row should let the team see immediately what must be redesigned and what must be tested next.",
     )
+)
+
+MEDICAL_DEVICES_CONTENT["iso_14971"]["sections"].append(
+    section(
+        "probability",
+        "## 为什么概率分级能帮助讨论，却不能被当成绝对真值",
+        "## Why Probability Levels Help Discussion but Cannot Be Treated as Absolute Truth",
+        body_zh="""
+        ISO 14971 里常见的 `Frequent / Probable / Occasional / Remote / Improbable` 之类等级，主要作用是帮助团队形成同一套排序语言，而不是宣称所有风险都能被算到非常精确。
+
+        尤其在 use-related risk 上，很多问题受场景、用户差异和控制强度影响很大。更成熟的做法，是把概率分级当成沟通框架，再结合 severity、detectability 和控制可靠性一起看，而不是只盯一个等级标签。
+        """,
+        body_en="""
+        Probability labels such as `Frequent`, `Probable`, `Occasional`, `Remote`, and `Improbable` mainly help the team develop a shared ranking language. They do not mean every risk can be estimated with high precision.
+
+        That is especially true for use-related risk, where scenario differences, user variation, and control strength can shift the picture substantially. The more mature practice is to use the scale as a communication scaffold and then read it together with severity, detectability, and control reliability instead of staring at the label alone.
+        """,
+    )
+)
+MEDICAL_DEVICES_CONTENT["iso_14971"]["inline_visuals"].extend(
+    [
+        visual(
+            "probability",
+            "ISO 14971 and Medical Device RM.pptx",
+            "这张图要看懂的是：概率等级的价值在于给团队统一排序口径，而不是制造一种“风险已经被精确算清”的错觉。",
+            "This figure should make one point visible: probability levels are valuable because they standardize ranking language, not because they magically turn every risk into a precise calculation.",
+            asset_name_contains="slide-20-image11",
+        ),
+    ]
+)
+
+MEDICAL_DEVICES_CONTENT["medical_device_urra"]["sections"].append(
+    section(
+        "specificity",
+        "## 为什么医疗器械 URRA 特别强调场景和动作写得足够具体",
+        "## Why Medical-Device URRA Demands Very Specific Scenario and Action Wording",
+        body_zh="""
+        在医疗器械 URRA 里，写成“用户误用设备”几乎没有分析价值。真正能支撑设计和验证的写法，必须把动作、界面对象、环境条件和错误方向写到足够具体，例如是把剂量看错、方向拿反、提前拔出，还是没有完成确认。
+
+        这样写不是为了把表变复杂，而是因为 patient harm 往往正是从这些具体动作里长出来的。只要动作还写得太笼统，后面的 control 和 validation 也一定会跟着变笼统。
+        """,
+        body_en="""
+        In medical-device URRA, the phrase “the user misused the device” carries almost no analytic value. Wording that can support design and validation has to specify the action, interface object, environment, and direction of error, such as misreading the dose, reversing the orientation, withdrawing too early, or failing to complete confirmation.
+
+        This is not about making the table more complicated. Patient harm often grows out of those concrete moves. If the action wording stays vague, later controls and validation plans inevitably become vague as well.
+        """,
+    )
+)
+MEDICAL_DEVICES_CONTENT["medical_device_urra"]["inline_visuals"].extend(
+    [
+        visual(
+            "steps",
+            "06 URRA in Medical Devices.pptx",
+            "这张图要看懂的是：医疗器械 URRA 会在定义用户与场景、识别 critical task、制定控制和验证之间反复回环，而不是填完一行就结束。",
+            "This figure should show that medical-device URRA loops repeatedly between user definition, critical-task identification, control design, and validation rather than ending once a row has been written.",
+            asset_name_contains="slide-09-image30",
+        ),
+        visual(
+            "specificity",
+            "06 URRA in Medical Devices.pptx",
+            "这张图要看懂的是：不同器械的界面和物理形态差异很大，所以 use-related risk 不能停在抽象大词，必须回到具体设备和具体任务。",
+            "This figure should make one point concrete: device interfaces and physical forms differ widely, so use-related risk cannot stay abstract and has to return to the actual device and task.",
+            asset_name_contains="slide-02-image5",
+        ),
+    ]
+)
+
+MEDICAL_DEVICES_CONTENT["medical_device_use_errors"]["sections"].append(
+    section(
+        "pca",
+        "## 为什么 PCA 模型会帮助你把 use error 写得更准",
+        "## Why the PCA Model Helps You Write Use Errors More Precisely",
+        body_zh="""
+        很多医疗器械错误表面上都像“动作做错了”，但真正导致动作错掉的，可能是前面的 perception 没抓到、cognition 解释错了，或者 action 执行本身不稳定。PCA 模型的价值，就是把这些层级重新拆开。
+
+        一旦拆开，团队就不会停在“用户按错了”这种表述，而会继续问：是没有看到关键信息、理解错了界面含义，还是姿态与动作本身就容易失稳。这个差别会直接决定 mitigation 应该改显示、改理解支持，还是改物理操作。
+        """,
+        body_en="""
+        Many medical-device errors look on the surface like “the action was performed incorrectly,” but the real source may be missed perception, wrong interpretation, or unstable physical execution. The PCA model matters because it re-separates those layers.
+
+        Once the layers are separated, the team no longer stops at phrases like “the user pressed incorrectly.” It asks whether the user failed to notice the cue, misread the interface meaning, or faced an action posture that was inherently unstable. That difference directly changes whether mitigation should improve display, cognitive support, or physical operation.
+        """,
+    )
+)
+MEDICAL_DEVICES_CONTENT["medical_device_use_errors"]["inline_visuals"].extend(
+    [
+        visual(
+            "pca",
+            "07 Use Errors.pptx",
+            "这张图要看懂的是：同一个 visible use error 可以向前追到 perception、cognition 或 action 三层里的不同断裂点，所以分析不能只盯最后那个动作。",
+            "This figure should show that one visible use error may trace back to a break in perception, cognition, or action, which is why the analysis cannot focus only on the final move.",
+            asset_name_contains="slide-16-image6",
+        ),
+        visual(
+            "control_logic",
+            "07 Use Errors.pptx",
+            "这张图要看懂的是：像 AED 这类设备会把引导直接做进产品里，说明很多所谓 user error 实际上可以通过界面与流程设计显著降低。",
+            "This figure should make one point concrete: devices such as AEDs embed guidance directly into the product, showing that many so-called user errors can be reduced substantially through interface and workflow design.",
+            asset_name_contains="slide-13-image5",
+        ),
+    ]
+)
+
+MEDICAL_DEVICES_CONTENT["epipen_workbook"]["sections"].append(
+    section(
+        "walkthrough",
+        "## 为什么 EpiPen workbook 特别适合练“从说明图到风险条目”",
+        "## Why the EpiPen Workbook Is Ideal for Practicing the Move from Instructions to Risk Rows",
+        body_zh="""
+        EpiPen 场景特别适合训练 workbook 写法，因为它既有很清楚的步骤图，又有高时间压力和高后果环境。也就是说，团队既能看到任务分解本身，也能看到某一步一旦做错，后果会怎样迅速放大。
+
+        这正是 workbook 最想训练的能力：不是抽象地说“可能误用”，而是把每一步 instruction 背后的失败点、harm path 和 mitigation 都真正写进文档里。
+        """,
+        body_en="""
+        The EpiPen scenario is ideal for workbook practice because it combines a very explicit instruction sequence with high time pressure and high consequence. The team can therefore see both the task decomposition itself and how quickly the consequence path can expand if one step fails.
+
+        That is exactly the skill the workbook is trying to train: not vaguely saying misuse is possible, but translating each instruction step into actual failure points, harm paths, and mitigation entries inside the working document.
+        """,
+    )
+)
+MEDICAL_DEVICES_CONTENT["epipen_workbook"]["inline_visuals"].extend(
+    [
+        visual(
+            "walkthrough",
+            "08 Task Analysis.pptx",
+            "这张图要看懂的是：EpiPen 使用说明里已经自然包含准备、方向、解锁、按压、保持和移除等多个关键步骤，这些步骤都可以直接翻成 workbook 条目。",
+            "This figure should make one thing visible: the EpiPen instruction graphic already contains preparation, orientation, unlock, press, hold, and removal steps, each of which can be translated directly into workbook rows.",
+            asset_name_contains="slide-08-image8",
+        ),
+    ]
 )

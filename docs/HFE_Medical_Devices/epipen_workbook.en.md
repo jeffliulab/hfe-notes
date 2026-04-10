@@ -71,11 +71,7 @@ use a fixed sequence:
 1. check whether the task steps are decomposed finely enough
 2. identify which steps are marked as critical tasks
 3. inspect whether error, hazard, and harm truly form a chain
-4.
-judge whether mitigation comes back to design,
-instructions,
-workflow,
-or validation
+4. judge whether mitigation comes back to design, instructions, workflow, or validation
 
 !!! note "One-Sentence Conclusion"
     This page is not about memorizing workbook column names.
@@ -118,6 +114,22 @@ it is usually still weak.
     Some rows look complete because every column contains text,
     but the error is written as “improper use,” the harm as “injury,” and the mitigation as “training.” Such rows are complete on the surface but analytically hollow.
     A strong row should let the team see immediately what must be redesigned and what must be tested next.
+
+## Why the EpiPen Workbook Is Ideal for Practicing the Move from Instructions to Risk Rows
+
+The EpiPen scenario is ideal for workbook practice because it combines a very explicit instruction sequence with high time pressure and high consequence.
+The team can therefore see both the task decomposition itself and how quickly the consequence path can expand if one step fails.
+
+That is exactly the skill the workbook is trying to train:
+not vaguely saying misuse is possible,
+but translating each instruction step into actual failure points,
+harm paths,
+and mitigation entries inside the working document.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-08-image8.png" alt="This figure should make one thing visible: the EpiPen instruction graphic already contains preparation, orientation, unlock, press, hold, and removal steps, each of which can be translated directly into workbook rows." loading="lazy">
+  <figcaption>This figure should make one thing visible: the EpiPen instruction graphic already contains preparation, orientation, unlock, press, hold, and removal steps, each of which can be translated directly into workbook rows.</figcaption>
+</figure>
 
 ## What To Take Away from This Case
 

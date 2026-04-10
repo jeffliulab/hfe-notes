@@ -65,6 +65,11 @@ harm 和 control 写成一条完整链条。
 harm 和 control，
 最后把这些条目回接到 validation 计划。
 
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-09-image30.png" alt="这张图要看懂的是：医疗器械 URRA 会在定义用户与场景、识别 critical task、制定控制和验证之间反复回环，而不是填完一行就结束。" loading="lazy">
+  <figcaption>这张图要看懂的是：医疗器械 URRA 会在定义用户与场景、识别 critical task、制定控制和验证之间反复回环，而不是填完一行就结束。</figcaption>
+</figure>
+
 !!! note "一句话结论"
     医疗器械 URRA 的关键，
     不是把“风险存在”写出来，
@@ -131,6 +136,29 @@ critical task 不是“重要步骤”的口语说法，
 - 这个 use error 是从哪个任务和场景推出的
 - 这个 control 是否真的对应这条风险链
 - 这个 control 又在哪里被验证
+
+## 为什么医疗器械 URRA 特别强调场景和动作写得足够具体
+
+在医疗器械 URRA 里，
+写成“用户误用设备”几乎没有分析价值。
+真正能支撑设计和验证的写法，
+必须把动作、
+界面对象、
+环境条件和错误方向写到足够具体，
+例如是把剂量看错、
+方向拿反、
+提前拔出，
+还是没有完成确认。
+
+这样写不是为了把表变复杂，
+而是因为 patient harm 往往正是从这些具体动作里长出来的。
+只要动作还写得太笼统，
+后面的 control 和 validation 也一定会跟着变笼统。
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-02-image5.png" alt="这张图要看懂的是：不同器械的界面和物理形态差异很大，所以 use-related risk 不能停在抽象大词，必须回到具体设备和具体任务。" loading="lazy">
+  <figcaption>这张图要看懂的是：不同器械的界面和物理形态差异很大，所以 use-related risk 不能停在抽象大词，必须回到具体设备和具体任务。</figcaption>
+</figure>
 
 ## 本章总结
 

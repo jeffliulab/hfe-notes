@@ -1035,7 +1035,7 @@ def split_note_sentences(text: str) -> list[str]:
         if not stripped:
             lines.append("")
             continue
-        if stripped.startswith(("- ", "* ", "1. ", "2. ", "3. ", "### ", "#### ", "|", "<")):
+        if re.match(r"^(\d+\.\s|[-*]\s|#{3,}\s|\||<)", stripped):
             lines.append(stripped)
             continue
         parts = re.split(

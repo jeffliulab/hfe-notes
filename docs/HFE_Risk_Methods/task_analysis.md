@@ -60,10 +60,13 @@ subtask、
 1. 先明确用户目标和起止条件。
 2. 把任务拆成能被观察和讨论的 use step。
 3. 为每一步补上需要看见什么、判断什么、操作什么。
-4.
-标出一旦失败就会影响安全或疗效的关键步骤。
-5.
-再把这些关键步骤带入 use error 和 risk analysis。
+4. 标出一旦失败就会影响安全或疗效的关键步骤。
+5. 再把这些关键步骤带入 use error 和 risk analysis。
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-08-image8.png" alt="这张图要看懂的是：一张看似简单的操作说明，其实已经包含准备、姿态、方向、按压、保持和收尾等多个可拆分步骤。" loading="lazy">
+  <figcaption>这张图要看懂的是：一张看似简单的操作说明，其实已经包含准备、姿态、方向、按压、保持和收尾等多个可拆分步骤。</figcaption>
+</figure>
 
 !!! warning "最容易做错的地方"
     最常见的问题，
@@ -93,6 +96,24 @@ critical task 和 workbook 页面，
     task analysis 的价值，
     不在于“列步骤”，
     而在于把风险分析绑到真实工作流上。
+
+## 为什么 task analysis 的颗粒度会直接决定后面分析质量
+
+task analysis 写得太粗时，
+后面所有风险判断都会被迫写粗。
+因为只要任务步骤仍然停在“准备设备”“完成给药”这种大块上，
+团队就看不见真正高风险的感知、
+确认、
+对齐、
+保持和恢复节点。
+
+所以这页真正要练的，
+不只是会拆步骤，
+而是会把步骤拆到足以支撑后续 use error、
+critical task 和 validation 的层级。
+颗粒度不是写得越碎越好，
+而是要碎到能支撑判断、
+但又不碎到失去任务结构。
 
 ## 为什么 task analysis 最后一定会走到 critical task
 
