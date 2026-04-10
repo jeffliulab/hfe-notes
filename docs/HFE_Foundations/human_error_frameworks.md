@@ -2,7 +2,42 @@
 
 本页整合课程里对 human error 的引入与框架化讲解，把 slips、mistakes、violations 与多层次失误模型放到同一个分析坐标系里。
 
-## 一眼看懂
+## 课件里的讲解顺序
+
+这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+
+### 02 Intro to Human Error (1).pptx
+
+1. Sami Durrani PhD and Eric Bergman PhD Introduction to Human Error
+2. To err is human…” (Cicero, BC)
+3. Definitions
+4. accuracy, sequence,
+5. but, is it that clear-cut?
+6. I will speak out 20 words Do not write anything until I have finished.
+7. North apple
+8. I will speak out 20 more words. Do not write anything until I have finished.
+
+### 03 HE Frameworks (2).pptx
+
+1. Kate MacNamee, MS Human Error Frameworks – How to think about errors
+2. This topic has already been covered, but as a quick reminder we are talking about:
+3. Frameworks are constructs - convenient ways to attempt to organize complex information
+4. Error Unintended action or decision
+5. Some frameworks delineate between errors and violations Human
+6. Some frameworks start with intent (this can manifest in problematic ways) Human
+7. Be starting with intention, it implicitly suggests user responsibility
+8. Broadly speaking…
+
+
+## 这页的逻辑顺序
+
+建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+
+1. 错误类型如何区分
+2. 个体层与系统层解释如何互补
+3. 框架为什么会影响后续风险分析方法
+
+## 核心概念
 
 “人为失误框架”这页的重点，不是给错误贴标签本身，而是教你不要把所有问题都压缩成“某个人犯错了”。框架的作用，是把失误拆成不同层次，再决定应该改人、改任务，还是改系统。
 
@@ -35,65 +70,65 @@
 
 如果你在本页看到“感知-认知-动作”的图，不要把它当装饰。它在提醒你：错误不是一个点，而是信息进入、理解形成、动作输出整条链路中的失配。
 
-## 图示与页面预览
+## 课件图示与页面预览
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/02-intro-to-human-error-1/slide-01-image1.png" alt="02 Intro to Human Error (1).pptx · 第 1 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-01-image1.png" alt="02 Intro to Human Error (1).pptx · 第 1 张幻灯片" loading="lazy">
     <figcaption>02 Intro to Human Error (1).pptx · 第 1 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/02-intro-to-human-error-1/slide-11-image2.jpg" alt="02 Intro to Human Error (1).pptx · 第 11 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-11-image2.jpg" alt="02 Intro to Human Error (1).pptx · 第 11 张幻灯片" loading="lazy">
     <figcaption>02 Intro to Human Error (1).pptx · 第 11 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/02-intro-to-human-error-1/slide-11-image3.png" alt="02 Intro to Human Error (1).pptx · 第 11 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-11-image3.png" alt="02 Intro to Human Error (1).pptx · 第 11 张幻灯片" loading="lazy">
     <figcaption>02 Intro to Human Error (1).pptx · 第 11 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/02-intro-to-human-error-1/slide-16-image4.png" alt="02 Intro to Human Error (1).pptx · 第 16 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-16-image4.png" alt="02 Intro to Human Error (1).pptx · 第 16 张幻灯片" loading="lazy">
     <figcaption>02 Intro to Human Error (1).pptx · 第 16 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/02-intro-to-human-error-1/slide-17-image5.jpeg" alt="02 Intro to Human Error (1).pptx · 第 17 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-17-image5.jpeg" alt="02 Intro to Human Error (1).pptx · 第 17 张幻灯片" loading="lazy">
     <figcaption>02 Intro to Human Error (1).pptx · 第 17 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/02-intro-to-human-error-1/slide-18-image6.png" alt="02 Intro to Human Error (1).pptx · 第 18 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-18-image6.png" alt="02 Intro to Human Error (1).pptx · 第 18 张幻灯片" loading="lazy">
     <figcaption>02 Intro to Human Error (1).pptx · 第 18 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/02-intro-to-human-error-1/slide-19-image7.png" alt="02 Intro to Human Error (1).pptx · 第 19 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-19-image7.png" alt="02 Intro to Human Error (1).pptx · 第 19 张幻灯片" loading="lazy">
     <figcaption>02 Intro to Human Error (1).pptx · 第 19 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/02-intro-to-human-error-1/slide-19-image8.png" alt="02 Intro to Human Error (1).pptx · 第 19 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-19-image8.png" alt="02 Intro to Human Error (1).pptx · 第 19 张幻灯片" loading="lazy">
     <figcaption>02 Intro to Human Error (1).pptx · 第 19 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/02-intro-to-human-error-1/slide-20-image7.png" alt="02 Intro to Human Error (1).pptx · 第 20 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-20-image7.png" alt="02 Intro to Human Error (1).pptx · 第 20 张幻灯片" loading="lazy">
     <figcaption>02 Intro to Human Error (1).pptx · 第 20 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/02-intro-to-human-error-1/slide-20-image8.png" alt="02 Intro to Human Error (1).pptx · 第 20 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-20-image8.png" alt="02 Intro to Human Error (1).pptx · 第 20 张幻灯片" loading="lazy">
     <figcaption>02 Intro to Human Error (1).pptx · 第 20 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/02-intro-to-human-error-1/slide-25-image9.png" alt="02 Intro to Human Error (1).pptx · 第 25 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-25-image9.png" alt="02 Intro to Human Error (1).pptx · 第 25 张幻灯片" loading="lazy">
     <figcaption>02 Intro to Human Error (1).pptx · 第 25 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/02-intro-to-human-error-1/slide-26-image10.png" alt="02 Intro to Human Error (1).pptx · 第 26 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-26-image10.png" alt="02 Intro to Human Error (1).pptx · 第 26 张幻灯片" loading="lazy">
     <figcaption>02 Intro to Human Error (1).pptx · 第 26 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/03-he-frameworks-2/slide-01-image1.png" alt="03 HE Frameworks (2).pptx · 第 1 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/03-he-frameworks-2/slide-01-image1.png" alt="03 HE Frameworks (2).pptx · 第 1 张幻灯片" loading="lazy">
     <figcaption>03 HE Frameworks (2).pptx · 第 1 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/03-he-frameworks-2/slide-14-image2.png" alt="03 HE Frameworks (2).pptx · 第 14 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/03-he-frameworks-2/slide-14-image2.png" alt="03 HE Frameworks (2).pptx · 第 14 张幻灯片" loading="lazy">
     <figcaption>03 HE Frameworks (2).pptx · 第 14 张幻灯片</figcaption>
   </figure>
 </div>

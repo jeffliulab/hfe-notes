@@ -2,7 +2,31 @@
 
 本页围绕 checklists 与 procedures 的设计原则，说明标准化如何减少记忆负担并支持团队协同。
 
-## 一眼看懂
+## 课件里的讲解顺序
+
+这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+
+### Checklists and Procedures 3-23-26.pdf
+
+1. PILOT TRAINING, PROCEDURES, AND CHECKLISTS
+2. MITIGATIONS
+3. TOPICS Pilot training
+4. PILOT TRAINING – CONCEPTS AND VOCABULARY
+5. AQP TRAINING
+6. ON THE JOB PILOT TRAINING
+7. ESTABLISHING AND MAINTAINING CULTURE NORMS Philosophy, Policies, Procedures ➔ Practice
+8. PROCEDURES As opposed to individual “pilot technique”
+
+
+## 这页的逻辑顺序
+
+建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+
+1. 程序化为什么能提升可靠性
+2. checklist 设计如何兼顾速度与准确
+3. 例外情形如何避免机械照本宣科
+
+## 核心概念
 
 检查单与程序的价值，不是把人变成机械执行者，而是把那些最容易被遗忘、跳步或顺序错乱的动作，外化成可共享、可核对、可复现的工作结构。
 
@@ -28,21 +52,21 @@
 
 所以真正的人因问题不是“有没有 checklist”，而是“checklist 是否真能支持实际工作”。
 
-## 图示与页面预览
+## 课件图示与页面预览
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/checklists-and-procedures-3-23-26/page-01.png" alt="Checklists and Procedures 3-23-26.pdf · 第 1 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/checklists-and-procedures-3-23-26/page-01.png" alt="Checklists and Procedures 3-23-26.pdf · 第 1 页预览" loading="lazy">
     <figcaption>Checklists and Procedures 3-23-26.pdf · 第 1 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/checklists-and-procedures-3-23-26/page-02.png" alt="Checklists and Procedures 3-23-26.pdf · 第 2 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/checklists-and-procedures-3-23-26/page-02.png" alt="Checklists and Procedures 3-23-26.pdf · 第 2 页预览" loading="lazy">
     <figcaption>Checklists and Procedures 3-23-26.pdf · 第 2 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/checklists-and-procedures-3-23-26/page-15.png" alt="Checklists and Procedures 3-23-26.pdf · 第 15 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/checklists-and-procedures-3-23-26/page-15.png" alt="Checklists and Procedures 3-23-26.pdf · 第 15 页预览" loading="lazy">
     <figcaption>Checklists and Procedures 3-23-26.pdf · 第 15 页预览</figcaption>
   </figure>
 </div>

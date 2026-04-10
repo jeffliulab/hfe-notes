@@ -2,7 +2,31 @@
 
 本页用航空与自动化导论材料建立自动化收益、自动化陷阱与飞行员角色变化的总体框架。
 
-## 一眼看懂
+## 课件里的讲解顺序
+
+这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+
+### Intro to Aviation and Automation 1-26-26-2.pdf
+
+1. Fundamentals of Aviation and Aircraft Automation
+2. Why start with aviation? Investment in human factors research
+3. Topics Pilots and what they do
+4. What does a pilot do? Aviate, Navigate, Communicate
+5. Other Pilot Tasks Manage flight deck systems and information,
+6. Pilot Training and Qualifications Ground school
+7. FLIGHT DECK DISPLAYS AND CONTROLS
+8. From the 1950s to 1990s… Round-Dial Instruments
+
+
+## 这页的逻辑顺序
+
+建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+
+1. 自动化为什么既能增效也能增险
+2. 角色分配如何影响监控与干预
+3. 航空系统为何是自动化 HFE 的经典实验场
+
+## 核心概念
 
 航空与自动化导论这一页，讲的不是“自动化越来越先进”这么简单，而是一个更关键的问题：当机器承担更多功能后，人到底还剩下什么工作，这些工作会不会反而更难。
 
@@ -30,21 +54,21 @@
 - 自动化模式是否好理解
 - 人在接管前是否还有足够时间和信息恢复情境意识
 
-## 图示与页面预览
+## 课件图示与页面预览
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/intro-to-aviation-and-automation-1-26-26-2/page-01.png" alt="Intro to Aviation and Automation 1-26-26-2.pdf · 第 1 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/intro-to-aviation-and-automation-1-26-26-2/page-01.png" alt="Intro to Aviation and Automation 1-26-26-2.pdf · 第 1 页预览" loading="lazy">
     <figcaption>Intro to Aviation and Automation 1-26-26-2.pdf · 第 1 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/intro-to-aviation-and-automation-1-26-26-2/page-02.png" alt="Intro to Aviation and Automation 1-26-26-2.pdf · 第 2 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/intro-to-aviation-and-automation-1-26-26-2/page-02.png" alt="Intro to Aviation and Automation 1-26-26-2.pdf · 第 2 页预览" loading="lazy">
     <figcaption>Intro to Aviation and Automation 1-26-26-2.pdf · 第 2 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/intro-to-aviation-and-automation-1-26-26-2/page-03.png" alt="Intro to Aviation and Automation 1-26-26-2.pdf · 第 3 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/intro-to-aviation-and-automation-1-26-26-2/page-03.png" alt="Intro to Aviation and Automation 1-26-26-2.pdf · 第 3 页预览" loading="lazy">
     <figcaption>Intro to Aviation and Automation 1-26-26-2.pdf · 第 3 页预览</figcaption>
   </figure>
 </div>

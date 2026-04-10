@@ -2,7 +2,31 @@
 
 This page treats Boeing 737 Max as a canonical case where technical, organizational, regulatory, and ethical issues are inseparable from HFE.
 
-## At a Glance
+## Lecture Flow in the Source Material
+
+This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+
+### Boeing 737Max and Ethics 2-23-26.pdf
+
+1. MORE ABOUT THE 737 MAX & ENGINEERING ETHICS
+2. A BIT MORE CONTEXT Lion Air 43 was the previous 96-min flight in accident aircraft.
+3. MORE ON BOEING 737 MAX ACCIDENTS For example:
+4. ONE OUTCOME (OUT OF MANY) FAILURE EFFECT CLASSIFICATIONS UPDATED
+5. MITIGATIONS RELATED TO 737MAX ACCIDENTS
+6. VOLPE REPORT What was the pilot response to the
+7. INSIGHTS FROM VOLPE REPORT Pilot experience impacts effective management of the situation.
+8. ENGINEERING ETHICS
+
+
+## Reading Logic
+
+Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+
+1. How design decisions become systemic ethical issues
+2. How organization and regulation shape safety outcomes
+3. Why technical mismatch often accompanies accountability mismatch
+
+## Core Idea
 
 The 737 Max topic is not just a design-defect story. It belongs in ethics because system design, training, alerting, organizational decisions, certification, and professional responsibility are intertwined.
 
@@ -21,21 +45,21 @@ This is not a choice between technology and humans. Design shapes human judgment
 
 Ethics becomes empty if it stays abstract. The stronger approach is to tie it back to concrete engineering decisions about disclosure, training assumptions, failure tolerance, and responsibility transfer.
 
-## Visuals and Page Previews
+## Slide Figures and Page Previews
 
-This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/boeing-737max-and-ethics-2-23-26/page-01.png" alt="Boeing 737Max and Ethics 2-23-26.pdf · page 1 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/boeing-737max-and-ethics-2-23-26/page-01.png" alt="Boeing 737Max and Ethics 2-23-26.pdf · page 1 preview" loading="lazy">
     <figcaption>Boeing 737Max and Ethics 2-23-26.pdf · page 1 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/boeing-737max-and-ethics-2-23-26/page-05.png" alt="Boeing 737Max and Ethics 2-23-26.pdf · page 5 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/boeing-737max-and-ethics-2-23-26/page-05.png" alt="Boeing 737Max and Ethics 2-23-26.pdf · page 5 preview" loading="lazy">
     <figcaption>Boeing 737Max and Ethics 2-23-26.pdf · page 5 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/boeing-737max-and-ethics-2-23-26/page-06.png" alt="Boeing 737Max and Ethics 2-23-26.pdf · page 6 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/boeing-737max-and-ethics-2-23-26/page-06.png" alt="Boeing 737Max and Ethics 2-23-26.pdf · page 6 preview" loading="lazy">
     <figcaption>Boeing 737Max and Ethics 2-23-26.pdf · page 6 preview</figcaption>
   </figure>
 </div>

@@ -2,7 +2,31 @@
 
 This page organizes attention resources, monitoring tasks, automation complacency, and vigilance decrement.
 
-## At a Glance
+## Lecture Flow in the Source Material
+
+This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+
+### Attention and Monitoring 2-9- 2026.pdf
+
+1. INTRODUCTION TO ATTENTION &
+2. TOPICS Supervisory control of automation
+3. SHERIDAN’S SPECTRUM OF AUTOMATION
+4. Proctor and VanZandt, 2017 HUMAN INFORMATION PROCESSING MODEL
+5. WHAT IS ATTENTION? Attention is associated with “consciousness” and “awareness”
+6. OVERVIEW: MODELS OF ATTENTION Attention Models
+7. YERKES-DODSON LAW Kahneman D. Attention and Effort. Prentice Hall, Inc., 1973.
+8. VIGILANCE Vigilance is sustained attention, the ability to
+
+
+## Reading Logic
+
+Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+
+1. Why attention is a limited resource
+2. Why monitoring tasks are vulnerable to decay
+3. How automation changes attentional allocation
+
+## Core Idea
 
 The point of this topic is not simply that people should pay more attention. Attention is limited, and sustained monitoring is one of the most fragile task types.
 
@@ -20,21 +44,21 @@ If a system expects long periods of watchful waiting, ask whether that monitorin
 
 Monitoring failure is often a design problem rather than a character flaw. Monotony, low feedback, and sudden state changes all work against sustained attention.
 
-## Visuals and Page Previews
+## Slide Figures and Page Previews
 
-This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/attention-and-monitoring-2-9-2026/page-01.png" alt="Attention and Monitoring 2-9- 2026.pdf · page 1 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/attention-and-monitoring-2-9-2026/page-01.png" alt="Attention and Monitoring 2-9- 2026.pdf · page 1 preview" loading="lazy">
     <figcaption>Attention and Monitoring 2-9- 2026.pdf · page 1 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/attention-and-monitoring-2-9-2026/page-03.png" alt="Attention and Monitoring 2-9- 2026.pdf · page 3 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/attention-and-monitoring-2-9-2026/page-03.png" alt="Attention and Monitoring 2-9- 2026.pdf · page 3 preview" loading="lazy">
     <figcaption>Attention and Monitoring 2-9- 2026.pdf · page 3 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/attention-and-monitoring-2-9-2026/page-04.png" alt="Attention and Monitoring 2-9- 2026.pdf · page 4 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/attention-and-monitoring-2-9-2026/page-04.png" alt="Attention and Monitoring 2-9- 2026.pdf · page 4 preview" loading="lazy">
     <figcaption>Attention and Monitoring 2-9- 2026.pdf · page 4 preview</figcaption>
   </figure>
 </div>

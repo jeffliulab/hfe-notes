@@ -2,7 +2,41 @@
 
 This page pairs known problem analysis with event-tree thinking to show how prior issues and event evolution enrich risk analysis.
 
-## At a Glance
+## Lecture Flow in the Source Material
+
+This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+
+### 11 Known Problem Analysis.pptx
+
+1. Erin Davis, MS, CHFP Known Problems Analysis (KPA)
+2. Example: Developing a new blood glucose meter
+3. Learn about use problems with existing devices
+4. Select sources Collect and analyze data
+5. Public regulatory databases FDA’s MAUDE database
+6. Step 2: Collect and analyze data
+7. Concise description Source
+8. Ensure use-related risk analysis contains all findings
+
+### Event Tree Supplemental.pptx
+
+1. Sami Durrani PhD Event Tree Supplemental
+2. Think of events in the casual chain as items that happen or don’t happen
+3. A Simple (and Ghoulish) Event Tree Example Perceive vampire
+4. Probability of fault (in this case the “event”) Example data:
+5. A FAULT Tree Example Failure (F)
+6. Can calculate the the P(F) of each chain
+7. Multiple casual chains that can lead to failure P(FA) = 0.06
+
+
+## Reading Logic
+
+Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+
+1. Why known problems deserve explicit modeling
+2. How event trees expand downstream consequences
+3. How supplemental analysis catches missed risks
+
+## Core Idea
 
 This page pairs two gap-finding methods. Known Problem Analysis looks backward to previously observed issues, while an Event Tree looks forward from an initiating event to possible downstream outcomes.
 
@@ -15,81 +49,81 @@ This page pairs two gap-finding methods. Known Problem Analysis looks backward t
 
 Main workflow analysis often misses low-frequency, high-consequence paths. These methods force the team to examine the edges of the system rather than only the expected path.
 
-## Visuals and Page Previews
+## Slide Figures and Page Previews
 
-This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/11-known-problem-analysis/slide-01-image1.png" alt="11 Known Problem Analysis.pptx · slide 1" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-01-image1.png" alt="11 Known Problem Analysis.pptx · slide 1" loading="lazy">
     <figcaption>11 Known Problem Analysis.pptx · slide 1</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/11-known-problem-analysis/slide-02-image2.png" alt="11 Known Problem Analysis.pptx · slide 2" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-02-image2.png" alt="11 Known Problem Analysis.pptx · slide 2" loading="lazy">
     <figcaption>11 Known Problem Analysis.pptx · slide 2</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/11-known-problem-analysis/slide-03-image3.jpeg" alt="11 Known Problem Analysis.pptx · slide 3" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-03-image3.jpeg" alt="11 Known Problem Analysis.pptx · slide 3" loading="lazy">
     <figcaption>11 Known Problem Analysis.pptx · slide 3</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/11-known-problem-analysis/slide-03-image4.jpeg" alt="11 Known Problem Analysis.pptx · slide 3" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-03-image4.jpeg" alt="11 Known Problem Analysis.pptx · slide 3" loading="lazy">
     <figcaption>11 Known Problem Analysis.pptx · slide 3</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/11-known-problem-analysis/slide-03-image2.png" alt="11 Known Problem Analysis.pptx · slide 3" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-03-image2.png" alt="11 Known Problem Analysis.pptx · slide 3" loading="lazy">
     <figcaption>11 Known Problem Analysis.pptx · slide 3</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/11-known-problem-analysis/slide-03-image5.jpeg" alt="11 Known Problem Analysis.pptx · slide 3" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-03-image5.jpeg" alt="11 Known Problem Analysis.pptx · slide 3" loading="lazy">
     <figcaption>11 Known Problem Analysis.pptx · slide 3</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/11-known-problem-analysis/slide-03-image6.jpeg" alt="11 Known Problem Analysis.pptx · slide 3" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-03-image6.jpeg" alt="11 Known Problem Analysis.pptx · slide 3" loading="lazy">
     <figcaption>11 Known Problem Analysis.pptx · slide 3</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/11-known-problem-analysis/slide-03-image7.png" alt="11 Known Problem Analysis.pptx · slide 3" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-03-image7.png" alt="11 Known Problem Analysis.pptx · slide 3" loading="lazy">
     <figcaption>11 Known Problem Analysis.pptx · slide 3</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/11-known-problem-analysis/slide-03-image8.png" alt="11 Known Problem Analysis.pptx · slide 3" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-03-image8.png" alt="11 Known Problem Analysis.pptx · slide 3" loading="lazy">
     <figcaption>11 Known Problem Analysis.pptx · slide 3</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/11-known-problem-analysis/slide-03-image9.png" alt="11 Known Problem Analysis.pptx · slide 3" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-03-image9.png" alt="11 Known Problem Analysis.pptx · slide 3" loading="lazy">
     <figcaption>11 Known Problem Analysis.pptx · slide 3</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/11-known-problem-analysis/slide-04-image11.png" alt="11 Known Problem Analysis.pptx · slide 4" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-04-image11.png" alt="11 Known Problem Analysis.pptx · slide 4" loading="lazy">
     <figcaption>11 Known Problem Analysis.pptx · slide 4</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/11-known-problem-analysis/slide-04-image13.png" alt="11 Known Problem Analysis.pptx · slide 4" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-04-image13.png" alt="11 Known Problem Analysis.pptx · slide 4" loading="lazy">
     <figcaption>11 Known Problem Analysis.pptx · slide 4</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/11-known-problem-analysis/slide-04-image15.png" alt="11 Known Problem Analysis.pptx · slide 4" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-04-image15.png" alt="11 Known Problem Analysis.pptx · slide 4" loading="lazy">
     <figcaption>11 Known Problem Analysis.pptx · slide 4</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/11-known-problem-analysis/slide-06-image17.png" alt="11 Known Problem Analysis.pptx · slide 6" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-06-image17.png" alt="11 Known Problem Analysis.pptx · slide 6" loading="lazy">
     <figcaption>11 Known Problem Analysis.pptx · slide 6</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/11-known-problem-analysis/slide-06-image18.png" alt="11 Known Problem Analysis.pptx · slide 6" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-06-image18.png" alt="11 Known Problem Analysis.pptx · slide 6" loading="lazy">
     <figcaption>11 Known Problem Analysis.pptx · slide 6</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/11-known-problem-analysis/slide-08-image19.jpeg" alt="11 Known Problem Analysis.pptx · slide 8" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-08-image19.jpeg" alt="11 Known Problem Analysis.pptx · slide 8" loading="lazy">
     <figcaption>11 Known Problem Analysis.pptx · slide 8</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/11-known-problem-analysis/slide-08-image20.png" alt="11 Known Problem Analysis.pptx · slide 8" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-08-image20.png" alt="11 Known Problem Analysis.pptx · slide 8" loading="lazy">
     <figcaption>11 Known Problem Analysis.pptx · slide 8</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/event-tree-supplemental/slide-01-image1.png" alt="Event Tree Supplemental.pptx · slide 1" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/event-tree-supplemental/slide-01-image1.png" alt="Event Tree Supplemental.pptx · slide 1" loading="lazy">
     <figcaption>Event Tree Supplemental.pptx · slide 1</figcaption>
   </figure>
 </div>

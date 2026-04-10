@@ -2,7 +2,31 @@
 
 This page focuses on display systems and alert design, organizing the tradeoffs among salience, prioritization, false alarms, and workload.
 
-## At a Glance
+## Lecture Flow in the Source Material
+
+This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+
+### Displays and Alerts 2-4-26.pdf
+
+1. DISPLAYS AND ALERTS Dr. Divya C. Chandra
+2. TOPICS Visual displays
+3. VISUAL DISPLAYS
+4. VISUAL DISPLAY DESIGN CONSIDERATIONS Display size
+5. VISUAL DISPLAY DESIGN PRINCIPLES Principle of Information Need
+6. AUDITORY DISPLAYS
+7. TYPES OF AUDITORY DISPLAYS Symbolic
+8. AUDITORY ALARMS Primarily used for emergency alarms and warning signals
+
+
+## Reading Logic
+
+Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+
+1. Why alerts must be salient without overwhelming the operator
+2. How display hierarchy supports rapid diagnosis
+3. How false alarms erode trust
+
+## Core Idea
 
 The central challenge in displays and alerts is making critical information noticeable without drowning the operator in noise.
 
@@ -22,21 +46,21 @@ The central challenge in displays and alerts is making critical information noti
 
 More alerts do not necessarily produce more safety. Frequent low-value alerts can create alarm fatigue and trust erosion, which makes later critical alerts less effective.
 
-## Visuals and Page Previews
+## Slide Figures and Page Previews
 
-This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/displays-and-alerts-2-4-26/page-01.png" alt="Displays and Alerts 2-4-26.pdf · page 1 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/displays-and-alerts-2-4-26/page-01.png" alt="Displays and Alerts 2-4-26.pdf · page 1 preview" loading="lazy">
     <figcaption>Displays and Alerts 2-4-26.pdf · page 1 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/displays-and-alerts-2-4-26/page-09.png" alt="Displays and Alerts 2-4-26.pdf · page 9 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/displays-and-alerts-2-4-26/page-09.png" alt="Displays and Alerts 2-4-26.pdf · page 9 preview" loading="lazy">
     <figcaption>Displays and Alerts 2-4-26.pdf · page 9 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/displays-and-alerts-2-4-26/page-21.png" alt="Displays and Alerts 2-4-26.pdf · page 21 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/displays-and-alerts-2-4-26/page-21.png" alt="Displays and Alerts 2-4-26.pdf · page 21 preview" loading="lazy">
     <figcaption>Displays and Alerts 2-4-26.pdf · page 21 preview</figcaption>
   </figure>
 </div>

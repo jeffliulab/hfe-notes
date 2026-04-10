@@ -2,7 +2,31 @@
 
 This page focuses on fatigue, circadian rhythm, and sleep loss as physiological constraints on performance.
 
-## At a Glance
+## Lecture Flow in the Source Material
+
+This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+
+### Sp26_Fatigue+Sleep_20260211.pdf
+
+1. FATIGUE & SLEEP Dr. Andrew Liu
+2. WHAT IS FATIGUE? 1999 US DOT Operational Definition
+3. SLEEP DEPRIVATION AND FATIGUE PREVALENCE
+4. FATIGUE AND DRIVING
+5. FATIGUE AND MEDICAL ERRORS
+6. WHAT FACTORS INFLUENCE SLEEP/FATIGUE?
+7. BORBÉLY TWO PROCESS MODEL OF SLEEP Process C (Circadian process):
+8. CIRCADIAN RHYTHM (PROCESS C) A group of nerve cells in the
+
+
+## Reading Logic
+
+Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+
+1. How fatigue affects response, judgment, and monitoring
+2. Why circadian rhythm changes the risk window
+3. Why fatigue management cannot rely on personal discipline alone
+
+## Core Idea
 
 Fatigue is not merely a feeling of tiredness. It is a physiological constraint that degrades reaction time, working memory, judgment, monitoring, and recovery.
 
@@ -20,21 +44,21 @@ Interfaces, procedures, and training are all filtered through a fatigued human o
 
 Telling people to rest more is not enough. Stronger approaches treat fatigue as a design variable in scheduling, task timing, handoff design, and high-risk cross-checking.
 
-## Visuals and Page Previews
+## Slide Figures and Page Previews
 
-This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-fatigue-sleep-20260211/page-01.png" alt="Sp26_Fatigue+Sleep_20260211.pdf · page 1 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-fatigue-sleep-20260211/page-01.png" alt="Sp26_Fatigue+Sleep_20260211.pdf · page 1 preview" loading="lazy">
     <figcaption>Sp26_Fatigue+Sleep_20260211.pdf · page 1 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-fatigue-sleep-20260211/page-04.png" alt="Sp26_Fatigue+Sleep_20260211.pdf · page 4 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-fatigue-sleep-20260211/page-04.png" alt="Sp26_Fatigue+Sleep_20260211.pdf · page 4 preview" loading="lazy">
     <figcaption>Sp26_Fatigue+Sleep_20260211.pdf · page 4 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-fatigue-sleep-20260211/page-05.png" alt="Sp26_Fatigue+Sleep_20260211.pdf · page 5 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-fatigue-sleep-20260211/page-05.png" alt="Sp26_Fatigue+Sleep_20260211.pdf · page 5 preview" loading="lazy">
     <figcaption>Sp26_Fatigue+Sleep_20260211.pdf · page 5 preview</figcaption>
   </figure>
 </div>

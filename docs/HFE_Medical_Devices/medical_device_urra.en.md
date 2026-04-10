@@ -2,7 +2,31 @@
 
 This page focuses on URRA within medical devices, connecting use scenarios, critical tasks, harm pathways, and controls in a regulated context.
 
-## At a Glance
+## Lecture Flow in the Source Material
+
+This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+
+### 06 URRA in Medical Devices.pptx
+
+1. Sami Durrani PhD and Eric Bergman PhD Use Related Risk in Medical Devices
+2. Examples of medical devices
+3. Assigned reading: Medical device definition
+4. Medical device “user interface” includes… The IFU (instructions for use)
+5. Business goal Regulatory Requirement
+6. Use Error, not User Error
+7. Key Guidance & Standards
+8. Key activities – HF med device process
+
+
+## Reading Logic
+
+Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+
+1. How medical-device URRA differs from generic URRA
+2. How critical tasks are defined
+3. How controls return to interface, labeling, and IFU design
+
+## Core Idea
 
 URRA in medical devices is stricter than a generic use-risk exercise because use conditions, critical tasks, and harm pathways directly affect patient safety.
 
@@ -16,89 +40,89 @@ URRA in medical devices is stricter than a generic use-risk exercise because use
 
 Teams often overuse “training” as the main control. The course pushes a stronger principle: if the interface or device can be redesigned, risk should not be left mainly to attention and training.
 
-## Visuals and Page Previews
+## Slide Figures and Page Previews
 
-This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-01-image1.png" alt="06 URRA in Medical Devices.pptx · slide 1" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-01-image1.png" alt="06 URRA in Medical Devices.pptx · slide 1" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · slide 1</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-02-image2.png" alt="06 URRA in Medical Devices.pptx · slide 2" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-02-image2.png" alt="06 URRA in Medical Devices.pptx · slide 2" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · slide 2</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-02-image3.jpeg" alt="06 URRA in Medical Devices.pptx · slide 2" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-02-image3.jpeg" alt="06 URRA in Medical Devices.pptx · slide 2" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · slide 2</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-02-image4.jpeg" alt="06 URRA in Medical Devices.pptx · slide 2" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-02-image4.jpeg" alt="06 URRA in Medical Devices.pptx · slide 2" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · slide 2</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-02-image5.png" alt="06 URRA in Medical Devices.pptx · slide 2" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-02-image5.png" alt="06 URRA in Medical Devices.pptx · slide 2" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · slide 2</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-02-image6.png" alt="06 URRA in Medical Devices.pptx · slide 2" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-02-image6.png" alt="06 URRA in Medical Devices.pptx · slide 2" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · slide 2</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-02-image7.png" alt="06 URRA in Medical Devices.pptx · slide 2" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-02-image7.png" alt="06 URRA in Medical Devices.pptx · slide 2" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · slide 2</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-03-image8.png" alt="06 URRA in Medical Devices.pptx · slide 3" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-03-image8.png" alt="06 URRA in Medical Devices.pptx · slide 3" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · slide 3</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-04-image9.png" alt="06 URRA in Medical Devices.pptx · slide 4" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-04-image9.png" alt="06 URRA in Medical Devices.pptx · slide 4" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · slide 4</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-04-image11.png" alt="06 URRA in Medical Devices.pptx · slide 4" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-04-image11.png" alt="06 URRA in Medical Devices.pptx · slide 4" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · slide 4</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-04-image13.png" alt="06 URRA in Medical Devices.pptx · slide 4" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-04-image13.png" alt="06 URRA in Medical Devices.pptx · slide 4" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · slide 4</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-04-image15.png" alt="06 URRA in Medical Devices.pptx · slide 4" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-04-image15.png" alt="06 URRA in Medical Devices.pptx · slide 4" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · slide 4</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-06-image17.jpeg" alt="06 URRA in Medical Devices.pptx · slide 6" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-06-image17.jpeg" alt="06 URRA in Medical Devices.pptx · slide 6" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · slide 6</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-07-image18.png" alt="06 URRA in Medical Devices.pptx · slide 7" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-07-image18.png" alt="06 URRA in Medical Devices.pptx · slide 7" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · slide 7</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-07-image19.png" alt="06 URRA in Medical Devices.pptx · slide 7" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-07-image19.png" alt="06 URRA in Medical Devices.pptx · slide 7" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · slide 7</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-09-image30.png" alt="06 URRA in Medical Devices.pptx · slide 9" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-09-image30.png" alt="06 URRA in Medical Devices.pptx · slide 9" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · slide 9</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-18-image31.jpeg" alt="06 URRA in Medical Devices.pptx · slide 18" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-18-image31.jpeg" alt="06 URRA in Medical Devices.pptx · slide 18" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · slide 18</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-19-image2.png" alt="06 URRA in Medical Devices.pptx · slide 19" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-19-image2.png" alt="06 URRA in Medical Devices.pptx · slide 19" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · slide 19</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-23-image32.png" alt="06 URRA in Medical Devices.pptx · slide 23" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-23-image32.png" alt="06 URRA in Medical Devices.pptx · slide 23" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · slide 23</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-24-image32.png" alt="06 URRA in Medical Devices.pptx · slide 24" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-24-image32.png" alt="06 URRA in Medical Devices.pptx · slide 24" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · slide 24</figcaption>
   </figure>
 </div>

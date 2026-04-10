@@ -2,7 +2,31 @@
 
 本页围绕 task analysis 的拆解逻辑，整理如何把使用流程变成可观察、可评估、可映射风险的任务与子任务结构。
 
-## 一眼看懂
+## 课件里的讲解顺序
+
+这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+
+### 08 Task Analysis.pptx
+
+1. Sami Durrani PhD and Eric Bergman PhD Task Analysis
+2. There are many different forms of task analysis Hierarchical Task Analysis (HTA)
+3. Identify task Decompose task into sub-tasks (if needed)
+4. Simple Example: Peanut Butter & Jelly
+5. Task 1: Gather supplies PB&J
+6. Task 3: Spread peanut butter on slice 1 Task 4: Spread jam on slice 2
+7. Let’s do a quick task analysis: Autoinjector
+8. Autoinjector analysis continued…
+
+
+## 这页的逻辑顺序
+
+建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+
+1. 任务拆解为什么是风险分析前提
+2. subtask 与 use step 如何定义
+3. 如何从任务流转向 use error 与 mitigation
+
+## 核心概念
 
 任务分析的价值，在于把“用户在用产品”这件看起来连续的事情，拆成可以观察、可以讨论、可以评估风险的步骤链。
 
@@ -25,41 +49,41 @@
 
 任务分析不是把说明书抄一遍。真正有用的 task analysis 会把“系统要求用户做什么”和“用户在现实里实际怎么做”都放进去。也就是说，你要同时看理想流程和真实流程之间的偏差。
 
-## 图示与页面预览
+## 课件图示与页面预览
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/08-task-analysis/slide-01-image1.png" alt="08 Task Analysis.pptx · 第 1 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-01-image1.png" alt="08 Task Analysis.pptx · 第 1 张幻灯片" loading="lazy">
     <figcaption>08 Task Analysis.pptx · 第 1 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/08-task-analysis/slide-04-image2.jpeg" alt="08 Task Analysis.pptx · 第 4 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-04-image2.jpeg" alt="08 Task Analysis.pptx · 第 4 张幻灯片" loading="lazy">
     <figcaption>08 Task Analysis.pptx · 第 4 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/08-task-analysis/slide-05-image3.jpeg" alt="08 Task Analysis.pptx · 第 5 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-05-image3.jpeg" alt="08 Task Analysis.pptx · 第 5 张幻灯片" loading="lazy">
     <figcaption>08 Task Analysis.pptx · 第 5 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/08-task-analysis/slide-05-image4.jpeg" alt="08 Task Analysis.pptx · 第 5 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-05-image4.jpeg" alt="08 Task Analysis.pptx · 第 5 张幻灯片" loading="lazy">
     <figcaption>08 Task Analysis.pptx · 第 5 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/08-task-analysis/slide-05-image5.jpeg" alt="08 Task Analysis.pptx · 第 5 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-05-image5.jpeg" alt="08 Task Analysis.pptx · 第 5 张幻灯片" loading="lazy">
     <figcaption>08 Task Analysis.pptx · 第 5 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/08-task-analysis/slide-05-image6.jpeg" alt="08 Task Analysis.pptx · 第 5 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-05-image6.jpeg" alt="08 Task Analysis.pptx · 第 5 张幻灯片" loading="lazy">
     <figcaption>08 Task Analysis.pptx · 第 5 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/08-task-analysis/slide-05-image7.jpeg" alt="08 Task Analysis.pptx · 第 5 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-05-image7.jpeg" alt="08 Task Analysis.pptx · 第 5 张幻灯片" loading="lazy">
     <figcaption>08 Task Analysis.pptx · 第 5 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/08-task-analysis/slide-08-image8.png" alt="08 Task Analysis.pptx · 第 8 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-08-image8.png" alt="08 Task Analysis.pptx · 第 8 张幻灯片" loading="lazy">
     <figcaption>08 Task Analysis.pptx · 第 8 张幻灯片</figcaption>
   </figure>
 </div>

@@ -2,7 +2,42 @@
 
 This page joins the investigative process, NTSB logic, and error-analysis methods to show how event analysis moves from evidence gathering to causal explanation.
 
-## At a Glance
+## Lecture Flow in the Source Material
+
+This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+
+### Sp26_Investigative Process-NTSB_20260121.pdf
+
+1. The NTSB Investigative Process
+2. NTSB Primer Established in 1967 as part of the Department of Transportation
+3. NTSB Mission Maintaining our congressionally mandated independence
+4. Selecting Accidents to Investigate
+5. Investigative Process Overview Initial notification and decision to investigate
+6. NTSB On Site “Go Team”
+7. “Go Team” Working Groups
+8. The “Party” System Board designates organizations as parties to its investigations
+
+### Sp26_ErrorAnalysisMethods_20260121.pdf
+
+1. ANALYSIS METHODS & FRAMEWORKS
+2. Issues/ sidebars Issues/theory ("Sidebars”)
+3. A WORD ABOUT MODELS (FRAMEWORKS) "All models are wrong, but some are useful”
+4. HOW DO YOU DEFINE “HUMAN ERROR”?
+5. TYPES OF HUMAN ERROR
+6. EXAMPLES OF HUMAN ERRORS
+7. EXAMPLE: ERROR DUE TO DESIGN
+8. HEINRICH’S TRIANGLE o Herbert William Heinrich
+
+
+## Reading Logic
+
+Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+
+1. The phases of an investigation
+2. The NTSB-style path from facts to causes
+3. How error analysis supports later risk controls
+
+## Core Idea
 
 Error analysis is about turning an event into an explainable structure: facts, timeline, causal layers, and actionable recommendations.
 
@@ -24,33 +59,33 @@ Error analysis is about turning an event into an explainable structure: facts, t
 
 Investigations often stop too early at the most visible human action. The deeper task is to explain why the system made that action likely, hard to detect, or hard to recover from.
 
-## Visuals and Page Previews
+## Slide Figures and Page Previews
 
-This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-investigative-process-ntsb-20260121/page-01.png" alt="Sp26_Investigative Process-NTSB_20260121.pdf · page 1 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-investigative-process-ntsb-20260121/page-01.png" alt="Sp26_Investigative Process-NTSB_20260121.pdf · page 1 preview" loading="lazy">
     <figcaption>Sp26_Investigative Process-NTSB_20260121.pdf · page 1 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-investigative-process-ntsb-20260121/page-02.png" alt="Sp26_Investigative Process-NTSB_20260121.pdf · page 2 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-investigative-process-ntsb-20260121/page-02.png" alt="Sp26_Investigative Process-NTSB_20260121.pdf · page 2 preview" loading="lazy">
     <figcaption>Sp26_Investigative Process-NTSB_20260121.pdf · page 2 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-investigative-process-ntsb-20260121/page-03.png" alt="Sp26_Investigative Process-NTSB_20260121.pdf · page 3 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-investigative-process-ntsb-20260121/page-03.png" alt="Sp26_Investigative Process-NTSB_20260121.pdf · page 3 preview" loading="lazy">
     <figcaption>Sp26_Investigative Process-NTSB_20260121.pdf · page 3 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-erroranalysismethods-20260121/page-01.png" alt="Sp26_ErrorAnalysisMethods_20260121.pdf · page 1 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-erroranalysismethods-20260121/page-01.png" alt="Sp26_ErrorAnalysisMethods_20260121.pdf · page 1 preview" loading="lazy">
     <figcaption>Sp26_ErrorAnalysisMethods_20260121.pdf · page 1 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-erroranalysismethods-20260121/page-02.png" alt="Sp26_ErrorAnalysisMethods_20260121.pdf · page 2 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-erroranalysismethods-20260121/page-02.png" alt="Sp26_ErrorAnalysisMethods_20260121.pdf · page 2 preview" loading="lazy">
     <figcaption>Sp26_ErrorAnalysisMethods_20260121.pdf · page 2 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-erroranalysismethods-20260121/page-04.png" alt="Sp26_ErrorAnalysisMethods_20260121.pdf · page 4 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-erroranalysismethods-20260121/page-04.png" alt="Sp26_ErrorAnalysisMethods_20260121.pdf · page 4 preview" loading="lazy">
     <figcaption>Sp26_ErrorAnalysisMethods_20260121.pdf · page 4 preview</figcaption>
   </figure>
 </div>

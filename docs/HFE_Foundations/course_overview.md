@@ -2,7 +2,31 @@
 
 本页用课程导论材料建立整门课的范围、节奏与应用背景，帮助读者先看到人因工程在航空与复杂系统中的问题空间。
 
-## 一眼看懂
+## 课件里的讲解顺序
+
+这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+
+### Course intro 1-14-26.pdf
+
+1. Engineering Forensics January 14, 2026
+2. Agenda Introductions
+3. Introductions Lecturers
+4. Class Members Nate Brophy
+5. Engineering Forensics?
+6. Course Goals
+7. Issues/ sidebars Issues/theory ("Sidebars”)
+8. Example “Sidebars”
+
+
+## 这页的逻辑顺序
+
+建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+
+1. 课程要解决什么系统层问题
+2. 为什么航空案例适合做人因分析入口
+3. 后续主题如何从导论向方法与案例展开
+
+## 核心概念
 
 这门课不是把“人会犯错”当成终点，而是把航空、医疗器械和自动化系统放在一起看：当任务、界面、组织、程序与环境互相作用时，系统为什么会变脆弱。
 
@@ -19,21 +43,21 @@
 - 后面的所有方法页，本质上都在回答三个问题：任务是什么、哪里会失败、系统怎样把失败挡住或放大。
 - 如果你先抓住这条主线，后面读 Swiss Cheese、task analysis、URRA 时会更容易串起来。
 
-## 图示与页面预览
+## 课件图示与页面预览
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/course-intro-1-14-26/page-01.png" alt="Course intro 1-14-26.pdf · 第 1 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/course-intro-1-14-26/page-01.png" alt="Course intro 1-14-26.pdf · 第 1 页预览" loading="lazy">
     <figcaption>Course intro 1-14-26.pdf · 第 1 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/course-intro-1-14-26/page-03.png" alt="Course intro 1-14-26.pdf · 第 3 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/course-intro-1-14-26/page-03.png" alt="Course intro 1-14-26.pdf · 第 3 页预览" loading="lazy">
     <figcaption>Course intro 1-14-26.pdf · 第 3 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/course-intro-1-14-26/page-07.png" alt="Course intro 1-14-26.pdf · 第 7 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/course-intro-1-14-26/page-07.png" alt="Course intro 1-14-26.pdf · 第 7 页预览" loading="lazy">
     <figcaption>Course intro 1-14-26.pdf · 第 7 页预览</figcaption>
   </figure>
 </div>

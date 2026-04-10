@@ -2,7 +2,31 @@
 
 This page summarizes the physiology, perceptual traps, and operational risk of spatial disorientation when sensory systems conflict with instruments.
 
-## At a Glance
+## Lecture Flow in the Source Material
+
+This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+
+### Sp26_SpDisorientation_20260330.pdf
+
+1. SPATIAL DISORIENTATION Dr. Andrew Liu
+2. ANATOMY OF THE EAR virtualmedicalcentre.com
+3. VESTIBULAR SYSTEM
+4. OTOLITH ORGANS
+5. OTOLITH HAIR CELLS Stanfield, 2011
+6. DETECTING FORWARD ACCELERATION Stanfield, 2011
+7. DETECTING BACKWARD ACCELERATION Stanfield, 2011
+8. DETECTION OF ACCELERATION V. TILT? Stanfield, 2011
+
+
+## Reading Logic
+
+Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+
+1. Why sensory systems can mislead operators
+2. How instrument scan counteracts illusion
+3. Why spatial disorientation is so hazardous
+
+## Core Idea
 
 The key lesson in spatial disorientation is that human sensory intuition can be unreliable in flight. The felt motion of the aircraft may not match its actual state.
 
@@ -20,21 +44,21 @@ Spatial disorientation is a classic human-factors conflict: human sensing can mi
 
 These illusions often feel compelling to the person experiencing them. That is why effective control depends on prior training, display support, and procedural cross-checking rather than willpower alone.
 
-## Visuals and Page Previews
+## Slide Figures and Page Previews
 
-This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-spdisorientation-20260330/page-01.png" alt="Sp26_SpDisorientation_20260330.pdf · page 1 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-spdisorientation-20260330/page-01.png" alt="Sp26_SpDisorientation_20260330.pdf · page 1 preview" loading="lazy">
     <figcaption>Sp26_SpDisorientation_20260330.pdf · page 1 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-spdisorientation-20260330/page-02.png" alt="Sp26_SpDisorientation_20260330.pdf · page 2 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-spdisorientation-20260330/page-02.png" alt="Sp26_SpDisorientation_20260330.pdf · page 2 preview" loading="lazy">
     <figcaption>Sp26_SpDisorientation_20260330.pdf · page 2 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-spdisorientation-20260330/page-03.png" alt="Sp26_SpDisorientation_20260330.pdf · page 3 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-spdisorientation-20260330/page-03.png" alt="Sp26_SpDisorientation_20260330.pdf · page 3 preview" loading="lazy">
     <figcaption>Sp26_SpDisorientation_20260330.pdf · page 3 preview</figcaption>
   </figure>
 </div>

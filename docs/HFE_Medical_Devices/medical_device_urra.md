@@ -2,7 +2,31 @@
 
 本页聚焦医疗器械场景下的 URRA，把 use scenario、critical task、harm 路径与控制策略放到监管语境中理解。
 
-## 一眼看懂
+## 课件里的讲解顺序
+
+这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+
+### 06 URRA in Medical Devices.pptx
+
+1. Sami Durrani PhD and Eric Bergman PhD Use Related Risk in Medical Devices
+2. Examples of medical devices
+3. Assigned reading: Medical device definition
+4. Medical device “user interface” includes… The IFU (instructions for use)
+5. Business goal Regulatory Requirement
+6. Use Error, not User Error
+7. Key Guidance & Standards
+8. Key activities – HF med device process
+
+
+## 这页的逻辑顺序
+
+建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+
+1. 医疗器械 URRA 与一般 URRA 有何不同
+2. critical task 如何界定
+3. 控制措施如何回到界面、标签与 IFU
+
+## 核心概念
 
 医疗器械场景下的 URRA，比一般风险分析更强调“使用情境是否可预见”“任务是否 critical”“错误是否会通向病人伤害”，因为这里的后果往往直接落在患者安全上。
 
@@ -23,89 +47,89 @@
 
 很多团队会把 control 写成“培训用户”。这往往不够。课程里更想强调的是：如果界面、器械形态、信息呈现本身可以改，就不应该把主要风险压给培训和注意力。
 
-## 图示与页面预览
+## 课件图示与页面预览
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-01-image1.png" alt="06 URRA in Medical Devices.pptx · 第 1 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-01-image1.png" alt="06 URRA in Medical Devices.pptx · 第 1 张幻灯片" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · 第 1 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-02-image2.png" alt="06 URRA in Medical Devices.pptx · 第 2 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-02-image2.png" alt="06 URRA in Medical Devices.pptx · 第 2 张幻灯片" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · 第 2 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-02-image3.jpeg" alt="06 URRA in Medical Devices.pptx · 第 2 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-02-image3.jpeg" alt="06 URRA in Medical Devices.pptx · 第 2 张幻灯片" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · 第 2 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-02-image4.jpeg" alt="06 URRA in Medical Devices.pptx · 第 2 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-02-image4.jpeg" alt="06 URRA in Medical Devices.pptx · 第 2 张幻灯片" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · 第 2 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-02-image5.png" alt="06 URRA in Medical Devices.pptx · 第 2 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-02-image5.png" alt="06 URRA in Medical Devices.pptx · 第 2 张幻灯片" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · 第 2 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-02-image6.png" alt="06 URRA in Medical Devices.pptx · 第 2 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-02-image6.png" alt="06 URRA in Medical Devices.pptx · 第 2 张幻灯片" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · 第 2 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-02-image7.png" alt="06 URRA in Medical Devices.pptx · 第 2 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-02-image7.png" alt="06 URRA in Medical Devices.pptx · 第 2 张幻灯片" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · 第 2 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-03-image8.png" alt="06 URRA in Medical Devices.pptx · 第 3 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-03-image8.png" alt="06 URRA in Medical Devices.pptx · 第 3 张幻灯片" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · 第 3 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-04-image9.png" alt="06 URRA in Medical Devices.pptx · 第 4 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-04-image9.png" alt="06 URRA in Medical Devices.pptx · 第 4 张幻灯片" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · 第 4 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-04-image11.png" alt="06 URRA in Medical Devices.pptx · 第 4 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-04-image11.png" alt="06 URRA in Medical Devices.pptx · 第 4 张幻灯片" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · 第 4 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-04-image13.png" alt="06 URRA in Medical Devices.pptx · 第 4 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-04-image13.png" alt="06 URRA in Medical Devices.pptx · 第 4 张幻灯片" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · 第 4 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-04-image15.png" alt="06 URRA in Medical Devices.pptx · 第 4 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-04-image15.png" alt="06 URRA in Medical Devices.pptx · 第 4 张幻灯片" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · 第 4 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-06-image17.jpeg" alt="06 URRA in Medical Devices.pptx · 第 6 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-06-image17.jpeg" alt="06 URRA in Medical Devices.pptx · 第 6 张幻灯片" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · 第 6 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-07-image18.png" alt="06 URRA in Medical Devices.pptx · 第 7 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-07-image18.png" alt="06 URRA in Medical Devices.pptx · 第 7 张幻灯片" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · 第 7 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-07-image19.png" alt="06 URRA in Medical Devices.pptx · 第 7 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-07-image19.png" alt="06 URRA in Medical Devices.pptx · 第 7 张幻灯片" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · 第 7 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-09-image30.png" alt="06 URRA in Medical Devices.pptx · 第 9 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-09-image30.png" alt="06 URRA in Medical Devices.pptx · 第 9 张幻灯片" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · 第 9 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-18-image31.jpeg" alt="06 URRA in Medical Devices.pptx · 第 18 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-18-image31.jpeg" alt="06 URRA in Medical Devices.pptx · 第 18 张幻灯片" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · 第 18 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-19-image2.png" alt="06 URRA in Medical Devices.pptx · 第 19 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-19-image2.png" alt="06 URRA in Medical Devices.pptx · 第 19 张幻灯片" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · 第 19 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-23-image32.png" alt="06 URRA in Medical Devices.pptx · 第 23 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-23-image32.png" alt="06 URRA in Medical Devices.pptx · 第 23 张幻灯片" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · 第 23 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/06-urra-in-medical-devices/slide-24-image32.png" alt="06 URRA in Medical Devices.pptx · 第 24 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-24-image32.png" alt="06 URRA in Medical Devices.pptx · 第 24 张幻灯片" loading="lazy">
     <figcaption>06 URRA in Medical Devices.pptx · 第 24 张幻灯片</figcaption>
   </figure>
 </div>

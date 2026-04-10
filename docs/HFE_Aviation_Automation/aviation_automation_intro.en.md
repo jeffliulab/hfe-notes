@@ -2,7 +2,31 @@
 
 This page establishes the high-level frame of automation benefits, automation traps, and the evolving role of the pilot.
 
-## At a Glance
+## Lecture Flow in the Source Material
+
+This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+
+### Intro to Aviation and Automation 1-26-26-2.pdf
+
+1. Fundamentals of Aviation and Aircraft Automation
+2. Why start with aviation? Investment in human factors research
+3. Topics Pilots and what they do
+4. What does a pilot do? Aviate, Navigate, Communicate
+5. Other Pilot Tasks Manage flight deck systems and information,
+6. Pilot Training and Qualifications Ground school
+7. FLIGHT DECK DISPLAYS AND CONTROLS
+8. From the 1950s to 1990s… Round-Dial Instruments
+
+
+## Reading Logic
+
+Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+
+1. Why automation can both improve and increase risk
+2. How role allocation shapes monitoring and intervention
+3. Why aviation is a classic HFE laboratory for automation
+
+## Core Idea
 
 This topic is not just about automation becoming more advanced. It is about how automation changes the human role and whether the remaining human tasks become harder rather than easier.
 
@@ -24,21 +48,21 @@ If the third question has no good answer, risk has often shifted rather than dis
 
 More automation is not automatically more safety. Safety depends on visibility of system state, clarity of automation mode, and whether the human can recover enough understanding to intervene effectively.
 
-## Visuals and Page Previews
+## Slide Figures and Page Previews
 
-This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/intro-to-aviation-and-automation-1-26-26-2/page-01.png" alt="Intro to Aviation and Automation 1-26-26-2.pdf · page 1 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/intro-to-aviation-and-automation-1-26-26-2/page-01.png" alt="Intro to Aviation and Automation 1-26-26-2.pdf · page 1 preview" loading="lazy">
     <figcaption>Intro to Aviation and Automation 1-26-26-2.pdf · page 1 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/intro-to-aviation-and-automation-1-26-26-2/page-02.png" alt="Intro to Aviation and Automation 1-26-26-2.pdf · page 2 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/intro-to-aviation-and-automation-1-26-26-2/page-02.png" alt="Intro to Aviation and Automation 1-26-26-2.pdf · page 2 preview" loading="lazy">
     <figcaption>Intro to Aviation and Automation 1-26-26-2.pdf · page 2 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/intro-to-aviation-and-automation-1-26-26-2/page-03.png" alt="Intro to Aviation and Automation 1-26-26-2.pdf · page 3 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/intro-to-aviation-and-automation-1-26-26-2/page-03.png" alt="Intro to Aviation and Automation 1-26-26-2.pdf · page 3 preview" loading="lazy">
     <figcaption>Intro to Aviation and Automation 1-26-26-2.pdf · page 3 preview</figcaption>
   </figure>
 </div>

@@ -2,7 +2,31 @@
 
 This page extends the automation discussion to automated vehicles, focusing on monitoring, handoff, trust calibration, and responsibility allocation.
 
-## At a Glance
+## Lecture Flow in the Source Material
+
+This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+
+### Automated Vehicles 3-11-26-2.pdf
+
+1. AUTOMATED VEHICLES Dr. Divya C. Chandra
+2. PLAN Driving tasks and vocabulary
+3. DRIVING Tasks and Vocabulary
+4. WHAT DOES IT MEAN TO “DRIVE”? DDT – Dynamic Driving Task
+5. AUTOMATED-SYSTEMS FOR DRIVING Earlier Systems
+6. CONFUSING TERMS (A FEW EXAMPLES) Similar names but different concepts
+7. SAE LEVELS OF AUTOMATION SAE International
+8. TRANSLATION 0. No automation. Driver is totally involved.
+
+
+## Reading Logic
+
+Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+
+1. The takeover problem in vehicle automation
+2. How trust calibration shapes reliance and intervention
+3. Which lessons transfer from aviation automation
+
+## Core Idea
 
 Automated vehicles extend the automation discussion into a takeover problem: people are often disengaged during routine operation and then expected to resume high-quality control with little warning.
 
@@ -20,21 +44,21 @@ The course uses automated vehicles because they inherit familiar automation chal
 
 It is too easy to say the driver should pay more attention. If system design encourages long periods of disengagement, the expectation of instant high-quality takeover may itself be unrealistic.
 
-## Visuals and Page Previews
+## Slide Figures and Page Previews
 
-This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/automated-vehicles-3-11-26-2/page-01.png" alt="Automated Vehicles 3-11-26-2.pdf · page 1 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/automated-vehicles-3-11-26-2/page-01.png" alt="Automated Vehicles 3-11-26-2.pdf · page 1 preview" loading="lazy">
     <figcaption>Automated Vehicles 3-11-26-2.pdf · page 1 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/automated-vehicles-3-11-26-2/page-02.png" alt="Automated Vehicles 3-11-26-2.pdf · page 2 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/automated-vehicles-3-11-26-2/page-02.png" alt="Automated Vehicles 3-11-26-2.pdf · page 2 preview" loading="lazy">
     <figcaption>Automated Vehicles 3-11-26-2.pdf · page 2 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/automated-vehicles-3-11-26-2/page-08.png" alt="Automated Vehicles 3-11-26-2.pdf · page 8 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/automated-vehicles-3-11-26-2/page-08.png" alt="Automated Vehicles 3-11-26-2.pdf · page 8 preview" loading="lazy">
     <figcaption>Automated Vehicles 3-11-26-2.pdf · page 8 preview</figcaption>
   </figure>
 </div>

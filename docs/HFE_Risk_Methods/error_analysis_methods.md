@@ -2,7 +2,42 @@
 
 本页把调查流程、NTSB 取证逻辑与错误分析方法放在一起，说明事故与事件分析如何从事实收集走向可执行的因果解释。
 
-## 一眼看懂
+## 课件里的讲解顺序
+
+这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+
+### Sp26_Investigative Process-NTSB_20260121.pdf
+
+1. The NTSB Investigative Process
+2. NTSB Primer Established in 1967 as part of the Department of Transportation
+3. NTSB Mission Maintaining our congressionally mandated independence
+4. Selecting Accidents to Investigate
+5. Investigative Process Overview Initial notification and decision to investigate
+6. NTSB On Site “Go Team”
+7. “Go Team” Working Groups
+8. The “Party” System Board designates organizations as parties to its investigations
+
+### Sp26_ErrorAnalysisMethods_20260121.pdf
+
+1. ANALYSIS METHODS & FRAMEWORKS
+2. Issues/ sidebars Issues/theory ("Sidebars”)
+3. A WORD ABOUT MODELS (FRAMEWORKS) "All models are wrong, but some are useful”
+4. HOW DO YOU DEFINE “HUMAN ERROR”?
+5. TYPES OF HUMAN ERROR
+6. EXAMPLES OF HUMAN ERRORS
+7. EXAMPLE: ERROR DUE TO DESIGN
+8. HEINRICH’S TRIANGLE o Herbert William Heinrich
+
+
+## 这页的逻辑顺序
+
+建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+
+1. 调查流程的阶段划分
+2. NTSB 风格的事实到原因链条
+3. 错误分析如何支撑后续风险控制
+
+## 核心概念
 
 错误分析与调查流程这一页，讲的是“如何把事故讲清楚”。重点不是写一段故事，而是把事实、时间线、因果链和改进行动拆开处理。
 
@@ -29,33 +64,33 @@
 - 程序是否与真实工作负荷冲突
 - 组织是否长期容忍危险偏差
 
-## 图示与页面预览
+## 课件图示与页面预览
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-investigative-process-ntsb-20260121/page-01.png" alt="Sp26_Investigative Process-NTSB_20260121.pdf · 第 1 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-investigative-process-ntsb-20260121/page-01.png" alt="Sp26_Investigative Process-NTSB_20260121.pdf · 第 1 页预览" loading="lazy">
     <figcaption>Sp26_Investigative Process-NTSB_20260121.pdf · 第 1 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-investigative-process-ntsb-20260121/page-02.png" alt="Sp26_Investigative Process-NTSB_20260121.pdf · 第 2 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-investigative-process-ntsb-20260121/page-02.png" alt="Sp26_Investigative Process-NTSB_20260121.pdf · 第 2 页预览" loading="lazy">
     <figcaption>Sp26_Investigative Process-NTSB_20260121.pdf · 第 2 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-investigative-process-ntsb-20260121/page-03.png" alt="Sp26_Investigative Process-NTSB_20260121.pdf · 第 3 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-investigative-process-ntsb-20260121/page-03.png" alt="Sp26_Investigative Process-NTSB_20260121.pdf · 第 3 页预览" loading="lazy">
     <figcaption>Sp26_Investigative Process-NTSB_20260121.pdf · 第 3 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-erroranalysismethods-20260121/page-01.png" alt="Sp26_ErrorAnalysisMethods_20260121.pdf · 第 1 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-erroranalysismethods-20260121/page-01.png" alt="Sp26_ErrorAnalysisMethods_20260121.pdf · 第 1 页预览" loading="lazy">
     <figcaption>Sp26_ErrorAnalysisMethods_20260121.pdf · 第 1 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-erroranalysismethods-20260121/page-02.png" alt="Sp26_ErrorAnalysisMethods_20260121.pdf · 第 2 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-erroranalysismethods-20260121/page-02.png" alt="Sp26_ErrorAnalysisMethods_20260121.pdf · 第 2 页预览" loading="lazy">
     <figcaption>Sp26_ErrorAnalysisMethods_20260121.pdf · 第 2 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-erroranalysismethods-20260121/page-04.png" alt="Sp26_ErrorAnalysisMethods_20260121.pdf · 第 4 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-erroranalysismethods-20260121/page-04.png" alt="Sp26_ErrorAnalysisMethods_20260121.pdf · 第 4 页预览" loading="lazy">
     <figcaption>Sp26_ErrorAnalysisMethods_20260121.pdf · 第 4 页预览</figcaption>
   </figure>
 </div>

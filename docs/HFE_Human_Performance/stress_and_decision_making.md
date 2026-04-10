@@ -2,7 +2,42 @@
 
 本页将压力、决策、分心与认知偏差放在一起，说明高负荷场景下操作者为何更容易走向次优选择。
 
-## 一眼看懂
+## 课件里的讲解顺序
+
+这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+
+### Sp26_StressDecisionMaking_20260225.pdf
+
+1. Dr. Andrew Liu STRESS, WORKLOAD,
+2. AIR FRANCE 447 – SUCCESSION OF EVENTS
+3. EFFECTS OF HIGH TASK DEMANDS (STRESS?) Selective attention/ attention narrowing
+4. YERKES-DODSON LAW An observed relationship between
+5. MENTAL WORKLOAD
+6. MENTAL WORKLOAD “Workload is a general term used to describe the cost of accomplishing task
+7. RESOURCE MODELS – SINGLE RESOURCE MODEL Kahneman, 1973
+8. RESOURCE MODELS – MULTIPLE RESOURCE MODEL
+
+### Sp26_DecisionMakingDistraction_20260302.pdf
+
+1. Dr. Andrew Liu DECISION MAKING &
+2. HUMAN INFORMATION PROCESSING MODEL
+3. F.D. Raslau (2014)
+4. RASMUSSEN LEVELS OF INFORMATION PROCESSING Rasmussen, 1983
+5. DECISION MAKING FRAMEWORK o Normative Decisions
+6. DECISION MAKING FRAMEWORK Naturalistic Decisions
+7. NATURALISTIC DECISION MODELS
+8. KAHNEMAN’S TWO SYSTEMS MODEL OF THINKING System 1
+
+
+## 这页的逻辑顺序
+
+建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+
+1. 压力如何缩窄注意与策略空间
+2. 分心如何侵蚀程序执行与监控
+3. 决策偏差为何常与时间压力绑定
+
+## 核心概念
 
 压力、决策与分心这一页讲的是：人在高负荷下不是简单“变差”，而是会把注意和策略缩窄到更少的选项上，于是更容易看漏、想偏、决策过快或者过慢。
 
@@ -24,33 +59,33 @@
 
 压力不总会导致错误，有时还会暂时提升警觉；真正危险的是过高压力、持续时间过长、信息又不完整时，操作者开始依赖最熟悉的路径，忽略不符合预期的新线索。这也是很多复杂事件里“明明看到了信息却没用上”的根源。
 
-## 图示与页面预览
+## 课件图示与页面预览
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-stressdecisionmaking-20260225/page-01.png" alt="Sp26_StressDecisionMaking_20260225.pdf · 第 1 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-stressdecisionmaking-20260225/page-01.png" alt="Sp26_StressDecisionMaking_20260225.pdf · 第 1 页预览" loading="lazy">
     <figcaption>Sp26_StressDecisionMaking_20260225.pdf · 第 1 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-stressdecisionmaking-20260225/page-03.png" alt="Sp26_StressDecisionMaking_20260225.pdf · 第 3 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-stressdecisionmaking-20260225/page-03.png" alt="Sp26_StressDecisionMaking_20260225.pdf · 第 3 页预览" loading="lazy">
     <figcaption>Sp26_StressDecisionMaking_20260225.pdf · 第 3 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-stressdecisionmaking-20260225/page-04.png" alt="Sp26_StressDecisionMaking_20260225.pdf · 第 4 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-stressdecisionmaking-20260225/page-04.png" alt="Sp26_StressDecisionMaking_20260225.pdf · 第 4 页预览" loading="lazy">
     <figcaption>Sp26_StressDecisionMaking_20260225.pdf · 第 4 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-decisionmakingdistraction-20260302/page-01.png" alt="Sp26_DecisionMakingDistraction_20260302.pdf · 第 1 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-decisionmakingdistraction-20260302/page-01.png" alt="Sp26_DecisionMakingDistraction_20260302.pdf · 第 1 页预览" loading="lazy">
     <figcaption>Sp26_DecisionMakingDistraction_20260302.pdf · 第 1 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-decisionmakingdistraction-20260302/page-02.png" alt="Sp26_DecisionMakingDistraction_20260302.pdf · 第 2 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-decisionmakingdistraction-20260302/page-02.png" alt="Sp26_DecisionMakingDistraction_20260302.pdf · 第 2 页预览" loading="lazy">
     <figcaption>Sp26_DecisionMakingDistraction_20260302.pdf · 第 2 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-decisionmakingdistraction-20260302/page-03.png" alt="Sp26_DecisionMakingDistraction_20260302.pdf · 第 3 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-decisionmakingdistraction-20260302/page-03.png" alt="Sp26_DecisionMakingDistraction_20260302.pdf · 第 3 页预览" loading="lazy">
     <figcaption>Sp26_DecisionMakingDistraction_20260302.pdf · 第 3 页预览</figcaption>
   </figure>
 </div>

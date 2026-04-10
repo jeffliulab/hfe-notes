@@ -2,7 +2,31 @@
 
 本页聚焦医疗器械中的 use error、异常使用与界面诱发风险，强调错误并非只来自操作者，而是来自整个使用系统。
 
-## 一眼看懂
+## 课件里的讲解顺序
+
+这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+
+### 07 Use Errors.pptx
+
+1. ENP 111 – Use Related Risk Analysis Sami Durrani PhD and Eric Bergman PhD
+2. (1) was different from the result expected by the user and
+3. Let’s look at a few case studies
+4. Hospital Bed
+5. Was there a use error? Was there only one? Or multiple?
+6. Hospital Bed New patient comes.
+7. Was there a use error? Yes
+8. Did a use error occur?
+
+
+## 这页的逻辑顺序
+
+建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+
+1. use error 与 misuse 的边界
+2. 界面与说明如何诱发错误
+3. 为什么 use error 要和 validation 结合看
+
+## 核心概念
 
 医疗器械 use error 这一页想解决的问题是：当不良后果发生时，我们怎样区分“器械本身失效”“用户无意出错”“用户故意偏离”“环境把正确操作变得很难”。
 
@@ -24,49 +48,49 @@
 
 这页真正难的地方不是下定义，而是承认“错误行为”常常是设计、时间压力、包装、标签和工作环境共同塑造出来的。也因此，人因分析必须回到具体任务和情境。
 
-## 图示与页面预览
+## 课件图示与页面预览
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/07-use-errors/slide-01-image1.png" alt="07 Use Errors.pptx · 第 1 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-01-image1.png" alt="07 Use Errors.pptx · 第 1 张幻灯片" loading="lazy">
     <figcaption>07 Use Errors.pptx · 第 1 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/07-use-errors/slide-04-image2.jpeg" alt="07 Use Errors.pptx · 第 4 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-04-image2.jpeg" alt="07 Use Errors.pptx · 第 4 张幻灯片" loading="lazy">
     <figcaption>07 Use Errors.pptx · 第 4 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/07-use-errors/slide-05-image3.jpeg" alt="07 Use Errors.pptx · 第 5 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-05-image3.jpeg" alt="07 Use Errors.pptx · 第 5 张幻灯片" loading="lazy">
     <figcaption>07 Use Errors.pptx · 第 5 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/07-use-errors/slide-06-image4.jpeg" alt="07 Use Errors.pptx · 第 6 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-06-image4.jpeg" alt="07 Use Errors.pptx · 第 6 张幻灯片" loading="lazy">
     <figcaption>07 Use Errors.pptx · 第 6 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/07-use-errors/slide-09-image2.jpeg" alt="07 Use Errors.pptx · 第 9 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-09-image2.jpeg" alt="07 Use Errors.pptx · 第 9 张幻灯片" loading="lazy">
     <figcaption>07 Use Errors.pptx · 第 9 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/07-use-errors/slide-10-image3.jpeg" alt="07 Use Errors.pptx · 第 10 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-10-image3.jpeg" alt="07 Use Errors.pptx · 第 10 张幻灯片" loading="lazy">
     <figcaption>07 Use Errors.pptx · 第 10 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/07-use-errors/slide-11-image4.jpeg" alt="07 Use Errors.pptx · 第 11 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-11-image4.jpeg" alt="07 Use Errors.pptx · 第 11 张幻灯片" loading="lazy">
     <figcaption>07 Use Errors.pptx · 第 11 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/07-use-errors/slide-13-image5.jpeg" alt="07 Use Errors.pptx · 第 13 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-13-image5.jpeg" alt="07 Use Errors.pptx · 第 13 张幻灯片" loading="lazy">
     <figcaption>07 Use Errors.pptx · 第 13 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/07-use-errors/slide-16-image6.png" alt="07 Use Errors.pptx · 第 16 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-16-image6.png" alt="07 Use Errors.pptx · 第 16 张幻灯片" loading="lazy">
     <figcaption>07 Use Errors.pptx · 第 16 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/07-use-errors/slide-18-image7.jpeg" alt="07 Use Errors.pptx · 第 18 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-18-image7.jpeg" alt="07 Use Errors.pptx · 第 18 张幻灯片" loading="lazy">
     <figcaption>07 Use Errors.pptx · 第 18 张幻灯片</figcaption>
   </figure>
 </div>

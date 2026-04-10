@@ -2,7 +2,31 @@
 
 本页围绕 Cardosi 材料提炼具体案例中的显示、程序、沟通与情境理解问题，作为把方法落到案例的中间层。
 
-## 一眼看懂
+## 课件里的讲解顺序
+
+这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+
+### Cardosi 2-2-2026.pdf
+
+1. Human Factors in Aviation
+2. Human Factors in Aviation An introduction to Air Traffic Control (ATC)
+3. Introduction to Air Traffic Control (ATC)
+4. Tower – TRACON – Enroute Center (ARTCC) – TRACON – Tower
+5. Pilot – ATC communications - Radio
+6. Blocked and partially-blocked “stepped on” on pilot-controller voice communications
+7. Controller-Pilot Data Communications (CPDLC)
+8. Human Factors in Aviation - When Should Human Factors be Considered?
+
+
+## 这页的逻辑顺序
+
+建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+
+1. 案例中哪些设计与流程因素最关键
+2. 如何从具体事件回看 HFE 原则
+3. 案例分析如何反哺一般方法
+
+## 核心概念
 
 Cardosi 案例这一页的价值，在于把抽象原则重新拉回一个具体事件里。你会看到显示、沟通、程序、注意和情境理解不是分开的主题，而是在真实案例里同时起作用。
 
@@ -24,21 +48,21 @@ Cardosi 案例这一页的价值，在于把抽象原则重新拉回一个具体
 
 很多人做案例分析时会掉进“事后看一切都很明显”的陷阱。更成熟的读法是尽量回到当事人在那个时刻能看到什么、理解什么、误判什么，然后再讨论系统还能如何设计得更好。
 
-## 图示与页面预览
+## 课件图示与页面预览
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/cardosi-2-2-2026/page-01.png" alt="Cardosi 2-2-2026.pdf · 第 1 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/cardosi-2-2-2026/page-01.png" alt="Cardosi 2-2-2026.pdf · 第 1 页预览" loading="lazy">
     <figcaption>Cardosi 2-2-2026.pdf · 第 1 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/cardosi-2-2-2026/page-02.png" alt="Cardosi 2-2-2026.pdf · 第 2 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/cardosi-2-2-2026/page-02.png" alt="Cardosi 2-2-2026.pdf · 第 2 页预览" loading="lazy">
     <figcaption>Cardosi 2-2-2026.pdf · 第 2 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/cardosi-2-2-2026/page-03.png" alt="Cardosi 2-2-2026.pdf · 第 3 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/cardosi-2-2-2026/page-03.png" alt="Cardosi 2-2-2026.pdf · 第 3 页预览" loading="lazy">
     <figcaption>Cardosi 2-2-2026.pdf · 第 3 页预览</figcaption>
   </figure>
 </div>

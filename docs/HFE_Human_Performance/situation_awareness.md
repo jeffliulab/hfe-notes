@@ -2,7 +2,31 @@
 
 本页围绕 perception、comprehension、projection 三层情境意识展开，连接信息获取与未来状态预判。
 
-## 一眼看懂
+## 课件里的讲解顺序
+
+这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+
+### Sp26_SituationAwareness_20260325.pdf
+
+1. SITUATION AWARENESS
+2. SITUATION AWARENESS IN DECISION MAKING
+3. EXAMPLE OF SA ELEMENTS: DRIVING A CAR
+4. BREAKDOWNS IN SA Perception (Level 1):
+5. AMTRAK ACCIDENT REVISITED Where did the breakdown in
+6. TEAM SITUATION AWARENESS Endsley, 1995
+7. UBER ACCIDENT, MARCH 2018 Operator took self-driving car out of garage to
+8. UBER ACCIDENT, MARCH 2018 Software classified the pedestrian as an unknown
+
+
+## 这页的逻辑顺序
+
+建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+
+1. 情境意识的三层结构
+2. 为什么信息可见不等于真正理解
+3. 预测未来状态为何决定有效干预
+
+## 核心概念
 
 情境意识不是“对周围有感觉”这么模糊的东西。课程里讲的 SA 更具体，它至少包含三层：先感知到信息，再理解它意味着什么，最后预测接下来会发生什么。
 
@@ -26,21 +50,21 @@
 
 课程里很多页面都在回到情境意识问题。显示设计、CRM、监控、自动化、空间定向，最后都在问：系统有没有帮助人形成足够准确、足够及时、足够可预测的 mental model。
 
-## 图示与页面预览
+## 课件图示与页面预览
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-situationawareness-20260325/page-01.png" alt="Sp26_SituationAwareness_20260325.pdf · 第 1 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-situationawareness-20260325/page-01.png" alt="Sp26_SituationAwareness_20260325.pdf · 第 1 页预览" loading="lazy">
     <figcaption>Sp26_SituationAwareness_20260325.pdf · 第 1 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-situationawareness-20260325/page-03.png" alt="Sp26_SituationAwareness_20260325.pdf · 第 3 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-situationawareness-20260325/page-03.png" alt="Sp26_SituationAwareness_20260325.pdf · 第 3 页预览" loading="lazy">
     <figcaption>Sp26_SituationAwareness_20260325.pdf · 第 3 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-situationawareness-20260325/page-04.png" alt="Sp26_SituationAwareness_20260325.pdf · 第 4 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-situationawareness-20260325/page-04.png" alt="Sp26_SituationAwareness_20260325.pdf · 第 4 页预览" loading="lazy">
     <figcaption>Sp26_SituationAwareness_20260325.pdf · 第 4 页预览</figcaption>
   </figure>
 </div>

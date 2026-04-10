@@ -2,7 +2,31 @@
 
 This page uses the Swiss Cheese model to connect barriers, vulnerabilities, and accident trajectories as a bridge from single-error thinking to system defense design.
 
-## At a Glance
+## Lecture Flow in the Source Material
+
+This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+
+### 05 Swiss Cheese Model.pdf
+
+1. Rachel Morgan, MS Swiss Cheese Model
+2. Introduction Rachel Morgan
+3. Swiss Cheese Model Background
+4. Swiss Cheese Model
+5. The Swiss Cheese Model is a way to understand how failures happen in complex systems
+6. Swiss Cheese Model – Graphic
+7. Preventing the spread of COVID-19 Swiss Cheese Model – Example
+8. Used in multiple high-risk, high-complexity industries, such as:
+
+
+## Reading Logic
+
+Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+
+1. Why accidents penetrate multiple defenses
+2. How barriers and holes coexist
+3. Why system redesign matters more than blaming operators
+
+## Core Idea
 
 The Swiss Cheese model says accidents usually emerge when multiple imperfect defenses fail together rather than from a single isolated mistake.
 
@@ -20,21 +44,21 @@ The model shifts attention away from the final operator and toward upstream desi
 
 Safety does not come from adding more layers by itself. It comes from having defenses that are meaningfully different, observable, and capable of catching one another's failures.
 
-## Visuals and Page Previews
+## Slide Figures and Page Previews
 
-This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/05-swiss-cheese-model/page-01.png" alt="05 Swiss Cheese Model.pdf · page 1 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/05-swiss-cheese-model/page-01.png" alt="05 Swiss Cheese Model.pdf · page 1 preview" loading="lazy">
     <figcaption>05 Swiss Cheese Model.pdf · page 1 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/05-swiss-cheese-model/page-06.png" alt="05 Swiss Cheese Model.pdf · page 6 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/05-swiss-cheese-model/page-06.png" alt="05 Swiss Cheese Model.pdf · page 6 preview" loading="lazy">
     <figcaption>05 Swiss Cheese Model.pdf · page 6 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/05-swiss-cheese-model/page-07.png" alt="05 Swiss Cheese Model.pdf · page 7 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/05-swiss-cheese-model/page-07.png" alt="05 Swiss Cheese Model.pdf · page 7 preview" loading="lazy">
     <figcaption>05 Swiss Cheese Model.pdf · page 7 preview</figcaption>
   </figure>
 </div>

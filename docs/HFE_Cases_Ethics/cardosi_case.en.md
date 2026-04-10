@@ -2,7 +2,31 @@
 
 This page distills the Cardosi material into a concrete case where displays, procedures, communication, and situation understanding interact.
 
-## At a Glance
+## Lecture Flow in the Source Material
+
+This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+
+### Cardosi 2-2-2026.pdf
+
+1. Human Factors in Aviation
+2. Human Factors in Aviation An introduction to Air Traffic Control (ATC)
+3. Introduction to Air Traffic Control (ATC)
+4. Tower – TRACON – Enroute Center (ARTCC) – TRACON – Tower
+5. Pilot – ATC communications - Radio
+6. Blocked and partially-blocked “stepped on” on pilot-controller voice communications
+7. Controller-Pilot Data Communications (CPDLC)
+8. Human Factors in Aviation - When Should Human Factors be Considered?
+
+
+## Reading Logic
+
+Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+
+1. Which design and process factors matter most in the case
+2. How to read HFE principles back into a concrete event
+3. How case analysis feeds back into general methods
+
+## Core Idea
 
 The Cardosi case matters because it turns abstract principles back into a concrete event where displays, communication, procedure, attention, and understanding interact at once.
 
@@ -21,21 +45,21 @@ The goal is not memorizing concepts but recognizing them inside an event. A case
 
 Hindsight makes everything look obvious. Better analysis tries to reconstruct what was visible, interpretable, and misleading to the people in the moment.
 
-## Visuals and Page Previews
+## Slide Figures and Page Previews
 
-This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/cardosi-2-2-2026/page-01.png" alt="Cardosi 2-2-2026.pdf · page 1 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/cardosi-2-2-2026/page-01.png" alt="Cardosi 2-2-2026.pdf · page 1 preview" loading="lazy">
     <figcaption>Cardosi 2-2-2026.pdf · page 1 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/cardosi-2-2-2026/page-02.png" alt="Cardosi 2-2-2026.pdf · page 2 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/cardosi-2-2-2026/page-02.png" alt="Cardosi 2-2-2026.pdf · page 2 preview" loading="lazy">
     <figcaption>Cardosi 2-2-2026.pdf · page 2 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/cardosi-2-2-2026/page-03.png" alt="Cardosi 2-2-2026.pdf · page 3 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/cardosi-2-2-2026/page-03.png" alt="Cardosi 2-2-2026.pdf · page 3 preview" loading="lazy">
     <figcaption>Cardosi 2-2-2026.pdf · page 3 preview</figcaption>
   </figure>
 </div>

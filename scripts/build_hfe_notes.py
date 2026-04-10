@@ -6,6 +6,7 @@ import json
 import posixpath
 import re
 import shutil
+from urllib.parse import quote
 import zipfile
 from collections import Counter, OrderedDict, defaultdict
 from pathlib import Path, PurePosixPath
@@ -22,6 +23,7 @@ DOCS_DIR = REPO_ROOT / "docs"
 DATA_DIR = REPO_ROOT / "data"
 ASSET_ROOT = DOCS_DIR / "assets" / "source_files"
 VISUAL_ROOT = DOCS_DIR / "assets" / "visuals"
+SITE_URL = "https://jeffliulab.github.io/hfe-notes/"
 
 PPT_NS = {"a": "http://schemas.openxmlformats.org/drawingml/2006/main"}
 REL_NS_URI = "http://schemas.openxmlformats.org/officeDocument/2006/relationships"
@@ -970,6 +972,118 @@ def teaching_content_for(page_slug: str, lang: str) -> str:
     return "## At a Glance\n\nThis page is still waiting for a fuller teaching draft. The sources, visuals, and full transcription remain available below."
 
 
+def normalize_teaching_content(content: str, lang: str) -> str:
+    if lang == "zh":
+        return content.replace("## 一眼看懂", "## 核心概念", 1)
+    return content.replace("## At a Glance", "## Core Idea", 1)
+
+
+def render_logic_outline(page: dict, lang: str) -> list[str]:
+    title = "## 这页的逻辑顺序" if lang == "zh" else "## Reading Logic"
+    intro = (
+        "建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。"
+        if lang == "zh"
+        else "Read the page in this order to follow the lecture logic rather than treating it as a flat summary."
+    )
+    angles = page["angles_zh"] if lang == "zh" else page["angles_en"]
+    lines = [title, "", intro, ""]
+    for index, angle in enumerate(angles, start=1):
+        lines.append(f"{index}. {angle}")
+    return lines
+
+
+def locator_outline_key(locator: str) -> tuple[str, int, int] | None:
+    slide_match = re.match(r"slide:(\d+):p:(\d+)$", locator)
+    if slide_match:
+        return "slide", int(slide_match.group(1)), int(slide_match.group(2))
+    page_match = re.match(r"page:(\d+):line:(\d+)$", locator)
+    if page_match:
+        return "page", int(page_match.group(1)), int(page_match.group(2))
+    return None
+
+
+def is_noise_outline_text(text: str) -> bool:
+    stripped = normalize_text(text)
+    if not stripped:
+        return True
+    if len(stripped) < 3 or len(stripped) > 110:
+        return True
+    if "http://" in stripped.lower() or "https://" in stripped.lower():
+        return True
+    if re.fullmatch(r"[\d\s/:\-().]+", stripped):
+        return True
+    if re.fullmatch(r"ENP-\d+", stripped, re.IGNORECASE):
+        return True
+    if re.fullmatch(r"page \d+", stripped, re.IGNORECASE):
+        return True
+    return False
+
+
+def extract_source_outline(source_units: list[dict]) -> list[str]:
+    grouped: dict[tuple[str, int], list[tuple[int, str]]] = defaultdict(list)
+    for unit in source_units:
+        outline_key = locator_outline_key(unit["locator"])
+        if not outline_key:
+            continue
+        kind, block_no, line_no = outline_key
+        grouped[(kind, block_no)].append((line_no, unit["raw_text"]))
+
+    outline: list[str] = []
+    seen: set[str] = set()
+    for _, items in sorted(grouped.items(), key=lambda item: item[0][1]):
+        candidates: list[str] = []
+        for line_no, raw_text in sorted(items, key=lambda item: item[0]):
+            if line_no > 4:
+                break
+            if is_noise_outline_text(raw_text):
+                continue
+            cleaned = re.sub(r"^[•\-]+\s*", "", normalize_text(raw_text))
+            if cleaned:
+                candidates.append(cleaned)
+            if len(candidates) >= 2:
+                break
+        if not candidates:
+            continue
+        heading = " ".join(candidates[:2]) if sum(len(item) for item in candidates[:2]) <= 90 else candidates[0]
+        heading = re.sub(r"\s+", " ", heading).strip(" -")
+        normalized = heading.lower()
+        if normalized in seen:
+            continue
+        seen.add(normalized)
+        outline.append(heading)
+        if len(outline) >= 8:
+            break
+    return outline
+
+
+def render_classroom_outline(page: dict, units_by_source: dict[str, list[dict]], lang: str) -> list[str]:
+    title = "## 课件里的讲解顺序" if lang == "zh" else "## Lecture Flow in the Source Material"
+    intro = (
+        "这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。"
+        if lang == "zh"
+        else "This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary."
+    )
+    lines = [title, "", intro, ""]
+    has_outline = False
+    for source_file in page["source_files"]:
+        outline = extract_source_outline(units_by_source[source_file])
+        if not outline:
+            continue
+        has_outline = True
+        lines.append(f"### {source_file}")
+        lines.append("")
+        for index, item in enumerate(outline, start=1):
+            lines.append(f"{index}. {item}")
+        lines.append("")
+    if not has_outline:
+        lines.append(
+            "当前没有从源文件中稳定提取出课件标题顺序，但下方仍保留了完整原文和源文件。"
+            if lang == "zh"
+            else "No stable slide/page outline was extracted for this topic, but the full source transcription remains below."
+        )
+    return lines
+
+
 def format_visual_caption(visual: dict, lang: str) -> str:
     source_file = visual["source_file"]
     locator = visual["locator"]
@@ -982,12 +1096,16 @@ def format_visual_caption(visual: dict, lang: str) -> str:
     return source_file
 
 
+def absolute_asset_url(asset_rel_path: str) -> str:
+    return SITE_URL.rstrip("/") + "/" + quote(asset_rel_path.lstrip("/"), safe="/-_.()")
+
+
 def render_visual_gallery(page: dict, manifest: dict[str, dict], current_doc_rel: str, lang: str) -> list[str]:
-    title = "## 图示与页面预览" if lang == "zh" else "## Visuals and Page Previews"
+    title = "## 课件图示与页面预览" if lang == "zh" else "## Slide Figures and Page Previews"
     intro = (
-        "下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。"
+        "下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。"
         if lang == "zh"
-        else "This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources."
+        else "These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content."
     )
     visuals: list[dict] = []
     for source_file in page["source_files"]:
@@ -1004,7 +1122,7 @@ def render_visual_gallery(page: dict, manifest: dict[str, dict], current_doc_rel
 
     lines.append('<div class="note-visual-grid">')
     for visual in visuals:
-        asset_href = rel_link(current_doc_rel, visual["asset_rel_path"])
+        asset_href = absolute_asset_url(visual["asset_rel_path"])
         caption = format_visual_caption(visual, lang)
         lines.extend(
             [
@@ -1061,7 +1179,7 @@ def render_page(
 ) -> str:
     current_doc_rel = page_doc_rel(page["slug"], lang)
     section = SECTIONS[page["section"]]
-    content_block = teaching_content_for(page["slug"], lang)
+    content_block = normalize_teaching_content(teaching_content_for(page["slug"], lang), lang)
 
     if lang == "zh":
         title = page["zh_title"]
@@ -1087,9 +1205,17 @@ def render_page(
         "",
         pitch,
         "",
+    ]
+    lines.extend(render_classroom_outline(page, units_by_source, lang))
+    lines.extend([""])
+    lines.extend(render_logic_outline(page, lang))
+    lines.extend(
+        [
+            "",
         content_block,
         "",
-    ]
+        ]
+    )
     lines.extend(render_visual_gallery(page, manifest, current_doc_rel, lang))
     lines.extend(["", headers["sources"], "", source_intro, ""])
     lines.extend(

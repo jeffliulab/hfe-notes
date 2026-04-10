@@ -2,7 +2,31 @@
 
 This page uses the course introduction to frame the scope, pacing, and application domain of the class before the later methods and case studies appear.
 
-## At a Glance
+## Lecture Flow in the Source Material
+
+This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+
+### Course intro 1-14-26.pdf
+
+1. Engineering Forensics January 14, 2026
+2. Agenda Introductions
+3. Introductions Lecturers
+4. Class Members Nate Brophy
+5. Engineering Forensics?
+6. Course Goals
+7. Issues/ sidebars Issues/theory ("Sidebars”)
+8. Example “Sidebars”
+
+
+## Reading Logic
+
+Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+
+1. What system-level problems the course targets
+2. Why aviation is a strong entry point for HFE
+3. How later topics branch from the introductory frame
+
+## Core Idea
 
 This course treats human factors as a systems problem rather than a collection of isolated operator mistakes. Aviation, medical devices, and automation are used as recurring application domains.
 
@@ -19,21 +43,21 @@ This course treats human factors as a systems problem rather than a collection o
 - Later method pages answer three questions: what the task is, where failure can emerge, and how the system blocks or amplifies it.
 - If this logic is clear, the rest of the site becomes much easier to navigate.
 
-## Visuals and Page Previews
+## Slide Figures and Page Previews
 
-This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/course-intro-1-14-26/page-01.png" alt="Course intro 1-14-26.pdf · page 1 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/course-intro-1-14-26/page-01.png" alt="Course intro 1-14-26.pdf · page 1 preview" loading="lazy">
     <figcaption>Course intro 1-14-26.pdf · page 1 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/course-intro-1-14-26/page-03.png" alt="Course intro 1-14-26.pdf · page 3 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/course-intro-1-14-26/page-03.png" alt="Course intro 1-14-26.pdf · page 3 preview" loading="lazy">
     <figcaption>Course intro 1-14-26.pdf · page 3 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/course-intro-1-14-26/page-07.png" alt="Course intro 1-14-26.pdf · page 7 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/course-intro-1-14-26/page-07.png" alt="Course intro 1-14-26.pdf · page 7 preview" loading="lazy">
     <figcaption>Course intro 1-14-26.pdf · page 7 preview</figcaption>
   </figure>
 </div>

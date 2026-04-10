@@ -2,7 +2,31 @@
 
 本页整理注意资源、监控任务、automation complacency 与 vigilance decrement 等核心问题。
 
-## 一眼看懂
+## 课件里的讲解顺序
+
+这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+
+### Attention and Monitoring 2-9- 2026.pdf
+
+1. INTRODUCTION TO ATTENTION &
+2. TOPICS Supervisory control of automation
+3. SHERIDAN’S SPECTRUM OF AUTOMATION
+4. Proctor and VanZandt, 2017 HUMAN INFORMATION PROCESSING MODEL
+5. WHAT IS ATTENTION? Attention is associated with “consciousness” and “awareness”
+6. OVERVIEW: MODELS OF ATTENTION Attention Models
+7. YERKES-DODSON LAW Kahneman D. Attention and Effort. Prentice Hall, Inc., 1973.
+8. VIGILANCE Vigilance is sustained attention, the ability to
+
+
+## 这页的逻辑顺序
+
+建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+
+1. 注意为什么是有限资源
+2. 监控任务为何特别容易衰退
+3. 自动化如何改变人的注意分配
+
+## 核心概念
 
 注意与监控这一页的核心不是“人要更专心”，而是承认注意本来就是有限资源，而持续监控又恰好是一种最容易衰退的任务。
 
@@ -24,21 +48,21 @@
 
 监控失败并不等于态度差。很多时候，失败来自任务本身的设计：太单调、太被动、反馈太少、关键变化出现得太突然。这也是为什么显示、告警和自动化设计必须和“人的注意机制”一起看。
 
-## 图示与页面预览
+## 课件图示与页面预览
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/attention-and-monitoring-2-9-2026/page-01.png" alt="Attention and Monitoring 2-9- 2026.pdf · 第 1 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/attention-and-monitoring-2-9-2026/page-01.png" alt="Attention and Monitoring 2-9- 2026.pdf · 第 1 页预览" loading="lazy">
     <figcaption>Attention and Monitoring 2-9- 2026.pdf · 第 1 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/attention-and-monitoring-2-9-2026/page-03.png" alt="Attention and Monitoring 2-9- 2026.pdf · 第 3 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/attention-and-monitoring-2-9-2026/page-03.png" alt="Attention and Monitoring 2-9- 2026.pdf · 第 3 页预览" loading="lazy">
     <figcaption>Attention and Monitoring 2-9- 2026.pdf · 第 3 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/attention-and-monitoring-2-9-2026/page-04.png" alt="Attention and Monitoring 2-9- 2026.pdf · 第 4 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/attention-and-monitoring-2-9-2026/page-04.png" alt="Attention and Monitoring 2-9- 2026.pdf · 第 4 页预览" loading="lazy">
     <figcaption>Attention and Monitoring 2-9- 2026.pdf · 第 4 页预览</figcaption>
   </figure>
 </div>

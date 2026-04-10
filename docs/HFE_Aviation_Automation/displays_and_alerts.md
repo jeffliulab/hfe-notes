@@ -2,7 +2,31 @@
 
 本页聚焦显示系统与告警设计，整理 salience、prioritization、false alarm 与 workload 之间的取舍。
 
-## 一眼看懂
+## 课件里的讲解顺序
+
+这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+
+### Displays and Alerts 2-4-26.pdf
+
+1. DISPLAYS AND ALERTS Dr. Divya C. Chandra
+2. TOPICS Visual displays
+3. VISUAL DISPLAYS
+4. VISUAL DISPLAY DESIGN CONSIDERATIONS Display size
+5. VISUAL DISPLAY DESIGN PRINCIPLES Principle of Information Need
+6. AUDITORY DISPLAYS
+7. TYPES OF AUDITORY DISPLAYS Symbolic
+8. AUDITORY ALARMS Primarily used for emergency alarms and warning signals
+
+
+## 这页的逻辑顺序
+
+建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+
+1. 告警为什么既要显著又不能淹没操作者
+2. 显示层级如何支持快速诊断
+3. false alarm 与 trust erosion 的关系
+
+## 核心概念
 
 显示与告警设计的核心矛盾是：你必须让关键信息足够显眼，但又不能把操作者淹没在噪声里。真正好的告警系统，不是“更响、更亮”，而是“更可判断、更可信”。
 
@@ -30,21 +54,21 @@
 
 所以显示与告警设计，本质上是在做注意资源管理。
 
-## 图示与页面预览
+## 课件图示与页面预览
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/displays-and-alerts-2-4-26/page-01.png" alt="Displays and Alerts 2-4-26.pdf · 第 1 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/displays-and-alerts-2-4-26/page-01.png" alt="Displays and Alerts 2-4-26.pdf · 第 1 页预览" loading="lazy">
     <figcaption>Displays and Alerts 2-4-26.pdf · 第 1 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/displays-and-alerts-2-4-26/page-09.png" alt="Displays and Alerts 2-4-26.pdf · 第 9 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/displays-and-alerts-2-4-26/page-09.png" alt="Displays and Alerts 2-4-26.pdf · 第 9 页预览" loading="lazy">
     <figcaption>Displays and Alerts 2-4-26.pdf · 第 9 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/displays-and-alerts-2-4-26/page-21.png" alt="Displays and Alerts 2-4-26.pdf · 第 21 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/displays-and-alerts-2-4-26/page-21.png" alt="Displays and Alerts 2-4-26.pdf · 第 21 页预览" loading="lazy">
     <figcaption>Displays and Alerts 2-4-26.pdf · 第 21 页预览</figcaption>
   </figure>
 </div>

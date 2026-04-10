@@ -2,7 +2,42 @@
 
 This page integrates the course treatment of human error and places slips, mistakes, violations, and multi-level models in a single analytic frame.
 
-## At a Glance
+## Lecture Flow in the Source Material
+
+This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+
+### 02 Intro to Human Error (1).pptx
+
+1. Sami Durrani PhD and Eric Bergman PhD Introduction to Human Error
+2. To err is human…” (Cicero, BC)
+3. Definitions
+4. accuracy, sequence,
+5. but, is it that clear-cut?
+6. I will speak out 20 words Do not write anything until I have finished.
+7. North apple
+8. I will speak out 20 more words. Do not write anything until I have finished.
+
+### 03 HE Frameworks (2).pptx
+
+1. Kate MacNamee, MS Human Error Frameworks – How to think about errors
+2. This topic has already been covered, but as a quick reminder we are talking about:
+3. Frameworks are constructs - convenient ways to attempt to organize complex information
+4. Error Unintended action or decision
+5. Some frameworks delineate between errors and violations Human
+6. Some frameworks start with intent (this can manifest in problematic ways) Human
+7. Be starting with intention, it implicitly suggests user responsibility
+8. Broadly speaking…
+
+
+## Reading Logic
+
+Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+
+1. How error categories are distinguished
+2. How individual and system explanations complement each other
+3. Why frameworks matter for later risk methods
+
+## Core Idea
 
 The point of a human error framework is not merely to label failure. It is to prevent every bad outcome from collapsing into “the operator made a mistake.”
 
@@ -26,65 +61,65 @@ The same event can therefore lead to very different interventions depending on t
 
 Internal and external explanations are not opposites. Human limits are real, but design, information quality, training, organizational culture, and time pressure also shape error production.
 
-## Visuals and Page Previews
+## Slide Figures and Page Previews
 
-This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/02-intro-to-human-error-1/slide-01-image1.png" alt="02 Intro to Human Error (1).pptx · slide 1" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-01-image1.png" alt="02 Intro to Human Error (1).pptx · slide 1" loading="lazy">
     <figcaption>02 Intro to Human Error (1).pptx · slide 1</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/02-intro-to-human-error-1/slide-11-image2.jpg" alt="02 Intro to Human Error (1).pptx · slide 11" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-11-image2.jpg" alt="02 Intro to Human Error (1).pptx · slide 11" loading="lazy">
     <figcaption>02 Intro to Human Error (1).pptx · slide 11</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/02-intro-to-human-error-1/slide-11-image3.png" alt="02 Intro to Human Error (1).pptx · slide 11" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-11-image3.png" alt="02 Intro to Human Error (1).pptx · slide 11" loading="lazy">
     <figcaption>02 Intro to Human Error (1).pptx · slide 11</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/02-intro-to-human-error-1/slide-16-image4.png" alt="02 Intro to Human Error (1).pptx · slide 16" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-16-image4.png" alt="02 Intro to Human Error (1).pptx · slide 16" loading="lazy">
     <figcaption>02 Intro to Human Error (1).pptx · slide 16</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/02-intro-to-human-error-1/slide-17-image5.jpeg" alt="02 Intro to Human Error (1).pptx · slide 17" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-17-image5.jpeg" alt="02 Intro to Human Error (1).pptx · slide 17" loading="lazy">
     <figcaption>02 Intro to Human Error (1).pptx · slide 17</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/02-intro-to-human-error-1/slide-18-image6.png" alt="02 Intro to Human Error (1).pptx · slide 18" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-18-image6.png" alt="02 Intro to Human Error (1).pptx · slide 18" loading="lazy">
     <figcaption>02 Intro to Human Error (1).pptx · slide 18</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/02-intro-to-human-error-1/slide-19-image7.png" alt="02 Intro to Human Error (1).pptx · slide 19" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-19-image7.png" alt="02 Intro to Human Error (1).pptx · slide 19" loading="lazy">
     <figcaption>02 Intro to Human Error (1).pptx · slide 19</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/02-intro-to-human-error-1/slide-19-image8.png" alt="02 Intro to Human Error (1).pptx · slide 19" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-19-image8.png" alt="02 Intro to Human Error (1).pptx · slide 19" loading="lazy">
     <figcaption>02 Intro to Human Error (1).pptx · slide 19</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/02-intro-to-human-error-1/slide-20-image7.png" alt="02 Intro to Human Error (1).pptx · slide 20" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-20-image7.png" alt="02 Intro to Human Error (1).pptx · slide 20" loading="lazy">
     <figcaption>02 Intro to Human Error (1).pptx · slide 20</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/02-intro-to-human-error-1/slide-20-image8.png" alt="02 Intro to Human Error (1).pptx · slide 20" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-20-image8.png" alt="02 Intro to Human Error (1).pptx · slide 20" loading="lazy">
     <figcaption>02 Intro to Human Error (1).pptx · slide 20</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/02-intro-to-human-error-1/slide-25-image9.png" alt="02 Intro to Human Error (1).pptx · slide 25" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-25-image9.png" alt="02 Intro to Human Error (1).pptx · slide 25" loading="lazy">
     <figcaption>02 Intro to Human Error (1).pptx · slide 25</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/02-intro-to-human-error-1/slide-26-image10.png" alt="02 Intro to Human Error (1).pptx · slide 26" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-26-image10.png" alt="02 Intro to Human Error (1).pptx · slide 26" loading="lazy">
     <figcaption>02 Intro to Human Error (1).pptx · slide 26</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/03-he-frameworks-2/slide-01-image1.png" alt="03 HE Frameworks (2).pptx · slide 1" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/03-he-frameworks-2/slide-01-image1.png" alt="03 HE Frameworks (2).pptx · slide 1" loading="lazy">
     <figcaption>03 HE Frameworks (2).pptx · slide 1</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/03-he-frameworks-2/slide-14-image2.png" alt="03 HE Frameworks (2).pptx · slide 14" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/03-he-frameworks-2/slide-14-image2.png" alt="03 HE Frameworks (2).pptx · slide 14" loading="lazy">
     <figcaption>03 HE Frameworks (2).pptx · slide 14</figcaption>
   </figure>
 </div>

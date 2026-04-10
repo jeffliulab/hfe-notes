@@ -2,7 +2,31 @@
 
 This page explains the design logic of checklists and procedures and how standardization reduces memory burden while supporting team coordination.
 
-## At a Glance
+## Lecture Flow in the Source Material
+
+This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+
+### Checklists and Procedures 3-23-26.pdf
+
+1. PILOT TRAINING, PROCEDURES, AND CHECKLISTS
+2. MITIGATIONS
+3. TOPICS Pilot training
+4. PILOT TRAINING – CONCEPTS AND VOCABULARY
+5. AQP TRAINING
+6. ON THE JOB PILOT TRAINING
+7. ESTABLISHING AND MAINTAINING CULTURE NORMS Philosophy, Policies, Procedures ➔ Practice
+8. PROCEDURES As opposed to individual “pilot technique”
+
+
+## Reading Logic
+
+Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+
+1. Why proceduralization improves reliability
+2. How checklist design balances speed and accuracy
+3. How exceptions avoid rote compliance
+
+## Core Idea
 
 Checklists and procedures do not exist to make people mechanical. They externalize vulnerable steps so the work becomes shared, checkable, and repeatable.
 
@@ -20,21 +44,21 @@ Good procedures put critical steps in usable order, make checkpoints visible and
 
 Standardization helps, but only if it fits real work. When procedures diverge from work as done, operators begin to route around them.
 
-## Visuals and Page Previews
+## Slide Figures and Page Previews
 
-This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/checklists-and-procedures-3-23-26/page-01.png" alt="Checklists and Procedures 3-23-26.pdf · page 1 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/checklists-and-procedures-3-23-26/page-01.png" alt="Checklists and Procedures 3-23-26.pdf · page 1 preview" loading="lazy">
     <figcaption>Checklists and Procedures 3-23-26.pdf · page 1 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/checklists-and-procedures-3-23-26/page-02.png" alt="Checklists and Procedures 3-23-26.pdf · page 2 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/checklists-and-procedures-3-23-26/page-02.png" alt="Checklists and Procedures 3-23-26.pdf · page 2 preview" loading="lazy">
     <figcaption>Checklists and Procedures 3-23-26.pdf · page 2 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/checklists-and-procedures-3-23-26/page-15.png" alt="Checklists and Procedures 3-23-26.pdf · page 15 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/checklists-and-procedures-3-23-26/page-15.png" alt="Checklists and Procedures 3-23-26.pdf · page 15 preview" loading="lazy">
     <figcaption>Checklists and Procedures 3-23-26.pdf · page 15 preview</figcaption>
   </figure>
 </div>

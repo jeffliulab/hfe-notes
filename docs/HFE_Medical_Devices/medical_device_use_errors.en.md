@@ -2,7 +2,31 @@
 
 This page focuses on use error, abnormal use, and interface-induced risk in medical devices, emphasizing that failure emerges from the use system rather than the operator alone.
 
-## At a Glance
+## Lecture Flow in the Source Material
+
+This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+
+### 07 Use Errors.pptx
+
+1. ENP 111 – Use Related Risk Analysis Sami Durrani PhD and Eric Bergman PhD
+2. (1) was different from the result expected by the user and
+3. Let’s look at a few case studies
+4. Hospital Bed
+5. Was there a use error? Was there only one? Or multiple?
+6. Hospital Bed New patient comes.
+7. Was there a use error? Yes
+8. Did a use error occur?
+
+
+## Reading Logic
+
+Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+
+1. The boundary between use error and misuse
+2. How interfaces and instructions induce error
+3. Why use error must be tied to validation
+
+## Core Idea
 
 This topic asks how to distinguish device failure, unintended use error, deliberate deviation, and environmental pressure when something goes wrong.
 
@@ -17,49 +41,49 @@ This topic asks how to distinguish device failure, unintended use error, deliber
 
 If the problem type is misclassified, the control strategy will also drift. Good human-factors analysis stays tied to specific tasks and contexts.
 
-## Visuals and Page Previews
+## Slide Figures and Page Previews
 
-This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/07-use-errors/slide-01-image1.png" alt="07 Use Errors.pptx · slide 1" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-01-image1.png" alt="07 Use Errors.pptx · slide 1" loading="lazy">
     <figcaption>07 Use Errors.pptx · slide 1</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/07-use-errors/slide-04-image2.jpeg" alt="07 Use Errors.pptx · slide 4" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-04-image2.jpeg" alt="07 Use Errors.pptx · slide 4" loading="lazy">
     <figcaption>07 Use Errors.pptx · slide 4</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/07-use-errors/slide-05-image3.jpeg" alt="07 Use Errors.pptx · slide 5" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-05-image3.jpeg" alt="07 Use Errors.pptx · slide 5" loading="lazy">
     <figcaption>07 Use Errors.pptx · slide 5</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/07-use-errors/slide-06-image4.jpeg" alt="07 Use Errors.pptx · slide 6" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-06-image4.jpeg" alt="07 Use Errors.pptx · slide 6" loading="lazy">
     <figcaption>07 Use Errors.pptx · slide 6</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/07-use-errors/slide-09-image2.jpeg" alt="07 Use Errors.pptx · slide 9" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-09-image2.jpeg" alt="07 Use Errors.pptx · slide 9" loading="lazy">
     <figcaption>07 Use Errors.pptx · slide 9</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/07-use-errors/slide-10-image3.jpeg" alt="07 Use Errors.pptx · slide 10" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-10-image3.jpeg" alt="07 Use Errors.pptx · slide 10" loading="lazy">
     <figcaption>07 Use Errors.pptx · slide 10</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/07-use-errors/slide-11-image4.jpeg" alt="07 Use Errors.pptx · slide 11" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-11-image4.jpeg" alt="07 Use Errors.pptx · slide 11" loading="lazy">
     <figcaption>07 Use Errors.pptx · slide 11</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/07-use-errors/slide-13-image5.jpeg" alt="07 Use Errors.pptx · slide 13" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-13-image5.jpeg" alt="07 Use Errors.pptx · slide 13" loading="lazy">
     <figcaption>07 Use Errors.pptx · slide 13</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/07-use-errors/slide-16-image6.png" alt="07 Use Errors.pptx · slide 16" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-16-image6.png" alt="07 Use Errors.pptx · slide 16" loading="lazy">
     <figcaption>07 Use Errors.pptx · slide 16</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/07-use-errors/slide-18-image7.jpeg" alt="07 Use Errors.pptx · slide 18" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-18-image7.jpeg" alt="07 Use Errors.pptx · slide 18" loading="lazy">
     <figcaption>07 Use Errors.pptx · slide 18</figcaption>
   </figure>
 </div>

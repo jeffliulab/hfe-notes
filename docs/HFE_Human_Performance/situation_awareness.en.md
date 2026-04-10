@@ -2,7 +2,31 @@
 
 This page covers the perception, comprehension, and projection layers of situation awareness and links current information to future-state prediction.
 
-## At a Glance
+## Lecture Flow in the Source Material
+
+This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+
+### Sp26_SituationAwareness_20260325.pdf
+
+1. SITUATION AWARENESS
+2. SITUATION AWARENESS IN DECISION MAKING
+3. EXAMPLE OF SA ELEMENTS: DRIVING A CAR
+4. BREAKDOWNS IN SA Perception (Level 1):
+5. AMTRAK ACCIDENT REVISITED Where did the breakdown in
+6. TEAM SITUATION AWARENESS Endsley, 1995
+7. UBER ACCIDENT, MARCH 2018 Operator took self-driving car out of garage to
+8. UBER ACCIDENT, MARCH 2018 Software classified the pedestrian as an unknown
+
+
+## Reading Logic
+
+Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+
+1. The three-layer structure of situation awareness
+2. Why visible information does not equal understanding
+3. Why future-state projection shapes effective intervention
+
+## Core Idea
 
 Situation awareness is not a vague sense of being aware. In the course it has a three-level structure: perceive the cues, comprehend what they mean, and project what will happen next.
 
@@ -20,21 +44,21 @@ Information can be visible without being interpretable. Operators may see number
 
 Many course topics return to situation awareness because displays, CRM, monitoring, automation, and spatial disorientation all ask whether the system helps build a timely and accurate mental model.
 
-## Visuals and Page Previews
+## Slide Figures and Page Previews
 
-This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-situationawareness-20260325/page-01.png" alt="Sp26_SituationAwareness_20260325.pdf · page 1 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-situationawareness-20260325/page-01.png" alt="Sp26_SituationAwareness_20260325.pdf · page 1 preview" loading="lazy">
     <figcaption>Sp26_SituationAwareness_20260325.pdf · page 1 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-situationawareness-20260325/page-03.png" alt="Sp26_SituationAwareness_20260325.pdf · page 3 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-situationawareness-20260325/page-03.png" alt="Sp26_SituationAwareness_20260325.pdf · page 3 preview" loading="lazy">
     <figcaption>Sp26_SituationAwareness_20260325.pdf · page 3 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-situationawareness-20260325/page-04.png" alt="Sp26_SituationAwareness_20260325.pdf · page 4 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-situationawareness-20260325/page-04.png" alt="Sp26_SituationAwareness_20260325.pdf · page 4 preview" loading="lazy">
     <figcaption>Sp26_SituationAwareness_20260325.pdf · page 4 preview</figcaption>
   </figure>
 </div>

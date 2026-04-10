@@ -2,7 +2,30 @@
 
 This page captures how Use-Related Risk Analysis is structured, what inputs and outputs it requires, and why it sits at the center of HFE risk work.
 
-## At a Glance
+## Lecture Flow in the Source Material
+
+This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+
+### 10 Write URRA.pptx
+
+1. Sami Durrani PhD and Eric Bergman PhD Developing the URRA
+2. Review: Use-related risk analysis process (as defined by FDA) Ongoing activity
+3. Identifying potential use errors?
+4. Typical sources of data (not a comprehensive list) Previous version of device
+5. MAUDE See separate video on conducting a known problems analysis
+6. Previously we conducted a Task Analysis… User does not dispose of AI in sharps container
+7. A URRA needs to contain the following: Reference number
+
+
+## Reading Logic
+
+Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+
+1. The purpose and document structure of URRA
+2. How the risk chain is derived from tasks and errors
+3. How URRA supports validation and controls
+
+## Core Idea
 
 URRA links task steps, possible use errors, hazardous situations, harms, and controls into a traceable risk chain.
 
@@ -22,21 +45,21 @@ Start from task and scenario, then describe error, then consequence, and only th
 
 Weak URRAs use vague phrases such as “improper use” or stop too early at intermediate outcomes. Strong URRAs are specific enough to support validation planning.
 
-## Visuals and Page Previews
+## Slide Figures and Page Previews
 
-This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/10-write-urra/slide-01-image1.png" alt="10 Write URRA.pptx · slide 1" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/10-write-urra/slide-01-image1.png" alt="10 Write URRA.pptx · slide 1" loading="lazy">
     <figcaption>10 Write URRA.pptx · slide 1</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/10-write-urra/slide-02-image2.png" alt="10 Write URRA.pptx · slide 2" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/10-write-urra/slide-02-image2.png" alt="10 Write URRA.pptx · slide 2" loading="lazy">
     <figcaption>10 Write URRA.pptx · slide 2</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/10-write-urra/slide-05-image3.png" alt="10 Write URRA.pptx · slide 5" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/10-write-urra/slide-05-image3.png" alt="10 Write URRA.pptx · slide 5" loading="lazy">
     <figcaption>10 Write URRA.pptx · slide 5</figcaption>
   </figure>
 </div>

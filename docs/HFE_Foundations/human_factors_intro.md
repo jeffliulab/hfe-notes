@@ -2,7 +2,31 @@
 
 本页围绕 human factors 的定义、设计目标与系统视角，整理人因工程如何把人的能力与限制带回系统设计。
 
-## 一眼看懂
+## 课件里的讲解顺序
+
+这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+
+### 01 Intro to HF and Risk (1).pptx
+
+1. Sami Durrani PhD and Eric Bergman PhD Introduction to Human Factors and Risk
+2. Human Factors & Ergonomics Society What is Human Factors?
+3. Study, Research and Experimentation Learn about human traits
+4. Moral Imperative Improve safety and reduce adverse events
+5. Design Stage HF considerations are taken into account during product/system design stage
+6. A Brief History of Human Factors
+7. Their work included
+8. Therbligs
+
+
+## 这页的逻辑顺序
+
+建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+
+1. Human factors 的学科定义
+2. 优化福祉与系统性能的双目标
+3. 把人视为系统组成部分而不是误差来源
+
+## 核心概念
 
 人因工程不是“研究人类弱点”的学科，而是把人的能力、限制、节律、记忆和注意特性带回设计中，让系统更容易被正确使用。
 
@@ -23,65 +47,65 @@
 
 换句话说，人因工程优先改系统，而不是先责怪使用者。
 
-## 图示与页面预览
+## 课件图示与页面预览
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-01-image1.png" alt="01 Intro to HF and Risk (1).pptx · 第 1 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-01-image1.png" alt="01 Intro to HF and Risk (1).pptx · 第 1 张幻灯片" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · 第 1 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-08-image2.png" alt="01 Intro to HF and Risk (1).pptx · 第 8 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-08-image2.png" alt="01 Intro to HF and Risk (1).pptx · 第 8 张幻灯片" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · 第 8 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-12-image3.jpeg" alt="01 Intro to HF and Risk (1).pptx · 第 12 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-12-image3.jpeg" alt="01 Intro to HF and Risk (1).pptx · 第 12 张幻灯片" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · 第 12 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-14-image4.jpg" alt="01 Intro to HF and Risk (1).pptx · 第 14 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-14-image4.jpg" alt="01 Intro to HF and Risk (1).pptx · 第 14 张幻灯片" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · 第 14 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-16-image5.jpg" alt="01 Intro to HF and Risk (1).pptx · 第 16 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-16-image5.jpg" alt="01 Intro to HF and Risk (1).pptx · 第 16 张幻灯片" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · 第 16 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-24-image7.png" alt="01 Intro to HF and Risk (1).pptx · 第 24 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-24-image7.png" alt="01 Intro to HF and Risk (1).pptx · 第 24 张幻灯片" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · 第 24 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-25-image8.png" alt="01 Intro to HF and Risk (1).pptx · 第 25 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-25-image8.png" alt="01 Intro to HF and Risk (1).pptx · 第 25 张幻灯片" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · 第 25 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-26-image9.jpg" alt="01 Intro to HF and Risk (1).pptx · 第 26 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-26-image9.jpg" alt="01 Intro to HF and Risk (1).pptx · 第 26 张幻灯片" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · 第 26 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-31-image10.jpeg" alt="01 Intro to HF and Risk (1).pptx · 第 31 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-31-image10.jpeg" alt="01 Intro to HF and Risk (1).pptx · 第 31 张幻灯片" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · 第 31 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-33-image11.png" alt="01 Intro to HF and Risk (1).pptx · 第 33 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-33-image11.png" alt="01 Intro to HF and Risk (1).pptx · 第 33 张幻灯片" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · 第 33 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-34-image12.png" alt="01 Intro to HF and Risk (1).pptx · 第 34 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-34-image12.png" alt="01 Intro to HF and Risk (1).pptx · 第 34 张幻灯片" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · 第 34 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-36-image14.jpg" alt="01 Intro to HF and Risk (1).pptx · 第 36 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-36-image14.jpg" alt="01 Intro to HF and Risk (1).pptx · 第 36 张幻灯片" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · 第 36 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-38-image15.jpeg" alt="01 Intro to HF and Risk (1).pptx · 第 38 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-38-image15.jpeg" alt="01 Intro to HF and Risk (1).pptx · 第 38 张幻灯片" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · 第 38 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-41-image16.png" alt="01 Intro to HF and Risk (1).pptx · 第 41 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-41-image16.png" alt="01 Intro to HF and Risk (1).pptx · 第 41 张幻灯片" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · 第 41 张幻灯片</figcaption>
   </figure>
 </div>

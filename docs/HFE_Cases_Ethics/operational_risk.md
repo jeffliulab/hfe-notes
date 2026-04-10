@@ -2,7 +2,31 @@
 
 本页围绕 operational risk 的构成因素、组织条件与现实运行约束，展示风险并不只属于单次任务，而是属于运行系统。
 
-## 一眼看懂
+## 课件里的讲解顺序
+
+这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+
+### Operational Risk 2-18-2026.pdf
+
+1. OPERATIONAL RISK Dr. Divya C. Chandra
+2. MITIGATIONS
+3. TOPICS Operations
+4. OPERATIONS
+5. THREAT AND ERROR MANAGEMENT (TEM) FRAMEWORK
+6. ORIGINS OF TEM
+7. THREAT DEFINITION Threats are events or errors that
+8. ERROR DEFINITION Errors are defined as flight crew actions or inactions that
+
+
+## 这页的逻辑顺序
+
+建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+
+1. 运行风险为何超出单个错误事件
+2. 组织约束如何塑造一线行为
+3. 风险管理为何需要持续监测而不是一次性修补
+
+## 核心概念
 
 Operational risk 这页要你看到的是：风险不只发生在一次错误动作里，而是长期藏在运行条件里。班次、时间压力、环境变化、组织约束和一线应对方式，都会把系统推向更脆弱或更稳健的状态。
 
@@ -26,21 +50,21 @@ operational risk 则把这些都放回日常运行系统里，去看风险如何
 
 最容易犯的错，是把 operational risk 理解成“又一个风险清单”。更准确的理解应该是：它是一种看系统的视角，提醒你不断追问现实运行条件是不是正在侵蚀原本设计好的安全边界。
 
-## 图示与页面预览
+## 课件图示与页面预览
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/operational-risk-2-18-2026/page-01.png" alt="Operational Risk 2-18-2026.pdf · 第 1 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/operational-risk-2-18-2026/page-01.png" alt="Operational Risk 2-18-2026.pdf · 第 1 页预览" loading="lazy">
     <figcaption>Operational Risk 2-18-2026.pdf · 第 1 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/operational-risk-2-18-2026/page-02.png" alt="Operational Risk 2-18-2026.pdf · 第 2 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/operational-risk-2-18-2026/page-02.png" alt="Operational Risk 2-18-2026.pdf · 第 2 页预览" loading="lazy">
     <figcaption>Operational Risk 2-18-2026.pdf · 第 2 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/operational-risk-2-18-2026/page-16.png" alt="Operational Risk 2-18-2026.pdf · 第 16 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/operational-risk-2-18-2026/page-16.png" alt="Operational Risk 2-18-2026.pdf · 第 16 页预览" loading="lazy">
     <figcaption>Operational Risk 2-18-2026.pdf · 第 16 页预览</figcaption>
   </figure>
 </div>

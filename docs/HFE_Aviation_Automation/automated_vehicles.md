@@ -2,7 +2,31 @@
 
 本页将航空自动化的经验延展到 automated vehicles，关注监控、handoff、trust calibration 与责任分配。
 
-## 一眼看懂
+## 课件里的讲解顺序
+
+这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+
+### Automated Vehicles 3-11-26-2.pdf
+
+1. AUTOMATED VEHICLES Dr. Divya C. Chandra
+2. PLAN Driving tasks and vocabulary
+3. DRIVING Tasks and Vocabulary
+4. WHAT DOES IT MEAN TO “DRIVE”? DDT – Dynamic Driving Task
+5. AUTOMATED-SYSTEMS FOR DRIVING Earlier Systems
+6. CONFUSING TERMS (A FEW EXAMPLES) Similar names but different concepts
+7. SAE LEVELS OF AUTOMATION SAE International
+8. TRANSLATION 0. No automation. Driver is totally involved.
+
+
+## 这页的逻辑顺序
+
+建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+
+1. 自动驾驶中的接管问题
+2. trust calibration 如何影响依赖与干预
+3. 航空自动化经验能迁移哪些教训
+
+## 核心概念
 
 自动化车辆这一页不是在重复航空自动化，而是在问一个迁移问题：当自动化从驾驶辅助走向更高等级时，人类驾驶员会不会被放进一个“平时太闲、出事时又来不及”的危险位置。
 
@@ -28,21 +52,21 @@
 
 自动化车辆领域很容易把问题说成“驾驶员不够专注”。但如果系统设计本身长期让人不需要主动控制，那么在关键时刻要求人立即恢复高质量控制，本身就可能是不现实的设计假设。
 
-## 图示与页面预览
+## 课件图示与页面预览
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/automated-vehicles-3-11-26-2/page-01.png" alt="Automated Vehicles 3-11-26-2.pdf · 第 1 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/automated-vehicles-3-11-26-2/page-01.png" alt="Automated Vehicles 3-11-26-2.pdf · 第 1 页预览" loading="lazy">
     <figcaption>Automated Vehicles 3-11-26-2.pdf · 第 1 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/automated-vehicles-3-11-26-2/page-02.png" alt="Automated Vehicles 3-11-26-2.pdf · 第 2 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/automated-vehicles-3-11-26-2/page-02.png" alt="Automated Vehicles 3-11-26-2.pdf · 第 2 页预览" loading="lazy">
     <figcaption>Automated Vehicles 3-11-26-2.pdf · 第 2 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/automated-vehicles-3-11-26-2/page-08.png" alt="Automated Vehicles 3-11-26-2.pdf · 第 8 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/automated-vehicles-3-11-26-2/page-08.png" alt="Automated Vehicles 3-11-26-2.pdf · 第 8 页预览" loading="lazy">
     <figcaption>Automated Vehicles 3-11-26-2.pdf · 第 8 页预览</figcaption>
   </figure>
 </div>

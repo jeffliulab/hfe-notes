@@ -2,7 +2,21 @@
 
 This page uses the EpiPen workbook to turn task analysis, potential use error, hazard, harm, severity, critical tasks, and mitigation into a concrete working artifact.
 
-## At a Glance
+## Lecture Flow in the Source Material
+
+This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+
+No stable slide/page outline was extracted for this topic, but the full source transcription remains below.
+
+## Reading Logic
+
+Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+
+1. How the table fields map to the risk chain
+2. How the workbook supports teamwork
+3. How workbook entries connect to validation tasks
+
+## Core Idea
 
 The EpiPen workbook is not a new theory page. It is a worked example that turns earlier concepts into something documentable.
 
@@ -17,9 +31,9 @@ The EpiPen workbook is not a new theory page. It is a worked example that turns 
 
 Examples are valuable because the hardest part of risk work is often translating concepts into disciplined document language.
 
-## Visuals and Page Previews
+## Slide Figures and Page Previews
 
-This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
 
 No displayable visual assets were extracted for this page, but the raw files and full transcription remain available below.
 

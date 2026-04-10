@@ -2,7 +2,31 @@
 
 This page explains how task analysis decomposes use flow into observable tasks and subtasks that can later be evaluated for risk.
 
-## At a Glance
+## Lecture Flow in the Source Material
+
+This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+
+### 08 Task Analysis.pptx
+
+1. Sami Durrani PhD and Eric Bergman PhD Task Analysis
+2. There are many different forms of task analysis Hierarchical Task Analysis (HTA)
+3. Identify task Decompose task into sub-tasks (if needed)
+4. Simple Example: Peanut Butter & Jelly
+5. Task 1: Gather supplies PB&J
+6. Task 3: Spread peanut butter on slice 1 Task 4: Spread jam on slice 2
+7. Let’s do a quick task analysis: Autoinjector
+8. Autoinjector analysis continued…
+
+
+## Reading Logic
+
+Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+
+1. Why task decomposition is foundational for risk analysis
+2. How subtasks and use steps are defined
+3. How task flow leads into use error and mitigation
+
+## Core Idea
 
 Task analysis turns a continuous use episode into observable, discussable, and risk-assessable steps.
 
@@ -21,41 +45,41 @@ Task analysis is the foundation for later work. Without it, use errors, critical
 
 A useful task analysis is not just a rewritten instruction manual. It compares the ideal flow with the real flow that users are likely to perform in context.
 
-## Visuals and Page Previews
+## Slide Figures and Page Previews
 
-This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/08-task-analysis/slide-01-image1.png" alt="08 Task Analysis.pptx · slide 1" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-01-image1.png" alt="08 Task Analysis.pptx · slide 1" loading="lazy">
     <figcaption>08 Task Analysis.pptx · slide 1</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/08-task-analysis/slide-04-image2.jpeg" alt="08 Task Analysis.pptx · slide 4" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-04-image2.jpeg" alt="08 Task Analysis.pptx · slide 4" loading="lazy">
     <figcaption>08 Task Analysis.pptx · slide 4</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/08-task-analysis/slide-05-image3.jpeg" alt="08 Task Analysis.pptx · slide 5" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-05-image3.jpeg" alt="08 Task Analysis.pptx · slide 5" loading="lazy">
     <figcaption>08 Task Analysis.pptx · slide 5</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/08-task-analysis/slide-05-image4.jpeg" alt="08 Task Analysis.pptx · slide 5" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-05-image4.jpeg" alt="08 Task Analysis.pptx · slide 5" loading="lazy">
     <figcaption>08 Task Analysis.pptx · slide 5</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/08-task-analysis/slide-05-image5.jpeg" alt="08 Task Analysis.pptx · slide 5" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-05-image5.jpeg" alt="08 Task Analysis.pptx · slide 5" loading="lazy">
     <figcaption>08 Task Analysis.pptx · slide 5</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/08-task-analysis/slide-05-image6.jpeg" alt="08 Task Analysis.pptx · slide 5" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-05-image6.jpeg" alt="08 Task Analysis.pptx · slide 5" loading="lazy">
     <figcaption>08 Task Analysis.pptx · slide 5</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/08-task-analysis/slide-05-image7.jpeg" alt="08 Task Analysis.pptx · slide 5" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-05-image7.jpeg" alt="08 Task Analysis.pptx · slide 5" loading="lazy">
     <figcaption>08 Task Analysis.pptx · slide 5</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/08-task-analysis/slide-08-image8.png" alt="08 Task Analysis.pptx · slide 8" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-08-image8.png" alt="08 Task Analysis.pptx · slide 8" loading="lazy">
     <figcaption>08 Task Analysis.pptx · slide 8</figcaption>
   </figure>
 </div>

@@ -2,7 +2,31 @@
 
 This page examines the ingredients of operational risk, organizational conditions, and real-world constraints to show that risk belongs to the operating system, not just a single task.
 
-## At a Glance
+## Lecture Flow in the Source Material
+
+This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+
+### Operational Risk 2-18-2026.pdf
+
+1. OPERATIONAL RISK Dr. Divya C. Chandra
+2. MITIGATIONS
+3. TOPICS Operations
+4. OPERATIONS
+5. THREAT AND ERROR MANAGEMENT (TEM) FRAMEWORK
+6. ORIGINS OF TEM
+7. THREAT DEFINITION Threats are events or errors that
+8. ERROR DEFINITION Errors are defined as flight crew actions or inactions that
+
+
+## Reading Logic
+
+Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+
+1. Why operational risk exceeds a single error event
+2. How organizational constraints shape frontline behavior
+3. Why risk management requires ongoing monitoring
+
+## Core Idea
 
 Operational risk is about seeing risk as something embedded in ongoing operating conditions rather than in a single visible error.
 
@@ -20,21 +44,21 @@ This topic reconnects many earlier themes by placing defenses, event analysis, f
 
 Operational risk is not just another checklist. It is a way of asking whether real conditions are gradually eroding the safety boundary that formal design assumes.
 
-## Visuals and Page Previews
+## Slide Figures and Page Previews
 
-This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/operational-risk-2-18-2026/page-01.png" alt="Operational Risk 2-18-2026.pdf · page 1 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/operational-risk-2-18-2026/page-01.png" alt="Operational Risk 2-18-2026.pdf · page 1 preview" loading="lazy">
     <figcaption>Operational Risk 2-18-2026.pdf · page 1 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/operational-risk-2-18-2026/page-02.png" alt="Operational Risk 2-18-2026.pdf · page 2 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/operational-risk-2-18-2026/page-02.png" alt="Operational Risk 2-18-2026.pdf · page 2 preview" loading="lazy">
     <figcaption>Operational Risk 2-18-2026.pdf · page 2 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/operational-risk-2-18-2026/page-16.png" alt="Operational Risk 2-18-2026.pdf · page 16 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/operational-risk-2-18-2026/page-16.png" alt="Operational Risk 2-18-2026.pdf · page 16 preview" loading="lazy">
     <figcaption>Operational Risk 2-18-2026.pdf · page 16 preview</figcaption>
   </figure>
 </div>

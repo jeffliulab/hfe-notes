@@ -2,7 +2,31 @@
 
 This page treats the F16 prompts as a case-analysis template that converts course concepts into structured questions and argument paths.
 
-## At a Glance
+## Lecture Flow in the Source Material
+
+This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+
+### Sp26_F16-AnalysisPrompts_20260219.pdf
+
+1. F-16 MISHAP CLASS DISCUSSION PROMPTS
+2. ACCIDENT OVERVIEW o Occurred during a night mission qualification training (MQT) flight
+3. ACCIDENT OVERVIEW - AIR-TO-AIR REFUELING
+4. ACCIDENT OVERVIEW – 1ST LANDING
+5. ACCIDENT OVERVIEW – 2ND LANDING
+6. APPLICATION OF HFACS Structured analysis of human error patterns
+7. REASON’S LATENT FAILURE MODEL o Factor: condition that leads to an incident
+8. Application of HFACS 7.0 (page 31) AE103 – “Performance-Based Errors”
+
+
+## Reading Logic
+
+Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+
+1. How prompts organize dimensions of observation
+2. How concepts become case questions
+3. Why structured prompts help team review
+
+## Core Idea
 
 The F16 prompts are a scaffold for case analysis. They do not provide the answer; they organize how to ask better questions.
 
@@ -23,21 +47,21 @@ The F16 prompts are a scaffold for case analysis. They do not provide the answer
 
 Prompts matter not because they produce more questions, but because they widen the frame beyond a single-cause explanation.
 
-## Visuals and Page Previews
+## Slide Figures and Page Previews
 
-This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-f16-analysisprompts-20260219/page-01.png" alt="Sp26_F16-AnalysisPrompts_20260219.pdf · page 1 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-f16-analysisprompts-20260219/page-01.png" alt="Sp26_F16-AnalysisPrompts_20260219.pdf · page 1 preview" loading="lazy">
     <figcaption>Sp26_F16-AnalysisPrompts_20260219.pdf · page 1 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-f16-analysisprompts-20260219/page-03.png" alt="Sp26_F16-AnalysisPrompts_20260219.pdf · page 3 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-f16-analysisprompts-20260219/page-03.png" alt="Sp26_F16-AnalysisPrompts_20260219.pdf · page 3 preview" loading="lazy">
     <figcaption>Sp26_F16-AnalysisPrompts_20260219.pdf · page 3 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-f16-analysisprompts-20260219/page-04.png" alt="Sp26_F16-AnalysisPrompts_20260219.pdf · page 4 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-f16-analysisprompts-20260219/page-04.png" alt="Sp26_F16-AnalysisPrompts_20260219.pdf · page 4 preview" loading="lazy">
     <figcaption>Sp26_F16-AnalysisPrompts_20260219.pdf · page 4 preview</figcaption>
   </figure>
 </div>

@@ -2,7 +2,31 @@
 
 本页把 Boeing 737 Max 作为技术、组织、监管与伦理问题交织的典型案例，说明 HFE 不能脱离治理与责任讨论。
 
-## 一眼看懂
+## 课件里的讲解顺序
+
+这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+
+### Boeing 737Max and Ethics 2-23-26.pdf
+
+1. MORE ABOUT THE 737 MAX & ENGINEERING ETHICS
+2. A BIT MORE CONTEXT Lion Air 43 was the previous 96-min flight in accident aircraft.
+3. MORE ON BOEING 737 MAX ACCIDENTS For example:
+4. ONE OUTCOME (OUT OF MANY) FAILURE EFFECT CLASSIFICATIONS UPDATED
+5. MITIGATIONS RELATED TO 737MAX ACCIDENTS
+6. VOLPE REPORT What was the pilot response to the
+7. INSIGHTS FROM VOLPE REPORT Pilot experience impacts effective management of the situation.
+8. ENGINEERING ETHICS
+
+
+## 这页的逻辑顺序
+
+建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+
+1. 设计决策如何变成系统性伦理问题
+2. 组织与监管如何影响安全结果
+3. 技术失配为何常伴随责任分配失衡
+
+## 核心概念
 
 737 Max 这一页最重要的点，是它不是单纯的“一个设计缺陷案例”。课程把它放在伦理部分，是因为这里同时出现了系统设计、培训、传感器/告警、组织决策、认证过程和专业责任的交织。
 
@@ -27,21 +51,21 @@
 
 伦理讨论最容易流于空泛。更好的方式是回到具体工程决策：有没有充分揭示系统行为、有没有把风险转嫁给飞行员、有没有让认证与培训假设脱离真实运行条件。只有落回这些具体点，伦理才不会变成抽象口号。
 
-## 图示与页面预览
+## 课件图示与页面预览
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/boeing-737max-and-ethics-2-23-26/page-01.png" alt="Boeing 737Max and Ethics 2-23-26.pdf · 第 1 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/boeing-737max-and-ethics-2-23-26/page-01.png" alt="Boeing 737Max and Ethics 2-23-26.pdf · 第 1 页预览" loading="lazy">
     <figcaption>Boeing 737Max and Ethics 2-23-26.pdf · 第 1 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/boeing-737max-and-ethics-2-23-26/page-05.png" alt="Boeing 737Max and Ethics 2-23-26.pdf · 第 5 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/boeing-737max-and-ethics-2-23-26/page-05.png" alt="Boeing 737Max and Ethics 2-23-26.pdf · 第 5 页预览" loading="lazy">
     <figcaption>Boeing 737Max and Ethics 2-23-26.pdf · 第 5 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/boeing-737max-and-ethics-2-23-26/page-06.png" alt="Boeing 737Max and Ethics 2-23-26.pdf · 第 6 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/boeing-737max-and-ethics-2-23-26/page-06.png" alt="Boeing 737Max and Ethics 2-23-26.pdf · 第 6 页预览" loading="lazy">
     <figcaption>Boeing 737Max and Ethics 2-23-26.pdf · 第 6 页预览</figcaption>
   </figure>
 </div>

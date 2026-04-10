@@ -2,7 +2,31 @@
 
 This page organizes the core definition, design objective, and systems view of human factors as an engineering discipline.
 
-## At a Glance
+## Lecture Flow in the Source Material
+
+This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+
+### 01 Intro to HF and Risk (1).pptx
+
+1. Sami Durrani PhD and Eric Bergman PhD Introduction to Human Factors and Risk
+2. Human Factors & Ergonomics Society What is Human Factors?
+3. Study, Research and Experimentation Learn about human traits
+4. Moral Imperative Improve safety and reduce adverse events
+5. Design Stage HF considerations are taken into account during product/system design stage
+6. A Brief History of Human Factors
+7. Their work included
+8. Therbligs
+
+
+## Reading Logic
+
+Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+
+1. The disciplinary definition of human factors
+2. The dual goals of well-being and performance
+3. Treating humans as part of the system rather than just error sources
+
+## Core Idea
 
 Human factors is not mainly about cataloging human weakness. It is about designing systems around real human capabilities, limits, rhythms, memory, and attention.
 
@@ -16,65 +40,65 @@ Human factors is not mainly about cataloging human weakness. It is about designi
 
 Training matters, but human factors is broader than training. It asks whether interfaces, timing, workflows, and recovery opportunities are designed to support correct action in the first place.
 
-## Visuals and Page Previews
+## Slide Figures and Page Previews
 
-This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-01-image1.png" alt="01 Intro to HF and Risk (1).pptx · slide 1" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-01-image1.png" alt="01 Intro to HF and Risk (1).pptx · slide 1" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · slide 1</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-08-image2.png" alt="01 Intro to HF and Risk (1).pptx · slide 8" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-08-image2.png" alt="01 Intro to HF and Risk (1).pptx · slide 8" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · slide 8</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-12-image3.jpeg" alt="01 Intro to HF and Risk (1).pptx · slide 12" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-12-image3.jpeg" alt="01 Intro to HF and Risk (1).pptx · slide 12" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · slide 12</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-14-image4.jpg" alt="01 Intro to HF and Risk (1).pptx · slide 14" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-14-image4.jpg" alt="01 Intro to HF and Risk (1).pptx · slide 14" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · slide 14</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-16-image5.jpg" alt="01 Intro to HF and Risk (1).pptx · slide 16" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-16-image5.jpg" alt="01 Intro to HF and Risk (1).pptx · slide 16" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · slide 16</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-24-image7.png" alt="01 Intro to HF and Risk (1).pptx · slide 24" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-24-image7.png" alt="01 Intro to HF and Risk (1).pptx · slide 24" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · slide 24</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-25-image8.png" alt="01 Intro to HF and Risk (1).pptx · slide 25" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-25-image8.png" alt="01 Intro to HF and Risk (1).pptx · slide 25" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · slide 25</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-26-image9.jpg" alt="01 Intro to HF and Risk (1).pptx · slide 26" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-26-image9.jpg" alt="01 Intro to HF and Risk (1).pptx · slide 26" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · slide 26</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-31-image10.jpeg" alt="01 Intro to HF and Risk (1).pptx · slide 31" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-31-image10.jpeg" alt="01 Intro to HF and Risk (1).pptx · slide 31" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · slide 31</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-33-image11.png" alt="01 Intro to HF and Risk (1).pptx · slide 33" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-33-image11.png" alt="01 Intro to HF and Risk (1).pptx · slide 33" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · slide 33</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-34-image12.png" alt="01 Intro to HF and Risk (1).pptx · slide 34" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-34-image12.png" alt="01 Intro to HF and Risk (1).pptx · slide 34" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · slide 34</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-36-image14.jpg" alt="01 Intro to HF and Risk (1).pptx · slide 36" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-36-image14.jpg" alt="01 Intro to HF and Risk (1).pptx · slide 36" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · slide 36</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-38-image15.jpeg" alt="01 Intro to HF and Risk (1).pptx · slide 38" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-38-image15.jpeg" alt="01 Intro to HF and Risk (1).pptx · slide 38" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · slide 38</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-41-image16.png" alt="01 Intro to HF and Risk (1).pptx · slide 41" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-41-image16.png" alt="01 Intro to HF and Risk (1).pptx · slide 41" loading="lazy">
     <figcaption>01 Intro to HF and Risk (1).pptx · slide 41</figcaption>
   </figure>
 </div>

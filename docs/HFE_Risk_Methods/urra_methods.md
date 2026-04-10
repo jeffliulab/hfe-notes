@@ -2,7 +2,30 @@
 
 本页整理 Use-Related Risk Analysis 的写法、输入输出与判定思路，突出 URRA 在人因风险管理中的中枢作用。
 
-## 一眼看懂
+## 课件里的讲解顺序
+
+这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+
+### 10 Write URRA.pptx
+
+1. Sami Durrani PhD and Eric Bergman PhD Developing the URRA
+2. Review: Use-related risk analysis process (as defined by FDA) Ongoing activity
+3. Identifying potential use errors?
+4. Typical sources of data (not a comprehensive list) Previous version of device
+5. MAUDE See separate video on conducting a known problems analysis
+6. Previously we conducted a Task Analysis… User does not dispose of AI in sharps container
+7. A URRA needs to contain the following: Reference number
+
+
+## 这页的逻辑顺序
+
+建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+
+1. URRA 的目标与文档结构
+2. 风险链条如何从任务与错误导出
+3. URRA 如何为验证与控制措施服务
+
+## 核心概念
 
 URRA 的核心作用，是把“任务步骤”“可能的使用错误”“危险情境”“伤害后果”和“风险控制”串成一张可追踪的链，而不是只留下零散担忧。
 
@@ -27,21 +50,21 @@ URRA 写得不好的常见原因有两个：
 
 好的 URRA 必须具体到足以支持后续验证。
 
-## 图示与页面预览
+## 课件图示与页面预览
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/10-write-urra/slide-01-image1.png" alt="10 Write URRA.pptx · 第 1 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/10-write-urra/slide-01-image1.png" alt="10 Write URRA.pptx · 第 1 张幻灯片" loading="lazy">
     <figcaption>10 Write URRA.pptx · 第 1 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/10-write-urra/slide-02-image2.png" alt="10 Write URRA.pptx · 第 2 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/10-write-urra/slide-02-image2.png" alt="10 Write URRA.pptx · 第 2 张幻灯片" loading="lazy">
     <figcaption>10 Write URRA.pptx · 第 2 张幻灯片</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/10-write-urra/slide-05-image3.png" alt="10 Write URRA.pptx · 第 5 张幻灯片" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/10-write-urra/slide-05-image3.png" alt="10 Write URRA.pptx · 第 5 张幻灯片" loading="lazy">
     <figcaption>10 Write URRA.pptx · 第 5 张幻灯片</figcaption>
   </figure>
 </div>

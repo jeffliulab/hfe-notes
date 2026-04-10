@@ -2,7 +2,31 @@
 
 This page summarizes communication, coordination, leadership, monitoring, and resource integration in CRM, extending HFE from individual to team performance.
 
-## At a Glance
+## Lecture Flow in the Source Material
+
+This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+
+### CRM 1-28-2026.pdf
+
+1. CREW RESOURCE MANAGEMENT (CRM)
+2. TOPICS Origins of CRM
+3. ORIGINS OF CRM
+4. INTERNATIONAL CIVIL AVIATION ORGANIZATION (ICAO) SHELL MODEL (EDWARDS, 1972)
+5. SINCE THE SHELL MODEL… Expanded checklists, safety procedures, and regulations
+6. SOME ACCIDENTS THAT LED TO CRM CONCEPT
+7. SOME OBSERVED PROBLEMS “Chain of command" approach was more the norm
+8. WHAT IS CRM?
+
+
+## Reading Logic
+
+Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+
+1. Why CRM is a team-level HFE capability
+2. How communication and authority affect safety margins
+3. How team monitoring compensates for individual limits
+
+## Core Idea
 
 CRM is not just a soft-skills topic about getting along. It is a way of turning team resources into a real safety barrier in high-workload operations.
 
@@ -20,21 +44,21 @@ Historical accidents show how steep authority gradients, weak challenge behavior
 
 CRM is not only what happens during an emergency. Strong CRM starts earlier through aligned plans, explicit workload distribution, and a team climate where questioning is normal and useful.
 
-## Visuals and Page Previews
+## Slide Figures and Page Previews
 
-This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/crm-1-28-2026/page-01.png" alt="CRM 1-28-2026.pdf · page 1 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/crm-1-28-2026/page-01.png" alt="CRM 1-28-2026.pdf · page 1 preview" loading="lazy">
     <figcaption>CRM 1-28-2026.pdf · page 1 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/crm-1-28-2026/page-04.png" alt="CRM 1-28-2026.pdf · page 4 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/crm-1-28-2026/page-04.png" alt="CRM 1-28-2026.pdf · page 4 preview" loading="lazy">
     <figcaption>CRM 1-28-2026.pdf · page 4 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/crm-1-28-2026/page-14.png" alt="CRM 1-28-2026.pdf · page 14 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/crm-1-28-2026/page-14.png" alt="CRM 1-28-2026.pdf · page 14 preview" loading="lazy">
     <figcaption>CRM 1-28-2026.pdf · page 14 preview</figcaption>
   </figure>
 </div>

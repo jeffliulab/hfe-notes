@@ -2,7 +2,42 @@
 
 This page combines stress, decision making, distraction, and cognitive bias to explain why operators drift toward suboptimal choices under load.
 
-## At a Glance
+## Lecture Flow in the Source Material
+
+This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+
+### Sp26_StressDecisionMaking_20260225.pdf
+
+1. Dr. Andrew Liu STRESS, WORKLOAD,
+2. AIR FRANCE 447 – SUCCESSION OF EVENTS
+3. EFFECTS OF HIGH TASK DEMANDS (STRESS?) Selective attention/ attention narrowing
+4. YERKES-DODSON LAW An observed relationship between
+5. MENTAL WORKLOAD
+6. MENTAL WORKLOAD “Workload is a general term used to describe the cost of accomplishing task
+7. RESOURCE MODELS – SINGLE RESOURCE MODEL Kahneman, 1973
+8. RESOURCE MODELS – MULTIPLE RESOURCE MODEL
+
+### Sp26_DecisionMakingDistraction_20260302.pdf
+
+1. Dr. Andrew Liu DECISION MAKING &
+2. HUMAN INFORMATION PROCESSING MODEL
+3. F.D. Raslau (2014)
+4. RASMUSSEN LEVELS OF INFORMATION PROCESSING Rasmussen, 1983
+5. DECISION MAKING FRAMEWORK o Normative Decisions
+6. DECISION MAKING FRAMEWORK Naturalistic Decisions
+7. NATURALISTIC DECISION MODELS
+8. KAHNEMAN’S TWO SYSTEMS MODEL OF THINKING System 1
+
+
+## Reading Logic
+
+Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+
+1. How stress narrows attention and strategy space
+2. How distraction erodes procedure following and monitoring
+3. Why decision bias often couples with time pressure
+
+## Core Idea
 
 Stress, decision making, and distraction are linked because high-load environments narrow attention and strategy space, making omission, bias, and poor timing more likely.
 
@@ -20,33 +55,33 @@ In a fast, messy, high-consequence environment, the question is not only why the
 
 Stress does not always cause failure, but high and sustained stress combined with incomplete information often drives people toward familiar responses while important new cues get underweighted.
 
-## Visuals and Page Previews
+## Slide Figures and Page Previews
 
-This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-stressdecisionmaking-20260225/page-01.png" alt="Sp26_StressDecisionMaking_20260225.pdf · page 1 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-stressdecisionmaking-20260225/page-01.png" alt="Sp26_StressDecisionMaking_20260225.pdf · page 1 preview" loading="lazy">
     <figcaption>Sp26_StressDecisionMaking_20260225.pdf · page 1 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-stressdecisionmaking-20260225/page-03.png" alt="Sp26_StressDecisionMaking_20260225.pdf · page 3 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-stressdecisionmaking-20260225/page-03.png" alt="Sp26_StressDecisionMaking_20260225.pdf · page 3 preview" loading="lazy">
     <figcaption>Sp26_StressDecisionMaking_20260225.pdf · page 3 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-stressdecisionmaking-20260225/page-04.png" alt="Sp26_StressDecisionMaking_20260225.pdf · page 4 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-stressdecisionmaking-20260225/page-04.png" alt="Sp26_StressDecisionMaking_20260225.pdf · page 4 preview" loading="lazy">
     <figcaption>Sp26_StressDecisionMaking_20260225.pdf · page 4 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-decisionmakingdistraction-20260302/page-01.png" alt="Sp26_DecisionMakingDistraction_20260302.pdf · page 1 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-decisionmakingdistraction-20260302/page-01.png" alt="Sp26_DecisionMakingDistraction_20260302.pdf · page 1 preview" loading="lazy">
     <figcaption>Sp26_DecisionMakingDistraction_20260302.pdf · page 1 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-decisionmakingdistraction-20260302/page-02.png" alt="Sp26_DecisionMakingDistraction_20260302.pdf · page 2 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-decisionmakingdistraction-20260302/page-02.png" alt="Sp26_DecisionMakingDistraction_20260302.pdf · page 2 preview" loading="lazy">
     <figcaption>Sp26_DecisionMakingDistraction_20260302.pdf · page 2 preview</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-decisionmakingdistraction-20260302/page-03.png" alt="Sp26_DecisionMakingDistraction_20260302.pdf · page 3 preview" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-decisionmakingdistraction-20260302/page-03.png" alt="Sp26_DecisionMakingDistraction_20260302.pdf · page 3 preview" loading="lazy">
     <figcaption>Sp26_DecisionMakingDistraction_20260302.pdf · page 3 preview</figcaption>
   </figure>
 </div>

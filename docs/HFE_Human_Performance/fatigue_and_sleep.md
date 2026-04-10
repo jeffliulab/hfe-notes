@@ -2,7 +2,31 @@
 
 本页围绕疲劳、生理节律与睡眠不足对表现的影响，整理人因工程里对生理约束的理解。
 
-## 一眼看懂
+## 课件里的讲解顺序
+
+这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+
+### Sp26_Fatigue+Sleep_20260211.pdf
+
+1. FATIGUE & SLEEP Dr. Andrew Liu
+2. WHAT IS FATIGUE? 1999 US DOT Operational Definition
+3. SLEEP DEPRIVATION AND FATIGUE PREVALENCE
+4. FATIGUE AND DRIVING
+5. FATIGUE AND MEDICAL ERRORS
+6. WHAT FACTORS INFLUENCE SLEEP/FATIGUE?
+7. BORBÉLY TWO PROCESS MODEL OF SLEEP Process C (Circadian process):
+8. CIRCADIAN RHYTHM (PROCESS C) A group of nerve cells in the
+
+
+## 这页的逻辑顺序
+
+建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+
+1. 疲劳如何影响反应、判断与监控
+2. 生理节律为什么会改变风险窗口
+3. 管理疲劳不能只靠个人自律
+
+## 核心概念
 
 疲劳与睡眠这一页想说明：疲劳不是“有点累”的主观感受，而是会系统性影响反应速度、工作记忆、判断、监控和恢复能力的生理约束。
 
@@ -29,21 +53,21 @@
 - 交接设计
 - 高风险时段的辅助检查和双重确认
 
-## 图示与页面预览
+## 课件图示与页面预览
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-fatigue-sleep-20260211/page-01.png" alt="Sp26_Fatigue+Sleep_20260211.pdf · 第 1 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-fatigue-sleep-20260211/page-01.png" alt="Sp26_Fatigue+Sleep_20260211.pdf · 第 1 页预览" loading="lazy">
     <figcaption>Sp26_Fatigue+Sleep_20260211.pdf · 第 1 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-fatigue-sleep-20260211/page-04.png" alt="Sp26_Fatigue+Sleep_20260211.pdf · 第 4 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-fatigue-sleep-20260211/page-04.png" alt="Sp26_Fatigue+Sleep_20260211.pdf · 第 4 页预览" loading="lazy">
     <figcaption>Sp26_Fatigue+Sleep_20260211.pdf · 第 4 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-fatigue-sleep-20260211/page-05.png" alt="Sp26_Fatigue+Sleep_20260211.pdf · 第 5 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-fatigue-sleep-20260211/page-05.png" alt="Sp26_Fatigue+Sleep_20260211.pdf · 第 5 页预览" loading="lazy">
     <figcaption>Sp26_Fatigue+Sleep_20260211.pdf · 第 5 页预览</figcaption>
   </figure>
 </div>

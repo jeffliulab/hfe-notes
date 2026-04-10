@@ -2,7 +2,31 @@
 
 本页整理空间定向错觉的生理基础、知觉陷阱与操作风险，强调感官系统与仪表信息冲突时的人因问题。
 
-## 一眼看懂
+## 课件里的讲解顺序
+
+这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+
+### Sp26_SpDisorientation_20260330.pdf
+
+1. SPATIAL DISORIENTATION Dr. Andrew Liu
+2. ANATOMY OF THE EAR virtualmedicalcentre.com
+3. VESTIBULAR SYSTEM
+4. OTOLITH ORGANS
+5. OTOLITH HAIR CELLS Stanfield, 2011
+6. DETECTING FORWARD ACCELERATION Stanfield, 2011
+7. DETECTING BACKWARD ACCELERATION Stanfield, 2011
+8. DETECTION OF ACCELERATION V. TILT? Stanfield, 2011
+
+
+## 这页的逻辑顺序
+
+建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+
+1. 感觉系统为什么会误导操作者
+2. 仪表扫描如何对抗错觉
+3. 空间定向问题为什么高度危险
+
+## 核心概念
 
 空间定向错觉这页最关键的提醒是：人的感觉系统在飞行环境里并不总可靠。也就是说，“我感觉飞机是这样”的直觉，可能和真实姿态完全不一致。
 
@@ -24,21 +48,21 @@
 
 最难的地方在于，这类错觉对当事人来说往往极其真实。所以有效控制不能只依赖事发当下的“再冷静一点”，而要依赖更早期的训练、显示设计和程序化交叉检查。
 
-## 图示与页面预览
+## 课件图示与页面预览
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
 
 <div class="note-visual-grid">
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-spdisorientation-20260330/page-01.png" alt="Sp26_SpDisorientation_20260330.pdf · 第 1 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-spdisorientation-20260330/page-01.png" alt="Sp26_SpDisorientation_20260330.pdf · 第 1 页预览" loading="lazy">
     <figcaption>Sp26_SpDisorientation_20260330.pdf · 第 1 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-spdisorientation-20260330/page-02.png" alt="Sp26_SpDisorientation_20260330.pdf · 第 2 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-spdisorientation-20260330/page-02.png" alt="Sp26_SpDisorientation_20260330.pdf · 第 2 页预览" loading="lazy">
     <figcaption>Sp26_SpDisorientation_20260330.pdf · 第 2 页预览</figcaption>
   </figure>
   <figure class="note-visual">
-    <img src="../assets/visuals/sp26-spdisorientation-20260330/page-03.png" alt="Sp26_SpDisorientation_20260330.pdf · 第 3 页预览" loading="lazy">
+    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-spdisorientation-20260330/page-03.png" alt="Sp26_SpDisorientation_20260330.pdf · 第 3 页预览" loading="lazy">
     <figcaption>Sp26_SpDisorientation_20260330.pdf · 第 3 页预览</figcaption>
   </figure>
 </div>
