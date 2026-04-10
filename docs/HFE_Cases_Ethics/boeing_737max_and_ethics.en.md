@@ -117,6 +117,25 @@ it is about who had the power to change the conditions and failed to do so in ti
     It shows that the steps from “information appeared” to “information was understood” to “information became an operational defense” were never fully connected.
     That is why this page cannot stop at hardware failure alone and must also discuss governance and transmission mechanisms.
 
+## Why the 737 Max Page Also Needs Pilot-Response Evidence
+
+If the 737 Max discussion stops only at design defect,
+it misses a critical point:
+once the issue enters the operating system,
+how do flight crews actually interpret and manage the abnormal state.
+That is why the course adds sources such as the Volpe report,
+pushing the case from design critique into real operational response.
+
+This step matters because many risks are not fully visible on the design diagram itself.
+They become exposed in crew response,
+checklist use,
+and abnormal-state diagnosis.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/boeing-737max-and-ethics-2-23-26/page-06.png" alt="This figure should show that the 737 Max case cannot stop at hardware. The course also asks you to examine how flight crews respond under real aircraft-system failures and limitations." loading="lazy">
+  <figcaption>This figure should show that the 737 Max case cannot stop at hardware. The course also asks you to examine how flight crews respond under real aircraft-system failures and limitations.</figcaption>
+</figure>
+
 ## What To Take Away from This Case
 
 !!! tip "What To Carry Forward"

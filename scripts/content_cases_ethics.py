@@ -438,6 +438,41 @@ CASES_ETHICS_CONTENT["operational_risk"]["sections"].append(
         """,
     )
 )
+CASES_ETHICS_CONTENT["operational_risk"]["sections"].append(
+    section(
+        "variation",
+        "## 为什么 operational risk 还要看“表面相似、实际不同”的运行环境",
+        "## Why Operational Risk Also Has to Examine Operating Environments That Look Similar but Behave Differently",
+        body_zh="""
+        运行风险分析不能只看流程名字一样，就默认风险结构也一样。哪怕两个机场都有相似跑道编号、相近业务类型或相近任务名称，实际的空间布局、交通密度和周边约束仍可能完全不同。
+
+        这也是 operational risk 的一个关键提醒：风险不是挂在流程标题上的，它挂在真实运行条件上。只要真实条件不同，work as done 和缓冲结构就会一起变化。
+        """,
+        body_en="""
+        Operational-risk analysis cannot assume that similar procedure names imply similar risk structure. Even if two airports share a runway label, business type, or task name, the real spatial layout, traffic density, and surrounding constraints may differ substantially.
+
+        This is one of the key reminders of operational risk: risk does not attach itself to the procedure title. It attaches to real operating conditions. Once those conditions differ, work as done and the available buffer change with them.
+        """,
+    )
+)
+CASES_ETHICS_CONTENT["operational_risk"]["inline_visuals"].extend(
+    [
+        visual(
+            "application",
+            "Operational Risk 2-18-2026.pdf",
+            "这张图要看懂的是：运行风险 mitigation 不是只盯一线个体，它同时分布在个人、组织、系统设计和具体运行条件四层。",
+            "This figure should show that operational-risk mitigation is not focused only on the frontline individual. It is distributed across individual, organization, system design, and operating-condition layers.",
+            asset_name_contains="page-02",
+        ),
+        visual(
+            "variation",
+            "Operational Risk 2-18-2026.pdf",
+            "这张图要看懂的是：即便表面标签相似，不同运行场景的空间布局和环境约束也会让风险结构明显不同。",
+            "This figure should show that even when surface labels look similar, different operating layouts and environmental constraints can produce very different risk structures.",
+            asset_name_contains="page-16",
+        ),
+    ]
+)
 
 CASES_ETHICS_CONTENT["cardosi_case"]["sections"].extend(
     [
@@ -491,6 +526,32 @@ CASES_ETHICS_CONTENT["cardosi_case"]["examples"].append(
         "Example: Why “It Was Said Once” Does Not Mean the Risk Was Controlled",
         body_zh="在高负荷通信环境里，一条关键消息即使已经被说出口，也可能因为通道遮挡、接收不完整或共享局面缺失而没有真正成为团队防线。Cardosi 案例的一个核心提醒就是：信息存在过，不等于信息真的被系统吸收了。",
         body_en="In a high-load communication environment, a critical message may be spoken and still fail to become a real team defense because the channel is blocked, reception is partial, or shared understanding never forms. One of the core lessons in the Cardosi case is that information having existed is not the same as information having been absorbed by the system.",
+    )
+)
+CASES_ETHICS_CONTENT["cardosi_case"]["sections"].append(
+    section(
+        "flow",
+        "## 为什么 Cardosi 材料先花时间讲 ATC 分工和流转",
+        "## Why the Cardosi Material Spends Time on ATC Roles and Flow First",
+        body_zh="""
+        Cardosi 材料并不是一上来就讲事故，因为如果不先理解 terminal controller、en route controller 和 arrival / departure 的分工，后面的通信问题就会失去工作背景。
+
+        这也说明案例分析的一个常见原则：在判断 communication failure 前，先看这条通信本来嵌在什么工作流里。只有先看清工作流，才知道一段话为什么会在那个位置变得关键。
+        """,
+        body_en="""
+        The Cardosi material does not begin directly with the incident because the later communication problem loses context unless the reader first understands the roles of terminal controller, en route controller, and arrival / departure flow.
+
+        That illustrates a common case-analysis principle: before judging a communication failure, first examine the workflow inside which the communication lives. Only then does it become clear why a given transmission becomes critical at that point in the chain.
+        """,
+    )
+)
+CASES_ETHICS_CONTENT["cardosi_case"]["inline_visuals"].append(
+    visual(
+        "flow",
+        "Cardosi 2-2-2026.pdf",
+        "这张图要看懂的是：ATC 沟通不是孤立对话，而是嵌在不同控制角色和流转节点之间的连续工作链上。",
+        "This figure should show that ATC communication is not an isolated conversation. It sits inside a continuous workflow spanning different controller roles and transfer points.",
+        asset_name_contains="page-03",
     )
 )
 
@@ -563,6 +624,39 @@ CASES_ETHICS_CONTENT["f16_analysis_prompts"]["sections"].append(
         """,
     )
 )
+CASES_ETHICS_CONTENT["f16_analysis_prompts"]["sections"].append(
+    section(
+        "task_demands",
+        "## 为什么这个案例必须把任务需求写清楚，不能只写“飞行员失误”",
+        "## Why This Case Has to State the Task Demands Explicitly Instead of Stopping at “Pilot Error”",
+        body_zh="""
+        F16 材料一开始就把夜间训练、空中加油、返航和两次着陆尝试摆出来，目的就是提醒你：这是一个任务负荷不断叠加的案例，不是单次离散动作。
+
+        如果不先把这些任务需求写清楚，后面的判断就很容易被压缩成“某个操作者做错了”。但一旦任务链条被摊开，你就会看到 workload、时间压力、程序和显示支持其实都在影响最后结果。
+        """,
+        body_en="""
+        The F16 material begins by laying out the night training mission, air-to-air refueling, return flight, and two landing attempts to emphasize that this is a case of accumulating task demand rather than one isolated maneuver.
+
+        Without stating those task demands first, the analysis collapses too easily into “an operator made a mistake.” Once the task chain is laid out, it becomes clear that workload, time pressure, procedure, and display support all shape the eventual outcome.
+        """,
+    )
+)
+CASES_ETHICS_CONTENT["f16_analysis_prompts"]["inline_visuals"] = [
+    visual(
+        "task_demands",
+        "Sp26_F16-AnalysisPrompts_20260219.pdf",
+        "这张图要看懂的是：空中加油不是背景细节，而是这个案例里显著提高任务负荷和精细操纵要求的关键节点。",
+        "This figure should show that air-to-air refueling is not background detail. It is a key task node that sharply increases workload and precision-control demand in the case.",
+        asset_name_contains="page-03",
+    ),
+    visual(
+        "background",
+        "Sp26_F16-AnalysisPrompts_20260219.pdf",
+        "这张图要看懂的是：第一次落地尝试本身就包含复杂的视觉和几何判断，所以后续分析必须把任务环境和操作条件一起纳入。",
+        "This figure should show that the first landing attempt already contained demanding visual and geometric judgment, so later analysis has to include task environment and operating conditions together.",
+        asset_name_contains="page-04",
+    ),
+]
 
 CASES_ETHICS_CONTENT["boeing_737max_and_ethics"]["sections"].extend(
     [
@@ -616,5 +710,31 @@ CASES_ETHICS_CONTENT["boeing_737max_and_ethics"]["examples"].append(
         "Example: Why “The Previous Flight Already Had Trouble” Still Failed to Become a Reliable Defense",
         body_zh="前一班次信息存在过，却没有稳定变成后一班次的保护，这件事本身就是系统失配证据。它说明系统里“信息出现”“信息被理解”“信息被转化成行动防线”这三步并没有真正接上。也正因为如此，这页才不能只讲硬件故障，而必须讲治理和传递机制。",
         body_en="The fact that prior-flight information existed but did not reliably become a defense for the later crew is itself evidence of system mismatch. It shows that the steps from “information appeared” to “information was understood” to “information became an operational defense” were never fully connected. That is why this page cannot stop at hardware failure alone and must also discuss governance and transmission mechanisms.",
+    )
+)
+CASES_ETHICS_CONTENT["boeing_737max_and_ethics"]["sections"].append(
+    section(
+        "response_data",
+        "## 为什么 737 Max 这页还要补进 pilot response 数据",
+        "## Why the 737 Max Page Also Needs Pilot-Response Evidence",
+        body_zh="""
+        737 Max 讨论如果只停在设计缺陷，很容易忽视一个关键点：真正进入运行系统后，飞行员到底怎样理解并处理这些异常状态。也正因为如此，课程才会补进 Volpe 报告这类材料，把案例从“设计评议”继续推进到“真实运行响应”。
+
+        这一步很重要，因为很多风险并不是在系统设计图纸上完全显现，而是在 crew response、checklist 使用和异常诊断里真正暴露出来。
+        """,
+        body_en="""
+        If the 737 Max discussion stops only at design defect, it misses a critical point: once the issue enters the operating system, how do flight crews actually interpret and manage the abnormal state. That is why the course adds sources such as the Volpe report, pushing the case from design critique into real operational response.
+
+        This step matters because many risks are not fully visible on the design diagram itself. They become exposed in crew response, checklist use, and abnormal-state diagnosis.
+        """,
+    )
+)
+CASES_ETHICS_CONTENT["boeing_737max_and_ethics"]["inline_visuals"].append(
+    visual(
+        "response_data",
+        "Boeing 737Max and Ethics 2-23-26.pdf",
+        "这张图要看懂的是：737 Max 的问题不能只停在硬件层，课程还要求你去看飞行员在真实系统失效场景中的响应模式与限制。",
+        "This figure should show that the 737 Max case cannot stop at hardware. The course also asks you to examine how flight crews respond under real aircraft-system failures and limitations.",
+        asset_name_contains="page-06",
     )
 )

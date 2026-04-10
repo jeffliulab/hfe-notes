@@ -127,6 +127,24 @@ Cardosi 材料的价值之一，
     信息存在过，
     不等于信息真的被系统吸收了。
 
+## 为什么 Cardosi 材料先花时间讲 ATC 分工和流转
+
+Cardosi 材料并不是一上来就讲事故，
+因为如果不先理解 terminal controller、
+en route controller 和 arrival / departure 的分工，
+后面的通信问题就会失去工作背景。
+
+这也说明案例分析的一个常见原则：
+在判断 communication failure 前，
+先看这条通信本来嵌在什么工作流里。
+只有先看清工作流，
+才知道一段话为什么会在那个位置变得关键。
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/cardosi-2-2-2026/page-03.png" alt="这张图要看懂的是：ATC 沟通不是孤立对话，而是嵌在不同控制角色和流转节点之间的连续工作链上。" loading="lazy">
+  <figcaption>这张图要看懂的是：ATC 沟通不是孤立对话，而是嵌在不同控制角色和流转节点之间的连续工作链上。</figcaption>
+</figure>
+
 ## 这个案例最后要带走什么
 
 !!! tip "复习时重点记这几条"

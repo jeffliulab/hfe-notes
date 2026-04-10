@@ -125,6 +125,22 @@ and recovery design become necessary.
     or shared understanding never forms.
     One of the core lessons in the Cardosi case is that information having existed is not the same as information having been absorbed by the system.
 
+## Why the Cardosi Material Spends Time on ATC Roles and Flow First
+
+The Cardosi material does not begin directly with the incident because the later communication problem loses context unless the reader first understands the roles of terminal controller,
+en route controller,
+and arrival / departure flow.
+
+That illustrates a common case-analysis principle:
+before judging a communication failure,
+first examine the workflow inside which the communication lives.
+Only then does it become clear why a given transmission becomes critical at that point in the chain.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/cardosi-2-2-2026/page-03.png" alt="This figure should show that ATC communication is not an isolated conversation. It sits inside a continuous workflow spanning different controller roles and transfer points." loading="lazy">
+  <figcaption>This figure should show that ATC communication is not an isolated conversation. It sits inside a continuous workflow spanning different controller roles and transfer points.</figcaption>
+</figure>
+
 ## What To Take Away from This Case
 
 !!! tip "What To Carry Forward"

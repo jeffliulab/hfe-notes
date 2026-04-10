@@ -72,6 +72,11 @@ Operational risk 这页要你看到的，是风险不只存在于某一次错误
 任务负荷和现实约束，
 而这些因素平时就已经在慢慢改变风险结构。
 
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/operational-risk-2-18-2026/page-02.png" alt="这张图要看懂的是：运行风险 mitigation 不是只盯一线个体，它同时分布在个人、组织、系统设计和具体运行条件四层。" loading="lazy">
+  <figcaption>这张图要看懂的是：运行风险 mitigation 不是只盯一线个体，它同时分布在个人、组织、系统设计和具体运行条件四层。</figcaption>
+</figure>
+
 !!! note "一句话结论"
     operational risk 的价值，
     是提醒你把事故看成运行系统的产物，
@@ -132,6 +137,26 @@ operational risk 很少没有前兆。
 也因此，
 运行风险管理最有价值的部分往往不是事故后追责，
 而是事故前识别这些慢性变脆的信号。
+
+## 为什么 operational risk 还要看“表面相似、实际不同”的运行环境
+
+运行风险分析不能只看流程名字一样，
+就默认风险结构也一样。
+哪怕两个机场都有相似跑道编号、
+相近业务类型或相近任务名称，
+实际的空间布局、
+交通密度和周边约束仍可能完全不同。
+
+这也是 operational risk 的一个关键提醒：
+风险不是挂在流程标题上的，
+它挂在真实运行条件上。
+只要真实条件不同，
+work as done 和缓冲结构就会一起变化。
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/operational-risk-2-18-2026/page-16.png" alt="这张图要看懂的是：即便表面标签相似，不同运行场景的空间布局和环境约束也会让风险结构明显不同。" loading="lazy">
+  <figcaption>这张图要看懂的是：即便表面标签相似，不同运行场景的空间布局和环境约束也会让风险结构明显不同。</figcaption>
+</figure>
 
 ## 本章总结
 

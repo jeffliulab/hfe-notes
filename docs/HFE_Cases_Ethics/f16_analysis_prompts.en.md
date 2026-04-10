@@ -32,6 +32,11 @@ Complex cases are vulnerable to structureless analysis,
 where everyone contributes fragments of observation but no coherent causal logic emerges.
 Prompts help the team share one observation frame and one unfolding order during discussion.
 
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-f16-analysisprompts-20260219/page-04.png" alt="This figure should show that the first landing attempt already contained demanding visual and geometric judgment, so later analysis has to include task environment and operating conditions together." loading="lazy">
+  <figcaption>This figure should show that the first landing attempt already contained demanding visual and geometric judgment, so later analysis has to include task environment and operating conditions together.</figcaption>
+</figure>
+
 ## What These Prompts Actually Help You Do
 
 The prompts decompose the case into stable dimensions such as background,
@@ -110,6 +115,25 @@ The more mature use of prompts therefore is not producing a fast answer,
 but repeatedly separating what is directly evidenced from what is only the best current interpretation.
 Once that line is protected,
 later responsibility judgments and recommendations become much more stable.
+
+## Why This Case Has to State the Task Demands Explicitly Instead of Stopping at “Pilot Error”
+
+The F16 material begins by laying out the night training mission,
+air-to-air refueling,
+return flight,
+and two landing attempts to emphasize that this is a case of accumulating task demand rather than one isolated maneuver.
+
+Without stating those task demands first,
+the analysis collapses too easily into “an operator made a mistake.” Once the task chain is laid out,
+it becomes clear that workload,
+time pressure,
+procedure,
+and display support all shape the eventual outcome.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-f16-analysisprompts-20260219/page-03.png" alt="This figure should show that air-to-air refueling is not background detail. It is a key task node that sharply increases workload and precision-control demand in the case." loading="lazy">
+  <figcaption>This figure should show that air-to-air refueling is not background detail. It is a key task node that sharply increases workload and precision-control demand in the case.</figcaption>
+</figure>
 
 ## What To Take Away from This Case
 

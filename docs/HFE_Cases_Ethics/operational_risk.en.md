@@ -68,6 +68,11 @@ there are often long-standing organizational tensions,
 workload patterns,
 and real-world constraints that have already been reshaping the risk structure over time.
 
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/operational-risk-2-18-2026/page-02.png" alt="This figure should show that operational-risk mitigation is not focused only on the frontline individual. It is distributed across individual, organization, system design, and operating-condition layers." loading="lazy">
+  <figcaption>This figure should show that operational-risk mitigation is not focused only on the frontline individual. It is distributed across individual, organization, system design, and operating-condition layers.</figcaption>
+</figure>
+
 !!! note "One-Sentence Conclusion"
     The value of operational risk is that it makes you read the event as a product of the operating system rather than as a one-off deviation.
 
@@ -119,6 +124,27 @@ But when they appear together over time,
 the system is losing buffer.
 That is why one of the most valuable parts of operational-risk management is not post-event blame,
 but pre-event recognition of these slow fragility signals.
+
+## Why Operational Risk Also Has to Examine Operating Environments That Look Similar but Behave Differently
+
+Operational-risk analysis cannot assume that similar procedure names imply similar risk structure.
+Even if two airports share a runway label,
+business type,
+or task name,
+the real spatial layout,
+traffic density,
+and surrounding constraints may differ substantially.
+
+This is one of the key reminders of operational risk:
+risk does not attach itself to the procedure title.
+It attaches to real operating conditions.
+Once those conditions differ,
+work as done and the available buffer change with them.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/operational-risk-2-18-2026/page-16.png" alt="This figure should show that even when surface labels look similar, different operating layouts and environmental constraints can produce very different risk structures." loading="lazy">
+  <figcaption>This figure should show that even when surface labels look similar, different operating layouts and environmental constraints can produce very different risk structures.</figcaption>
+</figure>
 
 ## Chapter Summary
 

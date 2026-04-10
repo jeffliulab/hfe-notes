@@ -124,6 +124,26 @@ operator 和 training assumptions 都拉进来讨论。
     这页才不能只讲硬件故障，
     而必须讲治理和传递机制。
 
+## 为什么 737 Max 这页还要补进 pilot response 数据
+
+737 Max 讨论如果只停在设计缺陷，
+很容易忽视一个关键点：
+真正进入运行系统后，
+飞行员到底怎样理解并处理这些异常状态。
+也正因为如此，
+课程才会补进 Volpe 报告这类材料，
+把案例从“设计评议”继续推进到“真实运行响应”。
+
+这一步很重要，
+因为很多风险并不是在系统设计图纸上完全显现，
+而是在 crew response、
+checklist 使用和异常诊断里真正暴露出来。
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/boeing-737max-and-ethics-2-23-26/page-06.png" alt="这张图要看懂的是：737 Max 的问题不能只停在硬件层，课程还要求你去看飞行员在真实系统失效场景中的响应模式与限制。" loading="lazy">
+  <figcaption>这张图要看懂的是：737 Max 的问题不能只停在硬件层，课程还要求你去看飞行员在真实系统失效场景中的响应模式与限制。</figcaption>
+</figure>
+
 ## 这个案例最后要带走什么
 
 !!! tip "复习时重点记这几条"
