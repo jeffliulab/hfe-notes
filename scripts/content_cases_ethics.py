@@ -738,3 +738,60 @@ CASES_ETHICS_CONTENT["boeing_737max_and_ethics"]["inline_visuals"].append(
         asset_name_contains="page-06",
     )
 )
+
+CASES_ETHICS_CONTENT["boeing_737max_and_ethics"]["sections"].extend(
+    [
+        section(
+            "chain_detail",
+            "## 把 737 Max 写成一条完整失配链，至少要过哪几步",
+            "## If You Write 737 Max as One Complete Mismatch Chain, Which Steps Must Be Included",
+            body_zh="""
+            这页真正成熟的读法，不是只停在 “MCAS 出了问题”，而是至少要把下面几步接起来：
+
+            1. 前一航班和其他运行信息已经暴露出异常线索，但没有稳定变成后续防线。
+            2. 系统状态可见性和告警解释空间不足，机组很难迅速形成完整局面理解。
+            3. 异常发生时，飞行员要在高时间压力下同时做诊断、控制和程序调用。
+            4. 设计与培训假设把过多恢复责任放到了机组即时反应上。
+            5. 认证与治理层没有足够早地把这些相互依赖的假设识别成系统性脆弱点。
+
+            只有把这几步接起来，你看到的才不是一个“坏元件故事”，而是一条真正的系统失配链。
+            """,
+            body_en="""
+            The mature reading of this page cannot stop at “MCAS malfunctioned.” At minimum it has to connect the following steps:
+
+            1. prior-flight and other operational information had already exposed anomaly signals, but those signals did not become reliable later defenses
+            2. system-state visibility and alert interpretation space were limited, making it hard for the crew to form a complete picture quickly
+            3. when the anomaly emerged, the crew had to diagnose, control, and invoke procedures under intense time pressure
+            4. design and training assumptions transferred too much recovery responsibility onto immediate crew response
+            5. certification and governance did not identify those interacting assumptions early enough as a systemic fragility
+
+            Only when those steps are connected do you stop seeing a “bad component story” and begin to see a genuine system mismatch chain.
+            """,
+        ),
+        section(
+            "mitigation_layers",
+            "## 为什么缓解不能只落在一个层级",
+            "## Why Mitigation Cannot Be Concentrated at Only One Layer",
+            body_zh="""
+            课件里那张 mitigation 图很重要，因为它把个人、组织、系统设计和 operational risk 放在同一页上。这个排列本身就在表达一个判断：像 737 Max 这样的案例，不可能靠单一层改动真正补上。
+
+            如果只补培训，而系统状态仍然难以理解，风险会留下来；如果只改界面，却不处理 operator、manufacturer 和 regulator 之间的信息与责任链，风险也会换一种方式回来。真正稳的改法，是让 training、checklists、alerts、system design、operator practice 和 governance 一起构成多层缓解。
+            """,
+            body_en="""
+            The mitigation slide matters because it places individual, organization, system design, and operational risk on the same page. That layout itself expresses a judgment: a case like 737 Max cannot be repaired by changing only one layer.
+
+            If training alone is improved while system state remains difficult to understand, the risk stays alive. If interface changes are made but the information and responsibility chain across operator, manufacturer, and regulator remains weak, the risk returns in another form. The stronger strategy is multi-layer mitigation across training, checklists, alerts, system design, operator practice, and governance.
+            """,
+        ),
+    ]
+)
+CASES_ETHICS_CONTENT["boeing_737max_and_ethics"]["examples"].append(
+    callout(
+        "example",
+        "mitigation_layers",
+        "案例：为什么“多给飞行员一点培训”不能算完整答案",
+        "Example: Why “Give Pilots More Training” Is Not a Complete Answer",
+        body_zh="培训当然重要，但如果系统状态仍然不够可见、单点信息权重仍然过高、异常时的 checklist 与警示逻辑仍然不足，那么培训只是把更多恢复负担继续压给机组。737 Max 这页真正要强调的是：当风险本来就是多层生成的，缓解也必须是多层的。",
+        body_en="Training obviously matters, but if system state still lacks visibility, if too much weight still rests on single-point information, and if checklist and alert logic remain weak under abnormal conditions, then training merely transfers more recovery burden onto the crew. The deeper lesson of the 737 Max page is that when risk is generated across layers, mitigation also has to operate across layers.",
+    )
+)

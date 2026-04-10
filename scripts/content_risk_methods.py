@@ -810,3 +810,67 @@ RISK_METHODS_CONTENT["known_problem_and_event_tree"]["inline_visuals"].extend(
         ),
     ]
 )
+
+RISK_METHODS_CONTENT["task_analysis"]["sections"].extend(
+    [
+        section(
+            "review_table",
+            "## 怎样判断一张 task analysis 表已经能拿去做后续工作",
+            "## How to Tell When a Task-Analysis Table Is Ready for Downstream Work",
+            body_zh="""
+            一张 task analysis 表真正可用时，团队至少能用它稳定回答四个问题：
+
+            - 用户这一步到底要完成什么
+            - 这一步必须看到、判断和操作什么
+            - 一旦在这里出错，后果会往哪条风险链走
+            - 这一行能不能继续支撑 critical task、URRA 和 validation
+
+            如果表只能告诉你“步骤名称”，却回答不了这些问题，它通常还只是半成品。task analysis 不是目录，而是后续风险工作的骨架。
+            """,
+            body_en="""
+            A task-analysis table is truly usable only when the team can reliably answer at least four questions from it:
+
+            - what exactly the user is trying to accomplish at this step
+            - what must be perceived, judged, and executed here
+            - where the consequence path goes if this step fails
+            - whether this row can support critical-task identification, URRA, and validation
+
+            If the table only gives you a step label but cannot answer those questions, it is usually still incomplete. Task analysis is not a table of contents. It is the skeleton for later risk work.
+            """,
+        ),
+        section(
+            "worked_flow",
+            "## 从 PB&J 到正式使用任务，课堂真正想让你学会什么",
+            "## What the Course Really Wants You to Learn from PB&J Before Moving to Formal Use Tasks",
+            body_zh="""
+            PB&J 例子最有用的地方，在于它把“隐含步骤”硬生生拉到台面上。很多人一开始只会写“拿面包、抹花生酱、抹果酱、合上”，但课程故意提醒你：洗手、检查是否过期、准备位置、开封方式、清理收尾，这些都可能决定任务是否安全、干净、有效完成。
+
+            这和正式产品任务没有本质区别。到了注射器、自动注射器或复杂设备场景，只是支持条件更多、后果更高而已。PB&J 练的不是食物流程，而是把“看起来理所当然”的任务支撑条件全部写出来的习惯。
+            """,
+            body_en="""
+            The real value of the PB&J example is that it forces hidden steps into the open. Many people start by writing only “take bread, spread peanut butter, spread jelly, close sandwich,” but the course deliberately points to hand washing, expiration checking, setup position, opening sequence, and cleanup. Those supporting steps may determine whether the task is completed safely, cleanly, and effectively.
+
+            Formal product tasks are not different in principle. Syringes, auto-injectors, and complex devices simply add more support conditions and higher consequences. PB&J is therefore not about food. It is about building the habit of writing out everything the task quietly depends on.
+            """,
+        ),
+    ]
+)
+RISK_METHODS_CONTENT["task_analysis"]["examples"].append(
+    callout(
+        "example",
+        "worked_flow",
+        "案例：把 PB&J 改写成注射器任务表时，哪些隐藏步骤会突然变关键",
+        "Example: Which Hidden Steps Suddenly Become Critical When PB&J Logic Is Translated into a Syringe Task",
+        body_zh="一旦把 PB&J 的思路迁到注射器任务表里，隐藏步骤会迅速跳出来：确认药液与患者匹配、检查针头是否牢固、确认剂量窗口、保持注射时间、处理废弃物。这些都不是“附属细节”，而是决定 harm path 会不会被打开的关键节点。PB&J 之所以重要，就是因为它先用低风险例子把这种观察方式练熟。",
+        body_en="Once the PB&J logic is translated into a syringe task table, hidden steps emerge immediately: matching medication to patient, checking needle attachment, verifying the dose window, holding for the required duration, and disposing safely. These are not decorative details. They are the nodes that determine whether the harm path opens. PB&J matters because it rehearses that way of seeing in a low-risk example first.",
+    )
+)
+RISK_METHODS_CONTENT["task_analysis"]["inline_visuals"].append(
+    visual(
+        "worked_flow",
+        "08 Task Analysis.pptx",
+        "这张图要看懂的是：PB&J 被放进课件里不是为了轻松一下，而是为了提醒你，看似简单的任务也隐藏着大量没有被说出口的步骤与前提。",
+        "This figure should make one point concrete: PB&J is not included as comic relief. It is there to show that even a simple task hides many unstated steps and preconditions.",
+        asset_name_contains="slide-04-image2",
+    )
+)

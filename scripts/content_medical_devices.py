@@ -797,3 +797,90 @@ MEDICAL_DEVICES_CONTENT["epipen_workbook"]["inline_visuals"].extend(
         ),
     ]
 )
+
+MEDICAL_DEVICES_CONTENT["medical_device_use_errors"]["sections"].extend(
+    [
+        section(
+            "definition_logic",
+            "## 为什么 FDA 定义里特别强调“not caused solely by device failure”",
+            "## Why the FDA Definition Explicitly Says “Not Caused Solely by Device Failure”",
+            body_zh="""
+            这一句非常关键，因为它把 use error 和纯器械失效切开了。如果设备自己坏了，团队当然也要分析，但那条线更多会回到硬件、软件、材料和可靠性；只有当用户动作或缺少动作参与了后果链，而且这条链不是单靠 device failure 就能解释时，use error 分析才真正站得住。
+
+            这也是为什么这页不能只看结果，而必须回到动作与情境。相同的坏结果，有时是机械失效，有时是界面诱发误判，有时是多名使用者在交接中连续漏掉关键动作。定义里这句限制，正是在逼团队把这些路径分开。
+            """,
+            body_en="""
+            This phrase is critical because it separates use error from pure device malfunction. If the device itself fails, that still deserves analysis, but the main path returns to hardware, software, material, and reliability issues. Use-error analysis becomes defensible only when user action or lack of action participates in the consequence path and the path cannot be explained by device failure alone.
+
+            That is why this page cannot stop at the outcome. It has to return to action and context. The same bad outcome may come from mechanical failure, interface-induced misjudgment, or several users missing key actions across a handoff. This phrase in the definition forces the team to separate those paths.
+            """,
+        ),
+        section(
+            "harm_threshold",
+            "## 为什么“最后没人受伤”也可能已经构成 use error",
+            "## Why “No One Was Ultimately Harmed” Can Still Count as Use Error",
+            body_zh="""
+            课件里 AED 例子特别适合讲这一点。使用者把电极片贴错了位置，但患者最后仍然被救回。这里最容易犯的错，是事后因为结局“还不错”，就误以为前面的错误不算问题。
+
+            FDA 定义强调的是 `did or could result in harm`。也就是说，只要那条错误路径本来足以把系统推进到伤害边缘，它就已经值得被当成 use error 来分析。分析关注的是风险链是否成立，不只是最后结果有没有变成最坏情况。
+            """,
+            body_en="""
+            The AED example is ideal for this point. The user places the pads incorrectly, yet the patient is still saved. The common mistake is to look backward from the relatively good outcome and decide the earlier error therefore did not matter.
+
+            The FDA wording is `did or could result in harm`. That means once the error path was sufficient to move the system toward harm, it already deserves use-error analysis. The point is whether the risk path existed, not only whether the worst outcome materialized this time.
+            """,
+        ),
+        section(
+            "hospital_bed",
+            "## hospital bed 例子真正要你看到的是一条多错误链",
+            "## What the Hospital-Bed Example Really Shows Is a Multi-Error Chain",
+            body_zh="""
+            hospital bed 例子的重要性，在于它明确告诉你：一次场景里完全可能出现多个 use error，而且它们发生在不同人、不同节点、不同交接边界上。课件里至少拆出了几层：
+
+            - 第一位工作人员没有锁刹车
+            - 本来打算口头提醒护士，却忘了交接
+            - 后续护士在协助病人上床前，也没有先确认床已固定
+
+            这类场景最容易被简化成“某个人忘了做一件事”。但更成熟的读法是：系统在搬运、交接、再定位和病人接触这几段之间，没有把关键状态稳定传下去。也就是说，问题不只是一个人漏做，而是一条 handoff 链条没有形成可靠屏障。
+            """,
+            body_en="""
+            The hospital-bed example matters because it shows clearly that one scenario can contain multiple use errors across different people, different moments, and different handoff boundaries. The lecture materials decompose at least several layers:
+
+            - the first staff member does not lock the brakes
+            - the intended handoff warning to the nurse is forgotten
+            - the receiving nurse also does not confirm the bed is secured before helping the patient in
+
+            This kind of scenario is easily compressed into “someone forgot one thing.” The stronger reading is that the system failed to carry critical state information reliably across transport, handoff, repositioning, and patient contact. The problem is therefore not only one omission, but a handoff chain that never became a dependable barrier.
+            """,
+        ),
+    ]
+)
+MEDICAL_DEVICES_CONTENT["medical_device_use_errors"]["warnings"].append(
+    callout(
+        "warning",
+        "hospital_bed",
+        "最容易漏掉的判断",
+        "The Most Common Judgment That Gets Missed",
+        body_zh="一个场景里不一定只有一个 use error。只要任务跨人、跨时间或跨交接边界展开，多个小错误就可能串成同一条 harm path。把它硬压成单点错误，会让后面的控制设计过于单薄。",
+        body_en="A scenario does not necessarily contain only one use error. Once the task stretches across people, time, or handoff boundaries, multiple smaller errors can join into the same harm path. Compressing the episode into one point failure makes the later control design too thin.",
+    )
+)
+MEDICAL_DEVICES_CONTENT["medical_device_use_errors"]["examples"].append(
+    callout(
+        "example",
+        "hospital_bed",
+        "案例：为什么 hospital bed 场景不该写成“护士粗心”",
+        "Example: Why the Hospital-Bed Scenario Should Not Be Written as “The Nurse Was Careless”",
+        body_zh="如果最后只写成“护士在病人上床前没检查床是否锁住”，分析就会漏掉前面已经发生的两件关键事：前一位工作人员为了便于 reposition 故意先不锁刹车，以及原本应该发生的口头交接没有发生。真正要写出来的不是一个人的粗心，而是关键状态没有被稳定传递、也没有被下一层防线重新确认。",
+        body_en="If the event is written only as “the nurse failed to check whether the bed was locked before helping the patient in,” the analysis loses two earlier critical facts: the previous staff member intentionally left the brakes unset to allow repositioning, and the planned verbal handoff never occurred. The real issue is not one person’s carelessness, but that critical state information was neither transmitted reliably nor re-confirmed by the next defense.",
+    )
+)
+MEDICAL_DEVICES_CONTENT["medical_device_use_errors"]["inline_visuals"].append(
+    visual(
+        "hospital_bed",
+        "07 Use Errors.pptx",
+        "这张图要看懂的是：hospital bed 场景的风险不是孤立动作，而是搬运、交接和再次接触病人之间的状态信息没有被稳定传下去。",
+        "This figure should make one point visible: the hospital-bed risk is not one isolated action, but a failure to carry state information reliably across transport, handoff, and renewed patient contact.",
+        asset_name_contains="slide-09-image2",
+    )
+)

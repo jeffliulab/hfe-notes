@@ -136,6 +136,75 @@ or physical operation.
   <figcaption>This figure should show that one visible use error may trace back to a break in perception, cognition, or action, which is why the analysis cannot focus only on the final move.</figcaption>
 </figure>
 
+## Why the FDA Definition Explicitly Says “Not Caused Solely by Device Failure”
+
+This phrase is critical because it separates use error from pure device malfunction.
+If the device itself fails,
+that still deserves analysis,
+but the main path returns to hardware,
+software,
+material,
+and reliability issues.
+Use-error analysis becomes defensible only when user action or lack of action participates in the consequence path and the path cannot be explained by device failure alone.
+
+That is why this page cannot stop at the outcome.
+It has to return to action and context.
+The same bad outcome may come from mechanical failure,
+interface-induced misjudgment,
+or several users missing key actions across a handoff.
+This phrase in the definition forces the team to separate those paths.
+
+## Why “No One Was Ultimately Harmed” Can Still Count as Use Error
+
+The AED example is ideal for this point.
+The user places the pads incorrectly,
+yet the patient is still saved.
+The common mistake is to look backward from the relatively good outcome and decide the earlier error therefore did not matter.
+
+The FDA wording is `did or could result in harm`.
+That means once the error path was sufficient to move the system toward harm,
+it already deserves use-error analysis.
+The point is whether the risk path existed,
+not only whether the worst outcome materialized this time.
+
+## What the Hospital-Bed Example Really Shows Is a Multi-Error Chain
+
+The hospital-bed example matters because it shows clearly that one scenario can contain multiple use errors across different people,
+different moments,
+and different handoff boundaries.
+The lecture materials decompose at least several layers:
+
+- the first staff member does not lock the brakes
+- the intended handoff warning to the nurse is forgotten
+- the receiving nurse also does not confirm the bed is secured before helping the patient in
+
+This kind of scenario is easily compressed into “someone forgot one thing.” The stronger reading is that the system failed to carry critical state information reliably across transport,
+handoff,
+repositioning,
+and patient contact.
+The problem is therefore not only one omission,
+but a handoff chain that never became a dependable barrier.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-09-image2.jpeg" alt="This figure should make one point visible: the hospital-bed risk is not one isolated action, but a failure to carry state information reliably across transport, handoff, and renewed patient contact." loading="lazy">
+  <figcaption>This figure should make one point visible: the hospital-bed risk is not one isolated action, but a failure to carry state information reliably across transport, handoff, and renewed patient contact.</figcaption>
+</figure>
+
+!!! warning "The Most Common Judgment That Gets Missed"
+    A scenario does not necessarily contain only one use error.
+    Once the task stretches across people,
+    time,
+    or handoff boundaries,
+    multiple smaller errors can join into the same harm path.
+    Compressing the episode into one point failure makes the later control design too thin.
+
+!!! example "Example: Why the Hospital-Bed Scenario Should Not Be Written as “The Nurse Was Careless”"
+    If the event is written only as “the nurse failed to check whether the bed was locked before helping the patient in,” the analysis loses two earlier critical facts:
+    the previous staff member intentionally left the brakes unset to allow repositioning,
+    and the planned verbal handoff never occurred.
+    The real issue is not one person’s carelessness,
+    but that critical state information was neither transmitted reliably nor re-confirmed by the next defense.
+
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"

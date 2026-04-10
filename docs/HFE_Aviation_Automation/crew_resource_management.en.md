@@ -144,6 +144,64 @@ and reviewable behavior markers.
 Without that translation,
 teamwork easily collapses into abstract slogans.
 
+## Why CRM Became a Formal Topic After the 1970s Accident Wave
+
+CRM did not appear out of nowhere.
+The course places Eastern 401,
+Tenerife,
+and United 173 together to show one common fact:
+in many high-consequence accidents,
+technical malfunction was not the only clue.
+How the crew allocated attention,
+challenged the captain,
+and shared awareness of fuel or runway state also determined whether the event would continue expanding.
+
+Because these accidents repeatedly exposed the pattern “someone saw the problem but the team did not convert the signal into action,” CRM moved from a cultural topic into a formal training topic.
+It is not decorative polish.
+It is a structural lesson taught by accidents.
+
+!!! example "Example: Why United 173 Is Not Adequately Described as “The Captain Made the Wrong Judgment”"
+    United 173 is repeatedly cited because it exposes the CRM problem very clearly:
+    the captain remained fixated on the landing-gear issue,
+    while the more lethal signal about fuel state was not successfully elevated into an input that forced the team to change plan immediately.
+    The point is not only to criticize one individual,
+    but to ask why the team failed to turn available information into collective action.
+
+## Why the ICAO SHELL Model Stops CRM from Looking Like a Pure Soft-Skills Topic
+
+The function of the SHELL model is to pull CRM back from “people talking to people” into the language of system interfaces.
+By placing Software,
+Hardware,
+Environment,
+and Liveware together,
+the lecture makes a direct point:
+team coordination quality does not exist independently of equipment,
+procedure,
+and operating context.
+
+CRM evaluation therefore cannot stop at attitude.
+It must also ask whether procedures support cross-checking,
+whether displays support shared interpretation,
+whether the environment blocks communication,
+and whether role structure gives challenge a real opportunity.
+SHELL puts CRM back inside the larger HFE frame instead of leaving it as motivational language.
+
+## If You Need to Judge Whether a Team’s CRM Is Healthy, What Should You Look For First
+
+The most effective way to check CRM is not to ask whether the team “values communication.” It is to inspect whether the behavior chain actually exists:
+
+- were critical states briefed in advance
+- were anomalies spoken explicitly instead of vaguely
+- when a challenge was raised, did the team pause and redirect attention
+- did cross-checking and closed-loop communication actually occur
+- did the debrief convert near-failure moments into shared learning
+
+That is why CRM eventually lands on behavioral markers.
+Without observable behavior,
+teamwork is very hard to train,
+evaluate,
+or improve.
+
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"

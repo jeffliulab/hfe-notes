@@ -951,3 +951,75 @@ AVIATION_AUTOMATION_CONTENT["automated_vehicles"]["inline_visuals"].extend(
         ),
     ]
 )
+
+AVIATION_AUTOMATION_CONTENT["crew_resource_management"]["sections"].extend(
+    [
+        section(
+            "origins",
+            "## 为什么 CRM 会在 1970s 事故之后变成正式主题",
+            "## Why CRM Became a Formal Topic After the 1970s Accident Wave",
+            body_zh="""
+            CRM 不是凭空出现的。课件把 Eastern 401、Tenerife 和 United 173 放在一起，就是为了说明一个共同事实：很多高后果事故里，技术故障不是唯一线索，机组怎样分配注意、怎样挑战机长、怎样共享燃油和跑道状态，同样决定了事故会不会继续扩展。
+
+            也正因为这些事故不断暴露“有人看见了问题，但团队没有把信号转成行动”，CRM 才从飞行文化话题变成正式训练主题。它不是锦上添花，而是事故教出来的结构性教训。
+            """,
+            body_en="""
+            CRM did not appear out of nowhere. The course places Eastern 401, Tenerife, and United 173 together to show one common fact: in many high-consequence accidents, technical malfunction was not the only clue. How the crew allocated attention, challenged the captain, and shared awareness of fuel or runway state also determined whether the event would continue expanding.
+
+            Because these accidents repeatedly exposed the pattern “someone saw the problem but the team did not convert the signal into action,” CRM moved from a cultural topic into a formal training topic. It is not decorative polish. It is a structural lesson taught by accidents.
+            """,
+        ),
+        section(
+            "shell",
+            "## 为什么 ICAO SHELL 模型会让 CRM 不再像“软技能”",
+            "## Why the ICAO SHELL Model Stops CRM from Looking Like a Pure Soft-Skills Topic",
+            body_zh="""
+            SHELL 模型的作用，是把 CRM 从“人和人沟通”重新拉回到系统接口。课件里 Software、Hardware、Environment 和 Liveware 被放在一起，意思很直接：团队协作质量并不是脱离设备、程序和环境单独存在的。
+
+            所以 CRM 评估不能只看态度。它还要看 procedure 是否支持 cross-check，display 是否支持共享判断，环境是否让沟通被打断，角色分工是否让 challenge 有现实机会。SHELL 模型让 CRM 回到 HFE 的大框架里，而不是停在励志口号上。
+            """,
+            body_en="""
+            The function of the SHELL model is to pull CRM back from “people talking to people” into the language of system interfaces. By placing Software, Hardware, Environment, and Liveware together, the lecture makes a direct point: team coordination quality does not exist independently of equipment, procedure, and operating context.
+
+            CRM evaluation therefore cannot stop at attitude. It must also ask whether procedures support cross-checking, whether displays support shared interpretation, whether the environment blocks communication, and whether role structure gives challenge a real opportunity. SHELL puts CRM back inside the larger HFE frame instead of leaving it as motivational language.
+            """,
+        ),
+        section(
+            "audit",
+            "## 如果要判断一支团队的 CRM 是否健康，最该看什么",
+            "## If You Need to Judge Whether a Team’s CRM Is Healthy, What Should You Look For First",
+            body_zh="""
+            最有效的检查方法，不是问团队成员“你们重不重视沟通”，而是直接看行为链是否存在：
+
+            - 关键状态有没有被提前 brief
+            - 异常有没有被明确说出来，而不是含糊带过
+            - challenge 提出后，团队有没有停下来重新分配注意力
+            - cross-check 和 closed-loop communication 是不是真的发生
+            - debrief 有没有把差点出事的节点重新沉淀成共享经验
+
+            这也是为什么 CRM 最终会落到 behavioral markers。没有可观察行为，团队协作就很难被训练、评估和改进。
+            """,
+            body_en="""
+            The most effective way to check CRM is not to ask whether the team “values communication.” It is to inspect whether the behavior chain actually exists:
+
+            - were critical states briefed in advance
+            - were anomalies spoken explicitly instead of vaguely
+            - when a challenge was raised, did the team pause and redirect attention
+            - did cross-checking and closed-loop communication actually occur
+            - did the debrief convert near-failure moments into shared learning
+
+            That is why CRM eventually lands on behavioral markers. Without observable behavior, teamwork is very hard to train, evaluate, or improve.
+            """,
+        ),
+    ]
+)
+AVIATION_AUTOMATION_CONTENT["crew_resource_management"]["examples"].append(
+    callout(
+        "example",
+        "origins",
+        "案例：为什么 United 173 不是“机长一个人判断错了”这么简单",
+        "Example: Why United 173 Is Not Adequately Described as “The Captain Made the Wrong Judgment”",
+        body_zh="United 173 常被提到，是因为它把 CRM 问题暴露得非常清楚：机长持续把注意力放在起落架问题上，而燃油状态这条更致命的信息没有被团队成功抬升成必须立刻改变计划的输入。这个案例的重点，不是单独批评谁，而是看团队为什么没能把已有信息转成集体行动。",
+        body_en="United 173 is repeatedly cited because it exposes the CRM problem very clearly: the captain remained fixated on the landing-gear issue, while the more lethal signal about fuel state was not successfully elevated into an input that forced the team to change plan immediately. The point is not only to criticize one individual, but to ask why the team failed to turn available information into collective action.",
+    )
+)

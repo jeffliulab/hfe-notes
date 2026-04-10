@@ -136,6 +136,49 @@ and abnormal-state diagnosis.
   <figcaption>This figure should show that the 737 Max case cannot stop at hardware. The course also asks you to examine how flight crews respond under real aircraft-system failures and limitations.</figcaption>
 </figure>
 
+## If You Write 737 Max as One Complete Mismatch Chain, Which Steps Must Be Included
+
+The mature reading of this page cannot stop at “MCAS malfunctioned.” At minimum it has to connect the following steps:
+
+1. prior-flight and other operational information had already exposed anomaly signals, but those signals did not become reliable later defenses
+2. system-state visibility and alert interpretation space were limited, making it hard for the crew to form a complete picture quickly
+3. when the anomaly emerged, the crew had to diagnose, control, and invoke procedures under intense time pressure
+4. design and training assumptions transferred too much recovery responsibility onto immediate crew response
+5. certification and governance did not identify those interacting assumptions early enough as a systemic fragility
+
+Only when those steps are connected do you stop seeing a “bad component story” and begin to see a genuine system mismatch chain.
+
+## Why Mitigation Cannot Be Concentrated at Only One Layer
+
+The mitigation slide matters because it places individual,
+organization,
+system design,
+and operational risk on the same page.
+That layout itself expresses a judgment:
+a case like 737 Max cannot be repaired by changing only one layer.
+
+If training alone is improved while system state remains difficult to understand,
+the risk stays alive.
+If interface changes are made but the information and responsibility chain across operator,
+manufacturer,
+and regulator remains weak,
+the risk returns in another form.
+The stronger strategy is multi-layer mitigation across training,
+checklists,
+alerts,
+system design,
+operator practice,
+and governance.
+
+!!! example "Example: Why “Give Pilots More Training” Is Not a Complete Answer"
+    Training obviously matters,
+    but if system state still lacks visibility,
+    if too much weight still rests on single-point information,
+    and if checklist and alert logic remain weak under abnormal conditions,
+    then training merely transfers more recovery burden onto the crew.
+    The deeper lesson of the 737 Max page is that when risk is generated across layers,
+    mitigation also has to operate across layers.
+
 ## What To Take Away from This Case
 
 !!! tip "What To Carry Forward"

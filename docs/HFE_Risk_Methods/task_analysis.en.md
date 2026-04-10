@@ -155,6 +155,59 @@ The same logic applies in medical devices,
 aviation procedures,
 and automation systems.
 
+## How to Tell When a Task-Analysis Table Is Ready for Downstream Work
+
+A task-analysis table is truly usable only when the team can reliably answer at least four questions from it:
+
+- what exactly the user is trying to accomplish at this step
+- what must be perceived, judged, and executed here
+- where the consequence path goes if this step fails
+- whether this row can support critical-task identification, URRA, and validation
+
+If the table only gives you a step label but cannot answer those questions,
+it is usually still incomplete.
+Task analysis is not a table of contents.
+It is the skeleton for later risk work.
+
+## What the Course Really Wants You to Learn from PB&J Before Moving to Formal Use Tasks
+
+The real value of the PB&J example is that it forces hidden steps into the open.
+Many people start by writing only “take bread,
+spread peanut butter,
+spread jelly,
+close sandwich,” but the course deliberately points to hand washing,
+expiration checking,
+setup position,
+opening sequence,
+and cleanup.
+Those supporting steps may determine whether the task is completed safely,
+cleanly,
+and effectively.
+
+Formal product tasks are not different in principle.
+Syringes,
+auto-injectors,
+and complex devices simply add more support conditions and higher consequences.
+PB&J is therefore not about food.
+It is about building the habit of writing out everything the task quietly depends on.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-04-image2.jpeg" alt="This figure should make one point concrete: PB&amp;J is not included as comic relief. It is there to show that even a simple task hides many unstated steps and preconditions." loading="lazy">
+  <figcaption>This figure should make one point concrete: PB&amp;J is not included as comic relief. It is there to show that even a simple task hides many unstated steps and preconditions.</figcaption>
+</figure>
+
+!!! example "Example: Which Hidden Steps Suddenly Become Critical When PB&J Logic Is Translated into a Syringe Task"
+    Once the PB&J logic is translated into a syringe task table,
+    hidden steps emerge immediately:
+    matching medication to patient,
+    checking needle attachment,
+    verifying the dose window,
+    holding for the required duration,
+    and disposing safely.
+    These are not decorative details.
+    They are the nodes that determine whether the harm path opens.
+    PB&J matters because it rehearses that way of seeing in a low-risk example first.
+
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"
