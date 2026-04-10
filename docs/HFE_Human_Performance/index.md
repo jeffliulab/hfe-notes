@@ -12,9 +12,9 @@
 
 ## 覆盖源文件
 
-- `Attention and Monitoring 2-9- 2026.pdf` (pdf, 227 units): [open](../assets/source_files/Lectures_Spring_2026/Attention and Monitoring 2-9- 2026.pdf)
-- `Sp26_Fatigue+Sleep_20260211.pdf` (pdf, 481 units): [open](../assets/source_files/Lectures_Spring_2026/Sp26_Fatigue+Sleep_20260211.pdf)
-- `Sp26_StressDecisionMaking_20260225.pdf` (pdf, 342 units): [open](../assets/source_files/Lectures_Spring_2026/Sp26_StressDecisionMaking_20260225.pdf)
-- `Sp26_DecisionMakingDistraction_20260302.pdf` (pdf, 263 units): [open](../assets/source_files/Lectures_Spring_2026/Sp26_DecisionMakingDistraction_20260302.pdf)
-- `Sp26_SituationAwareness_20260325.pdf` (pdf, 200 units): [open](../assets/source_files/Lectures_Spring_2026/Sp26_SituationAwareness_20260325.pdf)
-- `Sp26_SpDisorientation_20260330.pdf` (pdf, 281 units): [open](../assets/source_files/Lectures_Spring_2026/Sp26_SpDisorientation_20260330.pdf)
+- `Attention and Monitoring 2-9- 2026.pdf` (pdf, 227 units, 3 visuals): [open](../assets/source_files/Lectures_Spring_2026/Attention and Monitoring 2-9- 2026.pdf)
+- `Sp26_Fatigue+Sleep_20260211.pdf` (pdf, 481 units, 3 visuals): [open](../assets/source_files/Lectures_Spring_2026/Sp26_Fatigue+Sleep_20260211.pdf)
+- `Sp26_StressDecisionMaking_20260225.pdf` (pdf, 342 units, 3 visuals): [open](../assets/source_files/Lectures_Spring_2026/Sp26_StressDecisionMaking_20260225.pdf)
+- `Sp26_DecisionMakingDistraction_20260302.pdf` (pdf, 263 units, 3 visuals): [open](../assets/source_files/Lectures_Spring_2026/Sp26_DecisionMakingDistraction_20260302.pdf)
+- `Sp26_SituationAwareness_20260325.pdf` (pdf, 200 units, 3 visuals): [open](../assets/source_files/Lectures_Spring_2026/Sp26_SituationAwareness_20260325.pdf)
+- `Sp26_SpDisorientation_20260330.pdf` (pdf, 281 units, 3 visuals): [open](../assets/source_files/Lectures_Spring_2026/Sp26_SpDisorientation_20260330.pdf)

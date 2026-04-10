@@ -2,34 +2,56 @@
 
 This page treats Boeing 737 Max as a canonical case where technical, organizational, regulatory, and ethical issues are inseparable from HFE.
 
-## Page Intent
+## At a Glance
+
+The 737 Max topic is not just a design-defect story. It belongs in ethics because system design, training, alerting, organizational decisions, certification, and professional responsibility are intertwined.
+
+## The Layers To See
+
+- technical: visibility of system state, automation logic, single-failure vulnerability, and alerting
+- operational: whether crews had enough cognitive room under time pressure and abnormal conditions
+- organizational: how manufacturer, operator, maintenance, and regulator responsibilities were distributed
+- ethical: who had the obligation to surface, correct, or stop the spread of risk
+
+## Why It Is An HFE Case
+
+This is not a choice between technology and humans. Design shapes human judgment conditions, training shapes recovery, and organizational choices shape whether defects persist.
+
+## Common Difficulty
+
+Ethics becomes empty if it stays abstract. The stronger approach is to tie it back to concrete engineering decisions about disclosure, training assumptions, failure tolerance, and responsibility transfer.
+
+## Visuals and Page Previews
+
+This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/boeing-737max-and-ethics-2-23-26/page-01.png" alt="Boeing 737Max and Ethics 2-23-26.pdf · page 1 preview" loading="lazy">
+    <figcaption>Boeing 737Max and Ethics 2-23-26.pdf · page 1 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/boeing-737max-and-ethics-2-23-26/page-05.png" alt="Boeing 737Max and Ethics 2-23-26.pdf · page 5 preview" loading="lazy">
+    <figcaption>Boeing 737Max and Ethics 2-23-26.pdf · page 5 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/boeing-737max-and-ethics-2-23-26/page-06.png" alt="Boeing 737Max and Ethics 2-23-26.pdf · page 6 preview" loading="lazy">
+    <figcaption>Boeing 737Max and Ethics 2-23-26.pdf · page 6 preview</figcaption>
+  </figure>
+</div>
+
+## Source Scope and Related Topics
+
+The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
 - Section: `Cases and Ethics`
 - Source files: 1
 - Text units: 245
+- Visuals/previews: 3
 
-## Key Angles
-
-- How design decisions become systemic ethical issues
-- How organization and regulation shape safety outcomes
-- Why technical mismatch often accompanies accountability mismatch
-
-## Source Coverage
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Boeing 737Max and Ethics 2-23-26.pdf` | `pdf` | 245 | [open](../assets/source_files/Lectures_Spring_2026/Boeing 737Max and Ethics 2-23-26.pdf) |
-
-## Representative Source Signals
-
-- `MORE ABOUT THE 737 MAX &`
-- `ENGINEERING ETHICS`
-- `Dr. Divya C. Chandra`
-- `A BIT MORE CONTEXT`
-- `• Lion Air 43 was the previous 96-min flight in accident aircraft.`
-- `• The stick shaker was active for the entire flight, but the crew shut off the stabilizer trim, deactivating MCAS.`
-- `The crew reported some malfunctions, but did not specify the stick shaker activation or stabilizer trim`
-- `• Lion Air was the first of two similar accidents. The second was Ethiopian 302 in March 2019.`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Boeing 737Max and Ethics 2-23-26.pdf` | `pdf` | 245 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Boeing 737Max and Ethics 2-23-26.pdf) |
 
 ## Related Topics
 
@@ -38,6 +60,8 @@ This page treats Boeing 737 Max as a canonical case where technical, organizatio
 - [Stress, Decision Making, and Distraction](../HFE_Human_Performance/stress_and_decision_making.en.md)
 
 ## Original Transcription and Coverage Mapping
+
+The collapsible blocks below preserve page/slide-level source transcription. Each `unit_id` maps one-to-one in `data/coverage_map.json`.
 
 ??? info "Boeing 737Max and Ethics 2-23-26.pdf | 245 text units"
     Download source: [Boeing 737Max and Ethics 2-23-26.pdf](../assets/source_files/Lectures_Spring_2026/Boeing 737Max and Ethics 2-23-26.pdf)

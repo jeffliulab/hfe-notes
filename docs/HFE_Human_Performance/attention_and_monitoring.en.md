@@ -2,34 +2,55 @@
 
 This page organizes attention resources, monitoring tasks, automation complacency, and vigilance decrement.
 
-## Page Intent
+## At a Glance
+
+The point of this topic is not simply that people should pay more attention. Attention is limited, and sustained monitoring is one of the most fragile task types.
+
+## Core Logic
+
+- attention is redistributed by priority, workload, time, fatigue, and alert strategy
+- monitoring tasks are vulnerable because low-event environments produce vigilance decrement
+- stronger automation often shifts humans toward passive supervision, increasing complacency risk
+
+## What To Ask
+
+If a system expects long periods of watchful waiting, ask whether that monitoring task is realistically sustainable and whether the system helps preserve awareness and recovery.
+
+## Common Difficulty
+
+Monitoring failure is often a design problem rather than a character flaw. Monotony, low feedback, and sudden state changes all work against sustained attention.
+
+## Visuals and Page Previews
+
+This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/attention-and-monitoring-2-9-2026/page-01.png" alt="Attention and Monitoring 2-9- 2026.pdf · page 1 preview" loading="lazy">
+    <figcaption>Attention and Monitoring 2-9- 2026.pdf · page 1 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/attention-and-monitoring-2-9-2026/page-03.png" alt="Attention and Monitoring 2-9- 2026.pdf · page 3 preview" loading="lazy">
+    <figcaption>Attention and Monitoring 2-9- 2026.pdf · page 3 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/attention-and-monitoring-2-9-2026/page-04.png" alt="Attention and Monitoring 2-9- 2026.pdf · page 4 preview" loading="lazy">
+    <figcaption>Attention and Monitoring 2-9- 2026.pdf · page 4 preview</figcaption>
+  </figure>
+</div>
+
+## Source Scope and Related Topics
+
+The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
 - Section: `Human Performance`
 - Source files: 1
 - Text units: 227
+- Visuals/previews: 3
 
-## Key Angles
-
-- Why attention is a limited resource
-- Why monitoring tasks are vulnerable to decay
-- How automation changes attentional allocation
-
-## Source Coverage
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Attention and Monitoring 2-9- 2026.pdf` | `pdf` | 227 | [open](../assets/source_files/Lectures_Spring_2026/Attention and Monitoring 2-9- 2026.pdf) |
-
-## Representative Source Signals
-
-- `Dr. Divya C. Chandra`
-- `• Supervisory control of automation`
-- `• Attention and vigilance`
-- `• Monitoring techniques`
-- `• Discussion of flight path monitoring reading`
-- `• Models of attention`
-- `SHERIDAN’S SPECTRUM OF AUTOMATION`
-- `Proctor and VanZandt, 2017`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Attention and Monitoring 2-9- 2026.pdf` | `pdf` | 227 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Attention and Monitoring 2-9- 2026.pdf) |
 
 ## Related Topics
 
@@ -38,6 +59,8 @@ This page organizes attention resources, monitoring tasks, automation complacenc
 - [Situation Awareness](situation_awareness.en.md)
 
 ## Original Transcription and Coverage Mapping
+
+The collapsible blocks below preserve page/slide-level source transcription. Each `unit_id` maps one-to-one in `data/coverage_map.json`.
 
 ??? info "Attention and Monitoring 2-9- 2026.pdf | 227 text units"
     Download source: [Attention and Monitoring 2-9- 2026.pdf](../assets/source_files/Lectures_Spring_2026/Attention and Monitoring 2-9- 2026.pdf)

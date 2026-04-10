@@ -2,34 +2,43 @@
 
 本页用 EpiPen 表格示例把任务分析、潜在 use error、hazard、harm、severity、critical task 与 mitigation 映射成可执行的工作底稿。
 
-## 本页定位
+## 一眼看懂
+
+EpiPen 工作簿这一页不是新的理论，而是把前面讲过的 task analysis、critical task、URRA 写法真正落到一个可操作的样例里。
+
+## 读这种 workbook 时要看什么
+
+- 它如何把使用流程拆成一行行任务
+- 哪些步骤被标成 critical task
+- 每一行如何从 use step 走到 hazard、harm 与 control
+- 文档里哪些栏位只是描述，哪些栏位是在做风险判断
+
+## 为什么样例很重要
+
+真正写风险文件时，最难的往往不是理解概念，而是把抽象概念翻译成表格中的具体语言。样例的价值就在这里：它让你看到“好的一行 URRA”到底长什么样。
+
+## 难点讲解
+
+不要把 workbook 当成答案模板去硬套。更好的做法是学会它背后的写法顺序：任务先明确，错误再具体，伤害后果写完整，最后才回头判断控制是否足够。
+
+## 图示与页面预览
+
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+
+本页源文件没有提取到适合展示的配图资产，但原始文件和逐行转写仍完整保留在本页底部。
+
+## 资料范围与相关主题
+
+正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。
 
 - 所属分区: `医疗器械`
 - 关联源文件数: 1
 - 文本单元数: 168
+- 配图/预览数: 0
 
-## 关注重点
-
-- 表格字段如何对应风险链条
-- 工作簿如何支持团队协作
-- 从表格到验证任务如何落地
-
-## 来源覆盖
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `10 URRA EpiPen.xlsx` | `xlsx` | 168 | [open](../assets/source_files/ENP_111_Use_related_Risks/10 URRA EpiPen.xlsx) |
-
-## 代表性原始语句
-
-- `Potential Use Error`
-- `Hazardous Situation`
-- `Mitigation / Control`
-- `Validation Reference`
-- `Confirm AI is not expired`
-- `User injects with expired drug`
-- `Neurological damage`
-- `Expiry date is not legible,`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `10 URRA EpiPen.xlsx` | `xlsx` | 168 | 0 | [open](../assets/source_files/ENP_111_Use_related_Risks/10 URRA EpiPen.xlsx) |
 
 ## 相关主题
 
@@ -38,6 +47,8 @@
 - [医疗器械中的 URRA](medical_device_urra.md)
 
 ## 原文转写与来源映射
+
+下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 `unit_id` 都能在 `data/coverage_map.json` 中找到对应页面映射。
 
 ??? info "10 URRA EpiPen.xlsx | 168 text units"
     下载原件: [10 URRA EpiPen.xlsx](../assets/source_files/ENP_111_Use_related_Risks/10 URRA EpiPen.xlsx)

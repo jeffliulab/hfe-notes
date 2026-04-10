@@ -2,34 +2,63 @@
 
 本页用 Swiss Cheese 模型把防御层、薄弱环节与事故路径串起来，作为从单点失误转向系统防护设计的重要桥梁。
 
-## 本页定位
+## 一眼看懂
+
+Swiss Cheese 模型想表达的不是“系统有洞”这么简单，而是事故往往不是一次失败造成的，而是多层防线同时失效、漏洞在同一时刻对齐之后，风险才真正穿透到伤害。
+
+## 这张模型图在说什么
+
+- 每一层 cheese 都代表一道防线，比如设计、程序、培训、监测、组织管理
+- 每一层上的 hole 代表局部弱点，它们可能长期存在却暂时没有造成后果
+- 当多层弱点刚好连成一条路径时，事故轨迹就会穿透整个系统
+
+## 为什么它能改变分析思路
+
+这套模型最大的价值，是把关注点从“谁在最后一步犯错”转移到“为什么前面那么多层都没有拦住”。也就是说：
+
+- 事故调查不应只盯 front line
+- latent conditions 往往比最后一击更值得改
+- 系统越高风险，就越不能把安全押在单层防护上
+
+## 难点讲解
+
+很多人会把 Swiss Cheese 理解成“只要多加几层流程就安全了”。这不够。层数本身不是关键，关键是：
+
+- 每层是否真的独立
+- 每层是否可检测、可恢复
+- 当某一层失效时，下一层是否还有足够时间接住
+
+## 图示与页面预览
+
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/05-swiss-cheese-model/page-01.png" alt="05 Swiss Cheese Model.pdf · 第 1 页预览" loading="lazy">
+    <figcaption>05 Swiss Cheese Model.pdf · 第 1 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/05-swiss-cheese-model/page-06.png" alt="05 Swiss Cheese Model.pdf · 第 6 页预览" loading="lazy">
+    <figcaption>05 Swiss Cheese Model.pdf · 第 6 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/05-swiss-cheese-model/page-07.png" alt="05 Swiss Cheese Model.pdf · 第 7 页预览" loading="lazy">
+    <figcaption>05 Swiss Cheese Model.pdf · 第 7 页预览</figcaption>
+  </figure>
+</div>
+
+## 资料范围与相关主题
+
+正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。
 
 - 所属分区: `HFE基础`
 - 关联源文件数: 1
 - 文本单元数: 145
+- 配图/预览数: 3
 
-## 关注重点
-
-- 事故为什么穿透多层防线
-- 防御层与漏洞如何同时存在
-- 系统改进为什么比责怪操作者更关键
-
-## 来源覆盖
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `05 Swiss Cheese Model.pdf` | `pdf` | 145 | [open](../assets/source_files/ENP_111_Use_related_Risks/05 Swiss Cheese Model.pdf) |
-
-## 代表性原始语句
-
-- `Swiss Cheese Model`
-- `Product Owner, Connected Care`
-- `Lilly Diabetes and Obesity`
-- `Eli Lilly and Company`
-- `BS in Biomedical Engineering`
-- `MS in Biomedical Engineering`
-- `MS in Systems Engineering (focus in Human Factors)`
-- `10+ years in medical devices, 4+ years in human factors`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `05 Swiss Cheese Model.pdf` | `pdf` | 145 | 3 | [open](../assets/source_files/ENP_111_Use_related_Risks/05 Swiss Cheese Model.pdf) |
 
 ## 相关主题
 
@@ -37,6 +66,8 @@
 - [Operational Risk](../HFE_Cases_Ethics/operational_risk.md)
 
 ## 原文转写与来源映射
+
+下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 `unit_id` 都能在 `data/coverage_map.json` 中找到对应页面映射。
 
 ??? info "05 Swiss Cheese Model.pdf | 145 text units"
     下载原件: [05 Swiss Cheese Model.pdf](../assets/source_files/ENP_111_Use_related_Risks/05 Swiss Cheese Model.pdf)

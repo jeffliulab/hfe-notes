@@ -2,34 +2,55 @@
 
 This page summarizes communication, coordination, leadership, monitoring, and resource integration in CRM, extending HFE from individual to team performance.
 
-## Page Intent
+## At a Glance
+
+CRM is not just a soft-skills topic about getting along. It is a way of turning team resources into a real safety barrier in high-workload operations.
+
+## Core Message
+
+- CRM extends safety from individual skill to collective performance.
+- Communication matters, but so do leadership, followership, assertiveness, briefing, debriefing, workload management, and shared situational awareness.
+- A major failure mode is not that nobody noticed the problem, but that someone noticed and the team failed to absorb the signal.
+
+## What The Course Emphasizes
+
+Historical accidents show how steep authority gradients, weak challenge behavior, and unshared mental models can defeat an otherwise technically capable crew.
+
+## Common Difficulty
+
+CRM is not only what happens during an emergency. Strong CRM starts earlier through aligned plans, explicit workload distribution, and a team climate where questioning is normal and useful.
+
+## Visuals and Page Previews
+
+This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/crm-1-28-2026/page-01.png" alt="CRM 1-28-2026.pdf · page 1 preview" loading="lazy">
+    <figcaption>CRM 1-28-2026.pdf · page 1 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/crm-1-28-2026/page-04.png" alt="CRM 1-28-2026.pdf · page 4 preview" loading="lazy">
+    <figcaption>CRM 1-28-2026.pdf · page 4 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/crm-1-28-2026/page-14.png" alt="CRM 1-28-2026.pdf · page 14 preview" loading="lazy">
+    <figcaption>CRM 1-28-2026.pdf · page 14 preview</figcaption>
+  </figure>
+</div>
+
+## Source Scope and Related Topics
+
+The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
 - Section: `Aviation and Automation`
 - Source files: 1
 - Text units: 307
+- Visuals/previews: 3
 
-## Key Angles
-
-- Why CRM is a team-level HFE capability
-- How communication and authority affect safety margins
-- How team monitoring compensates for individual limits
-
-## Source Coverage
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `CRM 1-28-2026.pdf` | `pdf` | 307 | [open](../assets/source_files/Lectures_Spring_2026/CRM 1-28-2026.pdf) |
-
-## Representative Source Signals
-
-- `By Alex Pereslavtsev - http://www.airliners.net/photo/Transaero-Airlines/Boeing-777-212-ER/1984464/L/, GFDL 1.2, https://commons.wikimedia.org/w/index.php?curid=16594678`
-- `• ICAO SHELL Model [framework]`
-- `• Accidents in the 1970s`
-- `• Components of CRM [mitigation]`
-- `• Training clusters`
-- `• Behavioral markers`
-- `• Evolution of CRM`
-- `INTERNATIONAL CIVIL AVIATION ORGANIZATION`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `CRM 1-28-2026.pdf` | `pdf` | 307 | 3 | [open](../assets/source_files/Lectures_Spring_2026/CRM 1-28-2026.pdf) |
 
 ## Related Topics
 
@@ -38,6 +59,8 @@ This page summarizes communication, coordination, leadership, monitoring, and re
 - [Situation Awareness](../HFE_Human_Performance/situation_awareness.en.md)
 
 ## Original Transcription and Coverage Mapping
+
+The collapsible blocks below preserve page/slide-level source transcription. Each `unit_id` maps one-to-one in `data/coverage_map.json`.
 
 ??? info "CRM 1-28-2026.pdf | 307 text units"
     Download source: [CRM 1-28-2026.pdf](../assets/source_files/Lectures_Spring_2026/CRM 1-28-2026.pdf)

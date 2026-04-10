@@ -2,34 +2,57 @@
 
 This page captures how Use-Related Risk Analysis is structured, what inputs and outputs it requires, and why it sits at the center of HFE risk work.
 
-## Page Intent
+## At a Glance
+
+URRA links task steps, possible use errors, hazardous situations, harms, and controls into a traceable risk chain.
+
+## What A URRA Row Answers
+
+- which use step is under analysis
+- what user error might occur
+- what hazardous situation could follow
+- what harm could result
+- whether current controls are sufficient
+
+## Writing Logic
+
+Start from task and scenario, then describe error, then consequence, and only then discuss controls. Reversing that order often turns the document into a design justification rather than a risk analysis.
+
+## Common Difficulty
+
+Weak URRAs use vague phrases such as “improper use” or stop too early at intermediate outcomes. Strong URRAs are specific enough to support validation planning.
+
+## Visuals and Page Previews
+
+This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/10-write-urra/slide-01-image1.png" alt="10 Write URRA.pptx · slide 1" loading="lazy">
+    <figcaption>10 Write URRA.pptx · slide 1</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/10-write-urra/slide-02-image2.png" alt="10 Write URRA.pptx · slide 2" loading="lazy">
+    <figcaption>10 Write URRA.pptx · slide 2</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/10-write-urra/slide-05-image3.png" alt="10 Write URRA.pptx · slide 5" loading="lazy">
+    <figcaption>10 Write URRA.pptx · slide 5</figcaption>
+  </figure>
+</div>
+
+## Source Scope and Related Topics
+
+The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
 - Section: `Risk Methods`
 - Source files: 1
 - Text units: 52
+- Visuals/previews: 3
 
-## Key Angles
-
-- The purpose and document structure of URRA
-- How the risk chain is derived from tasks and errors
-- How URRA supports validation and controls
-
-## Source Coverage
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `10 Write URRA.pptx` | `pptx` | 52 | [open](../assets/source_files/ENP_111_Use_related_Risks/10 Write URRA.pptx) |
-
-## Representative Source Signals
-
-- `Sami Durrani PhD and Eric Bergman PhD`
-- `Developing the URRA`
-- `Review: Use-related risk analysis process (as defined by FDA)`
-- `Identifying potential use errors?`
-- `Typical sources of data (not a comprehensive list)`
-- `Previous version of device`
-- `Similar devices, included competitors`
-- `Devices with a similar UI, user interactions, or uses`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `10 Write URRA.pptx` | `pptx` | 52 | 3 | [open](../assets/source_files/ENP_111_Use_related_Risks/10 Write URRA.pptx) |
 
 ## Related Topics
 
@@ -38,6 +61,8 @@ This page captures how Use-Related Risk Analysis is structured, what inputs and 
 - [The EpiPen URRA Workbook](../HFE_Medical_Devices/epipen_workbook.en.md)
 
 ## Original Transcription and Coverage Mapping
+
+The collapsible blocks below preserve page/slide-level source transcription. Each `unit_id` maps one-to-one in `data/coverage_map.json`.
 
 ??? info "10 Write URRA.pptx | 52 text units"
     Download source: [10 Write URRA.pptx](../assets/source_files/ENP_111_Use_related_Risks/10 Write URRA.pptx)

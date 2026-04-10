@@ -2,34 +2,58 @@
 
 This page treats the F16 prompts as a case-analysis template that converts course concepts into structured questions and argument paths.
 
-## Page Intent
+## At a Glance
+
+The F16 prompts are a scaffold for case analysis. They do not provide the answer; they organize how to ask better questions.
+
+## Why They Help
+
+- they prevent case analysis from collapsing into simple storytelling
+- they force multiple dimensions of the event into view
+- they give teams a shared structure for discussion
+
+## A Useful Sequence
+
+1. describe the event and task context
+2. examine information, interface, procedure, team, and organizational contributors
+3. separate triggers from deeper conditions
+4. turn the analysis into recommendations
+
+## Common Difficulty
+
+Prompts matter not because they produce more questions, but because they widen the frame beyond a single-cause explanation.
+
+## Visuals and Page Previews
+
+This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-f16-analysisprompts-20260219/page-01.png" alt="Sp26_F16-AnalysisPrompts_20260219.pdf · page 1 preview" loading="lazy">
+    <figcaption>Sp26_F16-AnalysisPrompts_20260219.pdf · page 1 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-f16-analysisprompts-20260219/page-03.png" alt="Sp26_F16-AnalysisPrompts_20260219.pdf · page 3 preview" loading="lazy">
+    <figcaption>Sp26_F16-AnalysisPrompts_20260219.pdf · page 3 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-f16-analysisprompts-20260219/page-04.png" alt="Sp26_F16-AnalysisPrompts_20260219.pdf · page 4 preview" loading="lazy">
+    <figcaption>Sp26_F16-AnalysisPrompts_20260219.pdf · page 4 preview</figcaption>
+  </figure>
+</div>
+
+## Source Scope and Related Topics
+
+The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
 - Section: `Cases and Ethics`
 - Source files: 1
 - Text units: 241
+- Visuals/previews: 3
 
-## Key Angles
-
-- How prompts organize dimensions of observation
-- How concepts become case questions
-- Why structured prompts help team review
-
-## Source Coverage
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Sp26_F16-AnalysisPrompts_20260219.pdf` | `pdf` | 241 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_F16-AnalysisPrompts_20260219.pdf) |
-
-## Representative Source Signals
-
-- `CLASS DISCUSSION PROMPTS`
-- `o Occurred during a night mission qualification training (MQT) flight`
-- `o Proximate incidents occurred between 2230-2300h`
-- `o First attempt at air-to-air refueling (AAR) for Mishap Pilot (MP)`
-- `o AAR was partially completed by the MWG but not successfully completed by MP`
-- `o MP not able to complete intense formation requirements to receive fuel.`
-- `o Pair were required to return to Shaw AFB`
-- `o Two landing attempts.`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Sp26_F16-AnalysisPrompts_20260219.pdf` | `pdf` | 241 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_F16-AnalysisPrompts_20260219.pdf) |
 
 ## Related Topics
 
@@ -38,6 +62,8 @@ This page treats the F16 prompts as a case-analysis template that converts cours
 - [Boeing 737 Max and Ethics](boeing_737max_and_ethics.en.md)
 
 ## Original Transcription and Coverage Mapping
+
+The collapsible blocks below preserve page/slide-level source transcription. Each `unit_id` maps one-to-one in `data/coverage_map.json`.
 
 ??? info "Sp26_F16-AnalysisPrompts_20260219.pdf | 241 text units"
     Download source: [Sp26_F16-AnalysisPrompts_20260219.pdf](../assets/source_files/Lectures_Spring_2026/Sp26_F16-AnalysisPrompts_20260219.pdf)

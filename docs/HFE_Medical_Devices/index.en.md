@@ -11,7 +11,7 @@ This section connects ISO 14971, medical-device use error, URRA practice, and th
 
 ## Covered Source Files
 
-- `ISO 14971 and Medical Device RM.pptx` (pptx, 425 units): [open](../assets/source_files/ENP_111_Use_related_Risks/ISO 14971 and Medical Device RM.pptx)
-- `06 URRA in Medical Devices.pptx` (pptx, 477 units): [open](../assets/source_files/ENP_111_Use_related_Risks/06 URRA in Medical Devices.pptx)
-- `07 Use Errors.pptx` (pptx, 156 units): [open](../assets/source_files/ENP_111_Use_related_Risks/07 Use Errors.pptx)
-- `10 URRA EpiPen.xlsx` (xlsx, 168 units): [open](../assets/source_files/ENP_111_Use_related_Risks/10 URRA EpiPen.xlsx)
+- `ISO 14971 and Medical Device RM.pptx` (pptx, 425 units, 5 visuals): [open](../assets/source_files/ENP_111_Use_related_Risks/ISO 14971 and Medical Device RM.pptx)
+- `06 URRA in Medical Devices.pptx` (pptx, 477 units, 20 visuals): [open](../assets/source_files/ENP_111_Use_related_Risks/06 URRA in Medical Devices.pptx)
+- `07 Use Errors.pptx` (pptx, 156 units, 10 visuals): [open](../assets/source_files/ENP_111_Use_related_Risks/07 Use Errors.pptx)
+- `10 URRA EpiPen.xlsx` (xlsx, 168 units, 0 visuals): [open](../assets/source_files/ENP_111_Use_related_Risks/10 URRA EpiPen.xlsx)

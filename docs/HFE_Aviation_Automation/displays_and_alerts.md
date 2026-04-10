@@ -2,34 +2,65 @@
 
 本页聚焦显示系统与告警设计，整理 salience、prioritization、false alarm 与 workload 之间的取舍。
 
-## 本页定位
+## 一眼看懂
+
+显示与告警设计的核心矛盾是：你必须让关键信息足够显眼，但又不能把操作者淹没在噪声里。真正好的告警系统，不是“更响、更亮”，而是“更可判断、更可信”。
+
+## 这页的分析主轴
+
+- `display` 负责把系统状态变得可见、可比较、可推断。
+- `alert` 负责在时机关键时把注意力拉到该看的地方。
+- 两者如果分开设计，就容易出现看得见但看不懂，或者听得见却不知道要怎么做。
+
+## 读这页时要抓的三个判断
+
+1. 这条告警是否真的代表高优先级风险。
+2. 告警出现时，操作者能不能立刻知道系统处于什么状态。
+3. 告警之后，是否有清晰的下一步动作。
+
+如果其中任何一个环节缺失，告警就可能只会增加 workload。
+
+## 难点讲解
+
+课程里一个很重要的点是 false alarm 和 trust erosion。告警并不是越多越安全，因为：
+
+- 过多低价值告警会造成 alarm fatigue
+- 操作者会逐渐学会忽略、延迟响应或降低信任
+- 一旦真正关键的告警出现，系统可能已经失去“被立刻认真对待”的资格
+
+所以显示与告警设计，本质上是在做注意资源管理。
+
+## 图示与页面预览
+
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/displays-and-alerts-2-4-26/page-01.png" alt="Displays and Alerts 2-4-26.pdf · 第 1 页预览" loading="lazy">
+    <figcaption>Displays and Alerts 2-4-26.pdf · 第 1 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/displays-and-alerts-2-4-26/page-09.png" alt="Displays and Alerts 2-4-26.pdf · 第 9 页预览" loading="lazy">
+    <figcaption>Displays and Alerts 2-4-26.pdf · 第 9 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/displays-and-alerts-2-4-26/page-21.png" alt="Displays and Alerts 2-4-26.pdf · 第 21 页预览" loading="lazy">
+    <figcaption>Displays and Alerts 2-4-26.pdf · 第 21 页预览</figcaption>
+  </figure>
+</div>
+
+## 资料范围与相关主题
+
+正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。
 
 - 所属分区: `航空与自动化`
 - 关联源文件数: 1
 - 文本单元数: 619
+- 配图/预览数: 3
 
-## 关注重点
-
-- 告警为什么既要显著又不能淹没操作者
-- 显示层级如何支持快速诊断
-- false alarm 与 trust erosion 的关系
-
-## 来源覆盖
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Displays and Alerts 2-4-26.pdf` | `pdf` | 619 | [open](../assets/source_files/Lectures_Spring_2026/Displays and Alerts 2-4-26.pdf) |
-
-## 代表性原始语句
-
-- `DISPLAYS AND ALERTS`
-- `Dr. Divya C. Chandra`
-- `• Auditory displays`
-- `• Alerts in aviation`
-- `• Collision avoidance`
-- `• Implementation and testing`
-- `VISUAL DISPLAY DESIGN CONSIDERATIONS`
-- `• Screen resolution`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Displays and Alerts 2-4-26.pdf` | `pdf` | 619 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Displays and Alerts 2-4-26.pdf) |
 
 ## 相关主题
 
@@ -38,6 +69,8 @@
 - [航空与自动化导论](aviation_automation_intro.md)
 
 ## 原文转写与来源映射
+
+下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 `unit_id` 都能在 `data/coverage_map.json` 中找到对应页面映射。
 
 ??? info "Displays and Alerts 2-4-26.pdf | 619 text units"
     下载原件: [Displays and Alerts 2-4-26.pdf](../assets/source_files/Lectures_Spring_2026/Displays and Alerts 2-4-26.pdf)

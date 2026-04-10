@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import html
 import io
 import json
 import posixpath
@@ -12,6 +13,7 @@ import xml.etree.ElementTree as ET
 
 import fitz
 from openpyxl import load_workbook
+from page_content import PAGE_CONTENT
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -19,8 +21,12 @@ WORKSPACE_ROOT = REPO_ROOT.parent
 DOCS_DIR = REPO_ROOT / "docs"
 DATA_DIR = REPO_ROOT / "data"
 ASSET_ROOT = DOCS_DIR / "assets" / "source_files"
+VISUAL_ROOT = DOCS_DIR / "assets" / "visuals"
 
 PPT_NS = {"a": "http://schemas.openxmlformats.org/drawingml/2006/main"}
+REL_NS_URI = "http://schemas.openxmlformats.org/officeDocument/2006/relationships"
+PKG_REL_NS = {"rel": "http://schemas.openxmlformats.org/package/2006/relationships"}
+SUPPORTED_VISUAL_EXTENSIONS = {".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp"}
 
 SOURCE_ARCHIVES = [
     {
@@ -503,6 +509,9 @@ def ensure_clean_generation_dirs() -> None:
     if ASSET_ROOT.exists():
         shutil.rmtree(ASSET_ROOT)
     ASSET_ROOT.mkdir(parents=True, exist_ok=True)
+    if VISUAL_ROOT.exists():
+        shutil.rmtree(VISUAL_ROOT)
+    VISUAL_ROOT.mkdir(parents=True, exist_ok=True)
     for section_slug in SECTIONS:
         section_dir = DOCS_DIR / section_slug
         if section_dir.exists():
@@ -526,6 +535,18 @@ def stable_source_slug(name: str) -> str:
     return stem or "source"
 
 
+def sanitize_filename_fragment(value: str) -> str:
+    return re.sub(r"[^A-Za-z0-9._-]+", "-", value).strip("-") or "asset"
+
+
+def write_visual_asset(source_file: str, logical_name: str, payload: bytes) -> str:
+    rel_path = PurePosixPath("assets/visuals") / stable_source_slug(source_file) / sanitize_filename_fragment(logical_name)
+    abs_path = DOCS_DIR / rel_path
+    abs_path.parent.mkdir(parents=True, exist_ok=True)
+    abs_path.write_bytes(payload)
+    return rel_path.as_posix()
+
+
 def normalize_text(text: str) -> str:
     text = text.replace("\xa0", " ").replace("\u200b", "")
     text = text.replace("```", "'''")
@@ -535,6 +556,70 @@ def normalize_text(text: str) -> str:
 def split_text_lines(value: str) -> list[str]:
     lines = [normalize_text(line) for line in str(value).splitlines()]
     return [line for line in lines if line]
+
+
+def png_dimensions(payload: bytes) -> tuple[int | None, int | None]:
+    if len(payload) < 24 or payload[:8] != b"\x89PNG\r\n\x1a\n":
+        return None, None
+    return int.from_bytes(payload[16:20], "big"), int.from_bytes(payload[20:24], "big")
+
+
+def gif_dimensions(payload: bytes) -> tuple[int | None, int | None]:
+    if len(payload) < 10 or payload[:3] != b"GIF":
+        return None, None
+    return int.from_bytes(payload[6:8], "little"), int.from_bytes(payload[8:10], "little")
+
+
+def jpeg_dimensions(payload: bytes) -> tuple[int | None, int | None]:
+    if len(payload) < 4 or payload[:2] != b"\xff\xd8":
+        return None, None
+    index = 2
+    while index + 9 < len(payload):
+        if payload[index] != 0xFF:
+            index += 1
+            continue
+        marker = payload[index + 1]
+        index += 2
+        if marker in {0xD8, 0xD9}:
+            continue
+        if index + 2 > len(payload):
+            break
+        segment_len = int.from_bytes(payload[index:index + 2], "big")
+        if segment_len < 2 or index + segment_len > len(payload):
+            break
+        if marker in {0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7, 0xC9, 0xCA, 0xCB, 0xCD, 0xCE, 0xCF}:
+            if index + 7 <= len(payload):
+                height = int.from_bytes(payload[index + 3:index + 5], "big")
+                width = int.from_bytes(payload[index + 5:index + 7], "big")
+                return width, height
+            break
+        index += segment_len
+    return None, None
+
+
+def image_dimensions(payload: bytes, ext: str) -> tuple[int | None, int | None]:
+    if ext == ".png":
+        return png_dimensions(payload)
+    if ext == ".gif":
+        return gif_dimensions(payload)
+    if ext in {".jpg", ".jpeg"}:
+        return jpeg_dimensions(payload)
+    return None, None
+
+
+def is_meaningful_visual(payload: bytes, ext: str) -> bool:
+    if ext == ".svg":
+        return len(payload) >= 600
+    if len(payload) < 3500:
+        return False
+    width, height = image_dimensions(payload, ext)
+    if width and height and width < 140 and height < 140 and len(payload) < 50000:
+        return False
+    return True
+
+
+def resolve_zip_target(base_name: str, target: str) -> str:
+    return posixpath.normpath(posixpath.join(posixpath.dirname(base_name), target))
 
 
 def extract_ppt_paragraphs(xml_bytes: bytes) -> list[str]:
@@ -635,6 +720,123 @@ def extract_xlsx_units(payload: bytes, source_file: str, topic_slug: str, asset_
     return units, warnings
 
 
+def extract_pptx_visuals(payload: bytes, source_file: str) -> tuple[list[dict], list[str]]:
+    visuals: list[dict] = []
+    warnings: list[str] = []
+    with zipfile.ZipFile(io.BytesIO(payload)) as inner:
+        inner_names = set(inner.namelist())
+        slide_names = sorted(
+            [name for name in inner_names if re.fullmatch(r"ppt/slides/slide\d+\.xml", name)],
+            key=lambda value: int(re.search(r"slide(\d+)\.xml", value).group(1)),
+        )
+        for slide_name in slide_names:
+            slide_no = int(re.search(r"slide(\d+)\.xml", slide_name).group(1))
+            rel_name = f"ppt/slides/_rels/slide{slide_no}.xml.rels"
+            if rel_name not in inner_names:
+                continue
+            slide_root = ET.fromstring(inner.read(slide_name))
+            rel_root = ET.fromstring(inner.read(rel_name))
+            rel_targets = {
+                rel.attrib.get("Id"): rel.attrib.get("Target")
+                for rel in rel_root.findall(".//rel:Relationship", PKG_REL_NS)
+                if rel.attrib.get("Id") and rel.attrib.get("Target")
+            }
+            seen_targets: set[str] = set()
+            visual_index = 1
+            for blip in slide_root.findall(".//a:blip", PPT_NS):
+                rel_id = blip.attrib.get(f"{{{REL_NS_URI}}}embed")
+                if not rel_id or rel_id not in rel_targets:
+                    continue
+                resolved_target = resolve_zip_target(slide_name, rel_targets[rel_id])
+                if resolved_target in seen_targets:
+                    continue
+                seen_targets.add(resolved_target)
+                ext = Path(resolved_target).suffix.lower()
+                if ext not in SUPPORTED_VISUAL_EXTENSIONS:
+                    continue
+                try:
+                    asset_bytes = inner.read(resolved_target)
+                except KeyError:
+                    warnings.append(f"{source_file}: missing visual target {resolved_target}")
+                    continue
+                if not is_meaningful_visual(asset_bytes, ext):
+                    continue
+                asset_rel_path = write_visual_asset(
+                    source_file,
+                    f"slide-{slide_no:02d}-{Path(resolved_target).name}",
+                    asset_bytes,
+                )
+                visuals.append(
+                    {
+                        "source_file": source_file,
+                        "source_type": "pptx",
+                        "locator": f"slide:{slide_no}:image:{visual_index}",
+                        "asset_rel_path": asset_rel_path,
+                    }
+                )
+                visual_index += 1
+    return visuals, warnings
+
+
+def select_pdf_preview_pages(document: fitz.Document) -> list[int]:
+    selected: list[int] = []
+    if document.page_count == 0:
+        return selected
+    selected.append(1)
+
+    image_pages: list[int] = []
+    low_text_pages: list[tuple[int, int]] = []
+    for page_no in range(1, document.page_count + 1):
+        page = document.load_page(page_no - 1)
+        text_line_count = len(split_text_lines(page.get_text("text")))
+        image_count = len(page.get_images(full=True))
+        if image_count > 0 and page_no not in image_pages:
+            image_pages.append(page_no)
+        low_text_pages.append((text_line_count, page_no))
+
+    for page_no in image_pages:
+        if page_no not in selected:
+            selected.append(page_no)
+        if len(selected) >= 3:
+            return sorted(selected)
+
+    for _, page_no in sorted(low_text_pages):
+        if page_no not in selected:
+            selected.append(page_no)
+        if len(selected) >= 3:
+            break
+    return sorted(selected)
+
+
+def extract_pdf_visuals(payload: bytes, source_file: str) -> tuple[list[dict], list[str]]:
+    visuals: list[dict] = []
+    warnings: list[str] = []
+    with fitz.open(stream=payload, filetype="pdf") as document:
+        for page_no in select_pdf_preview_pages(document):
+            page = document.load_page(page_no - 1)
+            try:
+                pixmap = page.get_pixmap(matrix=fitz.Matrix(1.5, 1.5), alpha=False)
+                png_bytes = pixmap.tobytes("png")
+            except Exception as exc:  # pragma: no cover - defensive against malformed PDFs
+                warnings.append(f"{source_file}: failed to render page preview {page_no} ({exc})")
+                continue
+            asset_rel_path = write_visual_asset(source_file, f"page-{page_no:02d}.png", png_bytes)
+            visuals.append(
+                {
+                    "source_file": source_file,
+                    "source_type": "pdf",
+                    "locator": f"page:{page_no}:preview",
+                    "asset_rel_path": asset_rel_path,
+                }
+            )
+    return visuals, warnings
+
+
+def extract_xlsx_visuals(payload: bytes, source_file: str) -> tuple[list[dict], list[str]]:
+    del payload, source_file
+    return [], []
+
+
 def extractor_for(source_type: str):
     if source_type == "pptx":
         return extract_pptx_units
@@ -645,11 +847,22 @@ def extractor_for(source_type: str):
     raise ValueError(f"Unsupported source type: {source_type}")
 
 
+def visual_extractor_for(source_type: str):
+    if source_type == "pptx":
+        return extract_pptx_visuals
+    if source_type == "pdf":
+        return extract_pdf_visuals
+    if source_type == "xlsx":
+        return extract_xlsx_visuals
+    raise ValueError(f"Unsupported source type: {source_type}")
+
+
 def extract_all_sources() -> tuple[list[dict], dict[str, dict], list[str], dict]:
     source_units: list[dict] = []
     manifest: dict[str, dict] = {}
     warnings: list[str] = []
     counts = Counter()
+    total_visuals = 0
 
     for archive in SOURCE_ARCHIVES:
         zip_path = WORKSPACE_ROOT / archive["zip_name"]
@@ -671,9 +884,13 @@ def extract_all_sources() -> tuple[list[dict], dict[str, dict], list[str], dict]
                 asset_abs.write_bytes(payload)
                 extractor = extractor_for(source_type)
                 units, source_warnings = extractor(payload, file_name, topic_slug, asset_rel.as_posix())
+                visual_extractor = visual_extractor_for(source_type)
+                visuals, visual_warnings = visual_extractor(payload, file_name)
                 warnings.extend(source_warnings)
+                warnings.extend(visual_warnings)
                 source_units.extend(units)
                 counts[source_type] += 1
+                total_visuals += len(visuals)
                 manifest[file_name] = {
                     "source_file": file_name,
                     "source_type": source_type,
@@ -682,6 +899,8 @@ def extract_all_sources() -> tuple[list[dict], dict[str, dict], list[str], dict]
                     "archive_entry": info.filename,
                     "asset_rel_path": asset_rel.as_posix(),
                     "unit_count": len(units),
+                    "visual_count": len(visuals),
+                    "visuals": visuals,
                 }
 
     expected_counts = {"pptx": 10, "pdf": 19, "xlsx": 1}
@@ -693,6 +912,7 @@ def extract_all_sources() -> tuple[list[dict], dict[str, dict], list[str], dict]
         "observed_counts": dict(counts),
         "total_sources": len(manifest),
         "total_units": len(source_units),
+        "total_visuals": total_visuals,
         "warnings": warnings,
     }
     return source_units, manifest, warnings, summary
@@ -718,13 +938,16 @@ def select_highlights(units: list[dict], limit: int = 8) -> list[str]:
 
 def format_source_table(page: dict, manifest: dict[str, dict], current_doc_rel: str) -> list[str]:
     lines = [
-        "| Source | Type | Text Units | Download |",
-        "| --- | --- | ---: | --- |",
+        "| Source | Type | Text Units | Visuals | Download |",
+        "| --- | --- | ---: | ---: | --- |",
     ]
     for source_file in page["source_files"]:
         source_meta = manifest[source_file]
         download_link = rel_link(current_doc_rel, source_meta["asset_rel_path"])
-        lines.append(f"| `{source_file}` | `{source_meta['source_type']}` | {source_meta['unit_count']} | [open]({download_link}) |")
+        lines.append(
+            f"| `{source_file}` | `{source_meta['source_type']}` | {source_meta['unit_count']} | "
+            f"{source_meta.get('visual_count', 0)} | [open]({download_link}) |"
+        )
     return lines
 
 
@@ -738,6 +961,63 @@ def format_cross_refs(page: dict, current_doc_rel: str, lang: str) -> list[str]:
     return lines
 
 
+def teaching_content_for(page_slug: str, lang: str) -> str:
+    content = PAGE_CONTENT.get(page_slug, {})
+    if lang in content:
+        return content[lang]
+    if lang == "zh":
+        return "## 一眼看懂\n\n这一页的知识点讲解仍在补充中，当前先保留了来源、图示和完整原文，便于继续深化整理。"
+    return "## At a Glance\n\nThis page is still waiting for a fuller teaching draft. The sources, visuals, and full transcription remain available below."
+
+
+def format_visual_caption(visual: dict, lang: str) -> str:
+    source_file = visual["source_file"]
+    locator = visual["locator"]
+    if locator.startswith("slide:"):
+        slide_no = locator.split(":")[1]
+        return f"{source_file} · 第 {slide_no} 张幻灯片" if lang == "zh" else f"{source_file} · slide {slide_no}"
+    if locator.startswith("page:"):
+        page_no = locator.split(":")[1]
+        return f"{source_file} · 第 {page_no} 页预览" if lang == "zh" else f"{source_file} · page {page_no} preview"
+    return source_file
+
+
+def render_visual_gallery(page: dict, manifest: dict[str, dict], current_doc_rel: str, lang: str) -> list[str]:
+    title = "## 图示与页面预览" if lang == "zh" else "## Visuals and Page Previews"
+    intro = (
+        "下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。"
+        if lang == "zh"
+        else "This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources."
+    )
+    visuals: list[dict] = []
+    for source_file in page["source_files"]:
+        visuals.extend(manifest[source_file].get("visuals", []))
+
+    lines = [title, "", intro, ""]
+    if not visuals:
+        lines.append(
+            "本页源文件没有提取到适合展示的配图资产，但原始文件和逐行转写仍完整保留在本页底部。"
+            if lang == "zh"
+            else "No displayable visual assets were extracted for this page, but the raw files and full transcription remain available below."
+        )
+        return lines
+
+    lines.append('<div class="note-visual-grid">')
+    for visual in visuals:
+        asset_href = rel_link(current_doc_rel, visual["asset_rel_path"])
+        caption = format_visual_caption(visual, lang)
+        lines.extend(
+            [
+                '  <figure class="note-visual">',
+                f'    <img src="{html.escape(asset_href)}" alt="{html.escape(caption)}" loading="lazy">',
+                f'    <figcaption>{html.escape(caption)}</figcaption>',
+                "  </figure>",
+            ]
+        )
+    lines.append("</div>")
+    return lines
+
+
 def render_transcript_blocks(
     source_files: list[str],
     units_by_source: dict[str, list[dict]],
@@ -748,7 +1028,12 @@ def render_transcript_blocks(
     title_prefix = "原文转写与来源映射" if lang == "zh" else "Original Transcription and Coverage Mapping"
     download_prefix = "下载原件" if lang == "zh" else "Download source"
     mapped_prefix = "映射页面" if lang == "zh" else "Mapped page"
-    lines = [f"## {title_prefix}", ""]
+    intro = (
+        "下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 `unit_id` 都能在 `data/coverage_map.json` 中找到对应页面映射。"
+        if lang == "zh"
+        else "The collapsible blocks below preserve page/slide-level source transcription. Each `unit_id` maps one-to-one in `data/coverage_map.json`."
+    )
+    lines = [f"## {title_prefix}", "", intro, ""]
     for source_file in source_files:
         source_meta = manifest[source_file]
         source_units = units_by_source[source_file]
@@ -775,53 +1060,48 @@ def render_page(
     lang: str,
 ) -> str:
     current_doc_rel = page_doc_rel(page["slug"], lang)
-    highlights = select_highlights(units_by_page[page["slug"]], limit=8)
     section = SECTIONS[page["section"]]
+    content_block = teaching_content_for(page["slug"], lang)
 
     if lang == "zh":
         title = page["zh_title"]
         pitch = page["zh_pitch"]
-        angles = page["angles_zh"]
         section_title = section["zh_title"]
         headers = {
-            "why": "## 本页定位",
-            "angles": "## 关注重点",
-            "sources": "## 来源覆盖",
-            "signals": "## 代表性原始语句",
+            "sources": "## 资料范围与相关主题",
             "related": "## 相关主题",
         }
+        source_intro = "正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。"
     else:
         title = page["en_title"]
         pitch = page["en_pitch"]
-        angles = page["angles_en"]
         section_title = section["en_title"]
         headers = {
-            "why": "## Page Intent",
-            "angles": "## Key Angles",
-            "sources": "## Source Coverage",
-            "signals": "## Representative Source Signals",
+            "sources": "## Source Scope and Related Topics",
             "related": "## Related Topics",
         }
+        source_intro = "The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification."
 
     lines = [
         f"# {title}",
         "",
         pitch,
         "",
-        headers["why"],
-        "",
-        f"- {'所属分区' if lang == 'zh' else 'Section'}: `{section_title}`",
-        f"- {'关联源文件数' if lang == 'zh' else 'Source files'}: {len(page['source_files'])}",
-        f"- {'文本单元数' if lang == 'zh' else 'Text units'}: {len(units_by_page[page['slug']])}",
-        "",
-        headers["angles"],
+        content_block,
         "",
     ]
-    lines.extend(f"- {angle}" for angle in angles)
-    lines.extend(["", headers["sources"], ""])
+    lines.extend(render_visual_gallery(page, manifest, current_doc_rel, lang))
+    lines.extend(["", headers["sources"], "", source_intro, ""])
+    lines.extend(
+        [
+            f"- {'所属分区' if lang == 'zh' else 'Section'}: `{section_title}`",
+            f"- {'关联源文件数' if lang == 'zh' else 'Source files'}: {len(page['source_files'])}",
+            f"- {'文本单元数' if lang == 'zh' else 'Text units'}: {len(units_by_page[page['slug']])}",
+            f"- {'配图/预览数' if lang == 'zh' else 'Visuals/previews'}: {sum(manifest[source]['visual_count'] for source in page['source_files'])}",
+            "",
+        ]
+    )
     lines.extend(format_source_table(page, manifest, current_doc_rel))
-    lines.extend(["", headers["signals"], ""])
-    lines.extend(f"- `{signal}`" for signal in highlights)
     lines.extend(["", headers["related"], ""])
     lines.extend(format_cross_refs(page, current_doc_rel, lang))
     lines.extend([""])
@@ -852,27 +1132,32 @@ def render_section_index(section_slug: str, pages: list[dict], manifest: dict[st
         for source_file in page["source_files"]:
             source_meta = manifest[source_file]
             source_link = rel_link(current_doc_rel, source_meta["asset_rel_path"])
-            lines.append(f"- `{source_file}` ({source_meta['source_type']}, {source_meta['unit_count']} units): [open]({source_link})")
+            lines.append(
+                f"- `{source_file}` ({source_meta['source_type']}, {source_meta['unit_count']} units, "
+                f"{source_meta.get('visual_count', 0)} visuals): [open]({source_link})"
+            )
     return "\n".join(lines).rstrip() + "\n"
 
 
 def render_home_page(lang: str) -> str:
     if lang == "zh":
         title = "人因工程课程笔记"
-        intro = "这是一个围绕人因工程与 use-related risk 的双语 MkDocs 笔记站。内容按知识点主题组织，正文先做结构化整理，页尾折叠区块保留逐页/逐幻灯/逐单元的完整英文原文，确保每一行材料都能被追溯。"
+        intro = "这是一个围绕人因工程与 use-related risk 的双语 MkDocs 笔记站。内容按知识点主题组织，每一页都先讲知识点、再展示可提取图示，最后保留逐页/逐幻灯/逐单元的完整英文原文，确保每一行材料都能被追溯。"
         card_cta = "进入 →"
         coverage = [
             "- 源资料总数：`10 PPTX + 19 PDF + 1 XLSX = 30` 个文件",
             "- 组织方式：按知识点主题整理，不按原压缩包平铺",
+            "- 页面结构：先读讲解，再看配图/预览，最后用逐行原文核对细节",
             "- 完整性机制：每个文本单元都写入 `data/source_units.jsonl`，并通过 `data/coverage_map.json` 一对一映射到页面底部折叠区块",
         ]
     else:
         title = "HFE Course Notes"
-        intro = "This bilingual MkDocs site organizes human factors engineering and use-related risk materials by concept rather than by raw archive. Each page offers a structured synthesis first, then preserves full English source transcription in collapsible blocks so every extracted line remains traceable."
+        intro = "This bilingual MkDocs site organizes human factors engineering and use-related risk materials by concept rather than raw archive. Each page now teaches the concept first, shows extracted visuals or page previews next, and preserves the full English source transcription afterward."
         card_cta = "Open →"
         coverage = [
             "- Source corpus: `10 PPTX + 19 PDF + 1 XLSX = 30` files",
             "- Organization: concept-first knowledge pages rather than flat archive listings",
+            "- Page flow: explanation first, visuals/previews second, full source traceability last",
             "- Completeness: every text unit is written to `data/source_units.jsonl` and mapped one-to-one in `data/coverage_map.json`",
         ]
 

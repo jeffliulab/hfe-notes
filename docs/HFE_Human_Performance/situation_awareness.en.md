@@ -2,34 +2,55 @@
 
 This page covers the perception, comprehension, and projection layers of situation awareness and links current information to future-state prediction.
 
-## Page Intent
+## At a Glance
+
+Situation awareness is not a vague sense of being aware. In the course it has a three-level structure: perceive the cues, comprehend what they mean, and project what will happen next.
+
+## The Three Levels
+
+1. `perception`: noticing the relevant signals
+2. `comprehension`: combining them into an accurate understanding of the current state
+3. `projection`: anticipating how the state will evolve
+
+## Why Higher Levels Are Hard
+
+Information can be visible without being interpretable. Operators may see numbers and alerts yet still lack priority, relationship, or future-state understanding.
+
+## Common Difficulty
+
+Many course topics return to situation awareness because displays, CRM, monitoring, automation, and spatial disorientation all ask whether the system helps build a timely and accurate mental model.
+
+## Visuals and Page Previews
+
+This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-situationawareness-20260325/page-01.png" alt="Sp26_SituationAwareness_20260325.pdf · page 1 preview" loading="lazy">
+    <figcaption>Sp26_SituationAwareness_20260325.pdf · page 1 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-situationawareness-20260325/page-03.png" alt="Sp26_SituationAwareness_20260325.pdf · page 3 preview" loading="lazy">
+    <figcaption>Sp26_SituationAwareness_20260325.pdf · page 3 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-situationawareness-20260325/page-04.png" alt="Sp26_SituationAwareness_20260325.pdf · page 4 preview" loading="lazy">
+    <figcaption>Sp26_SituationAwareness_20260325.pdf · page 4 preview</figcaption>
+  </figure>
+</div>
+
+## Source Scope and Related Topics
+
+The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
 - Section: `Human Performance`
 - Source files: 1
 - Text units: 200
+- Visuals/previews: 3
 
-## Key Angles
-
-- The three-layer structure of situation awareness
-- Why visible information does not equal understanding
-- Why future-state projection shapes effective intervention
-
-## Source Coverage
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Sp26_SituationAwareness_20260325.pdf` | `pdf` | 200 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_SituationAwareness_20260325.pdf) |
-
-## Representative Source Signals
-
-- `Credit: Gary Larson, The Far Side`
-- `SITUATION AWARENESS`
-- `“Situation awareness is the perception of the elements in the environment within a`
-- `volume of time and space, the comprehension of their meaning, and the projection of`
-- `their status in the near future.” -- Endsley (1995)`
-- `• Perception (Level 1): Recognizing the status, attributes and dynamics of relevant`
-- `elements in the environment.`
-- `• Comprehension (Level 2): Understanding the significance of the relevant`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Sp26_SituationAwareness_20260325.pdf` | `pdf` | 200 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_SituationAwareness_20260325.pdf) |
 
 ## Related Topics
 
@@ -38,6 +59,8 @@ This page covers the perception, comprehension, and projection layers of situati
 - [Spatial Disorientation](spatial_disorientation.en.md)
 
 ## Original Transcription and Coverage Mapping
+
+The collapsible blocks below preserve page/slide-level source transcription. Each `unit_id` maps one-to-one in `data/coverage_map.json`.
 
 ??? info "Sp26_SituationAwareness_20260325.pdf | 200 text units"
     Download source: [Sp26_SituationAwareness_20260325.pdf](../assets/source_files/Lectures_Spring_2026/Sp26_SituationAwareness_20260325.pdf)

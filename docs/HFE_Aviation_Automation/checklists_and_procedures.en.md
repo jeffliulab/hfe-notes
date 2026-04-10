@@ -2,34 +2,55 @@
 
 This page explains the design logic of checklists and procedures and how standardization reduces memory burden while supporting team coordination.
 
-## Page Intent
+## At a Glance
+
+Checklists and procedures do not exist to make people mechanical. They externalize vulnerable steps so the work becomes shared, checkable, and repeatable.
+
+## Core Logic
+
+- a checklist is a cognitive scaffold, not just a memory aid
+- a procedure is an organizational commitment about how normal work should be performed
+- shared procedural language reduces coordination cost and improves handoff and review
+
+## What Good Design Does
+
+Good procedures put critical steps in usable order, make checkpoints visible and confirmable, and provide escalation paths for abnormal situations.
+
+## Common Difficulty
+
+Standardization helps, but only if it fits real work. When procedures diverge from work as done, operators begin to route around them.
+
+## Visuals and Page Previews
+
+This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/checklists-and-procedures-3-23-26/page-01.png" alt="Checklists and Procedures 3-23-26.pdf · page 1 preview" loading="lazy">
+    <figcaption>Checklists and Procedures 3-23-26.pdf · page 1 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/checklists-and-procedures-3-23-26/page-02.png" alt="Checklists and Procedures 3-23-26.pdf · page 2 preview" loading="lazy">
+    <figcaption>Checklists and Procedures 3-23-26.pdf · page 2 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/checklists-and-procedures-3-23-26/page-15.png" alt="Checklists and Procedures 3-23-26.pdf · page 15 preview" loading="lazy">
+    <figcaption>Checklists and Procedures 3-23-26.pdf · page 15 preview</figcaption>
+  </figure>
+</div>
+
+## Source Scope and Related Topics
+
+The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
 - Section: `Aviation and Automation`
 - Source files: 1
 - Text units: 330
+- Visuals/previews: 3
 
-## Key Angles
-
-- Why proceduralization improves reliability
-- How checklist design balances speed and accuracy
-- How exceptions avoid rote compliance
-
-## Source Coverage
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Checklists and Procedures 3-23-26.pdf` | `pdf` | 330 | [open](../assets/source_files/Lectures_Spring_2026/Checklists and Procedures 3-23-26.pdf) |
-
-## Representative Source Signals
-
-- `PILOT TRAINING, PROCEDURES,`
-- `Prof. D.C. Chandra`
-- `https://simpleflying.com/level-d-simulator/`
-- `• Selection and training (Knowledge, Skills, and Abilities)`
-- `• Motivation, arousal (optimize attention)`
-- `• Policies and procedures (e.g., checklists)`
-- `• Controls (soft or hard), “Usability” (e.g., visibility of system state, interaction`
-- `• Automated systems? (take the operator out of the system)`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Checklists and Procedures 3-23-26.pdf` | `pdf` | 330 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Checklists and Procedures 3-23-26.pdf) |
 
 ## Related Topics
 
@@ -38,6 +59,8 @@ This page explains the design logic of checklists and procedures and how standar
 - [Operational Risk](../HFE_Cases_Ethics/operational_risk.en.md)
 
 ## Original Transcription and Coverage Mapping
+
+The collapsible blocks below preserve page/slide-level source transcription. Each `unit_id` maps one-to-one in `data/coverage_map.json`.
 
 ??? info "Checklists and Procedures 3-23-26.pdf | 330 text units"
     Download source: [Checklists and Procedures 3-23-26.pdf](../assets/source_files/Lectures_Spring_2026/Checklists and Procedures 3-23-26.pdf)

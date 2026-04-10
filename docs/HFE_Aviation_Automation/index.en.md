@@ -12,8 +12,8 @@ This section covers aviation-flavored automation, HMI, CRM, displays and alerts,
 
 ## Covered Source Files
 
-- `Intro to Aviation and Automation 1-26-26-2.pdf` (pdf, 465 units): [open](../assets/source_files/Lectures_Spring_2026/Intro to Aviation and Automation 1-26-26-2.pdf)
-- `CRM 1-28-2026.pdf` (pdf, 307 units): [open](../assets/source_files/Lectures_Spring_2026/CRM 1-28-2026.pdf)
-- `Displays and Alerts 2-4-26.pdf` (pdf, 619 units): [open](../assets/source_files/Lectures_Spring_2026/Displays and Alerts 2-4-26.pdf)
-- `Checklists and Procedures 3-23-26.pdf` (pdf, 330 units): [open](../assets/source_files/Lectures_Spring_2026/Checklists and Procedures 3-23-26.pdf)
-- `Automated Vehicles 3-11-26-2.pdf` (pdf, 374 units): [open](../assets/source_files/Lectures_Spring_2026/Automated Vehicles 3-11-26-2.pdf)
+- `Intro to Aviation and Automation 1-26-26-2.pdf` (pdf, 465 units, 3 visuals): [open](../assets/source_files/Lectures_Spring_2026/Intro to Aviation and Automation 1-26-26-2.pdf)
+- `CRM 1-28-2026.pdf` (pdf, 307 units, 3 visuals): [open](../assets/source_files/Lectures_Spring_2026/CRM 1-28-2026.pdf)
+- `Displays and Alerts 2-4-26.pdf` (pdf, 619 units, 3 visuals): [open](../assets/source_files/Lectures_Spring_2026/Displays and Alerts 2-4-26.pdf)
+- `Checklists and Procedures 3-23-26.pdf` (pdf, 330 units, 3 visuals): [open](../assets/source_files/Lectures_Spring_2026/Checklists and Procedures 3-23-26.pdf)
+- `Automated Vehicles 3-11-26-2.pdf` (pdf, 374 units, 3 visuals): [open](../assets/source_files/Lectures_Spring_2026/Automated Vehicles 3-11-26-2.pdf)

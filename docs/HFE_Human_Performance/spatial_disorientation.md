@@ -2,34 +2,59 @@
 
 本页整理空间定向错觉的生理基础、知觉陷阱与操作风险，强调感官系统与仪表信息冲突时的人因问题。
 
-## 本页定位
+## 一眼看懂
+
+空间定向错觉这页最关键的提醒是：人的感觉系统在飞行环境里并不总可靠。也就是说，“我感觉飞机是这样”的直觉，可能和真实姿态完全不一致。
+
+## 这页的核心矛盾
+
+- 内耳和身体感觉在某些加速度、转弯和低可见度条件下会给出错误线索。
+- 仪表提供的是更可靠的状态信息，但人在压力、惊讶或训练不足时，未必能及时切回仪表。
+- 一旦操作者更相信身体感觉而不是仪表，风险会迅速放大。
+
+## 这页真正想建立的认知
+
+空间定向问题不是单纯的“飞行技术失误”，而是一个典型的人因冲突：
+
+- 人的感觉系统在某些环境下天然会误导
+- 系统设计和训练必须提前承认这种误导
+- 仪表扫描、程序和训练就是为了在直觉不可靠时给出替代路径
+
+## 难点讲解
+
+最难的地方在于，这类错觉对当事人来说往往极其真实。所以有效控制不能只依赖事发当下的“再冷静一点”，而要依赖更早期的训练、显示设计和程序化交叉检查。
+
+## 图示与页面预览
+
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-spdisorientation-20260330/page-01.png" alt="Sp26_SpDisorientation_20260330.pdf · 第 1 页预览" loading="lazy">
+    <figcaption>Sp26_SpDisorientation_20260330.pdf · 第 1 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-spdisorientation-20260330/page-02.png" alt="Sp26_SpDisorientation_20260330.pdf · 第 2 页预览" loading="lazy">
+    <figcaption>Sp26_SpDisorientation_20260330.pdf · 第 2 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-spdisorientation-20260330/page-03.png" alt="Sp26_SpDisorientation_20260330.pdf · 第 3 页预览" loading="lazy">
+    <figcaption>Sp26_SpDisorientation_20260330.pdf · 第 3 页预览</figcaption>
+  </figure>
+</div>
+
+## 资料范围与相关主题
+
+正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。
 
 - 所属分区: `人的表现`
 - 关联源文件数: 1
 - 文本单元数: 281
+- 配图/预览数: 3
 
-## 关注重点
-
-- 感觉系统为什么会误导操作者
-- 仪表扫描如何对抗错觉
-- 空间定向问题为什么高度危险
-
-## 来源覆盖
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Sp26_SpDisorientation_20260330.pdf` | `pdf` | 281 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_SpDisorientation_20260330.pdf) |
-
-## 代表性原始语句
-
-- `SPATIAL DISORIENTATION`
-- `ANATOMY OF THE EAR`
-- `virtualmedicalcentre.com`
-- `http://utahhearingandbalance.com/dizziness/balance-and-the-vestibular-system/`
-- `https://www.dizziness-and-balance.com`
-- `Credit: You, Instrum, and Parnes, 2019.`
-- `OTOLITH HAIR CELLS`
-- `WellcomeCollection.org`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Sp26_SpDisorientation_20260330.pdf` | `pdf` | 281 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_SpDisorientation_20260330.pdf) |
 
 ## 相关主题
 
@@ -38,6 +63,8 @@
 - [疲劳与睡眠](fatigue_and_sleep.md)
 
 ## 原文转写与来源映射
+
+下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 `unit_id` 都能在 `data/coverage_map.json` 中找到对应页面映射。
 
 ??? info "Sp26_SpDisorientation_20260330.pdf | 281 text units"
     下载原件: [Sp26_SpDisorientation_20260330.pdf](../assets/source_files/Lectures_Spring_2026/Sp26_SpDisorientation_20260330.pdf)

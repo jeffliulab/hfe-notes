@@ -2,34 +2,59 @@
 
 本页整理注意资源、监控任务、automation complacency 与 vigilance decrement 等核心问题。
 
-## 本页定位
+## 一眼看懂
+
+注意与监控这一页的核心不是“人要更专心”，而是承认注意本来就是有限资源，而持续监控又恰好是一种最容易衰退的任务。
+
+## 核心逻辑
+
+- 注意不是无限的，它会被优先级、负荷、时间、疲劳和告警策略重新分配。
+- 监控任务看起来轻松，但因为刺激稀少、事件低频，反而容易出现 vigilance decrement。
+- 自动化越强，人越容易从主动操作者退成被动监视者，这时 complacency 风险会上升。
+
+## 这页真正想建立的判断
+
+如果某个系统要求人长时间“盯着看、等着出问题”，就要立刻追问：
+
+- 这个监控任务是否现实可持续
+- 系统有没有主动帮助人保持对关键状态的把握
+- 一旦漏看，是否还留有恢复空间
+
+## 难点讲解
+
+监控失败并不等于态度差。很多时候，失败来自任务本身的设计：太单调、太被动、反馈太少、关键变化出现得太突然。这也是为什么显示、告警和自动化设计必须和“人的注意机制”一起看。
+
+## 图示与页面预览
+
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/attention-and-monitoring-2-9-2026/page-01.png" alt="Attention and Monitoring 2-9- 2026.pdf · 第 1 页预览" loading="lazy">
+    <figcaption>Attention and Monitoring 2-9- 2026.pdf · 第 1 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/attention-and-monitoring-2-9-2026/page-03.png" alt="Attention and Monitoring 2-9- 2026.pdf · 第 3 页预览" loading="lazy">
+    <figcaption>Attention and Monitoring 2-9- 2026.pdf · 第 3 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/attention-and-monitoring-2-9-2026/page-04.png" alt="Attention and Monitoring 2-9- 2026.pdf · 第 4 页预览" loading="lazy">
+    <figcaption>Attention and Monitoring 2-9- 2026.pdf · 第 4 页预览</figcaption>
+  </figure>
+</div>
+
+## 资料范围与相关主题
+
+正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。
 
 - 所属分区: `人的表现`
 - 关联源文件数: 1
 - 文本单元数: 227
+- 配图/预览数: 3
 
-## 关注重点
-
-- 注意为什么是有限资源
-- 监控任务为何特别容易衰退
-- 自动化如何改变人的注意分配
-
-## 来源覆盖
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Attention and Monitoring 2-9- 2026.pdf` | `pdf` | 227 | [open](../assets/source_files/Lectures_Spring_2026/Attention and Monitoring 2-9- 2026.pdf) |
-
-## 代表性原始语句
-
-- `Dr. Divya C. Chandra`
-- `• Supervisory control of automation`
-- `• Attention and vigilance`
-- `• Monitoring techniques`
-- `• Discussion of flight path monitoring reading`
-- `• Models of attention`
-- `SHERIDAN’S SPECTRUM OF AUTOMATION`
-- `Proctor and VanZandt, 2017`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Attention and Monitoring 2-9- 2026.pdf` | `pdf` | 227 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Attention and Monitoring 2-9- 2026.pdf) |
 
 ## 相关主题
 
@@ -38,6 +63,8 @@
 - [情境意识](situation_awareness.md)
 
 ## 原文转写与来源映射
+
+下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 `unit_id` 都能在 `data/coverage_map.json` 中找到对应页面映射。
 
 ??? info "Attention and Monitoring 2-9- 2026.pdf | 227 text units"
     下载原件: [Attention and Monitoring 2-9- 2026.pdf](../assets/source_files/Lectures_Spring_2026/Attention and Monitoring 2-9- 2026.pdf)

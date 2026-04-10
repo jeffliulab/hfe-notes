@@ -2,34 +2,102 @@
 
 本页围绕 human factors 的定义、设计目标与系统视角，整理人因工程如何把人的能力与限制带回系统设计。
 
-## 本页定位
+## 一眼看懂
+
+人因工程不是“研究人类弱点”的学科，而是把人的能力、限制、节律、记忆和注意特性带回设计中，让系统更容易被正确使用。
+
+## 这个主题真正想说什么
+
+- 人因工程同时追求两个目标：人的福祉与系统绩效。
+- 重点不是把人从系统里拿掉，而是承认人永远在系统里，于是设计必须适配真实的人。
+- 所谓“设计得好”，不是让专家勉强能用，而是让普通用户在压力、疲劳、分心时依然不容易出错。
+
+## 难点讲解
+
+很多人会把人因工程理解成“培训做得更好一点”。这其实太窄了。培训当然重要，但人因工程更关心的是：
+
+- 界面是否直观
+- 信息是否在正确时间出现
+- 任务步骤是否符合人的认知顺序
+- 系统是否允许人恢复、检查和纠正
+
+换句话说，人因工程优先改系统，而不是先责怪使用者。
+
+## 图示与页面预览
+
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-01-image1.png" alt="01 Intro to HF and Risk (1).pptx · 第 1 张幻灯片" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · 第 1 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-08-image2.png" alt="01 Intro to HF and Risk (1).pptx · 第 8 张幻灯片" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · 第 8 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-12-image3.jpeg" alt="01 Intro to HF and Risk (1).pptx · 第 12 张幻灯片" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · 第 12 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-14-image4.jpg" alt="01 Intro to HF and Risk (1).pptx · 第 14 张幻灯片" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · 第 14 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-16-image5.jpg" alt="01 Intro to HF and Risk (1).pptx · 第 16 张幻灯片" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · 第 16 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-24-image7.png" alt="01 Intro to HF and Risk (1).pptx · 第 24 张幻灯片" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · 第 24 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-25-image8.png" alt="01 Intro to HF and Risk (1).pptx · 第 25 张幻灯片" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · 第 25 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-26-image9.jpg" alt="01 Intro to HF and Risk (1).pptx · 第 26 张幻灯片" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · 第 26 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-31-image10.jpeg" alt="01 Intro to HF and Risk (1).pptx · 第 31 张幻灯片" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · 第 31 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-33-image11.png" alt="01 Intro to HF and Risk (1).pptx · 第 33 张幻灯片" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · 第 33 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-34-image12.png" alt="01 Intro to HF and Risk (1).pptx · 第 34 张幻灯片" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · 第 34 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-36-image14.jpg" alt="01 Intro to HF and Risk (1).pptx · 第 36 张幻灯片" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · 第 36 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-38-image15.jpeg" alt="01 Intro to HF and Risk (1).pptx · 第 38 张幻灯片" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · 第 38 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-41-image16.png" alt="01 Intro to HF and Risk (1).pptx · 第 41 张幻灯片" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · 第 41 张幻灯片</figcaption>
+  </figure>
+</div>
+
+## 资料范围与相关主题
+
+正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。
 
 - 所属分区: `HFE基础`
 - 关联源文件数: 1
 - 文本单元数: 322
+- 配图/预览数: 14
 
-## 关注重点
-
-- Human factors 的学科定义
-- 优化福祉与系统性能的双目标
-- 把人视为系统组成部分而不是误差来源
-
-## 来源覆盖
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `01 Intro to HF and Risk (1).pptx` | `pptx` | 322 | [open](../assets/source_files/ENP_111_Use_related_Risks/01 Intro to HF and Risk (1).pptx) |
-
-## 代表性原始语句
-
-- `Sami Durrani PhD and Eric Bergman PhD`
-- `Introduction to Human Factors and Risk`
-- `“The scientific discipline concerning understanding of interactions among humans and other elements of a system, and applying theory, principles, data, and other methods to design…in order to optimize human well-being and overall system performance.”`
-- `- Human Factors & Ergonomics Society`
-- `What is Human Factors?`
-- `Study, Research and Experimentation`
-- `Learn about human traits`
-- `Study interaction relationships`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `01 Intro to HF and Risk (1).pptx` | `pptx` | 322 | 14 | [open](../assets/source_files/ENP_111_Use_related_Risks/01 Intro to HF and Risk (1).pptx) |
 
 ## 相关主题
 
@@ -37,6 +105,8 @@
 - [Swiss Cheese 模型](swiss_cheese.md)
 
 ## 原文转写与来源映射
+
+下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 `unit_id` 都能在 `data/coverage_map.json` 中找到对应页面映射。
 
 ??? info "01 Intro to HF and Risk (1).pptx | 322 text units"
     下载原件: [01 Intro to HF and Risk (1).pptx](../assets/source_files/ENP_111_Use_related_Risks/01 Intro to HF and Risk (1).pptx)

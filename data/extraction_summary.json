@@ -11,6 +11,7 @@
   },
   "total_sources": 30,
   "total_units": 8374,
+  "total_visuals": 149,
   "warnings": [
     "01 Intro to HF and Risk (1).pptx: notesSlide 1 has no extracted text",
     "01 Intro to HF and Risk (1).pptx: notesSlide 5 has no extracted text",
@@ -248,7 +249,94 @@
       "archive_zip": "ENP 111 Use-related Risks.zip",
       "archive_entry": "ENP 111 Use-related Risks/01 Intro to HF and Risk (1).pptx",
       "asset_rel_path": "assets/source_files/ENP_111_Use_related_Risks/01 Intro to HF and Risk (1).pptx",
-      "unit_count": 322
+      "unit_count": 322,
+      "visual_count": 14,
+      "visuals": [
+        {
+          "source_file": "01 Intro to HF and Risk (1).pptx",
+          "source_type": "pptx",
+          "locator": "slide:1:image:1",
+          "asset_rel_path": "assets/visuals/01-intro-to-hf-and-risk-1/slide-01-image1.png"
+        },
+        {
+          "source_file": "01 Intro to HF and Risk (1).pptx",
+          "source_type": "pptx",
+          "locator": "slide:8:image:1",
+          "asset_rel_path": "assets/visuals/01-intro-to-hf-and-risk-1/slide-08-image2.png"
+        },
+        {
+          "source_file": "01 Intro to HF and Risk (1).pptx",
+          "source_type": "pptx",
+          "locator": "slide:12:image:1",
+          "asset_rel_path": "assets/visuals/01-intro-to-hf-and-risk-1/slide-12-image3.jpeg"
+        },
+        {
+          "source_file": "01 Intro to HF and Risk (1).pptx",
+          "source_type": "pptx",
+          "locator": "slide:14:image:1",
+          "asset_rel_path": "assets/visuals/01-intro-to-hf-and-risk-1/slide-14-image4.jpg"
+        },
+        {
+          "source_file": "01 Intro to HF and Risk (1).pptx",
+          "source_type": "pptx",
+          "locator": "slide:16:image:1",
+          "asset_rel_path": "assets/visuals/01-intro-to-hf-and-risk-1/slide-16-image5.jpg"
+        },
+        {
+          "source_file": "01 Intro to HF and Risk (1).pptx",
+          "source_type": "pptx",
+          "locator": "slide:24:image:1",
+          "asset_rel_path": "assets/visuals/01-intro-to-hf-and-risk-1/slide-24-image7.png"
+        },
+        {
+          "source_file": "01 Intro to HF and Risk (1).pptx",
+          "source_type": "pptx",
+          "locator": "slide:25:image:1",
+          "asset_rel_path": "assets/visuals/01-intro-to-hf-and-risk-1/slide-25-image8.png"
+        },
+        {
+          "source_file": "01 Intro to HF and Risk (1).pptx",
+          "source_type": "pptx",
+          "locator": "slide:26:image:1",
+          "asset_rel_path": "assets/visuals/01-intro-to-hf-and-risk-1/slide-26-image9.jpg"
+        },
+        {
+          "source_file": "01 Intro to HF and Risk (1).pptx",
+          "source_type": "pptx",
+          "locator": "slide:31:image:1",
+          "asset_rel_path": "assets/visuals/01-intro-to-hf-and-risk-1/slide-31-image10.jpeg"
+        },
+        {
+          "source_file": "01 Intro to HF and Risk (1).pptx",
+          "source_type": "pptx",
+          "locator": "slide:33:image:1",
+          "asset_rel_path": "assets/visuals/01-intro-to-hf-and-risk-1/slide-33-image11.png"
+        },
+        {
+          "source_file": "01 Intro to HF and Risk (1).pptx",
+          "source_type": "pptx",
+          "locator": "slide:34:image:1",
+          "asset_rel_path": "assets/visuals/01-intro-to-hf-and-risk-1/slide-34-image12.png"
+        },
+        {
+          "source_file": "01 Intro to HF and Risk (1).pptx",
+          "source_type": "pptx",
+          "locator": "slide:36:image:1",
+          "asset_rel_path": "assets/visuals/01-intro-to-hf-and-risk-1/slide-36-image14.jpg"
+        },
+        {
+          "source_file": "01 Intro to HF and Risk (1).pptx",
+          "source_type": "pptx",
+          "locator": "slide:38:image:1",
+          "asset_rel_path": "assets/visuals/01-intro-to-hf-and-risk-1/slide-38-image15.jpeg"
+        },
+        {
+          "source_file": "01 Intro to HF and Risk (1).pptx",
+          "source_type": "pptx",
+          "locator": "slide:41:image:1",
+          "asset_rel_path": "assets/visuals/01-intro-to-hf-and-risk-1/slide-41-image16.png"
+        }
+      ]
     },
     "ISO 14971 and Medical Device RM.pptx": {
       "source_file": "ISO 14971 and Medical Device RM.pptx",
@@ -257,7 +345,40 @@
       "archive_zip": "ENP 111 Use-related Risks.zip",
       "archive_entry": "ENP 111 Use-related Risks/ISO 14971 and Medical Device RM.pptx",
       "asset_rel_path": "assets/source_files/ENP_111_Use_related_Risks/ISO 14971 and Medical Device RM.pptx",
-      "unit_count": 425
+      "unit_count": 425,
+      "visual_count": 5,
+      "visuals": [
+        {
+          "source_file": "ISO 14971 and Medical Device RM.pptx",
+          "source_type": "pptx",
+          "locator": "slide:1:image:1",
+          "asset_rel_path": "assets/visuals/iso-14971-and-medical-device-rm/slide-01-image2.png"
+        },
+        {
+          "source_file": "ISO 14971 and Medical Device RM.pptx",
+          "source_type": "pptx",
+          "locator": "slide:20:image:1",
+          "asset_rel_path": "assets/visuals/iso-14971-and-medical-device-rm/slide-20-image11.png"
+        },
+        {
+          "source_file": "ISO 14971 and Medical Device RM.pptx",
+          "source_type": "pptx",
+          "locator": "slide:27:image:1",
+          "asset_rel_path": "assets/visuals/iso-14971-and-medical-device-rm/slide-27-image12.png"
+        },
+        {
+          "source_file": "ISO 14971 and Medical Device RM.pptx",
+          "source_type": "pptx",
+          "locator": "slide:31:image:1",
+          "asset_rel_path": "assets/visuals/iso-14971-and-medical-device-rm/slide-31-image13.png"
+        },
+        {
+          "source_file": "ISO 14971 and Medical Device RM.pptx",
+          "source_type": "pptx",
+          "locator": "slide:33:image:1",
+          "asset_rel_path": "assets/visuals/iso-14971-and-medical-device-rm/slide-33-image16.png"
+        }
+      ]
     },
     "10 Write URRA.pptx": {
       "source_file": "10 Write URRA.pptx",
@@ -266,7 +387,28 @@
       "archive_zip": "ENP 111 Use-related Risks.zip",
       "archive_entry": "ENP 111 Use-related Risks/10 Write URRA.pptx",
       "asset_rel_path": "assets/source_files/ENP_111_Use_related_Risks/10 Write URRA.pptx",
-      "unit_count": 52
+      "unit_count": 52,
+      "visual_count": 3,
+      "visuals": [
+        {
+          "source_file": "10 Write URRA.pptx",
+          "source_type": "pptx",
+          "locator": "slide:1:image:1",
+          "asset_rel_path": "assets/visuals/10-write-urra/slide-01-image1.png"
+        },
+        {
+          "source_file": "10 Write URRA.pptx",
+          "source_type": "pptx",
+          "locator": "slide:2:image:1",
+          "asset_rel_path": "assets/visuals/10-write-urra/slide-02-image2.png"
+        },
+        {
+          "source_file": "10 Write URRA.pptx",
+          "source_type": "pptx",
+          "locator": "slide:5:image:1",
+          "asset_rel_path": "assets/visuals/10-write-urra/slide-05-image3.png"
+        }
+      ]
     },
     "08 Task Analysis.pptx": {
       "source_file": "08 Task Analysis.pptx",
@@ -275,7 +417,58 @@
       "archive_zip": "ENP 111 Use-related Risks.zip",
       "archive_entry": "ENP 111 Use-related Risks/08 Task Analysis.pptx",
       "asset_rel_path": "assets/source_files/ENP_111_Use_related_Risks/08 Task Analysis.pptx",
-      "unit_count": 80
+      "unit_count": 80,
+      "visual_count": 8,
+      "visuals": [
+        {
+          "source_file": "08 Task Analysis.pptx",
+          "source_type": "pptx",
+          "locator": "slide:1:image:1",
+          "asset_rel_path": "assets/visuals/08-task-analysis/slide-01-image1.png"
+        },
+        {
+          "source_file": "08 Task Analysis.pptx",
+          "source_type": "pptx",
+          "locator": "slide:4:image:1",
+          "asset_rel_path": "assets/visuals/08-task-analysis/slide-04-image2.jpeg"
+        },
+        {
+          "source_file": "08 Task Analysis.pptx",
+          "source_type": "pptx",
+          "locator": "slide:5:image:1",
+          "asset_rel_path": "assets/visuals/08-task-analysis/slide-05-image3.jpeg"
+        },
+        {
+          "source_file": "08 Task Analysis.pptx",
+          "source_type": "pptx",
+          "locator": "slide:5:image:2",
+          "asset_rel_path": "assets/visuals/08-task-analysis/slide-05-image4.jpeg"
+        },
+        {
+          "source_file": "08 Task Analysis.pptx",
+          "source_type": "pptx",
+          "locator": "slide:5:image:3",
+          "asset_rel_path": "assets/visuals/08-task-analysis/slide-05-image5.jpeg"
+        },
+        {
+          "source_file": "08 Task Analysis.pptx",
+          "source_type": "pptx",
+          "locator": "slide:5:image:4",
+          "asset_rel_path": "assets/visuals/08-task-analysis/slide-05-image6.jpeg"
+        },
+        {
+          "source_file": "08 Task Analysis.pptx",
+          "source_type": "pptx",
+          "locator": "slide:5:image:5",
+          "asset_rel_path": "assets/visuals/08-task-analysis/slide-05-image7.jpeg"
+        },
+        {
+          "source_file": "08 Task Analysis.pptx",
+          "source_type": "pptx",
+          "locator": "slide:8:image:1",
+          "asset_rel_path": "assets/visuals/08-task-analysis/slide-08-image8.png"
+        }
+      ]
     },
     "11 Known Problem Analysis.pptx": {
       "source_file": "11 Known Problem Analysis.pptx",
@@ -284,7 +477,112 @@
       "archive_zip": "ENP 111 Use-related Risks.zip",
       "archive_entry": "ENP 111 Use-related Risks/11 Known Problem Analysis.pptx",
       "asset_rel_path": "assets/source_files/ENP_111_Use_related_Risks/11 Known Problem Analysis.pptx",
-      "unit_count": 43
+      "unit_count": 43,
+      "visual_count": 17,
+      "visuals": [
+        {
+          "source_file": "11 Known Problem Analysis.pptx",
+          "source_type": "pptx",
+          "locator": "slide:1:image:1",
+          "asset_rel_path": "assets/visuals/11-known-problem-analysis/slide-01-image1.png"
+        },
+        {
+          "source_file": "11 Known Problem Analysis.pptx",
+          "source_type": "pptx",
+          "locator": "slide:2:image:1",
+          "asset_rel_path": "assets/visuals/11-known-problem-analysis/slide-02-image2.png"
+        },
+        {
+          "source_file": "11 Known Problem Analysis.pptx",
+          "source_type": "pptx",
+          "locator": "slide:3:image:1",
+          "asset_rel_path": "assets/visuals/11-known-problem-analysis/slide-03-image3.jpeg"
+        },
+        {
+          "source_file": "11 Known Problem Analysis.pptx",
+          "source_type": "pptx",
+          "locator": "slide:3:image:2",
+          "asset_rel_path": "assets/visuals/11-known-problem-analysis/slide-03-image4.jpeg"
+        },
+        {
+          "source_file": "11 Known Problem Analysis.pptx",
+          "source_type": "pptx",
+          "locator": "slide:3:image:3",
+          "asset_rel_path": "assets/visuals/11-known-problem-analysis/slide-03-image2.png"
+        },
+        {
+          "source_file": "11 Known Problem Analysis.pptx",
+          "source_type": "pptx",
+          "locator": "slide:3:image:4",
+          "asset_rel_path": "assets/visuals/11-known-problem-analysis/slide-03-image5.jpeg"
+        },
+        {
+          "source_file": "11 Known Problem Analysis.pptx",
+          "source_type": "pptx",
+          "locator": "slide:3:image:5",
+          "asset_rel_path": "assets/visuals/11-known-problem-analysis/slide-03-image6.jpeg"
+        },
+        {
+          "source_file": "11 Known Problem Analysis.pptx",
+          "source_type": "pptx",
+          "locator": "slide:3:image:6",
+          "asset_rel_path": "assets/visuals/11-known-problem-analysis/slide-03-image7.png"
+        },
+        {
+          "source_file": "11 Known Problem Analysis.pptx",
+          "source_type": "pptx",
+          "locator": "slide:3:image:7",
+          "asset_rel_path": "assets/visuals/11-known-problem-analysis/slide-03-image8.png"
+        },
+        {
+          "source_file": "11 Known Problem Analysis.pptx",
+          "source_type": "pptx",
+          "locator": "slide:3:image:8",
+          "asset_rel_path": "assets/visuals/11-known-problem-analysis/slide-03-image9.png"
+        },
+        {
+          "source_file": "11 Known Problem Analysis.pptx",
+          "source_type": "pptx",
+          "locator": "slide:4:image:1",
+          "asset_rel_path": "assets/visuals/11-known-problem-analysis/slide-04-image11.png"
+        },
+        {
+          "source_file": "11 Known Problem Analysis.pptx",
+          "source_type": "pptx",
+          "locator": "slide:4:image:2",
+          "asset_rel_path": "assets/visuals/11-known-problem-analysis/slide-04-image13.png"
+        },
+        {
+          "source_file": "11 Known Problem Analysis.pptx",
+          "source_type": "pptx",
+          "locator": "slide:4:image:3",
+          "asset_rel_path": "assets/visuals/11-known-problem-analysis/slide-04-image15.png"
+        },
+        {
+          "source_file": "11 Known Problem Analysis.pptx",
+          "source_type": "pptx",
+          "locator": "slide:6:image:1",
+          "asset_rel_path": "assets/visuals/11-known-problem-analysis/slide-06-image17.png"
+        },
+        {
+          "source_file": "11 Known Problem Analysis.pptx",
+          "source_type": "pptx",
+          "locator": "slide:6:image:2",
+          "asset_rel_path": "assets/visuals/11-known-problem-analysis/slide-06-image18.png"
+        },
+        {
+          "source_file": "11 Known Problem Analysis.pptx",
+          "source_type": "pptx",
+          "locator": "slide:8:image:1",
+          "asset_rel_path": "assets/visuals/11-known-problem-analysis/slide-08-image19.jpeg"
+        },
+        {
+          "source_file": "11 Known Problem Analysis.pptx",
+          "source_type": "pptx",
+          "locator": "slide:8:image:2",
+          "asset_rel_path": "assets/visuals/11-known-problem-analysis/slide-08-image20.png"
+        }
+      ]
     },
     "06 URRA in Medical Devices.pptx": {
       "source_file": "06 URRA in Medical Devices.pptx",
@@ -293,7 +591,130 @@
       "archive_zip": "ENP 111 Use-related Risks.zip",
       "archive_entry": "ENP 111 Use-related Risks/06 URRA in Medical Devices.pptx",
       "asset_rel_path": "assets/source_files/ENP_111_Use_related_Risks/06 URRA in Medical Devices.pptx",
-      "unit_count": 477
+      "unit_count": 477,
+      "visual_count": 20,
+      "visuals": [
+        {
+          "source_file": "06 URRA in Medical Devices.pptx",
+          "source_type": "pptx",
+          "locator": "slide:1:image:1",
+          "asset_rel_path": "assets/visuals/06-urra-in-medical-devices/slide-01-image1.png"
+        },
+        {
+          "source_file": "06 URRA in Medical Devices.pptx",
+          "source_type": "pptx",
+          "locator": "slide:2:image:1",
+          "asset_rel_path": "assets/visuals/06-urra-in-medical-devices/slide-02-image2.png"
+        },
+        {
+          "source_file": "06 URRA in Medical Devices.pptx",
+          "source_type": "pptx",
+          "locator": "slide:2:image:2",
+          "asset_rel_path": "assets/visuals/06-urra-in-medical-devices/slide-02-image3.jpeg"
+        },
+        {
+          "source_file": "06 URRA in Medical Devices.pptx",
+          "source_type": "pptx",
+          "locator": "slide:2:image:3",
+          "asset_rel_path": "assets/visuals/06-urra-in-medical-devices/slide-02-image4.jpeg"
+        },
+        {
+          "source_file": "06 URRA in Medical Devices.pptx",
+          "source_type": "pptx",
+          "locator": "slide:2:image:4",
+          "asset_rel_path": "assets/visuals/06-urra-in-medical-devices/slide-02-image5.png"
+        },
+        {
+          "source_file": "06 URRA in Medical Devices.pptx",
+          "source_type": "pptx",
+          "locator": "slide:2:image:5",
+          "asset_rel_path": "assets/visuals/06-urra-in-medical-devices/slide-02-image6.png"
+        },
+        {
+          "source_file": "06 URRA in Medical Devices.pptx",
+          "source_type": "pptx",
+          "locator": "slide:2:image:6",
+          "asset_rel_path": "assets/visuals/06-urra-in-medical-devices/slide-02-image7.png"
+        },
+        {
+          "source_file": "06 URRA in Medical Devices.pptx",
+          "source_type": "pptx",
+          "locator": "slide:3:image:1",
+          "asset_rel_path": "assets/visuals/06-urra-in-medical-devices/slide-03-image8.png"
+        },
+        {
+          "source_file": "06 URRA in Medical Devices.pptx",
+          "source_type": "pptx",
+          "locator": "slide:4:image:1",
+          "asset_rel_path": "assets/visuals/06-urra-in-medical-devices/slide-04-image9.png"
+        },
+        {
+          "source_file": "06 URRA in Medical Devices.pptx",
+          "source_type": "pptx",
+          "locator": "slide:4:image:2",
+          "asset_rel_path": "assets/visuals/06-urra-in-medical-devices/slide-04-image11.png"
+        },
+        {
+          "source_file": "06 URRA in Medical Devices.pptx",
+          "source_type": "pptx",
+          "locator": "slide:4:image:3",
+          "asset_rel_path": "assets/visuals/06-urra-in-medical-devices/slide-04-image13.png"
+        },
+        {
+          "source_file": "06 URRA in Medical Devices.pptx",
+          "source_type": "pptx",
+          "locator": "slide:4:image:4",
+          "asset_rel_path": "assets/visuals/06-urra-in-medical-devices/slide-04-image15.png"
+        },
+        {
+          "source_file": "06 URRA in Medical Devices.pptx",
+          "source_type": "pptx",
+          "locator": "slide:6:image:1",
+          "asset_rel_path": "assets/visuals/06-urra-in-medical-devices/slide-06-image17.jpeg"
+        },
+        {
+          "source_file": "06 URRA in Medical Devices.pptx",
+          "source_type": "pptx",
+          "locator": "slide:7:image:1",
+          "asset_rel_path": "assets/visuals/06-urra-in-medical-devices/slide-07-image18.png"
+        },
+        {
+          "source_file": "06 URRA in Medical Devices.pptx",
+          "source_type": "pptx",
+          "locator": "slide:7:image:2",
+          "asset_rel_path": "assets/visuals/06-urra-in-medical-devices/slide-07-image19.png"
+        },
+        {
+          "source_file": "06 URRA in Medical Devices.pptx",
+          "source_type": "pptx",
+          "locator": "slide:9:image:1",
+          "asset_rel_path": "assets/visuals/06-urra-in-medical-devices/slide-09-image30.png"
+        },
+        {
+          "source_file": "06 URRA in Medical Devices.pptx",
+          "source_type": "pptx",
+          "locator": "slide:18:image:1",
+          "asset_rel_path": "assets/visuals/06-urra-in-medical-devices/slide-18-image31.jpeg"
+        },
+        {
+          "source_file": "06 URRA in Medical Devices.pptx",
+          "source_type": "pptx",
+          "locator": "slide:19:image:1",
+          "asset_rel_path": "assets/visuals/06-urra-in-medical-devices/slide-19-image2.png"
+        },
+        {
+          "source_file": "06 URRA in Medical Devices.pptx",
+          "source_type": "pptx",
+          "locator": "slide:23:image:1",
+          "asset_rel_path": "assets/visuals/06-urra-in-medical-devices/slide-23-image32.png"
+        },
+        {
+          "source_file": "06 URRA in Medical Devices.pptx",
+          "source_type": "pptx",
+          "locator": "slide:24:image:1",
+          "asset_rel_path": "assets/visuals/06-urra-in-medical-devices/slide-24-image32.png"
+        }
+      ]
     },
     "Event Tree Supplemental.pptx": {
       "source_file": "Event Tree Supplemental.pptx",
@@ -302,7 +723,16 @@
       "archive_zip": "ENP 111 Use-related Risks.zip",
       "archive_entry": "ENP 111 Use-related Risks/Event Tree Supplemental.pptx",
       "asset_rel_path": "assets/source_files/ENP_111_Use_related_Risks/Event Tree Supplemental.pptx",
-      "unit_count": 69
+      "unit_count": 69,
+      "visual_count": 1,
+      "visuals": [
+        {
+          "source_file": "Event Tree Supplemental.pptx",
+          "source_type": "pptx",
+          "locator": "slide:1:image:1",
+          "asset_rel_path": "assets/visuals/event-tree-supplemental/slide-01-image1.png"
+        }
+      ]
     },
     "10 URRA EpiPen.xlsx": {
       "source_file": "10 URRA EpiPen.xlsx",
@@ -311,7 +741,9 @@
       "archive_zip": "ENP 111 Use-related Risks.zip",
       "archive_entry": "ENP 111 Use-related Risks/10 URRA EpiPen.xlsx",
       "asset_rel_path": "assets/source_files/ENP_111_Use_related_Risks/10 URRA EpiPen.xlsx",
-      "unit_count": 168
+      "unit_count": 168,
+      "visual_count": 0,
+      "visuals": []
     },
     "02 Intro to Human Error (1).pptx": {
       "source_file": "02 Intro to Human Error (1).pptx",
@@ -320,7 +752,82 @@
       "archive_zip": "ENP 111 Use-related Risks.zip",
       "archive_entry": "ENP 111 Use-related Risks/02 Intro to Human Error (1).pptx",
       "asset_rel_path": "assets/source_files/ENP_111_Use_related_Risks/02 Intro to Human Error (1).pptx",
-      "unit_count": 234
+      "unit_count": 234,
+      "visual_count": 12,
+      "visuals": [
+        {
+          "source_file": "02 Intro to Human Error (1).pptx",
+          "source_type": "pptx",
+          "locator": "slide:1:image:1",
+          "asset_rel_path": "assets/visuals/02-intro-to-human-error-1/slide-01-image1.png"
+        },
+        {
+          "source_file": "02 Intro to Human Error (1).pptx",
+          "source_type": "pptx",
+          "locator": "slide:11:image:1",
+          "asset_rel_path": "assets/visuals/02-intro-to-human-error-1/slide-11-image2.jpg"
+        },
+        {
+          "source_file": "02 Intro to Human Error (1).pptx",
+          "source_type": "pptx",
+          "locator": "slide:11:image:2",
+          "asset_rel_path": "assets/visuals/02-intro-to-human-error-1/slide-11-image3.png"
+        },
+        {
+          "source_file": "02 Intro to Human Error (1).pptx",
+          "source_type": "pptx",
+          "locator": "slide:16:image:1",
+          "asset_rel_path": "assets/visuals/02-intro-to-human-error-1/slide-16-image4.png"
+        },
+        {
+          "source_file": "02 Intro to Human Error (1).pptx",
+          "source_type": "pptx",
+          "locator": "slide:17:image:1",
+          "asset_rel_path": "assets/visuals/02-intro-to-human-error-1/slide-17-image5.jpeg"
+        },
+        {
+          "source_file": "02 Intro to Human Error (1).pptx",
+          "source_type": "pptx",
+          "locator": "slide:18:image:1",
+          "asset_rel_path": "assets/visuals/02-intro-to-human-error-1/slide-18-image6.png"
+        },
+        {
+          "source_file": "02 Intro to Human Error (1).pptx",
+          "source_type": "pptx",
+          "locator": "slide:19:image:1",
+          "asset_rel_path": "assets/visuals/02-intro-to-human-error-1/slide-19-image7.png"
+        },
+        {
+          "source_file": "02 Intro to Human Error (1).pptx",
+          "source_type": "pptx",
+          "locator": "slide:19:image:2",
+          "asset_rel_path": "assets/visuals/02-intro-to-human-error-1/slide-19-image8.png"
+        },
+        {
+          "source_file": "02 Intro to Human Error (1).pptx",
+          "source_type": "pptx",
+          "locator": "slide:20:image:1",
+          "asset_rel_path": "assets/visuals/02-intro-to-human-error-1/slide-20-image7.png"
+        },
+        {
+          "source_file": "02 Intro to Human Error (1).pptx",
+          "source_type": "pptx",
+          "locator": "slide:20:image:2",
+          "asset_rel_path": "assets/visuals/02-intro-to-human-error-1/slide-20-image8.png"
+        },
+        {
+          "source_file": "02 Intro to Human Error (1).pptx",
+          "source_type": "pptx",
+          "locator": "slide:25:image:1",
+          "asset_rel_path": "assets/visuals/02-intro-to-human-error-1/slide-25-image9.png"
+        },
+        {
+          "source_file": "02 Intro to Human Error (1).pptx",
+          "source_type": "pptx",
+          "locator": "slide:26:image:1",
+          "asset_rel_path": "assets/visuals/02-intro-to-human-error-1/slide-26-image10.png"
+        }
+      ]
     },
     "07 Use Errors.pptx": {
       "source_file": "07 Use Errors.pptx",
@@ -329,7 +836,70 @@
       "archive_zip": "ENP 111 Use-related Risks.zip",
       "archive_entry": "ENP 111 Use-related Risks/07 Use Errors.pptx",
       "asset_rel_path": "assets/source_files/ENP_111_Use_related_Risks/07 Use Errors.pptx",
-      "unit_count": 156
+      "unit_count": 156,
+      "visual_count": 10,
+      "visuals": [
+        {
+          "source_file": "07 Use Errors.pptx",
+          "source_type": "pptx",
+          "locator": "slide:1:image:1",
+          "asset_rel_path": "assets/visuals/07-use-errors/slide-01-image1.png"
+        },
+        {
+          "source_file": "07 Use Errors.pptx",
+          "source_type": "pptx",
+          "locator": "slide:4:image:1",
+          "asset_rel_path": "assets/visuals/07-use-errors/slide-04-image2.jpeg"
+        },
+        {
+          "source_file": "07 Use Errors.pptx",
+          "source_type": "pptx",
+          "locator": "slide:5:image:1",
+          "asset_rel_path": "assets/visuals/07-use-errors/slide-05-image3.jpeg"
+        },
+        {
+          "source_file": "07 Use Errors.pptx",
+          "source_type": "pptx",
+          "locator": "slide:6:image:1",
+          "asset_rel_path": "assets/visuals/07-use-errors/slide-06-image4.jpeg"
+        },
+        {
+          "source_file": "07 Use Errors.pptx",
+          "source_type": "pptx",
+          "locator": "slide:9:image:1",
+          "asset_rel_path": "assets/visuals/07-use-errors/slide-09-image2.jpeg"
+        },
+        {
+          "source_file": "07 Use Errors.pptx",
+          "source_type": "pptx",
+          "locator": "slide:10:image:1",
+          "asset_rel_path": "assets/visuals/07-use-errors/slide-10-image3.jpeg"
+        },
+        {
+          "source_file": "07 Use Errors.pptx",
+          "source_type": "pptx",
+          "locator": "slide:11:image:1",
+          "asset_rel_path": "assets/visuals/07-use-errors/slide-11-image4.jpeg"
+        },
+        {
+          "source_file": "07 Use Errors.pptx",
+          "source_type": "pptx",
+          "locator": "slide:13:image:1",
+          "asset_rel_path": "assets/visuals/07-use-errors/slide-13-image5.jpeg"
+        },
+        {
+          "source_file": "07 Use Errors.pptx",
+          "source_type": "pptx",
+          "locator": "slide:16:image:1",
+          "asset_rel_path": "assets/visuals/07-use-errors/slide-16-image6.png"
+        },
+        {
+          "source_file": "07 Use Errors.pptx",
+          "source_type": "pptx",
+          "locator": "slide:18:image:1",
+          "asset_rel_path": "assets/visuals/07-use-errors/slide-18-image7.jpeg"
+        }
+      ]
     },
     "05 Swiss Cheese Model.pdf": {
       "source_file": "05 Swiss Cheese Model.pdf",
@@ -338,7 +908,28 @@
       "archive_zip": "ENP 111 Use-related Risks.zip",
       "archive_entry": "ENP 111 Use-related Risks/05 Swiss Cheese Model.pdf",
       "asset_rel_path": "assets/source_files/ENP_111_Use_related_Risks/05 Swiss Cheese Model.pdf",
-      "unit_count": 145
+      "unit_count": 145,
+      "visual_count": 3,
+      "visuals": [
+        {
+          "source_file": "05 Swiss Cheese Model.pdf",
+          "source_type": "pdf",
+          "locator": "page:1:preview",
+          "asset_rel_path": "assets/visuals/05-swiss-cheese-model/page-01.png"
+        },
+        {
+          "source_file": "05 Swiss Cheese Model.pdf",
+          "source_type": "pdf",
+          "locator": "page:6:preview",
+          "asset_rel_path": "assets/visuals/05-swiss-cheese-model/page-06.png"
+        },
+        {
+          "source_file": "05 Swiss Cheese Model.pdf",
+          "source_type": "pdf",
+          "locator": "page:7:preview",
+          "asset_rel_path": "assets/visuals/05-swiss-cheese-model/page-07.png"
+        }
+      ]
     },
     "03 HE Frameworks (2).pptx": {
       "source_file": "03 HE Frameworks (2).pptx",
@@ -347,7 +938,22 @@
       "archive_zip": "ENP 111 Use-related Risks.zip",
       "archive_entry": "ENP 111 Use-related Risks/03 HE Frameworks (2).pptx",
       "asset_rel_path": "assets/source_files/ENP_111_Use_related_Risks/03 HE Frameworks (2).pptx",
-      "unit_count": 209
+      "unit_count": 209,
+      "visual_count": 2,
+      "visuals": [
+        {
+          "source_file": "03 HE Frameworks (2).pptx",
+          "source_type": "pptx",
+          "locator": "slide:1:image:1",
+          "asset_rel_path": "assets/visuals/03-he-frameworks-2/slide-01-image1.png"
+        },
+        {
+          "source_file": "03 HE Frameworks (2).pptx",
+          "source_type": "pptx",
+          "locator": "slide:14:image:1",
+          "asset_rel_path": "assets/visuals/03-he-frameworks-2/slide-14-image2.png"
+        }
+      ]
     },
     "Sp26_Fatigue+Sleep_20260211.pdf": {
       "source_file": "Sp26_Fatigue+Sleep_20260211.pdf",
@@ -356,7 +962,28 @@
       "archive_zip": "Lectures_Spring____6_export.zip",
       "archive_entry": "Lectures_Spring____6_export/Sp26_Fatigue+Sleep_20260211.pdf",
       "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Sp26_Fatigue+Sleep_20260211.pdf",
-      "unit_count": 481
+      "unit_count": 481,
+      "visual_count": 3,
+      "visuals": [
+        {
+          "source_file": "Sp26_Fatigue+Sleep_20260211.pdf",
+          "source_type": "pdf",
+          "locator": "page:1:preview",
+          "asset_rel_path": "assets/visuals/sp26-fatigue-sleep-20260211/page-01.png"
+        },
+        {
+          "source_file": "Sp26_Fatigue+Sleep_20260211.pdf",
+          "source_type": "pdf",
+          "locator": "page:4:preview",
+          "asset_rel_path": "assets/visuals/sp26-fatigue-sleep-20260211/page-04.png"
+        },
+        {
+          "source_file": "Sp26_Fatigue+Sleep_20260211.pdf",
+          "source_type": "pdf",
+          "locator": "page:5:preview",
+          "asset_rel_path": "assets/visuals/sp26-fatigue-sleep-20260211/page-05.png"
+        }
+      ]
     },
     "Sp26_StressDecisionMaking_20260225.pdf": {
       "source_file": "Sp26_StressDecisionMaking_20260225.pdf",
@@ -365,7 +992,28 @@
       "archive_zip": "Lectures_Spring____6_export.zip",
       "archive_entry": "Lectures_Spring____6_export/Sp26_StressDecisionMaking_20260225.pdf",
       "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Sp26_StressDecisionMaking_20260225.pdf",
-      "unit_count": 342
+      "unit_count": 342,
+      "visual_count": 3,
+      "visuals": [
+        {
+          "source_file": "Sp26_StressDecisionMaking_20260225.pdf",
+          "source_type": "pdf",
+          "locator": "page:1:preview",
+          "asset_rel_path": "assets/visuals/sp26-stressdecisionmaking-20260225/page-01.png"
+        },
+        {
+          "source_file": "Sp26_StressDecisionMaking_20260225.pdf",
+          "source_type": "pdf",
+          "locator": "page:3:preview",
+          "asset_rel_path": "assets/visuals/sp26-stressdecisionmaking-20260225/page-03.png"
+        },
+        {
+          "source_file": "Sp26_StressDecisionMaking_20260225.pdf",
+          "source_type": "pdf",
+          "locator": "page:4:preview",
+          "asset_rel_path": "assets/visuals/sp26-stressdecisionmaking-20260225/page-04.png"
+        }
+      ]
     },
     "Sp26_SituationAwareness_20260325.pdf": {
       "source_file": "Sp26_SituationAwareness_20260325.pdf",
@@ -374,7 +1022,28 @@
       "archive_zip": "Lectures_Spring____6_export.zip",
       "archive_entry": "Lectures_Spring____6_export/Sp26_SituationAwareness_20260325.pdf",
       "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Sp26_SituationAwareness_20260325.pdf",
-      "unit_count": 200
+      "unit_count": 200,
+      "visual_count": 3,
+      "visuals": [
+        {
+          "source_file": "Sp26_SituationAwareness_20260325.pdf",
+          "source_type": "pdf",
+          "locator": "page:1:preview",
+          "asset_rel_path": "assets/visuals/sp26-situationawareness-20260325/page-01.png"
+        },
+        {
+          "source_file": "Sp26_SituationAwareness_20260325.pdf",
+          "source_type": "pdf",
+          "locator": "page:3:preview",
+          "asset_rel_path": "assets/visuals/sp26-situationawareness-20260325/page-03.png"
+        },
+        {
+          "source_file": "Sp26_SituationAwareness_20260325.pdf",
+          "source_type": "pdf",
+          "locator": "page:4:preview",
+          "asset_rel_path": "assets/visuals/sp26-situationawareness-20260325/page-04.png"
+        }
+      ]
     },
     "Intro to Aviation and Automation 1-26-26-2.pdf": {
       "source_file": "Intro to Aviation and Automation 1-26-26-2.pdf",
@@ -383,7 +1052,28 @@
       "archive_zip": "Lectures_Spring____6_export.zip",
       "archive_entry": "Lectures_Spring____6_export/Intro to Aviation and Automation 1-26-26-2.pdf",
       "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Intro to Aviation and Automation 1-26-26-2.pdf",
-      "unit_count": 465
+      "unit_count": 465,
+      "visual_count": 3,
+      "visuals": [
+        {
+          "source_file": "Intro to Aviation and Automation 1-26-26-2.pdf",
+          "source_type": "pdf",
+          "locator": "page:1:preview",
+          "asset_rel_path": "assets/visuals/intro-to-aviation-and-automation-1-26-26-2/page-01.png"
+        },
+        {
+          "source_file": "Intro to Aviation and Automation 1-26-26-2.pdf",
+          "source_type": "pdf",
+          "locator": "page:2:preview",
+          "asset_rel_path": "assets/visuals/intro-to-aviation-and-automation-1-26-26-2/page-02.png"
+        },
+        {
+          "source_file": "Intro to Aviation and Automation 1-26-26-2.pdf",
+          "source_type": "pdf",
+          "locator": "page:3:preview",
+          "asset_rel_path": "assets/visuals/intro-to-aviation-and-automation-1-26-26-2/page-03.png"
+        }
+      ]
     },
     "CRM 1-28-2026.pdf": {
       "source_file": "CRM 1-28-2026.pdf",
@@ -392,7 +1082,28 @@
       "archive_zip": "Lectures_Spring____6_export.zip",
       "archive_entry": "Lectures_Spring____6_export/CRM 1-28-2026.pdf",
       "asset_rel_path": "assets/source_files/Lectures_Spring_2026/CRM 1-28-2026.pdf",
-      "unit_count": 307
+      "unit_count": 307,
+      "visual_count": 3,
+      "visuals": [
+        {
+          "source_file": "CRM 1-28-2026.pdf",
+          "source_type": "pdf",
+          "locator": "page:1:preview",
+          "asset_rel_path": "assets/visuals/crm-1-28-2026/page-01.png"
+        },
+        {
+          "source_file": "CRM 1-28-2026.pdf",
+          "source_type": "pdf",
+          "locator": "page:4:preview",
+          "asset_rel_path": "assets/visuals/crm-1-28-2026/page-04.png"
+        },
+        {
+          "source_file": "CRM 1-28-2026.pdf",
+          "source_type": "pdf",
+          "locator": "page:14:preview",
+          "asset_rel_path": "assets/visuals/crm-1-28-2026/page-14.png"
+        }
+      ]
     },
     "Sp26_F16-AnalysisPrompts_20260219.pdf": {
       "source_file": "Sp26_F16-AnalysisPrompts_20260219.pdf",
@@ -401,7 +1112,28 @@
       "archive_zip": "Lectures_Spring____6_export.zip",
       "archive_entry": "Lectures_Spring____6_export/Sp26_F16-AnalysisPrompts_20260219.pdf",
       "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Sp26_F16-AnalysisPrompts_20260219.pdf",
-      "unit_count": 241
+      "unit_count": 241,
+      "visual_count": 3,
+      "visuals": [
+        {
+          "source_file": "Sp26_F16-AnalysisPrompts_20260219.pdf",
+          "source_type": "pdf",
+          "locator": "page:1:preview",
+          "asset_rel_path": "assets/visuals/sp26-f16-analysisprompts-20260219/page-01.png"
+        },
+        {
+          "source_file": "Sp26_F16-AnalysisPrompts_20260219.pdf",
+          "source_type": "pdf",
+          "locator": "page:3:preview",
+          "asset_rel_path": "assets/visuals/sp26-f16-analysisprompts-20260219/page-03.png"
+        },
+        {
+          "source_file": "Sp26_F16-AnalysisPrompts_20260219.pdf",
+          "source_type": "pdf",
+          "locator": "page:4:preview",
+          "asset_rel_path": "assets/visuals/sp26-f16-analysisprompts-20260219/page-04.png"
+        }
+      ]
     },
     "Cardosi 2-2-2026.pdf": {
       "source_file": "Cardosi 2-2-2026.pdf",
@@ -410,7 +1142,28 @@
       "archive_zip": "Lectures_Spring____6_export.zip",
       "archive_entry": "Lectures_Spring____6_export/Cardosi 2-2-2026.pdf",
       "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Cardosi 2-2-2026.pdf",
-      "unit_count": 396
+      "unit_count": 396,
+      "visual_count": 3,
+      "visuals": [
+        {
+          "source_file": "Cardosi 2-2-2026.pdf",
+          "source_type": "pdf",
+          "locator": "page:1:preview",
+          "asset_rel_path": "assets/visuals/cardosi-2-2-2026/page-01.png"
+        },
+        {
+          "source_file": "Cardosi 2-2-2026.pdf",
+          "source_type": "pdf",
+          "locator": "page:2:preview",
+          "asset_rel_path": "assets/visuals/cardosi-2-2-2026/page-02.png"
+        },
+        {
+          "source_file": "Cardosi 2-2-2026.pdf",
+          "source_type": "pdf",
+          "locator": "page:3:preview",
+          "asset_rel_path": "assets/visuals/cardosi-2-2-2026/page-03.png"
+        }
+      ]
     },
     "Attention and Monitoring 2-9- 2026.pdf": {
       "source_file": "Attention and Monitoring 2-9- 2026.pdf",
@@ -419,7 +1172,28 @@
       "archive_zip": "Lectures_Spring____6_export.zip",
       "archive_entry": "Lectures_Spring____6_export/Attention and Monitoring 2-9- 2026.pdf",
       "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Attention and Monitoring 2-9- 2026.pdf",
-      "unit_count": 227
+      "unit_count": 227,
+      "visual_count": 3,
+      "visuals": [
+        {
+          "source_file": "Attention and Monitoring 2-9- 2026.pdf",
+          "source_type": "pdf",
+          "locator": "page:1:preview",
+          "asset_rel_path": "assets/visuals/attention-and-monitoring-2-9-2026/page-01.png"
+        },
+        {
+          "source_file": "Attention and Monitoring 2-9- 2026.pdf",
+          "source_type": "pdf",
+          "locator": "page:3:preview",
+          "asset_rel_path": "assets/visuals/attention-and-monitoring-2-9-2026/page-03.png"
+        },
+        {
+          "source_file": "Attention and Monitoring 2-9- 2026.pdf",
+          "source_type": "pdf",
+          "locator": "page:4:preview",
+          "asset_rel_path": "assets/visuals/attention-and-monitoring-2-9-2026/page-04.png"
+        }
+      ]
     },
     "Operational Risk 2-18-2026.pdf": {
       "source_file": "Operational Risk 2-18-2026.pdf",
@@ -428,7 +1202,28 @@
       "archive_zip": "Lectures_Spring____6_export.zip",
       "archive_entry": "Lectures_Spring____6_export/Operational Risk 2-18-2026.pdf",
       "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Operational Risk 2-18-2026.pdf",
-      "unit_count": 251
+      "unit_count": 251,
+      "visual_count": 3,
+      "visuals": [
+        {
+          "source_file": "Operational Risk 2-18-2026.pdf",
+          "source_type": "pdf",
+          "locator": "page:1:preview",
+          "asset_rel_path": "assets/visuals/operational-risk-2-18-2026/page-01.png"
+        },
+        {
+          "source_file": "Operational Risk 2-18-2026.pdf",
+          "source_type": "pdf",
+          "locator": "page:2:preview",
+          "asset_rel_path": "assets/visuals/operational-risk-2-18-2026/page-02.png"
+        },
+        {
+          "source_file": "Operational Risk 2-18-2026.pdf",
+          "source_type": "pdf",
+          "locator": "page:16:preview",
+          "asset_rel_path": "assets/visuals/operational-risk-2-18-2026/page-16.png"
+        }
+      ]
     },
     "Boeing 737Max and Ethics 2-23-26.pdf": {
       "source_file": "Boeing 737Max and Ethics 2-23-26.pdf",
@@ -437,7 +1232,28 @@
       "archive_zip": "Lectures_Spring____6_export.zip",
       "archive_entry": "Lectures_Spring____6_export/Boeing 737Max and Ethics 2-23-26.pdf",
       "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Boeing 737Max and Ethics 2-23-26.pdf",
-      "unit_count": 245
+      "unit_count": 245,
+      "visual_count": 3,
+      "visuals": [
+        {
+          "source_file": "Boeing 737Max and Ethics 2-23-26.pdf",
+          "source_type": "pdf",
+          "locator": "page:1:preview",
+          "asset_rel_path": "assets/visuals/boeing-737max-and-ethics-2-23-26/page-01.png"
+        },
+        {
+          "source_file": "Boeing 737Max and Ethics 2-23-26.pdf",
+          "source_type": "pdf",
+          "locator": "page:5:preview",
+          "asset_rel_path": "assets/visuals/boeing-737max-and-ethics-2-23-26/page-05.png"
+        },
+        {
+          "source_file": "Boeing 737Max and Ethics 2-23-26.pdf",
+          "source_type": "pdf",
+          "locator": "page:6:preview",
+          "asset_rel_path": "assets/visuals/boeing-737max-and-ethics-2-23-26/page-06.png"
+        }
+      ]
     },
     "Sp26_Investigative Process-NTSB_20260121.pdf": {
       "source_file": "Sp26_Investigative Process-NTSB_20260121.pdf",
@@ -446,7 +1262,28 @@
       "archive_zip": "Lectures_Spring____6_export.zip",
       "archive_entry": "Lectures_Spring____6_export/Sp26_Investigative Process-NTSB_20260121.pdf",
       "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Sp26_Investigative Process-NTSB_20260121.pdf",
-      "unit_count": 267
+      "unit_count": 267,
+      "visual_count": 3,
+      "visuals": [
+        {
+          "source_file": "Sp26_Investigative Process-NTSB_20260121.pdf",
+          "source_type": "pdf",
+          "locator": "page:1:preview",
+          "asset_rel_path": "assets/visuals/sp26-investigative-process-ntsb-20260121/page-01.png"
+        },
+        {
+          "source_file": "Sp26_Investigative Process-NTSB_20260121.pdf",
+          "source_type": "pdf",
+          "locator": "page:2:preview",
+          "asset_rel_path": "assets/visuals/sp26-investigative-process-ntsb-20260121/page-02.png"
+        },
+        {
+          "source_file": "Sp26_Investigative Process-NTSB_20260121.pdf",
+          "source_type": "pdf",
+          "locator": "page:3:preview",
+          "asset_rel_path": "assets/visuals/sp26-investigative-process-ntsb-20260121/page-03.png"
+        }
+      ]
     },
     "Sp26_SpDisorientation_20260330.pdf": {
       "source_file": "Sp26_SpDisorientation_20260330.pdf",
@@ -455,7 +1292,28 @@
       "archive_zip": "Lectures_Spring____6_export.zip",
       "archive_entry": "Lectures_Spring____6_export/Sp26_SpDisorientation_20260330.pdf",
       "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Sp26_SpDisorientation_20260330.pdf",
-      "unit_count": 281
+      "unit_count": 281,
+      "visual_count": 3,
+      "visuals": [
+        {
+          "source_file": "Sp26_SpDisorientation_20260330.pdf",
+          "source_type": "pdf",
+          "locator": "page:1:preview",
+          "asset_rel_path": "assets/visuals/sp26-spdisorientation-20260330/page-01.png"
+        },
+        {
+          "source_file": "Sp26_SpDisorientation_20260330.pdf",
+          "source_type": "pdf",
+          "locator": "page:2:preview",
+          "asset_rel_path": "assets/visuals/sp26-spdisorientation-20260330/page-02.png"
+        },
+        {
+          "source_file": "Sp26_SpDisorientation_20260330.pdf",
+          "source_type": "pdf",
+          "locator": "page:3:preview",
+          "asset_rel_path": "assets/visuals/sp26-spdisorientation-20260330/page-03.png"
+        }
+      ]
     },
     "Course intro 1-14-26.pdf": {
       "source_file": "Course intro 1-14-26.pdf",
@@ -464,7 +1322,28 @@
       "archive_zip": "Lectures_Spring____6_export.zip",
       "archive_entry": "Lectures_Spring____6_export/Course intro 1-14-26.pdf",
       "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Course intro 1-14-26.pdf",
-      "unit_count": 388
+      "unit_count": 388,
+      "visual_count": 3,
+      "visuals": [
+        {
+          "source_file": "Course intro 1-14-26.pdf",
+          "source_type": "pdf",
+          "locator": "page:1:preview",
+          "asset_rel_path": "assets/visuals/course-intro-1-14-26/page-01.png"
+        },
+        {
+          "source_file": "Course intro 1-14-26.pdf",
+          "source_type": "pdf",
+          "locator": "page:3:preview",
+          "asset_rel_path": "assets/visuals/course-intro-1-14-26/page-03.png"
+        },
+        {
+          "source_file": "Course intro 1-14-26.pdf",
+          "source_type": "pdf",
+          "locator": "page:7:preview",
+          "asset_rel_path": "assets/visuals/course-intro-1-14-26/page-07.png"
+        }
+      ]
     },
     "Sp26_DecisionMakingDistraction_20260302.pdf": {
       "source_file": "Sp26_DecisionMakingDistraction_20260302.pdf",
@@ -473,7 +1352,28 @@
       "archive_zip": "Lectures_Spring____6_export.zip",
       "archive_entry": "Lectures_Spring____6_export/Sp26_DecisionMakingDistraction_20260302.pdf",
       "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Sp26_DecisionMakingDistraction_20260302.pdf",
-      "unit_count": 263
+      "unit_count": 263,
+      "visual_count": 3,
+      "visuals": [
+        {
+          "source_file": "Sp26_DecisionMakingDistraction_20260302.pdf",
+          "source_type": "pdf",
+          "locator": "page:1:preview",
+          "asset_rel_path": "assets/visuals/sp26-decisionmakingdistraction-20260302/page-01.png"
+        },
+        {
+          "source_file": "Sp26_DecisionMakingDistraction_20260302.pdf",
+          "source_type": "pdf",
+          "locator": "page:2:preview",
+          "asset_rel_path": "assets/visuals/sp26-decisionmakingdistraction-20260302/page-02.png"
+        },
+        {
+          "source_file": "Sp26_DecisionMakingDistraction_20260302.pdf",
+          "source_type": "pdf",
+          "locator": "page:3:preview",
+          "asset_rel_path": "assets/visuals/sp26-decisionmakingdistraction-20260302/page-03.png"
+        }
+      ]
     },
     "Checklists and Procedures 3-23-26.pdf": {
       "source_file": "Checklists and Procedures 3-23-26.pdf",
@@ -482,7 +1382,28 @@
       "archive_zip": "Lectures_Spring____6_export.zip",
       "archive_entry": "Lectures_Spring____6_export/Checklists and Procedures 3-23-26.pdf",
       "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Checklists and Procedures 3-23-26.pdf",
-      "unit_count": 330
+      "unit_count": 330,
+      "visual_count": 3,
+      "visuals": [
+        {
+          "source_file": "Checklists and Procedures 3-23-26.pdf",
+          "source_type": "pdf",
+          "locator": "page:1:preview",
+          "asset_rel_path": "assets/visuals/checklists-and-procedures-3-23-26/page-01.png"
+        },
+        {
+          "source_file": "Checklists and Procedures 3-23-26.pdf",
+          "source_type": "pdf",
+          "locator": "page:2:preview",
+          "asset_rel_path": "assets/visuals/checklists-and-procedures-3-23-26/page-02.png"
+        },
+        {
+          "source_file": "Checklists and Procedures 3-23-26.pdf",
+          "source_type": "pdf",
+          "locator": "page:15:preview",
+          "asset_rel_path": "assets/visuals/checklists-and-procedures-3-23-26/page-15.png"
+        }
+      ]
     },
     "Displays and Alerts 2-4-26.pdf": {
       "source_file": "Displays and Alerts 2-4-26.pdf",
@@ -491,7 +1412,28 @@
       "archive_zip": "Lectures_Spring____6_export.zip",
       "archive_entry": "Lectures_Spring____6_export/Displays and Alerts 2-4-26.pdf",
       "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Displays and Alerts 2-4-26.pdf",
-      "unit_count": 619
+      "unit_count": 619,
+      "visual_count": 3,
+      "visuals": [
+        {
+          "source_file": "Displays and Alerts 2-4-26.pdf",
+          "source_type": "pdf",
+          "locator": "page:1:preview",
+          "asset_rel_path": "assets/visuals/displays-and-alerts-2-4-26/page-01.png"
+        },
+        {
+          "source_file": "Displays and Alerts 2-4-26.pdf",
+          "source_type": "pdf",
+          "locator": "page:9:preview",
+          "asset_rel_path": "assets/visuals/displays-and-alerts-2-4-26/page-09.png"
+        },
+        {
+          "source_file": "Displays and Alerts 2-4-26.pdf",
+          "source_type": "pdf",
+          "locator": "page:21:preview",
+          "asset_rel_path": "assets/visuals/displays-and-alerts-2-4-26/page-21.png"
+        }
+      ]
     },
     "Automated Vehicles 3-11-26-2.pdf": {
       "source_file": "Automated Vehicles 3-11-26-2.pdf",
@@ -500,7 +1442,28 @@
       "archive_zip": "Lectures_Spring____6_export.zip",
       "archive_entry": "Lectures_Spring____6_export/Automated Vehicles 3-11-26-2.pdf",
       "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Automated Vehicles 3-11-26-2.pdf",
-      "unit_count": 374
+      "unit_count": 374,
+      "visual_count": 3,
+      "visuals": [
+        {
+          "source_file": "Automated Vehicles 3-11-26-2.pdf",
+          "source_type": "pdf",
+          "locator": "page:1:preview",
+          "asset_rel_path": "assets/visuals/automated-vehicles-3-11-26-2/page-01.png"
+        },
+        {
+          "source_file": "Automated Vehicles 3-11-26-2.pdf",
+          "source_type": "pdf",
+          "locator": "page:2:preview",
+          "asset_rel_path": "assets/visuals/automated-vehicles-3-11-26-2/page-02.png"
+        },
+        {
+          "source_file": "Automated Vehicles 3-11-26-2.pdf",
+          "source_type": "pdf",
+          "locator": "page:8:preview",
+          "asset_rel_path": "assets/visuals/automated-vehicles-3-11-26-2/page-08.png"
+        }
+      ]
     },
     "Sp26_ErrorAnalysisMethods_20260121.pdf": {
       "source_file": "Sp26_ErrorAnalysisMethods_20260121.pdf",
@@ -509,7 +1472,28 @@
       "archive_zip": "Lectures_Spring____6_export.zip",
       "archive_entry": "Lectures_Spring____6_export/Sp26_ErrorAnalysisMethods_20260121.pdf",
       "asset_rel_path": "assets/source_files/Lectures_Spring_2026/Sp26_ErrorAnalysisMethods_20260121.pdf",
-      "unit_count": 317
+      "unit_count": 317,
+      "visual_count": 3,
+      "visuals": [
+        {
+          "source_file": "Sp26_ErrorAnalysisMethods_20260121.pdf",
+          "source_type": "pdf",
+          "locator": "page:1:preview",
+          "asset_rel_path": "assets/visuals/sp26-erroranalysismethods-20260121/page-01.png"
+        },
+        {
+          "source_file": "Sp26_ErrorAnalysisMethods_20260121.pdf",
+          "source_type": "pdf",
+          "locator": "page:2:preview",
+          "asset_rel_path": "assets/visuals/sp26-erroranalysismethods-20260121/page-02.png"
+        },
+        {
+          "source_file": "Sp26_ErrorAnalysisMethods_20260121.pdf",
+          "source_type": "pdf",
+          "locator": "page:4:preview",
+          "asset_rel_path": "assets/visuals/sp26-erroranalysismethods-20260121/page-04.png"
+        }
+      ]
     }
   }
 }

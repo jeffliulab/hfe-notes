@@ -2,34 +2,64 @@
 
 本页围绕疲劳、生理节律与睡眠不足对表现的影响，整理人因工程里对生理约束的理解。
 
-## 本页定位
+## 一眼看懂
+
+疲劳与睡眠这一页想说明：疲劳不是“有点累”的主观感受，而是会系统性影响反应速度、工作记忆、判断、监控和恢复能力的生理约束。
+
+## 这页最重要的主线
+
+- 睡眠不足会让人表现得像“还能工作”，但很多关键认知功能已经下降。
+- 生理节律会改变不同时间段的风险水平，所以同样任务在不同班次上并不等价。
+- 疲劳管理不能只靠个体意志，因为排班、任务长度、夜班节律和组织要求本身就在制造疲劳。
+
+## 为什么这页对 HFE 很关键
+
+人因工程如果只讲界面和流程，却不讲疲劳，就会默认人总能稳定发挥。课程其实是在提醒你：
+
+- 再好的程序也要经过疲劳中的人来执行
+- 再好的告警也要经过困倦中的人来察觉
+- 再好的培训也会被持续睡眠不足削弱
+
+## 难点讲解
+
+很多人会把 fatigue management 理解成“提醒大家多休息”。这太弱了。更成熟的做法是把疲劳看作系统设计变量，例如：
+
+- 排班与轮班策略
+- 关键任务的时段安排
+- 交接设计
+- 高风险时段的辅助检查和双重确认
+
+## 图示与页面预览
+
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-fatigue-sleep-20260211/page-01.png" alt="Sp26_Fatigue+Sleep_20260211.pdf · 第 1 页预览" loading="lazy">
+    <figcaption>Sp26_Fatigue+Sleep_20260211.pdf · 第 1 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-fatigue-sleep-20260211/page-04.png" alt="Sp26_Fatigue+Sleep_20260211.pdf · 第 4 页预览" loading="lazy">
+    <figcaption>Sp26_Fatigue+Sleep_20260211.pdf · 第 4 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-fatigue-sleep-20260211/page-05.png" alt="Sp26_Fatigue+Sleep_20260211.pdf · 第 5 页预览" loading="lazy">
+    <figcaption>Sp26_Fatigue+Sleep_20260211.pdf · 第 5 页预览</figcaption>
+  </figure>
+</div>
+
+## 资料范围与相关主题
+
+正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。
 
 - 所属分区: `人的表现`
 - 关联源文件数: 1
 - 文本单元数: 481
+- 配图/预览数: 3
 
-## 关注重点
-
-- 疲劳如何影响反应、判断与监控
-- 生理节律为什么会改变风险窗口
-- 管理疲劳不能只靠个人自律
-
-## 来源覆盖
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Sp26_Fatigue+Sleep_20260211.pdf` | `pdf` | 481 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_Fatigue+Sleep_20260211.pdf) |
-
-## 代表性原始语句
-
-- `1999 US DOT Operational Definition`
-- `Fatigue is a complex state characterized by a lack of alertness and reduced mental`
-- `and physical performance, often accompanied by drowsiness.`
-- `Fatigue may be caused or exacerbated by any or all of the following: lack of sleep,`
-- `disruptive work/ rest cycles, neurological conditions, excess mental or physical`
-- `workload, exposure to extreme physical conditions, emotional stress, the use of drugs`
-- `or alcohol, illness, and/or monotony.`
-- `Fatigue is MORE THAN`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Sp26_Fatigue+Sleep_20260211.pdf` | `pdf` | 481 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_Fatigue+Sleep_20260211.pdf) |
 
 ## 相关主题
 
@@ -38,6 +68,8 @@
 - [Operational Risk](../HFE_Cases_Ethics/operational_risk.md)
 
 ## 原文转写与来源映射
+
+下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 `unit_id` 都能在 `data/coverage_map.json` 中找到对应页面映射。
 
 ??? info "Sp26_Fatigue+Sleep_20260211.pdf | 481 text units"
     下载原件: [Sp26_Fatigue+Sleep_20260211.pdf](../assets/source_files/Lectures_Spring_2026/Sp26_Fatigue+Sleep_20260211.pdf)

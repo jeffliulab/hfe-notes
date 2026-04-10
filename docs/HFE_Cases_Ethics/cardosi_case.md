@@ -2,34 +2,59 @@
 
 本页围绕 Cardosi 材料提炼具体案例中的显示、程序、沟通与情境理解问题，作为把方法落到案例的中间层。
 
-## 本页定位
+## 一眼看懂
+
+Cardosi 案例这一页的价值，在于把抽象原则重新拉回一个具体事件里。你会看到显示、沟通、程序、注意和情境理解不是分开的主题，而是在真实案例里同时起作用。
+
+## 读案例时要抓什么
+
+- 事件里哪些信息本来应该支持正确判断
+- 哪些界面或程序因素让判断变难
+- 团队沟通在关键时刻是补位了，还是失效了
+- 如果从 HFE 角度回看，这个系统本来可以在哪些地方更早拦住问题
+
+## 为什么案例页重要
+
+课程不是希望你把概念背下来，而是希望你能在案例里识别它们。Cardosi 这样的材料正好训练一种能力：
+
+- 看到局部现象时，能联想到背后的 HFE 结构
+- 看到事故经过时，能把 attention、display、procedure、CRM 串成解释链
+
+## 难点讲解
+
+很多人做案例分析时会掉进“事后看一切都很明显”的陷阱。更成熟的读法是尽量回到当事人在那个时刻能看到什么、理解什么、误判什么，然后再讨论系统还能如何设计得更好。
+
+## 图示与页面预览
+
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/cardosi-2-2-2026/page-01.png" alt="Cardosi 2-2-2026.pdf · 第 1 页预览" loading="lazy">
+    <figcaption>Cardosi 2-2-2026.pdf · 第 1 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/cardosi-2-2-2026/page-02.png" alt="Cardosi 2-2-2026.pdf · 第 2 页预览" loading="lazy">
+    <figcaption>Cardosi 2-2-2026.pdf · 第 2 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/cardosi-2-2-2026/page-03.png" alt="Cardosi 2-2-2026.pdf · 第 3 页预览" loading="lazy">
+    <figcaption>Cardosi 2-2-2026.pdf · 第 3 页预览</figcaption>
+  </figure>
+</div>
+
+## 资料范围与相关主题
+
+正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。
 
 - 所属分区: `案例与伦理`
 - 关联源文件数: 1
 - 文本单元数: 396
+- 配图/预览数: 3
 
-## 关注重点
-
-- 案例中哪些设计与流程因素最关键
-- 如何从具体事件回看 HFE 原则
-- 案例分析如何反哺一般方法
-
-## 来源覆盖
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Cardosi 2-2-2026.pdf` | `pdf` | 396 | [open](../assets/source_files/Lectures_Spring_2026/Cardosi 2-2-2026.pdf) |
-
-## 代表性原始语句
-
-- `Kim Cardosi, Ph.D.`
-- `Kim.cardosi@dot.gov`
-- `Human Factors in Aviation`
-- `An introduction to Air Traffic Control (ATC)`
-- `-Primer on airspace and communications`
-- `Discussion of what human factors ‘brings to the`
-- `Examples of human factors issues seen in`
-- `accidents/incidents`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Cardosi 2-2-2026.pdf` | `pdf` | 396 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Cardosi 2-2-2026.pdf) |
 
 ## 相关主题
 
@@ -38,6 +63,8 @@
 - [情境意识](../HFE_Human_Performance/situation_awareness.md)
 
 ## 原文转写与来源映射
+
+下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 `unit_id` 都能在 `data/coverage_map.json` 中找到对应页面映射。
 
 ??? info "Cardosi 2-2-2026.pdf | 396 text units"
     下载原件: [Cardosi 2-2-2026.pdf](../assets/source_files/Lectures_Spring_2026/Cardosi 2-2-2026.pdf)

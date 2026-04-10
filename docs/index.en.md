@@ -6,7 +6,7 @@ hide:
 
 # HFE Course Notes
 
-This bilingual MkDocs site organizes human factors engineering and use-related risk materials by concept rather than by raw archive. Each page offers a structured synthesis first, then preserves full English source transcription in collapsible blocks so every extracted line remains traceable.
+This bilingual MkDocs site organizes human factors engineering and use-related risk materials by concept rather than raw archive. Each page now teaches the concept first, shows extracted visuals or page previews next, and preserves the full English source transcription afterward.
 
 ---
 
@@ -66,4 +66,5 @@ This bilingual MkDocs site organizes human factors engineering and use-related r
 
 - Source corpus: `10 PPTX + 19 PDF + 1 XLSX = 30` files
 - Organization: concept-first knowledge pages rather than flat archive listings
+- Page flow: explanation first, visuals/previews second, full source traceability last
 - Completeness: every text unit is written to `data/source_units.jsonl` and mapped one-to-one in `data/coverage_map.json`

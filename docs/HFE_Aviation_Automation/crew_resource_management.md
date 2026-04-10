@@ -2,34 +2,64 @@
 
 本页整理 CRM 的沟通、协调、领导、监控与资源整合逻辑，把人因工程从个人表现扩展到团队表现。
 
-## 本页定位
+## 一眼看懂
+
+CRM 不是“大家相处好一点”的软技能课，而是一套把团队资源真正转化成安全防线的工作方法。它要解决的是：在高负荷和高风险环境里，团队怎样沟通、分工、纠错和相互补位。
+
+## 这页最重要的主线
+
+- CRM 把安全从“个人技术是否足够好”扩展到“团队是否会一起工作”。
+- 它强调的不只是 communication，还包括 leadership、followership、assertiveness、briefing、debriefing、workload management 和 situational awareness。
+- 团队里最危险的情况，往往不是没人发现问题，而是有人看见了却没有说出来，或说出来后没有被团队吸收。
+
+## 课件里真正强调的点
+
+从 Tenerife、Eastern 401、United 173 这类事故到后来的 CRM 训练，课程想强调的是：
+
+- authority gradient 过陡时，副驾驶和工程师即使看见问题，也可能不敢有效挑战
+- 一线成员如果不共享 mental model，就会出现“同一架飞机上每个人理解的局面不一样”
+- 团队监控和交叉检查，本质上是在用多人系统抵消单个人的注意和判断局限
+
+## 难点讲解
+
+CRM 容易被误解成“出了问题时大家多说几句”。但好的 CRM 其实发生在问题出现之前：
+
+- brief 把预期状态先对齐
+- workload management 防止关键时刻所有人盯同一件事
+- inquiry 和 advocacy 让质疑成为团队规范
+- debrief 让经验被沉淀成下一次更好的协作
+
+## 图示与页面预览
+
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/crm-1-28-2026/page-01.png" alt="CRM 1-28-2026.pdf · 第 1 页预览" loading="lazy">
+    <figcaption>CRM 1-28-2026.pdf · 第 1 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/crm-1-28-2026/page-04.png" alt="CRM 1-28-2026.pdf · 第 4 页预览" loading="lazy">
+    <figcaption>CRM 1-28-2026.pdf · 第 4 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/crm-1-28-2026/page-14.png" alt="CRM 1-28-2026.pdf · 第 14 页预览" loading="lazy">
+    <figcaption>CRM 1-28-2026.pdf · 第 14 页预览</figcaption>
+  </figure>
+</div>
+
+## 资料范围与相关主题
+
+正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。
 
 - 所属分区: `航空与自动化`
 - 关联源文件数: 1
 - 文本单元数: 307
+- 配图/预览数: 3
 
-## 关注重点
-
-- CRM 为什么是团队层面的人因能力
-- 沟通与授权如何影响安全裕度
-- 团队监控如何补偿个体局限
-
-## 来源覆盖
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `CRM 1-28-2026.pdf` | `pdf` | 307 | [open](../assets/source_files/Lectures_Spring_2026/CRM 1-28-2026.pdf) |
-
-## 代表性原始语句
-
-- `By Alex Pereslavtsev - http://www.airliners.net/photo/Transaero-Airlines/Boeing-777-212-ER/1984464/L/, GFDL 1.2, https://commons.wikimedia.org/w/index.php?curid=16594678`
-- `• ICAO SHELL Model [framework]`
-- `• Accidents in the 1970s`
-- `• Components of CRM [mitigation]`
-- `• Training clusters`
-- `• Behavioral markers`
-- `• Evolution of CRM`
-- `INTERNATIONAL CIVIL AVIATION ORGANIZATION`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `CRM 1-28-2026.pdf` | `pdf` | 307 | 3 | [open](../assets/source_files/Lectures_Spring_2026/CRM 1-28-2026.pdf) |
 
 ## 相关主题
 
@@ -38,6 +68,8 @@
 - [情境意识](../HFE_Human_Performance/situation_awareness.md)
 
 ## 原文转写与来源映射
+
+下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 `unit_id` 都能在 `data/coverage_map.json` 中找到对应页面映射。
 
 ??? info "CRM 1-28-2026.pdf | 307 text units"
     下载原件: [CRM 1-28-2026.pdf](../assets/source_files/Lectures_Spring_2026/CRM 1-28-2026.pdf)

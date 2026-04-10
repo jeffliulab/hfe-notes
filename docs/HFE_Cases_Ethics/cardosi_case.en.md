@@ -2,34 +2,56 @@
 
 This page distills the Cardosi material into a concrete case where displays, procedures, communication, and situation understanding interact.
 
-## Page Intent
+## At a Glance
+
+The Cardosi case matters because it turns abstract principles back into a concrete event where displays, communication, procedure, attention, and understanding interact at once.
+
+## What To Look For
+
+- what information should have supported correct judgment
+- what interface or procedural features made judgment harder
+- whether team communication corrected or amplified the problem
+- where the system could have intercepted the issue earlier
+
+## Why Case Pages Matter
+
+The goal is not memorizing concepts but recognizing them inside an event. A case trains the ability to translate visible details into human-factors structure.
+
+## Common Difficulty
+
+Hindsight makes everything look obvious. Better analysis tries to reconstruct what was visible, interpretable, and misleading to the people in the moment.
+
+## Visuals and Page Previews
+
+This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/cardosi-2-2-2026/page-01.png" alt="Cardosi 2-2-2026.pdf · page 1 preview" loading="lazy">
+    <figcaption>Cardosi 2-2-2026.pdf · page 1 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/cardosi-2-2-2026/page-02.png" alt="Cardosi 2-2-2026.pdf · page 2 preview" loading="lazy">
+    <figcaption>Cardosi 2-2-2026.pdf · page 2 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/cardosi-2-2-2026/page-03.png" alt="Cardosi 2-2-2026.pdf · page 3 preview" loading="lazy">
+    <figcaption>Cardosi 2-2-2026.pdf · page 3 preview</figcaption>
+  </figure>
+</div>
+
+## Source Scope and Related Topics
+
+The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
 - Section: `Cases and Ethics`
 - Source files: 1
 - Text units: 396
+- Visuals/previews: 3
 
-## Key Angles
-
-- Which design and process factors matter most in the case
-- How to read HFE principles back into a concrete event
-- How case analysis feeds back into general methods
-
-## Source Coverage
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Cardosi 2-2-2026.pdf` | `pdf` | 396 | [open](../assets/source_files/Lectures_Spring_2026/Cardosi 2-2-2026.pdf) |
-
-## Representative Source Signals
-
-- `Kim Cardosi, Ph.D.`
-- `Kim.cardosi@dot.gov`
-- `Human Factors in Aviation`
-- `An introduction to Air Traffic Control (ATC)`
-- `-Primer on airspace and communications`
-- `Discussion of what human factors ‘brings to the`
-- `Examples of human factors issues seen in`
-- `accidents/incidents`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Cardosi 2-2-2026.pdf` | `pdf` | 396 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Cardosi 2-2-2026.pdf) |
 
 ## Related Topics
 
@@ -38,6 +60,8 @@ This page distills the Cardosi material into a concrete case where displays, pro
 - [Situation Awareness](../HFE_Human_Performance/situation_awareness.en.md)
 
 ## Original Transcription and Coverage Mapping
+
+The collapsible blocks below preserve page/slide-level source transcription. Each `unit_id` maps one-to-one in `data/coverage_map.json`.
 
 ??? info "Cardosi 2-2-2026.pdf | 396 text units"
     Download source: [Cardosi 2-2-2026.pdf](../assets/source_files/Lectures_Spring_2026/Cardosi 2-2-2026.pdf)

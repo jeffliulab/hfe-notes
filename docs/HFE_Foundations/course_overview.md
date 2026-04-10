@@ -2,34 +2,54 @@
 
 本页用课程导论材料建立整门课的范围、节奏与应用背景，帮助读者先看到人因工程在航空与复杂系统中的问题空间。
 
-## 本页定位
+## 一眼看懂
+
+这门课不是把“人会犯错”当成终点，而是把航空、医疗器械和自动化系统放在一起看：当任务、界面、组织、程序与环境互相作用时，系统为什么会变脆弱。
+
+## 课程主线
+
+1. 先用人因工程和 human error 框架建立共同语言。
+2. 再用调查、任务分析、URRA 等方法把“问题”写成可分析对象。
+3. 然后进入航空、自动化与医疗器械场景，看方法怎样落到真实工作流。
+4. 最后通过案例与伦理讨论，回到“组织怎样制造或放大风险”。
+
+## 学这页时最重要的事
+
+- 课程的基本单位不是“单个操作者”，而是“人在系统里的位置”。
+- 后面的所有方法页，本质上都在回答三个问题：任务是什么、哪里会失败、系统怎样把失败挡住或放大。
+- 如果你先抓住这条主线，后面读 Swiss Cheese、task analysis、URRA 时会更容易串起来。
+
+## 图示与页面预览
+
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/course-intro-1-14-26/page-01.png" alt="Course intro 1-14-26.pdf · 第 1 页预览" loading="lazy">
+    <figcaption>Course intro 1-14-26.pdf · 第 1 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/course-intro-1-14-26/page-03.png" alt="Course intro 1-14-26.pdf · 第 3 页预览" loading="lazy">
+    <figcaption>Course intro 1-14-26.pdf · 第 3 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/course-intro-1-14-26/page-07.png" alt="Course intro 1-14-26.pdf · 第 7 页预览" loading="lazy">
+    <figcaption>Course intro 1-14-26.pdf · 第 7 页预览</figcaption>
+  </figure>
+</div>
+
+## 资料范围与相关主题
+
+正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。
 
 - 所属分区: `HFE基础`
 - 关联源文件数: 1
 - 文本单元数: 388
+- 配图/预览数: 3
 
-## 关注重点
-
-- 课程要解决什么系统层问题
-- 为什么航空案例适合做人因分析入口
-- 后续主题如何从导论向方法与案例展开
-
-## 来源覆盖
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Course intro 1-14-26.pdf` | `pdf` | 388 | [open](../assets/source_files/Lectures_Spring_2026/Course intro 1-14-26.pdf) |
-
-## 代表性原始语句
-
-- `Engineering Forensics`
-- `Divya Chandra, Andy Liu, Parisa Arastu`
-- `• Generative AI discussion`
-- `• Websites, context, mitigations`
-- `Divya Chandra, Ph.D. {d.chandra@tufts.edu}`
-- `Andrew M. Liu, Ph.D. {aliu17@tufts.edu}`
-- `Teaching Assistant`
-- `Parisa Arastu, Arts & Sciences 26`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Course intro 1-14-26.pdf` | `pdf` | 388 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Course intro 1-14-26.pdf) |
 
 ## 相关主题
 
@@ -37,6 +57,8 @@
 - [错误分析与调查流程](../HFE_Risk_Methods/error_analysis_methods.md)
 
 ## 原文转写与来源映射
+
+下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 `unit_id` 都能在 `data/coverage_map.json` 中找到对应页面映射。
 
 ??? info "Course intro 1-14-26.pdf | 388 text units"
     下载原件: [Course intro 1-14-26.pdf](../assets/source_files/Lectures_Spring_2026/Course intro 1-14-26.pdf)

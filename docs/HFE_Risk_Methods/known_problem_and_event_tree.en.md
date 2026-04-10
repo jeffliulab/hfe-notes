@@ -2,35 +2,111 @@
 
 This page pairs known problem analysis with event-tree thinking to show how prior issues and event evolution enrich risk analysis.
 
-## Page Intent
+## At a Glance
+
+This page pairs two gap-finding methods. Known Problem Analysis looks backward to previously observed issues, while an Event Tree looks forward from an initiating event to possible downstream outcomes.
+
+## What Each Method Adds
+
+- Known Problem Analysis surfaces recurring, historical, or already-recognized issues that may be missing from current risk files.
+- Event Trees expand what happens after an initiating event and test whether barriers actually interrupt the sequence.
+
+## Why It Matters
+
+Main workflow analysis often misses low-frequency, high-consequence paths. These methods force the team to examine the edges of the system rather than only the expected path.
+
+## Visuals and Page Previews
+
+This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-01-image1.png" alt="11 Known Problem Analysis.pptx · slide 1" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · slide 1</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-02-image2.png" alt="11 Known Problem Analysis.pptx · slide 2" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · slide 2</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-03-image3.jpeg" alt="11 Known Problem Analysis.pptx · slide 3" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · slide 3</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-03-image4.jpeg" alt="11 Known Problem Analysis.pptx · slide 3" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · slide 3</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-03-image2.png" alt="11 Known Problem Analysis.pptx · slide 3" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · slide 3</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-03-image5.jpeg" alt="11 Known Problem Analysis.pptx · slide 3" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · slide 3</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-03-image6.jpeg" alt="11 Known Problem Analysis.pptx · slide 3" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · slide 3</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-03-image7.png" alt="11 Known Problem Analysis.pptx · slide 3" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · slide 3</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-03-image8.png" alt="11 Known Problem Analysis.pptx · slide 3" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · slide 3</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-03-image9.png" alt="11 Known Problem Analysis.pptx · slide 3" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · slide 3</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-04-image11.png" alt="11 Known Problem Analysis.pptx · slide 4" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · slide 4</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-04-image13.png" alt="11 Known Problem Analysis.pptx · slide 4" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · slide 4</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-04-image15.png" alt="11 Known Problem Analysis.pptx · slide 4" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · slide 4</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-06-image17.png" alt="11 Known Problem Analysis.pptx · slide 6" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · slide 6</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-06-image18.png" alt="11 Known Problem Analysis.pptx · slide 6" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · slide 6</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-08-image19.jpeg" alt="11 Known Problem Analysis.pptx · slide 8" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · slide 8</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-08-image20.png" alt="11 Known Problem Analysis.pptx · slide 8" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · slide 8</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/event-tree-supplemental/slide-01-image1.png" alt="Event Tree Supplemental.pptx · slide 1" loading="lazy">
+    <figcaption>Event Tree Supplemental.pptx · slide 1</figcaption>
+  </figure>
+</div>
+
+## Source Scope and Related Topics
+
+The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
 - Section: `Risk Methods`
 - Source files: 2
 - Text units: 112
+- Visuals/previews: 18
 
-## Key Angles
-
-- Why known problems deserve explicit modeling
-- How event trees expand downstream consequences
-- How supplemental analysis catches missed risks
-
-## Source Coverage
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `11 Known Problem Analysis.pptx` | `pptx` | 43 | [open](../assets/source_files/ENP_111_Use_related_Risks/11 Known Problem Analysis.pptx) |
-| `Event Tree Supplemental.pptx` | `pptx` | 69 | [open](../assets/source_files/ENP_111_Use_related_Risks/Event Tree Supplemental.pptx) |
-
-## Representative Source Signals
-
-- `Erin Davis, MS, CHFP`
-- `Known Problems Analysis (KPA)`
-- `Example: Developing a new blood glucose meter`
-- `Learn about use problems with existing devices`
-- `Collect and analyze data`
-- `Public regulatory databases`
-- `FDA’s MAUDE database`
-- `Public safety publications`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `11 Known Problem Analysis.pptx` | `pptx` | 43 | 17 | [open](../assets/source_files/ENP_111_Use_related_Risks/11 Known Problem Analysis.pptx) |
+| `Event Tree Supplemental.pptx` | `pptx` | 69 | 1 | [open](../assets/source_files/ENP_111_Use_related_Risks/Event Tree Supplemental.pptx) |
 
 ## Related Topics
 
@@ -39,6 +115,8 @@ This page pairs known problem analysis with event-tree thinking to show how prio
 - [Operational Risk](../HFE_Cases_Ethics/operational_risk.en.md)
 
 ## Original Transcription and Coverage Mapping
+
+The collapsible blocks below preserve page/slide-level source transcription. Each `unit_id` maps one-to-one in `data/coverage_map.json`.
 
 ??? info "11 Known Problem Analysis.pptx | 43 text units"
     Download source: [11 Known Problem Analysis.pptx](../assets/source_files/ENP_111_Use_related_Risks/11 Known Problem Analysis.pptx)

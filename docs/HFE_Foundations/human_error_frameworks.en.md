@@ -2,35 +2,106 @@
 
 This page integrates the course treatment of human error and places slips, mistakes, violations, and multi-level models in a single analytic frame.
 
-## Page Intent
+## At a Glance
+
+The point of a human error framework is not merely to label failure. It is to prevent every bad outcome from collapsing into “the operator made a mistake.”
+
+## Core Categories
+
+- `slip`: the plan is correct, but the execution is wrong.
+- `lapse`: the plan is correct, but the action is omitted, often because memory or attention drops out.
+- `mistake`: execution is faithful, but the judgment or plan is wrong.
+- `violation`: a deliberate deviation from a rule, which is analytically different from unintended error.
+
+## Why Frameworks Matter
+
+The course contrasts an old view and a new view:
+
+- the old view blames the individual as the faulty element
+- the new view asks how system design, context, and defenses shaped the failure
+
+The same event can therefore lead to very different interventions depending on the framework you use.
+
+## Common Difficulty
+
+Internal and external explanations are not opposites. Human limits are real, but design, information quality, training, organizational culture, and time pressure also shape error production.
+
+## Visuals and Page Previews
+
+This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/02-intro-to-human-error-1/slide-01-image1.png" alt="02 Intro to Human Error (1).pptx · slide 1" loading="lazy">
+    <figcaption>02 Intro to Human Error (1).pptx · slide 1</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/02-intro-to-human-error-1/slide-11-image2.jpg" alt="02 Intro to Human Error (1).pptx · slide 11" loading="lazy">
+    <figcaption>02 Intro to Human Error (1).pptx · slide 11</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/02-intro-to-human-error-1/slide-11-image3.png" alt="02 Intro to Human Error (1).pptx · slide 11" loading="lazy">
+    <figcaption>02 Intro to Human Error (1).pptx · slide 11</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/02-intro-to-human-error-1/slide-16-image4.png" alt="02 Intro to Human Error (1).pptx · slide 16" loading="lazy">
+    <figcaption>02 Intro to Human Error (1).pptx · slide 16</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/02-intro-to-human-error-1/slide-17-image5.jpeg" alt="02 Intro to Human Error (1).pptx · slide 17" loading="lazy">
+    <figcaption>02 Intro to Human Error (1).pptx · slide 17</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/02-intro-to-human-error-1/slide-18-image6.png" alt="02 Intro to Human Error (1).pptx · slide 18" loading="lazy">
+    <figcaption>02 Intro to Human Error (1).pptx · slide 18</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/02-intro-to-human-error-1/slide-19-image7.png" alt="02 Intro to Human Error (1).pptx · slide 19" loading="lazy">
+    <figcaption>02 Intro to Human Error (1).pptx · slide 19</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/02-intro-to-human-error-1/slide-19-image8.png" alt="02 Intro to Human Error (1).pptx · slide 19" loading="lazy">
+    <figcaption>02 Intro to Human Error (1).pptx · slide 19</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/02-intro-to-human-error-1/slide-20-image7.png" alt="02 Intro to Human Error (1).pptx · slide 20" loading="lazy">
+    <figcaption>02 Intro to Human Error (1).pptx · slide 20</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/02-intro-to-human-error-1/slide-20-image8.png" alt="02 Intro to Human Error (1).pptx · slide 20" loading="lazy">
+    <figcaption>02 Intro to Human Error (1).pptx · slide 20</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/02-intro-to-human-error-1/slide-25-image9.png" alt="02 Intro to Human Error (1).pptx · slide 25" loading="lazy">
+    <figcaption>02 Intro to Human Error (1).pptx · slide 25</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/02-intro-to-human-error-1/slide-26-image10.png" alt="02 Intro to Human Error (1).pptx · slide 26" loading="lazy">
+    <figcaption>02 Intro to Human Error (1).pptx · slide 26</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/03-he-frameworks-2/slide-01-image1.png" alt="03 HE Frameworks (2).pptx · slide 1" loading="lazy">
+    <figcaption>03 HE Frameworks (2).pptx · slide 1</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/03-he-frameworks-2/slide-14-image2.png" alt="03 HE Frameworks (2).pptx · slide 14" loading="lazy">
+    <figcaption>03 HE Frameworks (2).pptx · slide 14</figcaption>
+  </figure>
+</div>
+
+## Source Scope and Related Topics
+
+The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
 - Section: `HFE Foundations`
 - Source files: 2
 - Text units: 443
+- Visuals/previews: 14
 
-## Key Angles
-
-- How error categories are distinguished
-- How individual and system explanations complement each other
-- Why frameworks matter for later risk methods
-
-## Source Coverage
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `02 Intro to Human Error (1).pptx` | `pptx` | 234 | [open](../assets/source_files/ENP_111_Use_related_Risks/02 Intro to Human Error (1).pptx) |
-| `03 HE Frameworks (2).pptx` | `pptx` | 209 | [open](../assets/source_files/ENP_111_Use_related_Risks/03 HE Frameworks (2).pptx) |
-
-## Representative Source Signals
-
-- `Sami Durrani PhD and Eric Bergman PhD`
-- `Introduction to Human Error`
-- `To err is human…” (Cicero, BC)`
-- `“The only real mistake is the one from which we learn nothing” (Attributed to Henry Ford)`
-- `“… to understand the reasons why humans err is science” (Hollnagel, 1993)`
-- `What is Human Error`
-- `Error will be taken as a generic term to encompass all those occasions in which a planned sequence of mental or physical activities fails to achieve its intended outcome, and when these failures cannot be attributed to the intervention of some change agency. (Reason, 1990)`
-- `A failure on the part of the human to perform a prescribed act (or the performance of a prohibited act) within specified limits of`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `02 Intro to Human Error (1).pptx` | `pptx` | 234 | 12 | [open](../assets/source_files/ENP_111_Use_related_Risks/02 Intro to Human Error (1).pptx) |
+| `03 HE Frameworks (2).pptx` | `pptx` | 209 | 2 | [open](../assets/source_files/ENP_111_Use_related_Risks/03 HE Frameworks (2).pptx) |
 
 ## Related Topics
 
@@ -39,6 +110,8 @@ This page integrates the course treatment of human error and places slips, mista
 - [Error Analysis and Investigation Flow](../HFE_Risk_Methods/error_analysis_methods.en.md)
 
 ## Original Transcription and Coverage Mapping
+
+The collapsible blocks below preserve page/slide-level source transcription. Each `unit_id` maps one-to-one in `data/coverage_map.json`.
 
 ??? info "02 Intro to Human Error (1).pptx | 234 text units"
     Download source: [02 Intro to Human Error (1).pptx](../assets/source_files/ENP_111_Use_related_Risks/02 Intro to Human Error (1).pptx)

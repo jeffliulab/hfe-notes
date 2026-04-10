@@ -2,34 +2,55 @@
 
 This page uses the Swiss Cheese model to connect barriers, vulnerabilities, and accident trajectories as a bridge from single-error thinking to system defense design.
 
-## Page Intent
+## At a Glance
+
+The Swiss Cheese model says accidents usually emerge when multiple imperfect defenses fail together rather than from a single isolated mistake.
+
+## How To Read The Model
+
+- each layer is a defense such as design, procedure, training, or supervision
+- each hole is a weakness that may exist long before harm occurs
+- harm appears when holes align across multiple layers
+
+## Why It Matters
+
+The model shifts attention away from the final operator and toward upstream design, management, and organizational contributors. The key question becomes: why did every earlier barrier fail to intercept the problem?
+
+## Common Difficulty
+
+Safety does not come from adding more layers by itself. It comes from having defenses that are meaningfully different, observable, and capable of catching one another's failures.
+
+## Visuals and Page Previews
+
+This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/05-swiss-cheese-model/page-01.png" alt="05 Swiss Cheese Model.pdf · page 1 preview" loading="lazy">
+    <figcaption>05 Swiss Cheese Model.pdf · page 1 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/05-swiss-cheese-model/page-06.png" alt="05 Swiss Cheese Model.pdf · page 6 preview" loading="lazy">
+    <figcaption>05 Swiss Cheese Model.pdf · page 6 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/05-swiss-cheese-model/page-07.png" alt="05 Swiss Cheese Model.pdf · page 7 preview" loading="lazy">
+    <figcaption>05 Swiss Cheese Model.pdf · page 7 preview</figcaption>
+  </figure>
+</div>
+
+## Source Scope and Related Topics
+
+The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
 - Section: `HFE Foundations`
 - Source files: 1
 - Text units: 145
+- Visuals/previews: 3
 
-## Key Angles
-
-- Why accidents penetrate multiple defenses
-- How barriers and holes coexist
-- Why system redesign matters more than blaming operators
-
-## Source Coverage
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `05 Swiss Cheese Model.pdf` | `pdf` | 145 | [open](../assets/source_files/ENP_111_Use_related_Risks/05 Swiss Cheese Model.pdf) |
-
-## Representative Source Signals
-
-- `Swiss Cheese Model`
-- `Product Owner, Connected Care`
-- `Lilly Diabetes and Obesity`
-- `Eli Lilly and Company`
-- `BS in Biomedical Engineering`
-- `MS in Biomedical Engineering`
-- `MS in Systems Engineering (focus in Human Factors)`
-- `10+ years in medical devices, 4+ years in human factors`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `05 Swiss Cheese Model.pdf` | `pdf` | 145 | 3 | [open](../assets/source_files/ENP_111_Use_related_Risks/05 Swiss Cheese Model.pdf) |
 
 ## Related Topics
 
@@ -37,6 +58,8 @@ This page uses the Swiss Cheese model to connect barriers, vulnerabilities, and 
 - [Operational Risk](../HFE_Cases_Ethics/operational_risk.en.md)
 
 ## Original Transcription and Coverage Mapping
+
+The collapsible blocks below preserve page/slide-level source transcription. Each `unit_id` maps one-to-one in `data/coverage_map.json`.
 
 ??? info "05 Swiss Cheese Model.pdf | 145 text units"
     Download source: [05 Swiss Cheese Model.pdf](../assets/source_files/ENP_111_Use_related_Risks/05 Swiss Cheese Model.pdf)

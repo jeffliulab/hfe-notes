@@ -2,34 +2,61 @@
 
 本页围绕 perception、comprehension、projection 三层情境意识展开，连接信息获取与未来状态预判。
 
-## 本页定位
+## 一眼看懂
+
+情境意识不是“对周围有感觉”这么模糊的东西。课程里讲的 SA 更具体，它至少包含三层：先感知到信息，再理解它意味着什么，最后预测接下来会发生什么。
+
+## 三层结构怎么理解
+
+1. `perception`：你有没有看到、听到、读到关键线索。
+2. `comprehension`：你有没有把这些线索拼成正确的当前局面。
+3. `projection`：你能不能预判如果不干预，系统接下来会走向哪里。
+
+## 为什么很多人会卡在第二层和第三层
+
+因为系统里“信息可见”不代表“关系清楚”。操作者可能看到了读数和告警，但：
+
+- 不知道哪条信息优先级更高
+- 不知道多个信号如何组合解释
+- 不知道当前状态会在未来几十秒或几分钟里演化成什么
+
+所以 SA 的本质不是信息量，而是信息结构。
+
+## 难点讲解
+
+课程里很多页面都在回到情境意识问题。显示设计、CRM、监控、自动化、空间定向，最后都在问：系统有没有帮助人形成足够准确、足够及时、足够可预测的 mental model。
+
+## 图示与页面预览
+
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-situationawareness-20260325/page-01.png" alt="Sp26_SituationAwareness_20260325.pdf · 第 1 页预览" loading="lazy">
+    <figcaption>Sp26_SituationAwareness_20260325.pdf · 第 1 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-situationawareness-20260325/page-03.png" alt="Sp26_SituationAwareness_20260325.pdf · 第 3 页预览" loading="lazy">
+    <figcaption>Sp26_SituationAwareness_20260325.pdf · 第 3 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-situationawareness-20260325/page-04.png" alt="Sp26_SituationAwareness_20260325.pdf · 第 4 页预览" loading="lazy">
+    <figcaption>Sp26_SituationAwareness_20260325.pdf · 第 4 页预览</figcaption>
+  </figure>
+</div>
+
+## 资料范围与相关主题
+
+正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。
 
 - 所属分区: `人的表现`
 - 关联源文件数: 1
 - 文本单元数: 200
+- 配图/预览数: 3
 
-## 关注重点
-
-- 情境意识的三层结构
-- 为什么信息可见不等于真正理解
-- 预测未来状态为何决定有效干预
-
-## 来源覆盖
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Sp26_SituationAwareness_20260325.pdf` | `pdf` | 200 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_SituationAwareness_20260325.pdf) |
-
-## 代表性原始语句
-
-- `Credit: Gary Larson, The Far Side`
-- `SITUATION AWARENESS`
-- `“Situation awareness is the perception of the elements in the environment within a`
-- `volume of time and space, the comprehension of their meaning, and the projection of`
-- `their status in the near future.” -- Endsley (1995)`
-- `• Perception (Level 1): Recognizing the status, attributes and dynamics of relevant`
-- `elements in the environment.`
-- `• Comprehension (Level 2): Understanding the significance of the relevant`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Sp26_SituationAwareness_20260325.pdf` | `pdf` | 200 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_SituationAwareness_20260325.pdf) |
 
 ## 相关主题
 
@@ -38,6 +65,8 @@
 - [空间定向错觉](spatial_disorientation.md)
 
 ## 原文转写与来源映射
+
+下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 `unit_id` 都能在 `data/coverage_map.json` 中找到对应页面映射。
 
 ??? info "Sp26_SituationAwareness_20260325.pdf | 200 text units"
     下载原件: [Sp26_SituationAwareness_20260325.pdf](../assets/source_files/Lectures_Spring_2026/Sp26_SituationAwareness_20260325.pdf)

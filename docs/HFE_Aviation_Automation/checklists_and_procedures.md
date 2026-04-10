@@ -2,34 +2,63 @@
 
 本页围绕 checklists 与 procedures 的设计原则，说明标准化如何减少记忆负担并支持团队协同。
 
-## 本页定位
+## 一眼看懂
+
+检查单与程序的价值，不是把人变成机械执行者，而是把那些最容易被遗忘、跳步或顺序错乱的动作，外化成可共享、可核对、可复现的工作结构。
+
+## 这页最关键的理解
+
+- checklist 是认知支架，不只是记忆备忘录。
+- procedure 是组织对“正常情况下应该如何做”的稳定承诺。
+- 当团队共用同一套程序语言时，协调成本会下降，交接和复盘也更清楚。
+
+## 好的程序设计在做什么
+
+- 把关键步骤摆在最可执行的顺序上
+- 让检查点能被看见、读出、回应和确认
+- 让异常情况有升级路径，而不是逼着操作者在模糊地带硬撑
+
+## 难点讲解
+
+这页最容易产生误解的地方，是把程序化理解成“越死板越好”。其实课程更想表达的是：
+
+- 标准化能减轻记忆负担
+- 但程序也必须和真实工作节奏匹配
+- 如果程序脱离 work as done，一线人员就会为了完成任务自行绕开它
+
+所以真正的人因问题不是“有没有 checklist”，而是“checklist 是否真能支持实际工作”。
+
+## 图示与页面预览
+
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/checklists-and-procedures-3-23-26/page-01.png" alt="Checklists and Procedures 3-23-26.pdf · 第 1 页预览" loading="lazy">
+    <figcaption>Checklists and Procedures 3-23-26.pdf · 第 1 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/checklists-and-procedures-3-23-26/page-02.png" alt="Checklists and Procedures 3-23-26.pdf · 第 2 页预览" loading="lazy">
+    <figcaption>Checklists and Procedures 3-23-26.pdf · 第 2 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/checklists-and-procedures-3-23-26/page-15.png" alt="Checklists and Procedures 3-23-26.pdf · 第 15 页预览" loading="lazy">
+    <figcaption>Checklists and Procedures 3-23-26.pdf · 第 15 页预览</figcaption>
+  </figure>
+</div>
+
+## 资料范围与相关主题
+
+正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。
 
 - 所属分区: `航空与自动化`
 - 关联源文件数: 1
 - 文本单元数: 330
+- 配图/预览数: 3
 
-## 关注重点
-
-- 程序化为什么能提升可靠性
-- checklist 设计如何兼顾速度与准确
-- 例外情形如何避免机械照本宣科
-
-## 来源覆盖
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Checklists and Procedures 3-23-26.pdf` | `pdf` | 330 | [open](../assets/source_files/Lectures_Spring_2026/Checklists and Procedures 3-23-26.pdf) |
-
-## 代表性原始语句
-
-- `PILOT TRAINING, PROCEDURES,`
-- `Prof. D.C. Chandra`
-- `https://simpleflying.com/level-d-simulator/`
-- `• Selection and training (Knowledge, Skills, and Abilities)`
-- `• Motivation, arousal (optimize attention)`
-- `• Policies and procedures (e.g., checklists)`
-- `• Controls (soft or hard), “Usability” (e.g., visibility of system state, interaction`
-- `• Automated systems? (take the operator out of the system)`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Checklists and Procedures 3-23-26.pdf` | `pdf` | 330 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Checklists and Procedures 3-23-26.pdf) |
 
 ## 相关主题
 
@@ -38,6 +67,8 @@
 - [Operational Risk](../HFE_Cases_Ethics/operational_risk.md)
 
 ## 原文转写与来源映射
+
+下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 `unit_id` 都能在 `data/coverage_map.json` 中找到对应页面映射。
 
 ??? info "Checklists and Procedures 3-23-26.pdf | 330 text units"
     下载原件: [Checklists and Procedures 3-23-26.pdf](../assets/source_files/Lectures_Spring_2026/Checklists and Procedures 3-23-26.pdf)

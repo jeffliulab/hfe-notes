@@ -2,35 +2,122 @@
 
 本页把 known problem analysis 与 event tree 思维放在一起，展示如何从已知问题、先前经验和事件演化来补强风险分析。
 
-## 本页定位
+## 一眼看懂
+
+这一页把两种补盲方法放在一起：Known Problem Analysis 让你从历史问题反推今天还可能漏掉什么；Event Tree 则让你从一个起点事件往后展开，检查后果路径是否被低估。
+
+## Known Problem Analysis 在补什么
+
+- 既往投诉、事故、CAPA、文献、竞品问题
+- 团队已经知道但还没系统写进风险文件的问题
+- 新设计可能重新引入的老问题
+
+## Event Tree 在补什么
+
+- 某个起始事件发生之后，后续会不会被拦住
+- 如果没拦住，会沿哪些分支走向不同严重程度
+- 中间哪些防护层是真正关键节点
+
+## 为什么这页重要
+
+只做主流程分析，很容易漏掉低频但高后果的情况。Known Problem Analysis 和 Event Tree 的共同作用，就是逼你从“主路径之外”再看一次系统。
+
+## 难点讲解
+
+不要把 known problem 当成“旧项目遗留列表”，也不要把 event tree 当成只在核工业里才用的大工具。课程想强调的是：任何高风险系统都需要一个机制，提醒团队去看“我们还没想到的分支”。
+
+## 图示与页面预览
+
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-01-image1.png" alt="11 Known Problem Analysis.pptx · 第 1 张幻灯片" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · 第 1 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-02-image2.png" alt="11 Known Problem Analysis.pptx · 第 2 张幻灯片" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · 第 2 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-03-image3.jpeg" alt="11 Known Problem Analysis.pptx · 第 3 张幻灯片" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · 第 3 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-03-image4.jpeg" alt="11 Known Problem Analysis.pptx · 第 3 张幻灯片" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · 第 3 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-03-image2.png" alt="11 Known Problem Analysis.pptx · 第 3 张幻灯片" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · 第 3 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-03-image5.jpeg" alt="11 Known Problem Analysis.pptx · 第 3 张幻灯片" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · 第 3 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-03-image6.jpeg" alt="11 Known Problem Analysis.pptx · 第 3 张幻灯片" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · 第 3 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-03-image7.png" alt="11 Known Problem Analysis.pptx · 第 3 张幻灯片" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · 第 3 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-03-image8.png" alt="11 Known Problem Analysis.pptx · 第 3 张幻灯片" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · 第 3 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-03-image9.png" alt="11 Known Problem Analysis.pptx · 第 3 张幻灯片" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · 第 3 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-04-image11.png" alt="11 Known Problem Analysis.pptx · 第 4 张幻灯片" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · 第 4 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-04-image13.png" alt="11 Known Problem Analysis.pptx · 第 4 张幻灯片" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · 第 4 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-04-image15.png" alt="11 Known Problem Analysis.pptx · 第 4 张幻灯片" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · 第 4 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-06-image17.png" alt="11 Known Problem Analysis.pptx · 第 6 张幻灯片" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · 第 6 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-06-image18.png" alt="11 Known Problem Analysis.pptx · 第 6 张幻灯片" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · 第 6 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-08-image19.jpeg" alt="11 Known Problem Analysis.pptx · 第 8 张幻灯片" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · 第 8 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/11-known-problem-analysis/slide-08-image20.png" alt="11 Known Problem Analysis.pptx · 第 8 张幻灯片" loading="lazy">
+    <figcaption>11 Known Problem Analysis.pptx · 第 8 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/event-tree-supplemental/slide-01-image1.png" alt="Event Tree Supplemental.pptx · 第 1 张幻灯片" loading="lazy">
+    <figcaption>Event Tree Supplemental.pptx · 第 1 张幻灯片</figcaption>
+  </figure>
+</div>
+
+## 资料范围与相关主题
+
+正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。
 
 - 所属分区: `风险方法`
 - 关联源文件数: 2
 - 文本单元数: 112
+- 配图/预览数: 18
 
-## 关注重点
-
-- 已知问题为何值得单独建模
-- 事件树如何展开事件后果
-- 补充分析如何帮助发现遗漏风险
-
-## 来源覆盖
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `11 Known Problem Analysis.pptx` | `pptx` | 43 | [open](../assets/source_files/ENP_111_Use_related_Risks/11 Known Problem Analysis.pptx) |
-| `Event Tree Supplemental.pptx` | `pptx` | 69 | [open](../assets/source_files/ENP_111_Use_related_Risks/Event Tree Supplemental.pptx) |
-
-## 代表性原始语句
-
-- `Erin Davis, MS, CHFP`
-- `Known Problems Analysis (KPA)`
-- `Example: Developing a new blood glucose meter`
-- `Learn about use problems with existing devices`
-- `Collect and analyze data`
-- `Public regulatory databases`
-- `FDA’s MAUDE database`
-- `Public safety publications`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `11 Known Problem Analysis.pptx` | `pptx` | 43 | 17 | [open](../assets/source_files/ENP_111_Use_related_Risks/11 Known Problem Analysis.pptx) |
+| `Event Tree Supplemental.pptx` | `pptx` | 69 | 1 | [open](../assets/source_files/ENP_111_Use_related_Risks/Event Tree Supplemental.pptx) |
 
 ## 相关主题
 
@@ -39,6 +126,8 @@
 - [Operational Risk](../HFE_Cases_Ethics/operational_risk.md)
 
 ## 原文转写与来源映射
+
+下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 `unit_id` 都能在 `data/coverage_map.json` 中找到对应页面映射。
 
 ??? info "11 Known Problem Analysis.pptx | 43 text units"
     下载原件: [11 Known Problem Analysis.pptx](../assets/source_files/ENP_111_Use_related_Risks/11 Known Problem Analysis.pptx)

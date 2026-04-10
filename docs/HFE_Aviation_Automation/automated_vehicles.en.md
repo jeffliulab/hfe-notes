@@ -2,34 +2,55 @@
 
 This page extends the automation discussion to automated vehicles, focusing on monitoring, handoff, trust calibration, and responsibility allocation.
 
-## Page Intent
+## At a Glance
+
+Automated vehicles extend the automation discussion into a takeover problem: people are often disengaged during routine operation and then expected to resume high-quality control with little warning.
+
+## Core Logic
+
+- the hardest problem is often handoff, not steady-state automation
+- low-engagement monitoring weakens readiness, situation awareness, and response timing
+- trust calibration matters more than simply increasing trust
+
+## Connection To Aviation
+
+The course uses automated vehicles because they inherit familiar automation challenges: surprise, mode confusion, monitoring decay, short takeover windows, and ambiguous responsibility.
+
+## Common Difficulty
+
+It is too easy to say the driver should pay more attention. If system design encourages long periods of disengagement, the expectation of instant high-quality takeover may itself be unrealistic.
+
+## Visuals and Page Previews
+
+This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/automated-vehicles-3-11-26-2/page-01.png" alt="Automated Vehicles 3-11-26-2.pdf · page 1 preview" loading="lazy">
+    <figcaption>Automated Vehicles 3-11-26-2.pdf · page 1 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/automated-vehicles-3-11-26-2/page-02.png" alt="Automated Vehicles 3-11-26-2.pdf · page 2 preview" loading="lazy">
+    <figcaption>Automated Vehicles 3-11-26-2.pdf · page 2 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/automated-vehicles-3-11-26-2/page-08.png" alt="Automated Vehicles 3-11-26-2.pdf · page 8 preview" loading="lazy">
+    <figcaption>Automated Vehicles 3-11-26-2.pdf · page 8 preview</figcaption>
+  </figure>
+</div>
+
+## Source Scope and Related Topics
+
+The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
 - Section: `Aviation and Automation`
 - Source files: 1
 - Text units: 374
+- Visuals/previews: 3
 
-## Key Angles
-
-- The takeover problem in vehicle automation
-- How trust calibration shapes reliance and intervention
-- Which lessons transfer from aviation automation
-
-## Source Coverage
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Automated Vehicles 3-11-26-2.pdf` | `pdf` | 374 | [open](../assets/source_files/Lectures_Spring_2026/Automated Vehicles 3-11-26-2.pdf) |
-
-## Representative Source Signals
-
-- `AUTOMATED VEHICLES`
-- `Dr. Divya C. Chandra`
-- `Yellowstone National Park Visitor Buses (Sumer 2021)`
-- `• Driving tasks and vocabulary`
-- `• Automation related to driving`
-- `• Flying vs. Driving comparison`
-- `– class discussion`
-- `Tasks and Vocabulary`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Automated Vehicles 3-11-26-2.pdf` | `pdf` | 374 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Automated Vehicles 3-11-26-2.pdf) |
 
 ## Related Topics
 
@@ -38,6 +59,8 @@ This page extends the automation discussion to automated vehicles, focusing on m
 - [Boeing 737 Max and Ethics](../HFE_Cases_Ethics/boeing_737max_and_ethics.en.md)
 
 ## Original Transcription and Coverage Mapping
+
+The collapsible blocks below preserve page/slide-level source transcription. Each `unit_id` maps one-to-one in `data/coverage_map.json`.
 
 ??? info "Automated Vehicles 3-11-26-2.pdf | 374 text units"
     Download source: [Automated Vehicles 3-11-26-2.pdf](../assets/source_files/Lectures_Spring_2026/Automated Vehicles 3-11-26-2.pdf)

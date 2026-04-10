@@ -2,34 +2,59 @@
 
 This page establishes the high-level frame of automation benefits, automation traps, and the evolving role of the pilot.
 
-## Page Intent
+## At a Glance
+
+This topic is not just about automation becoming more advanced. It is about how automation changes the human role and whether the remaining human tasks become harder rather than easier.
+
+## Core Logic
+
+- Automation often reduces repetitive workload and improves consistency.
+- But it also pushes people toward monitoring, mode understanding, takeover, and exception handling.
+- Those residual human tasks may be infrequent, but they become critical when things go wrong.
+
+## What To Ask
+
+1. What did automation take over?
+2. What did the human retain?
+3. Are the remaining human tasks still realistically doable?
+
+If the third question has no good answer, risk has often shifted rather than disappeared.
+
+## Common Difficulty
+
+More automation is not automatically more safety. Safety depends on visibility of system state, clarity of automation mode, and whether the human can recover enough understanding to intervene effectively.
+
+## Visuals and Page Previews
+
+This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/intro-to-aviation-and-automation-1-26-26-2/page-01.png" alt="Intro to Aviation and Automation 1-26-26-2.pdf · page 1 preview" loading="lazy">
+    <figcaption>Intro to Aviation and Automation 1-26-26-2.pdf · page 1 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/intro-to-aviation-and-automation-1-26-26-2/page-02.png" alt="Intro to Aviation and Automation 1-26-26-2.pdf · page 2 preview" loading="lazy">
+    <figcaption>Intro to Aviation and Automation 1-26-26-2.pdf · page 2 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/intro-to-aviation-and-automation-1-26-26-2/page-03.png" alt="Intro to Aviation and Automation 1-26-26-2.pdf · page 3 preview" loading="lazy">
+    <figcaption>Intro to Aviation and Automation 1-26-26-2.pdf · page 3 preview</figcaption>
+  </figure>
+</div>
+
+## Source Scope and Related Topics
+
+The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
 - Section: `Aviation and Automation`
 - Source files: 1
 - Text units: 465
+- Visuals/previews: 3
 
-## Key Angles
-
-- Why automation can both improve and increase risk
-- How role allocation shapes monitoring and intervention
-- Why aviation is a classic HFE laboratory for automation
-
-## Source Coverage
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Intro to Aviation and Automation 1-26-26-2.pdf` | `pdf` | 465 | [open](../assets/source_files/Lectures_Spring_2026/Intro to Aviation and Automation 1-26-26-2.pdf) |
-
-## Representative Source Signals
-
-- `Fundamentals of Aviation and`
-- `Aircraft Automation`
-- `ENP 0112 Engineering Forensics`
-- `Why start with aviation?`
-- `Investment in human factors research`
-- `for aviation began around World War I`
-- `– No parallel effort for automotive`
-- `human factors until 1970-80s*`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Intro to Aviation and Automation 1-26-26-2.pdf` | `pdf` | 465 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Intro to Aviation and Automation 1-26-26-2.pdf) |
 
 ## Related Topics
 
@@ -38,6 +63,8 @@ This page establishes the high-level frame of automation benefits, automation tr
 - [Automated Vehicles](automated_vehicles.en.md)
 
 ## Original Transcription and Coverage Mapping
+
+The collapsible blocks below preserve page/slide-level source transcription. Each `unit_id` maps one-to-one in `data/coverage_map.json`.
 
 ??? info "Intro to Aviation and Automation 1-26-26-2.pdf | 465 text units"
     Download source: [Intro to Aviation and Automation 1-26-26-2.pdf](../assets/source_files/Lectures_Spring_2026/Intro to Aviation and Automation 1-26-26-2.pdf)

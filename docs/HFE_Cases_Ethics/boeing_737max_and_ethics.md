@@ -2,34 +2,62 @@
 
 本页把 Boeing 737 Max 作为技术、组织、监管与伦理问题交织的典型案例，说明 HFE 不能脱离治理与责任讨论。
 
-## 本页定位
+## 一眼看懂
+
+737 Max 这一页最重要的点，是它不是单纯的“一个设计缺陷案例”。课程把它放在伦理部分，是因为这里同时出现了系统设计、培训、传感器/告警、组织决策、认证过程和专业责任的交织。
+
+## 这页要你看到的几层问题
+
+- 技术层：系统状态可见性、自动化逻辑、单点失效、告警和飞行员理解之间是否匹配。
+- 运行层：飞行员在时间压力、高工作负荷和异常状态下是否还有足够认知空间做出正确判断。
+- 组织层：制造商、运营方、维护和监管者分别承担了什么风险管理责任。
+- 伦理层：当设计与培训假设不足时，谁有义务更早提出、修正、阻止风险扩散。
+
+## 为什么它是 HFE 案例
+
+这不是一个“技术”和“人”的二选一案例。恰恰相反，课程借它说明：
+
+- 设计问题会改变人的判断条件
+- 训练和程序决定人是否能在异常中恢复
+- 监管与组织选择会决定缺陷能否长期存在
+
+所以 HFE 在这里不是边角料，而是解释系统为何失效的核心视角之一。
+
+## 难点讲解
+
+伦理讨论最容易流于空泛。更好的方式是回到具体工程决策：有没有充分揭示系统行为、有没有把风险转嫁给飞行员、有没有让认证与培训假设脱离真实运行条件。只有落回这些具体点，伦理才不会变成抽象口号。
+
+## 图示与页面预览
+
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/boeing-737max-and-ethics-2-23-26/page-01.png" alt="Boeing 737Max and Ethics 2-23-26.pdf · 第 1 页预览" loading="lazy">
+    <figcaption>Boeing 737Max and Ethics 2-23-26.pdf · 第 1 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/boeing-737max-and-ethics-2-23-26/page-05.png" alt="Boeing 737Max and Ethics 2-23-26.pdf · 第 5 页预览" loading="lazy">
+    <figcaption>Boeing 737Max and Ethics 2-23-26.pdf · 第 5 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/boeing-737max-and-ethics-2-23-26/page-06.png" alt="Boeing 737Max and Ethics 2-23-26.pdf · 第 6 页预览" loading="lazy">
+    <figcaption>Boeing 737Max and Ethics 2-23-26.pdf · 第 6 页预览</figcaption>
+  </figure>
+</div>
+
+## 资料范围与相关主题
+
+正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。
 
 - 所属分区: `案例与伦理`
 - 关联源文件数: 1
 - 文本单元数: 245
+- 配图/预览数: 3
 
-## 关注重点
-
-- 设计决策如何变成系统性伦理问题
-- 组织与监管如何影响安全结果
-- 技术失配为何常伴随责任分配失衡
-
-## 来源覆盖
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Boeing 737Max and Ethics 2-23-26.pdf` | `pdf` | 245 | [open](../assets/source_files/Lectures_Spring_2026/Boeing 737Max and Ethics 2-23-26.pdf) |
-
-## 代表性原始语句
-
-- `MORE ABOUT THE 737 MAX &`
-- `ENGINEERING ETHICS`
-- `Dr. Divya C. Chandra`
-- `A BIT MORE CONTEXT`
-- `• Lion Air 43 was the previous 96-min flight in accident aircraft.`
-- `• The stick shaker was active for the entire flight, but the crew shut off the stabilizer trim, deactivating MCAS.`
-- `The crew reported some malfunctions, but did not specify the stick shaker activation or stabilizer trim`
-- `• Lion Air was the first of two similar accidents. The second was Ethiopian 302 in March 2019.`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Boeing 737Max and Ethics 2-23-26.pdf` | `pdf` | 245 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Boeing 737Max and Ethics 2-23-26.pdf) |
 
 ## 相关主题
 
@@ -38,6 +66,8 @@
 - [压力、决策与分心](../HFE_Human_Performance/stress_and_decision_making.md)
 
 ## 原文转写与来源映射
+
+下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 `unit_id` 都能在 `data/coverage_map.json` 中找到对应页面映射。
 
 ??? info "Boeing 737Max and Ethics 2-23-26.pdf | 245 text units"
     下载原件: [Boeing 737Max and Ethics 2-23-26.pdf](../assets/source_files/Lectures_Spring_2026/Boeing 737Max and Ethics 2-23-26.pdf)

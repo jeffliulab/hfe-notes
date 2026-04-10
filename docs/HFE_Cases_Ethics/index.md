@@ -11,7 +11,7 @@
 
 ## 覆盖源文件
 
-- `Operational Risk 2-18-2026.pdf` (pdf, 251 units): [open](../assets/source_files/Lectures_Spring_2026/Operational Risk 2-18-2026.pdf)
-- `Cardosi 2-2-2026.pdf` (pdf, 396 units): [open](../assets/source_files/Lectures_Spring_2026/Cardosi 2-2-2026.pdf)
-- `Sp26_F16-AnalysisPrompts_20260219.pdf` (pdf, 241 units): [open](../assets/source_files/Lectures_Spring_2026/Sp26_F16-AnalysisPrompts_20260219.pdf)
-- `Boeing 737Max and Ethics 2-23-26.pdf` (pdf, 245 units): [open](../assets/source_files/Lectures_Spring_2026/Boeing 737Max and Ethics 2-23-26.pdf)
+- `Operational Risk 2-18-2026.pdf` (pdf, 251 units, 3 visuals): [open](../assets/source_files/Lectures_Spring_2026/Operational Risk 2-18-2026.pdf)
+- `Cardosi 2-2-2026.pdf` (pdf, 396 units, 3 visuals): [open](../assets/source_files/Lectures_Spring_2026/Cardosi 2-2-2026.pdf)
+- `Sp26_F16-AnalysisPrompts_20260219.pdf` (pdf, 241 units, 3 visuals): [open](../assets/source_files/Lectures_Spring_2026/Sp26_F16-AnalysisPrompts_20260219.pdf)
+- `Boeing 737Max and Ethics 2-23-26.pdf` (pdf, 245 units, 3 visuals): [open](../assets/source_files/Lectures_Spring_2026/Boeing 737Max and Ethics 2-23-26.pdf)

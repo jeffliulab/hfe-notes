@@ -2,34 +2,80 @@
 
 This page focuses on use error, abnormal use, and interface-induced risk in medical devices, emphasizing that failure emerges from the use system rather than the operator alone.
 
-## Page Intent
+## At a Glance
+
+This topic asks how to distinguish device failure, unintended use error, deliberate deviation, and environmental pressure when something goes wrong.
+
+## Analytical Habit To Build
+
+- do not label every bad use episode as use error
+- judge whether the behavior was foreseeable
+- examine how design may have amplified selection, omission, judgment, or sequence errors
+- check whether recovery opportunities existed
+
+## Why It Matters
+
+If the problem type is misclassified, the control strategy will also drift. Good human-factors analysis stays tied to specific tasks and contexts.
+
+## Visuals and Page Previews
+
+This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/07-use-errors/slide-01-image1.png" alt="07 Use Errors.pptx · slide 1" loading="lazy">
+    <figcaption>07 Use Errors.pptx · slide 1</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/07-use-errors/slide-04-image2.jpeg" alt="07 Use Errors.pptx · slide 4" loading="lazy">
+    <figcaption>07 Use Errors.pptx · slide 4</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/07-use-errors/slide-05-image3.jpeg" alt="07 Use Errors.pptx · slide 5" loading="lazy">
+    <figcaption>07 Use Errors.pptx · slide 5</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/07-use-errors/slide-06-image4.jpeg" alt="07 Use Errors.pptx · slide 6" loading="lazy">
+    <figcaption>07 Use Errors.pptx · slide 6</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/07-use-errors/slide-09-image2.jpeg" alt="07 Use Errors.pptx · slide 9" loading="lazy">
+    <figcaption>07 Use Errors.pptx · slide 9</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/07-use-errors/slide-10-image3.jpeg" alt="07 Use Errors.pptx · slide 10" loading="lazy">
+    <figcaption>07 Use Errors.pptx · slide 10</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/07-use-errors/slide-11-image4.jpeg" alt="07 Use Errors.pptx · slide 11" loading="lazy">
+    <figcaption>07 Use Errors.pptx · slide 11</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/07-use-errors/slide-13-image5.jpeg" alt="07 Use Errors.pptx · slide 13" loading="lazy">
+    <figcaption>07 Use Errors.pptx · slide 13</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/07-use-errors/slide-16-image6.png" alt="07 Use Errors.pptx · slide 16" loading="lazy">
+    <figcaption>07 Use Errors.pptx · slide 16</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/07-use-errors/slide-18-image7.jpeg" alt="07 Use Errors.pptx · slide 18" loading="lazy">
+    <figcaption>07 Use Errors.pptx · slide 18</figcaption>
+  </figure>
+</div>
+
+## Source Scope and Related Topics
+
+The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
 - Section: `Medical Devices`
 - Source files: 1
 - Text units: 156
+- Visuals/previews: 10
 
-## Key Angles
-
-- The boundary between use error and misuse
-- How interfaces and instructions induce error
-- Why use error must be tied to validation
-
-## Source Coverage
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `07 Use Errors.pptx` | `pptx` | 156 | [open](../assets/source_files/ENP_111_Use_related_Risks/07 Use Errors.pptx) |
-
-## Representative Source Signals
-
-- `ENP 111 – Use Related Risk Analysis`
-- `Sami Durrani PhD and Eric Bergman PhD`
-- `FDA definition: User action or lack of action that was different from that expected by the manufacturer and caused a result that:`
-- `(1) was different from the result expected by the user and`
-- `(2) was not caused solely by device failure and`
-- `(3) did or could result in harm`
-- `What is a use error?`
-- `Let’s look at a few case studies`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `07 Use Errors.pptx` | `pptx` | 156 | 10 | [open](../assets/source_files/ENP_111_Use_related_Risks/07 Use Errors.pptx) |
 
 ## Related Topics
 
@@ -38,6 +84,8 @@ This page focuses on use error, abnormal use, and interface-induced risk in medi
 - [Task Analysis](../HFE_Risk_Methods/task_analysis.en.md)
 
 ## Original Transcription and Coverage Mapping
+
+The collapsible blocks below preserve page/slide-level source transcription. Each `unit_id` maps one-to-one in `data/coverage_map.json`.
 
 ??? info "07 Use Errors.pptx | 156 text units"
     Download source: [07 Use Errors.pptx](../assets/source_files/ENP_111_Use_related_Risks/07 Use Errors.pptx)

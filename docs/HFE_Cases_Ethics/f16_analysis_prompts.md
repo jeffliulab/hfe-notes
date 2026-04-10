@@ -2,34 +2,58 @@
 
 本页将 F16 prompts 视为案例分析模板，帮助读者把课程概念转化为结构化提问与论证路径。
 
-## 本页定位
+## 一眼看懂
+
+F16 prompts 这一页本质上是一个“怎么分析案例”的脚手架。它的作用不是直接给你答案，而是帮你把课程概念转换成一组系统化提问。
+
+## 这页真正有用的地方
+
+- 避免案例分析只停在表面叙述
+- 让你从多个维度同时看同一个事件
+- 帮助团队在讨论时保持结构，而不是想到哪里说到哪里
+
+## 一般可以怎么用这些 prompts
+
+1. 先描述事件和任务背景。
+2. 再问信息、界面、程序、团队和组织因素分别起了什么作用。
+3. 然后区分直接触发因素与更深层条件。
+4. 最后把分析收束成改进建议。
+
+## 难点讲解
+
+很多 prompts 看起来像“问题列表”，但它们真正的价值是迫使分析者跳出单因解释。也就是说，prompt 的意义不在于问得多，而在于把你的视角从个人错误扩展到整个系统。
+
+## 图示与页面预览
+
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-f16-analysisprompts-20260219/page-01.png" alt="Sp26_F16-AnalysisPrompts_20260219.pdf · 第 1 页预览" loading="lazy">
+    <figcaption>Sp26_F16-AnalysisPrompts_20260219.pdf · 第 1 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-f16-analysisprompts-20260219/page-03.png" alt="Sp26_F16-AnalysisPrompts_20260219.pdf · 第 3 页预览" loading="lazy">
+    <figcaption>Sp26_F16-AnalysisPrompts_20260219.pdf · 第 3 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-f16-analysisprompts-20260219/page-04.png" alt="Sp26_F16-AnalysisPrompts_20260219.pdf · 第 4 页预览" loading="lazy">
+    <figcaption>Sp26_F16-AnalysisPrompts_20260219.pdf · 第 4 页预览</figcaption>
+  </figure>
+</div>
+
+## 资料范围与相关主题
+
+正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。
 
 - 所属分区: `案例与伦理`
 - 关联源文件数: 1
 - 文本单元数: 241
+- 配图/预览数: 3
 
-## 关注重点
-
-- 分析 prompts 如何组织观察维度
-- 如何把概念转成案例提问
-- 结构化 prompts 为什么有助于团队复盘
-
-## 来源覆盖
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Sp26_F16-AnalysisPrompts_20260219.pdf` | `pdf` | 241 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_F16-AnalysisPrompts_20260219.pdf) |
-
-## 代表性原始语句
-
-- `CLASS DISCUSSION PROMPTS`
-- `o Occurred during a night mission qualification training (MQT) flight`
-- `o Proximate incidents occurred between 2230-2300h`
-- `o First attempt at air-to-air refueling (AAR) for Mishap Pilot (MP)`
-- `o AAR was partially completed by the MWG but not successfully completed by MP`
-- `o MP not able to complete intense formation requirements to receive fuel.`
-- `o Pair were required to return to Shaw AFB`
-- `o Two landing attempts.`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Sp26_F16-AnalysisPrompts_20260219.pdf` | `pdf` | 241 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_F16-AnalysisPrompts_20260219.pdf) |
 
 ## 相关主题
 
@@ -38,6 +62,8 @@
 - [Boeing 737 Max 与伦理](boeing_737max_and_ethics.md)
 
 ## 原文转写与来源映射
+
+下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 `unit_id` 都能在 `data/coverage_map.json` 中找到对应页面映射。
 
 ??? info "Sp26_F16-AnalysisPrompts_20260219.pdf | 241 text units"
     下载原件: [Sp26_F16-AnalysisPrompts_20260219.pdf](../assets/source_files/Lectures_Spring_2026/Sp26_F16-AnalysisPrompts_20260219.pdf)

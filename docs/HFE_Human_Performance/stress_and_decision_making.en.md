@@ -2,35 +2,68 @@
 
 This page combines stress, decision making, distraction, and cognitive bias to explain why operators drift toward suboptimal choices under load.
 
-## Page Intent
+## At a Glance
+
+Stress, decision making, and distraction are linked because high-load environments narrow attention and strategy space, making omission, bias, and poor timing more likely.
+
+## Core Chain
+
+- stress consumes cognitive capacity and narrows search
+- distraction interrupts execution and weakens timeline tracking
+- time pressure pushes people toward heuristics and satisficing
+
+## What To Ask
+
+In a fast, messy, high-consequence environment, the question is not only why the operator was not calmer. It is whether the system preserved the right cues, left enough decision space, and reduced rather than added burden.
+
+## Common Difficulty
+
+Stress does not always cause failure, but high and sustained stress combined with incomplete information often drives people toward familiar responses while important new cues get underweighted.
+
+## Visuals and Page Previews
+
+This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-stressdecisionmaking-20260225/page-01.png" alt="Sp26_StressDecisionMaking_20260225.pdf · page 1 preview" loading="lazy">
+    <figcaption>Sp26_StressDecisionMaking_20260225.pdf · page 1 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-stressdecisionmaking-20260225/page-03.png" alt="Sp26_StressDecisionMaking_20260225.pdf · page 3 preview" loading="lazy">
+    <figcaption>Sp26_StressDecisionMaking_20260225.pdf · page 3 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-stressdecisionmaking-20260225/page-04.png" alt="Sp26_StressDecisionMaking_20260225.pdf · page 4 preview" loading="lazy">
+    <figcaption>Sp26_StressDecisionMaking_20260225.pdf · page 4 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-decisionmakingdistraction-20260302/page-01.png" alt="Sp26_DecisionMakingDistraction_20260302.pdf · page 1 preview" loading="lazy">
+    <figcaption>Sp26_DecisionMakingDistraction_20260302.pdf · page 1 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-decisionmakingdistraction-20260302/page-02.png" alt="Sp26_DecisionMakingDistraction_20260302.pdf · page 2 preview" loading="lazy">
+    <figcaption>Sp26_DecisionMakingDistraction_20260302.pdf · page 2 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-decisionmakingdistraction-20260302/page-03.png" alt="Sp26_DecisionMakingDistraction_20260302.pdf · page 3 preview" loading="lazy">
+    <figcaption>Sp26_DecisionMakingDistraction_20260302.pdf · page 3 preview</figcaption>
+  </figure>
+</div>
+
+## Source Scope and Related Topics
+
+The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
 - Section: `Human Performance`
 - Source files: 2
 - Text units: 605
+- Visuals/previews: 6
 
-## Key Angles
-
-- How stress narrows attention and strategy space
-- How distraction erodes procedure following and monitoring
-- Why decision bias often couples with time pressure
-
-## Source Coverage
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Sp26_StressDecisionMaking_20260225.pdf` | `pdf` | 342 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_StressDecisionMaking_20260225.pdf) |
-| `Sp26_DecisionMakingDistraction_20260302.pdf` | `pdf` | 263 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_DecisionMakingDistraction_20260302.pdf) |
-
-## Representative Source Signals
-
-- `DECISION MAKING & PERFORMANCE`
-- `AIR FRANCE 447 – SUCCESSION OF EVENTS`
-- `• Temporary inconsistency between the airspeed measurements, likely following the`
-- `obstruction of the Pitot probes by ice crystals that, in particular, caused the autopilot`
-- `disconnection and the reconfiguration to alternate law;`
-- `• Inappropriate control inputs that destabilized the flight path;`
-- `• The lack of any link by the crew between the loss of indicated speeds called out and the`
-- `appropriate procedure;`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Sp26_StressDecisionMaking_20260225.pdf` | `pdf` | 342 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_StressDecisionMaking_20260225.pdf) |
+| `Sp26_DecisionMakingDistraction_20260302.pdf` | `pdf` | 263 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_DecisionMakingDistraction_20260302.pdf) |
 
 ## Related Topics
 
@@ -39,6 +72,8 @@ This page combines stress, decision making, distraction, and cognitive bias to e
 - [Boeing 737 Max and Ethics](../HFE_Cases_Ethics/boeing_737max_and_ethics.en.md)
 
 ## Original Transcription and Coverage Mapping
+
+The collapsible blocks below preserve page/slide-level source transcription. Each `unit_id` maps one-to-one in `data/coverage_map.json`.
 
 ??? info "Sp26_StressDecisionMaking_20260225.pdf | 342 text units"
     Download source: [Sp26_StressDecisionMaking_20260225.pdf](../assets/source_files/Lectures_Spring_2026/Sp26_StressDecisionMaking_20260225.pdf)

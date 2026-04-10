@@ -2,34 +2,80 @@
 
 本页围绕 task analysis 的拆解逻辑，整理如何把使用流程变成可观察、可评估、可映射风险的任务与子任务结构。
 
-## 本页定位
+## 一眼看懂
+
+任务分析的价值，在于把“用户在用产品”这件看起来连续的事情，拆成可以观察、可以讨论、可以评估风险的步骤链。
+
+## 做 task analysis 时到底在拆什么
+
+- 用户想达成的目标
+- 为了达成目标必须经过的步骤
+- 每一步需要看到什么、判断什么、操作什么
+- 哪一步如果失败，会直接影响安全、有效性或后续恢复
+
+## 为什么它是后续风险分析的地基
+
+如果你连任务都没拆清楚，后面几乎所有问题都会变模糊：
+
+- use error 不知道是在哪一步发生
+- critical task 无法界定
+- risk control 不知道该改界面、标签、流程还是培训
+
+## 难点讲解
+
+任务分析不是把说明书抄一遍。真正有用的 task analysis 会把“系统要求用户做什么”和“用户在现实里实际怎么做”都放进去。也就是说，你要同时看理想流程和真实流程之间的偏差。
+
+## 图示与页面预览
+
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/08-task-analysis/slide-01-image1.png" alt="08 Task Analysis.pptx · 第 1 张幻灯片" loading="lazy">
+    <figcaption>08 Task Analysis.pptx · 第 1 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/08-task-analysis/slide-04-image2.jpeg" alt="08 Task Analysis.pptx · 第 4 张幻灯片" loading="lazy">
+    <figcaption>08 Task Analysis.pptx · 第 4 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/08-task-analysis/slide-05-image3.jpeg" alt="08 Task Analysis.pptx · 第 5 张幻灯片" loading="lazy">
+    <figcaption>08 Task Analysis.pptx · 第 5 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/08-task-analysis/slide-05-image4.jpeg" alt="08 Task Analysis.pptx · 第 5 张幻灯片" loading="lazy">
+    <figcaption>08 Task Analysis.pptx · 第 5 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/08-task-analysis/slide-05-image5.jpeg" alt="08 Task Analysis.pptx · 第 5 张幻灯片" loading="lazy">
+    <figcaption>08 Task Analysis.pptx · 第 5 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/08-task-analysis/slide-05-image6.jpeg" alt="08 Task Analysis.pptx · 第 5 张幻灯片" loading="lazy">
+    <figcaption>08 Task Analysis.pptx · 第 5 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/08-task-analysis/slide-05-image7.jpeg" alt="08 Task Analysis.pptx · 第 5 张幻灯片" loading="lazy">
+    <figcaption>08 Task Analysis.pptx · 第 5 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/08-task-analysis/slide-08-image8.png" alt="08 Task Analysis.pptx · 第 8 张幻灯片" loading="lazy">
+    <figcaption>08 Task Analysis.pptx · 第 8 张幻灯片</figcaption>
+  </figure>
+</div>
+
+## 资料范围与相关主题
+
+正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。
 
 - 所属分区: `风险方法`
 - 关联源文件数: 1
 - 文本单元数: 80
+- 配图/预览数: 8
 
-## 关注重点
-
-- 任务拆解为什么是风险分析前提
-- subtask 与 use step 如何定义
-- 如何从任务流转向 use error 与 mitigation
-
-## 来源覆盖
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `08 Task Analysis.pptx` | `pptx` | 80 | [open](../assets/source_files/ENP_111_Use_related_Risks/08 Task Analysis.pptx) |
-
-## 代表性原始语句
-
-- `Sami Durrani PhD and Eric Bergman PhD`
-- `There are many different forms of task analysis`
-- `Hierarchical Task Analysis (HTA)`
-- `Cognitive Task Analysis (CTA)`
-- `And many more variations and modifications`
-- `In medical device human factors, a “task analysis” is typically a modified HTA`
-- `Types of task analysis`
-- `Decompose task into sub-tasks (if needed)`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `08 Task Analysis.pptx` | `pptx` | 80 | 8 | [open](../assets/source_files/ENP_111_Use_related_Risks/08 Task Analysis.pptx) |
 
 ## 相关主题
 
@@ -38,6 +84,8 @@
 - [医疗器械中的使用错误](../HFE_Medical_Devices/medical_device_use_errors.md)
 
 ## 原文转写与来源映射
+
+下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 `unit_id` 都能在 `data/coverage_map.json` 中找到对应页面映射。
 
 ??? info "08 Task Analysis.pptx | 80 text units"
     下载原件: [08 Task Analysis.pptx](../assets/source_files/ENP_111_Use_related_Risks/08 Task Analysis.pptx)

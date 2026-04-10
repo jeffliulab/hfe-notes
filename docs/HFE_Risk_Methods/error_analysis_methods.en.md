@@ -2,35 +2,72 @@
 
 This page joins the investigative process, NTSB logic, and error-analysis methods to show how event analysis moves from evidence gathering to causal explanation.
 
-## Page Intent
+## At a Glance
+
+Error analysis is about turning an event into an explainable structure: facts, timeline, causal layers, and actionable recommendations.
+
+## Basic Investigation Flow
+
+1. Gather facts.
+2. Build the event sequence.
+3. Separate triggers, preconditions, and deeper organizational or design contributors.
+4. Translate findings into interventions.
+
+## NTSB-Style Discipline
+
+- facts come before conclusions
+- evidence and interpretation should not be collapsed
+- one outcome usually has multiple contributing paths
+- good analysis ends in design, training, procedure, or policy change
+
+## Common Difficulty
+
+Investigations often stop too early at the most visible human action. The deeper task is to explain why the system made that action likely, hard to detect, or hard to recover from.
+
+## Visuals and Page Previews
+
+This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-investigative-process-ntsb-20260121/page-01.png" alt="Sp26_Investigative Process-NTSB_20260121.pdf · page 1 preview" loading="lazy">
+    <figcaption>Sp26_Investigative Process-NTSB_20260121.pdf · page 1 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-investigative-process-ntsb-20260121/page-02.png" alt="Sp26_Investigative Process-NTSB_20260121.pdf · page 2 preview" loading="lazy">
+    <figcaption>Sp26_Investigative Process-NTSB_20260121.pdf · page 2 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-investigative-process-ntsb-20260121/page-03.png" alt="Sp26_Investigative Process-NTSB_20260121.pdf · page 3 preview" loading="lazy">
+    <figcaption>Sp26_Investigative Process-NTSB_20260121.pdf · page 3 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-erroranalysismethods-20260121/page-01.png" alt="Sp26_ErrorAnalysisMethods_20260121.pdf · page 1 preview" loading="lazy">
+    <figcaption>Sp26_ErrorAnalysisMethods_20260121.pdf · page 1 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-erroranalysismethods-20260121/page-02.png" alt="Sp26_ErrorAnalysisMethods_20260121.pdf · page 2 preview" loading="lazy">
+    <figcaption>Sp26_ErrorAnalysisMethods_20260121.pdf · page 2 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-erroranalysismethods-20260121/page-04.png" alt="Sp26_ErrorAnalysisMethods_20260121.pdf · page 4 preview" loading="lazy">
+    <figcaption>Sp26_ErrorAnalysisMethods_20260121.pdf · page 4 preview</figcaption>
+  </figure>
+</div>
+
+## Source Scope and Related Topics
+
+The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
 - Section: `Risk Methods`
 - Source files: 2
 - Text units: 584
+- Visuals/previews: 6
 
-## Key Angles
-
-- The phases of an investigation
-- The NTSB-style path from facts to causes
-- How error analysis supports later risk controls
-
-## Source Coverage
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Sp26_Investigative Process-NTSB_20260121.pdf` | `pdf` | 267 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_Investigative Process-NTSB_20260121.pdf) |
-| `Sp26_ErrorAnalysisMethods_20260121.pdf` | `pdf` | 317 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_ErrorAnalysisMethods_20260121.pdf) |
-
-## Representative Source Signals
-
-- `Investigative Process`
-- `• Established in 1967 as part of the Department of Transportation`
-- `• 1975 became fully independent`
-- `• Five board members are Presidential appointments (5 yr terms)`
-- `• Investigates ~2500 accidents per year (link)`
-- `• Aviation: ~2000; Marine, rail, highway, pipeline: ~500`
-- `• “Accident/incident investigations are fact-finding proceedings with no formal`
-- `issues and no adverse parties … and are not conducted for the purpose of`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Sp26_Investigative Process-NTSB_20260121.pdf` | `pdf` | 267 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_Investigative Process-NTSB_20260121.pdf) |
+| `Sp26_ErrorAnalysisMethods_20260121.pdf` | `pdf` | 317 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_ErrorAnalysisMethods_20260121.pdf) |
 
 ## Related Topics
 
@@ -39,6 +76,8 @@ This page joins the investigative process, NTSB logic, and error-analysis method
 - [Operational Risk](../HFE_Cases_Ethics/operational_risk.en.md)
 
 ## Original Transcription and Coverage Mapping
+
+The collapsible blocks below preserve page/slide-level source transcription. Each `unit_id` maps one-to-one in `data/coverage_map.json`.
 
 ??? info "Sp26_Investigative Process-NTSB_20260121.pdf | 267 text units"
     Download source: [Sp26_Investigative Process-NTSB_20260121.pdf](../assets/source_files/Lectures_Spring_2026/Sp26_Investigative Process-NTSB_20260121.pdf)

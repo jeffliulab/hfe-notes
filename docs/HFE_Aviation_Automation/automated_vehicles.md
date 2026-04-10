@@ -2,34 +2,63 @@
 
 本页将航空自动化的经验延展到 automated vehicles，关注监控、handoff、trust calibration 与责任分配。
 
-## 本页定位
+## 一眼看懂
+
+自动化车辆这一页不是在重复航空自动化，而是在问一个迁移问题：当自动化从驾驶辅助走向更高等级时，人类驾驶员会不会被放进一个“平时太闲、出事时又来不及”的危险位置。
+
+## 核心逻辑
+
+- 自动化车辆最难的不是正常巡航，而是 `handoff`。
+- 系统让人退出主任务后，再要求人突然接管，会遇到监控衰退、情境意识不足和反应迟滞。
+- 因此，信任校准比“让用户更相信系统”更重要，关键是让用户既不盲信，也不过度不用。
+
+## 这页和航空自动化的连接
+
+课程把 automated vehicles 放进来，是因为很多问题高度相似：
+
+- automation surprise
+- mode confusion
+- 低参与度监控
+- 接管窗口太短
+- 责任划分模糊
+
+也就是说，技术平台不同，但人因矛盾非常接近。
+
+## 难点讲解
+
+自动化车辆领域很容易把问题说成“驾驶员不够专注”。但如果系统设计本身长期让人不需要主动控制，那么在关键时刻要求人立即恢复高质量控制，本身就可能是不现实的设计假设。
+
+## 图示与页面预览
+
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/automated-vehicles-3-11-26-2/page-01.png" alt="Automated Vehicles 3-11-26-2.pdf · 第 1 页预览" loading="lazy">
+    <figcaption>Automated Vehicles 3-11-26-2.pdf · 第 1 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/automated-vehicles-3-11-26-2/page-02.png" alt="Automated Vehicles 3-11-26-2.pdf · 第 2 页预览" loading="lazy">
+    <figcaption>Automated Vehicles 3-11-26-2.pdf · 第 2 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/automated-vehicles-3-11-26-2/page-08.png" alt="Automated Vehicles 3-11-26-2.pdf · 第 8 页预览" loading="lazy">
+    <figcaption>Automated Vehicles 3-11-26-2.pdf · 第 8 页预览</figcaption>
+  </figure>
+</div>
+
+## 资料范围与相关主题
+
+正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。
 
 - 所属分区: `航空与自动化`
 - 关联源文件数: 1
 - 文本单元数: 374
+- 配图/预览数: 3
 
-## 关注重点
-
-- 自动驾驶中的接管问题
-- trust calibration 如何影响依赖与干预
-- 航空自动化经验能迁移哪些教训
-
-## 来源覆盖
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Automated Vehicles 3-11-26-2.pdf` | `pdf` | 374 | [open](../assets/source_files/Lectures_Spring_2026/Automated Vehicles 3-11-26-2.pdf) |
-
-## 代表性原始语句
-
-- `AUTOMATED VEHICLES`
-- `Dr. Divya C. Chandra`
-- `Yellowstone National Park Visitor Buses (Sumer 2021)`
-- `• Driving tasks and vocabulary`
-- `• Automation related to driving`
-- `• Flying vs. Driving comparison`
-- `– class discussion`
-- `Tasks and Vocabulary`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Automated Vehicles 3-11-26-2.pdf` | `pdf` | 374 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Automated Vehicles 3-11-26-2.pdf) |
 
 ## 相关主题
 
@@ -38,6 +67,8 @@
 - [Boeing 737 Max 与伦理](../HFE_Cases_Ethics/boeing_737max_and_ethics.md)
 
 ## 原文转写与来源映射
+
+下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 `unit_id` 都能在 `data/coverage_map.json` 中找到对应页面映射。
 
 ??? info "Automated Vehicles 3-11-26-2.pdf | 374 text units"
     下载原件: [Automated Vehicles 3-11-26-2.pdf](../assets/source_files/Lectures_Spring_2026/Automated Vehicles 3-11-26-2.pdf)

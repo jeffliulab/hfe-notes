@@ -2,34 +2,95 @@
 
 This page organizes the core definition, design objective, and systems view of human factors as an engineering discipline.
 
-## Page Intent
+## At a Glance
+
+Human factors is not mainly about cataloging human weakness. It is about designing systems around real human capabilities, limits, rhythms, memory, and attention.
+
+## The Core Message
+
+- Human factors has dual goals: human well-being and system performance.
+- The discipline assumes people remain part of the system, so design must fit real users rather than idealized users.
+- Good design is not merely expert-usable; it remains usable under stress, fatigue, and distraction.
+
+## Why This Matters
+
+Training matters, but human factors is broader than training. It asks whether interfaces, timing, workflows, and recovery opportunities are designed to support correct action in the first place.
+
+## Visuals and Page Previews
+
+This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-01-image1.png" alt="01 Intro to HF and Risk (1).pptx · slide 1" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · slide 1</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-08-image2.png" alt="01 Intro to HF and Risk (1).pptx · slide 8" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · slide 8</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-12-image3.jpeg" alt="01 Intro to HF and Risk (1).pptx · slide 12" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · slide 12</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-14-image4.jpg" alt="01 Intro to HF and Risk (1).pptx · slide 14" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · slide 14</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-16-image5.jpg" alt="01 Intro to HF and Risk (1).pptx · slide 16" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · slide 16</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-24-image7.png" alt="01 Intro to HF and Risk (1).pptx · slide 24" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · slide 24</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-25-image8.png" alt="01 Intro to HF and Risk (1).pptx · slide 25" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · slide 25</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-26-image9.jpg" alt="01 Intro to HF and Risk (1).pptx · slide 26" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · slide 26</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-31-image10.jpeg" alt="01 Intro to HF and Risk (1).pptx · slide 31" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · slide 31</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-33-image11.png" alt="01 Intro to HF and Risk (1).pptx · slide 33" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · slide 33</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-34-image12.png" alt="01 Intro to HF and Risk (1).pptx · slide 34" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · slide 34</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-36-image14.jpg" alt="01 Intro to HF and Risk (1).pptx · slide 36" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · slide 36</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-38-image15.jpeg" alt="01 Intro to HF and Risk (1).pptx · slide 38" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · slide 38</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/01-intro-to-hf-and-risk-1/slide-41-image16.png" alt="01 Intro to HF and Risk (1).pptx · slide 41" loading="lazy">
+    <figcaption>01 Intro to HF and Risk (1).pptx · slide 41</figcaption>
+  </figure>
+</div>
+
+## Source Scope and Related Topics
+
+The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
 - Section: `HFE Foundations`
 - Source files: 1
 - Text units: 322
+- Visuals/previews: 14
 
-## Key Angles
-
-- The disciplinary definition of human factors
-- The dual goals of well-being and performance
-- Treating humans as part of the system rather than just error sources
-
-## Source Coverage
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `01 Intro to HF and Risk (1).pptx` | `pptx` | 322 | [open](../assets/source_files/ENP_111_Use_related_Risks/01 Intro to HF and Risk (1).pptx) |
-
-## Representative Source Signals
-
-- `Sami Durrani PhD and Eric Bergman PhD`
-- `Introduction to Human Factors and Risk`
-- `“The scientific discipline concerning understanding of interactions among humans and other elements of a system, and applying theory, principles, data, and other methods to design…in order to optimize human well-being and overall system performance.”`
-- `- Human Factors & Ergonomics Society`
-- `What is Human Factors?`
-- `Study, Research and Experimentation`
-- `Learn about human traits`
-- `Study interaction relationships`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `01 Intro to HF and Risk (1).pptx` | `pptx` | 322 | 14 | [open](../assets/source_files/ENP_111_Use_related_Risks/01 Intro to HF and Risk (1).pptx) |
 
 ## Related Topics
 
@@ -37,6 +98,8 @@ This page organizes the core definition, design objective, and systems view of h
 - [The Swiss Cheese Model](swiss_cheese.en.md)
 
 ## Original Transcription and Coverage Mapping
+
+The collapsible blocks below preserve page/slide-level source transcription. Each `unit_id` maps one-to-one in `data/coverage_map.json`.
 
 ??? info "01 Intro to HF and Risk (1).pptx | 322 text units"
     Download source: [01 Intro to HF and Risk (1).pptx](../assets/source_files/ENP_111_Use_related_Risks/01 Intro to HF and Risk (1).pptx)

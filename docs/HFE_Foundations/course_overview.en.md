@@ -2,34 +2,54 @@
 
 This page uses the course introduction to frame the scope, pacing, and application domain of the class before the later methods and case studies appear.
 
-## Page Intent
+## At a Glance
+
+This course treats human factors as a systems problem rather than a collection of isolated operator mistakes. Aviation, medical devices, and automation are used as recurring application domains.
+
+## Course Arc
+
+1. Build shared language through human factors and human error frameworks.
+2. Turn that language into methods such as investigation, task analysis, and URRA.
+3. Apply the methods in aviation, automation, and medical-device contexts.
+4. End with cases and ethics, where organizational choices shape risk.
+
+## What To Keep In Mind
+
+- The recurring unit of analysis is the person-in-system relationship.
+- Later method pages answer three questions: what the task is, where failure can emerge, and how the system blocks or amplifies it.
+- If this logic is clear, the rest of the site becomes much easier to navigate.
+
+## Visuals and Page Previews
+
+This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/course-intro-1-14-26/page-01.png" alt="Course intro 1-14-26.pdf · page 1 preview" loading="lazy">
+    <figcaption>Course intro 1-14-26.pdf · page 1 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/course-intro-1-14-26/page-03.png" alt="Course intro 1-14-26.pdf · page 3 preview" loading="lazy">
+    <figcaption>Course intro 1-14-26.pdf · page 3 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/course-intro-1-14-26/page-07.png" alt="Course intro 1-14-26.pdf · page 7 preview" loading="lazy">
+    <figcaption>Course intro 1-14-26.pdf · page 7 preview</figcaption>
+  </figure>
+</div>
+
+## Source Scope and Related Topics
+
+The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
 - Section: `HFE Foundations`
 - Source files: 1
 - Text units: 388
+- Visuals/previews: 3
 
-## Key Angles
-
-- What system-level problems the course targets
-- Why aviation is a strong entry point for HFE
-- How later topics branch from the introductory frame
-
-## Source Coverage
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Course intro 1-14-26.pdf` | `pdf` | 388 | [open](../assets/source_files/Lectures_Spring_2026/Course intro 1-14-26.pdf) |
-
-## Representative Source Signals
-
-- `Engineering Forensics`
-- `Divya Chandra, Andy Liu, Parisa Arastu`
-- `• Generative AI discussion`
-- `• Websites, context, mitigations`
-- `Divya Chandra, Ph.D. {d.chandra@tufts.edu}`
-- `Andrew M. Liu, Ph.D. {aliu17@tufts.edu}`
-- `Teaching Assistant`
-- `Parisa Arastu, Arts & Sciences 26`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Course intro 1-14-26.pdf` | `pdf` | 388 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Course intro 1-14-26.pdf) |
 
 ## Related Topics
 
@@ -37,6 +57,8 @@ This page uses the course introduction to frame the scope, pacing, and applicati
 - [Error Analysis and Investigation Flow](../HFE_Risk_Methods/error_analysis_methods.en.md)
 
 ## Original Transcription and Coverage Mapping
+
+The collapsible blocks below preserve page/slide-level source transcription. Each `unit_id` maps one-to-one in `data/coverage_map.json`.
 
 ??? info "Course intro 1-14-26.pdf | 388 text units"
     Download source: [Course intro 1-14-26.pdf](../assets/source_files/Lectures_Spring_2026/Course intro 1-14-26.pdf)

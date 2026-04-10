@@ -2,34 +2,55 @@
 
 This page focuses on fatigue, circadian rhythm, and sleep loss as physiological constraints on performance.
 
-## Page Intent
+## At a Glance
+
+Fatigue is not merely a feeling of tiredness. It is a physiological constraint that degrades reaction time, working memory, judgment, monitoring, and recovery.
+
+## Core Message
+
+- sleep loss can leave people functional enough to continue working while quietly degrading important cognitive abilities
+- circadian rhythm changes the risk profile across time of day
+- fatigue management cannot rely only on personal willpower because schedules, task length, and night work generate fatigue systemically
+
+## Why It Matters
+
+Interfaces, procedures, and training are all filtered through a fatigued human operator. That makes fatigue a system-design issue, not just a personal habit issue.
+
+## Common Difficulty
+
+Telling people to rest more is not enough. Stronger approaches treat fatigue as a design variable in scheduling, task timing, handoff design, and high-risk cross-checking.
+
+## Visuals and Page Previews
+
+This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-fatigue-sleep-20260211/page-01.png" alt="Sp26_Fatigue+Sleep_20260211.pdf · page 1 preview" loading="lazy">
+    <figcaption>Sp26_Fatigue+Sleep_20260211.pdf · page 1 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-fatigue-sleep-20260211/page-04.png" alt="Sp26_Fatigue+Sleep_20260211.pdf · page 4 preview" loading="lazy">
+    <figcaption>Sp26_Fatigue+Sleep_20260211.pdf · page 4 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-fatigue-sleep-20260211/page-05.png" alt="Sp26_Fatigue+Sleep_20260211.pdf · page 5 preview" loading="lazy">
+    <figcaption>Sp26_Fatigue+Sleep_20260211.pdf · page 5 preview</figcaption>
+  </figure>
+</div>
+
+## Source Scope and Related Topics
+
+The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
 - Section: `Human Performance`
 - Source files: 1
 - Text units: 481
+- Visuals/previews: 3
 
-## Key Angles
-
-- How fatigue affects response, judgment, and monitoring
-- Why circadian rhythm changes the risk window
-- Why fatigue management cannot rely on personal discipline alone
-
-## Source Coverage
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Sp26_Fatigue+Sleep_20260211.pdf` | `pdf` | 481 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_Fatigue+Sleep_20260211.pdf) |
-
-## Representative Source Signals
-
-- `1999 US DOT Operational Definition`
-- `Fatigue is a complex state characterized by a lack of alertness and reduced mental`
-- `and physical performance, often accompanied by drowsiness.`
-- `Fatigue may be caused or exacerbated by any or all of the following: lack of sleep,`
-- `disruptive work/ rest cycles, neurological conditions, excess mental or physical`
-- `workload, exposure to extreme physical conditions, emotional stress, the use of drugs`
-- `or alcohol, illness, and/or monotony.`
-- `Fatigue is MORE THAN`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Sp26_Fatigue+Sleep_20260211.pdf` | `pdf` | 481 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_Fatigue+Sleep_20260211.pdf) |
 
 ## Related Topics
 
@@ -38,6 +59,8 @@ This page focuses on fatigue, circadian rhythm, and sleep loss as physiological 
 - [Operational Risk](../HFE_Cases_Ethics/operational_risk.en.md)
 
 ## Original Transcription and Coverage Mapping
+
+The collapsible blocks below preserve page/slide-level source transcription. Each `unit_id` maps one-to-one in `data/coverage_map.json`.
 
 ??? info "Sp26_Fatigue+Sleep_20260211.pdf | 481 text units"
     Download source: [Sp26_Fatigue+Sleep_20260211.pdf](../assets/source_files/Lectures_Spring_2026/Sp26_Fatigue+Sleep_20260211.pdf)

@@ -2,34 +2,76 @@
 
 This page explains how task analysis decomposes use flow into observable tasks and subtasks that can later be evaluated for risk.
 
-## Page Intent
+## At a Glance
+
+Task analysis turns a continuous use episode into observable, discussable, and risk-assessable steps.
+
+## What Gets Decomposed
+
+- the user's goal
+- the steps required to reach that goal
+- the information, judgment, and action demands at each step
+- the points where failure would affect safety or recovery
+
+## Why It Matters
+
+Task analysis is the foundation for later work. Without it, use errors, critical tasks, and controls remain vague.
+
+## Common Difficulty
+
+A useful task analysis is not just a rewritten instruction manual. It compares the ideal flow with the real flow that users are likely to perform in context.
+
+## Visuals and Page Previews
+
+This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/08-task-analysis/slide-01-image1.png" alt="08 Task Analysis.pptx · slide 1" loading="lazy">
+    <figcaption>08 Task Analysis.pptx · slide 1</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/08-task-analysis/slide-04-image2.jpeg" alt="08 Task Analysis.pptx · slide 4" loading="lazy">
+    <figcaption>08 Task Analysis.pptx · slide 4</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/08-task-analysis/slide-05-image3.jpeg" alt="08 Task Analysis.pptx · slide 5" loading="lazy">
+    <figcaption>08 Task Analysis.pptx · slide 5</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/08-task-analysis/slide-05-image4.jpeg" alt="08 Task Analysis.pptx · slide 5" loading="lazy">
+    <figcaption>08 Task Analysis.pptx · slide 5</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/08-task-analysis/slide-05-image5.jpeg" alt="08 Task Analysis.pptx · slide 5" loading="lazy">
+    <figcaption>08 Task Analysis.pptx · slide 5</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/08-task-analysis/slide-05-image6.jpeg" alt="08 Task Analysis.pptx · slide 5" loading="lazy">
+    <figcaption>08 Task Analysis.pptx · slide 5</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/08-task-analysis/slide-05-image7.jpeg" alt="08 Task Analysis.pptx · slide 5" loading="lazy">
+    <figcaption>08 Task Analysis.pptx · slide 5</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/08-task-analysis/slide-08-image8.png" alt="08 Task Analysis.pptx · slide 8" loading="lazy">
+    <figcaption>08 Task Analysis.pptx · slide 8</figcaption>
+  </figure>
+</div>
+
+## Source Scope and Related Topics
+
+The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
 - Section: `Risk Methods`
 - Source files: 1
 - Text units: 80
+- Visuals/previews: 8
 
-## Key Angles
-
-- Why task decomposition is foundational for risk analysis
-- How subtasks and use steps are defined
-- How task flow leads into use error and mitigation
-
-## Source Coverage
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `08 Task Analysis.pptx` | `pptx` | 80 | [open](../assets/source_files/ENP_111_Use_related_Risks/08 Task Analysis.pptx) |
-
-## Representative Source Signals
-
-- `Sami Durrani PhD and Eric Bergman PhD`
-- `There are many different forms of task analysis`
-- `Hierarchical Task Analysis (HTA)`
-- `Cognitive Task Analysis (CTA)`
-- `And many more variations and modifications`
-- `In medical device human factors, a “task analysis” is typically a modified HTA`
-- `Types of task analysis`
-- `Decompose task into sub-tasks (if needed)`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `08 Task Analysis.pptx` | `pptx` | 80 | 8 | [open](../assets/source_files/ENP_111_Use_related_Risks/08 Task Analysis.pptx) |
 
 ## Related Topics
 
@@ -38,6 +80,8 @@ This page explains how task analysis decomposes use flow into observable tasks a
 - [Use Errors in Medical Devices](../HFE_Medical_Devices/medical_device_use_errors.en.md)
 
 ## Original Transcription and Coverage Mapping
+
+The collapsible blocks below preserve page/slide-level source transcription. Each `unit_id` maps one-to-one in `data/coverage_map.json`.
 
 ??? info "08 Task Analysis.pptx | 80 text units"
     Download source: [08 Task Analysis.pptx](../assets/source_files/ENP_111_Use_related_Risks/08 Task Analysis.pptx)

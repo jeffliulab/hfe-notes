@@ -2,34 +2,55 @@
 
 This page summarizes the physiology, perceptual traps, and operational risk of spatial disorientation when sensory systems conflict with instruments.
 
-## Page Intent
+## At a Glance
+
+The key lesson in spatial disorientation is that human sensory intuition can be unreliable in flight. The felt motion of the aircraft may not match its actual state.
+
+## Core Conflict
+
+- vestibular and bodily cues can become misleading under specific acceleration, turning, and visibility conditions
+- instruments provide more reliable state information, but people do not always shift to them quickly under surprise or stress
+- risk escalates when bodily sensation is trusted over instrument information
+
+## Why It Matters
+
+Spatial disorientation is a classic human-factors conflict: human sensing can mislead, so design, training, and procedure must explicitly compensate for that weakness.
+
+## Common Difficulty
+
+These illusions often feel compelling to the person experiencing them. That is why effective control depends on prior training, display support, and procedural cross-checking rather than willpower alone.
+
+## Visuals and Page Previews
+
+This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-spdisorientation-20260330/page-01.png" alt="Sp26_SpDisorientation_20260330.pdf · page 1 preview" loading="lazy">
+    <figcaption>Sp26_SpDisorientation_20260330.pdf · page 1 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-spdisorientation-20260330/page-02.png" alt="Sp26_SpDisorientation_20260330.pdf · page 2 preview" loading="lazy">
+    <figcaption>Sp26_SpDisorientation_20260330.pdf · page 2 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-spdisorientation-20260330/page-03.png" alt="Sp26_SpDisorientation_20260330.pdf · page 3 preview" loading="lazy">
+    <figcaption>Sp26_SpDisorientation_20260330.pdf · page 3 preview</figcaption>
+  </figure>
+</div>
+
+## Source Scope and Related Topics
+
+The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
 - Section: `Human Performance`
 - Source files: 1
 - Text units: 281
+- Visuals/previews: 3
 
-## Key Angles
-
-- Why sensory systems can mislead operators
-- How instrument scan counteracts illusion
-- Why spatial disorientation is so hazardous
-
-## Source Coverage
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Sp26_SpDisorientation_20260330.pdf` | `pdf` | 281 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_SpDisorientation_20260330.pdf) |
-
-## Representative Source Signals
-
-- `SPATIAL DISORIENTATION`
-- `ANATOMY OF THE EAR`
-- `virtualmedicalcentre.com`
-- `http://utahhearingandbalance.com/dizziness/balance-and-the-vestibular-system/`
-- `https://www.dizziness-and-balance.com`
-- `Credit: You, Instrum, and Parnes, 2019.`
-- `OTOLITH HAIR CELLS`
-- `WellcomeCollection.org`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Sp26_SpDisorientation_20260330.pdf` | `pdf` | 281 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_SpDisorientation_20260330.pdf) |
 
 ## Related Topics
 
@@ -38,6 +59,8 @@ This page summarizes the physiology, perceptual traps, and operational risk of s
 - [Fatigue and Sleep](fatigue_and_sleep.en.md)
 
 ## Original Transcription and Coverage Mapping
+
+The collapsible blocks below preserve page/slide-level source transcription. Each `unit_id` maps one-to-one in `data/coverage_map.json`.
 
 ??? info "Sp26_SpDisorientation_20260330.pdf | 281 text units"
     Download source: [Sp26_SpDisorientation_20260330.pdf](../assets/source_files/Lectures_Spring_2026/Sp26_SpDisorientation_20260330.pdf)

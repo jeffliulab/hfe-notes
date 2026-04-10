@@ -2,35 +2,72 @@
 
 本页将压力、决策、分心与认知偏差放在一起，说明高负荷场景下操作者为何更容易走向次优选择。
 
-## 本页定位
+## 一眼看懂
+
+压力、决策与分心这一页讲的是：人在高负荷下不是简单“变差”，而是会把注意和策略缩窄到更少的选项上，于是更容易看漏、想偏、决策过快或者过慢。
+
+## 这页的核心链条
+
+- 压力会占用认知资源，缩窄搜索范围。
+- 分心会打断计划执行，让人更容易漏步、跳步或失去时间线。
+- 时间压力会推动启发式判断和 satisficing，而不是完整比较。
+
+## 读这页时最重要的判断
+
+当一个环境又快、又乱、又有后果时，要问的不是“为什么操作者不更冷静”，而是：
+
+- 系统有没有帮他保留关键线索
+- 决策空间是不是被组织或界面压得太窄
+- 团队、程序和告警有没有减轻负担，而不是继续加码
+
+## 难点讲解
+
+压力不总会导致错误，有时还会暂时提升警觉；真正危险的是过高压力、持续时间过长、信息又不完整时，操作者开始依赖最熟悉的路径，忽略不符合预期的新线索。这也是很多复杂事件里“明明看到了信息却没用上”的根源。
+
+## 图示与页面预览
+
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-stressdecisionmaking-20260225/page-01.png" alt="Sp26_StressDecisionMaking_20260225.pdf · 第 1 页预览" loading="lazy">
+    <figcaption>Sp26_StressDecisionMaking_20260225.pdf · 第 1 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-stressdecisionmaking-20260225/page-03.png" alt="Sp26_StressDecisionMaking_20260225.pdf · 第 3 页预览" loading="lazy">
+    <figcaption>Sp26_StressDecisionMaking_20260225.pdf · 第 3 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-stressdecisionmaking-20260225/page-04.png" alt="Sp26_StressDecisionMaking_20260225.pdf · 第 4 页预览" loading="lazy">
+    <figcaption>Sp26_StressDecisionMaking_20260225.pdf · 第 4 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-decisionmakingdistraction-20260302/page-01.png" alt="Sp26_DecisionMakingDistraction_20260302.pdf · 第 1 页预览" loading="lazy">
+    <figcaption>Sp26_DecisionMakingDistraction_20260302.pdf · 第 1 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-decisionmakingdistraction-20260302/page-02.png" alt="Sp26_DecisionMakingDistraction_20260302.pdf · 第 2 页预览" loading="lazy">
+    <figcaption>Sp26_DecisionMakingDistraction_20260302.pdf · 第 2 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-decisionmakingdistraction-20260302/page-03.png" alt="Sp26_DecisionMakingDistraction_20260302.pdf · 第 3 页预览" loading="lazy">
+    <figcaption>Sp26_DecisionMakingDistraction_20260302.pdf · 第 3 页预览</figcaption>
+  </figure>
+</div>
+
+## 资料范围与相关主题
+
+正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。
 
 - 所属分区: `人的表现`
 - 关联源文件数: 2
 - 文本单元数: 605
+- 配图/预览数: 6
 
-## 关注重点
-
-- 压力如何缩窄注意与策略空间
-- 分心如何侵蚀程序执行与监控
-- 决策偏差为何常与时间压力绑定
-
-## 来源覆盖
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Sp26_StressDecisionMaking_20260225.pdf` | `pdf` | 342 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_StressDecisionMaking_20260225.pdf) |
-| `Sp26_DecisionMakingDistraction_20260302.pdf` | `pdf` | 263 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_DecisionMakingDistraction_20260302.pdf) |
-
-## 代表性原始语句
-
-- `DECISION MAKING & PERFORMANCE`
-- `AIR FRANCE 447 – SUCCESSION OF EVENTS`
-- `• Temporary inconsistency between the airspeed measurements, likely following the`
-- `obstruction of the Pitot probes by ice crystals that, in particular, caused the autopilot`
-- `disconnection and the reconfiguration to alternate law;`
-- `• Inappropriate control inputs that destabilized the flight path;`
-- `• The lack of any link by the crew between the loss of indicated speeds called out and the`
-- `appropriate procedure;`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Sp26_StressDecisionMaking_20260225.pdf` | `pdf` | 342 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_StressDecisionMaking_20260225.pdf) |
+| `Sp26_DecisionMakingDistraction_20260302.pdf` | `pdf` | 263 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_DecisionMakingDistraction_20260302.pdf) |
 
 ## 相关主题
 
@@ -39,6 +76,8 @@
 - [Boeing 737 Max 与伦理](../HFE_Cases_Ethics/boeing_737max_and_ethics.md)
 
 ## 原文转写与来源映射
+
+下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 `unit_id` 都能在 `data/coverage_map.json` 中找到对应页面映射。
 
 ??? info "Sp26_StressDecisionMaking_20260225.pdf | 342 text units"
     下载原件: [Sp26_StressDecisionMaking_20260225.pdf](../assets/source_files/Lectures_Spring_2026/Sp26_StressDecisionMaking_20260225.pdf)

@@ -2,34 +2,87 @@
 
 本页聚焦医疗器械中的 use error、异常使用与界面诱发风险，强调错误并非只来自操作者，而是来自整个使用系统。
 
-## 本页定位
+## 一眼看懂
+
+医疗器械 use error 这一页想解决的问题是：当不良后果发生时，我们怎样区分“器械本身失效”“用户无意出错”“用户故意偏离”“环境把正确操作变得很难”。
+
+## 这页要建立的判断习惯
+
+- 不要把所有不良使用都叫 use error
+- 要看错误是否在可预见使用范围内
+- 要看设计是否放大了误选、漏做、误判或顺序错误
+- 要看恢复机会是否存在
+
+## 为什么这个区分重要
+
+因为一旦你把问题定义错了，后面的改进就会跑偏：
+
+- 如果明明是界面诱发错误，却只去补培训，风险还会回来
+- 如果本质是异常使用或故意违规，却按普通 use error 处理，控制措施也会失真
+
+## 难点讲解
+
+这页真正难的地方不是下定义，而是承认“错误行为”常常是设计、时间压力、包装、标签和工作环境共同塑造出来的。也因此，人因分析必须回到具体任务和情境。
+
+## 图示与页面预览
+
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/07-use-errors/slide-01-image1.png" alt="07 Use Errors.pptx · 第 1 张幻灯片" loading="lazy">
+    <figcaption>07 Use Errors.pptx · 第 1 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/07-use-errors/slide-04-image2.jpeg" alt="07 Use Errors.pptx · 第 4 张幻灯片" loading="lazy">
+    <figcaption>07 Use Errors.pptx · 第 4 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/07-use-errors/slide-05-image3.jpeg" alt="07 Use Errors.pptx · 第 5 张幻灯片" loading="lazy">
+    <figcaption>07 Use Errors.pptx · 第 5 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/07-use-errors/slide-06-image4.jpeg" alt="07 Use Errors.pptx · 第 6 张幻灯片" loading="lazy">
+    <figcaption>07 Use Errors.pptx · 第 6 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/07-use-errors/slide-09-image2.jpeg" alt="07 Use Errors.pptx · 第 9 张幻灯片" loading="lazy">
+    <figcaption>07 Use Errors.pptx · 第 9 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/07-use-errors/slide-10-image3.jpeg" alt="07 Use Errors.pptx · 第 10 张幻灯片" loading="lazy">
+    <figcaption>07 Use Errors.pptx · 第 10 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/07-use-errors/slide-11-image4.jpeg" alt="07 Use Errors.pptx · 第 11 张幻灯片" loading="lazy">
+    <figcaption>07 Use Errors.pptx · 第 11 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/07-use-errors/slide-13-image5.jpeg" alt="07 Use Errors.pptx · 第 13 张幻灯片" loading="lazy">
+    <figcaption>07 Use Errors.pptx · 第 13 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/07-use-errors/slide-16-image6.png" alt="07 Use Errors.pptx · 第 16 张幻灯片" loading="lazy">
+    <figcaption>07 Use Errors.pptx · 第 16 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/07-use-errors/slide-18-image7.jpeg" alt="07 Use Errors.pptx · 第 18 张幻灯片" loading="lazy">
+    <figcaption>07 Use Errors.pptx · 第 18 张幻灯片</figcaption>
+  </figure>
+</div>
+
+## 资料范围与相关主题
+
+正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。
 
 - 所属分区: `医疗器械`
 - 关联源文件数: 1
 - 文本单元数: 156
+- 配图/预览数: 10
 
-## 关注重点
-
-- use error 与 misuse 的边界
-- 界面与说明如何诱发错误
-- 为什么 use error 要和 validation 结合看
-
-## 来源覆盖
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `07 Use Errors.pptx` | `pptx` | 156 | [open](../assets/source_files/ENP_111_Use_related_Risks/07 Use Errors.pptx) |
-
-## 代表性原始语句
-
-- `ENP 111 – Use Related Risk Analysis`
-- `Sami Durrani PhD and Eric Bergman PhD`
-- `FDA definition: User action or lack of action that was different from that expected by the manufacturer and caused a result that:`
-- `(1) was different from the result expected by the user and`
-- `(2) was not caused solely by device failure and`
-- `(3) did or could result in harm`
-- `What is a use error?`
-- `Let’s look at a few case studies`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `07 Use Errors.pptx` | `pptx` | 156 | 10 | [open](../assets/source_files/ENP_111_Use_related_Risks/07 Use Errors.pptx) |
 
 ## 相关主题
 
@@ -38,6 +91,8 @@
 - [任务分析](../HFE_Risk_Methods/task_analysis.md)
 
 ## 原文转写与来源映射
+
+下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 `unit_id` 都能在 `data/coverage_map.json` 中找到对应页面映射。
 
 ??? info "07 Use Errors.pptx | 156 text units"
     下载原件: [07 Use Errors.pptx](../assets/source_files/ENP_111_Use_related_Risks/07 Use Errors.pptx)

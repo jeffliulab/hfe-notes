@@ -2,34 +2,65 @@
 
 本页用航空与自动化导论材料建立自动化收益、自动化陷阱与飞行员角色变化的总体框架。
 
-## 本页定位
+## 一眼看懂
+
+航空与自动化导论这一页，讲的不是“自动化越来越先进”这么简单，而是一个更关键的问题：当机器承担更多功能后，人到底还剩下什么工作，这些工作会不会反而更难。
+
+## 核心逻辑
+
+- 自动化的第一层收益通常是减轻重复负担、提高精度、稳定流程。
+- 但自动化也会把人的角色推向监控、接管、模式理解和异常处置，这些工作平时少做，一出问题却要求很高。
+- 所以自动化不是把人拿掉，而是重写了人的任务结构。
+
+## 真正要学会的判断
+
+读这页时要反复问三件事：
+
+1. 自动化接管了什么。
+2. 人保留了什么。
+3. 剩下的人类任务是否仍然可行。
+
+如果第三个问题答不上来，自动化往往只是把风险从“手动操作错误”转移成“监控失败、模式混淆或接管失败”。
+
+## 难点讲解
+
+很多人直觉上会觉得“自动化越多越安全”。课程其实想纠正这个直觉。真正决定安全的，不是自动化数量，而是：
+
+- 系统状态是否可见
+- 自动化模式是否好理解
+- 人在接管前是否还有足够时间和信息恢复情境意识
+
+## 图示与页面预览
+
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/intro-to-aviation-and-automation-1-26-26-2/page-01.png" alt="Intro to Aviation and Automation 1-26-26-2.pdf · 第 1 页预览" loading="lazy">
+    <figcaption>Intro to Aviation and Automation 1-26-26-2.pdf · 第 1 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/intro-to-aviation-and-automation-1-26-26-2/page-02.png" alt="Intro to Aviation and Automation 1-26-26-2.pdf · 第 2 页预览" loading="lazy">
+    <figcaption>Intro to Aviation and Automation 1-26-26-2.pdf · 第 2 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/intro-to-aviation-and-automation-1-26-26-2/page-03.png" alt="Intro to Aviation and Automation 1-26-26-2.pdf · 第 3 页预览" loading="lazy">
+    <figcaption>Intro to Aviation and Automation 1-26-26-2.pdf · 第 3 页预览</figcaption>
+  </figure>
+</div>
+
+## 资料范围与相关主题
+
+正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。
 
 - 所属分区: `航空与自动化`
 - 关联源文件数: 1
 - 文本单元数: 465
+- 配图/预览数: 3
 
-## 关注重点
-
-- 自动化为什么既能增效也能增险
-- 角色分配如何影响监控与干预
-- 航空系统为何是自动化 HFE 的经典实验场
-
-## 来源覆盖
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Intro to Aviation and Automation 1-26-26-2.pdf` | `pdf` | 465 | [open](../assets/source_files/Lectures_Spring_2026/Intro to Aviation and Automation 1-26-26-2.pdf) |
-
-## 代表性原始语句
-
-- `Fundamentals of Aviation and`
-- `Aircraft Automation`
-- `ENP 0112 Engineering Forensics`
-- `Why start with aviation?`
-- `Investment in human factors research`
-- `for aviation began around World War I`
-- `– No parallel effort for automotive`
-- `human factors until 1970-80s*`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Intro to Aviation and Automation 1-26-26-2.pdf` | `pdf` | 465 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Intro to Aviation and Automation 1-26-26-2.pdf) |
 
 ## 相关主题
 
@@ -38,6 +69,8 @@
 - [自动化车辆](automated_vehicles.md)
 
 ## 原文转写与来源映射
+
+下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 `unit_id` 都能在 `data/coverage_map.json` 中找到对应页面映射。
 
 ??? info "Intro to Aviation and Automation 1-26-26-2.pdf | 465 text units"
     下载原件: [Intro to Aviation and Automation 1-26-26-2.pdf](../assets/source_files/Lectures_Spring_2026/Intro to Aviation and Automation 1-26-26-2.pdf)

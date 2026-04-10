@@ -2,34 +2,62 @@
 
 本页整理 Use-Related Risk Analysis 的写法、输入输出与判定思路，突出 URRA 在人因风险管理中的中枢作用。
 
-## 本页定位
+## 一眼看懂
+
+URRA 的核心作用，是把“任务步骤”“可能的使用错误”“危险情境”“伤害后果”和“风险控制”串成一张可追踪的链，而不是只留下零散担忧。
+
+## 一条 URRA 记录通常在回答什么
+
+- 用户在做哪一个 use step
+- 可能出现什么错误行为
+- 这个错误会把系统带到什么危险情境
+- 最终可能造成什么 harm
+- 现有控制是否足够，是否还要增加新的控制
+
+## 写 URRA 时的逻辑顺序
+
+先从任务与场景出发，再写错误，再写后果，最后才讨论控制。顺序不能反过来。因为如果你先想控制措施，很容易把分析写成“已有设计说明书”，而不是对风险的真正展开。
+
+## 难点讲解
+
+URRA 写得不好的常见原因有两个：
+
+- 把错误写得太笼统，例如“使用不当”
+- 把 harm 写得太近，例如只写“剂量错误”，却没有继续写到病人可能受到什么伤害
+
+好的 URRA 必须具体到足以支持后续验证。
+
+## 图示与页面预览
+
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/10-write-urra/slide-01-image1.png" alt="10 Write URRA.pptx · 第 1 张幻灯片" loading="lazy">
+    <figcaption>10 Write URRA.pptx · 第 1 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/10-write-urra/slide-02-image2.png" alt="10 Write URRA.pptx · 第 2 张幻灯片" loading="lazy">
+    <figcaption>10 Write URRA.pptx · 第 2 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/10-write-urra/slide-05-image3.png" alt="10 Write URRA.pptx · 第 5 张幻灯片" loading="lazy">
+    <figcaption>10 Write URRA.pptx · 第 5 张幻灯片</figcaption>
+  </figure>
+</div>
+
+## 资料范围与相关主题
+
+正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。
 
 - 所属分区: `风险方法`
 - 关联源文件数: 1
 - 文本单元数: 52
+- 配图/预览数: 3
 
-## 关注重点
-
-- URRA 的目标与文档结构
-- 风险链条如何从任务与错误导出
-- URRA 如何为验证与控制措施服务
-
-## 来源覆盖
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `10 Write URRA.pptx` | `pptx` | 52 | [open](../assets/source_files/ENP_111_Use_related_Risks/10 Write URRA.pptx) |
-
-## 代表性原始语句
-
-- `Sami Durrani PhD and Eric Bergman PhD`
-- `Developing the URRA`
-- `Review: Use-related risk analysis process (as defined by FDA)`
-- `Identifying potential use errors?`
-- `Typical sources of data (not a comprehensive list)`
-- `Previous version of device`
-- `Similar devices, included competitors`
-- `Devices with a similar UI, user interactions, or uses`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `10 Write URRA.pptx` | `pptx` | 52 | 3 | [open](../assets/source_files/ENP_111_Use_related_Risks/10 Write URRA.pptx) |
 
 ## 相关主题
 
@@ -38,6 +66,8 @@
 - [EpiPen URRA 工作簿](../HFE_Medical_Devices/epipen_workbook.md)
 
 ## 原文转写与来源映射
+
+下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 `unit_id` 都能在 `data/coverage_map.json` 中找到对应页面映射。
 
 ??? info "10 Write URRA.pptx | 52 text units"
     下载原件: [10 Write URRA.pptx](../assets/source_files/ENP_111_Use_related_Risks/10 Write URRA.pptx)

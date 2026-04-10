@@ -2,34 +2,55 @@
 
 This page examines the ingredients of operational risk, organizational conditions, and real-world constraints to show that risk belongs to the operating system, not just a single task.
 
-## Page Intent
+## At a Glance
+
+Operational risk is about seeing risk as something embedded in ongoing operating conditions rather than in a single visible error.
+
+## Core Logic
+
+- risk varies with context rather than remaining fixed
+- work as imagined often differs from work as done
+- organizations that only inspect the formal procedure tend to underestimate real operating risk
+
+## Why It Matters
+
+This topic reconnects many earlier themes by placing defenses, event analysis, fatigue, stress, and procedures back into the everyday operating system.
+
+## Common Difficulty
+
+Operational risk is not just another checklist. It is a way of asking whether real conditions are gradually eroding the safety boundary that formal design assumes.
+
+## Visuals and Page Previews
+
+This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/operational-risk-2-18-2026/page-01.png" alt="Operational Risk 2-18-2026.pdf · page 1 preview" loading="lazy">
+    <figcaption>Operational Risk 2-18-2026.pdf · page 1 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/operational-risk-2-18-2026/page-02.png" alt="Operational Risk 2-18-2026.pdf · page 2 preview" loading="lazy">
+    <figcaption>Operational Risk 2-18-2026.pdf · page 2 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/operational-risk-2-18-2026/page-16.png" alt="Operational Risk 2-18-2026.pdf · page 16 preview" loading="lazy">
+    <figcaption>Operational Risk 2-18-2026.pdf · page 16 preview</figcaption>
+  </figure>
+</div>
+
+## Source Scope and Related Topics
+
+The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
 - Section: `Cases and Ethics`
 - Source files: 1
 - Text units: 251
+- Visuals/previews: 3
 
-## Key Angles
-
-- Why operational risk exceeds a single error event
-- How organizational constraints shape frontline behavior
-- Why risk management requires ongoing monitoring
-
-## Source Coverage
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Operational Risk 2-18-2026.pdf` | `pdf` | 251 | [open](../assets/source_files/Lectures_Spring_2026/Operational Risk 2-18-2026.pdf) |
-
-## Representative Source Signals
-
-- `Dr. Divya C. Chandra`
-- `• Selection and training (Knowledge, Skills, and Abilities)`
-- `• Motivation, arousal (optimize attention)`
-- `• Policies and procedures (e.g., checklists)`
-- `• Controls (soft or hard), “Usability” (e.g., visibility of system state, interaction`
-- `• Automated systems? (take the operator out of the system)`
-- `• Variation across each operation (e.g., across flights)`
-- `• Work as imagined (theory) vs. work as done (reality)`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Operational Risk 2-18-2026.pdf` | `pdf` | 251 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Operational Risk 2-18-2026.pdf) |
 
 ## Related Topics
 
@@ -38,6 +59,8 @@ This page examines the ingredients of operational risk, organizational condition
 - [Checklists and Procedures](../HFE_Aviation_Automation/checklists_and_procedures.en.md)
 
 ## Original Transcription and Coverage Mapping
+
+The collapsible blocks below preserve page/slide-level source transcription. Each `unit_id` maps one-to-one in `data/coverage_map.json`.
 
 ??? info "Operational Risk 2-18-2026.pdf | 251 text units"
     Download source: [Operational Risk 2-18-2026.pdf](../assets/source_files/Lectures_Spring_2026/Operational Risk 2-18-2026.pdf)

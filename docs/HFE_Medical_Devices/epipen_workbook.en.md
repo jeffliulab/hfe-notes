@@ -2,34 +2,39 @@
 
 This page uses the EpiPen workbook to turn task analysis, potential use error, hazard, harm, severity, critical tasks, and mitigation into a concrete working artifact.
 
-## Page Intent
+## At a Glance
+
+The EpiPen workbook is not a new theory page. It is a worked example that turns earlier concepts into something documentable.
+
+## How To Read It
+
+- how the use flow is decomposed
+- which steps become critical tasks
+- how each row moves from use step to hazard, harm, and control
+- which fields are descriptive versus evaluative
+
+## Why It Matters
+
+Examples are valuable because the hardest part of risk work is often translating concepts into disciplined document language.
+
+## Visuals and Page Previews
+
+This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+
+No displayable visual assets were extracted for this page, but the raw files and full transcription remain available below.
+
+## Source Scope and Related Topics
+
+The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
 - Section: `Medical Devices`
 - Source files: 1
 - Text units: 168
+- Visuals/previews: 0
 
-## Key Angles
-
-- How the table fields map to the risk chain
-- How the workbook supports teamwork
-- How workbook entries connect to validation tasks
-
-## Source Coverage
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `10 URRA EpiPen.xlsx` | `xlsx` | 168 | [open](../assets/source_files/ENP_111_Use_related_Risks/10 URRA EpiPen.xlsx) |
-
-## Representative Source Signals
-
-- `Potential Use Error`
-- `Hazardous Situation`
-- `Mitigation / Control`
-- `Validation Reference`
-- `Confirm AI is not expired`
-- `User injects with expired drug`
-- `Neurological damage`
-- `Expiry date is not legible,`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `10 URRA EpiPen.xlsx` | `xlsx` | 168 | 0 | [open](../assets/source_files/ENP_111_Use_related_Risks/10 URRA EpiPen.xlsx) |
 
 ## Related Topics
 
@@ -38,6 +43,8 @@ This page uses the EpiPen workbook to turn task analysis, potential use error, h
 - [URRA in Medical Devices](medical_device_urra.en.md)
 
 ## Original Transcription and Coverage Mapping
+
+The collapsible blocks below preserve page/slide-level source transcription. Each `unit_id` maps one-to-one in `data/coverage_map.json`.
 
 ??? info "10 URRA EpiPen.xlsx | 168 text units"
     Download source: [10 URRA EpiPen.xlsx](../assets/source_files/ENP_111_Use_related_Risks/10 URRA EpiPen.xlsx)

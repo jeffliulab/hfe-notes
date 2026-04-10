@@ -2,35 +2,115 @@
 
 本页整合课程里对 human error 的引入与框架化讲解，把 slips、mistakes、violations 与多层次失误模型放到同一个分析坐标系里。
 
-## 本页定位
+## 一眼看懂
+
+“人为失误框架”这页的重点，不是给错误贴标签本身，而是教你不要把所有问题都压缩成“某个人犯错了”。框架的作用，是把失误拆成不同层次，再决定应该改人、改任务，还是改系统。
+
+## 先把几类错误分清楚
+
+- `slip`：计划是对的，但动作做错了。典型场景是按错、点错、操作顺序打滑。
+- `lapse`：计划是对的，但动作漏掉了，常和记忆或注意脱落有关。
+- `mistake`：执行并没有错，错的是前面的判断、理解或计划。
+- `violation`：明知规则却主动偏离，通常不能直接算作 error taxonomy 里的“无意失误”。
+
+## 这套框架为什么重要
+
+课程里反复对比 old view 和 new view：
+
+- old view 把人看成“坏苹果”，认为系统本身是好的，问题在操作者
+- new view 认为错误是系统与情境共同产生的结果，重点是修系统、加防护、改善恢复能力
+
+所以同样是一个不良后果，框架不同，改进方向会完全不同。
+
+## 难点讲解
+
+最容易混淆的地方，是把“内部因素”和“外部因素”看成二选一。其实课程想强调的是：
+
+- 人当然有认知、情绪和体力限制
+- 但系统设计、信息质量、培训、组织文化和外部压力，同样会塑造错误
+
+真正成熟的分析不会停在“这个人注意力不够”，而会继续追问：为什么这个系统要求人在这种条件下还必须靠纯注意力顶住？
+
+## 读图时要抓住什么
+
+如果你在本页看到“感知-认知-动作”的图，不要把它当装饰。它在提醒你：错误不是一个点，而是信息进入、理解形成、动作输出整条链路中的失配。
+
+## 图示与页面预览
+
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/02-intro-to-human-error-1/slide-01-image1.png" alt="02 Intro to Human Error (1).pptx · 第 1 张幻灯片" loading="lazy">
+    <figcaption>02 Intro to Human Error (1).pptx · 第 1 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/02-intro-to-human-error-1/slide-11-image2.jpg" alt="02 Intro to Human Error (1).pptx · 第 11 张幻灯片" loading="lazy">
+    <figcaption>02 Intro to Human Error (1).pptx · 第 11 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/02-intro-to-human-error-1/slide-11-image3.png" alt="02 Intro to Human Error (1).pptx · 第 11 张幻灯片" loading="lazy">
+    <figcaption>02 Intro to Human Error (1).pptx · 第 11 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/02-intro-to-human-error-1/slide-16-image4.png" alt="02 Intro to Human Error (1).pptx · 第 16 张幻灯片" loading="lazy">
+    <figcaption>02 Intro to Human Error (1).pptx · 第 16 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/02-intro-to-human-error-1/slide-17-image5.jpeg" alt="02 Intro to Human Error (1).pptx · 第 17 张幻灯片" loading="lazy">
+    <figcaption>02 Intro to Human Error (1).pptx · 第 17 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/02-intro-to-human-error-1/slide-18-image6.png" alt="02 Intro to Human Error (1).pptx · 第 18 张幻灯片" loading="lazy">
+    <figcaption>02 Intro to Human Error (1).pptx · 第 18 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/02-intro-to-human-error-1/slide-19-image7.png" alt="02 Intro to Human Error (1).pptx · 第 19 张幻灯片" loading="lazy">
+    <figcaption>02 Intro to Human Error (1).pptx · 第 19 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/02-intro-to-human-error-1/slide-19-image8.png" alt="02 Intro to Human Error (1).pptx · 第 19 张幻灯片" loading="lazy">
+    <figcaption>02 Intro to Human Error (1).pptx · 第 19 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/02-intro-to-human-error-1/slide-20-image7.png" alt="02 Intro to Human Error (1).pptx · 第 20 张幻灯片" loading="lazy">
+    <figcaption>02 Intro to Human Error (1).pptx · 第 20 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/02-intro-to-human-error-1/slide-20-image8.png" alt="02 Intro to Human Error (1).pptx · 第 20 张幻灯片" loading="lazy">
+    <figcaption>02 Intro to Human Error (1).pptx · 第 20 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/02-intro-to-human-error-1/slide-25-image9.png" alt="02 Intro to Human Error (1).pptx · 第 25 张幻灯片" loading="lazy">
+    <figcaption>02 Intro to Human Error (1).pptx · 第 25 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/02-intro-to-human-error-1/slide-26-image10.png" alt="02 Intro to Human Error (1).pptx · 第 26 张幻灯片" loading="lazy">
+    <figcaption>02 Intro to Human Error (1).pptx · 第 26 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/03-he-frameworks-2/slide-01-image1.png" alt="03 HE Frameworks (2).pptx · 第 1 张幻灯片" loading="lazy">
+    <figcaption>03 HE Frameworks (2).pptx · 第 1 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/03-he-frameworks-2/slide-14-image2.png" alt="03 HE Frameworks (2).pptx · 第 14 张幻灯片" loading="lazy">
+    <figcaption>03 HE Frameworks (2).pptx · 第 14 张幻灯片</figcaption>
+  </figure>
+</div>
+
+## 资料范围与相关主题
+
+正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。
 
 - 所属分区: `HFE基础`
 - 关联源文件数: 2
 - 文本单元数: 443
+- 配图/预览数: 14
 
-## 关注重点
-
-- 错误类型如何区分
-- 个体层与系统层解释如何互补
-- 框架为什么会影响后续风险分析方法
-
-## 来源覆盖
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `02 Intro to Human Error (1).pptx` | `pptx` | 234 | [open](../assets/source_files/ENP_111_Use_related_Risks/02 Intro to Human Error (1).pptx) |
-| `03 HE Frameworks (2).pptx` | `pptx` | 209 | [open](../assets/source_files/ENP_111_Use_related_Risks/03 HE Frameworks (2).pptx) |
-
-## 代表性原始语句
-
-- `Sami Durrani PhD and Eric Bergman PhD`
-- `Introduction to Human Error`
-- `To err is human…” (Cicero, BC)`
-- `“The only real mistake is the one from which we learn nothing” (Attributed to Henry Ford)`
-- `“… to understand the reasons why humans err is science” (Hollnagel, 1993)`
-- `What is Human Error`
-- `Error will be taken as a generic term to encompass all those occasions in which a planned sequence of mental or physical activities fails to achieve its intended outcome, and when these failures cannot be attributed to the intervention of some change agency. (Reason, 1990)`
-- `A failure on the part of the human to perform a prescribed act (or the performance of a prohibited act) within specified limits of`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `02 Intro to Human Error (1).pptx` | `pptx` | 234 | 12 | [open](../assets/source_files/ENP_111_Use_related_Risks/02 Intro to Human Error (1).pptx) |
+| `03 HE Frameworks (2).pptx` | `pptx` | 209 | 2 | [open](../assets/source_files/ENP_111_Use_related_Risks/03 HE Frameworks (2).pptx) |
 
 ## 相关主题
 
@@ -39,6 +119,8 @@
 - [错误分析与调查流程](../HFE_Risk_Methods/error_analysis_methods.md)
 
 ## 原文转写与来源映射
+
+下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 `unit_id` 都能在 `data/coverage_map.json` 中找到对应页面映射。
 
 ??? info "02 Intro to Human Error (1).pptx | 234 text units"
     下载原件: [02 Intro to Human Error (1).pptx](../assets/source_files/ENP_111_Use_related_Risks/02 Intro to Human Error (1).pptx)

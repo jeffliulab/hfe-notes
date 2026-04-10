@@ -2,34 +2,57 @@
 
 This page focuses on display systems and alert design, organizing the tradeoffs among salience, prioritization, false alarms, and workload.
 
-## Page Intent
+## At a Glance
+
+The central challenge in displays and alerts is making critical information noticeable without drowning the operator in noise.
+
+## Core Structure
+
+- displays make system state visible and interpretable
+- alerts redirect attention at the right moment
+- if these are poorly coordinated, operators may notice a signal without understanding what it means or what to do next
+
+## Three Useful Questions
+
+1. Does this alert truly represent a high-priority condition?
+2. When it appears, can the operator quickly understand system state?
+3. Is the next action clear?
+
+## Common Difficulty
+
+More alerts do not necessarily produce more safety. Frequent low-value alerts can create alarm fatigue and trust erosion, which makes later critical alerts less effective.
+
+## Visuals and Page Previews
+
+This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/displays-and-alerts-2-4-26/page-01.png" alt="Displays and Alerts 2-4-26.pdf · page 1 preview" loading="lazy">
+    <figcaption>Displays and Alerts 2-4-26.pdf · page 1 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/displays-and-alerts-2-4-26/page-09.png" alt="Displays and Alerts 2-4-26.pdf · page 9 preview" loading="lazy">
+    <figcaption>Displays and Alerts 2-4-26.pdf · page 9 preview</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/displays-and-alerts-2-4-26/page-21.png" alt="Displays and Alerts 2-4-26.pdf · page 21 preview" loading="lazy">
+    <figcaption>Displays and Alerts 2-4-26.pdf · page 21 preview</figcaption>
+  </figure>
+</div>
+
+## Source Scope and Related Topics
+
+The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
 - Section: `Aviation and Automation`
 - Source files: 1
 - Text units: 619
+- Visuals/previews: 3
 
-## Key Angles
-
-- Why alerts must be salient without overwhelming the operator
-- How display hierarchy supports rapid diagnosis
-- How false alarms erode trust
-
-## Source Coverage
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Displays and Alerts 2-4-26.pdf` | `pdf` | 619 | [open](../assets/source_files/Lectures_Spring_2026/Displays and Alerts 2-4-26.pdf) |
-
-## Representative Source Signals
-
-- `DISPLAYS AND ALERTS`
-- `Dr. Divya C. Chandra`
-- `• Auditory displays`
-- `• Alerts in aviation`
-- `• Collision avoidance`
-- `• Implementation and testing`
-- `VISUAL DISPLAY DESIGN CONSIDERATIONS`
-- `• Screen resolution`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Displays and Alerts 2-4-26.pdf` | `pdf` | 619 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Displays and Alerts 2-4-26.pdf) |
 
 ## Related Topics
 
@@ -38,6 +61,8 @@ This page focuses on display systems and alert design, organizing the tradeoffs 
 - [Introduction to Aviation and Automation](aviation_automation_intro.en.md)
 
 ## Original Transcription and Coverage Mapping
+
+The collapsible blocks below preserve page/slide-level source transcription. Each `unit_id` maps one-to-one in `data/coverage_map.json`.
 
 ??? info "Displays and Alerts 2-4-26.pdf | 619 text units"
     Download source: [Displays and Alerts 2-4-26.pdf](../assets/source_files/Lectures_Spring_2026/Displays and Alerts 2-4-26.pdf)

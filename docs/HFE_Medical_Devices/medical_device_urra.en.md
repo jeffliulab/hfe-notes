@@ -2,34 +2,119 @@
 
 This page focuses on URRA within medical devices, connecting use scenarios, critical tasks, harm pathways, and controls in a regulated context.
 
-## Page Intent
+## At a Glance
+
+URRA in medical devices is stricter than a generic use-risk exercise because use conditions, critical tasks, and harm pathways directly affect patient safety.
+
+## Three Key Connections
+
+- task analysis into critical task identification
+- use error into hazardous situation and harm
+- harm back into interface, labeling, IFU, training, and physical design controls
+
+## Common Difficulty
+
+Teams often overuse “training” as the main control. The course pushes a stronger principle: if the interface or device can be redesigned, risk should not be left mainly to attention and training.
+
+## Visuals and Page Previews
+
+This gallery shows automatically extracted figures or page previews from the original PPT/PDF sources.
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-01-image1.png" alt="06 URRA in Medical Devices.pptx · slide 1" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · slide 1</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-02-image2.png" alt="06 URRA in Medical Devices.pptx · slide 2" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · slide 2</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-02-image3.jpeg" alt="06 URRA in Medical Devices.pptx · slide 2" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · slide 2</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-02-image4.jpeg" alt="06 URRA in Medical Devices.pptx · slide 2" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · slide 2</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-02-image5.png" alt="06 URRA in Medical Devices.pptx · slide 2" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · slide 2</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-02-image6.png" alt="06 URRA in Medical Devices.pptx · slide 2" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · slide 2</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-02-image7.png" alt="06 URRA in Medical Devices.pptx · slide 2" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · slide 2</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-03-image8.png" alt="06 URRA in Medical Devices.pptx · slide 3" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · slide 3</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-04-image9.png" alt="06 URRA in Medical Devices.pptx · slide 4" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · slide 4</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-04-image11.png" alt="06 URRA in Medical Devices.pptx · slide 4" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · slide 4</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-04-image13.png" alt="06 URRA in Medical Devices.pptx · slide 4" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · slide 4</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-04-image15.png" alt="06 URRA in Medical Devices.pptx · slide 4" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · slide 4</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-06-image17.jpeg" alt="06 URRA in Medical Devices.pptx · slide 6" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · slide 6</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-07-image18.png" alt="06 URRA in Medical Devices.pptx · slide 7" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · slide 7</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-07-image19.png" alt="06 URRA in Medical Devices.pptx · slide 7" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · slide 7</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-09-image30.png" alt="06 URRA in Medical Devices.pptx · slide 9" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · slide 9</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-18-image31.jpeg" alt="06 URRA in Medical Devices.pptx · slide 18" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · slide 18</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-19-image2.png" alt="06 URRA in Medical Devices.pptx · slide 19" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · slide 19</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-23-image32.png" alt="06 URRA in Medical Devices.pptx · slide 23" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · slide 23</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-24-image32.png" alt="06 URRA in Medical Devices.pptx · slide 24" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · slide 24</figcaption>
+  </figure>
+</div>
+
+## Source Scope and Related Topics
+
+The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
 - Section: `Medical Devices`
 - Source files: 1
 - Text units: 477
+- Visuals/previews: 20
 
-## Key Angles
-
-- How medical-device URRA differs from generic URRA
-- How critical tasks are defined
-- How controls return to interface, labeling, and IFU design
-
-## Source Coverage
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `06 URRA in Medical Devices.pptx` | `pptx` | 477 | [open](../assets/source_files/ENP_111_Use_related_Risks/06 URRA in Medical Devices.pptx) |
-
-## Representative Source Signals
-
-- `Sami Durrani PhD and Eric Bergman PhD`
-- `Use Related Risk in Medical Devices`
-- `Examples of medical devices`
-- `Medical device definition`
-- `https://www.fda.gov/media/131268/download`
-- `Medical device “user interface” includes…`
-- `The IFU (instructions for use)`
-- `Packaging & Labeling`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `06 URRA in Medical Devices.pptx` | `pptx` | 477 | 20 | [open](../assets/source_files/ENP_111_Use_related_Risks/06 URRA in Medical Devices.pptx) |
 
 ## Related Topics
 
@@ -38,6 +123,8 @@ This page focuses on URRA within medical devices, connecting use scenarios, crit
 - [The EpiPen URRA Workbook](epipen_workbook.en.md)
 
 ## Original Transcription and Coverage Mapping
+
+The collapsible blocks below preserve page/slide-level source transcription. Each `unit_id` maps one-to-one in `data/coverage_map.json`.
 
 ??? info "06 URRA in Medical Devices.pptx | 477 text units"
     Download source: [06 URRA in Medical Devices.pptx](../assets/source_files/ENP_111_Use_related_Risks/06 URRA in Medical Devices.pptx)

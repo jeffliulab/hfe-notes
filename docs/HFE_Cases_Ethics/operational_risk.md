@@ -2,34 +2,61 @@
 
 本页围绕 operational risk 的构成因素、组织条件与现实运行约束，展示风险并不只属于单次任务，而是属于运行系统。
 
-## 本页定位
+## 一眼看懂
+
+Operational risk 这页要你看到的是：风险不只发生在一次错误动作里，而是长期藏在运行条件里。班次、时间压力、环境变化、组织约束和一线应对方式，都会把系统推向更脆弱或更稳健的状态。
+
+## 核心逻辑
+
+- 任务风险会随着场景变化而波动，不是固定值。
+- work as imagined 和 work as done 往往存在差距。
+- 如果管理层只看程序上的“应该怎样做”，却不看一线实际怎样完成任务，就会低估真实运行风险。
+
+## 这页为什么很重要
+
+它把前面很多分散主题拉到一起：
+
+- Swiss Cheese 讲的是多层防线
+- error analysis 讲的是事件怎么展开
+- fatigue、stress、checklists 讲的是操作者怎样受到条件约束
+
+operational risk 则把这些都放回日常运行系统里，去看风险如何持续生成。
+
+## 难点讲解
+
+最容易犯的错，是把 operational risk 理解成“又一个风险清单”。更准确的理解应该是：它是一种看系统的视角，提醒你不断追问现实运行条件是不是正在侵蚀原本设计好的安全边界。
+
+## 图示与页面预览
+
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/operational-risk-2-18-2026/page-01.png" alt="Operational Risk 2-18-2026.pdf · 第 1 页预览" loading="lazy">
+    <figcaption>Operational Risk 2-18-2026.pdf · 第 1 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/operational-risk-2-18-2026/page-02.png" alt="Operational Risk 2-18-2026.pdf · 第 2 页预览" loading="lazy">
+    <figcaption>Operational Risk 2-18-2026.pdf · 第 2 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/operational-risk-2-18-2026/page-16.png" alt="Operational Risk 2-18-2026.pdf · 第 16 页预览" loading="lazy">
+    <figcaption>Operational Risk 2-18-2026.pdf · 第 16 页预览</figcaption>
+  </figure>
+</div>
+
+## 资料范围与相关主题
+
+正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。
 
 - 所属分区: `案例与伦理`
 - 关联源文件数: 1
 - 文本单元数: 251
+- 配图/预览数: 3
 
-## 关注重点
-
-- 运行风险为何超出单个错误事件
-- 组织约束如何塑造一线行为
-- 风险管理为何需要持续监测而不是一次性修补
-
-## 来源覆盖
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Operational Risk 2-18-2026.pdf` | `pdf` | 251 | [open](../assets/source_files/Lectures_Spring_2026/Operational Risk 2-18-2026.pdf) |
-
-## 代表性原始语句
-
-- `Dr. Divya C. Chandra`
-- `• Selection and training (Knowledge, Skills, and Abilities)`
-- `• Motivation, arousal (optimize attention)`
-- `• Policies and procedures (e.g., checklists)`
-- `• Controls (soft or hard), “Usability” (e.g., visibility of system state, interaction`
-- `• Automated systems? (take the operator out of the system)`
-- `• Variation across each operation (e.g., across flights)`
-- `• Work as imagined (theory) vs. work as done (reality)`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Operational Risk 2-18-2026.pdf` | `pdf` | 251 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Operational Risk 2-18-2026.pdf) |
 
 ## 相关主题
 
@@ -38,6 +65,8 @@
 - [检查单与程序](../HFE_Aviation_Automation/checklists_and_procedures.md)
 
 ## 原文转写与来源映射
+
+下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 `unit_id` 都能在 `data/coverage_map.json` 中找到对应页面映射。
 
 ??? info "Operational Risk 2-18-2026.pdf | 251 text units"
     下载原件: [Operational Risk 2-18-2026.pdf](../assets/source_files/Lectures_Spring_2026/Operational Risk 2-18-2026.pdf)

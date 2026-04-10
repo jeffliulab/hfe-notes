@@ -2,34 +2,126 @@
 
 本页聚焦医疗器械场景下的 URRA，把 use scenario、critical task、harm 路径与控制策略放到监管语境中理解。
 
-## 本页定位
+## 一眼看懂
+
+医疗器械场景下的 URRA，比一般风险分析更强调“使用情境是否可预见”“任务是否 critical”“错误是否会通向病人伤害”，因为这里的后果往往直接落在患者安全上。
+
+## 这页最重要的三个连接
+
+- 从任务分析连接到 critical task
+- 从 use error 连接到 hazardous situation 与 harm
+- 从 harm 再连接回界面、标签、IFU、培训与物理设计控制
+
+## 为什么医疗器械里的 URRA 更严格
+
+- 使用者不一定是专家
+- 使用环境可能嘈杂、紧急、光线差或时间极紧
+- 病人状态会放大错误后果
+- 监管要求你证明风险识别和控制逻辑是完整、可追踪、可验证的
+
+## 难点讲解
+
+很多团队会把 control 写成“培训用户”。这往往不够。课程里更想强调的是：如果界面、器械形态、信息呈现本身可以改，就不应该把主要风险压给培训和注意力。
+
+## 图示与页面预览
+
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-01-image1.png" alt="06 URRA in Medical Devices.pptx · 第 1 张幻灯片" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · 第 1 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-02-image2.png" alt="06 URRA in Medical Devices.pptx · 第 2 张幻灯片" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · 第 2 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-02-image3.jpeg" alt="06 URRA in Medical Devices.pptx · 第 2 张幻灯片" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · 第 2 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-02-image4.jpeg" alt="06 URRA in Medical Devices.pptx · 第 2 张幻灯片" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · 第 2 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-02-image5.png" alt="06 URRA in Medical Devices.pptx · 第 2 张幻灯片" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · 第 2 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-02-image6.png" alt="06 URRA in Medical Devices.pptx · 第 2 张幻灯片" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · 第 2 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-02-image7.png" alt="06 URRA in Medical Devices.pptx · 第 2 张幻灯片" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · 第 2 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-03-image8.png" alt="06 URRA in Medical Devices.pptx · 第 3 张幻灯片" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · 第 3 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-04-image9.png" alt="06 URRA in Medical Devices.pptx · 第 4 张幻灯片" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · 第 4 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-04-image11.png" alt="06 URRA in Medical Devices.pptx · 第 4 张幻灯片" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · 第 4 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-04-image13.png" alt="06 URRA in Medical Devices.pptx · 第 4 张幻灯片" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · 第 4 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-04-image15.png" alt="06 URRA in Medical Devices.pptx · 第 4 张幻灯片" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · 第 4 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-06-image17.jpeg" alt="06 URRA in Medical Devices.pptx · 第 6 张幻灯片" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · 第 6 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-07-image18.png" alt="06 URRA in Medical Devices.pptx · 第 7 张幻灯片" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · 第 7 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-07-image19.png" alt="06 URRA in Medical Devices.pptx · 第 7 张幻灯片" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · 第 7 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-09-image30.png" alt="06 URRA in Medical Devices.pptx · 第 9 张幻灯片" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · 第 9 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-18-image31.jpeg" alt="06 URRA in Medical Devices.pptx · 第 18 张幻灯片" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · 第 18 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-19-image2.png" alt="06 URRA in Medical Devices.pptx · 第 19 张幻灯片" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · 第 19 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-23-image32.png" alt="06 URRA in Medical Devices.pptx · 第 23 张幻灯片" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · 第 23 张幻灯片</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/06-urra-in-medical-devices/slide-24-image32.png" alt="06 URRA in Medical Devices.pptx · 第 24 张幻灯片" loading="lazy">
+    <figcaption>06 URRA in Medical Devices.pptx · 第 24 张幻灯片</figcaption>
+  </figure>
+</div>
+
+## 资料范围与相关主题
+
+正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。
 
 - 所属分区: `医疗器械`
 - 关联源文件数: 1
 - 文本单元数: 477
+- 配图/预览数: 20
 
-## 关注重点
-
-- 医疗器械 URRA 与一般 URRA 有何不同
-- critical task 如何界定
-- 控制措施如何回到界面、标签与 IFU
-
-## 来源覆盖
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `06 URRA in Medical Devices.pptx` | `pptx` | 477 | [open](../assets/source_files/ENP_111_Use_related_Risks/06 URRA in Medical Devices.pptx) |
-
-## 代表性原始语句
-
-- `Sami Durrani PhD and Eric Bergman PhD`
-- `Use Related Risk in Medical Devices`
-- `Examples of medical devices`
-- `Medical device definition`
-- `https://www.fda.gov/media/131268/download`
-- `Medical device “user interface” includes…`
-- `The IFU (instructions for use)`
-- `Packaging & Labeling`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `06 URRA in Medical Devices.pptx` | `pptx` | 477 | 20 | [open](../assets/source_files/ENP_111_Use_related_Risks/06 URRA in Medical Devices.pptx) |
 
 ## 相关主题
 
@@ -38,6 +130,8 @@
 - [EpiPen URRA 工作簿](epipen_workbook.md)
 
 ## 原文转写与来源映射
+
+下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 `unit_id` 都能在 `data/coverage_map.json` 中找到对应页面映射。
 
 ??? info "06 URRA in Medical Devices.pptx | 477 text units"
     下载原件: [06 URRA in Medical Devices.pptx](../assets/source_files/ENP_111_Use_related_Risks/06 URRA in Medical Devices.pptx)

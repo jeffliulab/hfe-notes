@@ -2,35 +2,77 @@
 
 本页把调查流程、NTSB 取证逻辑与错误分析方法放在一起，说明事故与事件分析如何从事实收集走向可执行的因果解释。
 
-## 本页定位
+## 一眼看懂
+
+错误分析与调查流程这一页，讲的是“如何把事故讲清楚”。重点不是写一段故事，而是把事实、时间线、因果链和改进行动拆开处理。
+
+## 调查的基本顺序
+
+1. 先收集事实：发生了什么、谁在场、系统处于什么状态。
+2. 再建时间线：事件是如何一步步演化的。
+3. 然后区分直接触发因素、前置条件和更深层的组织/设计因素。
+4. 最后把分析结果翻译成能执行的改进措施。
+
+## NTSB 风格的重要提醒
+
+- 先有事实，再谈原因
+- 不要把“结论”提前塞进证据描述里
+- 一个后果通常不只有一条原因线
+- 真正有价值的报告必须能让后续设计、训练、程序或监管发生变化
+
+## 难点讲解
+
+事故分析最常见的错误，是过早收束到一个显眼原因。例如“飞行员失误”或“护士看错了”。这会让你错过：
+
+- 信息呈现是否误导
+- 任务顺序是否本身容易出错
+- 程序是否与真实工作负荷冲突
+- 组织是否长期容忍危险偏差
+
+## 图示与页面预览
+
+下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览，帮助你先看框架和图示，再回到正文理解。
+
+<div class="note-visual-grid">
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-investigative-process-ntsb-20260121/page-01.png" alt="Sp26_Investigative Process-NTSB_20260121.pdf · 第 1 页预览" loading="lazy">
+    <figcaption>Sp26_Investigative Process-NTSB_20260121.pdf · 第 1 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-investigative-process-ntsb-20260121/page-02.png" alt="Sp26_Investigative Process-NTSB_20260121.pdf · 第 2 页预览" loading="lazy">
+    <figcaption>Sp26_Investigative Process-NTSB_20260121.pdf · 第 2 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-investigative-process-ntsb-20260121/page-03.png" alt="Sp26_Investigative Process-NTSB_20260121.pdf · 第 3 页预览" loading="lazy">
+    <figcaption>Sp26_Investigative Process-NTSB_20260121.pdf · 第 3 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-erroranalysismethods-20260121/page-01.png" alt="Sp26_ErrorAnalysisMethods_20260121.pdf · 第 1 页预览" loading="lazy">
+    <figcaption>Sp26_ErrorAnalysisMethods_20260121.pdf · 第 1 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-erroranalysismethods-20260121/page-02.png" alt="Sp26_ErrorAnalysisMethods_20260121.pdf · 第 2 页预览" loading="lazy">
+    <figcaption>Sp26_ErrorAnalysisMethods_20260121.pdf · 第 2 页预览</figcaption>
+  </figure>
+  <figure class="note-visual">
+    <img src="../assets/visuals/sp26-erroranalysismethods-20260121/page-04.png" alt="Sp26_ErrorAnalysisMethods_20260121.pdf · 第 4 页预览" loading="lazy">
+    <figcaption>Sp26_ErrorAnalysisMethods_20260121.pdf · 第 4 页预览</figcaption>
+  </figure>
+</div>
+
+## 资料范围与相关主题
+
+正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。
 
 - 所属分区: `风险方法`
 - 关联源文件数: 2
 - 文本单元数: 584
+- 配图/预览数: 6
 
-## 关注重点
-
-- 调查流程的阶段划分
-- NTSB 风格的事实到原因链条
-- 错误分析如何支撑后续风险控制
-
-## 来源覆盖
-
-| Source | Type | Text Units | Download |
-| --- | --- | ---: | --- |
-| `Sp26_Investigative Process-NTSB_20260121.pdf` | `pdf` | 267 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_Investigative Process-NTSB_20260121.pdf) |
-| `Sp26_ErrorAnalysisMethods_20260121.pdf` | `pdf` | 317 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_ErrorAnalysisMethods_20260121.pdf) |
-
-## 代表性原始语句
-
-- `Investigative Process`
-- `• Established in 1967 as part of the Department of Transportation`
-- `• 1975 became fully independent`
-- `• Five board members are Presidential appointments (5 yr terms)`
-- `• Investigates ~2500 accidents per year (link)`
-- `• Aviation: ~2000; Marine, rail, highway, pipeline: ~500`
-- `• “Accident/incident investigations are fact-finding proceedings with no formal`
-- `issues and no adverse parties … and are not conducted for the purpose of`
+| Source | Type | Text Units | Visuals | Download |
+| --- | --- | ---: | ---: | --- |
+| `Sp26_Investigative Process-NTSB_20260121.pdf` | `pdf` | 267 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_Investigative Process-NTSB_20260121.pdf) |
+| `Sp26_ErrorAnalysisMethods_20260121.pdf` | `pdf` | 317 | 3 | [open](../assets/source_files/Lectures_Spring_2026/Sp26_ErrorAnalysisMethods_20260121.pdf) |
 
 ## 相关主题
 
@@ -39,6 +81,8 @@
 - [Operational Risk](../HFE_Cases_Ethics/operational_risk.md)
 
 ## 原文转写与来源映射
+
+下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 `unit_id` 都能在 `data/coverage_map.json` 中找到对应页面映射。
 
 ??? info "Sp26_Investigative Process-NTSB_20260121.pdf | 267 text units"
     下载原件: [Sp26_Investigative Process-NTSB_20260121.pdf](../assets/source_files/Lectures_Spring_2026/Sp26_Investigative Process-NTSB_20260121.pdf)
