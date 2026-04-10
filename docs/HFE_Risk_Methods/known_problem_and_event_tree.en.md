@@ -45,6 +45,17 @@ Main workflow analysis is strongest on the normal task path. These two methods a
 !!! note "One-Sentence Conclusion"
     The real value of this page is that it forces the team to step back from “we already analyzed it” and ask “what might still be missing?”
 
+## How to Tell Whether This Method Has Actually Been Applied Well
+
+You can judge whether a method has actually been applied by checking four things:
+
+- are the inputs concrete rather than generic
+- do the rows or steps return to specific tasks and contexts
+- does the output connect error, consequence, and control clearly
+- can the result directly support redesign, validation, review, or risk communication
+
+If several of these are missing, the method usually remains a surface process rather than an executable analysis.
+
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"

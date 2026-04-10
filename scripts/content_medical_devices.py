@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from note_blueprints import callout, page_blueprint, section
+from note_blueprints import callout, formalize_blueprint, page_blueprint, section
 
 
 MEDICAL_DEVICES_CONTENT: dict[str, dict] = {
@@ -420,3 +420,6 @@ When reading a workbook like this, use a fixed sequence:
     ),
 }
 
+MEDICAL_DEVICES_CONTENT = {
+    slug: formalize_blueprint(blueprint) for slug, blueprint in MEDICAL_DEVICES_CONTENT.items()
+}

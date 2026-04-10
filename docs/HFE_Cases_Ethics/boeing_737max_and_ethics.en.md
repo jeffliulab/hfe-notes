@@ -48,6 +48,17 @@ The ethics discussion here is not an abstract claim that “engineers should be 
 !!! warning "The Most Common Misunderstanding"
     If ethics remains only at the level of value judgment and never returns to concrete design and certification decisions, it becomes empty rhetoric. This case demands that ethics and engineering detail be analyzed together.
 
+## Which Layers to Review Every Time in a Case
+
+When reviewing a case, work backward through four layers:
+
+1. how the event chain unfolded
+2. where information, interface, and procedure worsened the situation
+3. how team, organization, and operating conditions amplified the risk
+4. whether improvement belongs in design, procedure, training, resources, or governance
+
+That keeps the case from collapsing into a story and brings it back to the systems analysis the course is actually teaching.
+
 ## What To Take Away from This Case
 
 !!! tip "What To Carry Forward"

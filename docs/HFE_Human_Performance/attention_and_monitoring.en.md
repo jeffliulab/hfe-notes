@@ -38,6 +38,16 @@ If the task itself is vulnerable to monitoring decay, design cannot leave the bu
 !!! warning "The Most Common Misunderstanding"
     “Ask the operator to stay vigilant” is not a design solution. If the system does not actively support state awareness, telling people to stay focused rarely works over time.
 
+## How to Actually Use This Concept to Judge a Real Problem
+
+To use a concept page well, do not stop at the definition. A stronger reading follows three steps:
+
+1. identify the task and context
+2. ask how the mechanism, limit, or risk described on the page appears in that context
+3. translate the judgment back into design, workflow, training, or organizational change
+
+That is how the concept moves from “knowing the term” to “analyzing the problem.”
+
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"

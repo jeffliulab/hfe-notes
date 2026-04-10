@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from note_blueprints import callout, page_blueprint, section
+from note_blueprints import callout, formalize_blueprint, page_blueprint, section
 
 
 HUMAN_PERFORMANCE_CONTENT: dict[str, dict] = {
@@ -418,3 +418,6 @@ The three layers in the course are:
     ),
 }
 
+HUMAN_PERFORMANCE_CONTENT = {
+    slug: formalize_blueprint(blueprint) for slug, blueprint in HUMAN_PERFORMANCE_CONTENT.items()
+}

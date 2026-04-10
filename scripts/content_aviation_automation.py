@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from note_blueprints import callout, page_blueprint, section
+from note_blueprints import callout, formalize_blueprint, page_blueprint, section
 
 
 AVIATION_AUTOMATION_CONTENT: dict[str, dict] = {
@@ -464,3 +464,6 @@ Good checklist and procedure design:
     ),
 }
 
+AVIATION_AUTOMATION_CONTENT = {
+    slug: formalize_blueprint(blueprint) for slug, blueprint in AVIATION_AUTOMATION_CONTENT.items()
+}

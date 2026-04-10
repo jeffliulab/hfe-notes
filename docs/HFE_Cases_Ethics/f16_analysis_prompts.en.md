@@ -38,6 +38,17 @@ Once the team aligns on the questioning path, the discussion can move from “wh
 !!! example "Example: Why Prompted Analysis Looks More Like Engineering Review"
     Without prompts, a team often stops at “someone made the wrong judgment.” With prompts, the discussion is forced to fill in information, interface, procedure, team, and organizational layers, so the case becomes an actionable engineering review rather than only a story.
 
+## Which Layers to Review Every Time in a Case
+
+When reviewing a case, work backward through four layers:
+
+1. how the event chain unfolded
+2. where information, interface, and procedure worsened the situation
+3. how team, organization, and operating conditions amplified the risk
+4. whether improvement belongs in design, procedure, training, resources, or governance
+
+That keeps the case from collapsing into a story and brings it back to the systems analysis the course is actually teaching.
+
 ## What To Take Away from This Case
 
 !!! tip "What To Carry Forward"

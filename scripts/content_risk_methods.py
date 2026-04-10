@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from note_blueprints import callout, page_blueprint, section
+from note_blueprints import callout, formalize_blueprint, page_blueprint, section
 
 
 RISK_METHODS_CONTENT: dict[str, dict] = {
@@ -491,3 +491,6 @@ Neither method is about free-form brainstorming. Both force the team back toward
     ),
 }
 
+RISK_METHODS_CONTENT = {
+    slug: formalize_blueprint(blueprint) for slug, blueprint in RISK_METHODS_CONTENT.items()
+}

@@ -43,6 +43,17 @@ If a procedure reflects only work as imagined rather than work as done, frontlin
 !!! warning "The Most Common Misunderstanding"
     Proceduralization does not mean the more rigid the better. Overly rigid procedures often push real work toward workaround behavior and temporary patching.
 
+## How to Tell Whether This Method Has Actually Been Applied Well
+
+You can judge whether a method has actually been applied by checking four things:
+
+- are the inputs concrete rather than generic
+- do the rows or steps return to specific tasks and contexts
+- does the output connect error, consequence, and control clearly
+- can the result directly support redesign, validation, review, or risk communication
+
+If several of these are missing, the method usually remains a surface process rather than an executable analysis.
+
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"

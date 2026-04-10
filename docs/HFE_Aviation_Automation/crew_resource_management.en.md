@@ -46,6 +46,16 @@ If the authority gradient is too steep, junior members may fail to challenge eve
 !!! example "Example: Why Tenerife Is a Classic CRM Teaching Case"
     Tenerife remains a CRM teaching case not because the technical details are unimportant, but because it vividly shows how authority gradient, ambiguous communication, and failed shared situation awareness can combine into catastrophic risk.
 
+## How to Actually Use This Concept to Judge a Real Problem
+
+To use a concept page well, do not stop at the definition. A stronger reading follows three steps:
+
+1. identify the task and context
+2. ask how the mechanism, limit, or risk described on the page appears in that context
+3. translate the judgment back into design, workflow, training, or organizational change
+
+That is how the concept moves from “knowing the term” to “analyzing the problem.”
+
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"

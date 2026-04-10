@@ -42,6 +42,16 @@ When a visible error appears, do not label it immediately. Return first to the s
 !!! example "Example: It Looks Like “Wrong Use,” but the Interface Is Doing the Pushing"
     If two dosing modes are separated only by small textual labels, and the user selects the wrong mode in an urgent setting, the surface description is “the user selected the wrong mode.” The more important conclusion may be that the system made a high-consequence choice too difficult to discriminate.
 
+## How to Actually Use This Concept to Judge a Real Problem
+
+To use a concept page well, do not stop at the definition. A stronger reading follows three steps:
+
+1. identify the task and context
+2. ask how the mechanism, limit, or risk described on the page appears in that context
+3. translate the judgment back into design, workflow, training, or organizational change
+
+That is how the concept moves from “knowing the term” to “analyzing the problem.”
+
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"

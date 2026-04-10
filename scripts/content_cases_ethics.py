@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from note_blueprints import callout, page_blueprint, section, visual
+from note_blueprints import callout, formalize_blueprint, page_blueprint, section, visual
 
 
 CASES_ETHICS_CONTENT: dict[str, dict] = {
@@ -367,3 +367,6 @@ CASES_ETHICS_CONTENT: dict[str, dict] = {
     ),
 }
 
+CASES_ETHICS_CONTENT = {
+    slug: formalize_blueprint(blueprint) for slug, blueprint in CASES_ETHICS_CONTENT.items()
+}

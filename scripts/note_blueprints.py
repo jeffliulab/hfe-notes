@@ -131,3 +131,99 @@ def page_blueprint(
         "inline_visuals": inline_visuals or [],
         "summary_points": localized_lines(summary_points_zh, summary_points_en),
     }
+
+
+def formalize_blueprint(blueprint: dict) -> dict:
+    """Append one extra lecture-style section so first-pass pages read more like full notes."""
+    result = dict(blueprint)
+    sections = list(result.get("sections", []))
+    existing_keys = {section_block.get("key") for section_block in sections}
+    template_type = result.get("template_type")
+
+    if template_type == "concept" and "formal_use" not in existing_keys:
+        sections.append(
+            section(
+                "formal_use",
+                "## 这套概念怎么真正拿来判断问题",
+                "## How to Actually Use This Concept to Judge a Real Problem",
+                body_zh="""
+把概念页真正用起来时，不要停在定义。更实用的读法是固定沿着三步走：
+
+1. 先定位当前任务和场景是什么。
+2. 再问这页讲的限制、机制或风险，在这个场景里会怎样出现。
+3. 最后把判断落回设计、流程、训练或组织改进。
+
+这样概念才不会停在“知道术语”，而会变成“会分析问题”。
+""",
+                body_en="""
+To use a concept page well, do not stop at the definition. A stronger reading follows three steps:
+
+1. identify the task and context
+2. ask how the mechanism, limit, or risk described on the page appears in that context
+3. translate the judgment back into design, workflow, training, or organizational change
+
+That is how the concept moves from “knowing the term” to “analyzing the problem.”
+""",
+            )
+        )
+
+    if template_type == "method" and "formal_quality" not in existing_keys:
+        sections.append(
+            section(
+                "formal_quality",
+                "## 怎样判断这个方法有没有真正写到位",
+                "## How to Tell Whether This Method Has Actually Been Applied Well",
+                body_zh="""
+判断一个方法页有没有真正落地，可以固定看四件事：
+
+- 输入是不是具体，而不是泛泛收材料
+- 条目或步骤是不是回到了具体任务和具体场景
+- 输出有没有把错误、后果和控制对应起来
+- 结果能不能直接支持设计修改、验证、复盘或风险沟通
+
+如果这四点里缺了几项，方法通常还是停在表面流程，没有变成真正可执行的分析。
+""",
+                body_en="""
+You can judge whether a method has actually been applied by checking four things:
+
+- are the inputs concrete rather than generic
+- do the rows or steps return to specific tasks and contexts
+- does the output connect error, consequence, and control clearly
+- can the result directly support redesign, validation, review, or risk communication
+
+If several of these are missing, the method usually remains a surface process rather than an executable analysis.
+""",
+            )
+        )
+
+    if template_type == "case" and "formal_review" not in existing_keys:
+        sections.append(
+            section(
+                "formal_review",
+                "## 复盘这个案例时固定看哪几层",
+                "## Which Layers to Review Every Time in a Case",
+                body_zh="""
+复盘案例时，可以固定从四层往回看：
+
+1. 事件链是怎样展开的。
+2. 信息、界面和程序在哪些节点让局面变差。
+3. 团队、组织和运行条件怎样放大了风险。
+4. 如果要改，应该改设计、程序、训练、资源还是治理。
+
+这样案例页就不会只剩“事故故事”，而会回到课程真正要训练的系统分析。
+""",
+                body_en="""
+When reviewing a case, work backward through four layers:
+
+1. how the event chain unfolded
+2. where information, interface, and procedure worsened the situation
+3. how team, organization, and operating conditions amplified the risk
+4. whether improvement belongs in design, procedure, training, resources, or governance
+
+That keeps the case from collapsing into a story and brings it back to the systems analysis the course is actually teaching.
+""",
+            )
+        )
+
+    result["sections"] = sections
+    return result

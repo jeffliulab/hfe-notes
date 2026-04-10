@@ -42,6 +42,16 @@ The display page asks how information becomes visible, the CRM page asks how inf
 !!! note "One-Sentence Conclusion"
     The core of situation awareness is not “more information,” but whether information has been organized into understanding and prediction that support action.
 
+## How to Actually Use This Concept to Judge a Real Problem
+
+To use a concept page well, do not stop at the definition. A stronger reading follows three steps:
+
+1. identify the task and context
+2. ask how the mechanism, limit, or risk described on the page appears in that context
+3. translate the judgment back into design, workflow, training, or organizational change
+
+That is how the concept moves from “knowing the term” to “analyzing the problem.”
+
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"

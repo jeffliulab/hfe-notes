@@ -59,6 +59,17 @@ The flow can be remembered in four steps:
 
 This page explains how a completed event is interpreted. Later pages such as task analysis, URRA, and operational risk push the same logic forward so risk can be recognized before an event fully unfolds.
 
+## How to Tell Whether This Method Has Actually Been Applied Well
+
+You can judge whether a method has actually been applied by checking four things:
+
+- are the inputs concrete rather than generic
+- do the rows or steps return to specific tasks and contexts
+- does the output connect error, consequence, and control clearly
+- can the result directly support redesign, validation, review, or risk communication
+
+If several of these are missing, the method usually remains a surface process rather than an executable analysis.
+
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"

@@ -55,6 +55,17 @@ The human-error framework explains how to read failure types, while task analysi
 !!! note "One-Sentence Conclusion"
     The value of task analysis is not merely listing steps; it is binding risk analysis to the real workflow.
 
+## How to Tell Whether This Method Has Actually Been Applied Well
+
+You can judge whether a method has actually been applied by checking four things:
+
+- are the inputs concrete rather than generic
+- do the rows or steps return to specific tasks and contexts
+- does the output connect error, consequence, and control clearly
+- can the result directly support redesign, validation, review, or risk communication
+
+If several of these are missing, the method usually remains a surface process rather than an executable analysis.
+
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"
