@@ -1,79 +1,91 @@
 # Course Overview and Learning Map
 
-This page establishes the course arc: HFE is not about pinning failure on people, but about understanding how design, task demands, organization, and environment shape human performance in complex systems.
+This chapter establishes the course map first: the course is not mainly about memorizing terminology, but about using a systems lens to explain accidents, analyze breakdowns, and propose mitigations.
 
 !!! note "Core Question"
-    If the later method pages and case pages are going to make sense, this page has to answer one prior question: what is the unit of analysis in this course, the individual, or the person embedded in a system?
+    What capability is this course really training, and why do the later method pages, application pages, and case pages keep answering the same set of questions?
 
 ## Key Takeaways
 
-- The recurring unit of analysis is not “what one person did wrong,” but the person-in-system relationship.
-- The course arc is language first, methods second, application domains third, and cases plus ethics last.
-- Later method pages keep answering the same questions: what the task is, where failure can emerge, and how the system blocks or amplifies it.
-- Without this frame, Swiss Cheese, URRA, CRM, and the case pages feel disconnected.
+- The course is not centered on “who made the mistake,” but on how the person interacts with task, tools, environment, and organization.
+- The course arc is shared language first, analytic methods second, domain applications third, and accident plus ethics analysis last.
+- Many later pages look different on the surface, but they keep asking the same thing: how failure emerged, why it was not intercepted, and what should be changed.
+- The course trains not only explanation of events, but also the ability to propose workable mitigations.
+- Without the overview, the later terminology becomes harder to connect into one line of reasoning.
 
 ## Remember This First
 
 !!! tip "Keep This Sentence in Mind"
-    Remember the course this way: it is not about proving that people are error-prone, but about understanding how systems make correct action easier and prevent failure from piercing defenses.
+    The shortest memory line for the course is this: when an event happens, do not stop at who failed; keep asking how the system allowed the failure to appear, expand, or slip past defenses.
 
-## Course Arc
+## Why the Course Has a Forensic Flavor
 
-Keep the course arc in mind:
+The word `forensic` does not turn the course into a courtroom-process class. It signals an analytic stance: when harm, near misses, or accidents occur, the analysis should not stop at the visible outcome.
 
-1. Build shared language through `human factors`, `human error`, and `Swiss Cheese`.
-2. Turn that language into structure through `error analysis`, `task analysis`, and `URRA`.
-3. Apply the logic in aviation, automation, and medical-device settings.
-4. End with cases such as operational risk, Cardosi, and the 737 Max, where organizational and ethical issues become unavoidable.
+The recurring questions are:
 
-<figure class="note-inline-figure">
-  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/course-intro-1-14-26/page-01.png" alt="This preview should make the course architecture visible: the site is not split by industry first, but by language, methods, applications, and then cases." loading="lazy">
-  <figcaption>This preview should make the course architecture visible: the site is not split by industry first, but by language, methods, applications, and then cases.</figcaption>
-</figure>
+- what happened
+- why it happened
+- which defenses should have intercepted it
+- why those defenses failed
+- whether mitigation belongs in design, process, organization, or some combination
 
-## What the Course Actually Analyzes
+That is why the course touches cases, responsibility, and investigation while still remaining fundamentally an engineering-analysis course.
 
-The course does not stop at the visible mistake. It treats the mistake as an entry point into a larger analysis:
+## How the Course Architecture Hangs Together
 
-- what task the person was performing
-- what information and tools the system provided
-- how environment, organization, and time pressure shaped judgment
-- why defenses failed to intercept the problem
+The easiest misreading is to treat the course as “a new topic every week.” The lecture materials actually present four recurring elements: `issues / theory`, `analysis methods and frameworks`, `mitigations`, and `cases`.
 
-That is why almost no page in the course is really about “human weakness” in isolation. It is about how people are supported or set up to fail inside systems.
+Once those are linked, the structure becomes clear:
 
-!!! example "Example: Why the Same Error Can Produce Two Very Different Lessons"
-    If analysis starts and ends with “who made the mistake,” a medication-preparation error turns into “the nurse was not careful enough.” This course keeps going: were the labels clear, were the containers confusable, was the verification process realistic, and was workload excessive? The overview matters because it establishes that habit before anything else.
-
-## How to Use This Learning Map
-
-Use a single reading line for the rest of the site:
-
-- foundation pages explain how to see the human inside the system
-- method pages explain how to turn that view into an analyzable structure
-- application pages show how the same logic appears in different industries
-- case pages show which system-layer factors interact when events actually unfold
-
-Following that line keeps the site from turning into a pile of disconnected terms.
+1. foundation pages explain how to see the human in the system
+2. method pages turn that view into concrete analytic steps
+3. application pages show how the same logic operates in aviation, automation, and medical devices
+4. case pages pull the earlier frameworks back into real events and ethical judgment
 
 <figure class="note-inline-figure">
-  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/course-intro-1-14-26/page-03.png" alt="This preview should make one point clear: even when the course moves into aviation and medical-device contexts, it keeps reusing the same HFE logic introduced earlier." loading="lazy">
-  <figcaption>This preview should make one point clear: even when the course moves into aviation and medical-device contexts, it keeps reusing the same HFE logic introduced earlier.</figcaption>
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/course-intro-1-14-26/page-07.png" alt="This figure should make one thing visible: theory, methods, mitigation, and cases are not separate silos but mutually supporting elements of the course." loading="lazy">
+  <figcaption>This figure should make one thing visible: theory, methods, mitigation, and cases are not separate silos but mutually supporting elements of the course.</figcaption>
 </figure>
 
 !!! note "One-Sentence Conclusion"
-    The real takeaway is not a set of terms but a stance: do not stop at who failed; ask why the system allowed the failure to appear, expand, or pass through defenses.
+    The course is not split into disconnected industries; it keeps reapplying the sequence of theory, methods, mitigation, and cases across different contexts.
+
+## What You Are Supposed to Be Able to Do by the End
+
+The course goals point to four practical capabilities:
+
+- explaining incident causes in clear human-factors language
+- describing hazards and use-related risks accurately and concisely
+- proposing corrective actions and countermeasures rather than only restating the problem
+- evaluating how design tradeoffs influence safety and performance
+
+So the course is not just about “reading cases.” It is about explaining them well, structuring them clearly, and turning them into defensible improvement paths.
+
+!!! example "Example: How the Course Would Unpack the Same Medication Error"
+    A medication error is not supposed to produce an immediate conclusion. The foundation pages separate human error from system conditions; the method pages ask for task steps, failure points, and risk controls; the application pages pull in device design, labeling, environment, and workflow; the case pages add organization, responsibility, and ethics. The course is therefore not repeatedly retelling one story. It is training you to decompose the same event across several layers.
+
+## How to Study the Course Without Losing the Thread
+
+The most effective reading strategy is not simply following the weekly order. Instead, keep the same question chain active on every page:
+
+- what kind of failure or limitation is this page about
+- what analytic tool does it introduce
+- what mitigation path does it imply
+- how does it connect back to the earlier foundations
+
+If that line is preserved, `Swiss Cheese` stops being only a metaphor, `URRA` stops being only a form, and the case pages stop being only stories.
 
 !!! warning "The Most Common Reading Trap"
-    Do not read the course as “one new term per page.” If the terms are memorized without the logic, the later case pages will feel unstructured and hard to analyze.
+    Do not read the course as “one new term per page.” If the terms are collected without the logic, later accident analysis turns into an unstructured pile of concepts.
 
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"
-    - The course builds language first, methods second, and applications plus cases afterward.
-    - The recurring unit of analysis is the person in the system, not the isolated individual.
-    - Later pages can all be read through the same line: task, failure point, and defense.
-    - The overview page exists to provide a reading map for the entire site.
+    - The course has a forensic flavor because it demands sustained questioning rather than a quick conclusion.
+    - Its architecture remains stable: foundational language, analytic methods, application contexts, and cases plus ethics.
+    - The target capability includes explaining causes, proposing mitigation, and evaluating tradeoffs.
+    - Read the whole site through one line: how failure emerged, how it spread, how it should have been intercepted, and what should change.
 
 
 ## Source Scope and Related Topics

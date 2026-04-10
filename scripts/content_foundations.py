@@ -6,242 +6,350 @@ from note_blueprints import callout, page_blueprint, section, visual
 FOUNDATIONS_CONTENT: dict[str, dict] = {
     "course_overview": page_blueprint(
         template_type="concept",
-        page_intro_zh="这页先帮你看清整门课的主线：HFE 不是把错误归给人，而是研究人在复杂系统里怎样被设计、任务、组织和环境共同塑形。",
-        page_intro_en="This page establishes the course arc: HFE is not about pinning failure on people, but about understanding how design, task demands, organization, and environment shape human performance in complex systems.",
-        core_question_zh="如果后面的方法页和案例页要读得顺，这一页必须先回答一个问题：这门课到底在分析什么对象，是单个人，还是人在系统里的位置？",
-        core_question_en="If the later method pages and case pages are going to make sense, this page has to answer one prior question: what is the unit of analysis in this course, the individual, or the person embedded in a system?",
+        page_intro_zh="本章重点是先把整门课读成一张地图：这不是一门背术语的课，而是一门用系统视角解释事故、分析失效并提出改进的课。",
+        page_intro_en="This chapter establishes the course map first: the course is not mainly about memorizing terminology, but about using a systems lens to explain accidents, analyze breakdowns, and propose mitigations.",
+        core_question_zh="这门课到底在训练什么能力？为什么后面的方法页、应用页和案例页，其实都在回答同一组问题？",
+        core_question_en="What capability is this course really training, and why do the later method pages, application pages, and case pages keep answering the same set of questions?",
         must_learn_points_zh=[
-            "这门课的分析单位不是“某个人做错了什么”，而是“人在系统中承担什么角色、被什么条件约束”。",
-            "课程主线是：先建共同语言，再学分析方法，再进应用场景，最后回到案例与伦理。",
-            "后续所有方法页其实都在回答同一组问题：任务是什么、哪里可能失败、系统怎样拦截或放大失败。",
-            "如果导论页没看懂，后面的 Swiss Cheese、URRA、CRM 和案例页都会显得像碎片。",
+            "这门课研究的不是“谁犯错了”，而是“人在系统里怎样和任务、工具、环境、组织一起作用”。",
+            "课程主线是：先建立共同语言，再学习分析方法，再进入行业场景，最后回到事故、责任和伦理。",
+            "后面的很多页虽然主题不同，但都在追问同一件事：失败是怎样产生的，为什么没被拦住，以及应该改哪里。",
+            "这门课训练的不只是解释事故，更包括提出可操作的 mitigation。",
+            "如果导论页没读明白，后面的名词会很多，但彼此很难连成线。",
         ],
         must_learn_points_en=[
-            "The recurring unit of analysis is not “what one person did wrong,” but the person-in-system relationship.",
-            "The course arc is language first, methods second, application domains third, and cases plus ethics last.",
-            "Later method pages keep answering the same questions: what the task is, where failure can emerge, and how the system blocks or amplifies it.",
-            "Without this frame, Swiss Cheese, URRA, CRM, and the case pages feel disconnected.",
+            "The course is not centered on “who made the mistake,” but on how the person interacts with task, tools, environment, and organization.",
+            "The course arc is shared language first, analytic methods second, domain applications third, and accident plus ethics analysis last.",
+            "Many later pages look different on the surface, but they keep asking the same thing: how failure emerged, why it was not intercepted, and what should be changed.",
+            "The course trains not only explanation of events, but also the ability to propose workable mitigations.",
+            "Without the overview, the later terminology becomes harder to connect into one line of reasoning.",
         ],
-        memory_anchor_zh="把这门课先记成一句话：它研究的不是“人很容易出错”，而是“系统怎样让正确行为变得更容易，让错误更难穿透防线”。",
-        memory_anchor_en="Remember the course this way: it is not about proving that people are error-prone, but about understanding how systems make correct action easier and prevent failure from piercing defenses.",
+        memory_anchor_zh="把整门课先记成一句话：看到事故时，不要停在“谁错了”，而要继续追问系统怎样让错误出现、扩大，或者没被拦住。",
+        memory_anchor_en="The shortest memory line for the course is this: when an event happens, do not stop at who failed; keep asking how the system allowed the failure to appear, expand, or slip past defenses.",
         sections=[
             section(
-                "arc",
-                "## 课程主线",
-                "## Course Arc",
+                "forensic",
+                "## 这门课为什么带有 `forensic` 的味道",
+                "## Why the Course Has a Forensic Flavor",
                 body_zh="""
-先把课程骨架记住，后面很多页就能自动归位：
+这里的 `forensic` 不是让课程变成法庭流程课，而是强调一种分析姿态：面对伤害、险情或事故，不能只停在表面结果，而要把事件拆成一连串可追问的问题。
 
-1. 先用 `human factors`、`human error`、`Swiss Cheese` 这些基础页建立共同语言。
-2. 再用 `error analysis`、`task analysis`、`URRA` 这些方法页，把“问题”写成可分析、可追踪的结构。
-3. 然后进入航空、自动化和医疗器械等应用场景，看同一套分析逻辑怎样落到不同系统。
-4. 最后通过 operational risk、Cardosi、737 Max 等案例，把分析扩展到组织、监管和伦理层。
+这套追问通常包括：
+
+- 发生了什么
+- 为什么会发生
+- 原本哪几层防线应该拦住它
+- 为什么这些防线没有起作用
+- 后续 mitigation 应该改设计、改流程、改组织，还是一起改
+
+所以这门课虽然会接触案例、责任和事故调查，但核心仍然是工程分析，而不是法律术语本身。
 """,
                 body_en="""
-Keep the course arc in mind:
+The word `forensic` does not turn the course into a courtroom-process class. It signals an analytic stance: when harm, near misses, or accidents occur, the analysis should not stop at the visible outcome.
 
-1. Build shared language through `human factors`, `human error`, and `Swiss Cheese`.
-2. Turn that language into structure through `error analysis`, `task analysis`, and `URRA`.
-3. Apply the logic in aviation, automation, and medical-device settings.
-4. End with cases such as operational risk, Cardosi, and the 737 Max, where organizational and ethical issues become unavoidable.
+The recurring questions are:
+
+- what happened
+- why it happened
+- which defenses should have intercepted it
+- why those defenses failed
+- whether mitigation belongs in design, process, organization, or some combination
+
+That is why the course touches cases, responsibility, and investigation while still remaining fundamentally an engineering-analysis course.
 """,
             ),
             section(
-                "unit",
-                "## 这门课真正分析的对象是什么",
-                "## What the Course Actually Analyzes",
+                "architecture",
+                "## 课程主线是怎样串起来的",
+                "## How the Course Architecture Hangs Together",
                 body_zh="""
-课程并不是把“一次失误”当成终点，而是把失误当作入口。真正要分析的是：
+这门课最容易被误读成“每周换一个主题”。其实课件已经把四个组件摆出来了：`issues / theory`、`analysis methods and frameworks`、`mitigations`、`cases`。
 
-- 人当时承担什么任务
-- 系统提供了什么信息和工具
-- 环境、组织和时间压力如何影响判断
-- 防线为什么没有把错误挡住
+把这四块连起来，课程结构就很清楚：
 
-所以这门课里几乎没有哪一页是在单独研究“人的毛病”。更准确地说，它研究的是人在系统里如何被支持，或如何被逼到容易出错的位置。
+1. 基础页先告诉你该怎样看人和系统。
+2. 方法页把这种视角变成可操作的分析步骤。
+3. 应用页让你看到同一套逻辑在航空、自动化和医疗器械里怎样落地。
+4. 案例页再把前面的框架拉回真实事故和伦理判断。
 """,
                 body_en="""
-The course does not stop at the visible mistake. It treats the mistake as an entry point into a larger analysis:
+The easiest misreading is to treat the course as “a new topic every week.” The lecture materials actually present four recurring elements: `issues / theory`, `analysis methods and frameworks`, `mitigations`, and `cases`.
 
-- what task the person was performing
-- what information and tools the system provided
-- how environment, organization, and time pressure shaped judgment
-- why defenses failed to intercept the problem
+Once those are linked, the structure becomes clear:
 
-That is why almost no page in the course is really about “human weakness” in isolation. It is about how people are supported or set up to fail inside systems.
-""",
-            ),
-            section(
-                "map",
-                "## 怎样用这张学习地图读后面的页",
-                "## How to Use This Learning Map",
-                body_zh="""
-读后面内容时，可以持续用一条固定主线来串：
-
-- 基础页回答：系统应该怎样看人。
-- 方法页回答：怎样把问题写成分析对象。
-- 应用页回答：同一套问题在不同行业里如何出现。
-- 案例页回答：当事故真的发生时，哪些系统层因素一起起作用。
-
-只要一直沿着这条线走，后面的内容就不会变成概念堆积。
-""",
-                body_en="""
-Use a single reading line for the rest of the site:
-
-- foundation pages explain how to see the human inside the system
-- method pages explain how to turn that view into an analyzable structure
-- application pages show how the same logic appears in different industries
-- case pages show which system-layer factors interact when events actually unfold
-
-Following that line keeps the site from turning into a pile of disconnected terms.
+1. foundation pages explain how to see the human in the system
+2. method pages turn that view into concrete analytic steps
+3. application pages show how the same logic operates in aviation, automation, and medical devices
+4. case pages pull the earlier frameworks back into real events and ethical judgment
 """,
                 note_title_zh="一句话结论",
                 note_title_en="One-Sentence Conclusion",
-                note_body_zh="这门课最值得带走的不是一串术语，而是一种视角：别只问谁错了，要问系统为什么让这个错误出现、扩大、或者没被拦住。",
-                note_body_en="The real takeaway is not a set of terms but a stance: do not stop at who failed; ask why the system allowed the failure to appear, expand, or pass through defenses.",
+                note_body_zh="整门课不是按行业拆散来讲，而是把“理论 - 方法 - 改进 - 案例”反复套在不同场景上。",
+                note_body_en="The course is not split into disconnected industries; it keeps reapplying the sequence of theory, methods, mitigation, and cases across different contexts.",
+            ),
+            section(
+                "goals",
+                "## 学到最后到底要会什么",
+                "## What You Are Supposed to Be Able to Do by the End",
+                body_zh="""
+从导论课件列出的 goals 看，这门课最终训练的是四种能力：
+
+- 能把 incident 的 causes 用标准 HFE 语言讲清楚
+- 能把系统中的 hazard 和 use-related risk 解释得简洁、准确
+- 能提出 corrective actions 和 countermeasures，而不是只会复述问题
+- 能判断设计 tradeoff 对 safety 和 performance 的影响
+
+换句话说，这门课不是只训练“会看案例”，而是训练你把案例讲清楚、拆清楚，并给出有逻辑的改进方向。
+""",
+                body_en="""
+The course goals point to four practical capabilities:
+
+- explaining incident causes in clear human-factors language
+- describing hazards and use-related risks accurately and concisely
+- proposing corrective actions and countermeasures rather than only restating the problem
+- evaluating how design tradeoffs influence safety and performance
+
+So the course is not just about “reading cases.” It is about explaining them well, structuring them clearly, and turning them into defensible improvement paths.
+""",
+            ),
+            section(
+                "study",
+                "## 这门课应该怎么学才不会散",
+                "## How to Study the Course Without Losing the Thread",
+                body_zh="""
+比较有效的读法不是按周次被动跟着跑，而是始终带着同一条问题链去看每一页：
+
+- 这页讲的是哪一种失败或限制
+- 这页提供了什么分析工具
+- 这页最后落到哪些 mitigation
+- 这和前面的基础概念怎么连起来
+
+如果一直沿着这条线读，`Swiss Cheese` 不会只是一个比喻，`URRA` 不会只是一个模板，案例页也不会只剩故事。
+""",
+                body_en="""
+The most effective reading strategy is not simply following the weekly order. Instead, keep the same question chain active on every page:
+
+- what kind of failure or limitation is this page about
+- what analytic tool does it introduce
+- what mitigation path does it imply
+- how does it connect back to the earlier foundations
+
+If that line is preserved, `Swiss Cheese` stops being only a metaphor, `URRA` stops being only a form, and the case pages stop being only stories.
+""",
             ),
         ],
         warnings=[
             callout(
                 "warning",
-                "map",
+                "study",
                 "最容易走偏的读法",
                 "The Most Common Reading Trap",
-                body_zh="不要把课程读成“每页一个新名词”。如果只记名词而不记主线，你会在后面的案例页里不知道该把哪个概念放到哪里。",
-                body_en="Do not read the course as “one new term per page.” If the terms are memorized without the logic, the later case pages will feel unstructured and hard to analyze.",
+                body_zh="不要把课程读成“每页一个新名词”。如果只收集名词、不记主线，后面的事故分析就会变成概念拼盘。",
+                body_en="Do not read the course as “one new term per page.” If the terms are collected without the logic, later accident analysis turns into an unstructured pile of concepts.",
             )
         ],
         examples=[
             callout(
                 "example",
-                "unit",
-                "案例：为什么同一个错误可以被两门课读出完全不同的结论",
-                "Example: Why the Same Error Can Produce Two Very Different Lessons",
-                body_zh="如果只从“谁犯错了”出发，一次药物配置错误可能只会被总结成“护士不够仔细”。但这门课会继续问：标签是否清楚、容器是否易混、核对流程是否现实、工作负荷是否超标。导论页的价值，就是先把这种分析习惯建立起来。",
-                body_en="If analysis starts and ends with “who made the mistake,” a medication-preparation error turns into “the nurse was not careful enough.” This course keeps going: were the labels clear, were the containers confusable, was the verification process realistic, and was workload excessive? The overview matters because it establishes that habit before anything else.",
+                "goals",
+                "案例：同一个药物错误，整门课会怎样把它拆开",
+                "Example: How the Course Would Unpack the Same Medication Error",
+                body_zh="一次给药错误，导论页先要求你别急着下结论。基础页会让你区分 human error 和 system conditions；方法页会要求你写任务步骤、失败点和 risk controls；应用页会让你看设备、标签、工作环境和流程；案例页再把责任、组织和伦理层面加回来。也就是说，整门课不是反复看“一个故事”，而是反复训练你用不同层级把同一个问题拆开。",
+                body_en="A medication error is not supposed to produce an immediate conclusion. The foundation pages separate human error from system conditions; the method pages ask for task steps, failure points, and risk controls; the application pages pull in device design, labeling, environment, and workflow; the case pages add organization, responsibility, and ethics. The course is therefore not repeatedly retelling one story. It is training you to decompose the same event across several layers.",
             )
         ],
         inline_visuals=[
             visual(
-                "arc",
+                "architecture",
                 "Course intro 1-14-26.pdf",
-                "这张预览图要看懂的是：整门课并不是按行业拆开讲，而是按“基础语言 -> 方法 -> 应用 -> 案例”逐层推进。",
-                "This preview should make the course architecture visible: the site is not split by industry first, but by language, methods, applications, and then cases.",
-                index=0,
-            ),
-            visual(
-                "map",
-                "Course intro 1-14-26.pdf",
-                "这张预览图要看懂的是：课程后半段虽然进入航空和医疗器械场景，但它们都在回收前面学过的同一套 HFE 分析框架。",
-                "This preview should make one point clear: even when the course moves into aviation and medical-device contexts, it keeps reusing the same HFE logic introduced earlier.",
-                index=1,
+                "这张图要看懂的是：课程的四个元素不是彼此分开的模块，而是理论、方法、改进和案例互相支撑的结构。",
+                "This figure should make one thing visible: theory, methods, mitigation, and cases are not separate silos but mutually supporting elements of the course.",
+                asset_name_contains="page-07",
             ),
         ],
         summary_points_zh=[
-            "课程先建语言，再建方法，再进入场景和案例。",
-            "分析单位始终是“人在系统中的位置”，不是脱离环境的个人。",
-            "后续每一页都可以用“任务、失败点、防线”这条主线来读。",
-            "导论页的作用是给整站提供一个不会丢线的阅读地图。",
+            "这门课带有 forensic 的味道，是因为它要求你对事故保持连续追问，而不是停在结论。",
+            "课程骨架始终是：基础语言、分析方法、应用场景、案例与伦理。",
+            "最终训练的能力包括解释 causes、提出 mitigation、评估 tradeoff。",
+            "读整站时要始终带着同一条问题链：失败怎么出现、怎么扩散、怎么拦截、怎么改进。",
         ],
         summary_points_en=[
-            "The course builds language first, methods second, and applications plus cases afterward.",
-            "The recurring unit of analysis is the person in the system, not the isolated individual.",
-            "Later pages can all be read through the same line: task, failure point, and defense.",
-            "The overview page exists to provide a reading map for the entire site.",
+            "The course has a forensic flavor because it demands sustained questioning rather than a quick conclusion.",
+            "Its architecture remains stable: foundational language, analytic methods, application contexts, and cases plus ethics.",
+            "The target capability includes explaining causes, proposing mitigation, and evaluating tradeoffs.",
+            "Read the whole site through one line: how failure emerged, how it spread, how it should have been intercepted, and what should change.",
         ],
     ),
     "human_factors_intro": page_blueprint(
         template_type="concept",
-        page_intro_zh="这一页先回答最基础的问题：human factors 到底是什么。它不是“研究人类缺点”的学科，而是把人的能力与限制真正带回设计里。",
-        page_intro_en="This page answers the foundational question: what is human factors? It is not a catalog of human weakness, but a discipline that deliberately brings real human capabilities and limits back into design.",
-        core_question_zh="如果系统最后总是要靠人来使用、监控、判断和恢复，那么设计时应该怎样把人的能力、限制和工作现实纳入系统？",
-        core_question_en="If systems ultimately depend on people to use, monitor, judge, and recover, how should design account for human capabilities, limits, and the reality of work?",
+        page_intro_zh="本章重点是先把 `human factors` 读成设计学，而不是读成人的缺点清单。它关心的是：真实的人怎样和系统互动，以及系统应当怎样反过来适配真实的人。",
+        page_intro_en="This chapter should first be read as a design discipline rather than a catalog of human weakness. It asks how real people interact with systems and how systems should be adapted to real people in return.",
+        core_question_zh="如果系统最终总要由真实的人来感知、理解、判断、执行和恢复，那么设计时到底该把哪些人的特点与限制带回系统？",
+        core_question_en="If systems are ultimately perceived, interpreted, judged, executed, and recovered by real people, which human characteristics and limits must be brought back into design?",
         must_learn_points_zh=[
-            "人因工程同时追求人的福祉与系统绩效，不是只偏向“效率”或“舒服”。",
-            "它研究的不是抽象的人，而是真实情境中的使用者：会疲劳、会分心、会受时间压力影响。",
-            "好设计不是让专家勉强能用，而是让普通用户在压力下也不容易走错。",
-            "培训很重要，但人因工程优先改系统，而不是先把责任压给使用者。",
+            "人因工程研究的是人和系统其他要素的相互作用，而不是只研究“人本身”。",
+            "它同时追求人的福祉和系统绩效，因为两者在真实系统里往往是一体两面。",
+            "这门学科的发展方向经历了从“让人适应任务”到“让任务和设备更适应人”的转向。",
+            "真正要被带回设计的，不只是身高和力量，也包括注意、感知、记忆、判断和习惯。",
+            "培训是补充措施，好的系统设计才是第一道 mitigation。",
         ],
         must_learn_points_en=[
-            "Human factors pursues both human well-being and system performance.",
-            "It studies real users in context, not abstract ideal users.",
-            "Good design is not merely expert-usable; it remains usable under pressure and distraction.",
-            "Training matters, but human factors starts by improving the system rather than blaming the user.",
+            "Human factors studies the interaction between people and the rest of the system rather than studying the person alone.",
+            "It cares about well-being and performance together because those two often move together in real systems.",
+            "The field shifted from “fit the human to the task” toward “fit the task and equipment to the human.”",
+            "Design must account not only for body size and strength but also for attention, perception, memory, judgment, and habit.",
+            "Training is supportive, but good system design is the primary mitigation layer.",
         ],
-        memory_anchor_zh="记这一页最简单的方法是：人因工程不是让人去迁就系统，而是让系统尽量贴近真实的人。",
-        memory_anchor_en="The shortest way to remember this page is that human factors does not ask people to adapt endlessly to systems; it asks systems to fit real people better.",
+        memory_anchor_zh="记这一页最简单的方法是：人因工程不是要求人不断迁就系统，而是要求系统尽量贴近真实人的能力、限制和工作现实。",
+        memory_anchor_en="The shortest memory line is this: human factors does not ask people to keep adapting endlessly to the system; it asks the system to fit real human capabilities, limits, and work conditions.",
         sections=[
             section(
                 "definition",
-                "## 人因工程到底在做什么",
-                "## What Human Factors Actually Does",
+                "## 人因工程到底在研究什么",
+                "## What Human Factors Actually Studies",
                 body_zh="""
-课件里的定义看起来很正式，但学生读这页时先抓住一句人话就够了：人因工程是在研究人和系统中其他要素怎样相互作用，然后把这种理解再用回设计。
+先把定义翻成人话：`human factors` 研究的是人怎样和系统中的其他要素互动，然后把这些认识再用回设计。
 
-这件事之所以重要，是因为系统最后总要落到真实的人手里。界面、硬件、软件、说明、环境和流程，只要有一个环节不匹配，最终都会变成使用负担、出错机会或恢复困难。
+这里的“系统其他要素”至少包括：
+
+- 硬件和界面
+- 软件和信息流
+- 说明书、培训和流程
+- 环境、时间压力和组织约束
+
+所以人因工程不是孤立地研究“人”，而是在研究人放进真实系统以后，会遇到什么支持、什么摩擦、什么易错点。
 """,
                 body_en="""
-The formal definition is broad, but the student-level reading is simple: human factors studies how people interact with the rest of the system and then feeds that understanding back into design.
+In plain language, `human factors` studies how people interact with the other parts of a system and then feeds that understanding back into design.
 
-That matters because every interface, hardware element, software workflow, instruction set, and environment ultimately lands in the hands of a real user. Any mismatch becomes burden, error opportunity, or recovery difficulty.
+Those “other parts” include at least:
+
+- hardware and interfaces
+- software and information flow
+- instructions, training, and procedures
+- environment, time pressure, and organizational constraints
+
+Human factors therefore does not study “the human” in isolation. It studies what happens when a real person is placed inside a real system.
 """,
             ),
             section(
-                "goals",
-                "## 为什么它同时关心福祉和绩效",
-                "## Why It Cares About Well-Being and Performance Together",
+                "history",
+                "## 为什么人因工程后来开始强调“让系统适配人”",
+                "## Why the Field Shifted Toward Fitting the System to the Human",
                 body_zh="""
-很多人直觉上会把“人的福祉”和“系统绩效”看成两件互相冲突的事，但人因工程把它们放在一起看。原因很直接：
+课件里有一条很重要的历史线索：早期很多工作都偏向 `fit the human to the task`，也就是通过选拔和训练，让人去适应工作。
 
-- 一个让人持续费力、困惑、易疲劳的系统，长期绩效通常不会好。
-- 一个只追求表面效率、却把恢复和检查机会拿掉的系统，安全性通常也会变差。
+这个思路后来遇到一个现实问题：设备越来越复杂，光靠挑更合适的人、做更多训练，也无法稳定解决界面差、信息差、控制逻辑差的问题。于是人因工程逐渐转向另一个核心判断：
 
-所以这门学科追求的不是“谁让步”，而是怎样通过设计让两者一起变好。
+系统、设备和任务设计本身，必须适配人的能力边界。
+
+这条转向非常关键，因为它决定了后面的分析不会把培训当成默认答案，而会继续追问设计是不是已经把人推到吃力的位置。
 """,
                 body_en="""
-Students often assume that human well-being and system performance pull in opposite directions, but human factors treats them as linked.
+The lecture highlights an important historical shift. Early work often followed a `fit the human to the task` model, relying on selection and training to make people adapt to work demands.
 
-- systems that are exhausting, confusing, and cognitively expensive usually perform poorly over time
-- systems that chase surface efficiency by removing recovery and checking opportunities usually become less safe
+That approach eventually ran into a practical limit: as equipment became more complex, selection and training could not reliably compensate for poor interfaces, weak information design, or bad control logic. The field therefore moved toward a stronger position:
 
-The discipline therefore asks how design can improve both rather than force a tradeoff by default.
+the system, equipment, and task design must fit human capabilities and boundaries.
+
+That shift matters because it prevents later analysis from treating training as the default answer. It pushes the analysis back toward design quality.
+""",
+            ),
+            section(
+                "layers",
+                "## 看“人”时，至少要看哪几层",
+                "## Which Layers of the Human Matter in Design",
+                body_zh="""
+课件把人因工程的观察入口分成了三层：`physical`、`cognitive`、`behavioral`。这是一个很有用的读图方式。
+
+- `physical`：身高、力量、可达性、视听能力、操作姿势等身体层约束
+- `cognitive`：感知、注意、记忆、判断、决策等认知层约束
+- `behavioral`：人在流程中会形成的习惯、捷径、协作方式和实际工作策略
+
+只看其中一层通常不够。一个系统可能在物理尺寸上合格，却在认知上极难使用；也可能界面看似清楚，但实际工作中会诱发错误习惯。
+""",
+                body_en="""
+The lecture divides the human-factors lens into three useful layers: `physical`, `cognitive`, and `behavioral`.
+
+- `physical`: body size, strength, reach, sensory capability, and posture
+- `cognitive`: perception, attention, memory, judgment, and decision making
+- `behavioral`: habits, shortcuts, coordination patterns, and real work strategies
+
+Design problems often appear when one of these layers is ignored. A system may satisfy physical requirements while remaining cognitively difficult to use, or it may look clear on paper while inducing risky habits in real work.
+""",
+                note_title_zh="这一节最重要的结论",
+                note_title_en="The Main Conclusion of This Section",
+                note_body_zh="人因工程不是只看“人体尺寸”，也不是只看“认知心理学”，而是把身体、认知和行为一起放回真实使用情境里。",
+                note_body_en="Human factors is neither only body measurement nor only cognitive psychology. It brings body, cognition, and behavior back into real use conditions together.",
+            ),
+            section(
+                "perception",
+                "## 为什么感知和注意会直接变成设计问题",
+                "## Why Perception and Attention Become Design Problems",
+                body_zh="""
+这一页后半段其实在铺垫一个重要事实：人不是被动、完整、稳定地接收信息的。
+
+- 人会受颜色辨识能力限制影响
+- 人会因为 habituation 对重复刺激逐渐不敏感
+- 人的理解既受输入驱动，也受期待驱动
+
+这意味着“信息已经显示出来了”并不等于“用户一定会看见并理解”。如果颜色、对比、布局、提示方式或默认期望设计得不好，系统就会在感知层和认知层同时埋下问题。
+""",
+                body_en="""
+The second half of the lecture lays groundwork for a crucial fact: humans do not receive information in a passive, complete, or stable way.
+
+- color discrimination varies across users
+- repeated stimuli lose salience through habituation
+- interpretation is shaped by both incoming signals and prior expectation
+
+That means “the information was shown” is not the same as “the user saw and understood it.” Poor color choice, weak contrast, weak layout, or expectation mismatches create problems at both the perceptual and cognitive levels.
 """,
             ),
             section(
                 "application",
-                "## 人因工程在设计里具体落到哪里",
+                "## 人因工程在设计里到底落到哪里",
                 "## Where Human Factors Lands in Design",
                 body_zh="""
-这页真正想把你从“概念理解”推进到“设计理解”。如果说人因工程是系统设计的一部分，那么它具体会落到：
+把前面的内容收起来，真正落地时通常会变成这些设计问题：
 
-- 信息是否在正确时间出现
-- 界面是否支持快速辨识和正确映射
-- 步骤顺序是否符合人的认知流程
-- 系统是否给了检查、纠错和恢复空间
+- 关键信息是不是在对的时间、对的位置出现
+- 控件和结果之间的 mapping 是否自然
+- 警示是不是只靠一种脆弱线索，例如只靠颜色
+- 使用流程有没有给检查、纠错和恢复留下空间
+- 说明、标签和界面是否互相支持，而不是互相打架
 
-也就是说，它不是只存在于实验室或培训课里，而是直接写进产品、流程和环境本身。
+所以人因工程不是停在“理解人”，而是要把理解变成更稳的设计、流程和环境。
 """,
                 body_en="""
-This page should move the reader from abstract definition to design consequence. If human factors is part of system design, it lands in questions such as:
+When the earlier ideas are translated into practice, they become design questions such as:
 
-- whether information appears at the right time
-- whether the interface supports fast recognition and correct mapping
-- whether step order matches human cognition
-- whether the system preserves checking, correction, and recovery space
+- whether critical information appears at the right time and in the right place
+- whether control-to-outcome mapping feels natural
+- whether warnings depend on a single fragile cue such as color alone
+- whether the workflow preserves checking, correction, and recovery space
+- whether instructions, labels, and interface elements support one another
 
-In other words, it lives in the product, workflow, and environment, not only in research labs or training rooms.
+Human factors therefore does not stop at “understanding people.” It converts that understanding into more reliable design, workflow, and environment decisions.
 """,
             ),
         ],
         warnings=[
             callout(
                 "warning",
-                "application",
+                "history",
                 "最容易误解的地方",
                 "The Most Common Misunderstanding",
-                body_zh="不要把人因工程缩成“培训再加强一点”。如果界面、流程和环境本身在制造困难，那么单靠培训很难稳定抵消这些设计缺陷。",
-                body_en="Do not collapse human factors into “better training.” If the interface, workflow, and environment are generating difficulty, training alone rarely cancels that risk in a stable way.",
-            )
+                body_zh="不要把人因工程缩成“培训再加强一点”。如果界面、流程和环境本身在制造困难，培训只能部分补洞，不能长期替代设计修正。",
+                body_en="Do not reduce human factors to “better training.” If the interface, workflow, and environment are generating difficulty, training can only patch some of the gap and cannot replace design correction over time.",
+            ),
+            callout(
+                "warning",
+                "perception",
+                "另一种常见误判",
+                "Another Common Misjudgment",
+                body_zh="不要默认“我能看懂，用户就一定能看懂”。颜色、对比度、字体、布局和期望都可能让同一信息被完全不同地接收。",
+                body_en="Do not assume that “if I can read it, every user can read it.” Color, contrast, type, layout, and expectation can radically change how the same information is perceived.",
+            ),
         ],
         examples=[
             callout(
@@ -249,21 +357,54 @@ In other words, it lives in the product, workflow, and environment, not only in 
                 "application",
                 "案例：为什么输液泵的人因问题不只是“护士再仔细一点”",
                 "Example: Why an Infusion-Pump Problem Is Not Solved by Telling the Nurse to Be More Careful",
-                body_zh="如果输液泵的按钮名称相近、剂量确认流程长、关键状态字小而不显眼，那么即使使用者接受过培训，仍然可能在繁忙病区里误选或漏看。人因工程在这里关心的不是“再多提醒一遍”，而是界面本身有没有把正确操作变容易。",
-                body_en="If an infusion pump uses similar button labels, a long confirmation flow, and low-salience status information, a trained user may still mis-select or overlook critical information in a busy ward. Human factors is not asking for one more reminder; it is asking whether the interface itself makes correct action easier.",
-            )
+                body_zh="如果输液泵的按钮名称相近、剂量确认流程过长、关键状态字小而不显眼，那么即使使用者接受过培训，仍然可能在繁忙病区里误选或漏看。人因工程在这里关心的不是“再多提醒一遍”，而是界面本身有没有把正确操作变容易。",
+                body_en="If an infusion pump uses similar button labels, an overlong confirmation flow, and low-salience status information, a trained user may still mis-select or overlook critical information in a busy ward. Human factors is not asking for one more reminder; it is asking whether the interface itself makes correct action easier.",
+            ),
+            callout(
+                "example",
+                "perception",
+                "案例：为什么不能只用颜色做关键告警",
+                "Example: Why a Critical Warning Should Not Depend on Color Alone",
+                body_zh="如果某个高风险状态只靠红绿区分来提示，那么色觉差异用户、低照度环境或高压力情境下的普通用户都可能把它读错。设计上更稳的做法是让颜色和文字、位置、形状、优先级层级一起工作。",
+                body_en="If a high-risk state is communicated only through red-versus-green coding, users with color-vision differences, users in low-light conditions, and even ordinary users under pressure may misread it. The stronger design move is to combine color with text, position, shape, and clear priority cues.",
+            ),
+        ],
+        inline_visuals=[
+            visual(
+                "perception",
+                "01 Intro to HF and Risk (1).pptx",
+                "这张图要看懂的是：同一组颜色在不同色觉条件下会被读成不同信息，所以关键设计不能只押在颜色一个线索上。",
+                "This figure should make one point obvious: the same colors can be interpreted very differently across visual conditions, so critical design cannot rely on color as the only cue.",
+                asset_name_contains="slide-24-image7",
+            ),
+            visual(
+                "perception",
+                "01 Intro to HF and Risk (1).pptx",
+                "这张图要看懂的是：感知不是纯输入驱动，人的期待会影响自己“看见”什么，这会直接进入判断和操作。",
+                "This figure should show that perception is not purely stimulus-driven; expectation changes what people think they are seeing, which then feeds into judgment and action.",
+                asset_name_contains="slide-33-image11",
+            ),
+            visual(
+                "application",
+                "01 Intro to HF and Risk (1).pptx",
+                "这张图要看懂的是：一个好的界面会通过外观和布局暗示使用方式，设计本身就在“教”用户怎么操作。",
+                "This figure should make clear that a strong interface suggests how it should be used through appearance and layout; the design itself teaches the interaction.",
+                asset_name_contains="slide-36-image14",
+            ),
         ],
         summary_points_zh=[
-            "人因工程研究的是人和系统其他要素的相互作用。",
-            "它追求人的福祉与系统绩效同时优化。",
-            "真实用户的疲劳、分心和工作现实必须被带回设计。",
-            "培训是补充，系统设计才是首要抓手。",
+            "人因工程研究的是人和系统其他要素的相互作用，而不是孤立的人。",
+            "这门学科的重要转向是：不能只让人适应任务，也要让任务和设备适应人的边界。",
+            "身体、认知和行为三层都要被带回设计。",
+            "设计时不能假设用户一定会看见、记住、理解所有信息。",
+            "培训是补充，界面、流程和环境设计才是第一道 mitigation。",
         ],
         summary_points_en=[
-            "Human factors studies the interaction between people and the rest of the system.",
-            "It aims to optimize well-being and performance together.",
-            "Fatigue, distraction, and real work conditions must be designed for rather than ignored.",
-            "Training is supportive; system design remains the primary lever.",
+            "Human factors studies the interaction between people and the rest of the system rather than the isolated person.",
+            "A key shift in the field is that tasks and equipment must fit human limits, not only the other way around.",
+            "Body, cognition, and behavior all have to be brought back into design.",
+            "Design cannot assume users will always see, remember, or understand every cue.",
+            "Training is supportive; interface, workflow, and environmental design remain the first mitigation layer.",
         ],
     ),
     "human_error_frameworks": page_blueprint(
@@ -619,88 +760,140 @@ The practical point is simple: do not jump straight to “more training.” Clas
     ),
     "swiss_cheese": page_blueprint(
         template_type="concept",
-        page_intro_zh="这页把课程里的系统视角再往前推一步：事故不是因为某一个人突然犯了大错，而是因为多层防线同时出现漏洞，并在某个时刻被串成了一条穿透路径。",
-        page_intro_en="This page pushes the systems view one step further: accidents do not emerge only because one person suddenly makes a dramatic mistake, but because multiple defenses contain weaknesses that align into a path of penetration.",
-        core_question_zh="为什么高风险系统明明有很多防线，事故还是会发生？这些防线的漏洞又为什么会在同一个时刻被串起来？",
-        core_question_en="Why do accidents still happen in high-risk systems that appear to have many defenses, and how do the weaknesses in those defenses align at the same time?",
+        page_intro_zh="本章重点是把“事故为什么会发生”从单点失误，推进到多层防线如何一起失守。Swiss Cheese 模型最重要的价值，不是那个比喻本身，而是它把注意力重新拉回系统屏障和漏洞对齐。",
+        page_intro_en="This chapter pushes accident explanation from single-point failure toward the way multiple defenses fail together. The value of the Swiss Cheese model is not the metaphor itself, but the way it redirects attention to barriers and aligned vulnerabilities.",
+        core_question_zh="为什么高风险系统明明有很多防线，事故还是会发生？真正危险的到底是一层失效，还是多层屏障在同一时刻同时失守？",
+        core_question_en="Why do accidents still happen in high-risk systems that appear to have many defenses, and is the real danger one failed layer or multiple defenses failing together at the same time?",
         must_learn_points_zh=[
-            "Swiss Cheese 模型把事故看成“多层防线被穿透”，而不是“单个人失手”。",
-            "每一层防线都可能既有保护作用，也有漏洞。",
-            "真正危险的不是某一个洞存在，而是多个洞在时空上对齐。",
-            "这套模型的价值，是把注意力从 blame 拉回 barrier design 和 system resilience。",
+            "Swiss Cheese 模型把事故看成多层防线被穿透，而不是最后一个人突然犯了大错。",
+            "每一层防线都可能同时具有保护作用和漏洞，所以“有屏障”不等于“屏障可靠”。",
+            "真正危险的不是某一个洞存在，而是多个洞在时间和条件上对齐。",
+            "这套模型的价值，是把 blame 转回 barrier design、latent conditions 和 system resilience。",
+            "它很好用，但不能被当成完整终点，还要结合动态变化和更深层根因分析。",
         ],
         must_learn_points_en=[
-            "The Swiss Cheese model treats accidents as penetrations of multiple defenses rather than as isolated individual failures.",
-            "Each layer can provide protection while still containing vulnerabilities.",
-            "The deepest danger is not one hole by itself, but several holes aligning in time and circumstance.",
-            "The value of the model is that it redirects attention from blame to barrier design and system resilience.",
+            "The Swiss Cheese model treats accidents as penetration of multiple defenses rather than a single dramatic personal failure.",
+            "Each layer can protect while still containing vulnerabilities, so the existence of a barrier does not guarantee dependable protection.",
+            "The real danger is not one hole by itself, but several holes aligning across time and conditions.",
+            "The model redirects blame-oriented thinking toward barrier design, latent conditions, and system resilience.",
+            "It is useful, but it should not be treated as the full endpoint of analysis; dynamic change and deeper causal analysis still matter.",
         ],
-        memory_anchor_zh="记这页时先抓一句话：事故往往不是因为“最后一个人太差”，而是因为系统里的多层保护在同一时刻都没能把问题挡住。",
-        memory_anchor_en="The shortest memory line for this page is that accidents usually do not happen because the final operator was uniquely weak, but because several layers of protection failed to stop the problem at the same time.",
+        memory_anchor_zh="记这页时先抓一句话：事故通常不是因为最后一个人太差，而是因为多层本来应该拦截问题的防线，在同一时刻都没有起作用。",
+        memory_anchor_en="The shortest memory line is this: accidents usually do not happen because the last operator was uniquely weak, but because several defenses that should have intercepted the problem failed at the same time.",
         sections=[
             section(
                 "model",
                 "## Swiss Cheese 模型到底在解释什么",
                 "## What the Swiss Cheese Model Explains",
                 body_zh="""
-这套模型的核心不是“奶酪上有洞”这个比喻本身，而是它背后的解释逻辑：任何高风险系统都不会只靠一层保护，而是靠多层屏障、程序、检查、人员配合和组织控制共同维持安全。
+这套模型真正解释的是：复杂系统里的 harm path 往往不是“一步到位”形成的，而是一路穿过屏障、程序、检查、人和组织控制，最后才落到结果层。
 
-一旦你接受这个前提，事故就不再是“某个点突然失败”，而更像是一条本来应该被多次拦截的问题链，最终一路穿透到了结果层。
+一旦接受这个前提，事故就不再像一个孤立爆点，而像一条原本应该被多次拦住的问题链。也正因为如此，模型的关注点天然不是“谁最后按错了”，而是“为什么前面那么多层都没有拦住”。
 """,
                 body_en="""
-The core of the model is not the cheese metaphor itself, but the logic underneath it: high-risk systems are protected by multiple barriers, procedures, checks, people, and organizational controls rather than a single safeguard.
+What the model really explains is that harm paths in complex systems rarely emerge in one step. They move through barriers, procedures, checks, people, and organizational controls before reaching the outcome layer.
 
-Once that is clear, an accident no longer looks like a single-point collapse. It looks like a failure path that should have been intercepted several times but instead passed through each layer.
+Once that is accepted, an accident no longer looks like an isolated explosion point. It looks like a problem chain that should have been intercepted several times. The natural focus therefore shifts from “who made the final wrong move” to “why so many prior layers failed to intercept it.”
 """,
             ),
             section(
                 "holes",
-                "## 防线和漏洞为什么会同时存在",
-                "## Why Barriers and Holes Coexist",
+                "## 防线为什么会一边保护、一边带着漏洞",
+                "## Why Defenses Protect and Still Contain Holes",
                 body_zh="""
-课程用这页提醒你一个很关键的现实：有防线，并不等于防线总是有效。
+这页最重要的现实感在这里：防线从来不是绝对防线。
 
-- 有些漏洞是长期存在的设计弱点、资源不足、流程不合理或组织容忍。
-- 有些漏洞是短时出现的，例如疲劳、分心、时间压力、天气、沟通失误。
+- 有些漏洞是长期潜伏的，例如设计弱点、资源不足、流程不现实、组织容忍或错误激励。
+- 有些漏洞是当下触发的，例如疲劳、分心、沟通断裂、时间压力、天气和工作负荷。
 
-真正危险的时刻，是这些长期条件和短时触发在同一时间叠在一起。
+真正危险的时候，不是某一个洞单独存在，而是长期潜伏条件和短时触发恰好叠在一起，让一条原本不该贯通的路径被打通。
 """,
                 body_en="""
-The lecture uses this model to emphasize one practical reality: having a barrier does not mean the barrier is always effective.
+This is where the model becomes concrete: defenses are never absolute.
 
-- some holes are latent and persistent, such as weak design, low resources, unrealistic procedure, or organizational tolerance
-- some holes are active and temporary, such as fatigue, distraction, time pressure, weather, or communication breakdown
+- some holes are latent and persistent, such as design weakness, limited resources, unrealistic procedure, organizational tolerance, or poor incentives
+- some holes are immediate triggers, such as fatigue, distraction, communication breakdown, time pressure, weather, or workload
 
-The dangerous moment is when the latent conditions and active triggers line up at once.
+The dangerous moment is not the existence of one hole alone, but the overlap between latent conditions and active triggers that opens a path which should never have been continuous.
+""",
+                note_title_zh="这一节最重要的结论",
+                note_title_en="The Main Conclusion of This Section",
+                note_body_zh="系统防线不能只问“有没有”，而要问“在真实运行条件下还能不能挡得住”。",
+                note_body_en="The right question for a barrier is not only whether it exists, but whether it still works under real operating conditions.",
+            ),
+            section(
+                "benefits",
+                "## 这套模型为什么这么常用",
+                "## Why This Model Is Used So Widely",
+                body_zh="""
+Swiss Cheese 模型之所以流行，不只是因为图好记，而是因为它把复杂风险快速讲清楚了：
+
+- 它让人一眼看到安全不是靠单一屏障，而是靠 layered defense。
+- 它能把 risk reduction 讲成很具体的问题：加一层、补一层、缩小洞、减少对齐机会。
+- 它适用于航空、核电、医疗等多种高风险系统，因为这些系统都依赖多层拦截。
+
+所以这套模型非常适合做第一层讲解，也非常适合在跨专业团队里建立共同语言。
+""",
+                body_en="""
+The model is widely used not just because the graphic is memorable, but because it makes complex risk legible very quickly:
+
+- it shows that safety depends on layered defense rather than a single barrier
+- it turns risk reduction into concrete questions: add a layer, strengthen a layer, shrink holes, reduce alignment
+- it transfers well across aviation, nuclear power, healthcare, and other high-risk domains because all of them rely on multiple interception layers
+
+That makes the model highly effective as a first explanatory tool and as a shared language across mixed teams.
+""",
+            ),
+            section(
+                "limits",
+                "## 这套模型也有什么局限",
+                "## What the Model Cannot Do on Its Own",
+                body_zh="""
+课件没有把 Swiss Cheese 当成完美答案，而是专门列了 criticism。这个提醒很重要：
+
+- 模型容易让人误以为各层屏障彼此独立、系统基本静态
+- 它强调 barriers，却可能让人忽略“洞为什么会不断长出来”
+- 如果只停在图示层面，分析会显得很 generic，不够贴近真实工作
+
+这也是后来会出现 `Hot Cheese Model` 这类更新的原因：真实系统是动态变化的，新增 mitigation 甚至可能自己再引入新风险。
+""",
+                body_en="""
+The lecture does not treat Swiss Cheese as a perfect answer. Its listed criticisms matter:
+
+- the model can imply that barriers are independent and the system is relatively static
+- it emphasizes barriers, but may hide the deeper question of why holes keep appearing
+- if the analysis stops at the graphic, it becomes too generic and too detached from real work
+
+That is why later updates such as the `Hot Cheese Model` matter: real systems change over time, and even a new mitigation can introduce fresh risk.
 """,
                 note_title_zh="一句话结论",
                 note_title_en="One-Sentence Conclusion",
-                note_body_zh="系统防线不是“有了就行”，而是要持续问：它们在真实运行条件下还挡得住吗？",
-                note_body_en="Barriers are not safe merely because they exist. The real question is whether they still work under real operating conditions.",
+                note_body_zh="Swiss Cheese 很适合当起点，但不能代替动态系统分析和更深层的 causal analysis。",
+                note_body_en="Swiss Cheese is a strong starting point, but it cannot replace dynamic systems thinking or deeper causal analysis.",
             ),
             section(
                 "design",
-                "## 这套模型为什么会把分析拉回系统设计",
-                "## Why the Model Redirects Analysis to System Design",
+                "## 这套框架怎么真正拿来分析事故",
+                "## How to Actually Use the Framework in Accident Analysis",
                 body_zh="""
-如果事故被理解成防线穿透，那改进方向就不会只剩下“提醒人更小心”。更成熟的追问会变成：
+把这页真正用起来时，可以按一条很实用的分析顺序走：
 
-- 哪一层防线原本应该拦住问题
-- 为什么那一层防线没有起作用
-- 有没有哪一层本来就设计得太脆弱
-- 多层防线之间是不是留下了彼此都以为对方会负责的空白
+1. 先找 harm vector，也就是最后伤害是怎样形成的。
+2. 再往回找原本应该拦截它的屏障有哪些。
+3. 对每一层继续追问：它是不存在、失效了，还是看似存在但在真实条件下无效。
+4. 最后区分哪些是 latent conditions，哪些是 active failures，并把 mitigation 对应回具体层级。
 
-这也是为什么 Swiss Cheese 模型在课程里不是一个独立比喻，而是后面 risk methods、operational risk 和案例页的共同底板。
+这样做的结果是，事故分析就不会只剩一个“最后责任人”，而会变成一张系统漏洞地图。
 """,
                 body_en="""
-Once an accident is understood as barrier penetration, the improvement path cannot stop at “be more careful.” The stronger questions become:
+To actually use the framework, a practical sequence is:
 
-- which layer should have intercepted the problem
-- why that layer failed in real conditions
-- whether any layer was designed too weakly from the start
-- whether the boundaries between layers created responsibility gaps
+1. identify the harm vector, meaning how the final harm path formed
+2. work backward through the barriers that should have intercepted it
+3. ask for each layer whether it was absent, failed, or only looked effective on paper
+4. separate latent conditions from active failures and map mitigation back to specific layers
 
-That is why Swiss Cheese is not an isolated metaphor in the course. It becomes the base layer for later risk methods, operational risk, and case analysis.
+The result is that the analysis no longer ends with a single “responsible operator.” It becomes a system vulnerability map.
 """,
             ),
         ],
@@ -710,11 +903,27 @@ That is why Swiss Cheese is not an isolated metaphor in the course. It becomes t
                 "holes",
                 "最容易误读的地方",
                 "The Most Common Misreading",
-                body_zh="不要把模型读成“只要多加几层防线就一定更安全”。如果新增的层级本身很弱、彼此冲突，或者和真实工作脱节，层数增加并不等于韧性增加。",
+                body_zh="不要把模型读成“只要多加几层防线就一定更安全”。如果新增层级本身很弱、互相冲突，或者和真实工作脱节，层数增加并不等于韧性增加。",
                 body_en="Do not read the model as “more layers always mean more safety.” If the added layers are weak, conflicting, or detached from real work, more layers do not automatically produce more resilience.",
-            )
+            ),
+            callout(
+                "warning",
+                "limits",
+                "另一个常见陷阱",
+                "Another Common Trap",
+                body_zh="不要把 Swiss Cheese 画成图以后就以为分析结束了。图只是帮助你看到层和洞，真正困难的是解释这些洞为什么会持续存在、怎样被组织条件放大。",
+                body_en="Do not assume that drawing the Swiss Cheese picture completes the analysis. The picture helps reveal layers and holes, but the hard part is still explaining why those holes persist and how organizational conditions magnify them.",
+            ),
         ],
         examples=[
+            callout(
+                "example",
+                "benefits",
+                "案例：为什么 COVID 图示能把模型一下子讲明白",
+                "Example: Why the COVID Illustration Explains the Model So Quickly",
+                body_zh="口罩、社交距离、清洁消毒、洗手都不是完美屏障，但它们叠在一起时会显著降低 harm path 被打通的机会。这个例子好用，是因为它把“每层都有洞，但多层一起仍然有意义”直观地画出来了。",
+                body_en="Masks, distancing, cleaning, and handwashing are not perfect barriers, but together they reduce the chance that a harm path remains open. The example works because it makes one idea intuitive: every layer can have holes and still contribute meaningfully when stacked with others.",
+            ),
             callout(
                 "example",
                 "design",
@@ -722,7 +931,15 @@ That is why Swiss Cheese is not an isolated metaphor in the course. It becomes t
                 "Example: How One Accident Path Penetrates Several Layers",
                 body_zh="想象一台医疗设备在夜班里被错误设定剂量。最后那一下输入错误只是 `sharp end`。更上游可能已经同时存在：界面字段易混、标签不清、双人核对流于形式、工作负荷过高、培训把重点放错。单看最后一步，很像“某个人输错了”；从 Swiss Cheese 看，真正的问题是多层防线一起失守。",
                 body_en="Imagine a medical device receiving an incorrect dose setting during a night shift. The final wrong entry is only the `sharp end`. Upstream there may already be a confusable interface, unclear labeling, a superficial double-check process, excessive workload, and training that emphasized the wrong cues. If only the final action is inspected, the story becomes “someone typed it incorrectly.” Through Swiss Cheese, the deeper story is that several defenses failed together.",
-            )
+            ),
+            callout(
+                "example",
+                "design",
+                "案例：为什么 Deepwater Horizon 和 Challenger 都适合用这套框架读",
+                "Example: Why Both Deepwater Horizon and Challenger Fit This Framework",
+                body_zh="这两个案例都不是“一个零件坏了”这么简单。Deepwater Horizon 里既有数据误读、设备失效，也有时间和预算压力；Challenger 里既有材料和测试问题，也有 schedule pressure 和 oversight / culture 问题。Swiss Cheese 的作用，就是让这些看似分散的因素能被放回同一条穿透路径里。",
+                body_en="Neither case reduces cleanly to “one part failed.” Deepwater Horizon involved data misinterpretation, equipment failure, and time or budget pressure; Challenger involved material and testing problems together with schedule pressure and oversight or culture failures. Swiss Cheese helps place those seemingly scattered factors back onto one penetration path.",
+            ),
         ],
         inline_visuals=[
             visual(
@@ -730,27 +947,29 @@ That is why Swiss Cheese is not an isolated metaphor in the course. It becomes t
                 "05 Swiss Cheese Model.pdf",
                 "这张图要看懂的是：事故不是绕过一层防线，而是沿着多层漏洞被连续放行。",
                 "This figure should make one idea visible: accidents do not bypass only one barrier; they pass through a chain of weaknesses across several layers.",
-                index=0,
+                asset_name_contains="page-06",
             ),
             visual(
-                "holes",
+                "benefits",
                 "05 Swiss Cheese Model.pdf",
-                "这张图要看懂的是：漏洞既可能来自长期潜伏条件，也可能来自当下触发因素，真正危险的是两者在同一时刻重合。",
-                "This figure should make clear that holes may come from latent conditions or immediate triggers, and the real hazard appears when they overlap.",
-                index=1,
+                "这张图要看懂的是：每一层措施都不完美，但多层叠加仍然能明显降低风险路径被打通的概率。",
+                "This figure should show that each measure is imperfect on its own, yet layering still sharply reduces the chance that a risk path stays open.",
+                asset_name_contains="page-07",
             ),
         ],
         summary_points_zh=[
-            "Swiss Cheese 模型把事故理解成多层防线穿透。",
-            "每一层屏障都可能同时具有保护作用和漏洞。",
-            "长期潜伏条件和短时触发叠加时，事故路径最容易形成。",
-            "这套模型的真正价值是把改进方向拉回 barrier design 和 system resilience。",
+            "Swiss Cheese 模型把事故解释成多层防线的连续穿透。",
+            "真正危险的是 latent conditions 和 active triggers 在时间上重合。",
+            "这套模型很适合建立共同语言和第一层事故解释。",
+            "它的局限在于容易静态化、图像化，因此还需要更深层根因分析补上。",
+            "真正用它时，要把 harm vector、barriers、holes 和 mitigation 一层一层对应起来。",
         ],
         summary_points_en=[
-            "The Swiss Cheese model reads accidents as penetration of multiple defenses.",
-            "Each barrier can protect while still containing vulnerabilities.",
-            "Accident paths form most easily when latent conditions overlap with immediate triggers.",
-            "The real value of the model is that it redirects improvement toward barrier design and resilience.",
+            "The Swiss Cheese model explains accidents as sequential penetration of multiple defenses.",
+            "The deepest danger appears when latent conditions overlap with active triggers.",
+            "The model is highly effective for building shared language and a first-pass accident explanation.",
+            "Its limitation is that it can become too static and purely graphical, so deeper causal analysis still has to follow.",
+            "To use it well, map the harm vector, barriers, holes, and mitigation layer by layer.",
         ],
     ),
 }

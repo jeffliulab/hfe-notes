@@ -1,74 +1,108 @@
 # The Swiss Cheese Model
 
-This page pushes the systems view one step further: accidents do not emerge only because one person suddenly makes a dramatic mistake, but because multiple defenses contain weaknesses that align into a path of penetration.
+This chapter pushes accident explanation from single-point failure toward the way multiple defenses fail together. The value of the Swiss Cheese model is not the metaphor itself, but the way it redirects attention to barriers and aligned vulnerabilities.
 
 !!! note "Core Question"
-    Why do accidents still happen in high-risk systems that appear to have many defenses, and how do the weaknesses in those defenses align at the same time?
+    Why do accidents still happen in high-risk systems that appear to have many defenses, and is the real danger one failed layer or multiple defenses failing together at the same time?
 
 ## Key Takeaways
 
-- The Swiss Cheese model treats accidents as penetrations of multiple defenses rather than as isolated individual failures.
-- Each layer can provide protection while still containing vulnerabilities.
-- The deepest danger is not one hole by itself, but several holes aligning in time and circumstance.
-- The value of the model is that it redirects attention from blame to barrier design and system resilience.
+- The Swiss Cheese model treats accidents as penetration of multiple defenses rather than a single dramatic personal failure.
+- Each layer can protect while still containing vulnerabilities, so the existence of a barrier does not guarantee dependable protection.
+- The real danger is not one hole by itself, but several holes aligning across time and conditions.
+- The model redirects blame-oriented thinking toward barrier design, latent conditions, and system resilience.
+- It is useful, but it should not be treated as the full endpoint of analysis; dynamic change and deeper causal analysis still matter.
 
 ## Remember This First
 
 !!! tip "Keep This Sentence in Mind"
-    The shortest memory line for this page is that accidents usually do not happen because the final operator was uniquely weak, but because several layers of protection failed to stop the problem at the same time.
+    The shortest memory line is this: accidents usually do not happen because the last operator was uniquely weak, but because several defenses that should have intercepted the problem failed at the same time.
 
 ## What the Swiss Cheese Model Explains
 
-The core of the model is not the cheese metaphor itself, but the logic underneath it: high-risk systems are protected by multiple barriers, procedures, checks, people, and organizational controls rather than a single safeguard.
+What the model really explains is that harm paths in complex systems rarely emerge in one step. They move through barriers, procedures, checks, people, and organizational controls before reaching the outcome layer.
 
-Once that is clear, an accident no longer looks like a single-point collapse. It looks like a failure path that should have been intercepted several times but instead passed through each layer.
+Once that is accepted, an accident no longer looks like an isolated explosion point. It looks like a problem chain that should have been intercepted several times. The natural focus therefore shifts from “who made the final wrong move” to “why so many prior layers failed to intercept it.”
 
 <figure class="note-inline-figure">
-  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/05-swiss-cheese-model/page-01.png" alt="This figure should make one idea visible: accidents do not bypass only one barrier; they pass through a chain of weaknesses across several layers." loading="lazy">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/05-swiss-cheese-model/page-06.png" alt="This figure should make one idea visible: accidents do not bypass only one barrier; they pass through a chain of weaknesses across several layers." loading="lazy">
   <figcaption>This figure should make one idea visible: accidents do not bypass only one barrier; they pass through a chain of weaknesses across several layers.</figcaption>
 </figure>
 
-## Why Barriers and Holes Coexist
+## Why Defenses Protect and Still Contain Holes
 
-The lecture uses this model to emphasize one practical reality: having a barrier does not mean the barrier is always effective.
+This is where the model becomes concrete: defenses are never absolute.
 
-- some holes are latent and persistent, such as weak design, low resources, unrealistic procedure, or organizational tolerance
-- some holes are active and temporary, such as fatigue, distraction, time pressure, weather, or communication breakdown
+- some holes are latent and persistent, such as design weakness, limited resources, unrealistic procedure, organizational tolerance, or poor incentives
+- some holes are immediate triggers, such as fatigue, distraction, communication breakdown, time pressure, weather, or workload
 
-The dangerous moment is when the latent conditions and active triggers line up at once.
+The dangerous moment is not the existence of one hole alone, but the overlap between latent conditions and active triggers that opens a path which should never have been continuous.
 
-<figure class="note-inline-figure">
-  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/05-swiss-cheese-model/page-06.png" alt="This figure should make clear that holes may come from latent conditions or immediate triggers, and the real hazard appears when they overlap." loading="lazy">
-  <figcaption>This figure should make clear that holes may come from latent conditions or immediate triggers, and the real hazard appears when they overlap.</figcaption>
-</figure>
-
-!!! note "One-Sentence Conclusion"
-    Barriers are not safe merely because they exist. The real question is whether they still work under real operating conditions.
+!!! note "The Main Conclusion of This Section"
+    The right question for a barrier is not only whether it exists, but whether it still works under real operating conditions.
 
 !!! warning "The Most Common Misreading"
     Do not read the model as “more layers always mean more safety.” If the added layers are weak, conflicting, or detached from real work, more layers do not automatically produce more resilience.
 
-## Why the Model Redirects Analysis to System Design
+## Why This Model Is Used So Widely
 
-Once an accident is understood as barrier penetration, the improvement path cannot stop at “be more careful.” The stronger questions become:
+The model is widely used not just because the graphic is memorable, but because it makes complex risk legible very quickly:
 
-- which layer should have intercepted the problem
-- why that layer failed in real conditions
-- whether any layer was designed too weakly from the start
-- whether the boundaries between layers created responsibility gaps
+- it shows that safety depends on layered defense rather than a single barrier
+- it turns risk reduction into concrete questions: add a layer, strengthen a layer, shrink holes, reduce alignment
+- it transfers well across aviation, nuclear power, healthcare, and other high-risk domains because all of them rely on multiple interception layers
 
-That is why Swiss Cheese is not an isolated metaphor in the course. It becomes the base layer for later risk methods, operational risk, and case analysis.
+That makes the model highly effective as a first explanatory tool and as a shared language across mixed teams.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/05-swiss-cheese-model/page-07.png" alt="This figure should show that each measure is imperfect on its own, yet layering still sharply reduces the chance that a risk path stays open." loading="lazy">
+  <figcaption>This figure should show that each measure is imperfect on its own, yet layering still sharply reduces the chance that a risk path stays open.</figcaption>
+</figure>
+
+!!! example "Example: Why the COVID Illustration Explains the Model So Quickly"
+    Masks, distancing, cleaning, and handwashing are not perfect barriers, but together they reduce the chance that a harm path remains open. The example works because it makes one idea intuitive: every layer can have holes and still contribute meaningfully when stacked with others.
+
+## What the Model Cannot Do on Its Own
+
+The lecture does not treat Swiss Cheese as a perfect answer. Its listed criticisms matter:
+
+- the model can imply that barriers are independent and the system is relatively static
+- it emphasizes barriers, but may hide the deeper question of why holes keep appearing
+- if the analysis stops at the graphic, it becomes too generic and too detached from real work
+
+That is why later updates such as the `Hot Cheese Model` matter: real systems change over time, and even a new mitigation can introduce fresh risk.
+
+!!! note "One-Sentence Conclusion"
+    Swiss Cheese is a strong starting point, but it cannot replace dynamic systems thinking or deeper causal analysis.
+
+!!! warning "Another Common Trap"
+    Do not assume that drawing the Swiss Cheese picture completes the analysis. The picture helps reveal layers and holes, but the hard part is still explaining why those holes persist and how organizational conditions magnify them.
+
+## How to Actually Use the Framework in Accident Analysis
+
+To actually use the framework, a practical sequence is:
+
+1. identify the harm vector, meaning how the final harm path formed
+2. work backward through the barriers that should have intercepted it
+3. ask for each layer whether it was absent, failed, or only looked effective on paper
+4. separate latent conditions from active failures and map mitigation back to specific layers
+
+The result is that the analysis no longer ends with a single “responsible operator.” It becomes a system vulnerability map.
 
 !!! example "Example: How One Accident Path Penetrates Several Layers"
     Imagine a medical device receiving an incorrect dose setting during a night shift. The final wrong entry is only the `sharp end`. Upstream there may already be a confusable interface, unclear labeling, a superficial double-check process, excessive workload, and training that emphasized the wrong cues. If only the final action is inspected, the story becomes “someone typed it incorrectly.” Through Swiss Cheese, the deeper story is that several defenses failed together.
 
+!!! example "Example: Why Both Deepwater Horizon and Challenger Fit This Framework"
+    Neither case reduces cleanly to “one part failed.” Deepwater Horizon involved data misinterpretation, equipment failure, and time or budget pressure; Challenger involved material and testing problems together with schedule pressure and oversight or culture failures. Swiss Cheese helps place those seemingly scattered factors back onto one penetration path.
+
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"
-    - The Swiss Cheese model reads accidents as penetration of multiple defenses.
-    - Each barrier can protect while still containing vulnerabilities.
-    - Accident paths form most easily when latent conditions overlap with immediate triggers.
-    - The real value of the model is that it redirects improvement toward barrier design and resilience.
+    - The Swiss Cheese model explains accidents as sequential penetration of multiple defenses.
+    - The deepest danger appears when latent conditions overlap with active triggers.
+    - The model is highly effective for building shared language and a first-pass accident explanation.
+    - Its limitation is that it can become too static and purely graphical, so deeper causal analysis still has to follow.
+    - To use it well, map the harm vector, barriers, holes, and mitigation layer by layer.
 
 
 ## Source Scope and Related Topics
