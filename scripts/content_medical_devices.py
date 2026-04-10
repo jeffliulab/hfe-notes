@@ -884,3 +884,84 @@ MEDICAL_DEVICES_CONTENT["medical_device_use_errors"]["inline_visuals"].append(
         asset_name_contains="slide-09-image2",
     )
 )
+
+MEDICAL_DEVICES_CONTENT["medical_device_urra"]["sections"].extend(
+    [
+        section(
+            "process_document",
+            "## 为什么 URRA 同时是过程，也是文档",
+            "## Why URRA Is Both a Process and a Document",
+            body_zh="""
+            这页最容易被误读的地方之一，是把 URRA 当成“最后要交的一张表”。课件其实在提醒你，URRA 既是分析过程，也是承载分析结果的工作文档。前者决定团队怎样识别 use scenario、critical task 和 harm path，后者决定这些判断能不能被设计、法规和验证团队继续使用。
+
+            换句话说，URRA 不是先想清楚再随手写一下，而是边分析边形成可追踪记录。如果把它只当文档模板，内容就会变空；如果只当思考过程又不把链条写清楚，团队也没法共享和复查。医疗器械语境里，这两层缺一不可。
+            """,
+            body_en="""
+            One of the easiest misreadings on this page is to treat URRA as “the table you submit at the end.” The lecture is actually pointing out that URRA is both an analysis process and the working document that carries the result. The process determines how the team identifies use scenarios, critical tasks, and harm paths; the document determines whether those judgments can be reused by design, regulatory, and validation teams.
+
+            In other words, URRA is not something you think through first and then casually write down. It is a tracked record formed while the analysis is happening. If it is treated only as a document template, the content becomes hollow. If it is treated only as thinking with no clear written chain, the team cannot share or review it. In the medical-device context, both layers matter.
+            """,
+        ),
+        section(
+            "user_interface",
+            "## 为什么医疗器械里的 user interface 远不止一个屏幕",
+            "## Why the User Interface in Medical Devices Is Far More Than a Screen",
+            body_zh="""
+            这门课对 medical device user interface 的定义非常宽。它不只包括屏幕、按钮和物理操作件，还包括 IFU、packaging、labeling、training material，甚至用户借此学习和操作设备的整个交互入口。
+
+            这个定义会直接改变 URRA 写法。因为一旦把界面理解成“用户真正接触到的一整套系统”，很多风险控制就不会只落在主机本体上，而会落到说明、包装区分、确认提示、端部标识和训练支架上。也正因为如此，课件才会不断强调 `Use Error, not User Error`，把风险重新拉回设计和界面支持。
+            """,
+            body_en="""
+            The course uses a broad definition of the medical-device user interface. It includes not only screens, buttons, and physical controls, but also the IFU, packaging, labeling, training material, and the entire interaction surface through which the user learns and operates the device.
+
+            That definition directly changes how URRA should be written. Once the interface is understood as the whole system the user truly encounters, many controls no longer land only on the core device body. They land on instructions, packaging differentiation, confirmation prompts, end identification, and training scaffolds. That is also why the lecture keeps repeating `Use Error, not User Error`, pulling risk back toward design and interface support.
+            """,
+        ),
+        section(
+            "row_quality",
+            "## 怎样判断一条 URRA 行已经写到可以支持设计决策",
+            "## How to Tell Whether One URRA Row Is Strong Enough to Support Design Decisions",
+            body_zh="""
+            一条强的 URRA 行，读起来应该像一条完整风险故事，而不是一堆栏位名词。团队至少应能从这一行稳定读出：
+
+            - 谁在什么场景下执行哪一步
+            - 错误方向到底是什么
+            - 哪个 hazardous situation 会因此被打开
+            - patient harm 在哪里出现
+            - 当前 control 究竟是在前面预防、当中阻断，还是后面减轻后果
+
+            如果一行写完后，大家仍然只能看到“可能误用”“可能受伤”“建议培训”这类大词，那它还支撑不了设计。真正能指导设计的 URRA，必须把风险链写到足够具体，让团队知道究竟该改哪一层。
+            """,
+            body_en="""
+            A strong URRA row should read like one complete risk story rather than a pile of column labels. The team should at least be able to read from one row:
+
+            - who is performing which step in what scenario
+            - what the actual direction of error is
+            - which hazardous situation becomes possible
+            - where patient harm appears
+            - whether the current control prevents early, interrupts in the middle, or merely reduces consequence late
+
+            If a row still leaves the team with only phrases like “possible misuse,” “possible injury,” and “recommend training,” it is not yet supporting design. URRA that can drive design must write the risk chain concretely enough that the team knows which layer actually needs change.
+            """,
+        ),
+    ]
+)
+MEDICAL_DEVICES_CONTENT["medical_device_urra"]["examples"].append(
+    callout(
+        "example",
+        "row_quality",
+        "案例：为什么输液泵上的一个数字输入步骤足以决定整条 URRA 是否写得成熟",
+        "Example: Why One Numeric-Entry Step on an Infusion Pump Can Reveal Whether the URRA Row Is Mature",
+        body_zh="如果条目只写“用户设定错误流速”，团队还看不出该改什么。更成熟的写法会继续明确：是在高工作负荷下把 12.5 读成 125，还是在单位切换时没有注意到 mL/hr，还是确认环节缺少第二次校验。只有错误方向具体了，团队才知道应该改显示层级、单位呈现、确认流程还是 training support。",
+        body_en="If the row only says “the user sets the wrong infusion rate,” the team still cannot see what to redesign. A stronger row specifies whether 12.5 was misread as 125 under high workload, whether the user missed the mL/hr unit during a mode change, or whether the confirmation step lacked a second verification. Only when the error direction is concrete can the team decide whether to redesign display hierarchy, unit presentation, confirmation flow, or training support.",
+    )
+)
+MEDICAL_DEVICES_CONTENT["medical_device_urra"]["inline_visuals"].append(
+    visual(
+        "user_interface",
+        "06 URRA in Medical Devices.pptx",
+        "这张图要看懂的是：医疗器械界面不只是屏幕文本，像输液泵这样的设备把显示、按键、单位、标签和操作节奏一起组成了真正的 user interface。",
+        "This figure should make one thing concrete: the medical-device interface is not only screen text. On a device such as an infusion pump, display, keypad, units, labeling, and action rhythm all combine into the real user interface.",
+        asset_name_contains="slide-18-image31",
+    )
+)

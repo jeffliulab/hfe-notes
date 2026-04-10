@@ -151,6 +151,80 @@ display 设计真正成熟时，
   <figcaption>这张图要看懂的是：像 TCAS 这样的集成显示，不只是把更多信息放进一个屏，而是把交通冲突、垂直速度和回避指令组织成能直接支持动作的界面。</figcaption>
 </figure>
 
+## 为什么 display 设计原则会直接决定“能不能一眼读对”
+
+课件里列的那些 display 设计原则不是视觉设计清单，
+而是在回答一个很实用的问题：
+当操作者没有太多时间时，
+界面还能不能把关键关系直接组织出来。
+信息密度、
+grouping、
+contrast、
+redundant coding、
+pictorial realism 和 predictive aiding，
+本质上都在帮助人更快抓住状态结构，
+而不是只看到更多数据。
+
+这也是为什么显示设计很少能靠“把更多东西放上去”解决。
+只要层级、
+邻近关系和表示方式不对，
+界面信息越多，
+操作者越可能看见一堆元素，
+却没能及时读出真正重要的状态关系。
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/displays-and-alerts-2-4-26/page-01.png" alt="这张图要看懂的是：好的显示不会把数据平铺出来，而是把航迹、冲突对象和模式信息组织成能被快速读出的状态结构。" loading="lazy">
+  <figcaption>这张图要看懂的是：好的显示不会把数据平铺出来，而是把航迹、冲突对象和模式信息组织成能被快速读出的状态结构。</figcaption>
+</figure>
+
+## 为什么 auditory display 有时比 visual display 更适合先抢到注意力
+
+课件把 auditory display 单独拿出来讲，
+是因为人在很多高负荷场景里，
+眼睛已经被占满了。
+此时声音的价值不是替代视觉理解，
+而是先把注意力从别处拉回来，
+告诉操作者“现在有一件事必须处理”。
+
+但声音也有明显边界。
+它很适合抢注意、
+区分优先级、
+表达紧急性，
+却不适合承载太复杂的状态结构。
+也正因为如此，
+好的系统往往会让 auditory alert 先把人拉过来，
+再由 visual display 接手更细的状态解释和动作引导。
+
+!!! example "案例：为什么一个好的声音告警通常不会试图把全部状态都“说出来”"
+    如果声音告警试图直接承载太多状态细节，
+    操作者在高负荷下反而更难及时提取重点。
+    更成熟的做法，
+    是先用声音稳定表达优先级和紧急性，
+    再把具体解释交给对应的 visual display。
+    也就是说，
+    声音的价值往往在于抢占注意，
+    而不是单独完成诊断。
+
+## 为什么 display 和 alert 设计最后一定要回到 implementation 与 testing
+
+这页最后讲 implementation 和 testing，
+是因为很多 display / alert 设计在概念上看起来都合理，
+真正上线后却会在噪声、
+工作负荷、
+设备差异或环境条件下表现出完全不同的效果。
+只有测试，
+团队才知道哪些提醒会被忽略、
+哪些显示会被误读、
+哪些优先级划分根本不稳。
+
+这也是为什么告警设计不能只在会议室里讨论。
+它必须进到 representative task、
+representative environment 和 representative workload 里去验证，
+否则系统很可能在纸面上“解释得通”，
+在现场却仍然让人看不清、
+听不准、
+反应不过来。
+
 ## 本章总结
 
 !!! tip "复习时重点记这几条"

@@ -156,6 +156,79 @@ later controls and validation plans inevitably become vague as well.
   <figcaption>This figure should make one point concrete: device interfaces and physical forms differ widely, so use-related risk cannot stay abstract and has to return to the actual device and task.</figcaption>
 </figure>
 
+## Why URRA Is Both a Process and a Document
+
+One of the easiest misreadings on this page is to treat URRA as “the table you submit at the end.” The lecture is actually pointing out that URRA is both an analysis process and the working document that carries the result.
+The process determines how the team identifies use scenarios,
+critical tasks,
+and harm paths;
+the document determines whether those judgments can be reused by design,
+regulatory,
+and validation teams.
+
+In other words,
+URRA is not something you think through first and then casually write down.
+It is a tracked record formed while the analysis is happening.
+If it is treated only as a document template,
+the content becomes hollow.
+If it is treated only as thinking with no clear written chain,
+the team cannot share or review it.
+In the medical-device context,
+both layers matter.
+
+## Why the User Interface in Medical Devices Is Far More Than a Screen
+
+The course uses a broad definition of the medical-device user interface.
+It includes not only screens,
+buttons,
+and physical controls,
+but also the IFU,
+packaging,
+labeling,
+training material,
+and the entire interaction surface through which the user learns and operates the device.
+
+That definition directly changes how URRA should be written.
+Once the interface is understood as the whole system the user truly encounters,
+many controls no longer land only on the core device body.
+They land on instructions,
+packaging differentiation,
+confirmation prompts,
+end identification,
+and training scaffolds.
+That is also why the lecture keeps repeating `Use Error,
+not User Error`,
+pulling risk back toward design and interface support.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-18-image31.jpeg" alt="This figure should make one thing concrete: the medical-device interface is not only screen text. On a device such as an infusion pump, display, keypad, units, labeling, and action rhythm all combine into the real user interface." loading="lazy">
+  <figcaption>This figure should make one thing concrete: the medical-device interface is not only screen text. On a device such as an infusion pump, display, keypad, units, labeling, and action rhythm all combine into the real user interface.</figcaption>
+</figure>
+
+## How to Tell Whether One URRA Row Is Strong Enough to Support Design Decisions
+
+A strong URRA row should read like one complete risk story rather than a pile of column labels.
+The team should at least be able to read from one row:
+
+- who is performing which step in what scenario
+- what the actual direction of error is
+- which hazardous situation becomes possible
+- where patient harm appears
+- whether the current control prevents early, interrupts in the middle, or merely reduces consequence late
+
+If a row still leaves the team with only phrases like “possible misuse,” “possible injury,” and “recommend training,” it is not yet supporting design.
+URRA that can drive design must write the risk chain concretely enough that the team knows which layer actually needs change.
+
+!!! example "Example: Why One Numeric-Entry Step on an Infusion Pump Can Reveal Whether the URRA Row Is Mature"
+    If the row only says “the user sets the wrong infusion rate,” the team still cannot see what to redesign.
+    A stronger row specifies whether 12.5 was misread as 125 under high workload,
+    whether the user missed the mL/hr unit during a mode change,
+    or whether the confirmation step lacked a second verification.
+    Only when the error direction is concrete can the team decide whether to redesign display hierarchy,
+    unit presentation,
+    confirmation flow,
+    or training support.
+
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"

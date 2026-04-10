@@ -138,6 +138,71 @@ the burden on the alerting system decreases as well.
   <figcaption>This figure should show that an integrated display such as TCAS is not merely putting more data on one screen. It organizes traffic conflict, vertical-speed information, and resolution cues into an interface that supports direct action.</figcaption>
 </figure>
 
+## Why Display Design Principles Directly Determine Whether a State Can Be Read Correctly at a Glance
+
+The display principles listed in the lecture are not a decorative visual-design checklist.
+They answer a practical question:
+when the operator has little time,
+can the interface still organize the critical relationships directly.
+Information density,
+grouping,
+contrast,
+redundant coding,
+pictorial realism,
+and predictive aiding all exist to help people grasp state structure quickly rather than merely look at more data.
+
+That is also why display design rarely improves by simply adding more information.
+Once hierarchy,
+proximity,
+and representation are wrong,
+the operator may see many elements and still fail to read the important state relationship in time.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/displays-and-alerts-2-4-26/page-01.png" alt="This figure should make one point concrete: a strong display does not simply lay out data. It organizes trajectory, conflict object, and mode information into a state structure that can be read quickly." loading="lazy">
+  <figcaption>This figure should make one point concrete: a strong display does not simply lay out data. It organizes trajectory, conflict object, and mode information into a state structure that can be read quickly.</figcaption>
+</figure>
+
+## Why an Auditory Display Can Sometimes Capture Attention Better Than a Visual One
+
+The lecture separates auditory displays because in many high-load settings the eyes are already saturated.
+In that condition,
+sound is valuable not because it replaces visual understanding,
+but because it can pull attention back and say, “something now requires action.”
+
+But sound also has clear limits.
+It is good at capturing attention,
+distinguishing priority,
+and conveying urgency,
+but not at carrying complex state structure.
+That is why stronger systems often let the auditory alert pull the operator in first and then let the visual display carry the more detailed state explanation and action guidance.
+
+!!! example "Example: Why a Good Auditory Alert Usually Does Not Try to “Say Everything” About the State"
+    If an auditory alert tries to carry too much state detail directly,
+    the operator under high load may struggle even more to extract the key point in time.
+    A stronger approach is to let sound reliably express priority and urgency first,
+    and then let the corresponding visual display carry the detailed explanation.
+    In other words,
+    the value of sound often lies in attention capture,
+    not in performing diagnosis alone.
+
+## Why Display and Alert Design Ultimately Has to Return to Implementation and Testing
+
+The lecture ends with implementation and testing because many display and alert designs look reasonable in principle yet behave very differently once noise,
+workload,
+device differences,
+or environment are introduced.
+Only testing tells the team which alerts get ignored,
+which displays are misread,
+and which priority distinctions are not stable in practice.
+
+That is also why alert design cannot remain a conference-room discussion.
+It has to be validated in representative tasks,
+representative environments,
+and representative workloads.
+Otherwise the system may look defensible on paper while still leaving people unable to see clearly,
+hear accurately,
+or respond in time.
+
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"

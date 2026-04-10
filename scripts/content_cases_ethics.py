@@ -795,3 +795,63 @@ CASES_ETHICS_CONTENT["boeing_737max_and_ethics"]["examples"].append(
         body_en="Training obviously matters, but if system state still lacks visibility, if too much weight still rests on single-point information, and if checklist and alert logic remain weak under abnormal conditions, then training merely transfers more recovery burden onto the crew. The deeper lesson of the 737 Max page is that when risk is generated across layers, mitigation also has to operate across layers.",
     )
 )
+
+CASES_ETHICS_CONTENT["operational_risk"]["sections"].extend(
+    [
+        section(
+            "tem",
+            "## 为什么 Threat and Error Management 会成为 operational risk 的日常读法",
+            "## Why Threat and Error Management Becomes the Everyday Reading Frame for Operational Risk",
+            body_zh="""
+            operational risk 之所以会和 TEM 连在一起，是因为这门课不把威胁和错误看成异常插曲，而是看成 everyday operations 里本来就会持续出现、需要被管理的东西。TEM 的价值，在于它让团队把注意力放在“威胁如何被发现、错误如何被恢复、undesired state 怎样被挡住”这些日常管理动作上。
+
+            这会把视角从“事故发生时谁错了”转向“平时系统如何处理不断出现的小偏差”。也正因为如此，operational risk 不是只研究失败，而是研究运行系统平时怎样维持安全边界，以及边界又是怎样慢慢被削薄的。
+            """,
+            body_en="""
+            Operational risk connects naturally to TEM because the course does not treat threats and errors as rare interruptions. It treats them as things that continuously appear inside everyday operations and must be managed. The value of TEM is that it pushes attention toward how threats are detected, how errors are recovered, and how undesired states are prevented in normal work.
+
+            That shift moves the lens away from “who was wrong once the accident happened” and toward “how the system manages recurring small deviations every day.” For that reason, operational risk is not only about failure. It is about how the operating system normally preserves safety margins and how those margins slowly become thinner.
+            """,
+        ),
+        section(
+            "safety2",
+            "## 为什么这页还要讨论 human contribution to safety",
+            "## Why This Page Also Has to Discuss Human Contribution to Safety",
+            body_zh="""
+            如果 operational risk 只会问“人怎样出错”，它就会漏掉另一半：人在日常运行里也一直在补位、识别弱信号、修正偏差、维持系统不出事。课件把 human error 和 human contribution to safety 放在一起，正是为了打断那种只在事故后才想起人的视角。
+
+            这不是否认错误存在，而是提醒你：同样一套 frontline adaptation，平时可能在保住系统，失手时才会暴露成事故链的一部分。真正成熟的运行风险分析，既看错误是怎样发生的，也看系统平时靠什么被勉强维持住。
+            """,
+            body_en="""
+            If operational risk asks only “how humans fail,” it misses the other half of the picture: in everyday operations, people are also continuously filling gaps, detecting weak signals, correcting drift, and helping the system avoid failure. The lecture places human error next to human contribution to safety precisely to interrupt the view that humans become relevant only after an accident.
+
+            This does not deny the existence of error. It reminds you that the same frontline adaptation which keeps the system functioning most of the time may become visible as part of an accident chain only when it finally fails. Mature operational-risk analysis therefore looks both at how failure emerges and at what has been holding the system together the rest of the time.
+            """,
+        ),
+        section(
+            "limits",
+            "## 为什么 operational risk 分析离不开观察与运行数据，而不能只靠办公室推断",
+            "## Why Operational-Risk Analysis Depends on Observation and Operational Data Rather Than Office Inference Alone",
+            body_zh="""
+            这页真正难的地方，是很多运行风险在办公室里看不出来。只有当团队去看 line operations、handoff、maintenance window、实际 traffic pattern 或事件报告时，很多慢性变脆信号才会浮出来。也正因为这样，LOSA、ASRS 一类材料在这条线里很重要。
+
+            operational risk 不能只靠 imagined workflow 推断，因为真正的问题往往正藏在 imagined 和 done 的差距里。没有观察、没有运行数据、没有近失事件材料，团队就很容易高估程序稳定性，低估现实中的 workload 和 workaround。
+            """,
+            body_en="""
+            The hard part of this page is that many operational risks are invisible from an office. The signals often surface only when the team studies line operations, handoffs, maintenance windows, real traffic patterns, or operational reports. That is why materials such as LOSA and ASRS matter on this line.
+
+            Operational risk cannot be inferred only from imagined workflow, because the real problem often lives precisely in the gap between imagined and done. Without observation, operational data, and near-miss material, teams easily overestimate procedure stability and underestimate real workload and workaround behavior.
+            """,
+        ),
+    ]
+)
+CASES_ETHICS_CONTENT["operational_risk"]["examples"].append(
+    callout(
+        "example",
+        "safety2",
+        "案例：为什么同一套 frontline adaptation 平时是在保安全，失手时却会被看成风险来源",
+        "Example: Why the Same Frontline Adaptation Can Normally Preserve Safety Yet Later Be Seen as a Risk Source",
+        body_zh="一线人员为了让工作继续推进，经常会提前协调、额外 cross-check、口头补程序、临时调整节奏。这些动作很多时候是在帮系统撑住。但一旦运行负荷继续上升、交接变差或外部条件恶化，同样的补位动作也可能撑不住，最后暴露出系统原本就缺少正式缓冲。这正是 operational risk 要看的：不仅是哪里出了错，也是谁一直在替系统补洞。",
+        body_en="Frontline staff often preserve operations by coordinating early, performing extra cross-checks, verbally filling procedural gaps, and adjusting rhythm on the fly. Much of the time those adaptations are what keep the system working. But once workload rises further, handoffs degrade, or outside conditions worsen, the same compensating behavior may no longer be enough and the underlying lack of formal buffer becomes visible. That is exactly what operational risk tries to read: not only where failure surfaced, but also who had been quietly patching the system all along.",
+    )
+)

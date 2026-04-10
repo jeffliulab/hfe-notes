@@ -143,6 +143,57 @@ If a report contains only “what happened” followed by “be more careful nex
     The source material may be the same,
     but the analytic quality is completely different.
 
+## Why NTSB-Style Investigation Deliberately Pushes Liability Questions to the Background
+
+The lecture repeatedly emphasizes that NTSB investigation is a `fact-finding proceeding`,
+not a process designed primarily to assign legal liability.
+The distinction matters because once investigation begins orbiting blame too early,
+teams become more likely to stop at the last visible human action rather than continuing into system conditions,
+recovery opportunity,
+and organizational constraint.
+
+For this course,
+that discipline is not a legal footnote.
+It is a prerequisite for analytic quality.
+Only when the material is first stabilized into facts,
+timeline,
+and condition structure can the later question of “why this happened” avoid becoming a premature judgment.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-investigative-process-ntsb-20260121/page-02.png" alt="This figure should show that NTSB investigation emphasizes fact-finding and independence. The point is not that responsibility never matters, but that investigation must first protect the facts-and-safety-improvement line." loading="lazy">
+  <figcaption>This figure should show that NTSB investigation emphasizes fact-finding and independence. The point is not that responsibility never matters, but that investigation must first protect the facts-and-safety-improvement line.</figcaption>
+</figure>
+
+!!! example "Example: Why the Phrase “Pilot Error” Does Not Actually Finish an Investigation"
+    If the report ends with the phrase “pilot error,” the team receives a label rather than a structure it can change.
+    A stronger investigation continues asking which state cues were not sufficiently visible,
+    which procedures failed to support recovery,
+    and which organizational or design conditions made it harder for the crew to detect and correct the deviation.
+    Only when those layers are written can recommendations become actionable.
+
+## When an Investigation Is Actually Finished
+
+An investigation is not finished when it produces one cause sentence.
+It is finished when the team can translate the findings reliably into changes.
+In other words,
+the endpoint is not merely “we found an explanation,” but “the explanation can now change the system.”
+
+That is why the course emphasizes recommendation quality.
+Mature recommendations should land clearly on interface,
+procedure,
+training,
+resources,
+oversight,
+or regulation,
+and it should be visible which portion of the risk chain they answer.
+If the recommendation cannot be tied back to the evidence chain,
+the investigation has not actually closed the loop.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-investigative-process-ntsb-20260121/page-03.png" alt="This figure should make clear that the final goal of investigation is not one cause sentence, but objective investigation tied to implementable safety recommendations." loading="lazy">
+  <figcaption>This figure should make clear that the final goal of investigation is not one cause sentence, but objective investigation tied to implementable safety recommendations.</figcaption>
+</figure>
+
 ## Chapter Summary
 
 !!! tip "What To Carry Forward"

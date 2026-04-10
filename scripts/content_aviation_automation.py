@@ -1023,3 +1023,72 @@ AVIATION_AUTOMATION_CONTENT["crew_resource_management"]["examples"].append(
         body_en="United 173 is repeatedly cited because it exposes the CRM problem very clearly: the captain remained fixated on the landing-gear issue, while the more lethal signal about fuel state was not successfully elevated into an input that forced the team to change plan immediately. The point is not only to criticize one individual, but to ask why the team failed to turn available information into collective action.",
     )
 )
+
+AVIATION_AUTOMATION_CONTENT["displays_and_alerts"]["sections"].extend(
+    [
+        section(
+            "principles",
+            "## 为什么 display 设计原则会直接决定“能不能一眼读对”",
+            "## Why Display Design Principles Directly Determine Whether a State Can Be Read Correctly at a Glance",
+            body_zh="""
+            课件里列的那些 display 设计原则不是视觉设计清单，而是在回答一个很实用的问题：当操作者没有太多时间时，界面还能不能把关键关系直接组织出来。信息密度、grouping、contrast、redundant coding、pictorial realism 和 predictive aiding，本质上都在帮助人更快抓住状态结构，而不是只看到更多数据。
+
+            这也是为什么显示设计很少能靠“把更多东西放上去”解决。只要层级、邻近关系和表示方式不对，界面信息越多，操作者越可能看见一堆元素，却没能及时读出真正重要的状态关系。
+            """,
+            body_en="""
+            The display principles listed in the lecture are not a decorative visual-design checklist. They answer a practical question: when the operator has little time, can the interface still organize the critical relationships directly. Information density, grouping, contrast, redundant coding, pictorial realism, and predictive aiding all exist to help people grasp state structure quickly rather than merely look at more data.
+
+            That is also why display design rarely improves by simply adding more information. Once hierarchy, proximity, and representation are wrong, the operator may see many elements and still fail to read the important state relationship in time.
+            """,
+        ),
+        section(
+            "auditory",
+            "## 为什么 auditory display 有时比 visual display 更适合先抢到注意力",
+            "## Why an Auditory Display Can Sometimes Capture Attention Better Than a Visual One",
+            body_zh="""
+            课件把 auditory display 单独拿出来讲，是因为人在很多高负荷场景里，眼睛已经被占满了。此时声音的价值不是替代视觉理解，而是先把注意力从别处拉回来，告诉操作者“现在有一件事必须处理”。
+
+            但声音也有明显边界。它很适合抢注意、区分优先级、表达紧急性，却不适合承载太复杂的状态结构。也正因为如此，好的系统往往会让 auditory alert 先把人拉过来，再由 visual display 接手更细的状态解释和动作引导。
+            """,
+            body_en="""
+            The lecture separates auditory displays because in many high-load settings the eyes are already saturated. In that condition, sound is valuable not because it replaces visual understanding, but because it can pull attention back and say, “something now requires action.”
+
+            But sound also has clear limits. It is good at capturing attention, distinguishing priority, and conveying urgency, but not at carrying complex state structure. That is why stronger systems often let the auditory alert pull the operator in first and then let the visual display carry the more detailed state explanation and action guidance.
+            """,
+        ),
+        section(
+            "testing",
+            "## 为什么 display 和 alert 设计最后一定要回到 implementation 与 testing",
+            "## Why Display and Alert Design Ultimately Has to Return to Implementation and Testing",
+            body_zh="""
+            这页最后讲 implementation 和 testing，是因为很多 display / alert 设计在概念上看起来都合理，真正上线后却会在噪声、工作负荷、设备差异或环境条件下表现出完全不同的效果。只有测试，团队才知道哪些提醒会被忽略、哪些显示会被误读、哪些优先级划分根本不稳。
+
+            这也是为什么告警设计不能只在会议室里讨论。它必须进到 representative task、representative environment 和 representative workload 里去验证，否则系统很可能在纸面上“解释得通”，在现场却仍然让人看不清、听不准、反应不过来。
+            """,
+            body_en="""
+            The lecture ends with implementation and testing because many display and alert designs look reasonable in principle yet behave very differently once noise, workload, device differences, or environment are introduced. Only testing tells the team which alerts get ignored, which displays are misread, and which priority distinctions are not stable in practice.
+
+            That is also why alert design cannot remain a conference-room discussion. It has to be validated in representative tasks, representative environments, and representative workloads. Otherwise the system may look defensible on paper while still leaving people unable to see clearly, hear accurately, or respond in time.
+            """,
+        ),
+    ]
+)
+AVIATION_AUTOMATION_CONTENT["displays_and_alerts"]["examples"].append(
+    callout(
+        "example",
+        "auditory",
+        "案例：为什么一个好的声音告警通常不会试图把全部状态都“说出来”",
+        "Example: Why a Good Auditory Alert Usually Does Not Try to “Say Everything” About the State",
+        body_zh="如果声音告警试图直接承载太多状态细节，操作者在高负荷下反而更难及时提取重点。更成熟的做法，是先用声音稳定表达优先级和紧急性，再把具体解释交给对应的 visual display。也就是说，声音的价值往往在于抢占注意，而不是单独完成诊断。",
+        body_en="If an auditory alert tries to carry too much state detail directly, the operator under high load may struggle even more to extract the key point in time. A stronger approach is to let sound reliably express priority and urgency first, and then let the corresponding visual display carry the detailed explanation. In other words, the value of sound often lies in attention capture, not in performing diagnosis alone.",
+    )
+)
+AVIATION_AUTOMATION_CONTENT["displays_and_alerts"]["inline_visuals"].append(
+    visual(
+        "principles",
+        "Displays and Alerts 2-4-26.pdf",
+        "这张图要看懂的是：好的显示不会把数据平铺出来，而是把航迹、冲突对象和模式信息组织成能被快速读出的状态结构。",
+        "This figure should make one point concrete: a strong display does not simply lay out data. It organizes trajectory, conflict object, and mode information into a state structure that can be read quickly.",
+        asset_name_contains="page-01",
+    )
+)

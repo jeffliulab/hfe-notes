@@ -167,6 +167,63 @@ URRA 和 operational risk 页，
     两者材料来源可能一样，
     但分析质量完全不同。
 
+## 为什么 NTSB 式调查会刻意把“责任归属”放到后面
+
+课件里反复强调 NTSB 调查是 `fact-finding proceedings`，
+而不是为了先判定谁该承担法律责任。
+这个区别非常重要，
+因为一旦调查太早围着 blame 旋转，
+团队就更容易只找最后一个显眼动作，
+而不是继续往前追系统条件、
+恢复机会和组织约束。
+
+对这门课来说，
+这种证据纪律不是法律细节，
+而是分析质量的前提。
+只有当调查先把材料稳定组织成事实、
+时间线和条件结构，
+后面“为什么会这样”这件事才不会变成先入为主的判断。
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-investigative-process-ntsb-20260121/page-02.png" alt="这张图要看懂的是：NTSB 调查强调 fact-finding 与独立性，意思不是“没有责任问题”，而是调查必须先守住事实和安全改进这条主线。" loading="lazy">
+  <figcaption>这张图要看懂的是：NTSB 调查强调 fact-finding 与独立性，意思不是“没有责任问题”，而是调查必须先守住事实和安全改进这条主线。</figcaption>
+</figure>
+
+!!! example "案例：为什么一句“pilot error”不会让调查真正结束"
+    如果报告最后只写成“pilot error”，
+    团队得到的只是一个标签，
+    而不是一个可改的结构。
+    真正成熟的调查会继续追问：
+    当时哪些状态信息并不充分可见、
+    哪些程序没有帮忙恢复、
+    哪些组织或设计条件让机组更难察觉并改正偏差。
+    只有这些层级被写出来，
+    建议才会落地。
+
+## 什么时候一份调查才算真正做完
+
+一份调查不是在写出一句 cause statement 时结束的，
+而是在团队已经能把发现稳定翻译成改进动作时才真正完成。
+也就是说，
+调查终点不是“找到解释”，
+而是“让解释能够改变系统”。
+
+这也是为什么课程会强调 recommendation quality。
+真正成熟的建议，
+应该能清楚落到界面、
+程序、
+培训、
+资源、
+监督或法规层，
+而且能让人看出它究竟是在回应时间线中的哪一段风险链。
+如果建议和前面的证据链接不上，
+调查其实还没有真正闭环。
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-investigative-process-ntsb-20260121/page-03.png" alt="这张图要看懂的是：调查的最终目标不是写一句原因，而是产出客观调查与可执行 safety recommendations。" loading="lazy">
+  <figcaption>这张图要看懂的是：调查的最终目标不是写一句原因，而是产出客观调查与可执行 safety recommendations。</figcaption>
+</figure>
+
 ## 本章总结
 
 !!! tip "复习时重点记这几条"

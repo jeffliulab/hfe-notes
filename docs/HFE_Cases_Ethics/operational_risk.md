@@ -158,6 +158,79 @@ work as done 和缓冲结构就会一起变化。
   <figcaption>这张图要看懂的是：即便表面标签相似，不同运行场景的空间布局和环境约束也会让风险结构明显不同。</figcaption>
 </figure>
 
+## 为什么 Threat and Error Management 会成为 operational risk 的日常读法
+
+operational risk 之所以会和 TEM 连在一起，
+是因为这门课不把威胁和错误看成异常插曲，
+而是看成 everyday operations 里本来就会持续出现、
+需要被管理的东西。
+TEM 的价值，
+在于它让团队把注意力放在“威胁如何被发现、
+错误如何被恢复、
+undesired state 怎样被挡住”这些日常管理动作上。
+
+这会把视角从“事故发生时谁错了”转向“平时系统如何处理不断出现的小偏差”。
+也正因为如此，
+operational risk 不是只研究失败，
+而是研究运行系统平时怎样维持安全边界，
+以及边界又是怎样慢慢被削薄的。
+
+## 为什么这页还要讨论 human contribution to safety
+
+如果 operational risk 只会问“人怎样出错”，
+它就会漏掉另一半：
+人在日常运行里也一直在补位、
+识别弱信号、
+修正偏差、
+维持系统不出事。
+课件把 human error 和 human contribution to safety 放在一起，
+正是为了打断那种只在事故后才想起人的视角。
+
+这不是否认错误存在，
+而是提醒你：
+同样一套 frontline adaptation，
+平时可能在保住系统，
+失手时才会暴露成事故链的一部分。
+真正成熟的运行风险分析，
+既看错误是怎样发生的，
+也看系统平时靠什么被勉强维持住。
+
+!!! example "案例：为什么同一套 frontline adaptation 平时是在保安全，失手时却会被看成风险来源"
+    一线人员为了让工作继续推进，
+    经常会提前协调、
+    额外 cross-check、
+    口头补程序、
+    临时调整节奏。
+    这些动作很多时候是在帮系统撑住。
+    但一旦运行负荷继续上升、
+    交接变差或外部条件恶化，
+    同样的补位动作也可能撑不住，
+    最后暴露出系统原本就缺少正式缓冲。
+    这正是 operational risk 要看的：
+    不仅是哪里出了错，
+    也是谁一直在替系统补洞。
+
+## 为什么 operational risk 分析离不开观察与运行数据，而不能只靠办公室推断
+
+这页真正难的地方，
+是很多运行风险在办公室里看不出来。
+只有当团队去看 line operations、
+handoff、
+maintenance window、
+实际 traffic pattern 或事件报告时，
+很多慢性变脆信号才会浮出来。
+也正因为这样，
+LOSA、
+ASRS 一类材料在这条线里很重要。
+
+operational risk 不能只靠 imagined workflow 推断，
+因为真正的问题往往正藏在 imagined 和 done 的差距里。
+没有观察、
+没有运行数据、
+没有近失事件材料，
+团队就很容易高估程序稳定性，
+低估现实中的 workload 和 workaround。
+
 ## 本章总结
 
 !!! tip "复习时重点记这几条"
