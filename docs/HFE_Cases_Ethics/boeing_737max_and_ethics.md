@@ -1,74 +1,61 @@
 # Boeing 737 Max 与伦理
 
-本页把 Boeing 737 Max 作为技术、组织、监管与伦理问题交织的典型案例，说明 HFE 不能脱离治理与责任讨论。
+737 Max 这一页之所以被放在伦理部分，不是因为它脱离技术，而是因为这里的技术、组织、培训、监管和责任分配根本无法被拆开。
 
-## 课件里的讲解顺序
+!!! note "本页主问题"
+    为什么 737 Max 不应被读成一个单纯的设计缺陷案例，而应被读成技术、人因、组织和伦理问题同时失配的系统案例？
 
-这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+## 这个案例最重要的结论
 
-### Boeing 737Max and Ethics 2-23-26.pdf
+- 737 Max 案例同时包含技术设计、飞行员理解、培训假设、认证过程和组织责任问题。
+- 它说明 HFE 不能脱离治理和责任讨论。
+- 真正重要的不只是 MCAS 本身，而是系统状态可见性、告警、单点失效容忍和训练假设如何组合起来。
+- 伦理讨论只有回到具体工程决策才有意义。
 
-1. MORE ABOUT THE 737 MAX & ENGINEERING ETHICS
-2. A BIT MORE CONTEXT Lion Air 43 was the previous 96-min flight in accident aircraft.
-3. MORE ON BOEING 737 MAX ACCIDENTS For example:
-4. ONE OUTCOME (OUT OF MANY) FAILURE EFFECT CLASSIFICATIONS UPDATED
-5. MITIGATIONS RELATED TO 737MAX ACCIDENTS
-6. VOLPE REPORT What was the pilot response to the
-7. INSIGHTS FROM VOLPE REPORT Pilot experience impacts effective management of the situation.
-8. ENGINEERING ETHICS
+## 先记住这个案例的一句话判断
 
+!!! tip "先记住这个案例的一句话判断"
+    先记住这个案例的一句话判断：737 Max 最大的问题，不是单一技术元件，而是多个系统假设同时把风险转嫁给了飞行员和运行系统。
 
-## 这页的逻辑顺序
+## 背景与 stakes
 
-建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+737 Max 材料里同时出现了事故背景、事故后技术评估、飞行员响应研究、认证反思和工程伦理。这说明课程不是把它当作单一技术事故，而是当作一个多层系统案例来读。
 
-1. 设计决策如何变成系统性伦理问题
-2. 组织与监管如何影响安全结果
-3. 技术失配为何常伴随责任分配失衡
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/boeing-737max-and-ethics-2-23-26/page-01.png" alt="这张预览图要看懂的是：这不是单纯技术页，而是从一开始就把事故、复盘和伦理并排摆在一起的系统案例。" loading="lazy">
+  <figcaption>这张预览图要看懂的是：这不是单纯技术页，而是从一开始就把事故、复盘和伦理并排摆在一起的系统案例。</figcaption>
+</figure>
 
-## 核心概念
+## 事件链和失配链应该怎样读
 
-737 Max 这一页最重要的点，是它不是单纯的“一个设计缺陷案例”。课程把它放在伦理部分，是因为这里同时出现了系统设计、培训、传感器/告警、组织决策、认证过程和专业责任的交织。
+读这页时，不能只看“技术出了什么故障”。还要继续看：系统状态有没有被充分揭示、单点信息有没有被赋予过高权重、飞行员是否拥有足够训练与认知空间来理解异常状态、组织和监管又如何放大或没能阻止这条链。
 
-## 这页要你看到的几层问题
+!!! example "案例锚点：为什么前一班次信息没有自动变成后一班次安全"
+    材料里提到前一航班已经经历 stick shaker 和 trim 问题，但这些信息并没有稳定转化成后续机组的有效防线。这正好说明：系统里“信息曾经出现过”并不等于“风险已经被真正管理”。
 
-- 技术层：系统状态可见性、自动化逻辑、单点失效、告警和飞行员理解之间是否匹配。
-- 运行层：飞行员在时间压力、高工作负荷和异常状态下是否还有足够认知空间做出正确判断。
-- 组织层：制造商、运营方、维护和监管者分别承担了什么风险管理责任。
-- 伦理层：当设计与培训假设不足时，谁有义务更早提出、修正、阻止风险扩散。
+## 这个案例里的伦理问题到底落在哪里
 
-## 为什么它是 HFE 案例
+这页的伦理讨论不是抽象地说“工程师应当负责”，而是回到具体决策：系统行为有没有被充分披露？培训假设是否贴近真实运行？是否把风险过度转交给一线飞行员？认证过程有没有识别并纠正这些偏差？
 
-这不是一个“技术”和“人”的二选一案例。恰恰相反，课程借它说明：
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/boeing-737max-and-ethics-2-23-26/page-05.png" alt="这张预览图要看懂的是：伦理讨论真正落脚点，是具体的失效分类、缓解措施和责任分配，而不是抽象口号。" loading="lazy">
+  <figcaption>这张预览图要看懂的是：伦理讨论真正落脚点，是具体的失效分类、缓解措施和责任分配，而不是抽象口号。</figcaption>
+</figure>
 
-- 设计问题会改变人的判断条件
-- 训练和程序决定人是否能在异常中恢复
-- 监管与组织选择会决定缺陷能否长期存在
+!!! note "一句话结论"
+    737 Max 这一页真正要你学会的，是如何把技术、人因和责任分配读成同一条系统失配链。
 
-所以 HFE 在这里不是边角料，而是解释系统为何失效的核心视角之一。
+!!! warning "最容易误解的地方"
+    如果伦理讨论只停在价值判断，不回到具体设计和认证决策，它就会变成空话。这个案例要求伦理和工程细节一起被分析。
 
-## 难点讲解
+## 这个案例最后要带走什么
 
-伦理讨论最容易流于空泛。更好的方式是回到具体工程决策：有没有充分揭示系统行为、有没有把风险转嫁给飞行员、有没有让认证与培训假设脱离真实运行条件。只有落回这些具体点，伦理才不会变成抽象口号。
+!!! tip "复习时重点记这几条"
+    - 737 Max 是技术、人因、组织和伦理交织的系统案例。
+    - 关键不只在故障元件，也在状态可见性、训练假设和责任分配。
+    - 伦理讨论必须回到具体工程决策。
+    - 这页教你把系统失配链整体读出来。
 
-## 课件图示与页面预览
-
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/boeing-737max-and-ethics-2-23-26/page-01.png" alt="Boeing 737Max and Ethics 2-23-26.pdf · 第 1 页预览" loading="lazy">
-    <figcaption>Boeing 737Max and Ethics 2-23-26.pdf · 第 1 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/boeing-737max-and-ethics-2-23-26/page-05.png" alt="Boeing 737Max and Ethics 2-23-26.pdf · 第 5 页预览" loading="lazy">
-    <figcaption>Boeing 737Max and Ethics 2-23-26.pdf · 第 5 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/boeing-737max-and-ethics-2-23-26/page-06.png" alt="Boeing 737Max and Ethics 2-23-26.pdf · 第 6 页预览" loading="lazy">
-    <figcaption>Boeing 737Max and Ethics 2-23-26.pdf · 第 6 页预览</figcaption>
-  </figure>
-</div>
 
 ## 资料范围与相关主题
 

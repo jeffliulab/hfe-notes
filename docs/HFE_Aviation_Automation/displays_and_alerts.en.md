@@ -1,69 +1,55 @@
 # Displays and Alerts
 
-This page focuses on display systems and alert design, organizing the tradeoffs among salience, prioritization, false alarms, and workload.
+The central tension in displays and alerts is that critical information must be salient without drowning the operator in noise.
 
-## Lecture Flow in the Source Material
+!!! note "Core Question"
+    How do we make sure that, at the critical moment, the operator notices the important signal, understands system state, and knows the next action?
 
-This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+## Key Takeaways
 
-### Displays and Alerts 2-4-26.pdf
+- Displays make system state visible, and alerts reallocate attention at critical moments.
+- A good alert is not simply louder or brighter; it is more trustworthy, interpretable, and action-guiding.
+- False alarms erode trust until even important alerts get ignored.
+- Display hierarchy and alert design are both forms of attention-resource management.
 
-1. DISPLAYS AND ALERTS Dr. Divya C. Chandra
-2. TOPICS Visual displays
-3. VISUAL DISPLAYS
-4. VISUAL DISPLAY DESIGN CONSIDERATIONS Display size
-5. VISUAL DISPLAY DESIGN PRINCIPLES Principle of Information Need
-6. AUDITORY DISPLAYS
-7. TYPES OF AUDITORY DISPLAYS Symbolic
-8. AUDITORY ALARMS Primarily used for emergency alarms and warning signals
+## Remember This First
 
+!!! tip "Keep This Sentence in Mind"
+    Keep one sentence in mind: the goal of alert design is not to create stimulation, but to move attention toward the right place at the right time while supporting the next action.
 
-## Reading Logic
+## What Displays and Alerts Each Need to Do
 
-Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+The job of a display is to make state visible, comparable, and inferable. The job of an alert is to pull attention at the critical moment. If the two are disconnected, the operator may notice the signal without understanding it or hear it without knowing what to do next.
 
-1. Why alerts must be salient without overwhelming the operator
-2. How display hierarchy supports rapid diagnosis
-3. How false alarms erode trust
+## Which Three Questions Should Guide the Reading
 
-## Core Idea
+When reading an alert system, ask:
 
-The central challenge in displays and alerts is making critical information noticeable without drowning the operator in noise.
+1. does this alert truly indicate a high-priority risk?
+2. once it appears, can the operator quickly understand system state?
+3. is the next action clear?
 
-## Core Structure
+## Why False Alarms Become a Trust Problem
 
-- displays make system state visible and interpretable
-- alerts redirect attention at the right moment
-- if these are poorly coordinated, operators may notice a signal without understanding what it means or what to do next
+If the system produces frequent low-value alerts, operators learn to delay response, ignore selectively, or distrust the alerting system altogether. Once that happens, truly critical alerts are also handled more slowly.
 
-## Three Useful Questions
+!!! note "One-Sentence Conclusion"
+    The essence of display and alert design is not making the system more dramatic, but realigning attention, understanding, and action.
 
-1. Does this alert truly represent a high-priority condition?
-2. When it appears, can the operator quickly understand system state?
-3. Is the next action clear?
+!!! warning "The Most Common Misunderstanding"
+    “More alerts mean more safety” is usually false. Once low-value alerts become excessive, the system is consuming attention rather than protecting it.
 
-## Common Difficulty
+!!! example "Example: Why Alarm Fatigue Slows Response to the Truly Critical Signal"
+    If a ward monitoring system constantly emits loud low-priority alerts, staff gradually lower their overall responsiveness to the alerting channel. By the time a life-critical signal appears, the system has already lost the privilege of immediate serious attention.
 
-More alerts do not necessarily produce more safety. Frequent low-value alerts can create alarm fatigue and trust erosion, which makes later critical alerts less effective.
+## Chapter Summary
 
-## Slide Figures and Page Previews
+!!! tip "What To Carry Forward"
+    - Displays make state visible; alerts redirect attention to critical conditions.
+    - A good alert supports both understanding and action.
+    - False alarms erode long-term trust.
+    - At its core, this page is about managing limited attentional resources.
 
-These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/displays-and-alerts-2-4-26/page-01.png" alt="Displays and Alerts 2-4-26.pdf · page 1 preview" loading="lazy">
-    <figcaption>Displays and Alerts 2-4-26.pdf · page 1 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/displays-and-alerts-2-4-26/page-09.png" alt="Displays and Alerts 2-4-26.pdf · page 9 preview" loading="lazy">
-    <figcaption>Displays and Alerts 2-4-26.pdf · page 9 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/displays-and-alerts-2-4-26/page-21.png" alt="Displays and Alerts 2-4-26.pdf · page 21 preview" loading="lazy">
-    <figcaption>Displays and Alerts 2-4-26.pdf · page 21 preview</figcaption>
-  </figure>
-</div>
 
 ## Source Scope and Related Topics
 

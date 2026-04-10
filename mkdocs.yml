@@ -29,6 +29,7 @@ plugins:
           site_name: HFE Course Notes
           nav_translations:
             首页: "Home"
+            笔记开发手册: "Note Development Guide"
             HFE基础: "HFE Foundations"
             HFE基础总览: "HFE Foundations Overview"
             风险方法: "Risk Methods"
@@ -92,6 +93,7 @@ extra_css:
 
 nav:
   - 首页: index.md
+  - 笔记开发手册: NOTE_DEVELOPMENT_GUIDE.md
   - HFE基础:
     - HFE基础总览: HFE_Foundations/index.md
     - 课程导论: HFE_Foundations/course_overview.md

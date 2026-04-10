@@ -1,73 +1,56 @@
 # Operational Risk
 
-本页围绕 operational risk 的构成因素、组织条件与现实运行约束，展示风险并不只属于单次任务，而是属于运行系统。
+Operational risk 这页要你看到的，是风险不只存在于某一次错误动作里，而是长期藏在运行条件、组织约束和 work as done 里。
 
-## 课件里的讲解顺序
+!!! note "本页主问题"
+    为什么真正的运行风险往往不是一次事件才突然出现，而是系统在日常运行中慢慢积累出来的？
 
-这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+## 本章重点
 
-### Operational Risk 2-18-2026.pdf
+- operational risk 关注的是日常运行系统，而不只是单次失误。
+- work as imagined 和 work as done 往往存在结构性差距。
+- 组织约束、时间压力、环境变化和一线补丁行为会持续重塑风险水平。
+- 这页把 Swiss Cheese、fatigue、stress、procedure 等页面重新拉回同一运行视角。
 
-1. OPERATIONAL RISK Dr. Divya C. Chandra
-2. MITIGATIONS
-3. TOPICS Operations
-4. OPERATIONS
-5. THREAT AND ERROR MANAGEMENT (TEM) FRAMEWORK
-6. ORIGINS OF TEM
-7. THREAT DEFINITION Threats are events or errors that
-8. ERROR DEFINITION Errors are defined as flight crew actions or inactions that
+## 先记住一句话
 
+!!! tip "复习时先记住这句话"
+    先记住一句话：运行风险不是事故发生后才有的东西，它通常在事故前很久就已经存在于工作条件里。
 
-## 这页的逻辑顺序
+## operational risk 到底在看什么
 
-建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+这页关心的不是单个动作的对错，而是系统在持续运行时有没有逐步变脆。换句话说，它问的是：班次、资源、流程、组织目标和现场补救行为，是否正在侵蚀原本设计好的安全边界。
 
-1. 运行风险为何超出单个错误事件
-2. 组织约束如何塑造一线行为
-3. 风险管理为何需要持续监测而不是一次性修补
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/operational-risk-2-18-2026/page-01.png" alt="这张图要看懂的是：运行风险不是单点问题，而是随着运行条件持续变化的一组系统约束。" loading="lazy">
+  <figcaption>这张图要看懂的是：运行风险不是单点问题，而是随着运行条件持续变化的一组系统约束。</figcaption>
+</figure>
 
-## 核心概念
+!!! warning "最容易误解的地方"
+    不要把 operational risk 理解成“又一个风险清单”。它更像是一种持续追问运行条件是否在侵蚀防线的视角。
 
-Operational risk 这页要你看到的是：风险不只发生在一次错误动作里，而是长期藏在运行条件里。班次、时间压力、环境变化、组织约束和一线应对方式，都会把系统推向更脆弱或更稳健的状态。
+## 为什么 work as imagined 和 work as done 的差距会变成风险
 
-## 核心逻辑
+管理和设计往往先写出一个理想流程，但一线工作会受到时间压力、设备状态、环境变化和资源限制影响。如果系统长期只检查“有没有按理想流程做”，却不看实际工作如何被挤压和变形，风险就会被低估。
 
-- 任务风险会随着场景变化而波动，不是固定值。
-- work as imagined 和 work as done 往往存在差距。
-- 如果管理层只看程序上的“应该怎样做”，却不看一线实际怎样完成任务，就会低估真实运行风险。
+!!! example "案例：为什么长期 workaround 会变成运行风险信号"
+    如果一线人员长期用临时补丁绕过某条程序，那通常不是“员工不守规矩”这么简单，而是一个更深的运行信号：程序可能已经不再适配真实任务节奏，系统正在靠脆弱补丁维持表面正常。
 
-## 这页为什么很重要
+## 这页为什么会成为很多案例页的底板
 
-它把前面很多分散主题拉到一起：
+很多案例页最后都会回到 operational risk，因为一线错误很少是孤立的。背后常常已经累积了长期的组织张力、任务负荷和现实约束，而这些因素平时就已经在慢慢改变风险结构。
 
-- Swiss Cheese 讲的是多层防线
-- error analysis 讲的是事件怎么展开
-- fatigue、stress、checklists 讲的是操作者怎样受到条件约束
+!!! note "一句话结论"
+    operational risk 的价值，是提醒你把事故看成运行系统的产物，而不是看成单次偶发偏差。
 
-operational risk 则把这些都放回日常运行系统里，去看风险如何持续生成。
+## 本章总结
 
-## 难点讲解
+!!! tip "复习时重点记这几条"
+    - operational risk 关注的是持续运行中的风险生成。
+    - 理想流程和真实工作之间的差距会不断改变风险水平。
+    - 组织约束和 workaround 是重要风险信号。
+    - 这页为后面的案例分析提供系统运行视角。
 
-最容易犯的错，是把 operational risk 理解成“又一个风险清单”。更准确的理解应该是：它是一种看系统的视角，提醒你不断追问现实运行条件是不是正在侵蚀原本设计好的安全边界。
-
-## 课件图示与页面预览
-
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/operational-risk-2-18-2026/page-01.png" alt="Operational Risk 2-18-2026.pdf · 第 1 页预览" loading="lazy">
-    <figcaption>Operational Risk 2-18-2026.pdf · 第 1 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/operational-risk-2-18-2026/page-02.png" alt="Operational Risk 2-18-2026.pdf · 第 2 页预览" loading="lazy">
-    <figcaption>Operational Risk 2-18-2026.pdf · 第 2 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/operational-risk-2-18-2026/page-16.png" alt="Operational Risk 2-18-2026.pdf · 第 16 页预览" loading="lazy">
-    <figcaption>Operational Risk 2-18-2026.pdf · 第 16 页预览</figcaption>
-  </figure>
-</div>
 
 ## 资料范围与相关主题
 

@@ -1,71 +1,61 @@
 # Cardosi 案例
 
-本页围绕 Cardosi 材料提炼具体案例中的显示、程序、沟通与情境理解问题，作为把方法落到案例的中间层。
+Cardosi 这一页真正有价值的地方，是把 ATC / aviation 的具体问题重新拉回一个人因视角：通信、显示、程序和团队理解是怎样在同一个系统里交织的。
 
-## 课件里的讲解顺序
+!!! note "本页主问题"
+    在这个案例语境里，为什么“通信听起来像技术细节”，最后却会变成人因、程序和情境意识共同作用的系统问题？
 
-这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+## 这个案例最重要的结论
 
-### Cardosi 2-2-2026.pdf
+- Cardosi 案例的重点不是记住事故故事，而是学会把 ATC 场景拆成 communication、display、procedure 和 SA 问题。
+- 被遮挡、被踩话或不完整接收的通信，是典型的人因风险入口。
+- 案例页训练的是把抽象概念重新识别进真实事件的能力。
+- 事后看很明显，不代表当事人在当时也有同样信息条件。
 
-1. Human Factors in Aviation
-2. Human Factors in Aviation An introduction to Air Traffic Control (ATC)
-3. Introduction to Air Traffic Control (ATC)
-4. Tower – TRACON – Enroute Center (ARTCC) – TRACON – Tower
-5. Pilot – ATC communications - Radio
-6. Blocked and partially-blocked “stepped on” on pilot-controller voice communications
-7. Controller-Pilot Data Communications (CPDLC)
-8. Human Factors in Aviation - When Should Human Factors be Considered?
+## 先记住这个案例的一句话判断
 
+!!! tip "先记住这个案例的一句话判断"
+    先记住这个案例的一句话判断：在航空通信场景里，信息一旦被挡住、踩断或误解，后面的显示、程序和团队理解都会连锁受影响。
 
-## 这页的逻辑顺序
+## 背景与 stakes
 
-建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+Cardosi 材料把注意力放在 ATC 环境中信息怎样被发出、接收、打断和误解。因为航空通信本来就是时间关键型任务，所以任何一段信息丢失都可能迅速影响后续判断和动作。
 
-1. 案例中哪些设计与流程因素最关键
-2. 如何从具体事件回看 HFE 原则
-3. 案例分析如何反哺一般方法
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/cardosi-2-2-2026/page-01.png" alt="这张预览图要看懂的是：ATC 场景里的通信并不是背景噪声，而是直接塑造后续理解和行动的核心工作流。" loading="lazy">
+  <figcaption>这张预览图要看懂的是：ATC 场景里的通信并不是背景噪声，而是直接塑造后续理解和行动的核心工作流。</figcaption>
+</figure>
 
-## 核心概念
+## 这个案例的事件链应该怎么读
 
-Cardosi 案例这一页的价值，在于把抽象原则重新拉回一个具体事件里。你会看到显示、沟通、程序、注意和情境理解不是分开的主题，而是在真实案例里同时起作用。
+这类案例不能只看“谁说错了”或“谁没听清”。更成熟的读法是把通信通道、显示支持、程序要求和团队心智模型放到一起看：信息在哪一层被削弱了，谁因此形成了错误局面理解，哪一层本来可以更早补位。
 
-## 读案例时要抓什么
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/cardosi-2-2-2026/page-02.png" alt="这张预览图要看懂的是：一旦通信通道发生被遮挡或踩话，后续的人因问题会沿着整个链条继续扩散。" loading="lazy">
+  <figcaption>这张预览图要看懂的是：一旦通信通道发生被遮挡或踩话，后续的人因问题会沿着整个链条继续扩散。</figcaption>
+</figure>
 
-- 事件里哪些信息本来应该支持正确判断
-- 哪些界面或程序因素让判断变难
-- 团队沟通在关键时刻是补位了，还是失效了
-- 如果从 HFE 角度回看，这个系统本来可以在哪些地方更早拦住问题
+!!! example "案例锚点：被踩话的通信为什么会放大后续风险"
+    Cardosi 材料里提到 blocked / stepped-on communication 的问题。危险并不只在于一段话没听完整，而在于后面所有显示判断、程序执行和团队理解，都可能建立在这段残缺信息上继续往前走。
 
-## 为什么案例页重要
+## 这个案例教会我们的系统层问题
 
-课程不是希望你把概念背下来，而是希望你能在案例里识别它们。Cardosi 这样的材料正好训练一种能力：
+Cardosi 案例之所以重要，是因为它把一个看似局部的通信问题，重新暴露成系统设计问题：通道本身是否易受阻断、关键内容是否有冗余表达、程序是否帮团队共享同一局面、显示和流程是否给了补救机会。
 
-- 看到局部现象时，能联想到背后的 HFE 结构
-- 看到事故经过时，能把 attention、display、procedure、CRM 串成解释链
+!!! note "一句话结论"
+    Cardosi 这页要你学会的，不是一个结论，而是一种案例读法：从局部通信问题回推系统层的人因结构。
 
-## 难点讲解
+!!! warning "最容易误解的地方"
+    最容易掉进的坑，是事后觉得“信息明明很清楚”。案例分析必须尽量回到当事人在当时真正看见、真正听到和真正理解到的局面。
 
-很多人做案例分析时会掉进“事后看一切都很明显”的陷阱。更成熟的读法是尽量回到当事人在那个时刻能看到什么、理解什么、误判什么，然后再讨论系统还能如何设计得更好。
+## 这个案例最后要带走什么
 
-## 课件图示与页面预览
+!!! tip "复习时重点记这几条"
+    - Cardosi 案例是 communication、display、procedure 和 SA 的交叉案例。
+    - 被踩话或不完整接收的信息是重要风险入口。
+    - 案例分析必须回到当事人的当时信息条件。
+    - 重点是学会从局部问题回推系统结构。
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/cardosi-2-2-2026/page-01.png" alt="Cardosi 2-2-2026.pdf · 第 1 页预览" loading="lazy">
-    <figcaption>Cardosi 2-2-2026.pdf · 第 1 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/cardosi-2-2-2026/page-02.png" alt="Cardosi 2-2-2026.pdf · 第 2 页预览" loading="lazy">
-    <figcaption>Cardosi 2-2-2026.pdf · 第 2 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/cardosi-2-2-2026/page-03.png" alt="Cardosi 2-2-2026.pdf · 第 3 页预览" loading="lazy">
-    <figcaption>Cardosi 2-2-2026.pdf · 第 3 页预览</figcaption>
-  </figure>
-</div>
 
 ## 资料范围与相关主题
 

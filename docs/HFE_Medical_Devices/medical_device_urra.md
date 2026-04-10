@@ -1,138 +1,62 @@
 # 医疗器械中的 URRA
 
-本页聚焦医疗器械场景下的 URRA，把 use scenario、critical task、harm 路径与控制策略放到监管语境中理解。
+这一页把 URRA 放到医疗器械监管语境里：同样是 use-related risk，这里更强调 patient harm、critical task 和可追踪控制。
 
-## 课件里的讲解顺序
+!!! note "本页主问题"
+    在医疗器械场景里，URRA 和一般任务风险分析相比，究竟多了哪些判断要求？
 
-这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+## 本章重点
 
-### 06 URRA in Medical Devices.pptx
+- 医疗器械 URRA 更强调可预见 use scenario、critical task 和 patient harm 路径。
+- 控制措施不能只停在培训，必须优先考虑界面、标签、IFU 和物理设计。
+- 监管语境要求风险链条可追踪、可验证、可回看。
+- 这页是 ISO 14971 和具体 use error 工作之间的桥。
 
-1. Sami Durrani PhD and Eric Bergman PhD Use Related Risk in Medical Devices
-2. Examples of medical devices
-3. Assigned reading: Medical device definition
-4. Medical device “user interface” includes… The IFU (instructions for use)
-5. Business goal Regulatory Requirement
-6. Use Error, not User Error
-7. Key Guidance & Standards
-8. Key activities – HF med device process
+## 先记住方法定位
 
+!!! tip "先记住这个方法的定位"
+    先记住这个方法的定位：医疗器械 URRA 不是普通风险表，它必须写到足以证明团队真的知道病人会怎样受伤、设计又该怎样改。
 
-## 这页的逻辑顺序
+## 这个方法解决什么问题
 
-建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+医疗器械 URRA 解决的是“使用风险怎么被写成监管上可接受的证据”这个问题。它要求团队把 use scenario、critical task、use error、hazardous situation、harm 和 control 写成一条完整链条。
 
-1. 医疗器械 URRA 与一般 URRA 有何不同
-2. critical task 如何界定
-3. 控制措施如何回到界面、标签与 IFU
+## 输入与输出是什么
 
-## 核心概念
+输入通常包括：任务分析、用户群体、使用环境、器械设计、标签/IFU、已知问题和伤害后果判断。
 
-医疗器械场景下的 URRA，比一般风险分析更强调“使用情境是否可预见”“任务是否 critical”“错误是否会通向病人伤害”，因为这里的后果往往直接落在患者安全上。
+输出则应让团队明确：
 
-## 这页最重要的三个连接
+- 哪些步骤是 critical task
+- 哪些错误会直通 patient harm
+- 哪些控制需要在设计里体现
+- 哪些点必须进入 validation
 
-- 从任务分析连接到 critical task
-- 从 use error 连接到 hazardous situation 与 harm
-- 从 harm 再连接回界面、标签、IFU、培训与物理设计控制
+## 操作步骤怎么走
 
-## 为什么医疗器械里的 URRA 更严格
+做法上和一般 URRA 相同，但要求更严格：从 use scenario 开始，明确 critical task，写出具体 use error，再推进到 hazardous situation、harm 和 control，最后把这些条目回接到 validation 计划。
 
-- 使用者不一定是专家
-- 使用环境可能嘈杂、紧急、光线差或时间极紧
-- 病人状态会放大错误后果
-- 监管要求你证明风险识别和控制逻辑是完整、可追踪、可验证的
+!!! note "一句话结论"
+    医疗器械 URRA 的关键，不是把“风险存在”写出来，而是把“病人可能怎样受伤、系统准备怎样拦住它”写具体。
 
-## 难点讲解
+!!! warning "最容易做错的地方"
+    最容易出现的弱控制，是凡事都写成“加强培训”。如果界面、反馈、标签或物理形态本身可以改，主要风险不应该压给培训和注意力。
 
-很多团队会把 control 写成“培训用户”。这往往不够。课程里更想强调的是：如果界面、器械形态、信息呈现本身可以改，就不应该把主要风险压给培训和注意力。
+!!! example "worked example：critical task 为什么必须被单独标出来"
+    例如注射器“设定剂量”这一步，一旦错误就可能直接进入 patient harm 路径，所以它必须被标成 critical task。只有这样，团队才会在设计评审和 validation 里对这一步给出更高等级的控制和测试关注。
 
-## 课件图示与页面预览
+## 和前后页面是什么关系
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
+它前接 ISO 14971 的标准语言，后接 use-error 分析和 EpiPen workbook 的具体文档写法，是医疗器械分区里最像“中枢枢纽”的一页。
 
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-01-image1.png" alt="06 URRA in Medical Devices.pptx · 第 1 张幻灯片" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · 第 1 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-02-image2.png" alt="06 URRA in Medical Devices.pptx · 第 2 张幻灯片" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · 第 2 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-02-image3.jpeg" alt="06 URRA in Medical Devices.pptx · 第 2 张幻灯片" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · 第 2 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-02-image4.jpeg" alt="06 URRA in Medical Devices.pptx · 第 2 张幻灯片" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · 第 2 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-02-image5.png" alt="06 URRA in Medical Devices.pptx · 第 2 张幻灯片" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · 第 2 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-02-image6.png" alt="06 URRA in Medical Devices.pptx · 第 2 张幻灯片" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · 第 2 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-02-image7.png" alt="06 URRA in Medical Devices.pptx · 第 2 张幻灯片" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · 第 2 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-03-image8.png" alt="06 URRA in Medical Devices.pptx · 第 3 张幻灯片" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · 第 3 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-04-image9.png" alt="06 URRA in Medical Devices.pptx · 第 4 张幻灯片" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · 第 4 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-04-image11.png" alt="06 URRA in Medical Devices.pptx · 第 4 张幻灯片" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · 第 4 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-04-image13.png" alt="06 URRA in Medical Devices.pptx · 第 4 张幻灯片" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · 第 4 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-04-image15.png" alt="06 URRA in Medical Devices.pptx · 第 4 张幻灯片" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · 第 4 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-06-image17.jpeg" alt="06 URRA in Medical Devices.pptx · 第 6 张幻灯片" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · 第 6 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-07-image18.png" alt="06 URRA in Medical Devices.pptx · 第 7 张幻灯片" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · 第 7 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-07-image19.png" alt="06 URRA in Medical Devices.pptx · 第 7 张幻灯片" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · 第 7 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-09-image30.png" alt="06 URRA in Medical Devices.pptx · 第 9 张幻灯片" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · 第 9 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-18-image31.jpeg" alt="06 URRA in Medical Devices.pptx · 第 18 张幻灯片" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · 第 18 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-19-image2.png" alt="06 URRA in Medical Devices.pptx · 第 19 张幻灯片" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · 第 19 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-23-image32.png" alt="06 URRA in Medical Devices.pptx · 第 23 张幻灯片" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · 第 23 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-24-image32.png" alt="06 URRA in Medical Devices.pptx · 第 24 张幻灯片" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · 第 24 张幻灯片</figcaption>
-  </figure>
-</div>
+## 本章总结
+
+!!! tip "复习时重点记这几条"
+    - 医疗器械 URRA 更强调 critical task 和 patient harm。
+    - 输入包括任务流、用户情境、设计和标签信息。
+    - 输出必须能反推控制和 validation 计划。
+    - 培训不能成为默认主控制。
+
 
 ## 资料范围与相关主题
 

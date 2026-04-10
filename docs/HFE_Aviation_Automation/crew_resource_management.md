@@ -1,76 +1,59 @@
 # Crew Resource Management
 
-本页整理 CRM 的沟通、协调、领导、监控与资源整合逻辑，把人因工程从个人表现扩展到团队表现。
+CRM 这一页不是“团队关系更和谐”这么简单，而是研究团队怎样把沟通、授权、监控和交叉检查真正变成安全防线。
 
-## 课件里的讲解顺序
+!!! note "本页主问题"
+    为什么技术上很强的机组或团队，仍然会因为沟通、授权结构和共享情境意识不足而失败？
 
-这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+## 本章重点
 
-### CRM 1-28-2026.pdf
+- CRM 把安全从个人技术扩展到团队协作能力。
+- authority gradient、assertiveness、briefing、debriefing、workload sharing 和 mutual monitoring 是同一套系统。
+- 很多重大事故不是没人看见问题，而是有人看见了却没能让团队吸收这个信号。
+- CRM 不是应急时才出现，它在任务开始前的 brief 和任务后的 debrief 就已经开始了。
 
-1. CREW RESOURCE MANAGEMENT (CRM)
-2. TOPICS Origins of CRM
-3. ORIGINS OF CRM
-4. INTERNATIONAL CIVIL AVIATION ORGANIZATION (ICAO) SHELL MODEL (EDWARDS, 1972)
-5. SINCE THE SHELL MODEL… Expanded checklists, safety procedures, and regulations
-6. SOME ACCIDENTS THAT LED TO CRM CONCEPT
-7. SOME OBSERVED PROBLEMS “Chain of command" approach was more the norm
-8. WHAT IS CRM?
+## 先记住一句话
 
+!!! tip "复习时先记住这句话"
+    先记住一句话：CRM 的作用，是把“团队里有人看见问题”变成“团队真的因此改变行动”。
 
-## 这页的逻辑顺序
+## CRM 真正解决的是什么问题
 
-建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+如果安全只靠最强的那个人，团队就很脆弱。CRM 的价值在于让沟通、挑战、确认和补位变成一套稳定做法，让多人系统能够抵消单个人的注意和判断局限。
 
-1. CRM 为什么是团队层面的人因能力
-2. 沟通与授权如何影响安全裕度
-3. 团队监控如何补偿个体局限
+## 这页真正想让你抓住的几个元素
 
-## 核心概念
+课程反复强调的元素包括：
 
-CRM 不是“大家相处好一点”的软技能课，而是一套把团队资源真正转化成安全防线的工作方法。它要解决的是：在高负荷和高风险环境里，团队怎样沟通、分工、纠错和相互补位。
+- communication
+- leadership 与 followership
+- assertiveness
+- briefing / debriefing
+- workload management
+- mutual monitoring
+- shared mental model
 
-## 这页最重要的主线
+## 为什么 authority gradient 会变成安全问题
 
-- CRM 把安全从“个人技术是否足够好”扩展到“团队是否会一起工作”。
-- 它强调的不只是 communication，还包括 leadership、followership、assertiveness、briefing、debriefing、workload management 和 situational awareness。
-- 团队里最危险的情况，往往不是没人发现问题，而是有人看见了却没有说出来，或说出来后没有被团队吸收。
+如果权威差距太陡，下级成员即使看见问题也可能不敢有效挑战；如果权威差距太平，关键时刻又可能没人真正承担领导。CRM 要做的不是把权威抹掉，而是让团队在保持角色分工的同时，仍然能让风险信息向上流动。
 
-## 课件里真正强调的点
+!!! note "一句话结论"
+    好的 CRM，不是“大家都说很多话”，而是关键风险信息能在正确时间被正确的人听见并采纳。
 
-从 Tenerife、Eastern 401、United 173 这类事故到后来的 CRM 训练，课程想强调的是：
+!!! warning "最容易误解的地方"
+    不要把 CRM 当成“软技能附加项”。在高负荷团队系统里，它本身就是核心安全机制之一。
 
-- authority gradient 过陡时，副驾驶和工程师即使看见问题，也可能不敢有效挑战
-- 一线成员如果不共享 mental model，就会出现“同一架飞机上每个人理解的局面不一样”
-- 团队监控和交叉检查，本质上是在用多人系统抵消单个人的注意和判断局限
+!!! example "案例：为什么 Tenerife 常被当作 CRM 的经典教材"
+    Tenerife 一再被拿来讲 CRM，不是因为技术细节不重要，而是因为它清楚展示了 authority gradient、沟通 ambiguity 和共享情境意识失败怎样一起推高风险。
 
-## 难点讲解
+## 本章总结
 
-CRM 容易被误解成“出了问题时大家多说几句”。但好的 CRM 其实发生在问题出现之前：
+!!! tip "复习时重点记这几条"
+    - CRM 把安全从个人表现扩展到团队表现。
+    - 它的关键是让风险信号能被团队吸收并转化成行动。
+    - authority gradient 是团队安全的结构变量。
+    - CRM 从 brief 开始，不是只在紧急时出现。
 
-- brief 把预期状态先对齐
-- workload management 防止关键时刻所有人盯同一件事
-- inquiry 和 advocacy 让质疑成为团队规范
-- debrief 让经验被沉淀成下一次更好的协作
-
-## 课件图示与页面预览
-
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/crm-1-28-2026/page-01.png" alt="CRM 1-28-2026.pdf · 第 1 页预览" loading="lazy">
-    <figcaption>CRM 1-28-2026.pdf · 第 1 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/crm-1-28-2026/page-04.png" alt="CRM 1-28-2026.pdf · 第 4 页预览" loading="lazy">
-    <figcaption>CRM 1-28-2026.pdf · 第 4 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/crm-1-28-2026/page-14.png" alt="CRM 1-28-2026.pdf · 第 14 页预览" loading="lazy">
-    <figcaption>CRM 1-28-2026.pdf · 第 14 页预览</figcaption>
-  </figure>
-</div>
 
 ## 资料范围与相关主题
 

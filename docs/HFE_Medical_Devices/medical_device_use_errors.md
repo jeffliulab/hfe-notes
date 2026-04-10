@@ -1,99 +1,55 @@
 # 医疗器械中的使用错误
 
-本页聚焦医疗器械中的 use error、异常使用与界面诱发风险，强调错误并非只来自操作者，而是来自整个使用系统。
+这一页专门解决“用错了到底算什么”的问题：device failure、无意 use error、异常使用和故意偏离规则，不能混成一个桶。
 
-## 课件里的讲解顺序
+!!! note "本页主问题"
+    当医疗器械使用出了问题时，我们怎样区分设计诱发的 use error、器械本身失效、异常使用和故意违规？
 
-这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+## 本章重点
 
-### 07 Use Errors.pptx
+- 不是所有不良使用都叫 use error。
+- 判断时必须看行为是否在可预见使用范围内、设计是否放大了错误机会、恢复空间是否存在。
+- use error 分析的重点，是把问题重新拉回具体任务和具体情境。
+- 如果问题类型定义错了，后面的控制措施也会跑偏。
 
-1. ENP 111 – Use Related Risk Analysis Sami Durrani PhD and Eric Bergman PhD
-2. (1) was different from the result expected by the user and
-3. Let’s look at a few case studies
-4. Hospital Bed
-5. Was there a use error? Was there only one? Or multiple?
-6. Hospital Bed New patient comes.
-7. Was there a use error? Yes
-8. Did a use error occur?
+## 先记住一句话
 
+!!! tip "复习时先记住这句话"
+    记这一页最简单的方法是：先别急着说“用户用错了”，先问设计、环境和情境是不是已经把正确操作变得很难。
 
-## 这页的逻辑顺序
+## 什么叫医疗器械中的 use error
 
-建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+这页不是在扩大 blame，而是在缩小误判。它要求团队把“错误行为”放回可预见使用场景里，看它到底是无意偏差、器械失效、异常使用，还是故意偏离规则。
 
-1. use error 与 misuse 的边界
-2. 界面与说明如何诱发错误
-3. 为什么 use error 要和 validation 结合看
+## 为什么这个区分会直接影响控制策略
 
-## 核心概念
+一旦定义错了，改法就会跟着错：
 
-医疗器械 use error 这一页想解决的问题是：当不良后果发生时，我们怎样区分“器械本身失效”“用户无意出错”“用户故意偏离”“环境把正确操作变得很难”。
+- 明明是界面诱发错误，却只补培训，风险会回来。
+- 明明是异常使用，却按普通 use error 写，控制会失焦。
+- 明明是器械失效，却把责任压给用户，设计问题就被遮掉了。
 
-## 这页要建立的判断习惯
+!!! warning "最容易做错的地方"
+    最常见的误区，是把所有不良后果都收成一句“user error”。这样一来，界面、标签、环境和组织条件都会从视野里消失。
 
-- 不要把所有不良使用都叫 use error
-- 要看错误是否在可预见使用范围内
-- 要看设计是否放大了误选、漏做、误判或顺序错误
-- 要看恢复机会是否存在
+## 这页真正想建立的分析习惯
 
-## 为什么这个区分重要
+看到错误行为时，不要立刻贴标签。先回到具体 use step、具体场景、具体信息显示和具体环境条件，再问设计有没有让误选、漏做、误判或顺序错误变得更容易。
 
-因为一旦你把问题定义错了，后面的改进就会跑偏：
+!!! note "一句话结论"
+    医疗器械里的 use error 分析，本质上是在判断系统有没有把使用者推到容易出错的位置。
 
-- 如果明明是界面诱发错误，却只去补培训，风险还会回来
-- 如果本质是异常使用或故意违规，却按普通 use error 处理，控制措施也会失真
+!!! example "案例：明明看起来像“用错了”，其实是界面在诱发错误"
+    如果两种给药模式在界面上只用细小字母区分，用户在紧急场景中选错模式后，表面上像是“user selected the wrong mode”。但更重要的分析结论可能是：系统把高后果选择设计得过于难辨认。
 
-## 难点讲解
+## 本章总结
 
-这页真正难的地方不是下定义，而是承认“错误行为”常常是设计、时间压力、包装、标签和工作环境共同塑造出来的。也因此，人因分析必须回到具体任务和情境。
+!!! tip "复习时重点记这几条"
+    - 不是所有不良使用都等于 use error。
+    - 分类时要看可预见性、设计诱发和恢复空间。
+    - 如果问题定义错了，控制策略也会错。
+    - 分析必须回到具体任务和具体情境。
 
-## 课件图示与页面预览
-
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-01-image1.png" alt="07 Use Errors.pptx · 第 1 张幻灯片" loading="lazy">
-    <figcaption>07 Use Errors.pptx · 第 1 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-04-image2.jpeg" alt="07 Use Errors.pptx · 第 4 张幻灯片" loading="lazy">
-    <figcaption>07 Use Errors.pptx · 第 4 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-05-image3.jpeg" alt="07 Use Errors.pptx · 第 5 张幻灯片" loading="lazy">
-    <figcaption>07 Use Errors.pptx · 第 5 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-06-image4.jpeg" alt="07 Use Errors.pptx · 第 6 张幻灯片" loading="lazy">
-    <figcaption>07 Use Errors.pptx · 第 6 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-09-image2.jpeg" alt="07 Use Errors.pptx · 第 9 张幻灯片" loading="lazy">
-    <figcaption>07 Use Errors.pptx · 第 9 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-10-image3.jpeg" alt="07 Use Errors.pptx · 第 10 张幻灯片" loading="lazy">
-    <figcaption>07 Use Errors.pptx · 第 10 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-11-image4.jpeg" alt="07 Use Errors.pptx · 第 11 张幻灯片" loading="lazy">
-    <figcaption>07 Use Errors.pptx · 第 11 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-13-image5.jpeg" alt="07 Use Errors.pptx · 第 13 张幻灯片" loading="lazy">
-    <figcaption>07 Use Errors.pptx · 第 13 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-16-image6.png" alt="07 Use Errors.pptx · 第 16 张幻灯片" loading="lazy">
-    <figcaption>07 Use Errors.pptx · 第 16 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-18-image7.jpeg" alt="07 Use Errors.pptx · 第 18 张幻灯片" loading="lazy">
-    <figcaption>07 Use Errors.pptx · 第 18 张幻灯片</figcaption>
-  </figure>
-</div>
 
 ## 资料范围与相关主题
 

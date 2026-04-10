@@ -1,71 +1,51 @@
 # 空间定向错觉
 
-本页整理空间定向错觉的生理基础、知觉陷阱与操作风险，强调感官系统与仪表信息冲突时的人因问题。
+空间定向错觉这一页最关键的提醒是：人的感觉系统在飞行环境里并不总可靠，直觉姿态和真实姿态可以完全相反。
 
-## 课件里的讲解顺序
+!!! note "本页主问题"
+    为什么人在飞行中会对自己的姿态产生强烈但错误的感觉，而系统又该怎样帮助操作者在这种错觉里仍然做出正确判断？
 
-这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+## 本章重点
 
-### Sp26_SpDisorientation_20260330.pdf
+- 内耳和身体感觉在某些加速度、转弯和低可见度条件下会误导操作者。
+- 仪表通常比直觉更可靠，但压力和惊讶会降低人转向仪表的能力。
+- 空间定向问题是典型的“人的感觉系统和系统信息冲突”案例。
+- 有效控制要依赖训练、显示和程序，而不是临场意志力。
 
-1. SPATIAL DISORIENTATION Dr. Andrew Liu
-2. ANATOMY OF THE EAR virtualmedicalcentre.com
-3. VESTIBULAR SYSTEM
-4. OTOLITH ORGANS
-5. OTOLITH HAIR CELLS Stanfield, 2011
-6. DETECTING FORWARD ACCELERATION Stanfield, 2011
-7. DETECTING BACKWARD ACCELERATION Stanfield, 2011
-8. DETECTION OF ACCELERATION V. TILT? Stanfield, 2011
+## 先记住一句话
 
+!!! tip "复习时先记住这句话"
+    先记住一句话：在空间定向错觉里，最危险的不是“没感觉”，而是“感觉非常真实，但其实错了”。
 
-## 这页的逻辑顺序
+## 感觉系统和仪表为什么会冲突
 
-建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+在某些飞行条件下，内耳和身体感觉会给出与真实姿态不一致的线索。此时仪表显示的是更可靠的状态信息，但人的直觉体验可能更强烈、更有说服力。
 
-1. 感觉系统为什么会误导操作者
-2. 仪表扫描如何对抗错觉
-3. 空间定向问题为什么高度危险
+## 为什么这种错觉会特别危险
 
-## 核心概念
+空间定向错觉危险，不只是因为它会让人看错，而是因为当事人往往非常相信自己的感觉。一旦操作者用错觉去解释仪表，就会快速进入错误控制循环。
 
-空间定向错觉这页最关键的提醒是：人的感觉系统在飞行环境里并不总可靠。也就是说，“我感觉飞机是这样”的直觉，可能和真实姿态完全不一致。
+!!! warning "最容易误解的地方"
+    不要把空间定向问题理解成“飞行员再仔细一点就好”。错觉之所以危险，正是因为它对当事人来说极其真实。
 
-## 这页的核心矛盾
+## 系统怎样帮助人对抗这种错觉
 
-- 内耳和身体感觉在某些加速度、转弯和低可见度条件下会给出错误线索。
-- 仪表提供的是更可靠的状态信息，但人在压力、惊讶或训练不足时，未必能及时切回仪表。
-- 一旦操作者更相信身体感觉而不是仪表，风险会迅速放大。
+有效控制不可能只靠当场“冷静一点”。更现实的防线包括：训练对错觉的预期、仪表扫描习惯、显示支持、程序化交叉检查和在高风险阶段对感官直觉保持怀疑。
 
-## 这页真正想建立的认知
+!!! note "一句话结论"
+    空间定向错觉的本质，是当感觉系统不可靠时，系统有没有提供足够强的替代路径让人回到正确判断。
 
-空间定向问题不是单纯的“飞行技术失误”，而是一个典型的人因冲突：
+!!! example "案例：为什么仪表扫描是对抗错觉的关键防线"
+    当身体感觉告诉操作者飞机正在某个方向倾斜时，仪表扫描能提供一条结构化替代路径，把判断从主观感觉拉回系统信息。如果这条扫描习惯没建立，错觉就更容易主导动作。
 
-- 人的感觉系统在某些环境下天然会误导
-- 系统设计和训练必须提前承认这种误导
-- 仪表扫描、程序和训练就是为了在直觉不可靠时给出替代路径
+## 本章总结
 
-## 难点讲解
+!!! tip "复习时重点记这几条"
+    - 空间定向错觉来自感觉系统与真实姿态的冲突。
+    - 危险在于错觉往往非常真实。
+    - 仪表、训练和程序是主要防线。
+    - 这页是典型的人类感知与系统信息冲突案例。
 
-最难的地方在于，这类错觉对当事人来说往往极其真实。所以有效控制不能只依赖事发当下的“再冷静一点”，而要依赖更早期的训练、显示设计和程序化交叉检查。
-
-## 课件图示与页面预览
-
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-spdisorientation-20260330/page-01.png" alt="Sp26_SpDisorientation_20260330.pdf · 第 1 页预览" loading="lazy">
-    <figcaption>Sp26_SpDisorientation_20260330.pdf · 第 1 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-spdisorientation-20260330/page-02.png" alt="Sp26_SpDisorientation_20260330.pdf · 第 2 页预览" loading="lazy">
-    <figcaption>Sp26_SpDisorientation_20260330.pdf · 第 2 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-spdisorientation-20260330/page-03.png" alt="Sp26_SpDisorientation_20260330.pdf · 第 3 页预览" loading="lazy">
-    <figcaption>Sp26_SpDisorientation_20260330.pdf · 第 3 页预览</figcaption>
-  </figure>
-</div>
 
 ## 资料范围与相关主题
 

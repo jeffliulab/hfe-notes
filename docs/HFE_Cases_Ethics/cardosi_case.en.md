@@ -1,68 +1,61 @@
 # The Cardosi Case
 
-This page distills the Cardosi material into a concrete case where displays, procedures, communication, and situation understanding interact.
+The real value of the Cardosi page is that it brings concrete ATC and aviation issues back under a human-factors lens, showing how communication, displays, procedure, and shared understanding interact inside one system.
 
-## Lecture Flow in the Source Material
+!!! note "Core Question"
+    In this case setting, why does something that seems like a technical communication detail become a system problem involving human factors, procedure, and situation awareness all at once?
 
-This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+## The Most Important Case Conclusions
 
-### Cardosi 2-2-2026.pdf
+- The point of the Cardosi page is not memorizing a story, but learning to decompose the ATC setting into communication, display, procedure, and SA problems.
+- Blocked, stepped-on, or incompletely received communications are classic entry points for human-factors risk.
+- Case pages train the ability to recognize abstract concepts inside real events.
+- Hindsight clarity does not mean the people in the moment had the same information conditions.
 
-1. Human Factors in Aviation
-2. Human Factors in Aviation An introduction to Air Traffic Control (ATC)
-3. Introduction to Air Traffic Control (ATC)
-4. Tower – TRACON – Enroute Center (ARTCC) – TRACON – Tower
-5. Pilot – ATC communications - Radio
-6. Blocked and partially-blocked “stepped on” on pilot-controller voice communications
-7. Controller-Pilot Data Communications (CPDLC)
-8. Human Factors in Aviation - When Should Human Factors be Considered?
+## Start with the Case Verdict
 
+!!! tip "Keep This Case Judgment in Mind"
+    Keep this case judgment in mind: in aviation communication settings, once information is blocked, stepped on, or misread, later displays, procedures, and team understanding are all affected in cascade.
 
-## Reading Logic
+## Background and Stakes
 
-Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+The Cardosi material focuses on how information is transmitted, received, interrupted, and misunderstood inside the ATC environment. Because aviation communication is already a time-critical task, any partial information loss can quickly affect later judgment and action.
 
-1. Which design and process factors matter most in the case
-2. How to read HFE principles back into a concrete event
-3. How case analysis feeds back into general methods
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/cardosi-2-2-2026/page-01.png" alt="This preview should make clear that communication in the ATC setting is not background noise; it is the core workflow shaping later understanding and action." loading="lazy">
+  <figcaption>This preview should make clear that communication in the ATC setting is not background noise; it is the core workflow shaping later understanding and action.</figcaption>
+</figure>
 
-## Core Idea
+## How to Read the Event Chain in This Case
 
-The Cardosi case matters because it turns abstract principles back into a concrete event where displays, communication, procedure, attention, and understanding interact at once.
+Cases like this cannot stop at “who misspoke” or “who did not hear correctly.” A stronger reading combines communication channel, display support, procedural requirements, and team mental model: where was the information weakened, who built the wrong picture because of that, and which layer could have recovered earlier?
 
-## What To Look For
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/cardosi-2-2-2026/page-02.png" alt="This preview should show that once the communication channel is blocked or stepped on, the later human-factors problems propagate along the whole chain." loading="lazy">
+  <figcaption>This preview should show that once the communication channel is blocked or stepped on, the later human-factors problems propagate along the whole chain.</figcaption>
+</figure>
 
-- what information should have supported correct judgment
-- what interface or procedural features made judgment harder
-- whether team communication corrected or amplified the problem
-- where the system could have intercepted the issue earlier
+!!! example "Case Anchor: Why a Stepped-On Transmission Amplifies Later Risk"
+    The Cardosi material highlights blocked and stepped-on communication. The danger is not only that one message is incomplete, but that later display interpretation, procedure execution, and team understanding may all continue forward on top of that damaged information.
 
-## Why Case Pages Matter
+## The System-Level Lesson of the Case
 
-The goal is not memorizing concepts but recognizing them inside an event. A case trains the ability to translate visible details into human-factors structure.
+The importance of the Cardosi case lies in turning what looks like a local communication problem back into a system-design problem: how vulnerable is the channel to blockage, whether critical content has redundancy, whether procedure supports a shared team picture, and whether displays and workflow create recovery opportunities.
 
-## Common Difficulty
+!!! note "One-Sentence Conclusion"
+    What the Cardosi page teaches is not one final answer, but a reading method: move from a local communication problem back to the system-level human-factors structure underneath it.
 
-Hindsight makes everything look obvious. Better analysis tries to reconstruct what was visible, interpretable, and misleading to the people in the moment.
+!!! warning "The Most Common Misunderstanding"
+    The easiest trap is hindsight: it feels obvious after the fact. Case analysis has to return as closely as possible to what people actually saw, heard, and understood in the moment.
 
-## Slide Figures and Page Previews
+## What To Take Away from This Case
 
-These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
+!!! tip "What To Carry Forward"
+    - The Cardosi case sits at the intersection of communication, display, procedure, and SA.
+    - Stepped-on or incompletely received information is a major risk entry point.
+    - Case analysis must return to the information conditions available in the moment.
+    - The real skill is moving from a local issue back to the system structure underneath it.
 
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/cardosi-2-2-2026/page-01.png" alt="Cardosi 2-2-2026.pdf · page 1 preview" loading="lazy">
-    <figcaption>Cardosi 2-2-2026.pdf · page 1 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/cardosi-2-2-2026/page-02.png" alt="Cardosi 2-2-2026.pdf · page 2 preview" loading="lazy">
-    <figcaption>Cardosi 2-2-2026.pdf · page 2 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/cardosi-2-2-2026/page-03.png" alt="Cardosi 2-2-2026.pdf · page 3 preview" loading="lazy">
-    <figcaption>Cardosi 2-2-2026.pdf · page 3 preview</figcaption>
-  </figure>
-</div>
 
 ## Source Scope and Related Topics
 

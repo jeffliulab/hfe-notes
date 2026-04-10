@@ -1,77 +1,55 @@
 # 航空与自动化导论
 
-本页用航空与自动化导论材料建立自动化收益、自动化陷阱与飞行员角色变化的总体框架。
+航空与自动化导论这页要先纠正一个直觉：自动化不是把人拿掉，而是把人的工作改成了更偏监控、模式理解、接管和异常管理的任务。
 
-## 课件里的讲解顺序
+!!! note "本页主问题"
+    当自动化承担更多功能后，人到底还剩下什么工作，而这些剩余工作是不是反而更难？
 
-这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+## 本章重点
 
-### Intro to Aviation and Automation 1-26-26-2.pdf
+- 自动化既能减轻重复负担，也会制造监控、模式理解和接管风险。
+- 最关键的问题不是“系统做了多少”，而是“人剩下的工作是否仍然现实可做”。
+- 航空是自动化 HFE 的经典实验场，因为角色重分配、时间压力和高后果在这里都非常明显。
+- 自动化风险常常不是直接操作错误，而是 automation surprise、mode confusion 和 handoff failure。
 
-1. Fundamentals of Aviation and Aircraft Automation
-2. Why start with aviation? Investment in human factors research
-3. Topics Pilots and what they do
-4. What does a pilot do? Aviate, Navigate, Communicate
-5. Other Pilot Tasks Manage flight deck systems and information,
-6. Pilot Training and Qualifications Ground school
-7. FLIGHT DECK DISPLAYS AND CONTROLS
-8. From the 1950s to 1990s… Round-Dial Instruments
+## 先记住一句话
 
+!!! tip "复习时先记住这句话"
+    先记住一句话：自动化不是把人从系统里删掉，而是把人的错误类型换了一种更隐蔽、也更难救回的形式。
 
-## 这页的逻辑顺序
+## 自动化为什么会同时增效也增险
 
-建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+自动化的收益通常很直观：更稳定、更快、更少重复负担。但它的代价往往滞后出现，因为它会把人的工作改写成平时低参与、关键时刻高要求的任务。
 
-1. 自动化为什么既能增效也能增险
-2. 角色分配如何影响监控与干预
-3. 航空系统为何是自动化 HFE 的经典实验场
+## 读这页时要固定问哪三个问题
 
-## 核心概念
+看到一个自动化系统时，先固定问三件事：
 
-航空与自动化导论这一页，讲的不是“自动化越来越先进”这么简单，而是一个更关键的问题：当机器承担更多功能后，人到底还剩下什么工作，这些工作会不会反而更难。
+1. 自动化接管了什么？
+2. 人保留了什么？
+3. 剩下的人类任务是否在真实条件下仍然做得到？
 
-## 核心逻辑
+!!! warning "最容易误解的地方"
+    “自动化越多越安全”并不是可靠判断。真正要看的是剩余人工任务有没有被设计得可见、可理解、可接管。
 
-- 自动化的第一层收益通常是减轻重复负担、提高精度、稳定流程。
-- 但自动化也会把人的角色推向监控、接管、模式理解和异常处置，这些工作平时少做，一出问题却要求很高。
-- 所以自动化不是把人拿掉，而是重写了人的任务结构。
+## 为什么航空是这个问题的经典场景
 
-## 真正要学会的判断
+在航空里，自动化状态多、模式切换快、信息量大、接管窗口短，所以“人保留的最后那点工作”往往最难。课程后面的 CRM、display、situation awareness 和 automated vehicles 页面，其实都在从不同角度继续追这一条线。
 
-读这页时要反复问三件事：
+!!! note "一句话结论"
+    自动化的真正难点，不在于系统会不会做事，而在于人会不会在关键时刻重新接得上这套系统。
 
-1. 自动化接管了什么。
-2. 人保留了什么。
-3. 剩下的人类任务是否仍然可行。
+!!! example "案例：为什么自动化最危险的时刻往往不是正常巡航，而是突然接管"
+    在自动化系统长时间稳定运行时，人容易退成被动监控者；一旦系统要求立即接管，操作者却可能既缺少最新情境意识，也不确定当前模式和系统意图，这正是很多自动化事故的高风险窗口。
 
-如果第三个问题答不上来，自动化往往只是把风险从“手动操作错误”转移成“监控失败、模式混淆或接管失败”。
+## 本章总结
 
-## 难点讲解
+!!! tip "复习时重点记这几条"
+    - 自动化会重写人的任务，而不是消灭人的任务。
+    - 关键问题是剩余人类任务是否现实可做。
+    - 航空自动化问题会延伸到 CRM、display、SA 和 AV 页面。
+    - 最危险的往往是监控和接管，而不是正常巡航。
 
-很多人直觉上会觉得“自动化越多越安全”。课程其实想纠正这个直觉。真正决定安全的，不是自动化数量，而是：
-
-- 系统状态是否可见
-- 自动化模式是否好理解
-- 人在接管前是否还有足够时间和信息恢复情境意识
-
-## 课件图示与页面预览
-
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/intro-to-aviation-and-automation-1-26-26-2/page-01.png" alt="Intro to Aviation and Automation 1-26-26-2.pdf · 第 1 页预览" loading="lazy">
-    <figcaption>Intro to Aviation and Automation 1-26-26-2.pdf · 第 1 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/intro-to-aviation-and-automation-1-26-26-2/page-02.png" alt="Intro to Aviation and Automation 1-26-26-2.pdf · 第 2 页预览" loading="lazy">
-    <figcaption>Intro to Aviation and Automation 1-26-26-2.pdf · 第 2 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/intro-to-aviation-and-automation-1-26-26-2/page-03.png" alt="Intro to Aviation and Automation 1-26-26-2.pdf · 第 3 页预览" loading="lazy">
-    <figcaption>Intro to Aviation and Automation 1-26-26-2.pdf · 第 3 页预览</figcaption>
-  </figure>
-</div>
 
 ## 资料范围与相关主题
 

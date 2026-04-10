@@ -1,68 +1,61 @@
 # Boeing 737 Max and Ethics
 
-This page treats Boeing 737 Max as a canonical case where technical, organizational, regulatory, and ethical issues are inseparable from HFE.
+The 737 Max belongs in the ethics section not because it is separate from technology, but because technology, organization, training, regulation, and responsibility allocation are inseparable in this case.
 
-## Lecture Flow in the Source Material
+!!! note "Core Question"
+    Why should the 737 Max not be read as a mere design-defect case, but as a system case where technical, human-factors, organizational, and ethical failures are intertwined?
 
-This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+## The Most Important Case Conclusions
 
-### Boeing 737Max and Ethics 2-23-26.pdf
+- The 737 Max case combines technical design, pilot understanding, training assumptions, certification, and organizational responsibility.
+- It shows that HFE cannot be separated from governance and responsibility.
+- What matters is not only MCAS itself, but how state visibility, alerting, single-failure tolerance, and training assumptions combined.
+- Ethics discussion becomes meaningful only when it returns to concrete engineering decisions.
 
-1. MORE ABOUT THE 737 MAX & ENGINEERING ETHICS
-2. A BIT MORE CONTEXT Lion Air 43 was the previous 96-min flight in accident aircraft.
-3. MORE ON BOEING 737 MAX ACCIDENTS For example:
-4. ONE OUTCOME (OUT OF MANY) FAILURE EFFECT CLASSIFICATIONS UPDATED
-5. MITIGATIONS RELATED TO 737MAX ACCIDENTS
-6. VOLPE REPORT What was the pilot response to the
-7. INSIGHTS FROM VOLPE REPORT Pilot experience impacts effective management of the situation.
-8. ENGINEERING ETHICS
+## Start with the Case Verdict
 
+!!! tip "Keep This Case Judgment in Mind"
+    Keep this case judgment in mind: the deepest problem in the 737 Max was not one isolated technical component, but several interacting system assumptions that transferred risk to the flight crew and operating system.
 
-## Reading Logic
+## Background and Stakes
 
-Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+The 737 Max material combines accident background, post-accident technical assessment, studies of pilot response, certification reflection, and engineering ethics. That shows the course does not read it as a narrow technical accident, but as a multi-layer system case.
 
-1. How design decisions become systemic ethical issues
-2. How organization and regulation shape safety outcomes
-3. Why technical mismatch often accompanies accountability mismatch
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/boeing-737max-and-ethics-2-23-26/page-01.png" alt="This preview should make clear that the page is not only a technical discussion; from the beginning it places accident context, review, and ethics side by side as one system case." loading="lazy">
+  <figcaption>This preview should make clear that the page is not only a technical discussion; from the beginning it places accident context, review, and ethics side by side as one system case.</figcaption>
+</figure>
 
-## Core Idea
+## How to Read the Event Chain and the Mismatch Chain
 
-The 737 Max topic is not just a design-defect story. It belongs in ethics because system design, training, alerting, organizational decisions, certification, and professional responsibility are intertwined.
+This page cannot stop at “what technical fault occurred.” It must continue into whether system state was sufficiently visible, whether a single information source carried too much weight, whether the crew had enough training and cognitive room to understand the abnormal state, and how organization and regulation amplified or failed to stop the chain.
 
-## The Layers To See
+!!! example "Case Anchor: Why Prior-Flight Information Did Not Automatically Become Later Safety"
+    The material notes that the previous flight had already experienced stick shaker and trim issues, yet that information did not reliably become a defense for the later crew. This illustrates a crucial lesson: information having appeared somewhere in the system does not mean the risk has actually been managed.
 
-- technical: visibility of system state, automation logic, single-failure vulnerability, and alerting
-- operational: whether crews had enough cognitive room under time pressure and abnormal conditions
-- organizational: how manufacturer, operator, maintenance, and regulator responsibilities were distributed
-- ethical: who had the obligation to surface, correct, or stop the spread of risk
+## Where the Ethical Question Actually Lands
 
-## Why It Is An HFE Case
+The ethics discussion here is not an abstract claim that “engineers should be responsible.” It returns to concrete decisions: was system behavior fully disclosed, did training assumptions match real operations, was too much risk transferred to frontline crews, and did certification adequately identify and correct those mismatches?
 
-This is not a choice between technology and humans. Design shapes human judgment conditions, training shapes recovery, and organizational choices shape whether defects persist.
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/boeing-737max-and-ethics-2-23-26/page-05.png" alt="This preview should show that the real landing point of ethics discussion is concrete failure classification, mitigation, and responsibility allocation rather than abstract slogans." loading="lazy">
+  <figcaption>This preview should show that the real landing point of ethics discussion is concrete failure classification, mitigation, and responsibility allocation rather than abstract slogans.</figcaption>
+</figure>
 
-## Common Difficulty
+!!! note "One-Sentence Conclusion"
+    The deepest lesson of the 737 Max page is how to read technology, human factors, and responsibility allocation as one system mismatch chain.
 
-Ethics becomes empty if it stays abstract. The stronger approach is to tie it back to concrete engineering decisions about disclosure, training assumptions, failure tolerance, and responsibility transfer.
+!!! warning "The Most Common Misunderstanding"
+    If ethics remains only at the level of value judgment and never returns to concrete design and certification decisions, it becomes empty rhetoric. This case demands that ethics and engineering detail be analyzed together.
 
-## Slide Figures and Page Previews
+## What To Take Away from This Case
 
-These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
+!!! tip "What To Carry Forward"
+    - The 737 Max is a system case where technology, human factors, organization, and ethics intertwine.
+    - The key is not only the failed component, but also state visibility, training assumptions, and responsibility allocation.
+    - Ethics discussion must return to concrete engineering decisions.
+    - This page teaches how to read the whole system mismatch chain together.
 
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/boeing-737max-and-ethics-2-23-26/page-01.png" alt="Boeing 737Max and Ethics 2-23-26.pdf · page 1 preview" loading="lazy">
-    <figcaption>Boeing 737Max and Ethics 2-23-26.pdf · page 1 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/boeing-737max-and-ethics-2-23-26/page-05.png" alt="Boeing 737Max and Ethics 2-23-26.pdf · page 5 preview" loading="lazy">
-    <figcaption>Boeing 737Max and Ethics 2-23-26.pdf · page 5 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/boeing-737max-and-ethics-2-23-26/page-06.png" alt="Boeing 737Max and Ethics 2-23-26.pdf · page 6 preview" loading="lazy">
-    <figcaption>Boeing 737Max and Ethics 2-23-26.pdf · page 6 preview</figcaption>
-  </figure>
-</div>
 
 ## Source Scope and Related Topics
 

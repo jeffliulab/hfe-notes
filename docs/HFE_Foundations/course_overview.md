@@ -1,66 +1,80 @@
 # 课程导论与学习地图
 
-本页用课程导论材料建立整门课的范围、节奏与应用背景，帮助读者先看到人因工程在航空与复杂系统中的问题空间。
+这页先帮你看清整门课的主线：HFE 不是把错误归给人，而是研究人在复杂系统里怎样被设计、任务、组织和环境共同塑形。
 
-## 课件里的讲解顺序
+!!! note "本页主问题"
+    如果后面的方法页和案例页要读得顺，这一页必须先回答一个问题：这门课到底在分析什么对象，是单个人，还是人在系统里的位置？
 
-这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+## 本章重点
 
-### Course intro 1-14-26.pdf
+- 这门课的分析单位不是“某个人做错了什么”，而是“人在系统中承担什么角色、被什么条件约束”。
+- 课程主线是：先建共同语言，再学分析方法，再进应用场景，最后回到案例与伦理。
+- 后续所有方法页其实都在回答同一组问题：任务是什么、哪里可能失败、系统怎样拦截或放大失败。
+- 如果导论页没看懂，后面的 Swiss Cheese、URRA、CRM 和案例页都会显得像碎片。
 
-1. Engineering Forensics January 14, 2026
-2. Agenda Introductions
-3. Introductions Lecturers
-4. Class Members Nate Brophy
-5. Engineering Forensics?
-6. Course Goals
-7. Issues/ sidebars Issues/theory ("Sidebars”)
-8. Example “Sidebars”
+## 先记住一句话
 
-
-## 这页的逻辑顺序
-
-建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
-
-1. 课程要解决什么系统层问题
-2. 为什么航空案例适合做人因分析入口
-3. 后续主题如何从导论向方法与案例展开
-
-## 核心概念
-
-这门课不是把“人会犯错”当成终点，而是把航空、医疗器械和自动化系统放在一起看：当任务、界面、组织、程序与环境互相作用时，系统为什么会变脆弱。
+!!! tip "复习时先记住这句话"
+    把这门课先记成一句话：它研究的不是“人很容易出错”，而是“系统怎样让正确行为变得更容易，让错误更难穿透防线”。
 
 ## 课程主线
 
-1. 先用人因工程和 human error 框架建立共同语言。
-2. 再用调查、任务分析、URRA 等方法把“问题”写成可分析对象。
-3. 然后进入航空、自动化与医疗器械场景，看方法怎样落到真实工作流。
-4. 最后通过案例与伦理讨论，回到“组织怎样制造或放大风险”。
+先把课程骨架记住，后面很多页就能自动归位：
 
-## 学这页时最重要的事
+1. 先用 `human factors`、`human error`、`Swiss Cheese` 这些基础页建立共同语言。
+2. 再用 `error analysis`、`task analysis`、`URRA` 这些方法页，把“问题”写成可分析、可追踪的结构。
+3. 然后进入航空、自动化和医疗器械等应用场景，看同一套分析逻辑怎样落到不同系统。
+4. 最后通过 operational risk、Cardosi、737 Max 等案例，把分析扩展到组织、监管和伦理层。
 
-- 课程的基本单位不是“单个操作者”，而是“人在系统里的位置”。
-- 后面的所有方法页，本质上都在回答三个问题：任务是什么、哪里会失败、系统怎样把失败挡住或放大。
-- 如果你先抓住这条主线，后面读 Swiss Cheese、task analysis、URRA 时会更容易串起来。
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/course-intro-1-14-26/page-01.png" alt="这张预览图要看懂的是：整门课并不是按行业拆开讲，而是按“基础语言 -&gt; 方法 -&gt; 应用 -&gt; 案例”逐层推进。" loading="lazy">
+  <figcaption>这张预览图要看懂的是：整门课并不是按行业拆开讲，而是按“基础语言 -&gt; 方法 -&gt; 应用 -&gt; 案例”逐层推进。</figcaption>
+</figure>
 
-## 课件图示与页面预览
+## 这门课真正分析的对象是什么
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
+课程并不是把“一次失误”当成终点，而是把失误当作入口。真正要分析的是：
 
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/course-intro-1-14-26/page-01.png" alt="Course intro 1-14-26.pdf · 第 1 页预览" loading="lazy">
-    <figcaption>Course intro 1-14-26.pdf · 第 1 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/course-intro-1-14-26/page-03.png" alt="Course intro 1-14-26.pdf · 第 3 页预览" loading="lazy">
-    <figcaption>Course intro 1-14-26.pdf · 第 3 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/course-intro-1-14-26/page-07.png" alt="Course intro 1-14-26.pdf · 第 7 页预览" loading="lazy">
-    <figcaption>Course intro 1-14-26.pdf · 第 7 页预览</figcaption>
-  </figure>
-</div>
+- 人当时承担什么任务
+- 系统提供了什么信息和工具
+- 环境、组织和时间压力如何影响判断
+- 防线为什么没有把错误挡住
+
+所以这门课里几乎没有哪一页是在单独研究“人的毛病”。更准确地说，它研究的是人在系统里如何被支持，或如何被逼到容易出错的位置。
+
+!!! example "案例：为什么同一个错误可以被两门课读出完全不同的结论"
+    如果只从“谁犯错了”出发，一次药物配置错误可能只会被总结成“护士不够仔细”。但这门课会继续问：标签是否清楚、容器是否易混、核对流程是否现实、工作负荷是否超标。导论页的价值，就是先把这种分析习惯建立起来。
+
+## 怎样用这张学习地图读后面的页
+
+读后面内容时，可以持续用一条固定主线来串：
+
+- 基础页回答：系统应该怎样看人。
+- 方法页回答：怎样把问题写成分析对象。
+- 应用页回答：同一套问题在不同行业里如何出现。
+- 案例页回答：当事故真的发生时，哪些系统层因素一起起作用。
+
+只要一直沿着这条线走，后面的内容就不会变成概念堆积。
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/course-intro-1-14-26/page-03.png" alt="这张预览图要看懂的是：课程后半段虽然进入航空和医疗器械场景，但它们都在回收前面学过的同一套 HFE 分析框架。" loading="lazy">
+  <figcaption>这张预览图要看懂的是：课程后半段虽然进入航空和医疗器械场景，但它们都在回收前面学过的同一套 HFE 分析框架。</figcaption>
+</figure>
+
+!!! note "一句话结论"
+    这门课最值得带走的不是一串术语，而是一种视角：别只问谁错了，要问系统为什么让这个错误出现、扩大、或者没被拦住。
+
+!!! warning "最容易走偏的读法"
+    不要把课程读成“每页一个新名词”。如果只记名词而不记主线，你会在后面的案例页里不知道该把哪个概念放到哪里。
+
+## 本章总结
+
+!!! tip "复习时重点记这几条"
+    - 课程先建语言，再建方法，再进入场景和案例。
+    - 分析单位始终是“人在系统中的位置”，不是脱离环境的个人。
+    - 后续每一页都可以用“任务、失败点、防线”这条主线来读。
+    - 导论页的作用是给整站提供一个不会丢线的阅读地图。
+
 
 ## 资料范围与相关主题
 

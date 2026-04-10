@@ -4,11 +4,11 @@
 
 ## 主题页面
 
-- [航空与自动化导论](aviation_automation_intro.md): 本页用航空与自动化导论材料建立自动化收益、自动化陷阱与飞行员角色变化的总体框架。
-- [Crew Resource Management](crew_resource_management.md): 本页整理 CRM 的沟通、协调、领导、监控与资源整合逻辑，把人因工程从个人表现扩展到团队表现。
-- [显示与告警](displays_and_alerts.md): 本页聚焦显示系统与告警设计，整理 salience、prioritization、false alarm 与 workload 之间的取舍。
-- [检查单与程序](checklists_and_procedures.md): 本页围绕 checklists 与 procedures 的设计原则，说明标准化如何减少记忆负担并支持团队协同。
-- [自动化车辆](automated_vehicles.md): 本页将航空自动化的经验延展到 automated vehicles，关注监控、handoff、trust calibration 与责任分配。
+- [航空与自动化导论](aviation_automation_intro.md): 航空与自动化导论这页要先纠正一个直觉：自动化不是把人拿掉，而是把人的工作改成了更偏监控、模式理解、接管和异常管理的任务。
+- [Crew Resource Management](crew_resource_management.md): CRM 这一页不是“团队关系更和谐”这么简单，而是研究团队怎样把沟通、授权、监控和交叉检查真正变成安全防线。
+- [显示与告警](displays_and_alerts.md): 显示与告警这一页讲的核心矛盾是：你必须让关键信息足够显眼，但又不能把操作者淹没在噪声里。
+- [检查单与程序](checklists_and_procedures.md): 检查单与程序这一页讨论的，不是把人变成机械执行者，而是怎样把容易忘、容易跳、容易乱序的动作外化成可靠的协作结构。
+- [自动化车辆](automated_vehicles.md): 自动化车辆这一页不是在重复航空自动化，而是在看一个迁移问题：当接管、信任校准和责任分配进入驾驶场景后，风险会怎样重组。
 
 ## 覆盖源文件
 

@@ -1,66 +1,80 @@
 # Course Overview and Learning Map
 
-This page uses the course introduction to frame the scope, pacing, and application domain of the class before the later methods and case studies appear.
+This page establishes the course arc: HFE is not about pinning failure on people, but about understanding how design, task demands, organization, and environment shape human performance in complex systems.
 
-## Lecture Flow in the Source Material
+!!! note "Core Question"
+    If the later method pages and case pages are going to make sense, this page has to answer one prior question: what is the unit of analysis in this course, the individual, or the person embedded in a system?
 
-This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+## Key Takeaways
 
-### Course intro 1-14-26.pdf
+- The recurring unit of analysis is not “what one person did wrong,” but the person-in-system relationship.
+- The course arc is language first, methods second, application domains third, and cases plus ethics last.
+- Later method pages keep answering the same questions: what the task is, where failure can emerge, and how the system blocks or amplifies it.
+- Without this frame, Swiss Cheese, URRA, CRM, and the case pages feel disconnected.
 
-1. Engineering Forensics January 14, 2026
-2. Agenda Introductions
-3. Introductions Lecturers
-4. Class Members Nate Brophy
-5. Engineering Forensics?
-6. Course Goals
-7. Issues/ sidebars Issues/theory ("Sidebars”)
-8. Example “Sidebars”
+## Remember This First
 
-
-## Reading Logic
-
-Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
-
-1. What system-level problems the course targets
-2. Why aviation is a strong entry point for HFE
-3. How later topics branch from the introductory frame
-
-## Core Idea
-
-This course treats human factors as a systems problem rather than a collection of isolated operator mistakes. Aviation, medical devices, and automation are used as recurring application domains.
+!!! tip "Keep This Sentence in Mind"
+    Remember the course this way: it is not about proving that people are error-prone, but about understanding how systems make correct action easier and prevent failure from piercing defenses.
 
 ## Course Arc
 
-1. Build shared language through human factors and human error frameworks.
-2. Turn that language into methods such as investigation, task analysis, and URRA.
-3. Apply the methods in aviation, automation, and medical-device contexts.
-4. End with cases and ethics, where organizational choices shape risk.
+Keep the course arc in mind:
 
-## What To Keep In Mind
+1. Build shared language through `human factors`, `human error`, and `Swiss Cheese`.
+2. Turn that language into structure through `error analysis`, `task analysis`, and `URRA`.
+3. Apply the logic in aviation, automation, and medical-device settings.
+4. End with cases such as operational risk, Cardosi, and the 737 Max, where organizational and ethical issues become unavoidable.
 
-- The recurring unit of analysis is the person-in-system relationship.
-- Later method pages answer three questions: what the task is, where failure can emerge, and how the system blocks or amplifies it.
-- If this logic is clear, the rest of the site becomes much easier to navigate.
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/course-intro-1-14-26/page-01.png" alt="This preview should make the course architecture visible: the site is not split by industry first, but by language, methods, applications, and then cases." loading="lazy">
+  <figcaption>This preview should make the course architecture visible: the site is not split by industry first, but by language, methods, applications, and then cases.</figcaption>
+</figure>
 
-## Slide Figures and Page Previews
+## What the Course Actually Analyzes
 
-These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
+The course does not stop at the visible mistake. It treats the mistake as an entry point into a larger analysis:
 
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/course-intro-1-14-26/page-01.png" alt="Course intro 1-14-26.pdf · page 1 preview" loading="lazy">
-    <figcaption>Course intro 1-14-26.pdf · page 1 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/course-intro-1-14-26/page-03.png" alt="Course intro 1-14-26.pdf · page 3 preview" loading="lazy">
-    <figcaption>Course intro 1-14-26.pdf · page 3 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/course-intro-1-14-26/page-07.png" alt="Course intro 1-14-26.pdf · page 7 preview" loading="lazy">
-    <figcaption>Course intro 1-14-26.pdf · page 7 preview</figcaption>
-  </figure>
-</div>
+- what task the person was performing
+- what information and tools the system provided
+- how environment, organization, and time pressure shaped judgment
+- why defenses failed to intercept the problem
+
+That is why almost no page in the course is really about “human weakness” in isolation. It is about how people are supported or set up to fail inside systems.
+
+!!! example "Example: Why the Same Error Can Produce Two Very Different Lessons"
+    If analysis starts and ends with “who made the mistake,” a medication-preparation error turns into “the nurse was not careful enough.” This course keeps going: were the labels clear, were the containers confusable, was the verification process realistic, and was workload excessive? The overview matters because it establishes that habit before anything else.
+
+## How to Use This Learning Map
+
+Use a single reading line for the rest of the site:
+
+- foundation pages explain how to see the human inside the system
+- method pages explain how to turn that view into an analyzable structure
+- application pages show how the same logic appears in different industries
+- case pages show which system-layer factors interact when events actually unfold
+
+Following that line keeps the site from turning into a pile of disconnected terms.
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/course-intro-1-14-26/page-03.png" alt="This preview should make one point clear: even when the course moves into aviation and medical-device contexts, it keeps reusing the same HFE logic introduced earlier." loading="lazy">
+  <figcaption>This preview should make one point clear: even when the course moves into aviation and medical-device contexts, it keeps reusing the same HFE logic introduced earlier.</figcaption>
+</figure>
+
+!!! note "One-Sentence Conclusion"
+    The real takeaway is not a set of terms but a stance: do not stop at who failed; ask why the system allowed the failure to appear, expand, or pass through defenses.
+
+!!! warning "The Most Common Reading Trap"
+    Do not read the course as “one new term per page.” If the terms are memorized without the logic, the later case pages will feel unstructured and hard to analyze.
+
+## Chapter Summary
+
+!!! tip "What To Carry Forward"
+    - The course builds language first, methods second, and applications plus cases afterward.
+    - The recurring unit of analysis is the person in the system, not the isolated individual.
+    - Later pages can all be read through the same line: task, failure point, and defense.
+    - The overview page exists to provide a reading map for the entire site.
+
 
 ## Source Scope and Related Topics
 

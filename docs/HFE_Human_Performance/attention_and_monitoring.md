@@ -1,71 +1,51 @@
 # 注意与监控
 
-本页整理注意资源、监控任务、automation complacency 与 vigilance decrement 等核心问题。
+注意与监控这一页最重要的结论是：持续监控并不是轻松任务，它恰恰是最容易衰退的任务类型之一。
 
-## 课件里的讲解顺序
+!!! note "本页主问题"
+    为什么系统越要求人“盯着看、等着问题出现”，反而越容易在真正出事时失去监控效果？
 
-这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+## 本章重点
 
-### Attention and Monitoring 2-9- 2026.pdf
+- 注意是有限资源，会被优先级、疲劳、时间和告警策略不断重分配。
+- 监控任务因为刺激稀少、反馈少、事件低频，特别容易出现 vigilance decrement。
+- 自动化越强，人越容易退成被动监视者，从而提高 complacency 风险。
+- 监控失败经常是任务设计问题，不是单纯态度问题。
 
-1. INTRODUCTION TO ATTENTION &
-2. TOPICS Supervisory control of automation
-3. SHERIDAN’S SPECTRUM OF AUTOMATION
-4. Proctor and VanZandt, 2017 HUMAN INFORMATION PROCESSING MODEL
-5. WHAT IS ATTENTION? Attention is associated with “consciousness” and “awareness”
-6. OVERVIEW: MODELS OF ATTENTION Attention Models
-7. YERKES-DODSON LAW Kahneman D. Attention and Effort. Prentice Hall, Inc., 1973.
-8. VIGILANCE Vigilance is sustained attention, the ability to
+## 先记住一句话
 
+!!! tip "复习时先记住这句话"
+    先记住一句话：如果一个系统把人的工作设计成“长时间盯着看，偶尔突然接管”，那就已经在和人的注意机制对着干了。
 
-## 这页的逻辑顺序
+## 为什么注意本来就是有限资源
 
-建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+注意不是可以无限拉长的稳定灯光，而是会随着优先级、负荷、时间和疲劳不断重新分配的资源。课程在这里不是让你背心理学术语，而是要你承认：系统设计必须把这种资源限制当成前提。
 
-1. 注意为什么是有限资源
-2. 监控任务为何特别容易衰退
-3. 自动化如何改变人的注意分配
+## 为什么监控任务特别容易衰退
 
-## 核心概念
+监控任务看起来轻松，其实很难，因为刺激稀少、事件低频、反馈弱，人的大脑很难长期维持同样高的警觉水平。等到真正异常出现时，操作者反而可能正处在最低参与状态。
 
-注意与监控这一页的核心不是“人要更专心”，而是承认注意本来就是有限资源，而持续监控又恰好是一种最容易衰退的任务。
+!!! example "案例：为什么低事件率监控最容易掉链子"
+    当系统长时间稳定，操作者主要在“等问题出现”时，注意会自然下滑。等到真正关键的异常终于出现，信号反而可能被延迟识别，这就是 vigilance decrement 最典型的系统表现。
 
-## 核心逻辑
+## 这页对系统设计的真正要求是什么
 
-- 注意不是无限的，它会被优先级、负荷、时间、疲劳和告警策略重新分配。
-- 监控任务看起来轻松，但因为刺激稀少、事件低频，反而容易出现 vigilance decrement。
-- 自动化越强，人越容易从主动操作者退成被动监视者，这时 complacency 风险会上升。
+如果任务本身容易监控衰退，设计就不能把责任全压给“人要更专心”。更合理的做法是：让状态变化更可见、关键事件更可区分、交叉检查更容易启动、恢复路径更清楚。
 
-## 这页真正想建立的判断
+!!! note "一句话结论"
+    监控失败经常是任务设计和信号设计的失败，而不是“人不够认真”的简单道德判断。
 
-如果某个系统要求人长时间“盯着看、等着出问题”，就要立刻追问：
+!!! warning "最容易误解的地方"
+    “要求人保持警觉”本身不是设计方案。如果系统没有主动帮助保持状态把握，提醒人专心通常不会长期有效。
 
-- 这个监控任务是否现实可持续
-- 系统有没有主动帮助人保持对关键状态的把握
-- 一旦漏看，是否还留有恢复空间
+## 本章总结
 
-## 难点讲解
+!!! tip "复习时重点记这几条"
+    - 注意是有限资源，不会无限稳定。
+    - 监控任务尤其容易出现 vigilance decrement。
+    - 自动化会把人推向更脆弱的被动监视角色。
+    - 设计必须主动支持监控，而不是只要求更专心。
 
-监控失败并不等于态度差。很多时候，失败来自任务本身的设计：太单调、太被动、反馈太少、关键变化出现得太突然。这也是为什么显示、告警和自动化设计必须和“人的注意机制”一起看。
-
-## 课件图示与页面预览
-
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/attention-and-monitoring-2-9-2026/page-01.png" alt="Attention and Monitoring 2-9- 2026.pdf · 第 1 页预览" loading="lazy">
-    <figcaption>Attention and Monitoring 2-9- 2026.pdf · 第 1 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/attention-and-monitoring-2-9-2026/page-03.png" alt="Attention and Monitoring 2-9- 2026.pdf · 第 3 页预览" loading="lazy">
-    <figcaption>Attention and Monitoring 2-9- 2026.pdf · 第 3 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/attention-and-monitoring-2-9-2026/page-04.png" alt="Attention and Monitoring 2-9- 2026.pdf · 第 4 页预览" loading="lazy">
-    <figcaption>Attention and Monitoring 2-9- 2026.pdf · 第 4 页预览</figcaption>
-  </figure>
-</div>
 
 ## 资料范围与相关主题
 

@@ -1,90 +1,51 @@
 # Stress, Decision Making, and Distraction
 
-This page combines stress, decision making, distraction, and cognitive bias to explain why operators drift toward suboptimal choices under load.
+This page is not simply about people becoming worse under pressure. It examines how stress narrows attention and strategy space, making suboptimal judgment more likely.
 
-## Lecture Flow in the Source Material
+!!! note "Core Question"
+    Why do high pressure, time pressure, and distraction make omission, bias, premature closure, or delayed decision more likely?
 
-This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+## Key Takeaways
 
-### Sp26_StressDecisionMaking_20260225.pdf
+- Stress consumes cognitive resources and narrows search and comparison space.
+- Distraction interrupts plan execution and increases omission, timeline loss, and state forgetting.
+- Time pressure pushes people toward heuristics and satisficing.
+- The key question is not only whether the person stayed calm, but whether the system reduced or intensified cognitive burden.
 
-1. Dr. Andrew Liu STRESS, WORKLOAD,
-2. AIR FRANCE 447 – SUCCESSION OF EVENTS
-3. EFFECTS OF HIGH TASK DEMANDS (STRESS?) Selective attention/ attention narrowing
-4. YERKES-DODSON LAW An observed relationship between
-5. MENTAL WORKLOAD
-6. MENTAL WORKLOAD “Workload is a general term used to describe the cost of accomplishing task
-7. RESOURCE MODELS – SINGLE RESOURCE MODEL Kahneman, 1973
-8. RESOURCE MODELS – MULTIPLE RESOURCE MODEL
+## Remember This First
 
-### Sp26_DecisionMakingDistraction_20260302.pdf
+!!! tip "Keep This Sentence in Mind"
+    Keep one sentence in mind: the most dangerous thing about stress is not how it feels, but how it leaves the person with fewer usable cues and fewer workable strategies.
 
-1. Dr. Andrew Liu DECISION MAKING &
-2. HUMAN INFORMATION PROCESSING MODEL
-3. F.D. Raslau (2014)
-4. RASMUSSEN LEVELS OF INFORMATION PROCESSING Rasmussen, 1983
-5. DECISION MAKING FRAMEWORK o Normative Decisions
-6. DECISION MAKING FRAMEWORK Naturalistic Decisions
-7. NATURALISTIC DECISION MODELS
-8. KAHNEMAN’S TWO SYSTEMS MODEL OF THINKING System 1
+## Why Stress, Distraction, and Decision Making Belong Together
 
+Stress consumes cognitive resources, distraction interrupts the execution chain, and time pressure shortens the comparison window. When all three combine, operators are more likely to rely on familiar paths rather than continue searching and correcting.
 
-## Reading Logic
+## Why People Often See the Signal but Still Fail to Use It
 
-Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+In high-pressure settings, the problem is often not that the signal was completely unseen, but that it never entered the active judgment frame. Stress and expectation bias the person toward the current explanation instead of re-organizing the situation around new evidence.
 
-1. How stress narrows attention and strategy space
-2. How distraction erodes procedure following and monitoring
-3. Why decision bias often couples with time pressure
+!!! warning "The Most Common Misunderstanding"
+    Stress does not always degrade performance immediately. The more dangerous pattern is sustained pressure plus incomplete information, which drives increasing reliance on familiar paths while underweighting new cues.
 
-## Core Idea
+## What This Page Demands from System Design
 
-Stress, decision making, and distraction are linked because high-load environments narrow attention and strategy space, making omission, bias, and poor timing more likely.
+In high-load settings, systems should not add more ambiguous information and extra tasks. They should preserve critical cues, reduce needless switching, clarify priority, and let teamwork genuinely remove burden.
 
-## Core Chain
+!!! note "One-Sentence Conclusion"
+    Poor decisions under stress often reflect not that the person is weak, but that the system failed to preserve adequate judgment conditions.
 
-- stress consumes cognitive capacity and narrows search
-- distraction interrupts execution and weakens timeline tracking
-- time pressure pushes people toward heuristics and satisficing
+!!! example "Example: Why “Decide Faster” Can Become More Dangerous"
+    Under extreme time pressure, an operator may reach a quick and seemingly decisive answer, but that answer may rest on a very narrow information search. If the system does not preserve critical cues and a second perspective, fast decision making may simply become fast wrong closure.
 
-## What To Ask
+## Chapter Summary
 
-In a fast, messy, high-consequence environment, the question is not only why the operator was not calmer. It is whether the system preserved the right cues, left enough decision space, and reduced rather than added burden.
+!!! tip "What To Carry Forward"
+    - Stress narrows attention and strategy space.
+    - Distraction interrupts execution and timeline maintenance.
+    - Time pressure pushes heuristics and satisficing.
+    - System design should preserve the conditions for good judgment.
 
-## Common Difficulty
-
-Stress does not always cause failure, but high and sustained stress combined with incomplete information often drives people toward familiar responses while important new cues get underweighted.
-
-## Slide Figures and Page Previews
-
-These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-stressdecisionmaking-20260225/page-01.png" alt="Sp26_StressDecisionMaking_20260225.pdf · page 1 preview" loading="lazy">
-    <figcaption>Sp26_StressDecisionMaking_20260225.pdf · page 1 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-stressdecisionmaking-20260225/page-03.png" alt="Sp26_StressDecisionMaking_20260225.pdf · page 3 preview" loading="lazy">
-    <figcaption>Sp26_StressDecisionMaking_20260225.pdf · page 3 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-stressdecisionmaking-20260225/page-04.png" alt="Sp26_StressDecisionMaking_20260225.pdf · page 4 preview" loading="lazy">
-    <figcaption>Sp26_StressDecisionMaking_20260225.pdf · page 4 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-decisionmakingdistraction-20260302/page-01.png" alt="Sp26_DecisionMakingDistraction_20260302.pdf · page 1 preview" loading="lazy">
-    <figcaption>Sp26_DecisionMakingDistraction_20260302.pdf · page 1 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-decisionmakingdistraction-20260302/page-02.png" alt="Sp26_DecisionMakingDistraction_20260302.pdf · page 2 preview" loading="lazy">
-    <figcaption>Sp26_DecisionMakingDistraction_20260302.pdf · page 2 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-decisionmakingdistraction-20260302/page-03.png" alt="Sp26_DecisionMakingDistraction_20260302.pdf · page 3 preview" loading="lazy">
-    <figcaption>Sp26_DecisionMakingDistraction_20260302.pdf · page 3 preview</figcaption>
-  </figure>
-</div>
 
 ## Source Scope and Related Topics
 

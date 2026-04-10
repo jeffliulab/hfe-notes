@@ -4,10 +4,10 @@
 
 ## 主题页面
 
-- [课程导论与学习地图](course_overview.md): 本页用课程导论材料建立整门课的范围、节奏与应用背景，帮助读者先看到人因工程在航空与复杂系统中的问题空间。
-- [人因工程导论](human_factors_intro.md): 本页围绕 human factors 的定义、设计目标与系统视角，整理人因工程如何把人的能力与限制带回系统设计。
-- [人为失误框架](human_error_frameworks.md): 本页整合课程里对 human error 的引入与框架化讲解，把 slips、mistakes、violations 与多层次失误模型放到同一个分析坐标系里。
-- [Swiss Cheese 模型](swiss_cheese.md): 本页用 Swiss Cheese 模型把防御层、薄弱环节与事故路径串起来，作为从单点失误转向系统防护设计的重要桥梁。
+- [课程导论与学习地图](course_overview.md): 这页先帮你看清整门课的主线：HFE 不是把错误归给人，而是研究人在复杂系统里怎样被设计、任务、组织和环境共同塑形。
+- [人因工程导论](human_factors_intro.md): 这一页先回答最基础的问题：human factors 到底是什么。它不是“研究人类缺点”的学科，而是把人的能力与限制真正带回设计里。
+- [人为失误框架](human_error_frameworks.md): 本章重点是看懂两件事：人为什么会出错，以及为什么分析错误时不能只盯着出错的人。
+- [Swiss Cheese 模型](swiss_cheese.md): 这页把课程里的系统视角再往前推一步：事故不是因为某一个人突然犯了大错，而是因为多层防线同时出现漏洞，并在某个时刻被串成了一条穿透路径。
 
 ## 覆盖源文件
 

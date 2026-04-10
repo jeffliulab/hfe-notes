@@ -1,137 +1,173 @@
 # 人为失误框架
 
-本页整合课程里对 human error 的引入与框架化讲解，把 slips、mistakes、violations 与多层次失误模型放到同一个分析坐标系里。
+本章重点是看懂两件事：人为什么会出错，以及为什么分析错误时不能只盯着出错的人。
 
-## 课件里的讲解顺序
+!!! note "本页主问题"
+    为什么人会出错，为什么不能把错误简单归咎于人，以及这套框架如何帮助我们找到真正该改的地方？
 
-这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+## 本章重点
 
-### 02 Intro to Human Error (1).pptx
+- 人会出错，不等于问题只在人身上。
+- `slip`、`lapse`、`mistake`、`violation` 都像“出错”，但性质不同，后面的改法也不同。
+- 错误分析的终点不是贴标签，而是找到 root cause 和 mitigation。
+- 同一个表面错误，可能来自感知、认知或动作执行的不同环节。
+- 如果只看到“是谁错了”，通常会漏掉更重要的系统原因。
 
-1. Sami Durrani PhD and Eric Bergman PhD Introduction to Human Error
-2. To err is human…” (Cicero, BC)
-3. Definitions
-4. accuracy, sequence,
-5. but, is it that clear-cut?
-6. I will speak out 20 words Do not write anything until I have finished.
-7. North apple
-8. I will speak out 20 more words. Do not write anything until I have finished.
+## 先记住一句话
 
-### 03 HE Frameworks (2).pptx
+!!! tip "复习时先记住这句话"
+    人会出错，不是因为“人很差”，而是因为人的注意、记忆、判断都有边界；当系统设计不好、信息不清楚、流程不合理时，这些边界就会被放大，最后表现成错误。
+    
+    接下来这页只回答一个问题：面对一次错误，我们到底应该怎么看，才能真正找到该改的地方。
 
-1. Kate MacNamee, MS Human Error Frameworks – How to think about errors
-2. This topic has already been covered, but as a quick reminder we are talking about:
-3. Frameworks are constructs - convenient ways to attempt to organize complex information
-4. Error Unintended action or decision
-5. Some frameworks delineate between errors and violations Human
-6. Some frameworks start with intent (this can manifest in problematic ways) Human
-7. Be starting with intention, it implicitly suggests user responsibility
-8. Broadly speaking…
+## 什么叫人为失误
 
+先用最简单的话说，`human error` 指的是：人原本想把事情做对，但最后没有得到预期结果。
 
-## 这页的逻辑顺序
+这个定义有两个关键信息：
 
-建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+- 它强调的是“原本想做对”，所以首先讨论的是无意偏差。
+- 它讨论的不只是结果错了，还包括动作、顺序、时间、判断这些环节出了问题。
 
-1. 错误类型如何区分
-2. 个体层与系统层解释如何互补
-3. 框架为什么会影响后续风险分析方法
+课件里给了两个常见定义，合起来读就够了：
 
-## 核心概念
+- `Reason (1990)`：原本计划好的心理或身体活动，没有实现预期结果。
+- `Hagen & Mays (1981)`：人在 `accuracy`、`sequence`、`time` 这些限制上没有把动作完成好。
 
-“人为失误框架”这页的重点，不是给错误贴标签本身，而是教你不要把所有问题都压缩成“某个人犯错了”。框架的作用，是把失误拆成不同层次，再决定应该改人、改任务，还是改系统。
+!!! note "一句话结论"
+    人为失误不是骂人的词，而是分析问题的词。它的价值在于把一次失败拆开看：动作做错了、漏做了、判断错了，还是系统把人推到了容易出错的位置。
 
-## 先把几类错误分清楚
+## 为什么不能简单怪人
 
-- `slip`：计划是对的，但动作做错了。典型场景是按错、点错、操作顺序打滑。
-- `lapse`：计划是对的，但动作漏掉了，常和记忆或注意脱落有关。
-- `mistake`：执行并没有错，错的是前面的判断、理解或计划。
-- `violation`：明知规则却主动偏离，通常不能直接算作 error taxonomy 里的“无意失误”。
+如果一开始就认定“问题只在这个人身上”，那后面的所有分类最后都会变成更精细的责怪。
 
-## 这套框架为什么重要
+这也是为什么课件要把 `old view / new view`、`internal / external`、`sharp end / blunt end` 串成一条线：
 
-课程里反复对比 old view 和 new view：
+- `old view`：系统基本是好的，出错主要是因为操作者粗心、能力差、没按要求做。
+- `new view`：人会出错是事实，但更重要的问题是系统为什么让这个错误这么容易发生，或为什么没有把它拦住。
+- `internal`：人的注意、记忆、疲劳和判断限制。
+- `external`：界面、说明、环境、工作负荷和组织压力。
+- `sharp end`：前线操作那一刻看得见的错误。
+- `blunt end`：更上游的设计、制度、资源和组织决策。
 
-- old view 把人看成“坏苹果”，认为系统本身是好的，问题在操作者
-- new view 认为错误是系统与情境共同产生的结果，重点是修系统、加防护、改善恢复能力
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-11-image2.jpg" alt="这张图要你看懂的不是“有人是坏苹果”，而是如果默认系统没有问题，分析就会自动滑向 blame，而不是 redesign。" loading="lazy">
+  <figcaption>这张图要你看懂的不是“有人是坏苹果”，而是如果默认系统没有问题，分析就会自动滑向 blame，而不是 redesign。</figcaption>
+</figure>
 
-所以同样是一个不良后果，框架不同，改进方向会完全不同。
+!!! note "这一节最重要的结论"
+    表面上看是人出错，深层上常常是系统在制造易错条件。
 
-## 难点讲解
+!!! example "案例：为什么不能只怪拿错药的人"
+    医院把外包装非常相似的药物放在相邻位置，平时一直没有出事；直到某次值班里，一名疲劳中的护士拿错了药，最后造成患者伤害。这个案例最容易被写成一句话：“护士拿错药了。”但真正更有价值的问题是：为什么两种药会放在一起？为什么包装相似到足以混淆？为什么疲劳状态下还要承担高风险识别任务？为什么前面没有更强的核对和拦截？
 
-最容易混淆的地方，是把“内部因素”和“外部因素”看成二选一。其实课程想强调的是：
+## 四类错误怎么区分
 
-- 人当然有认知、情绪和体力限制
-- 但系统设计、信息质量、培训、组织文化和外部压力，同样会塑造错误
+明白“不能只怪人”之后，下一步才是分类。分类不是为了显得专业，而是因为不同类型的错误，后面的改法根本不一样。
 
-真正成熟的分析不会停在“这个人注意力不够”，而会继续追问：为什么这个系统要求人在这种条件下还必须靠纯注意力顶住？
+### 1. `slip`
+一句话定义：计划是对的，但动作做错了。  
+最典型的例子：想按 A，结果碰到了 B。
 
-## 读图时要抓住什么
+### 2. `lapse`
+一句话定义：计划是对的，但该做的动作没有做出来。  
+最典型的例子：漏掉检查步骤、该确认却没有确认。
 
-如果你在本页看到“感知-认知-动作”的图，不要把它当装饰。它在提醒你：错误不是一个点，而是信息进入、理解形成、动作输出整条链路中的失配。
+### 3. `mistake`
+一句话定义：动作执行得没问题，但前面的理解、判断或计划本身就是错的。  
+最典型的例子：按照错误理解做出完全一致但错误的决策。
 
-## 课件图示与页面预览
+### 4. `violation`
+一句话定义：知道规则，却仍然故意偏离规则。  
+最典型的例子：为了赶时间明知不该跳步却还是跳步。
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
+四类放在一起时，可以用这一组最短的句子去记：
 
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-01-image1.png" alt="02 Intro to Human Error (1).pptx · 第 1 张幻灯片" loading="lazy">
-    <figcaption>02 Intro to Human Error (1).pptx · 第 1 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-11-image2.jpg" alt="02 Intro to Human Error (1).pptx · 第 11 张幻灯片" loading="lazy">
-    <figcaption>02 Intro to Human Error (1).pptx · 第 11 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-11-image3.png" alt="02 Intro to Human Error (1).pptx · 第 11 张幻灯片" loading="lazy">
-    <figcaption>02 Intro to Human Error (1).pptx · 第 11 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-16-image4.png" alt="02 Intro to Human Error (1).pptx · 第 16 张幻灯片" loading="lazy">
-    <figcaption>02 Intro to Human Error (1).pptx · 第 16 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-17-image5.jpeg" alt="02 Intro to Human Error (1).pptx · 第 17 张幻灯片" loading="lazy">
-    <figcaption>02 Intro to Human Error (1).pptx · 第 17 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-18-image6.png" alt="02 Intro to Human Error (1).pptx · 第 18 张幻灯片" loading="lazy">
-    <figcaption>02 Intro to Human Error (1).pptx · 第 18 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-19-image7.png" alt="02 Intro to Human Error (1).pptx · 第 19 张幻灯片" loading="lazy">
-    <figcaption>02 Intro to Human Error (1).pptx · 第 19 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-19-image8.png" alt="02 Intro to Human Error (1).pptx · 第 19 张幻灯片" loading="lazy">
-    <figcaption>02 Intro to Human Error (1).pptx · 第 19 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-20-image7.png" alt="02 Intro to Human Error (1).pptx · 第 20 张幻灯片" loading="lazy">
-    <figcaption>02 Intro to Human Error (1).pptx · 第 20 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-20-image8.png" alt="02 Intro to Human Error (1).pptx · 第 20 张幻灯片" loading="lazy">
-    <figcaption>02 Intro to Human Error (1).pptx · 第 20 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-25-image9.png" alt="02 Intro to Human Error (1).pptx · 第 25 张幻灯片" loading="lazy">
-    <figcaption>02 Intro to Human Error (1).pptx · 第 25 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-26-image10.png" alt="02 Intro to Human Error (1).pptx · 第 26 张幻灯片" loading="lazy">
-    <figcaption>02 Intro to Human Error (1).pptx · 第 26 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/03-he-frameworks-2/slide-01-image1.png" alt="03 HE Frameworks (2).pptx · 第 1 张幻灯片" loading="lazy">
-    <figcaption>03 HE Frameworks (2).pptx · 第 1 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/03-he-frameworks-2/slide-14-image2.png" alt="03 HE Frameworks (2).pptx · 第 14 张幻灯片" loading="lazy">
-    <figcaption>03 HE Frameworks (2).pptx · 第 14 张幻灯片</figcaption>
-  </figure>
-</div>
+- `slip`：想对了，手做错了。
+- `lapse`：想对了，但漏做了。
+- `mistake`：做得很一致，但一开始就想错了。
+- `violation`：知道规则，但故意偏离了。
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-16-image4.png" alt="这张图要你看懂的是：表面上都叫“出错”，但 slip、lapse、mistake、violation 发生在不同层次，所以不能用同一种补救办法处理。" loading="lazy">
+  <figcaption>这张图要你看懂的是：表面上都叫“出错”，但 slip、lapse、mistake、violation 发生在不同层次，所以不能用同一种补救办法处理。</figcaption>
+</figure>
+
+!!! warning "最容易混淆的点"
+    - `slip` 不是“不知道该怎么做”，而是“知道怎么做，却在动作执行时出偏差”。
+    - `lapse` 不是动作做错，而是动作根本没发生，常常和记忆、注意脱落有关。
+    - `mistake` 看起来也可能很流畅，因为执行阶段并没有乱，错的是更前面的规则理解、知识使用或心智模型。
+    - `violation` 带有意图，所以它和前三类无意失误不一样；但分析到这里也还不能停止。
+
+!!! example "四个迷你案例"
+    - `slip`：护士本来想按“静音报警”，手却碰到了旁边的“停止输注”。
+    - `lapse`：值班人员知道要做双人核对，但处理完前一个任务后直接进入下一步，把核对动作漏掉了。
+    - `mistake`：医生根据错误理解把病情判断成另一种情况，后面的动作都做得很一致，但整个处理建立在错误判断上。
+    - `violation`：操作员知道要扫码确认，却因为高峰期赶进度直接跳过。
+
+## PCA 模型为什么重要
+
+上一节解决的是“错误属于哪一类”，这一节继续往下追：同样一个表面错误，到底是在哪个环节开始出问题的。
+
+`PCA` 指的是 `Perception - Cognition - Action`，也就是：
+
+- `Perception`：有没有看到、听到、感觉到关键信息。
+- `Cognition`：有没有理解对、记住、判断对。
+- `Action`：最后的动作有没有正确做出来。
+
+这一步重要，是因为“表面上一样”的错误，根因可能完全不同。
+
+| 表面错误 | 实际可能错在什么地方 | 更合理的改进方向 |
+| --- | --- | --- |
+| 不小心按错按钮 | `Action`：知道按钮在哪里，但动作误触了 | 改按钮布局、间距、护罩、反馈 |
+| 没看见隐藏按钮 | `Perception`：根本没看见或没感觉到按钮存在 | 改可见性、显著性、对比度 |
+| 提前松开注射器推杆 | `Cognition`：把操作要求记错或理解错了 | 改说明、时间反馈、任务引导 |
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/03-he-frameworks-2/slide-14-image2.png" alt="这张图要你看懂的是：同一个表面错误，可能来自感知、认知、动作执行的不同环节，所以 root cause 和 mitigation 也会不同。" loading="lazy">
+  <figcaption>这张图要你看懂的是：同一个表面错误，可能来自感知、认知、动作执行的不同环节，所以 root cause 和 mitigation 也会不同。</figcaption>
+</figure>
+
+!!! note "这一节最重要的结论"
+    PCA 的价值不在于多记一个缩写，而在于提醒你：不要只看最后那一下动作，要看错误是从哪一段开始长出来的。
+
+!!! example "案例：同样是“提前结束注射”，根因可能完全不同"
+    - 如果是手指无意打滑，那更接近 `Action` 问题。
+    - 如果是使用者误以为推杆已经到底，那更接近 `Perception` 问题。
+    - 如果是使用者把“按压 10 秒”记成了“按压 6 秒”，那更接近 `Cognition` 问题。
+
+## 这套框架怎么用
+
+真正分析一个错误时，可以按下面这条线走：
+
+```mermaid
+flowchart TD
+    A[看到一次错误结果] --> B{是否故意偏离规则?}
+    B -- 是 --> C[先按 violation 看]
+    B -- 否 --> D{计划本身是否正确?}
+    D -- 是 --> E[再区分 slip 或 lapse]
+    D -- 否 --> F[按 mistake 看]
+    E --> G[继续追动作、记忆、界面、负荷]
+    F --> H[继续追理解、规则、信息、心智模型]
+    C --> I[继续追流程压力、组织环境、系统约束]
+    G --> J[找到 root cause]
+    H --> J
+    I --> J
+    J --> K[对应设计 mitigation]
+```
+
+这个流程最重要的意义是：不要一上来就说“加强培训”。先分类型，再追根因，最后再决定是该改界面、改流程、改提示、改说明，还是改组织安排。
+
+## 本章总结
+
+!!! tip "复习时重点记这几条"
+    - 人为失误讨论的不是“谁烂”，而是错误为什么发生。
+    - 只盯着出错的人，很容易漏掉真正重要的系统原因。
+    - `slip`、`lapse`、`mistake`、`violation` 必须分开看，因为后面的改法不同。
+    - `old view` 容易把问题收缩成 blame，`new view` 更关注系统怎样制造或放大风险。
+    - PCA 模型提醒我们：同一个表面错误，根因可能在感知、认知或动作的不同环节。
+    - 给错误分类的终点不是分类本身，而是找到更有效的 root cause 和 mitigation。
+
 
 ## 资料范围与相关主题
 

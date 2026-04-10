@@ -4,11 +4,11 @@ This section focuses on attention, fatigue, stress, decision making, situation a
 
 ## Topic Pages
 
-- [Attention and Monitoring](attention_and_monitoring.en.md): This page organizes attention resources, monitoring tasks, automation complacency, and vigilance decrement.
-- [Fatigue and Sleep](fatigue_and_sleep.en.md): This page focuses on fatigue, circadian rhythm, and sleep loss as physiological constraints on performance.
-- [Stress, Decision Making, and Distraction](stress_and_decision_making.en.md): This page combines stress, decision making, distraction, and cognitive bias to explain why operators drift toward suboptimal choices under load.
-- [Situation Awareness](situation_awareness.en.md): This page covers the perception, comprehension, and projection layers of situation awareness and links current information to future-state prediction.
-- [Spatial Disorientation](spatial_disorientation.en.md): This page summarizes the physiology, perceptual traps, and operational risk of spatial disorientation when sensory systems conflict with instruments.
+- [Attention and Monitoring](attention_and_monitoring.en.md): The most important conclusion of this page is that sustained monitoring is not an easy task; it is one of the task types most vulnerable to performance decay.
+- [Fatigue and Sleep](fatigue_and_sleep.en.md): This page asks you to see fatigue not as a vague feeling of tiredness, but as a physiological constraint that systematically alters reaction, judgment, memory, and monitoring.
+- [Stress, Decision Making, and Distraction](stress_and_decision_making.en.md): This page is not simply about people becoming worse under pressure. It examines how stress narrows attention and strategy space, making suboptimal judgment more likely.
+- [Situation Awareness](situation_awareness.en.md): This page breaks “seeing information” into three layers: perception, comprehension, and projection. The goal is to show that visible information and understandable situation are not the same thing.
+- [Spatial Disorientation](spatial_disorientation.en.md): The central reminder of this page is that human sensory systems are not always reliable in flight; felt orientation and actual orientation can diverge completely.
 
 ## Covered Source Files
 

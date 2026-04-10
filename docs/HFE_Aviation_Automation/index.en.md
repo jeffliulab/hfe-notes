@@ -4,11 +4,11 @@ This section covers aviation-flavored automation, HMI, CRM, displays and alerts,
 
 ## Topic Pages
 
-- [Introduction to Aviation and Automation](aviation_automation_intro.en.md): This page establishes the high-level frame of automation benefits, automation traps, and the evolving role of the pilot.
-- [Crew Resource Management](crew_resource_management.en.md): This page summarizes communication, coordination, leadership, monitoring, and resource integration in CRM, extending HFE from individual to team performance.
-- [Displays and Alerts](displays_and_alerts.en.md): This page focuses on display systems and alert design, organizing the tradeoffs among salience, prioritization, false alarms, and workload.
-- [Checklists and Procedures](checklists_and_procedures.en.md): This page explains the design logic of checklists and procedures and how standardization reduces memory burden while supporting team coordination.
-- [Automated Vehicles](automated_vehicles.en.md): This page extends the automation discussion to automated vehicles, focusing on monitoring, handoff, trust calibration, and responsibility allocation.
+- [Introduction to Aviation and Automation](aviation_automation_intro.en.md): The introduction to aviation and automation starts by correcting a common intuition: automation does not remove the human; it changes the human role toward monitoring, mode understanding, takeover, and exception management.
+- [Crew Resource Management](crew_resource_management.en.md): This CRM page is not simply about better interpersonal harmony. It is about how teams turn communication, authority, monitoring, and cross-checking into real safety barriers.
+- [Displays and Alerts](displays_and_alerts.en.md): The central tension in displays and alerts is that critical information must be salient without drowning the operator in noise.
+- [Checklists and Procedures](checklists_and_procedures.en.md): This page is not about turning people into mechanical followers. It is about externalizing vulnerable steps so they become reliable shared structures for work and coordination.
+- [Automated Vehicles](automated_vehicles.en.md): The automated-vehicles page does not merely repeat aviation automation. It examines how risk is reorganized when takeover, trust calibration, and responsibility allocation enter the driving context.
 
 ## Covered Source Files
 

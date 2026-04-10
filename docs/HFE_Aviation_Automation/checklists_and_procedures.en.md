@@ -1,67 +1,56 @@
 # Checklists and Procedures
 
-This page explains the design logic of checklists and procedures and how standardization reduces memory burden while supporting team coordination.
+This page is not about turning people into mechanical followers. It is about externalizing vulnerable steps so they become reliable shared structures for work and coordination.
 
-## Lecture Flow in the Source Material
+!!! note "Core Question"
+    How do checklists and procedures reduce memory burden and support teamwork without drifting away from real work?
 
-This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+## Key Takeaways
 
-### Checklists and Procedures 3-23-26.pdf
+- A checklist is a cognitive scaffold, not just a reminder.
+- A procedure is an organizational commitment about how normal work should be performed.
+- The value of proceduralization is standardization, checkability, and shared coordination rather than rigidity.
+- If procedure drifts away from work as done, frontline operators begin routing around it.
 
-1. PILOT TRAINING, PROCEDURES, AND CHECKLISTS
-2. MITIGATIONS
-3. TOPICS Pilot training
-4. PILOT TRAINING – CONCEPTS AND VOCABULARY
-5. AQP TRAINING
-6. ON THE JOB PILOT TRAINING
-7. ESTABLISHING AND MAINTAINING CULTURE NORMS Philosophy, Policies, Procedures ➔ Practice
-8. PROCEDURES As opposed to individual “pilot technique”
+## What This Method Is For
 
+!!! tip "Start with the Purpose"
+    Remember the role of the method this way: a good checklist does not think for you; it stabilizes the most fragile and omission-prone parts of the work.
 
-## Reading Logic
+## What Problem This Method Solves
 
-Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+When tasks are complex, collaborative, sequentially sensitive, and memory-intensive, individual consistency is not enough. Checklists and procedures externalize those fragile points into visible, readable, confirmable, and shareable structures.
 
-1. Why proceduralization improves reliability
-2. How checklist design balances speed and accuracy
-3. How exceptions avoid rote compliance
+## What Good Procedure Design Actually Does
 
-## Core Idea
+Good checklist and procedure design:
 
-Checklists and procedures do not exist to make people mechanical. They externalize vulnerable steps so the work becomes shared, checkable, and repeatable.
+- puts critical steps in the most usable order
+- makes checkpoints readable and answerable
+- defines escalation paths for abnormal situations
+- clarifies when each team member should speak, listen, and cross-check
 
-## Core Logic
+!!! example "Worked Example: Why a Checklist Can Reduce Cognitive Burden"
+    In high-sequence tasks such as takeoff, medication administration, or equipment switching, the team does not need to retain every step purely in memory. A good checklist externalizes the critical steps so limited attention can stay available for anomaly monitoring and cross-checking.
 
-- a checklist is a cognitive scaffold, not just a memory aid
-- a procedure is an organizational commitment about how normal work should be performed
-- shared procedural language reduces coordination cost and improves handoff and review
+## Why It Cannot Drift Away from Real Work
 
-## What Good Design Does
+If a procedure reflects only work as imagined rather than work as done, frontline staff will eventually experience it as too slow, too rigid, or too detached from task rhythm and begin routing around it. At that point the procedure still exists, but its barrier function has weakened.
 
-Good procedures put critical steps in usable order, make checkpoints visible and confirmable, and provide escalation paths for abnormal situations.
+!!! note "One-Sentence Conclusion"
+    The real challenge of proceduralization is not whether a checklist exists, but whether it genuinely supports the real task.
 
-## Common Difficulty
+!!! warning "The Most Common Misunderstanding"
+    Proceduralization does not mean the more rigid the better. Overly rigid procedures often push real work toward workaround behavior and temporary patching.
 
-Standardization helps, but only if it fits real work. When procedures diverge from work as done, operators begin to route around them.
+## Chapter Summary
 
-## Slide Figures and Page Previews
+!!! tip "What To Carry Forward"
+    - A checklist is a cognitive scaffold and a procedure is an organizational commitment.
+    - Their value lies in standardization, checkability, and coordination support.
+    - Strong procedures must fit real work rather than only ideal work.
+    - The existence of a procedure does not guarantee that the barrier is still effective.
 
-These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/checklists-and-procedures-3-23-26/page-01.png" alt="Checklists and Procedures 3-23-26.pdf · page 1 preview" loading="lazy">
-    <figcaption>Checklists and Procedures 3-23-26.pdf · page 1 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/checklists-and-procedures-3-23-26/page-02.png" alt="Checklists and Procedures 3-23-26.pdf · page 2 preview" loading="lazy">
-    <figcaption>Checklists and Procedures 3-23-26.pdf · page 2 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/checklists-and-procedures-3-23-26/page-15.png" alt="Checklists and Procedures 3-23-26.pdf · page 15 preview" loading="lazy">
-    <figcaption>Checklists and Procedures 3-23-26.pdf · page 15 preview</figcaption>
-  </figure>
-</div>
 
 ## Source Scope and Related Topics
 

@@ -1,143 +1,58 @@
 # Known Problem Analysis 与事件树
 
-本页把 known problem analysis 与 event tree 思维放在一起，展示如何从已知问题、先前经验和事件演化来补强风险分析。
+这一页把两种补盲方法放在一起：Known Problem Analysis 是向后看历史问题，Event Tree 是向前看起始事件的后果分支。
 
-## 课件里的讲解顺序
+!!! note "本页主问题"
+    当主流程分析已经做完之后，团队怎样继续问：我们还漏掉了哪些已知问题和后果分支？
 
-这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+## 本章重点
 
-### 11 Known Problem Analysis.pptx
+- Known Problem Analysis 用历史问题提醒团队别把旧坑重新挖一遍。
+- Event Tree 用分支展开提醒团队别低估一个起始事件后面的后果路径。
+- 两者共同作用，是把视角从主路径扩展到边缘路径和遗漏风险。
+- 这不是额外文书，而是补盲机制。
 
-1. Erin Davis, MS, CHFP Known Problems Analysis (KPA)
-2. Example: Developing a new blood glucose meter
-3. Learn about use problems with existing devices
-4. Select sources Collect and analyze data
-5. Public regulatory databases FDA’s MAUDE database
-6. Step 2: Collect and analyze data
-7. Concise description Source
-8. Ensure use-related risk analysis contains all findings
+## 先记住方法定位
 
-### Event Tree Supplemental.pptx
+!!! tip "先记住这个方法的定位"
+    先记住这个方法的定位：主流程分析负责把主路径看清，Known Problem 和 Event Tree 负责提醒你别忘了系统的边角和分支。
 
-1. Sami Durrani PhD Event Tree Supplemental
-2. Think of events in the casual chain as items that happen or don’t happen
-3. A Simple (and Ghoulish) Event Tree Example Perceive vampire
-4. Probability of fault (in this case the “event”) Example data:
-5. A FAULT Tree Example Failure (F)
-6. Can calculate the the P(F) of each chain
-7. Multiple casual chains that can lead to failure P(FA) = 0.06
+## 这两个方法分别补什么
 
+`Known Problem Analysis` 补的是团队“其实早就知道”的东西，例如历史投诉、事故、CAPA、文献或竞品问题。
 
-## 这页的逻辑顺序
+`Event Tree` 补的是起始事件之后的后果展开：如果这一层没拦住，会往哪些分支继续走？哪些节点是真正的防线？
 
-建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+!!! warning "最容易做错的地方"
+    最容易出现的误解，是把 known problem 当作旧问题清单，把 event tree 当作画图练习。它们真正的作用，是改变团队对遗漏风险的敏感度。
 
-1. 已知问题为何值得单独建模
-2. 事件树如何展开事件后果
-3. 补充分析如何帮助发现遗漏风险
+## 操作步骤怎么走
 
-## 核心概念
+可以把它们分开记：
 
-这一页把两种补盲方法放在一起：Known Problem Analysis 让你从历史问题反推今天还可能漏掉什么；Event Tree 则让你从一个起点事件往后展开，检查后果路径是否被低估。
+1. Known Problem：先扫历史问题，再判断哪些仍适用于当前设计。
+2. Event Tree：先定起始事件，再往后画分支，看后果、拦截点和严重程度如何变化。
 
-## Known Problem Analysis 在补什么
+两者都不是凭空发散，而是为了逼团队回到证据和可预见路径。
 
-- 既往投诉、事故、CAPA、文献、竞品问题
-- 团队已经知道但还没系统写进风险文件的问题
-- 新设计可能重新引入的老问题
+!!! example "worked example：主路径没问题，边缘路径仍然可能出事"
+    例如某设备的正常使用流程已经分析清楚，但历史投诉显示用户在清洁后重新组装时经常装反部件。主流程分析可能没把这个低频分支放进去；Known Problem Analysis 会把它拉回来，而 Event Tree 会进一步展开“装反之后如果未被发现，会走向什么后果”。
 
-## Event Tree 在补什么
+## 和主流程分析是什么关系
 
-- 某个起始事件发生之后，后续会不会被拦住
-- 如果没拦住，会沿哪些分支走向不同严重程度
-- 中间哪些防护层是真正关键节点
+主流程分析最擅长看正常任务流里的风险；这两个方法最擅长看主路径之外的已知隐患和分支后果。所以它们不是替代关系，而是补位关系。
 
-## 为什么这页重要
+!!! note "一句话结论"
+    这页的真正价值，是逼团队从“我们已经分析完了”退一步，重新问“我们还可能漏了什么”。
 
-只做主流程分析，很容易漏掉低频但高后果的情况。Known Problem Analysis 和 Event Tree 的共同作用，就是逼你从“主路径之外”再看一次系统。
+## 本章总结
 
-## 难点讲解
+!!! tip "复习时重点记这几条"
+    - Known Problem 看历史问题，Event Tree 看后果分支。
+    - 两者共同作用，是补盲而不是替代主流程分析。
+    - 它们都要求团队回到证据和可预见路径。
+    - 真正目标是发现“我们还漏了什么”。
 
-不要把 known problem 当成“旧项目遗留列表”，也不要把 event tree 当成只在核工业里才用的大工具。课程想强调的是：任何高风险系统都需要一个机制，提醒团队去看“我们还没想到的分支”。
-
-## 课件图示与页面预览
-
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-01-image1.png" alt="11 Known Problem Analysis.pptx · 第 1 张幻灯片" loading="lazy">
-    <figcaption>11 Known Problem Analysis.pptx · 第 1 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-02-image2.png" alt="11 Known Problem Analysis.pptx · 第 2 张幻灯片" loading="lazy">
-    <figcaption>11 Known Problem Analysis.pptx · 第 2 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-03-image3.jpeg" alt="11 Known Problem Analysis.pptx · 第 3 张幻灯片" loading="lazy">
-    <figcaption>11 Known Problem Analysis.pptx · 第 3 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-03-image4.jpeg" alt="11 Known Problem Analysis.pptx · 第 3 张幻灯片" loading="lazy">
-    <figcaption>11 Known Problem Analysis.pptx · 第 3 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-03-image2.png" alt="11 Known Problem Analysis.pptx · 第 3 张幻灯片" loading="lazy">
-    <figcaption>11 Known Problem Analysis.pptx · 第 3 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-03-image5.jpeg" alt="11 Known Problem Analysis.pptx · 第 3 张幻灯片" loading="lazy">
-    <figcaption>11 Known Problem Analysis.pptx · 第 3 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-03-image6.jpeg" alt="11 Known Problem Analysis.pptx · 第 3 张幻灯片" loading="lazy">
-    <figcaption>11 Known Problem Analysis.pptx · 第 3 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-03-image7.png" alt="11 Known Problem Analysis.pptx · 第 3 张幻灯片" loading="lazy">
-    <figcaption>11 Known Problem Analysis.pptx · 第 3 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-03-image8.png" alt="11 Known Problem Analysis.pptx · 第 3 张幻灯片" loading="lazy">
-    <figcaption>11 Known Problem Analysis.pptx · 第 3 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-03-image9.png" alt="11 Known Problem Analysis.pptx · 第 3 张幻灯片" loading="lazy">
-    <figcaption>11 Known Problem Analysis.pptx · 第 3 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-04-image11.png" alt="11 Known Problem Analysis.pptx · 第 4 张幻灯片" loading="lazy">
-    <figcaption>11 Known Problem Analysis.pptx · 第 4 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-04-image13.png" alt="11 Known Problem Analysis.pptx · 第 4 张幻灯片" loading="lazy">
-    <figcaption>11 Known Problem Analysis.pptx · 第 4 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-04-image15.png" alt="11 Known Problem Analysis.pptx · 第 4 张幻灯片" loading="lazy">
-    <figcaption>11 Known Problem Analysis.pptx · 第 4 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-06-image17.png" alt="11 Known Problem Analysis.pptx · 第 6 张幻灯片" loading="lazy">
-    <figcaption>11 Known Problem Analysis.pptx · 第 6 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-06-image18.png" alt="11 Known Problem Analysis.pptx · 第 6 张幻灯片" loading="lazy">
-    <figcaption>11 Known Problem Analysis.pptx · 第 6 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-08-image19.jpeg" alt="11 Known Problem Analysis.pptx · 第 8 张幻灯片" loading="lazy">
-    <figcaption>11 Known Problem Analysis.pptx · 第 8 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/11-known-problem-analysis/slide-08-image20.png" alt="11 Known Problem Analysis.pptx · 第 8 张幻灯片" loading="lazy">
-    <figcaption>11 Known Problem Analysis.pptx · 第 8 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/event-tree-supplemental/slide-01-image1.png" alt="Event Tree Supplemental.pptx · 第 1 张幻灯片" loading="lazy">
-    <figcaption>Event Tree Supplemental.pptx · 第 1 张幻灯片</figcaption>
-  </figure>
-</div>
 
 ## 资料范围与相关主题
 

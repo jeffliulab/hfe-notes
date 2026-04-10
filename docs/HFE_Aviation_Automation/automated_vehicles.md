@@ -1,75 +1,51 @@
 # 自动化车辆
 
-本页将航空自动化的经验延展到 automated vehicles，关注监控、handoff、trust calibration 与责任分配。
+自动化车辆这一页不是在重复航空自动化，而是在看一个迁移问题：当接管、信任校准和责任分配进入驾驶场景后，风险会怎样重组。
 
-## 课件里的讲解顺序
+!!! note "本页主问题"
+    自动化车辆最危险的地方，为什么往往不是系统在正常巡航时做得好不好，而是人和系统在接管边界上怎样交接责任？
 
-这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+## 这个案例最重要的结论
 
-### Automated Vehicles 3-11-26-2.pdf
+- 自动化车辆的核心难题是 handoff，而不是稳定巡航。
+- trust calibration 比“让用户更相信系统”更重要，它要求用户既不盲信也不过度弃用。
+- 航空自动化里的 mode confusion、monitoring decay 和 automation surprise 在这里高度可迁移。
+- 责任边界如果写不清，接管失败就会变成设计与使用共同制造的灰区。
 
-1. AUTOMATED VEHICLES Dr. Divya C. Chandra
-2. PLAN Driving tasks and vocabulary
-3. DRIVING Tasks and Vocabulary
-4. WHAT DOES IT MEAN TO “DRIVE”? DDT – Dynamic Driving Task
-5. AUTOMATED-SYSTEMS FOR DRIVING Earlier Systems
-6. CONFUSING TERMS (A FEW EXAMPLES) Similar names but different concepts
-7. SAE LEVELS OF AUTOMATION SAE International
-8. TRANSLATION 0. No automation. Driver is totally involved.
+## 先记住这个案例的一句话判断
 
+!!! tip "先记住这个案例的一句话判断"
+    先记住这个案例的一句话判断：自动化车辆最危险的时刻，往往是系统要求“你现在马上接管”，而人却已经不在同一个情境里。
 
-## 这页的逻辑顺序
+## 背景与 stakes
 
-建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+驾驶自动化和航空自动化的共同点，是都把人推向“平时低参与、关键时刻高责任”的角色。不同点在于，道路环境变化更快、用户更杂、边界更容易被误解，所以接管窗口通常更脆弱。
 
-1. 自动驾驶中的接管问题
-2. trust calibration 如何影响依赖与干预
-3. 航空自动化经验能迁移哪些教训
+## 事件链真正容易断在哪里
 
-## 核心概念
+自动化车辆的问题通常不是“系统能不能自己开一会儿”，而是：用户长时间不需要主动控制后，是否还保持了足够的 situation awareness、模式理解和动作准备，一旦 ODD 边界到来能否及时接回控制。
 
-自动化车辆这一页不是在重复航空自动化，而是在问一个迁移问题：当自动化从驾驶辅助走向更高等级时，人类驾驶员会不会被放进一个“平时太闲、出事时又来不及”的危险位置。
+!!! example "案例：handoff 为什么会变成高风险窗口"
+    用户在自动驾驶模式下长时间处于被动监控状态，系统突然发出接管请求时，用户需要在很短时间里重新建立环境理解、识别系统边界并做出动作。这条链只要其中一环晚了半拍，风险就会迅速放大。
 
-## 核心逻辑
+## 这个案例教会我们的系统层问题
 
-- 自动化车辆最难的不是正常巡航，而是 `handoff`。
-- 系统让人退出主任务后，再要求人突然接管，会遇到监控衰退、情境意识不足和反应迟滞。
-- 因此，信任校准比“让用户更相信系统”更重要，关键是让用户既不盲信，也不过度不用。
+如果系统默认人会始终保持适度警觉，但设计本身又长期让人退出主任务，那么设计假设就自相矛盾了。自动化车辆因此成为一个非常典型的 HFE 问题：界面、告警、模式说明、handoff 时机和责任分配必须一起设计。
 
-## 这页和航空自动化的连接
+!!! note "一句话结论"
+    自动化车辆最难的不是让系统多做一点，而是让人和系统在接管边界上真正对得上。
 
-课程把 automated vehicles 放进来，是因为很多问题高度相似：
+!!! warning "最容易误解的地方"
+    不要把问题简化成“驾驶员没专心”。如果系统长期设计成让人不需要专心，最后又要求瞬时高质量接管，那本身就是设计假设的问题。
 
-- automation surprise
-- mode confusion
-- 低参与度监控
-- 接管窗口太短
-- 责任划分模糊
+## 这个案例最后要带走什么
 
-也就是说，技术平台不同，但人因矛盾非常接近。
+!!! tip "复习时重点记这几条"
+    - 自动化车辆的核心难点是 handoff。
+    - trust calibration 比单纯提升信任更重要。
+    - 航空自动化教训会大量迁移到这里。
+    - 接管边界的责任分配必须被设计清楚。
 
-## 难点讲解
-
-自动化车辆领域很容易把问题说成“驾驶员不够专注”。但如果系统设计本身长期让人不需要主动控制，那么在关键时刻要求人立即恢复高质量控制，本身就可能是不现实的设计假设。
-
-## 课件图示与页面预览
-
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/automated-vehicles-3-11-26-2/page-01.png" alt="Automated Vehicles 3-11-26-2.pdf · 第 1 页预览" loading="lazy">
-    <figcaption>Automated Vehicles 3-11-26-2.pdf · 第 1 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/automated-vehicles-3-11-26-2/page-02.png" alt="Automated Vehicles 3-11-26-2.pdf · 第 2 页预览" loading="lazy">
-    <figcaption>Automated Vehicles 3-11-26-2.pdf · 第 2 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/automated-vehicles-3-11-26-2/page-08.png" alt="Automated Vehicles 3-11-26-2.pdf · 第 8 页预览" loading="lazy">
-    <figcaption>Automated Vehicles 3-11-26-2.pdf · 第 8 页预览</figcaption>
-  </figure>
-</div>
 
 ## 资料范围与相关主题
 

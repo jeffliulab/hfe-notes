@@ -1,131 +1,62 @@
 # URRA in Medical Devices
 
-This page focuses on URRA within medical devices, connecting use scenarios, critical tasks, harm pathways, and controls in a regulated context.
+This page places URRA inside the medical-device regulatory context, where use-related risk is tied more explicitly to patient harm, critical tasks, and traceable controls.
 
-## Lecture Flow in the Source Material
+!!! note "Core Question"
+    Inside medical devices, what additional judgment demands does URRA impose beyond a generic task-risk analysis?
 
-This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+## Key Takeaways
 
-### 06 URRA in Medical Devices.pptx
+- Medical-device URRA places stronger emphasis on foreseeable use scenarios, critical tasks, and patient-harm pathways.
+- Controls cannot stop at training; interface, labeling, IFU, and physical design changes take priority.
+- The regulatory context requires the risk chain to be traceable, verifiable, and reviewable.
+- This page bridges ISO 14971 and concrete use-error work.
 
-1. Sami Durrani PhD and Eric Bergman PhD Use Related Risk in Medical Devices
-2. Examples of medical devices
-3. Assigned reading: Medical device definition
-4. Medical device “user interface” includes… The IFU (instructions for use)
-5. Business goal Regulatory Requirement
-6. Use Error, not User Error
-7. Key Guidance & Standards
-8. Key activities – HF med device process
+## What This Method Is For
 
+!!! tip "Start with the Purpose"
+    Remember the purpose of medical-device URRA this way: it is not a generic risk table; it must be written clearly enough to show how patients may be harmed and how design should respond.
 
-## Reading Logic
+## What Problem This Method Solves
 
-Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+Medical-device URRA solves the problem of turning use risk into evidence that is acceptable in a regulated setting. It requires the team to write use scenario, critical task, use error, hazardous situation, harm, and control as one complete chain.
 
-1. How medical-device URRA differs from generic URRA
-2. How critical tasks are defined
-3. How controls return to interface, labeling, and IFU design
+## What the Inputs and Outputs Are
 
-## Core Idea
+Typical inputs include task analysis, user groups, use environment, device design, labeling and IFU, known issues, and harm assessment.
 
-URRA in medical devices is stricter than a generic use-risk exercise because use conditions, critical tasks, and harm pathways directly affect patient safety.
+The output should make it clear:
 
-## Three Key Connections
+- which steps are critical tasks
+- which errors can lead directly to patient harm
+- which controls must appear in design
+- which points must enter validation
 
-- task analysis into critical task identification
-- use error into hazardous situation and harm
-- harm back into interface, labeling, IFU, training, and physical design controls
+## How the Method Proceeds
 
-## Common Difficulty
+The logic is similar to generic URRA but held to a stricter standard: begin with the use scenario, identify the critical task, define the concrete use error, push the chain into hazardous situation, harm, and control, and then feed the row back into validation planning.
 
-Teams often overuse “training” as the main control. The course pushes a stronger principle: if the interface or device can be redesigned, risk should not be left mainly to attention and training.
+!!! note "One-Sentence Conclusion"
+    The key move in medical-device URRA is not simply stating that risk exists, but specifying how the patient may be harmed and how the system intends to intercept that path.
 
-## Slide Figures and Page Previews
+!!! warning "The Most Common Failure Mode"
+    The weakest recurring control is to write everything as “better training.” If interface, feedback, labeling, or physical form can be redesigned, the primary risk should not be left to training and attention.
 
-These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
+!!! example "Worked Example: Why a Critical Task Must Be Marked Explicitly"
+    Suppose the syringe step is “set dose.” If failure there can lead directly to patient harm, that step must be marked as a critical task. Only then will the design review and validation plan allocate the higher level of control and testing attention it deserves.
 
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-01-image1.png" alt="06 URRA in Medical Devices.pptx · slide 1" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · slide 1</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-02-image2.png" alt="06 URRA in Medical Devices.pptx · slide 2" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · slide 2</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-02-image3.jpeg" alt="06 URRA in Medical Devices.pptx · slide 2" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · slide 2</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-02-image4.jpeg" alt="06 URRA in Medical Devices.pptx · slide 2" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · slide 2</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-02-image5.png" alt="06 URRA in Medical Devices.pptx · slide 2" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · slide 2</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-02-image6.png" alt="06 URRA in Medical Devices.pptx · slide 2" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · slide 2</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-02-image7.png" alt="06 URRA in Medical Devices.pptx · slide 2" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · slide 2</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-03-image8.png" alt="06 URRA in Medical Devices.pptx · slide 3" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · slide 3</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-04-image9.png" alt="06 URRA in Medical Devices.pptx · slide 4" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · slide 4</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-04-image11.png" alt="06 URRA in Medical Devices.pptx · slide 4" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · slide 4</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-04-image13.png" alt="06 URRA in Medical Devices.pptx · slide 4" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · slide 4</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-04-image15.png" alt="06 URRA in Medical Devices.pptx · slide 4" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · slide 4</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-06-image17.jpeg" alt="06 URRA in Medical Devices.pptx · slide 6" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · slide 6</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-07-image18.png" alt="06 URRA in Medical Devices.pptx · slide 7" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · slide 7</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-07-image19.png" alt="06 URRA in Medical Devices.pptx · slide 7" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · slide 7</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-09-image30.png" alt="06 URRA in Medical Devices.pptx · slide 9" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · slide 9</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-18-image31.jpeg" alt="06 URRA in Medical Devices.pptx · slide 18" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · slide 18</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-19-image2.png" alt="06 URRA in Medical Devices.pptx · slide 19" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · slide 19</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-23-image32.png" alt="06 URRA in Medical Devices.pptx · slide 23" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · slide 23</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/06-urra-in-medical-devices/slide-24-image32.png" alt="06 URRA in Medical Devices.pptx · slide 24" loading="lazy">
-    <figcaption>06 URRA in Medical Devices.pptx · slide 24</figcaption>
-  </figure>
-</div>
+## How It Connects to the Neighboring Pages
+
+This page inherits the standardized language of ISO 14971 and feeds forward into use-error analysis and the EpiPen workbook. It is the hub page inside the medical-device section.
+
+## Chapter Summary
+
+!!! tip "What To Carry Forward"
+    - Medical-device URRA places stronger emphasis on critical tasks and patient harm.
+    - Its inputs include task flow, user context, design, and labeling information.
+    - Its outputs must support both controls and validation planning.
+    - Training cannot become the default primary control.
+
 
 ## Source Scope and Related Topics
 

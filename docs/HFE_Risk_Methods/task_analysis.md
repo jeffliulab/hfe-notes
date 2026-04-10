@@ -1,92 +1,68 @@
 # 任务分析
 
-本页围绕 task analysis 的拆解逻辑，整理如何把使用流程变成可观察、可评估、可映射风险的任务与子任务结构。
+任务分析这一页的作用，是把一段连续使用过程拆成可观察、可讨论、可映射风险的步骤链。
 
-## 课件里的讲解顺序
+!!! note "本页主问题"
+    如果连任务本身都没拆清楚，我们又怎么知道错误会发生在哪一步、critical task 在哪里、控制措施该落到什么环节？
 
-这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+## 本章重点
 
-### 08 Task Analysis.pptx
+- 任务分析的目标不是复述说明书，而是把真实任务需求拆成步骤、判断和信息需求。
+- 它是后续 critical task、use error 和 URRA 的前提。
+- 好的 task analysis 既看理想流程，也看真实工作中的偏差和替代路径。
+- 任务拆得越具体，后续风险分析越能落地。
 
-1. Sami Durrani PhD and Eric Bergman PhD Task Analysis
-2. There are many different forms of task analysis Hierarchical Task Analysis (HTA)
-3. Identify task Decompose task into sub-tasks (if needed)
-4. Simple Example: Peanut Butter & Jelly
-5. Task 1: Gather supplies PB&J
-6. Task 3: Spread peanut butter on slice 1 Task 4: Spread jam on slice 2
-7. Let’s do a quick task analysis: Autoinjector
-8. Autoinjector analysis continued…
+## 先记住方法定位
 
+!!! tip "先记住这个方法的定位"
+    先记住这个方法的定位：如果任务流没有被拆出来，后面的风险分析几乎都会漂在空中。
 
-## 这页的逻辑顺序
+## 这个方法解决什么问题
 
-建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+task analysis 把“用户在用产品”这件看起来连续的事，拆成一个个可分析的 use step、subtask、信息需求和操作要求。这样做的目的，是让后续所有讨论都能回到具体环节，而不是停留在抽象判断上。
 
-1. 任务拆解为什么是风险分析前提
-2. subtask 与 use step 如何定义
-3. 如何从任务流转向 use error 与 mitigation
+## 输入与输出是什么
 
-## 核心概念
+输入通常包括：目标任务、用户特征、使用环境、设备说明、现有流程和观察到的真实使用方式。
 
-任务分析的价值，在于把“用户在用产品”这件看起来连续的事情，拆成可以观察、可以讨论、可以评估风险的步骤链。
+输出通常包括：
 
-## 做 task analysis 时到底在拆什么
+- 明确的任务步骤
+- 每一步的信息、判断和动作要求
+- 关键失败点
+- 能进入 URRA 或 validation 的结构化任务表
 
-- 用户想达成的目标
-- 为了达成目标必须经过的步骤
-- 每一步需要看到什么、判断什么、操作什么
-- 哪一步如果失败，会直接影响安全、有效性或后续恢复
+## 操作步骤怎么走
 
-## 为什么它是后续风险分析的地基
+可以按这条线做：
 
-如果你连任务都没拆清楚，后面几乎所有问题都会变模糊：
+1. 先明确用户目标和起止条件。
+2. 把任务拆成能被观察和讨论的 use step。
+3. 为每一步补上需要看见什么、判断什么、操作什么。
+4. 标出一旦失败就会影响安全或疗效的关键步骤。
+5. 再把这些关键步骤带入 use error 和 risk analysis。
 
-- use error 不知道是在哪一步发生
-- critical task 无法界定
-- risk control 不知道该改界面、标签、流程还是培训
+!!! warning "最容易做错的地方"
+    最常见的问题，是把说明书顺序原样抄下来，却没有问用户在真实环境里会不会跳步、补救、回退或走替代路径。
 
-## 难点讲解
+!!! example "worked example：注射器任务为什么不能只写“给药”"
+    如果表里只写“给药”，后面就看不见装配、剂量设定、确认、按压保持和废弃处理这些不同失败点。把任务拆开后，critical task 和风险控制才有地方落脚。
 
-任务分析不是把说明书抄一遍。真正有用的 task analysis 会把“系统要求用户做什么”和“用户在现实里实际怎么做”都放进去。也就是说，你要同时看理想流程和真实流程之间的偏差。
+## 和前后方法是什么关系
 
-## 课件图示与页面预览
+前面 human error 页告诉你怎样读错误类型，task analysis 则告诉你错误会落在哪个任务节点上。后面的 URRA、critical task 和 workbook 页面，都会直接把这里拆出来的任务流拿去继续写。
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
+!!! note "一句话结论"
+    task analysis 的价值，不在于“列步骤”，而在于把风险分析绑到真实工作流上。
 
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-01-image1.png" alt="08 Task Analysis.pptx · 第 1 张幻灯片" loading="lazy">
-    <figcaption>08 Task Analysis.pptx · 第 1 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-04-image2.jpeg" alt="08 Task Analysis.pptx · 第 4 张幻灯片" loading="lazy">
-    <figcaption>08 Task Analysis.pptx · 第 4 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-05-image3.jpeg" alt="08 Task Analysis.pptx · 第 5 张幻灯片" loading="lazy">
-    <figcaption>08 Task Analysis.pptx · 第 5 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-05-image4.jpeg" alt="08 Task Analysis.pptx · 第 5 张幻灯片" loading="lazy">
-    <figcaption>08 Task Analysis.pptx · 第 5 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-05-image5.jpeg" alt="08 Task Analysis.pptx · 第 5 张幻灯片" loading="lazy">
-    <figcaption>08 Task Analysis.pptx · 第 5 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-05-image6.jpeg" alt="08 Task Analysis.pptx · 第 5 张幻灯片" loading="lazy">
-    <figcaption>08 Task Analysis.pptx · 第 5 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-05-image7.jpeg" alt="08 Task Analysis.pptx · 第 5 张幻灯片" loading="lazy">
-    <figcaption>08 Task Analysis.pptx · 第 5 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-08-image8.png" alt="08 Task Analysis.pptx · 第 8 张幻灯片" loading="lazy">
-    <figcaption>08 Task Analysis.pptx · 第 8 张幻灯片</figcaption>
-  </figure>
-</div>
+## 本章总结
+
+!!! tip "复习时重点记这几条"
+    - task analysis 先把任务结构拆清楚，再谈风险。
+    - 输入包括用户、环境、流程和真实使用方式。
+    - 输出应该支持 critical task、URRA 和 validation。
+    - 最怕把理想说明书当成真实工作流。
+
 
 ## 资料范围与相关主题
 

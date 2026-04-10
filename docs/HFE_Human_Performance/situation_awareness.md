@@ -1,73 +1,55 @@
 # 情境意识
 
-本页围绕 perception、comprehension、projection 三层情境意识展开，连接信息获取与未来状态预判。
+情境意识这一页把“看见信息”拆成三层：先感知，再理解，再预测。重点是让你看到信息可见和局面可理解之间还有很长一段距离。
 
-## 课件里的讲解顺序
+!!! note "本页主问题"
+    为什么系统明明把很多信息都显示出来了，操作者却仍然可能既不理解当前局面，也无法预测接下来会怎样？
 
-这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+## 本章重点
 
-### Sp26_SituationAwareness_20260325.pdf
+- 情境意识至少包括 perception、comprehension、projection 三层。
+- 信息可见不等于意义清楚，更不等于未来状态可预测。
+- 很多显示、CRM、监控和自动化问题最后都会回到 SA 断裂上。
+- SA 的本质不是信息量，而是信息有没有被组织成可行动的 mental model。
 
-1. SITUATION AWARENESS
-2. SITUATION AWARENESS IN DECISION MAKING
-3. EXAMPLE OF SA ELEMENTS: DRIVING A CAR
-4. BREAKDOWNS IN SA Perception (Level 1):
-5. AMTRAK ACCIDENT REVISITED Where did the breakdown in
-6. TEAM SITUATION AWARENESS Endsley, 1995
-7. UBER ACCIDENT, MARCH 2018 Operator took self-driving car out of garage to
-8. UBER ACCIDENT, MARCH 2018 Software classified the pedestrian as an unknown
+## 先记住一句话
 
+!!! tip "复习时先记住这句话"
+    先记住一句话：情境意识不是“多看一点”，而是把看到的线索真正拼成当前局面，并能往前预判一步。
 
-## 这页的逻辑顺序
+## 三层结构到底分别在说什么
 
-建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+课程里的三层结构是：
 
-1. 情境意识的三层结构
-2. 为什么信息可见不等于真正理解
-3. 预测未来状态为何决定有效干预
+1. `perception`：有没有注意到关键线索。
+2. `comprehension`：这些线索有没有被拼成正确的当前局面。
+3. `projection`：如果不干预，系统接下来会往哪里走。
 
-## 核心概念
+## 为什么第二层和第三层最容易断
 
-情境意识不是“对周围有感觉”这么模糊的东西。课程里讲的 SA 更具体，它至少包含三层：先感知到信息，再理解它意味着什么，最后预测接下来会发生什么。
+操作者可能已经看到了读数、告警和状态变化，但仍然不知道哪个信号优先、多个信号之间有什么关系、以及未来几十秒会怎么演化。也就是说，SA 的难点往往不在“看见”，而在“组织和推演”。
 
-## 三层结构怎么理解
+!!! warning "最容易误解的地方"
+    看到数据并不等于形成 SA。很多事故正是发生在“数据都在眼前，但局面没真正被拼出来”的状态下。
 
-1. `perception`：你有没有看到、听到、读到关键线索。
-2. `comprehension`：你有没有把这些线索拼成正确的当前局面。
-3. `projection`：你能不能预判如果不干预，系统接下来会走向哪里。
+!!! example "案例：为什么“信息可见”还不够"
+    一个机组可能看到了高度、速度和告警，却仍然没有意识到这些线索共同指向正在偏离的飞行状态。问题不在数据是否存在，而在这些数据有没有被整合成正确局面并转化成提前干预。
 
-## 为什么很多人会卡在第二层和第三层
+## 为什么课程很多页最后都会回到 SA
 
-因为系统里“信息可见”不代表“关系清楚”。操作者可能看到了读数和告警，但：
+display 页在问信息怎么被看见，CRM 页在问信息怎么被团队共享，monitoring 页在问状态怎么被持续保持，spatial disorientation 页在问感官和仪表冲突时还能不能建立正确局面。它们本质上都在问：系统有没有帮人形成足够好的情境意识。
 
-- 不知道哪条信息优先级更高
-- 不知道多个信号如何组合解释
-- 不知道当前状态会在未来几十秒或几分钟里演化成什么
+!!! note "一句话结论"
+    情境意识的核心不是“信息多”，而是“信息有没有被组织成可行动的理解和预测”。
 
-所以 SA 的本质不是信息量，而是信息结构。
+## 本章总结
 
-## 难点讲解
+!!! tip "复习时重点记这几条"
+    - SA 包括感知、理解和预测三层。
+    - 信息可见不等于真正理解。
+    - 很多 HFE 主题最后都会回到 SA 是否断裂。
+    - SA 的关键是形成可行动的 mental model。
 
-课程里很多页面都在回到情境意识问题。显示设计、CRM、监控、自动化、空间定向，最后都在问：系统有没有帮助人形成足够准确、足够及时、足够可预测的 mental model。
-
-## 课件图示与页面预览
-
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-situationawareness-20260325/page-01.png" alt="Sp26_SituationAwareness_20260325.pdf · 第 1 页预览" loading="lazy">
-    <figcaption>Sp26_SituationAwareness_20260325.pdf · 第 1 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-situationawareness-20260325/page-03.png" alt="Sp26_SituationAwareness_20260325.pdf · 第 3 页预览" loading="lazy">
-    <figcaption>Sp26_SituationAwareness_20260325.pdf · 第 3 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-situationawareness-20260325/page-04.png" alt="Sp26_SituationAwareness_20260325.pdf · 第 4 页预览" loading="lazy">
-    <figcaption>Sp26_SituationAwareness_20260325.pdf · 第 4 页预览</figcaption>
-  </figure>
-</div>
 
 ## 资料范围与相关主题
 

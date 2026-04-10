@@ -4,10 +4,10 @@ This section establishes the language of the course through the course overview,
 
 ## Topic Pages
 
-- [Course Overview and Learning Map](course_overview.en.md): This page uses the course introduction to frame the scope, pacing, and application domain of the class before the later methods and case studies appear.
-- [Introduction to Human Factors](human_factors_intro.en.md): This page organizes the core definition, design objective, and systems view of human factors as an engineering discipline.
-- [Human Error Frameworks](human_error_frameworks.en.md): This page integrates the course treatment of human error and places slips, mistakes, violations, and multi-level models in a single analytic frame.
-- [The Swiss Cheese Model](swiss_cheese.en.md): This page uses the Swiss Cheese model to connect barriers, vulnerabilities, and accident trajectories as a bridge from single-error thinking to system defense design.
+- [Course Overview and Learning Map](course_overview.en.md): This page establishes the course arc: HFE is not about pinning failure on people, but about understanding how design, task demands, organization, and environment shape human performance in complex systems.
+- [Introduction to Human Factors](human_factors_intro.en.md): This page answers the foundational question: what is human factors? It is not a catalog of human weakness, but a discipline that deliberately brings real human capabilities and limits back into design.
+- [Human Error Frameworks](human_error_frameworks.en.md): This chapter focuses on two questions: why people make errors and why error analysis cannot stop at the individual who happened to fail.
+- [The Swiss Cheese Model](swiss_cheese.en.md): This page pushes the systems view one step further: accidents do not emerge only because one person suddenly makes a dramatic mistake, but because multiple defenses contain weaknesses that align into a path of penetration.
 
 ## Covered Source Files
 

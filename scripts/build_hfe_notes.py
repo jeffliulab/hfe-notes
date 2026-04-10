@@ -24,6 +24,7 @@ DATA_DIR = REPO_ROOT / "data"
 ASSET_ROOT = DOCS_DIR / "assets" / "source_files"
 VISUAL_ROOT = DOCS_DIR / "assets" / "visuals"
 SITE_URL = "https://jeffliulab.github.io/hfe-notes/"
+PAGE_TEMPLATE_MAP: dict[str, str] = {}
 
 PPT_NS = {"a": "http://schemas.openxmlformats.org/drawingml/2006/main"}
 REL_NS_URI = "http://schemas.openxmlformats.org/officeDocument/2006/relationships"
@@ -154,8 +155,8 @@ PAGES = [
         "en_nav": "Human Error Frameworks",
         "zh_title": "人为失误框架",
         "en_title": "Human Error Frameworks",
-        "zh_pitch": "本页整合课程里对 human error 的引入与框架化讲解，把 slips、mistakes、violations 与多层次失误模型放到同一个分析坐标系里。",
-        "en_pitch": "This page integrates the course treatment of human error and places slips, mistakes, violations, and multi-level models in a single analytic frame.",
+        "zh_pitch": "本章重点是看懂两件事：人为什么会出错，以及为什么分析错误时不能只盯着出错的人。",
+        "en_pitch": "This chapter focuses on two questions: why people make errors and why error analysis cannot stop at the individual who happened to fail.",
         "angles_zh": ["错误类型如何区分", "个体层与系统层解释如何互补", "框架为什么会影响后续风险分析方法"],
         "angles_en": ["How error categories are distinguished", "How individual and system explanations complement each other", "Why frameworks matter for later risk methods"],
         "source_files": ["02 Intro to Human Error (1).pptx", "03 HE Frameworks (2).pptx"],
@@ -486,6 +487,11 @@ PAGES = [
 ]
 
 PAGE_BY_SLUG = {page["slug"]: page for page in PAGES}
+PAGE_TEMPLATE_MAP = {
+    slug: content["template_type"]
+    for slug, content in PAGE_CONTENT.items()
+    if isinstance(content, dict) and "template_type" in content
+}
 SOURCE_TO_PAGE = {}
 for page in PAGES:
     for source_file in page["source_files"]:
@@ -963,19 +969,75 @@ def format_cross_refs(page: dict, current_doc_rel: str, lang: str) -> list[str]:
     return lines
 
 
-def teaching_content_for(page_slug: str, lang: str) -> str:
+def structured_blueprint_for(page_slug: str) -> dict | None:
+    content = PAGE_CONTENT.get(page_slug)
+    if isinstance(content, dict) and "template_type" in content:
+        return content
+    return None
+
+
+def legacy_teaching_content_for(page_slug: str, lang: str) -> str:
     content = PAGE_CONTENT.get(page_slug, {})
-    if lang in content:
+    if isinstance(content, dict) and lang in content:
         return content[lang]
     if lang == "zh":
-        return "## 一眼看懂\n\n这一页的知识点讲解仍在补充中，当前先保留了来源、图示和完整原文，便于继续深化整理。"
-    return "## At a Glance\n\nThis page is still waiting for a fuller teaching draft. The sources, visuals, and full transcription remain available below."
+        return "## 核心概念\n\n这一页的知识点讲解仍在补充中，当前先保留了来源、图示和完整原文，便于继续深化整理。"
+    return "## Core Idea\n\nThis page is still waiting for a fuller teaching draft. The sources, visuals, and full transcription remain available below."
 
 
-def normalize_teaching_content(content: str, lang: str) -> str:
-    if lang == "zh":
-        return content.replace("## 一眼看懂", "## 核心概念", 1)
-    return content.replace("## At a Glance", "## Core Idea", 1)
+def localized_lookup(payload: dict | None, lang: str, default: str = "") -> str:
+    if not payload:
+        return default
+    if isinstance(payload, dict):
+        value = payload.get(lang)
+        if value is not None:
+            return value
+        fallback = payload.get("zh")
+        if fallback is not None:
+            return fallback
+    return default
+
+
+def localized_lines_lookup(payload: dict | None, lang: str) -> list[str]:
+    if not payload:
+        return []
+    if isinstance(payload, dict):
+        value = payload.get(lang)
+        if value is None:
+            value = payload.get("zh", [])
+        return [item for item in value if item]
+    return []
+
+
+def page_pitch_for(page: dict, lang: str) -> str:
+    blueprint = structured_blueprint_for(page["slug"])
+    if blueprint:
+        return localized_lookup(blueprint.get("page_intro"), lang, page["zh_pitch"] if lang == "zh" else page["en_pitch"])
+    return page["zh_pitch"] if lang == "zh" else page["en_pitch"]
+
+
+def page_uses_manual_structure(page_slug: str) -> bool:
+    return page_slug in PAGE_TEMPLATE_MAP
+
+
+def indent_markdown_block(text: str) -> list[str]:
+    if not text:
+        return []
+    return [f"    {line}" if line else "    " for line in text.splitlines()]
+
+
+def render_callout_block(callout: dict, lang: str) -> list[str]:
+    if not callout:
+        return []
+    title = localized_lookup(callout.get("title"), lang)
+    lines = [f'!!! {callout["kind"]} "{title}"']
+    body = localized_lookup(callout.get("body"), lang)
+    if body:
+        lines.extend(indent_markdown_block(body))
+    for bullet in localized_lines_lookup(callout.get("bullets"), lang):
+        lines.append(f"    - {bullet}")
+    lines.append("")
+    return lines
 
 
 def render_logic_outline(page: dict, lang: str) -> list[str]:
@@ -1101,6 +1163,8 @@ def absolute_asset_url(asset_rel_path: str) -> str:
 
 
 def render_visual_gallery(page: dict, manifest: dict[str, dict], current_doc_rel: str, lang: str) -> list[str]:
+    if page_uses_manual_structure(page["slug"]):
+        return []
     title = "## 课件图示与页面预览" if lang == "zh" else "## Slide Figures and Page Previews"
     intro = (
         "下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。"
@@ -1133,6 +1197,156 @@ def render_visual_gallery(page: dict, manifest: dict[str, dict], current_doc_rel
             ]
         )
     lines.append("</div>")
+    return lines
+
+
+def resolve_blueprint_visual(visual_entry: dict, manifest: dict[str, dict]) -> dict | None:
+    source_file = visual_entry["source_file"]
+    source_meta = manifest.get(source_file)
+    if not source_meta:
+        return None
+    visuals = source_meta.get("visuals", [])
+    asset_name_contains = visual_entry.get("asset_name_contains")
+    locator_contains = visual_entry.get("locator_contains")
+    if asset_name_contains or locator_contains:
+        for visual in visuals:
+            asset_match = not asset_name_contains or asset_name_contains in visual.get("asset_rel_path", "")
+            locator_match = not locator_contains or locator_contains in visual.get("locator", "")
+            if asset_match and locator_match:
+                resolved = dict(visual)
+                resolved["caption"] = visual_entry.get("caption", {})
+                resolved["alt"] = visual_entry.get("alt", {})
+                return resolved
+        return None
+    index = visual_entry.get("index", 0)
+    if index < 0 or index >= len(visuals):
+        return None
+    resolved = dict(visuals[index])
+    resolved["caption"] = visual_entry.get("caption", {})
+    resolved["alt"] = visual_entry.get("alt", {})
+    return resolved
+
+
+def render_inline_visual(visual_entry: dict, manifest: dict[str, dict], lang: str) -> list[str]:
+    resolved = resolve_blueprint_visual(visual_entry, manifest)
+    if not resolved:
+        return []
+    asset_href = absolute_asset_url(resolved["asset_rel_path"])
+    caption = localized_lookup(resolved.get("caption"), lang, format_visual_caption(resolved, lang))
+    alt_text = localized_lookup(resolved.get("alt"), lang, caption)
+    return [
+        '<figure class="note-inline-figure">',
+        f'  <img src="{html.escape(asset_href)}" alt="{html.escape(alt_text)}" loading="lazy">',
+        f'  <figcaption>{html.escape(caption)}</figcaption>',
+        "</figure>",
+        "",
+    ]
+
+
+def render_blueprint_content(page: dict, blueprint: dict, manifest: dict[str, dict], lang: str) -> list[str]:
+    template_type = blueprint["template_type"]
+    headings = {
+        "concept": {
+            "highlights": "## 本章重点" if lang == "zh" else "## Key Takeaways",
+            "anchor": "## 先记住一句话" if lang == "zh" else "## Remember This First",
+            "anchor_title": "复习时先记住这句话" if lang == "zh" else "Keep This Sentence in Mind",
+            "summary": "## 本章总结" if lang == "zh" else "## Chapter Summary",
+            "summary_title": "复习时重点记这几条" if lang == "zh" else "What To Carry Forward",
+        },
+        "method": {
+            "highlights": "## 本章重点" if lang == "zh" else "## Key Takeaways",
+            "anchor": "## 先记住方法定位" if lang == "zh" else "## What This Method Is For",
+            "anchor_title": "先记住这个方法的定位" if lang == "zh" else "Start with the Purpose",
+            "summary": "## 本章总结" if lang == "zh" else "## Chapter Summary",
+            "summary_title": "复习时重点记这几条" if lang == "zh" else "What To Carry Forward",
+        },
+        "case": {
+            "highlights": "## 这个案例最重要的结论" if lang == "zh" else "## The Most Important Case Conclusions",
+            "anchor": "## 先记住这个案例的一句话判断" if lang == "zh" else "## Start with the Case Verdict",
+            "anchor_title": "先记住这个案例的一句话判断" if lang == "zh" else "Keep This Case Judgment in Mind",
+            "summary": "## 这个案例最后要带走什么" if lang == "zh" else "## What To Take Away from This Case",
+            "summary_title": "复习时重点记这几条" if lang == "zh" else "What To Carry Forward",
+        },
+    }[template_type]
+
+    lines = [
+        f'!!! note "{"本页主问题" if lang == "zh" else "Core Question"}"',
+        *indent_markdown_block(localized_lookup(blueprint.get("core_question"), lang)),
+        "",
+        headings["highlights"],
+        "",
+    ]
+
+    for point in localized_lines_lookup(blueprint.get("must_learn_points"), lang):
+        lines.append(f"- {point}")
+
+    lines.extend(
+        [
+            "",
+            headings["anchor"],
+            "",
+            f'!!! tip "{headings["anchor_title"]}"',
+            *indent_markdown_block(localized_lookup(blueprint.get("memory_anchor"), lang)),
+            "",
+        ]
+    )
+
+    visuals_by_section: dict[str, list[dict]] = defaultdict(list)
+    for visual in blueprint.get("inline_visuals", []):
+        visuals_by_section[visual["after_section"]].append(visual)
+
+    warnings_by_section: dict[str, list[dict]] = defaultdict(list)
+    for callout in blueprint.get("warnings", []):
+        warnings_by_section[callout["after_section"]].append(callout)
+
+    examples_by_section: dict[str, list[dict]] = defaultdict(list)
+    for callout in blueprint.get("examples", []):
+        examples_by_section[callout["after_section"]].append(callout)
+
+    rendered_sections: set[str] = set()
+    for section_block in blueprint.get("sections", []):
+        section_key = section_block["key"]
+        rendered_sections.add(section_key)
+        lines.extend([localized_lookup(section_block.get("title"), lang), ""])
+
+        body = localized_lookup(section_block.get("body"), lang)
+        if body:
+            lines.extend(body.splitlines())
+            lines.append("")
+
+        for bullet in localized_lines_lookup(section_block.get("bullets"), lang):
+            lines.append(f"- {bullet}")
+        if localized_lines_lookup(section_block.get("bullets"), lang):
+            lines.append("")
+
+        for visual in visuals_by_section.get(section_key, []):
+            lines.extend(render_inline_visual(visual, manifest, lang))
+
+        lines.extend(render_callout_block(section_block.get("note"), lang))
+
+        for warning in warnings_by_section.get(section_key, []):
+            lines.extend(render_callout_block(warning, lang))
+
+        for example in examples_by_section.get(section_key, []):
+            lines.extend(render_callout_block(example, lang))
+
+    for remaining_group in (warnings_by_section, examples_by_section):
+        for section_key, callouts in remaining_group.items():
+            if section_key in rendered_sections:
+                continue
+            for callout in callouts:
+                lines.extend(render_callout_block(callout, lang))
+
+    lines.extend(
+        [
+            headings["summary"],
+            "",
+            f'!!! tip "{headings["summary_title"]}"',
+        ]
+    )
+    for point in localized_lines_lookup(blueprint.get("summary_points"), lang):
+        lines.append(f"    - {point}")
+    lines.append("")
     return lines
 
 
@@ -1179,11 +1393,11 @@ def render_page(
 ) -> str:
     current_doc_rel = page_doc_rel(page["slug"], lang)
     section = SECTIONS[page["section"]]
-    content_block = normalize_teaching_content(teaching_content_for(page["slug"], lang), lang)
+    blueprint = structured_blueprint_for(page["slug"])
 
     if lang == "zh":
         title = page["zh_title"]
-        pitch = page["zh_pitch"]
+        pitch = page_pitch_for(page, lang)
         section_title = section["zh_title"]
         headers = {
             "sources": "## 资料范围与相关主题",
@@ -1192,7 +1406,7 @@ def render_page(
         source_intro = "正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。"
     else:
         title = page["en_title"]
-        pitch = page["en_pitch"]
+        pitch = page_pitch_for(page, lang)
         section_title = section["en_title"]
         headers = {
             "sources": "## Source Scope and Related Topics",
@@ -1206,17 +1420,11 @@ def render_page(
         pitch,
         "",
     ]
-    lines.extend(render_classroom_outline(page, units_by_source, lang))
-    lines.extend([""])
-    lines.extend(render_logic_outline(page, lang))
-    lines.extend(
-        [
-            "",
-        content_block,
-        "",
-        ]
-    )
-    lines.extend(render_visual_gallery(page, manifest, current_doc_rel, lang))
+    if blueprint:
+        lines.extend(render_blueprint_content(page, blueprint, manifest, lang))
+    else:
+        lines.extend([legacy_teaching_content_for(page["slug"], lang), ""])
+        lines.extend(render_visual_gallery(page, manifest, current_doc_rel, lang))
     lines.extend(["", headers["sources"], "", source_intro, ""])
     lines.extend(
         [
@@ -1243,13 +1451,13 @@ def render_section_index(section_slug: str, pages: list[dict], manifest: dict[st
         intro = section["zh_intro"]
         page_label = "## 主题页面"
         source_label = "## 覆盖源文件"
-        make_line = lambda page: f"- [{page['zh_title']}]({rel_link(current_doc_rel, page_doc_rel(page['slug'], 'zh'))}): {page['zh_pitch']}"
+        make_line = lambda page: f"- [{page['zh_title']}]({rel_link(current_doc_rel, page_doc_rel(page['slug'], 'zh'))}): {page_pitch_for(page, 'zh')}"
     else:
         title = section["en_title"]
         intro = section["en_intro"]
         page_label = "## Topic Pages"
         source_label = "## Covered Source Files"
-        make_line = lambda page: f"- [{page['en_title']}]({rel_link(current_doc_rel, page_doc_rel(page['slug'], 'en'))}): {page['en_pitch']}"
+        make_line = lambda page: f"- [{page['en_title']}]({rel_link(current_doc_rel, page_doc_rel(page['slug'], 'en'))}): {page_pitch_for(page, 'en')}"
 
     lines = [f"# {title}", "", intro, "", page_label, ""]
     lines.extend(make_line(page) for page in pages)

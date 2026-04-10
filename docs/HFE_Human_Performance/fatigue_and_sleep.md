@@ -1,76 +1,51 @@
 # 疲劳与睡眠
 
-本页围绕疲劳、生理节律与睡眠不足对表现的影响，整理人因工程里对生理约束的理解。
+疲劳与睡眠这一页要你看到：疲劳不是“有点累”的主观抱怨，而是会系统性改变反应、判断、记忆和监控能力的生理约束。
 
-## 课件里的讲解顺序
+!!! note "本页主问题"
+    为什么疲劳管理不能只靠个人自律，而必须被看成排班、任务长度、时段和组织要求共同制造的系统问题？
 
-这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+## 本章重点
 
-### Sp26_Fatigue+Sleep_20260211.pdf
+- 睡眠不足会让很多关键认知能力下降，即使人主观上觉得“还能工作”。
+- 生理节律会改变不同时段的风险窗口。
+- 疲劳问题经常由班次、夜班、任务长度和组织要求共同制造。
+- 疲劳管理应当进入排班、交接和高风险任务设计，而不只是健康建议。
 
-1. FATIGUE & SLEEP Dr. Andrew Liu
-2. WHAT IS FATIGUE? 1999 US DOT Operational Definition
-3. SLEEP DEPRIVATION AND FATIGUE PREVALENCE
-4. FATIGUE AND DRIVING
-5. FATIGUE AND MEDICAL ERRORS
-6. WHAT FACTORS INFLUENCE SLEEP/FATIGUE?
-7. BORBÉLY TWO PROCESS MODEL OF SLEEP Process C (Circadian process):
-8. CIRCADIAN RHYTHM (PROCESS C) A group of nerve cells in the
+## 先记住一句话
 
+!!! tip "复习时先记住这句话"
+    先记住一句话：再好的界面、程序和培训，最后也要经过一个可能正在疲劳中的人来执行。
 
-## 这页的逻辑顺序
+## 疲劳到底会影响什么
 
-建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+疲劳会影响反应速度、工作记忆、判断质量、监控耐力和恢复能力。危险之处在于，人未必会立刻意识到自己下降了多少，所以主观感受和实际表现可能并不同步。
 
-1. 疲劳如何影响反应、判断与监控
-2. 生理节律为什么会改变风险窗口
-3. 管理疲劳不能只靠个人自律
+## 为什么同一任务在不同时段风险不同
 
-## 核心概念
+课程强调生理节律，是因为风险并不是均匀分布的。夜班、清晨低谷、长时持续任务和睡眠债累积，都会让同一任务在不同时间表现出不同脆弱性。
 
-疲劳与睡眠这一页想说明：疲劳不是“有点累”的主观感受，而是会系统性影响反应速度、工作记忆、判断、监控和恢复能力的生理约束。
+!!! example "案例：为什么夜班同样的任务会更危险"
+    同样的监控或操作任务，放在夜班和白班并不等价。夜间低谷会让警觉、判断和恢复速度下降，使原本还能接受的任务负荷变成更高风险窗口。
 
-## 这页最重要的主线
+## 为什么疲劳管理是系统设计问题
 
-- 睡眠不足会让人表现得像“还能工作”，但很多关键认知功能已经下降。
-- 生理节律会改变不同时间段的风险水平，所以同样任务在不同班次上并不等价。
-- 疲劳管理不能只靠个体意志，因为排班、任务长度、夜班节律和组织要求本身就在制造疲劳。
+如果组织长期把排班、任务长度、夜班负担和高风险任务时段安排得不合理，那么“提醒大家多休息”很难真正解决问题。更成熟的管理方式，是把疲劳当成需要被设计和缓冲的风险源。
 
-## 为什么这页对 HFE 很关键
+!!! note "一句话结论"
+    疲劳不是个人软弱，而是系统必须正视的生理约束。
 
-人因工程如果只讲界面和流程，却不讲疲劳，就会默认人总能稳定发挥。课程其实是在提醒你：
+!!! warning "最容易误解的地方"
+    把 fatigue management 缩成“提醒大家多睡觉”是远远不够的。真正危险的变量，往往在排班和任务设计里。
 
-- 再好的程序也要经过疲劳中的人来执行
-- 再好的告警也要经过困倦中的人来察觉
-- 再好的培训也会被持续睡眠不足削弱
+## 本章总结
 
-## 难点讲解
+!!! tip "复习时重点记这几条"
+    - 疲劳会系统性影响反应、记忆、判断和监控。
+    - 生理节律会改变风险窗口。
+    - 疲劳常由排班和组织条件共同制造。
+    - 疲劳管理必须进入系统设计层。
 
-很多人会把 fatigue management 理解成“提醒大家多休息”。这太弱了。更成熟的做法是把疲劳看作系统设计变量，例如：
-
-- 排班与轮班策略
-- 关键任务的时段安排
-- 交接设计
-- 高风险时段的辅助检查和双重确认
-
-## 课件图示与页面预览
-
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-fatigue-sleep-20260211/page-01.png" alt="Sp26_Fatigue+Sleep_20260211.pdf · 第 1 页预览" loading="lazy">
-    <figcaption>Sp26_Fatigue+Sleep_20260211.pdf · 第 1 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-fatigue-sleep-20260211/page-04.png" alt="Sp26_Fatigue+Sleep_20260211.pdf · 第 4 页预览" loading="lazy">
-    <figcaption>Sp26_Fatigue+Sleep_20260211.pdf · 第 4 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-fatigue-sleep-20260211/page-05.png" alt="Sp26_Fatigue+Sleep_20260211.pdf · 第 5 页预览" loading="lazy">
-    <figcaption>Sp26_Fatigue+Sleep_20260211.pdf · 第 5 页预览</figcaption>
-  </figure>
-</div>
 
 ## 资料范围与相关主题
 

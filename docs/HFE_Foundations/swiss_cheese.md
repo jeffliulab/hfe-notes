@@ -1,75 +1,75 @@
 # Swiss Cheese 模型
 
-本页用 Swiss Cheese 模型把防御层、薄弱环节与事故路径串起来，作为从单点失误转向系统防护设计的重要桥梁。
+这页把课程里的系统视角再往前推一步：事故不是因为某一个人突然犯了大错，而是因为多层防线同时出现漏洞，并在某个时刻被串成了一条穿透路径。
 
-## 课件里的讲解顺序
+!!! note "本页主问题"
+    为什么高风险系统明明有很多防线，事故还是会发生？这些防线的漏洞又为什么会在同一个时刻被串起来？
 
-这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+## 本章重点
 
-### 05 Swiss Cheese Model.pdf
+- Swiss Cheese 模型把事故看成“多层防线被穿透”，而不是“单个人失手”。
+- 每一层防线都可能既有保护作用，也有漏洞。
+- 真正危险的不是某一个洞存在，而是多个洞在时空上对齐。
+- 这套模型的价值，是把注意力从 blame 拉回 barrier design 和 system resilience。
 
-1. Rachel Morgan, MS Swiss Cheese Model
-2. Introduction Rachel Morgan
-3. Swiss Cheese Model Background
-4. Swiss Cheese Model
-5. The Swiss Cheese Model is a way to understand how failures happen in complex systems
-6. Swiss Cheese Model – Graphic
-7. Preventing the spread of COVID-19 Swiss Cheese Model – Example
-8. Used in multiple high-risk, high-complexity industries, such as:
+## 先记住一句话
 
+!!! tip "复习时先记住这句话"
+    记这页时先抓一句话：事故往往不是因为“最后一个人太差”，而是因为系统里的多层保护在同一时刻都没能把问题挡住。
 
-## 这页的逻辑顺序
+## Swiss Cheese 模型到底在解释什么
 
-建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+这套模型的核心不是“奶酪上有洞”这个比喻本身，而是它背后的解释逻辑：任何高风险系统都不会只靠一层保护，而是靠多层屏障、程序、检查、人员配合和组织控制共同维持安全。
 
-1. 事故为什么穿透多层防线
-2. 防御层与漏洞如何同时存在
-3. 系统改进为什么比责怪操作者更关键
+一旦你接受这个前提，事故就不再是“某个点突然失败”，而更像是一条本来应该被多次拦截的问题链，最终一路穿透到了结果层。
 
-## 核心概念
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/05-swiss-cheese-model/page-01.png" alt="这张图要看懂的是：事故不是绕过一层防线，而是沿着多层漏洞被连续放行。" loading="lazy">
+  <figcaption>这张图要看懂的是：事故不是绕过一层防线，而是沿着多层漏洞被连续放行。</figcaption>
+</figure>
 
-Swiss Cheese 模型想表达的不是“系统有洞”这么简单，而是事故往往不是一次失败造成的，而是多层防线同时失效、漏洞在同一时刻对齐之后，风险才真正穿透到伤害。
+## 防线和漏洞为什么会同时存在
 
-## 这张模型图在说什么
+课程用这页提醒你一个很关键的现实：有防线，并不等于防线总是有效。
 
-- 每一层 cheese 都代表一道防线，比如设计、程序、培训、监测、组织管理
-- 每一层上的 hole 代表局部弱点，它们可能长期存在却暂时没有造成后果
-- 当多层弱点刚好连成一条路径时，事故轨迹就会穿透整个系统
+- 有些漏洞是长期存在的设计弱点、资源不足、流程不合理或组织容忍。
+- 有些漏洞是短时出现的，例如疲劳、分心、时间压力、天气、沟通失误。
 
-## 为什么它能改变分析思路
+真正危险的时刻，是这些长期条件和短时触发在同一时间叠在一起。
 
-这套模型最大的价值，是把关注点从“谁在最后一步犯错”转移到“为什么前面那么多层都没有拦住”。也就是说：
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/05-swiss-cheese-model/page-06.png" alt="这张图要看懂的是：漏洞既可能来自长期潜伏条件，也可能来自当下触发因素，真正危险的是两者在同一时刻重合。" loading="lazy">
+  <figcaption>这张图要看懂的是：漏洞既可能来自长期潜伏条件，也可能来自当下触发因素，真正危险的是两者在同一时刻重合。</figcaption>
+</figure>
 
-- 事故调查不应只盯 front line
-- latent conditions 往往比最后一击更值得改
-- 系统越高风险，就越不能把安全押在单层防护上
+!!! note "一句话结论"
+    系统防线不是“有了就行”，而是要持续问：它们在真实运行条件下还挡得住吗？
 
-## 难点讲解
+!!! warning "最容易误读的地方"
+    不要把模型读成“只要多加几层防线就一定更安全”。如果新增的层级本身很弱、彼此冲突，或者和真实工作脱节，层数增加并不等于韧性增加。
 
-很多人会把 Swiss Cheese 理解成“只要多加几层流程就安全了”。这不够。层数本身不是关键，关键是：
+## 这套模型为什么会把分析拉回系统设计
 
-- 每层是否真的独立
-- 每层是否可检测、可恢复
-- 当某一层失效时，下一层是否还有足够时间接住
+如果事故被理解成防线穿透，那改进方向就不会只剩下“提醒人更小心”。更成熟的追问会变成：
 
-## 课件图示与页面预览
+- 哪一层防线原本应该拦住问题
+- 为什么那一层防线没有起作用
+- 有没有哪一层本来就设计得太脆弱
+- 多层防线之间是不是留下了彼此都以为对方会负责的空白
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
+这也是为什么 Swiss Cheese 模型在课程里不是一个独立比喻，而是后面 risk methods、operational risk 和案例页的共同底板。
 
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/05-swiss-cheese-model/page-01.png" alt="05 Swiss Cheese Model.pdf · 第 1 页预览" loading="lazy">
-    <figcaption>05 Swiss Cheese Model.pdf · 第 1 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/05-swiss-cheese-model/page-06.png" alt="05 Swiss Cheese Model.pdf · 第 6 页预览" loading="lazy">
-    <figcaption>05 Swiss Cheese Model.pdf · 第 6 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/05-swiss-cheese-model/page-07.png" alt="05 Swiss Cheese Model.pdf · 第 7 页预览" loading="lazy">
-    <figcaption>05 Swiss Cheese Model.pdf · 第 7 页预览</figcaption>
-  </figure>
-</div>
+!!! example "案例：一条事故路径是怎样穿透多层防线的"
+    想象一台医疗设备在夜班里被错误设定剂量。最后那一下输入错误只是 `sharp end`。更上游可能已经同时存在：界面字段易混、标签不清、双人核对流于形式、工作负荷过高、培训把重点放错。单看最后一步，很像“某个人输错了”；从 Swiss Cheese 看，真正的问题是多层防线一起失守。
+
+## 本章总结
+
+!!! tip "复习时重点记这几条"
+    - Swiss Cheese 模型把事故理解成多层防线穿透。
+    - 每一层屏障都可能同时具有保护作用和漏洞。
+    - 长期潜伏条件和短时触发叠加时，事故路径最容易形成。
+    - 这套模型的真正价值是把改进方向拉回 barrier design 和 system resilience。
+
 
 ## 资料范围与相关主题
 

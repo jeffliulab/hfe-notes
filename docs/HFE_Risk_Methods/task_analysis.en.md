@@ -1,88 +1,68 @@
 # Task Analysis
 
-This page explains how task analysis decomposes use flow into observable tasks and subtasks that can later be evaluated for risk.
+The job of task analysis is to decompose a continuous use episode into a sequence of observable, discussable, and risk-mappable steps.
 
-## Lecture Flow in the Source Material
+!!! note "Core Question"
+    If the task itself is not decomposed clearly, how can we know where errors may arise, which steps are critical, or where controls should land?
 
-This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+## Key Takeaways
 
-### 08 Task Analysis.pptx
+- Task analysis does not rewrite the manual; it decomposes the real task into steps, judgments, and information demands.
+- It is the prerequisite for critical tasks, use errors, and URRA.
+- Strong task analysis compares ideal flow with real work and likely deviations.
+- The more concrete the decomposition, the more actionable later risk analysis becomes.
 
-1. Sami Durrani PhD and Eric Bergman PhD Task Analysis
-2. There are many different forms of task analysis Hierarchical Task Analysis (HTA)
-3. Identify task Decompose task into sub-tasks (if needed)
-4. Simple Example: Peanut Butter & Jelly
-5. Task 1: Gather supplies PB&J
-6. Task 3: Spread peanut butter on slice 1 Task 4: Spread jam on slice 2
-7. Let’s do a quick task analysis: Autoinjector
-8. Autoinjector analysis continued…
+## What This Method Is For
 
+!!! tip "Start with the Purpose"
+    Remember the purpose of the method this way: if the task flow has not been decomposed, the later risk analysis will float without anchors.
 
-## Reading Logic
+## What Problem This Method Solves
 
-Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+Task analysis breaks the apparently continuous act of “using a product” into analyzable use steps, subtasks, information demands, and action requirements. That lets later discussion stay tied to concrete moments instead of vague judgments.
 
-1. Why task decomposition is foundational for risk analysis
-2. How subtasks and use steps are defined
-3. How task flow leads into use error and mitigation
+## What the Inputs and Outputs Are
 
-## Core Idea
+Inputs usually include the task goal, user characteristics, use environment, device instructions, current workflow, and observed real behavior.
 
-Task analysis turns a continuous use episode into observable, discussable, and risk-assessable steps.
+Outputs usually include:
 
-## What Gets Decomposed
+- explicit task steps
+- information, judgment, and action requirements at each step
+- key failure points
+- a structured task table that can feed URRA or validation work
 
-- the user's goal
-- the steps required to reach that goal
-- the information, judgment, and action demands at each step
-- the points where failure would affect safety or recovery
+## How the Method Proceeds
 
-## Why It Matters
+The method can be run in this order:
 
-Task analysis is the foundation for later work. Without it, use errors, critical tasks, and controls remain vague.
+1. define the user goal and the task boundaries
+2. decompose the flow into observable use steps
+3. add what must be seen, judged, and done at each step
+4. mark the steps whose failure would affect safety or effectiveness
+5. carry those steps into use-error and risk analysis work
 
-## Common Difficulty
+!!! warning "The Most Common Failure Mode"
+    The most common mistake is to copy the instruction sequence verbatim without asking how users actually skip, recover, backtrack, or improvise in real conditions.
 
-A useful task analysis is not just a rewritten instruction manual. It compares the ideal flow with the real flow that users are likely to perform in context.
+!!! example "Worked Example: Why a Syringe Task Cannot Be Written as Simply “Deliver Dose”"
+    If the worksheet only says “deliver dose,” later analysis cannot see assembly, dose setting, confirmation, hold time, and disposal as distinct failure points. Once the task is decomposed, critical tasks and controls finally have concrete landing points.
 
-## Slide Figures and Page Previews
+## How It Connects to Earlier and Later Methods
 
-These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
+The human-error framework explains how to read failure types, while task analysis explains where in the task flow those failures can emerge. Later URRA, critical-task, and workbook pages directly reuse this decomposition.
 
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-01-image1.png" alt="08 Task Analysis.pptx · slide 1" loading="lazy">
-    <figcaption>08 Task Analysis.pptx · slide 1</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-04-image2.jpeg" alt="08 Task Analysis.pptx · slide 4" loading="lazy">
-    <figcaption>08 Task Analysis.pptx · slide 4</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-05-image3.jpeg" alt="08 Task Analysis.pptx · slide 5" loading="lazy">
-    <figcaption>08 Task Analysis.pptx · slide 5</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-05-image4.jpeg" alt="08 Task Analysis.pptx · slide 5" loading="lazy">
-    <figcaption>08 Task Analysis.pptx · slide 5</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-05-image5.jpeg" alt="08 Task Analysis.pptx · slide 5" loading="lazy">
-    <figcaption>08 Task Analysis.pptx · slide 5</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-05-image6.jpeg" alt="08 Task Analysis.pptx · slide 5" loading="lazy">
-    <figcaption>08 Task Analysis.pptx · slide 5</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-05-image7.jpeg" alt="08 Task Analysis.pptx · slide 5" loading="lazy">
-    <figcaption>08 Task Analysis.pptx · slide 5</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-08-image8.png" alt="08 Task Analysis.pptx · slide 8" loading="lazy">
-    <figcaption>08 Task Analysis.pptx · slide 8</figcaption>
-  </figure>
-</div>
+!!! note "One-Sentence Conclusion"
+    The value of task analysis is not merely listing steps; it is binding risk analysis to the real workflow.
+
+## Chapter Summary
+
+!!! tip "What To Carry Forward"
+    - Task analysis clarifies task structure before risk is discussed.
+    - Its inputs include users, environment, workflow, and real behavior.
+    - Its outputs should support critical tasks, URRA, and validation.
+    - The main trap is treating the ideal manual as if it were the real workflow.
+
 
 ## Source Scope and Related Topics
 

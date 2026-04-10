@@ -1,128 +1,173 @@
 # Human Error Frameworks
 
-This page integrates the course treatment of human error and places slips, mistakes, violations, and multi-level models in a single analytic frame.
+This chapter focuses on two questions: why people make errors and why error analysis cannot stop at the individual who happened to fail.
 
-## Lecture Flow in the Source Material
+!!! note "Core Question"
+    Why do people make errors, why can we not simply blame the individual, and how does this framework help us identify what should actually be fixed?
 
-This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+## Key Takeaways
 
-### 02 Intro to Human Error (1).pptx
+- People making errors does not mean the whole problem sits inside the person.
+- `slip`, `lapse`, `mistake`, and `violation` all look like failure, but they are not the same type of failure.
+- The goal of classification is not labeling; it is finding root cause and mitigation.
+- The same surface error may emerge from perception, cognition, or action failure.
+- If analysis stops at who failed, the larger system causes are usually missed.
 
-1. Sami Durrani PhD and Eric Bergman PhD Introduction to Human Error
-2. To err is human…” (Cicero, BC)
-3. Definitions
-4. accuracy, sequence,
-5. but, is it that clear-cut?
-6. I will speak out 20 words Do not write anything until I have finished.
-7. North apple
-8. I will speak out 20 more words. Do not write anything until I have finished.
+## Remember This First
 
-### 03 HE Frameworks (2).pptx
+!!! tip "Keep This Sentence in Mind"
+    People do not err simply because they are “bad operators.” Attention, memory, and judgment all have limits, and poor design, unclear information, and weak workflows magnify those limits into visible failure.
+    
+    This page therefore answers a single question: how should we read an error if we actually want to improve the system?
 
-1. Kate MacNamee, MS Human Error Frameworks – How to think about errors
-2. This topic has already been covered, but as a quick reminder we are talking about:
-3. Frameworks are constructs - convenient ways to attempt to organize complex information
-4. Error Unintended action or decision
-5. Some frameworks delineate between errors and violations Human
-6. Some frameworks start with intent (this can manifest in problematic ways) Human
-7. Be starting with intention, it implicitly suggests user responsibility
-8. Broadly speaking…
+## What Counts as Human Error
 
+In plain language, `human error` means a person intended to do the task correctly but failed to produce the intended result.
 
-## Reading Logic
+Two parts matter:
 
-Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+- the person was trying to do the task correctly, so the framework begins with unintended deviation
+- the problem may sit in action, sequence, timing, or judgment rather than only in the final outcome
 
-1. How error categories are distinguished
-2. How individual and system explanations complement each other
-3. Why frameworks matter for later risk methods
+The two course definitions are enough to carry forward:
 
-## Core Idea
+- `Reason (1990)`: a planned mental or physical activity fails to achieve the intended result
+- `Hagen & Mays (1981)`: the action fails under constraints such as `accuracy`, `sequence`, or `time`
 
-The point of a human error framework is not merely to label failure. It is to prevent every bad outcome from collapsing into “the operator made a mistake.”
+!!! note "One-Sentence Conclusion"
+    Human error is not mainly a blame term; it is an analytic term. Its value lies in separating wrong action, omitted action, wrong judgment, and system-created error opportunity.
 
-## Core Categories
+## Why We Cannot Stop at Blaming the Person
 
-- `slip`: the plan is correct, but the execution is wrong.
-- `lapse`: the plan is correct, but the action is omitted, often because memory or attention drops out.
-- `mistake`: execution is faithful, but the judgment or plan is wrong.
-- `violation`: a deliberate deviation from a rule, which is analytically different from unintended error.
+If analysis starts with “the whole problem is inside the person,” every later category becomes a more refined version of blame.
 
-## Why Frameworks Matter
+That is why the lecture connects `old view / new view`, `internal / external`, and `sharp end / blunt end` in one line:
 
-The course contrasts an old view and a new view:
+- `old view`: the system is basically fine and failure mainly reflects operator carelessness or weakness
+- `new view`: people do err, but the deeper question is why the system made the error easy to produce or hard to stop
+- `internal`: limits of attention, memory, fatigue, and judgment
+- `external`: interface, instructions, environment, workload, and organizational pressure
+- `sharp end`: the visible frontline action
+- `blunt end`: the upstream design, policy, resource, and organizational decisions
 
-- the old view blames the individual as the faulty element
-- the new view asks how system design, context, and defenses shaped the failure
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-11-image2.jpg" alt="The point of this figure is not that some people are “bad apples,” but that once the system is presumed healthy, analysis slides automatically toward blame instead of redesign." loading="lazy">
+  <figcaption>The point of this figure is not that some people are “bad apples,” but that once the system is presumed healthy, analysis slides automatically toward blame instead of redesign.</figcaption>
+</figure>
 
-The same event can therefore lead to very different interventions depending on the framework you use.
+!!! note "The Main Conclusion of This Section"
+    The visible failure may belong to the person, but the deeper vulnerability often belongs to the system creating error-prone conditions.
 
-## Common Difficulty
+!!! example "Example: Why the Wrong-Medication Event Cannot Stop at Blaming the Nurse"
+    A hospital stores two look-alike medications next to each other. Nothing happens for a while, until a fatigued nurse selects the wrong one during a shift and the patient is harmed. The shallow summary is “the nurse picked the wrong drug.” The better questions are why the medications were stored together, why the packaging was so confusable, why a fatigued operator had to perform the high-risk discrimination, and why stronger checks failed to intercept the error.
 
-Internal and external explanations are not opposites. Human limits are real, but design, information quality, training, organizational culture, and time pressure also shape error production.
+## How to Distinguish the Four Error Types
 
-## Slide Figures and Page Previews
+Once the analysis stops blaming the person, the next step is classification. Classification matters because different failure types require different fixes.
 
-These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
+### 1. `slip`
+The plan is correct, but the action execution goes wrong.  
+Typical example: intending to press A but touching B.
 
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-01-image1.png" alt="02 Intro to Human Error (1).pptx · slide 1" loading="lazy">
-    <figcaption>02 Intro to Human Error (1).pptx · slide 1</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-11-image2.jpg" alt="02 Intro to Human Error (1).pptx · slide 11" loading="lazy">
-    <figcaption>02 Intro to Human Error (1).pptx · slide 11</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-11-image3.png" alt="02 Intro to Human Error (1).pptx · slide 11" loading="lazy">
-    <figcaption>02 Intro to Human Error (1).pptx · slide 11</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-16-image4.png" alt="02 Intro to Human Error (1).pptx · slide 16" loading="lazy">
-    <figcaption>02 Intro to Human Error (1).pptx · slide 16</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-17-image5.jpeg" alt="02 Intro to Human Error (1).pptx · slide 17" loading="lazy">
-    <figcaption>02 Intro to Human Error (1).pptx · slide 17</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-18-image6.png" alt="02 Intro to Human Error (1).pptx · slide 18" loading="lazy">
-    <figcaption>02 Intro to Human Error (1).pptx · slide 18</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-19-image7.png" alt="02 Intro to Human Error (1).pptx · slide 19" loading="lazy">
-    <figcaption>02 Intro to Human Error (1).pptx · slide 19</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-19-image8.png" alt="02 Intro to Human Error (1).pptx · slide 19" loading="lazy">
-    <figcaption>02 Intro to Human Error (1).pptx · slide 19</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-20-image7.png" alt="02 Intro to Human Error (1).pptx · slide 20" loading="lazy">
-    <figcaption>02 Intro to Human Error (1).pptx · slide 20</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-20-image8.png" alt="02 Intro to Human Error (1).pptx · slide 20" loading="lazy">
-    <figcaption>02 Intro to Human Error (1).pptx · slide 20</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-25-image9.png" alt="02 Intro to Human Error (1).pptx · slide 25" loading="lazy">
-    <figcaption>02 Intro to Human Error (1).pptx · slide 25</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-26-image10.png" alt="02 Intro to Human Error (1).pptx · slide 26" loading="lazy">
-    <figcaption>02 Intro to Human Error (1).pptx · slide 26</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/03-he-frameworks-2/slide-01-image1.png" alt="03 HE Frameworks (2).pptx · slide 1" loading="lazy">
-    <figcaption>03 HE Frameworks (2).pptx · slide 1</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/03-he-frameworks-2/slide-14-image2.png" alt="03 HE Frameworks (2).pptx · slide 14" loading="lazy">
-    <figcaption>03 HE Frameworks (2).pptx · slide 14</figcaption>
-  </figure>
-</div>
+### 2. `lapse`
+The plan is correct, but the needed action never happens.  
+Typical example: omitting a check or forgetting a confirmation.
+
+### 3. `mistake`
+Execution is smooth, but the understanding, judgment, or plan is wrong from the start.  
+Typical example: consistently acting on the wrong interpretation.
+
+### 4. `violation`
+The rule is known, but the operator deliberately departs from it.  
+Typical example: skipping a step to save time.
+
+The shortest memory line is:
+
+- `slip`: the intention was right, the hand was wrong
+- `lapse`: the intention was right, but the action was omitted
+- `mistake`: the execution was consistent, but the plan was wrong
+- `violation`: the rule was known, but deliberately bypassed
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/02-intro-to-human-error-1/slide-16-image4.png" alt="This figure should make one point visible: slip, lapse, mistake, and violation all look like failure on the surface, but they occur at different layers and should not trigger the same fix." loading="lazy">
+  <figcaption>This figure should make one point visible: slip, lapse, mistake, and violation all look like failure on the surface, but they occur at different layers and should not trigger the same fix.</figcaption>
+</figure>
+
+!!! warning "The Most Common Confusions"
+    - `slip` is not not knowing what to do; it is knowing what to do and still deviating during execution.
+    - `lapse` is not a wrong action; it is an omitted action, usually tied to memory or attention dropout.
+    - `mistake` can look smooth because execution itself may be consistent; the problem sits earlier in rule use or mental model.
+    - `violation` carries intent, so it differs from the other three, but that does not mean the analysis ends there.
+
+!!! example "Four Mini Cases"
+    - `slip`: a nurse intends to press “silence alarm” but hits “stop infusion” instead.
+    - `lapse`: the operator knows a double-check is required but moves on after the previous task and omits it entirely.
+    - `mistake`: a physician interprets the situation incorrectly and then acts consistently on that wrong understanding.
+    - `violation`: an operator knows scanning is required but skips it during a rush.
+
+## Why the PCA Model Matters
+
+The previous section answers “what kind of error is this?” The PCA model asks a deeper question: where did the problem start to grow?
+
+`PCA` stands for `Perception - Cognition - Action`:
+
+- `Perception`: was the critical cue seen, heard, or sensed?
+- `Cognition`: was it understood, remembered, and judged correctly?
+- `Action`: was the final action executed correctly?
+
+That matters because the same surface failure can have completely different roots.
+
+| Surface failure | Where the deeper problem may sit | Better design response |
+| --- | --- | --- |
+| pressing the wrong button | `Action`: the button was known, but execution slipped | change spacing, guards, and feedback |
+| missing a hidden button | `Perception`: the cue was not seen or noticed | change visibility, salience, and contrast |
+| releasing a syringe too early | `Cognition`: the user remembered or understood the rule incorrectly | change instructions, timing feedback, and task guidance |
+
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/03-he-frameworks-2/slide-14-image2.png" alt="This figure should make clear that the same surface failure may come from perception, cognition, or action, which means root cause and mitigation will also differ." loading="lazy">
+  <figcaption>This figure should make clear that the same surface failure may come from perception, cognition, or action, which means root cause and mitigation will also differ.</figcaption>
+</figure>
+
+!!! note "The Main Conclusion of This Section"
+    The value of PCA is not the acronym itself. It is the reminder not to stare only at the final action, but to ask where the error started to develop.
+
+!!! example "Example: The Same Early Injection Stop Can Have Different Roots"
+    - If the finger slips unintentionally, the root is closer to `Action`.
+    - If the user wrongly perceives that the plunger is already fully depressed, the root is closer to `Perception`.
+    - If the user remembers “hold for 10 seconds” as “hold for 6 seconds,” the root is closer to `Cognition`.
+
+## How to Use the Framework
+
+When analyzing a real event, walk the framework in order:
+
+```mermaid
+flowchart TD
+    A[Observe a visible failure] --> B{Was there a deliberate rule deviation?}
+    B -- Yes --> C[Start from violation]
+    B -- No --> D{Was the plan itself correct?}
+    D -- Yes --> E[Differentiate slip vs lapse]
+    D -- No --> F[Classify as mistake]
+    E --> G[Trace action, memory, interface, and workload]
+    F --> H[Trace understanding, rules, information, and mental model]
+    C --> I[Trace workflow pressure, organization, and constraints]
+    G --> J[Identify root cause]
+    H --> J
+    I --> J
+    J --> K[Design the mitigation]
+```
+
+The practical point is simple: do not jump straight to “more training.” Classify first, trace the deeper cause second, and only then decide whether the right response is interface change, workflow change, prompting, documentation, or organizational redesign.
+
+## Chapter Summary
+
+!!! tip "What To Carry Forward"
+    - Human error analysis is about why failure happened, not about who is “bad.”
+    - Stopping at the failing individual usually misses the larger system causes.
+    - `slip`, `lapse`, `mistake`, and `violation` must be separated because they lead to different mitigations.
+    - The `old view` compresses failure into blame; the `new view` asks how the system created or amplified the risk.
+    - The PCA model reminds us that the same surface error may begin in perception, cognition, or action.
+    - Classification is only useful if it leads to better root-cause analysis and mitigation.
+
 
 ## Source Scope and Related Topics
 

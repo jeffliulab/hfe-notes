@@ -1,99 +1,72 @@
 # 错误分析与调查流程
 
-本页把调查流程、NTSB 取证逻辑与错误分析方法放在一起，说明事故与事件分析如何从事实收集走向可执行的因果解释。
+这一页讲的是：当事故、事件或险情已经发生后，我们怎样把它分析清楚，而不是只写成一段带结论的故事。
 
-## 课件里的讲解顺序
+!!! note "本页主问题"
+    错误分析和调查流程怎样把“发生了什么”转成“为什么会这样，以及下一步应该改什么”？
 
-这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+## 本章重点
 
-### Sp26_Investigative Process-NTSB_20260121.pdf
+- 调查先收事实，再建时间线，再追因果层级，最后落到改进措施。
+- NTSB 风格的核心纪律是：先有证据，再谈解释。
+- 一个后果通常不只有一条原因线，分析不能太早收束到单一结论。
+- 好的错误分析要能回到设计、流程、培训或监管行动，而不只是写报告。
 
-1. The NTSB Investigative Process
-2. NTSB Primer Established in 1967 as part of the Department of Transportation
-3. NTSB Mission Maintaining our congressionally mandated independence
-4. Selecting Accidents to Investigate
-5. Investigative Process Overview Initial notification and decision to investigate
-6. NTSB On Site “Go Team”
-7. “Go Team” Working Groups
-8. The “Party” System Board designates organizations as parties to its investigations
+## 先记住方法定位
 
-### Sp26_ErrorAnalysisMethods_20260121.pdf
+!!! tip "先记住这个方法的定位"
+    先记住这个方法的定位：调查不是为了尽快给出结论，而是为了把结论建立在可靠事实和可解释因果链上。
 
-1. ANALYSIS METHODS & FRAMEWORKS
-2. Issues/ sidebars Issues/theory ("Sidebars”)
-3. A WORD ABOUT MODELS (FRAMEWORKS) "All models are wrong, but some are useful”
-4. HOW DO YOU DEFINE “HUMAN ERROR”?
-5. TYPES OF HUMAN ERROR
-6. EXAMPLES OF HUMAN ERRORS
-7. EXAMPLE: ERROR DUE TO DESIGN
-8. HEINRICH’S TRIANGLE o Herbert William Heinrich
+## 这个方法解决什么问题
 
+错误分析和调查流程的价值，在于把一次复杂事件拆成可验证的结构。它不满足于“某人当时做错了什么”，而是追问：
 
-## 这页的逻辑顺序
+- 系统当时处于什么状态
+- 事件按什么顺序展开
+- 哪些因素是直接触发，哪些因素是前置条件
+- 哪些系统层问题让错误更可能发生或更难恢复
 
-建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+## 输入与输出是什么
 
-1. 调查流程的阶段划分
-2. NTSB 风格的事实到原因链条
-3. 错误分析如何支撑后续风险控制
+这个方法的输入通常包括：访谈、记录、日志、时间信息、程序文件、环境条件和设备状态。
 
-## 核心概念
+它的输出不应该只是一个“最可能原因”，而应该至少包含：
 
-错误分析与调查流程这一页，讲的是“如何把事故讲清楚”。重点不是写一段故事，而是把事实、时间线、因果链和改进行动拆开处理。
+- 清楚的时间线
+- 事实与解释的区分
+- 直接因素与更深层条件的区分
+- 能落地的改进建议
 
-## 调查的基本顺序
+## 操作步骤怎么走
 
-1. 先收集事实：发生了什么、谁在场、系统处于什么状态。
-2. 再建时间线：事件是如何一步步演化的。
-3. 然后区分直接触发因素、前置条件和更深层的组织/设计因素。
-4. 最后把分析结果翻译成能执行的改进措施。
+可以把调查流程记成四步：
 
-## NTSB 风格的重要提醒
+1. 收集事实，不要急着解释。
+2. 建时间线，确保事件展开顺序清楚。
+3. 分层找因果，把触发因素、前置条件和组织/设计问题区分开。
+4. 把结果翻译成改进措施，回到界面、程序、训练、资源或监管层。
 
-- 先有事实，再谈原因
-- 不要把“结论”提前塞进证据描述里
-- 一个后果通常不只有一条原因线
-- 真正有价值的报告必须能让后续设计、训练、程序或监管发生变化
+!!! note "一句话结论"
+    调查真正要避免的，不是“信息太多”，而是“过早觉得自己已经知道答案”。
 
-## 难点讲解
+!!! warning "最容易做错的地方"
+    最常见的失误，是看见一个显眼的人类动作后就直接把它写成“原因”。这样会把调查从解释系统，缩成描述最后一下动作。
 
-事故分析最常见的错误，是过早收束到一个显眼原因。例如“飞行员失误”或“护士看错了”。这会让你错过：
+!!! example "worked example：一次给药错误怎样被拆开"
+    如果调查只写“护士选错了药”，输出就只有 blame。更成熟的调查会继续补上时间线、包装相似性、核对流程、工作负荷、班次疲劳和报警信息，把单一动作扩展成一条可解释的因果链。
 
-- 信息呈现是否误导
-- 任务顺序是否本身容易出错
-- 程序是否与真实工作负荷冲突
-- 组织是否长期容忍危险偏差
+## 和后续方法是什么关系
 
-## 课件图示与页面预览
+这页讲的是“已经发生的事件如何被解释”。后面的 task analysis、URRA 和 operational risk 页，则把这种解释能力往前推，用来在出事之前识别结构性风险。
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
+## 本章总结
 
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-investigative-process-ntsb-20260121/page-01.png" alt="Sp26_Investigative Process-NTSB_20260121.pdf · 第 1 页预览" loading="lazy">
-    <figcaption>Sp26_Investigative Process-NTSB_20260121.pdf · 第 1 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-investigative-process-ntsb-20260121/page-02.png" alt="Sp26_Investigative Process-NTSB_20260121.pdf · 第 2 页预览" loading="lazy">
-    <figcaption>Sp26_Investigative Process-NTSB_20260121.pdf · 第 2 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-investigative-process-ntsb-20260121/page-03.png" alt="Sp26_Investigative Process-NTSB_20260121.pdf · 第 3 页预览" loading="lazy">
-    <figcaption>Sp26_Investigative Process-NTSB_20260121.pdf · 第 3 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-erroranalysismethods-20260121/page-01.png" alt="Sp26_ErrorAnalysisMethods_20260121.pdf · 第 1 页预览" loading="lazy">
-    <figcaption>Sp26_ErrorAnalysisMethods_20260121.pdf · 第 1 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-erroranalysismethods-20260121/page-02.png" alt="Sp26_ErrorAnalysisMethods_20260121.pdf · 第 2 页预览" loading="lazy">
-    <figcaption>Sp26_ErrorAnalysisMethods_20260121.pdf · 第 2 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-erroranalysismethods-20260121/page-04.png" alt="Sp26_ErrorAnalysisMethods_20260121.pdf · 第 4 页预览" loading="lazy">
-    <figcaption>Sp26_ErrorAnalysisMethods_20260121.pdf · 第 4 页预览</figcaption>
-  </figure>
-</div>
+!!! tip "复习时重点记这几条"
+    - 调查先做事实澄清，再做因果解释。
+    - 一个结果通常有多条原因线，不能过早收束。
+    - 真正有价值的输出是时间线、因果层级和改进措施。
+    - 这套方法为后续更前置的风险分析页打底。
+
 
 ## 资料范围与相关主题
 

@@ -1,73 +1,72 @@
 # URRA 方法
 
-本页整理 Use-Related Risk Analysis 的写法、输入输出与判定思路，突出 URRA 在人因风险管理中的中枢作用。
+URRA 这一页讲的不是一种表格格式，而是一条完整风险链：任务步骤、使用错误、危险情境、伤害后果和控制措施怎样被写到同一个结构里。
 
-## 课件里的讲解顺序
+!!! note "本页主问题"
+    Use-Related Risk Analysis 怎样把任务、错误、危害和控制措施串成一条可追踪、可验证、可回看的链？
 
-这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+## 本章重点
 
-### 10 Write URRA.pptx
+- URRA 的中心作用，是把 use step、use error、hazardous situation、harm 和 control 连成一条链。
+- 书写顺序必须是任务与场景在前，错误与后果在后，控制措施最后。
+- 写得好的 URRA 足够具体，能直接支持验证活动。
+- 写得差的 URRA 往往只有笼统用语，既看不出真正风险，也支撑不了后续测试。
 
-1. Sami Durrani PhD and Eric Bergman PhD Developing the URRA
-2. Review: Use-related risk analysis process (as defined by FDA) Ongoing activity
-3. Identifying potential use errors?
-4. Typical sources of data (not a comprehensive list) Previous version of device
-5. MAUDE See separate video on conducting a known problems analysis
-6. Previously we conducted a Task Analysis… User does not dispose of AI in sharps container
-7. A URRA needs to contain the following: Reference number
+## 先记住方法定位
 
+!!! tip "先记住这个方法的定位"
+    先记住这个方法的定位：URRA 不是“把风险写进表里”，而是把风险路径写清楚到足以支持设计和验证。
 
-## 这页的逻辑顺序
+## 这个方法解决什么问题
 
-建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+URRA 解决的是“风险信息分散在不同文件里”的问题。它把使用流程、潜在错误、危险情境、伤害和控制汇总到同一条链上，让团队能看见风险是怎样一步步长出来的。
 
-1. URRA 的目标与文档结构
-2. 风险链条如何从任务与错误导出
-3. URRA 如何为验证与控制措施服务
+## 输入与输出是什么
 
-## 核心概念
+URRA 的输入通常来自：
 
-URRA 的核心作用，是把“任务步骤”“可能的使用错误”“危险情境”“伤害后果”和“风险控制”串成一张可追踪的链，而不是只留下零散担忧。
+- task analysis
+- user and use-environment assumptions
+- 已知 use error 或投诉信息
+- 设计特征、标签、IFU 和培训方案
 
-## 一条 URRA 记录通常在回答什么
+输出则是一组可追踪条目，能回答：
 
-- 用户在做哪一个 use step
-- 可能出现什么错误行为
-- 这个错误会把系统带到什么危险情境
-- 最终可能造成什么 harm
-- 现有控制是否足够，是否还要增加新的控制
+- 哪一步可能出错
+- 错后会进入什么危险情境
+- 最终可能带来什么 harm
+- 现有控制够不够
 
-## 写 URRA 时的逻辑顺序
+## 操作步骤怎么走
 
-先从任务与场景出发，再写错误，再写后果，最后才讨论控制。顺序不能反过来。因为如果你先想控制措施，很容易把分析写成“已有设计说明书”，而不是对风险的真正展开。
+写 URRA 时，顺序非常关键：
 
-## 难点讲解
+1. 先从任务和 use scenario 出发。
+2. 明确写出具体 use error，而不是“使用不当”这种大词。
+3. 继续把错误推到 hazardous situation 和 harm。
+4. 最后再看现有 control 是否足够，以及还要不要加设计或验证措施。
 
-URRA 写得不好的常见原因有两个：
+!!! note "一句话结论"
+    如果控制措施写在前面，URRA 很容易变成设计辩护；如果风险链写在前面，URRA 才像真正的风险分析。
 
-- 把错误写得太笼统，例如“使用不当”
-- 把 harm 写得太近，例如只写“剂量错误”，却没有继续写到病人可能受到什么伤害
+!!! warning "最容易做错的地方"
+    最常见的问题有两个：把 error 写得太泛，比如“误用”；以及把 harm 写得太近，只写“剂量错误”却没有继续写到患者伤害。
 
-好的 URRA 必须具体到足以支持后续验证。
+!!! example "worked example：一条 URRA 记录应该怎样写"
+    例如某一步是“设定剂量”。好的 URRA 不会只写“可能出错”，而会写成：用户把 1.0 mL 读成 10 mL，导致危险情境是过量给药，潜在 harm 是低血糖或更严重不良反应；然后才回头讨论剂量窗口、视觉区分、确认步骤和验证测试。
 
-## 课件图示与页面预览
+## 和前后方法是什么关系
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
+task analysis 给 URRA 提供任务骨架；medical-device pages 会进一步把这套逻辑放到监管语境里；EpiPen workbook 页则展示一条 URRA 记录实际长什么样。
 
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/10-write-urra/slide-01-image1.png" alt="10 Write URRA.pptx · 第 1 张幻灯片" loading="lazy">
-    <figcaption>10 Write URRA.pptx · 第 1 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/10-write-urra/slide-02-image2.png" alt="10 Write URRA.pptx · 第 2 张幻灯片" loading="lazy">
-    <figcaption>10 Write URRA.pptx · 第 2 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/10-write-urra/slide-05-image3.png" alt="10 Write URRA.pptx · 第 5 张幻灯片" loading="lazy">
-    <figcaption>10 Write URRA.pptx · 第 5 张幻灯片</figcaption>
-  </figure>
-</div>
+## 本章总结
+
+!!! tip "复习时重点记这几条"
+    - URRA 的核心是写清风险链，而不是填表本身。
+    - 输入来自任务流、用户场景和已知问题。
+    - 写作顺序必须是任务/错误/后果/控制，而不是倒着来。
+    - 越具体的 URRA，越能支持后续验证。
+
 
 ## 资料范围与相关主题
 

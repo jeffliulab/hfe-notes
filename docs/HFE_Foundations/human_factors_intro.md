@@ -1,114 +1,62 @@
 # 人因工程导论
 
-本页围绕 human factors 的定义、设计目标与系统视角，整理人因工程如何把人的能力与限制带回系统设计。
+这一页先回答最基础的问题：human factors 到底是什么。它不是“研究人类缺点”的学科，而是把人的能力与限制真正带回设计里。
 
-## 课件里的讲解顺序
+!!! note "本页主问题"
+    如果系统最后总是要靠人来使用、监控、判断和恢复，那么设计时应该怎样把人的能力、限制和工作现实纳入系统？
 
-这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+## 本章重点
 
-### 01 Intro to HF and Risk (1).pptx
+- 人因工程同时追求人的福祉与系统绩效，不是只偏向“效率”或“舒服”。
+- 它研究的不是抽象的人，而是真实情境中的使用者：会疲劳、会分心、会受时间压力影响。
+- 好设计不是让专家勉强能用，而是让普通用户在压力下也不容易走错。
+- 培训很重要，但人因工程优先改系统，而不是先把责任压给使用者。
 
-1. Sami Durrani PhD and Eric Bergman PhD Introduction to Human Factors and Risk
-2. Human Factors & Ergonomics Society What is Human Factors?
-3. Study, Research and Experimentation Learn about human traits
-4. Moral Imperative Improve safety and reduce adverse events
-5. Design Stage HF considerations are taken into account during product/system design stage
-6. A Brief History of Human Factors
-7. Their work included
-8. Therbligs
+## 先记住一句话
 
+!!! tip "复习时先记住这句话"
+    记这一页最简单的方法是：人因工程不是让人去迁就系统，而是让系统尽量贴近真实的人。
 
-## 这页的逻辑顺序
+## 人因工程到底在做什么
 
-建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+课件里的定义看起来很正式，但学生读这页时先抓住一句人话就够了：人因工程是在研究人和系统中其他要素怎样相互作用，然后把这种理解再用回设计。
 
-1. Human factors 的学科定义
-2. 优化福祉与系统性能的双目标
-3. 把人视为系统组成部分而不是误差来源
+这件事之所以重要，是因为系统最后总要落到真实的人手里。界面、硬件、软件、说明、环境和流程，只要有一个环节不匹配，最终都会变成使用负担、出错机会或恢复困难。
 
-## 核心概念
+## 为什么它同时关心福祉和绩效
 
-人因工程不是“研究人类弱点”的学科，而是把人的能力、限制、节律、记忆和注意特性带回设计中，让系统更容易被正确使用。
+很多人直觉上会把“人的福祉”和“系统绩效”看成两件互相冲突的事，但人因工程把它们放在一起看。原因很直接：
 
-## 这个主题真正想说什么
+- 一个让人持续费力、困惑、易疲劳的系统，长期绩效通常不会好。
+- 一个只追求表面效率、却把恢复和检查机会拿掉的系统，安全性通常也会变差。
 
-- 人因工程同时追求两个目标：人的福祉与系统绩效。
-- 重点不是把人从系统里拿掉，而是承认人永远在系统里，于是设计必须适配真实的人。
-- 所谓“设计得好”，不是让专家勉强能用，而是让普通用户在压力、疲劳、分心时依然不容易出错。
+所以这门学科追求的不是“谁让步”，而是怎样通过设计让两者一起变好。
 
-## 难点讲解
+## 人因工程在设计里具体落到哪里
 
-很多人会把人因工程理解成“培训做得更好一点”。这其实太窄了。培训当然重要，但人因工程更关心的是：
+这页真正想把你从“概念理解”推进到“设计理解”。如果说人因工程是系统设计的一部分，那么它具体会落到：
 
-- 界面是否直观
 - 信息是否在正确时间出现
-- 任务步骤是否符合人的认知顺序
-- 系统是否允许人恢复、检查和纠正
+- 界面是否支持快速辨识和正确映射
+- 步骤顺序是否符合人的认知流程
+- 系统是否给了检查、纠错和恢复空间
 
-换句话说，人因工程优先改系统，而不是先责怪使用者。
+也就是说，它不是只存在于实验室或培训课里，而是直接写进产品、流程和环境本身。
 
-## 课件图示与页面预览
+!!! warning "最容易误解的地方"
+    不要把人因工程缩成“培训再加强一点”。如果界面、流程和环境本身在制造困难，那么单靠培训很难稳定抵消这些设计缺陷。
 
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
+!!! example "案例：为什么输液泵的人因问题不只是“护士再仔细一点”"
+    如果输液泵的按钮名称相近、剂量确认流程长、关键状态字小而不显眼，那么即使使用者接受过培训，仍然可能在繁忙病区里误选或漏看。人因工程在这里关心的不是“再多提醒一遍”，而是界面本身有没有把正确操作变容易。
 
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-01-image1.png" alt="01 Intro to HF and Risk (1).pptx · 第 1 张幻灯片" loading="lazy">
-    <figcaption>01 Intro to HF and Risk (1).pptx · 第 1 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-08-image2.png" alt="01 Intro to HF and Risk (1).pptx · 第 8 张幻灯片" loading="lazy">
-    <figcaption>01 Intro to HF and Risk (1).pptx · 第 8 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-12-image3.jpeg" alt="01 Intro to HF and Risk (1).pptx · 第 12 张幻灯片" loading="lazy">
-    <figcaption>01 Intro to HF and Risk (1).pptx · 第 12 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-14-image4.jpg" alt="01 Intro to HF and Risk (1).pptx · 第 14 张幻灯片" loading="lazy">
-    <figcaption>01 Intro to HF and Risk (1).pptx · 第 14 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-16-image5.jpg" alt="01 Intro to HF and Risk (1).pptx · 第 16 张幻灯片" loading="lazy">
-    <figcaption>01 Intro to HF and Risk (1).pptx · 第 16 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-24-image7.png" alt="01 Intro to HF and Risk (1).pptx · 第 24 张幻灯片" loading="lazy">
-    <figcaption>01 Intro to HF and Risk (1).pptx · 第 24 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-25-image8.png" alt="01 Intro to HF and Risk (1).pptx · 第 25 张幻灯片" loading="lazy">
-    <figcaption>01 Intro to HF and Risk (1).pptx · 第 25 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-26-image9.jpg" alt="01 Intro to HF and Risk (1).pptx · 第 26 张幻灯片" loading="lazy">
-    <figcaption>01 Intro to HF and Risk (1).pptx · 第 26 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-31-image10.jpeg" alt="01 Intro to HF and Risk (1).pptx · 第 31 张幻灯片" loading="lazy">
-    <figcaption>01 Intro to HF and Risk (1).pptx · 第 31 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-33-image11.png" alt="01 Intro to HF and Risk (1).pptx · 第 33 张幻灯片" loading="lazy">
-    <figcaption>01 Intro to HF and Risk (1).pptx · 第 33 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-34-image12.png" alt="01 Intro to HF and Risk (1).pptx · 第 34 张幻灯片" loading="lazy">
-    <figcaption>01 Intro to HF and Risk (1).pptx · 第 34 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-36-image14.jpg" alt="01 Intro to HF and Risk (1).pptx · 第 36 张幻灯片" loading="lazy">
-    <figcaption>01 Intro to HF and Risk (1).pptx · 第 36 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-38-image15.jpeg" alt="01 Intro to HF and Risk (1).pptx · 第 38 张幻灯片" loading="lazy">
-    <figcaption>01 Intro to HF and Risk (1).pptx · 第 38 张幻灯片</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/01-intro-to-hf-and-risk-1/slide-41-image16.png" alt="01 Intro to HF and Risk (1).pptx · 第 41 张幻灯片" loading="lazy">
-    <figcaption>01 Intro to HF and Risk (1).pptx · 第 41 张幻灯片</figcaption>
-  </figure>
-</div>
+## 本章总结
+
+!!! tip "复习时重点记这几条"
+    - 人因工程研究的是人和系统其他要素的相互作用。
+    - 它追求人的福祉与系统绩效同时优化。
+    - 真实用户的疲劳、分心和工作现实必须被带回设计。
+    - 培训是补充，系统设计才是首要抓手。
+
 
 ## 资料范围与相关主题
 

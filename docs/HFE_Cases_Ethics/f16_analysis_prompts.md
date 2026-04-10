@@ -1,70 +1,51 @@
 # F16 分析提示
 
-本页将 F16 prompts 视为案例分析模板，帮助读者把课程概念转化为结构化提问与论证路径。
+F16 prompts 这一页本质上是“怎么分析案例”的脚手架，它不是直接给答案，而是给你一套不会漏掉关键维度的提问路径。
 
-## 课件里的讲解顺序
+!!! note "本页主问题"
+    当面对一个复杂案例时，怎样用 prompts 把观察、解释和改进建议组织成一个结构，而不是想到哪里问到哪里？
 
-这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+## 这个案例最重要的结论
 
-### Sp26_F16-AnalysisPrompts_20260219.pdf
+- prompts 的价值在于结构化提问，而不是提问数量本身。
+- 它能帮助分析者同时看信息、界面、程序、团队和组织因素。
+- prompt 的本质，是把案例分析从单因解释拉回多层解释。
+- 这页教的是分析框架，不是单一案例答案。
 
-1. F-16 MISHAP CLASS DISCUSSION PROMPTS
-2. ACCIDENT OVERVIEW o Occurred during a night mission qualification training (MQT) flight
-3. ACCIDENT OVERVIEW - AIR-TO-AIR REFUELING
-4. ACCIDENT OVERVIEW – 1ST LANDING
-5. ACCIDENT OVERVIEW – 2ND LANDING
-6. APPLICATION OF HFACS Structured analysis of human error patterns
-7. REASON’S LATENT FAILURE MODEL o Factor: condition that leads to an incident
-8. Application of HFACS 7.0 (page 31) AE103 – “Performance-Based Errors”
+## 先记住这个案例的一句话判断
 
+!!! tip "先记住这个案例的一句话判断"
+    先记住这个案例的一句话判断：好的 prompt 不是让你问更多问题，而是让你问更不容易漏层的问题。
 
-## 这页的逻辑顺序
+## 背景与 stakes
 
-建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+复杂案例最怕的是分析没有结构，大家各说一段现象，最后却没有形成因果逻辑。prompts 的作用，就是让团队在讨论时共享同一套观察维度和展开顺序。
 
-1. 分析 prompts 如何组织观察维度
-2. 如何把概念转成案例提问
-3. 结构化 prompts 为什么有助于团队复盘
+## 这些 prompts 真正帮助你做什么
 
-## 核心概念
+它们把案例拆成若干稳定维度：事件背景、任务、信息、界面、程序、团队、组织和改进建议。这样一来，分析就不容易只围着最显眼的一条解释打转。
 
-F16 prompts 这一页本质上是一个“怎么分析案例”的脚手架。它的作用不是直接给你答案，而是帮你把课程概念转换成一组系统化提问。
+!!! warning "最容易误解的地方"
+    不要把 prompts 当成“问题越多越好”的列表。没有结构的多问题，只会把讨论拉散；真正有用的是提问顺序和维度覆盖。
 
-## 这页真正有用的地方
+## 为什么这种结构会让复盘质量明显提高
 
-- 避免案例分析只停在表面叙述
-- 让你从多个维度同时看同一个事件
-- 帮助团队在讨论时保持结构，而不是想到哪里说到哪里
+一旦团队对提问路径达成一致，讨论就更容易从“谁对谁错”转到“哪些证据支持哪条因果链、哪些改进最有针对性”。这正是 prompts 真正的价值。
 
-## 一般可以怎么用这些 prompts
+!!! note "一句话结论"
+    F16 prompts 教你的，不是某个事件答案，而是如何把课程概念稳定地搬进复杂案例分析。
 
-1. 先描述事件和任务背景。
-2. 再问信息、界面、程序、团队和组织因素分别起了什么作用。
-3. 然后区分直接触发因素与更深层条件。
-4. 最后把分析收束成改进建议。
+!!! example "案例：为什么同一个案例用 prompt 分析会更像工程复盘"
+    没有 prompt 时，团队很容易停留在“某人判断错了”。用了 prompt 之后，讨论会被迫补齐信息、界面、程序、团队和组织层，这时案例就从故事变成了可执行的工程复盘。
 
-## 难点讲解
+## 这个案例最后要带走什么
 
-很多 prompts 看起来像“问题列表”，但它们真正的价值是迫使分析者跳出单因解释。也就是说，prompt 的意义不在于问得多，而在于把你的视角从个人错误扩展到整个系统。
+!!! tip "复习时重点记这几条"
+    - prompts 的核心价值是结构化提问。
+    - 它帮助团队覆盖多个因果维度。
+    - 这页教的是分析框架，而不是标准答案。
+    - 真正效果是把讨论拉回工程复盘逻辑。
 
-## 课件图示与页面预览
-
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-f16-analysisprompts-20260219/page-01.png" alt="Sp26_F16-AnalysisPrompts_20260219.pdf · 第 1 页预览" loading="lazy">
-    <figcaption>Sp26_F16-AnalysisPrompts_20260219.pdf · 第 1 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-f16-analysisprompts-20260219/page-03.png" alt="Sp26_F16-AnalysisPrompts_20260219.pdf · 第 3 页预览" loading="lazy">
-    <figcaption>Sp26_F16-AnalysisPrompts_20260219.pdf · 第 3 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-f16-analysisprompts-20260219/page-04.png" alt="Sp26_F16-AnalysisPrompts_20260219.pdf · 第 4 页预览" loading="lazy">
-    <figcaption>Sp26_F16-AnalysisPrompts_20260219.pdf · 第 4 页预览</figcaption>
-  </figure>
-</div>
 
 ## 资料范围与相关主题
 

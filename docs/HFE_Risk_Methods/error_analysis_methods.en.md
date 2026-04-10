@@ -1,94 +1,72 @@
 # Error Analysis and Investigation Flow
 
-This page joins the investigative process, NTSB logic, and error-analysis methods to show how event analysis moves from evidence gathering to causal explanation.
+This page asks how to analyze an accident, incident, or near miss in a disciplined way instead of collapsing it into a story with a premature conclusion.
 
-## Lecture Flow in the Source Material
+!!! note "Core Question"
+    How do error analysis and investigation convert “what happened” into “why it happened and what should be changed next”?
 
-This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+## Key Takeaways
 
-### Sp26_Investigative Process-NTSB_20260121.pdf
+- Investigation moves from facts to timeline to causal layers to interventions.
+- The NTSB-style discipline is evidence first, explanation second.
+- One outcome usually has multiple contributing paths, so analysis cannot collapse too early.
+- Strong error analysis ends in design, workflow, training, or policy change rather than in a report alone.
 
-1. The NTSB Investigative Process
-2. NTSB Primer Established in 1967 as part of the Department of Transportation
-3. NTSB Mission Maintaining our congressionally mandated independence
-4. Selecting Accidents to Investigate
-5. Investigative Process Overview Initial notification and decision to investigate
-6. NTSB On Site “Go Team”
-7. “Go Team” Working Groups
-8. The “Party” System Board designates organizations as parties to its investigations
+## What This Method Is For
 
-### Sp26_ErrorAnalysisMethods_20260121.pdf
+!!! tip "Start with the Purpose"
+    Start with the purpose of the method: investigation is not about reaching a conclusion quickly, but about grounding the conclusion in reliable facts and an explainable causal chain.
 
-1. ANALYSIS METHODS & FRAMEWORKS
-2. Issues/ sidebars Issues/theory ("Sidebars”)
-3. A WORD ABOUT MODELS (FRAMEWORKS) "All models are wrong, but some are useful”
-4. HOW DO YOU DEFINE “HUMAN ERROR”?
-5. TYPES OF HUMAN ERROR
-6. EXAMPLES OF HUMAN ERRORS
-7. EXAMPLE: ERROR DUE TO DESIGN
-8. HEINRICH’S TRIANGLE o Herbert William Heinrich
+## What Problem This Method Solves
 
+Error analysis and investigation are valuable because they turn a complex event into a verifiable structure. The method asks:
 
-## Reading Logic
+- what state the system was in
+- how the event unfolded over time
+- which factors were direct triggers and which were preconditions
+- which system-level issues made the error more likely or harder to recover from
 
-Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+## What the Inputs and Outputs Are
 
-1. The phases of an investigation
-2. The NTSB-style path from facts to causes
-3. How error analysis supports later risk controls
+Typical inputs include interviews, records, logs, timing information, procedures, environmental conditions, and equipment state.
 
-## Core Idea
+The output should not be only a “most likely cause.” It should include:
 
-Error analysis is about turning an event into an explainable structure: facts, timeline, causal layers, and actionable recommendations.
+- a clear timeline
+- separation of fact from interpretation
+- separation of triggers from deeper conditions
+- actionable recommendations
 
-## Basic Investigation Flow
+## How the Method Proceeds
 
-1. Gather facts.
-2. Build the event sequence.
-3. Separate triggers, preconditions, and deeper organizational or design contributors.
-4. Translate findings into interventions.
+The flow can be remembered in four steps:
 
-## NTSB-Style Discipline
+1. gather facts without rushing into explanation
+2. build the timeline so the sequence is clear
+3. separate triggers, preconditions, and organizational or design contributors
+4. translate the findings into interventions across interface, procedure, training, resources, or policy
 
-- facts come before conclusions
-- evidence and interpretation should not be collapsed
-- one outcome usually has multiple contributing paths
-- good analysis ends in design, training, procedure, or policy change
+!!! note "One-Sentence Conclusion"
+    The main thing an investigation must avoid is not too much information, but the premature feeling that the answer is already obvious.
 
-## Common Difficulty
+!!! warning "The Most Common Failure Mode"
+    The most common failure is to see one visible human action and immediately write it down as “the cause.” That collapses a system explanation into a description of the last visible move.
 
-Investigations often stop too early at the most visible human action. The deeper task is to explain why the system made that action likely, hard to detect, or hard to recover from.
+!!! example "Worked Example: How a Medication Error Gets Decomposed"
+    If the report only says “the nurse selected the wrong medication,” the output is blame. A stronger investigation adds the timeline, packaging similarity, verification process, workload, shift fatigue, and alarm context, turning one visible action into an explainable causal chain.
 
-## Slide Figures and Page Previews
+## How It Connects to Later Methods
 
-These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
+This page explains how a completed event is interpreted. Later pages such as task analysis, URRA, and operational risk push the same logic forward so risk can be recognized before an event fully unfolds.
 
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-investigative-process-ntsb-20260121/page-01.png" alt="Sp26_Investigative Process-NTSB_20260121.pdf · page 1 preview" loading="lazy">
-    <figcaption>Sp26_Investigative Process-NTSB_20260121.pdf · page 1 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-investigative-process-ntsb-20260121/page-02.png" alt="Sp26_Investigative Process-NTSB_20260121.pdf · page 2 preview" loading="lazy">
-    <figcaption>Sp26_Investigative Process-NTSB_20260121.pdf · page 2 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-investigative-process-ntsb-20260121/page-03.png" alt="Sp26_Investigative Process-NTSB_20260121.pdf · page 3 preview" loading="lazy">
-    <figcaption>Sp26_Investigative Process-NTSB_20260121.pdf · page 3 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-erroranalysismethods-20260121/page-01.png" alt="Sp26_ErrorAnalysisMethods_20260121.pdf · page 1 preview" loading="lazy">
-    <figcaption>Sp26_ErrorAnalysisMethods_20260121.pdf · page 1 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-erroranalysismethods-20260121/page-02.png" alt="Sp26_ErrorAnalysisMethods_20260121.pdf · page 2 preview" loading="lazy">
-    <figcaption>Sp26_ErrorAnalysisMethods_20260121.pdf · page 2 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-erroranalysismethods-20260121/page-04.png" alt="Sp26_ErrorAnalysisMethods_20260121.pdf · page 4 preview" loading="lazy">
-    <figcaption>Sp26_ErrorAnalysisMethods_20260121.pdf · page 4 preview</figcaption>
-  </figure>
-</div>
+## Chapter Summary
+
+!!! tip "What To Carry Forward"
+    - Investigation clarifies facts before explaining causes.
+    - One outcome often has multiple causal paths, so early closure is dangerous.
+    - The strongest output combines timeline, layered causation, and intervention.
+    - This method provides the base logic for the more proactive risk-analysis pages that follow.
+
 
 ## Source Scope and Related Topics
 

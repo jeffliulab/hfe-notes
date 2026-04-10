@@ -1,92 +1,55 @@
 # Use Errors in Medical Devices
 
-This page focuses on use error, abnormal use, and interface-induced risk in medical devices, emphasizing that failure emerges from the use system rather than the operator alone.
+This page is about classifying what “used incorrectly” really means. Device failure, unintended use error, abnormal use, and deliberate deviation cannot all be thrown into one bucket.
 
-## Lecture Flow in the Source Material
+!!! note "Core Question"
+    When medical-device use goes wrong, how do we distinguish design-induced use error from device failure, abnormal use, and deliberate rule deviation?
 
-This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+## Key Takeaways
 
-### 07 Use Errors.pptx
+- Not every bad use episode is a use error.
+- The classification depends on foreseeability, design contribution, and whether recovery opportunities existed.
+- Good use-error analysis pushes the discussion back to specific tasks and contexts.
+- If the problem type is misclassified, the later controls will drift as well.
 
-1. ENP 111 – Use Related Risk Analysis Sami Durrani PhD and Eric Bergman PhD
-2. (1) was different from the result expected by the user and
-3. Let’s look at a few case studies
-4. Hospital Bed
-5. Was there a use error? Was there only one? Or multiple?
-6. Hospital Bed New patient comes.
-7. Was there a use error? Yes
-8. Did a use error occur?
+## Remember This First
 
+!!! tip "Keep This Sentence in Mind"
+    The shortest way to remember this page is: before saying “the user used it incorrectly,” ask whether design, environment, and context already made correct use unusually hard.
 
-## Reading Logic
+## What Use Error Means in Medical Devices
 
-Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+This page is not broadening blame; it is reducing misclassification. It asks the team to place the visible behavior back into the foreseeable use context and judge whether it reflects unintended deviation, device failure, abnormal use, or deliberate rule departure.
 
-1. The boundary between use error and misuse
-2. How interfaces and instructions induce error
-3. Why use error must be tied to validation
+## Why the Distinction Directly Changes the Control Strategy
 
-## Core Idea
+Once the classification is wrong, the response drifts with it:
 
-This topic asks how to distinguish device failure, unintended use error, deliberate deviation, and environmental pressure when something goes wrong.
+- if an interface-induced error is treated as a training problem, the risk returns
+- if abnormal use is treated as ordinary use error, controls lose focus
+- if device failure is pushed onto the user, the design problem is hidden
 
-## Analytical Habit To Build
+!!! warning "The Most Common Failure Mode"
+    The most common mistake is compressing every bad outcome into the phrase “user error.” Once that happens, interface, labeling, environment, and organizational conditions disappear from view.
 
-- do not label every bad use episode as use error
-- judge whether the behavior was foreseeable
-- examine how design may have amplified selection, omission, judgment, or sequence errors
-- check whether recovery opportunities existed
+## The Analytical Habit This Page Tries to Build
 
-## Why It Matters
+When a visible error appears, do not label it immediately. Return first to the specific use step, scenario, display context, and environment, and then ask whether design made mis-selection, omission, misjudgment, or sequence error easier.
 
-If the problem type is misclassified, the control strategy will also drift. Good human-factors analysis stays tied to specific tasks and contexts.
+!!! note "One-Sentence Conclusion"
+    Medical-device use-error analysis is fundamentally about judging whether the system pushed the user into an error-prone position.
 
-## Slide Figures and Page Previews
+!!! example "Example: It Looks Like “Wrong Use,” but the Interface Is Doing the Pushing"
+    If two dosing modes are separated only by small textual labels, and the user selects the wrong mode in an urgent setting, the surface description is “the user selected the wrong mode.” The more important conclusion may be that the system made a high-consequence choice too difficult to discriminate.
 
-These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
+## Chapter Summary
 
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-01-image1.png" alt="07 Use Errors.pptx · slide 1" loading="lazy">
-    <figcaption>07 Use Errors.pptx · slide 1</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-04-image2.jpeg" alt="07 Use Errors.pptx · slide 4" loading="lazy">
-    <figcaption>07 Use Errors.pptx · slide 4</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-05-image3.jpeg" alt="07 Use Errors.pptx · slide 5" loading="lazy">
-    <figcaption>07 Use Errors.pptx · slide 5</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-06-image4.jpeg" alt="07 Use Errors.pptx · slide 6" loading="lazy">
-    <figcaption>07 Use Errors.pptx · slide 6</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-09-image2.jpeg" alt="07 Use Errors.pptx · slide 9" loading="lazy">
-    <figcaption>07 Use Errors.pptx · slide 9</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-10-image3.jpeg" alt="07 Use Errors.pptx · slide 10" loading="lazy">
-    <figcaption>07 Use Errors.pptx · slide 10</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-11-image4.jpeg" alt="07 Use Errors.pptx · slide 11" loading="lazy">
-    <figcaption>07 Use Errors.pptx · slide 11</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-13-image5.jpeg" alt="07 Use Errors.pptx · slide 13" loading="lazy">
-    <figcaption>07 Use Errors.pptx · slide 13</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-16-image6.png" alt="07 Use Errors.pptx · slide 16" loading="lazy">
-    <figcaption>07 Use Errors.pptx · slide 16</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-18-image7.jpeg" alt="07 Use Errors.pptx · slide 18" loading="lazy">
-    <figcaption>07 Use Errors.pptx · slide 18</figcaption>
-  </figure>
-</div>
+!!! tip "What To Carry Forward"
+    - Not every poor use episode is a use error.
+    - Classification depends on foreseeability, design contribution, and recovery opportunity.
+    - If the problem definition is wrong, the control strategy will also be wrong.
+    - Analysis must return to the concrete task and context.
+
 
 ## Source Scope and Related Topics
 

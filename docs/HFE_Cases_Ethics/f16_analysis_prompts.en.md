@@ -1,70 +1,51 @@
 # F16 Analysis Prompts
 
-This page treats the F16 prompts as a case-analysis template that converts course concepts into structured questions and argument paths.
+The F16 prompts page is essentially a scaffold for case analysis. It does not give the answer directly; it gives a questioning path that prevents the analyst from missing key dimensions.
 
-## Lecture Flow in the Source Material
+!!! note "Core Question"
+    When facing a complex case, how can prompts organize observation, explanation, and recommendation into a structure rather than a random list of thoughts?
 
-This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+## The Most Important Case Conclusions
 
-### Sp26_F16-AnalysisPrompts_20260219.pdf
+- The value of prompts lies in structured questioning rather than in the sheer number of questions.
+- They help analysts examine information, interface, procedure, team, and organizational factors together.
+- The essence of prompting is moving case analysis away from single-cause explanation toward layered explanation.
+- This page teaches an analysis framework rather than one case-specific answer.
 
-1. F-16 MISHAP CLASS DISCUSSION PROMPTS
-2. ACCIDENT OVERVIEW o Occurred during a night mission qualification training (MQT) flight
-3. ACCIDENT OVERVIEW - AIR-TO-AIR REFUELING
-4. ACCIDENT OVERVIEW – 1ST LANDING
-5. ACCIDENT OVERVIEW – 2ND LANDING
-6. APPLICATION OF HFACS Structured analysis of human error patterns
-7. REASON’S LATENT FAILURE MODEL o Factor: condition that leads to an incident
-8. Application of HFACS 7.0 (page 31) AE103 – “Performance-Based Errors”
+## Start with the Case Verdict
 
+!!! tip "Keep This Case Judgment in Mind"
+    Keep this case judgment in mind: a good prompt does not simply make you ask more questions; it makes you ask questions that are less likely to miss important layers.
 
-## Reading Logic
+## Background and Stakes
 
-Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+Complex cases are vulnerable to structureless analysis, where everyone contributes fragments of observation but no coherent causal logic emerges. Prompts help the team share one observation frame and one unfolding order during discussion.
 
-1. How prompts organize dimensions of observation
-2. How concepts become case questions
-3. Why structured prompts help team review
+## What These Prompts Actually Help You Do
 
-## Core Idea
+The prompts decompose the case into stable dimensions such as background, task, information, interface, procedure, team, organization, and recommendations. That prevents the analysis from circling only around the most visible explanation.
 
-The F16 prompts are a scaffold for case analysis. They do not provide the answer; they organize how to ask better questions.
+!!! warning "The Most Common Misunderstanding"
+    Do not treat prompts as a “more questions is better” list. A large number of unstructured questions only diffuses discussion; the useful part is the sequence and dimensional coverage.
 
-## Why They Help
+## Why This Structure Improves Review Quality
 
-- they prevent case analysis from collapsing into simple storytelling
-- they force multiple dimensions of the event into view
-- they give teams a shared structure for discussion
+Once the team aligns on the questioning path, the discussion can move from “who was right or wrong” toward “which evidence supports which causal chain and which intervention is most targeted.” That is the real value of the prompts.
 
-## A Useful Sequence
+!!! note "One-Sentence Conclusion"
+    The F16 prompts do not teach one event answer; they teach how to move course concepts reliably into complex case analysis.
 
-1. describe the event and task context
-2. examine information, interface, procedure, team, and organizational contributors
-3. separate triggers from deeper conditions
-4. turn the analysis into recommendations
+!!! example "Example: Why Prompted Analysis Looks More Like Engineering Review"
+    Without prompts, a team often stops at “someone made the wrong judgment.” With prompts, the discussion is forced to fill in information, interface, procedure, team, and organizational layers, so the case becomes an actionable engineering review rather than only a story.
 
-## Common Difficulty
+## What To Take Away from This Case
 
-Prompts matter not because they produce more questions, but because they widen the frame beyond a single-cause explanation.
+!!! tip "What To Carry Forward"
+    - The core value of prompts is structured questioning.
+    - They help teams cover multiple causal dimensions.
+    - This page teaches an analysis framework rather than a fixed answer.
+    - Their real effect is to pull discussion back toward engineering-review logic.
 
-## Slide Figures and Page Previews
-
-These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-f16-analysisprompts-20260219/page-01.png" alt="Sp26_F16-AnalysisPrompts_20260219.pdf · page 1 preview" loading="lazy">
-    <figcaption>Sp26_F16-AnalysisPrompts_20260219.pdf · page 1 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-f16-analysisprompts-20260219/page-03.png" alt="Sp26_F16-AnalysisPrompts_20260219.pdf · page 3 preview" loading="lazy">
-    <figcaption>Sp26_F16-AnalysisPrompts_20260219.pdf · page 3 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-f16-analysisprompts-20260219/page-04.png" alt="Sp26_F16-AnalysisPrompts_20260219.pdf · page 4 preview" loading="lazy">
-    <figcaption>Sp26_F16-AnalysisPrompts_20260219.pdf · page 4 preview</figcaption>
-  </figure>
-</div>
 
 ## Source Scope and Related Topics
 

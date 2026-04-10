@@ -1,67 +1,51 @@
 # Attention and Monitoring
 
-This page organizes attention resources, monitoring tasks, automation complacency, and vigilance decrement.
+The most important conclusion of this page is that sustained monitoring is not an easy task; it is one of the task types most vulnerable to performance decay.
 
-## Lecture Flow in the Source Material
+!!! note "Core Question"
+    Why do systems that ask people to “watch and wait for trouble” often lose monitoring effectiveness precisely when the trouble arrives?
 
-This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+## Key Takeaways
 
-### Attention and Monitoring 2-9- 2026.pdf
+- Attention is a limited resource and is continuously reallocated by priority, fatigue, time, and alert strategy.
+- Monitoring tasks are especially vulnerable to vigilance decrement because stimuli are rare and feedback is sparse.
+- The stronger the automation, the easier it becomes for humans to drift into passive supervision and complacency.
+- Monitoring failure is often a task-design problem rather than a pure attitude problem.
 
-1. INTRODUCTION TO ATTENTION &
-2. TOPICS Supervisory control of automation
-3. SHERIDAN’S SPECTRUM OF AUTOMATION
-4. Proctor and VanZandt, 2017 HUMAN INFORMATION PROCESSING MODEL
-5. WHAT IS ATTENTION? Attention is associated with “consciousness” and “awareness”
-6. OVERVIEW: MODELS OF ATTENTION Attention Models
-7. YERKES-DODSON LAW Kahneman D. Attention and Effort. Prentice Hall, Inc., 1973.
-8. VIGILANCE Vigilance is sustained attention, the ability to
+## Remember This First
 
+!!! tip "Keep This Sentence in Mind"
+    Keep one sentence in mind: if a system designs the human role as long periods of watching followed by sudden intervention, it is already working against the structure of human attention.
 
-## Reading Logic
+## Why Attention Is Limited by Default
 
-Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+Attention is not a perfectly stable beam that can be extended indefinitely. It is a resource that gets redistributed by priority, workload, time, and fatigue. The point of the page is not memorizing cognitive terminology; it is recognizing that system design must treat this limitation as a starting assumption.
 
-1. Why attention is a limited resource
-2. Why monitoring tasks are vulnerable to decay
-3. How automation changes attentional allocation
+## Why Monitoring Tasks Decay So Easily
 
-## Core Idea
+Monitoring tasks look easy, but they are difficult because stimuli are sparse, critical events are infrequent, and feedback is weak. The brain struggles to maintain the same alertness level for long periods, which means the operator may be at the lowest engagement point when the real anomaly appears.
 
-The point of this topic is not simply that people should pay more attention. Attention is limited, and sustained monitoring is one of the most fragile task types.
+!!! example "Example: Why Low-Event-Rate Monitoring Fails So Easily"
+    When the system stays stable for a long time and the operator mainly waits for trouble to appear, attention naturally declines. When the truly critical anomaly finally arrives, its signal may be recognized late. That is one of the most typical system expressions of vigilance decrement.
 
-## Core Logic
+## What This Implies for System Design
 
-- attention is redistributed by priority, workload, time, fatigue, and alert strategy
-- monitoring tasks are vulnerable because low-event environments produce vigilance decrement
-- stronger automation often shifts humans toward passive supervision, increasing complacency risk
+If the task itself is vulnerable to monitoring decay, design cannot leave the burden at “the person should pay more attention.” A stronger response is to make state changes more visible, critical events more distinguishable, cross-checking easier to trigger, and recovery paths clearer.
 
-## What To Ask
+!!! note "One-Sentence Conclusion"
+    Monitoring failure is often a failure of task and signal design rather than a simple moral judgment that the operator was not serious enough.
 
-If a system expects long periods of watchful waiting, ask whether that monitoring task is realistically sustainable and whether the system helps preserve awareness and recovery.
+!!! warning "The Most Common Misunderstanding"
+    “Ask the operator to stay vigilant” is not a design solution. If the system does not actively support state awareness, telling people to stay focused rarely works over time.
 
-## Common Difficulty
+## Chapter Summary
 
-Monitoring failure is often a design problem rather than a character flaw. Monotony, low feedback, and sudden state changes all work against sustained attention.
+!!! tip "What To Carry Forward"
+    - Attention is limited and cannot stay perfectly stable forever.
+    - Monitoring tasks are especially vulnerable to vigilance decrement.
+    - Automation often pushes people into a more fragile passive-supervision role.
+    - Design must actively support monitoring instead of only demanding more attention.
 
-## Slide Figures and Page Previews
-
-These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/attention-and-monitoring-2-9-2026/page-01.png" alt="Attention and Monitoring 2-9- 2026.pdf · page 1 preview" loading="lazy">
-    <figcaption>Attention and Monitoring 2-9- 2026.pdf · page 1 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/attention-and-monitoring-2-9-2026/page-03.png" alt="Attention and Monitoring 2-9- 2026.pdf · page 3 preview" loading="lazy">
-    <figcaption>Attention and Monitoring 2-9- 2026.pdf · page 3 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/attention-and-monitoring-2-9-2026/page-04.png" alt="Attention and Monitoring 2-9- 2026.pdf · page 4 preview" loading="lazy">
-    <figcaption>Attention and Monitoring 2-9- 2026.pdf · page 4 preview</figcaption>
-  </figure>
-</div>
 
 ## Source Scope and Related Topics
 

@@ -4,10 +4,10 @@ This section connects ISO 14971, medical-device use error, URRA practice, and th
 
 ## Topic Pages
 
-- [ISO 14971 and Medical Device Risk Management](iso_14971.en.md): This page uses the course material on ISO 14971 to summarize the medical-device risk-management process, terminology, and HFE touchpoints.
-- [URRA in Medical Devices](medical_device_urra.en.md): This page focuses on URRA within medical devices, connecting use scenarios, critical tasks, harm pathways, and controls in a regulated context.
-- [Use Errors in Medical Devices](medical_device_use_errors.en.md): This page focuses on use error, abnormal use, and interface-induced risk in medical devices, emphasizing that failure emerges from the use system rather than the operator alone.
-- [The EpiPen URRA Workbook](epipen_workbook.en.md): This page uses the EpiPen workbook to turn task analysis, potential use error, hazard, harm, severity, critical tasks, and mitigation into a concrete working artifact.
+- [ISO 14971 and Medical Device Risk Management](iso_14971.en.md): This page treats ISO 14971 not as a single worksheet, but as the language and process framework for risk management across the medical-device lifecycle.
+- [URRA in Medical Devices](medical_device_urra.en.md): This page places URRA inside the medical-device regulatory context, where use-related risk is tied more explicitly to patient harm, critical tasks, and traceable controls.
+- [Use Errors in Medical Devices](medical_device_use_errors.en.md): This page is about classifying what “used incorrectly” really means. Device failure, unintended use error, abnormal use, and deliberate deviation cannot all be thrown into one bucket.
+- [The EpiPen URRA Workbook](epipen_workbook.en.md): The EpiPen workbook page is not a new theory page. It compresses task analysis, critical tasks, and URRA writing into one concrete working document.
 
 ## Covered Source Files
 

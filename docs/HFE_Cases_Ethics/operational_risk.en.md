@@ -1,67 +1,56 @@
 # Operational Risk
 
-This page examines the ingredients of operational risk, organizational conditions, and real-world constraints to show that risk belongs to the operating system, not just a single task.
+This page asks you to see that operational risk does not live only inside one visible error. It lives over time in operating conditions, organizational constraints, and work as done.
 
-## Lecture Flow in the Source Material
+!!! note "Core Question"
+    Why does real operational risk usually not appear only at the moment of one event, but accumulate gradually inside everyday operations?
 
-This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+## Key Takeaways
 
-### Operational Risk 2-18-2026.pdf
+- Operational risk focuses on the ongoing operating system rather than on one isolated error.
+- Work as imagined and work as done often diverge structurally.
+- Organizational constraints, time pressure, environmental change, and frontline workaround behavior continuously reshape risk.
+- This page pulls Swiss Cheese, fatigue, stress, and procedure pages back into one operating view.
 
-1. OPERATIONAL RISK Dr. Divya C. Chandra
-2. MITIGATIONS
-3. TOPICS Operations
-4. OPERATIONS
-5. THREAT AND ERROR MANAGEMENT (TEM) FRAMEWORK
-6. ORIGINS OF TEM
-7. THREAT DEFINITION Threats are events or errors that
-8. ERROR DEFINITION Errors are defined as flight crew actions or inactions that
+## Remember This First
 
+!!! tip "Keep This Sentence in Mind"
+    Keep one sentence in mind: operational risk does not begin when the accident happens; it usually lives in the work conditions long before the event surfaces.
 
-## Reading Logic
+## What Operational Risk Actually Looks At
 
-Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+The page is not mainly about whether one isolated action was right or wrong. It asks whether the system is becoming more fragile while it operates continuously. In other words, are shifts, resources, procedures, organizational goals, and frontline adaptations eroding the safety boundary that design originally assumed?
 
-1. Why operational risk exceeds a single error event
-2. How organizational constraints shape frontline behavior
-3. Why risk management requires ongoing monitoring
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/operational-risk-2-18-2026/page-01.png" alt="This figure should make clear that operational risk is not a single-point problem but a set of system constraints that shift with operating conditions." loading="lazy">
+  <figcaption>This figure should make clear that operational risk is not a single-point problem but a set of system constraints that shift with operating conditions.</figcaption>
+</figure>
 
-## Core Idea
+!!! warning "The Most Common Misunderstanding"
+    Do not treat operational risk as just another checklist. It is better understood as a viewpoint that continuously asks whether operating conditions are eroding defenses.
 
-Operational risk is about seeing risk as something embedded in ongoing operating conditions rather than in a single visible error.
+## Why the Gap Between Work as Imagined and Work as Done Becomes Risk
 
-## Core Logic
+Management and design often start with an ideal workflow, but frontline work is shaped by time pressure, equipment state, environmental change, and resource limits. If the system checks only whether the ideal procedure was followed and not how real work is being squeezed and reshaped, risk gets underestimated.
 
-- risk varies with context rather than remaining fixed
-- work as imagined often differs from work as done
-- organizations that only inspect the formal procedure tend to underestimate real operating risk
+!!! example "Example: Why Persistent Workarounds Become an Operational-Risk Signal"
+    If frontline staff repeatedly rely on a workaround to bypass a procedure, the signal is usually deeper than “people are not following the rules.” It may mean the procedure no longer fits real task rhythm and the system is maintaining normality through fragile patches.
 
-## Why It Matters
+## Why This Page Becomes the Base Layer for Many Case Pages
 
-This topic reconnects many earlier themes by placing defenses, event analysis, fatigue, stress, and procedures back into the everyday operating system.
+Many case pages eventually return to operational risk because frontline errors are rarely isolated. Behind them, there are often long-standing organizational tensions, workload patterns, and real-world constraints that have already been reshaping the risk structure over time.
 
-## Common Difficulty
+!!! note "One-Sentence Conclusion"
+    The value of operational risk is that it makes you read the event as a product of the operating system rather than as a one-off deviation.
 
-Operational risk is not just another checklist. It is a way of asking whether real conditions are gradually eroding the safety boundary that formal design assumes.
+## Chapter Summary
 
-## Slide Figures and Page Previews
+!!! tip "What To Carry Forward"
+    - Operational risk is about how risk is generated during ongoing operations.
+    - The gap between ideal procedure and real work continually changes risk level.
+    - Organizational constraints and workarounds are important risk signals.
+    - This page gives later cases their operating-system perspective.
 
-These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/operational-risk-2-18-2026/page-01.png" alt="Operational Risk 2-18-2026.pdf · page 1 preview" loading="lazy">
-    <figcaption>Operational Risk 2-18-2026.pdf · page 1 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/operational-risk-2-18-2026/page-02.png" alt="Operational Risk 2-18-2026.pdf · page 2 preview" loading="lazy">
-    <figcaption>Operational Risk 2-18-2026.pdf · page 2 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/operational-risk-2-18-2026/page-16.png" alt="Operational Risk 2-18-2026.pdf · page 16 preview" loading="lazy">
-    <figcaption>Operational Risk 2-18-2026.pdf · page 16 preview</figcaption>
-  </figure>
-</div>
 
 ## Source Scope and Related Topics
 

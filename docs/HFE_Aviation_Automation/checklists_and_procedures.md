@@ -1,75 +1,56 @@
 # 检查单与程序
 
-本页围绕 checklists 与 procedures 的设计原则，说明标准化如何减少记忆负担并支持团队协同。
+检查单与程序这一页讨论的，不是把人变成机械执行者，而是怎样把容易忘、容易跳、容易乱序的动作外化成可靠的协作结构。
 
-## 课件里的讲解顺序
+!!! note "本页主问题"
+    检查单和程序怎样减少记忆负担、支持团队协同，同时又不和真实工作流脱节？
 
-这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+## 本章重点
 
-### Checklists and Procedures 3-23-26.pdf
+- checklist 是认知支架，不只是备忘录。
+- procedure 是组织对“正常工作该怎样完成”的稳定承诺。
+- 程序化的价值在于标准化、可核对和可共享，而不是僵硬。
+- 如果程序脱离 work as done，一线人员会开始绕开它。
 
-1. PILOT TRAINING, PROCEDURES, AND CHECKLISTS
-2. MITIGATIONS
-3. TOPICS Pilot training
-4. PILOT TRAINING – CONCEPTS AND VOCABULARY
-5. AQP TRAINING
-6. ON THE JOB PILOT TRAINING
-7. ESTABLISHING AND MAINTAINING CULTURE NORMS Philosophy, Policies, Procedures ➔ Practice
-8. PROCEDURES As opposed to individual “pilot technique”
+## 先记住方法定位
 
+!!! tip "先记住这个方法的定位"
+    先记住这个方法的定位：好的 checklist 不是替你思考，而是替你把最脆弱、最容易漏掉的部分稳住。
 
-## 这页的逻辑顺序
+## 这个方法解决什么问题
 
-建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+当任务复杂、多人协作、时序关键、记忆负担重时，只靠个人稳定发挥往往不够。checklist 和 procedure 的作用，就是把这些脆弱点外化成可见、可读、可确认、可共享的结构。
 
-1. 程序化为什么能提升可靠性
-2. checklist 设计如何兼顾速度与准确
-3. 例外情形如何避免机械照本宣科
+## 好的程序设计具体在做什么
 
-## 核心概念
+好的 checklist / procedure 会：
 
-检查单与程序的价值，不是把人变成机械执行者，而是把那些最容易被遗忘、跳步或顺序错乱的动作，外化成可共享、可核对、可复现的工作结构。
+- 把关键步骤放在最可执行的顺序上
+- 让确认点能被读出和回应
+- 把异常情况的升级路径写清楚
+- 让团队成员知道自己在何时该说、该听、该核对
 
-## 这页最关键的理解
+!!! example "worked example：为什么一张 checklist 能减轻认知负担"
+    在起飞、给药或设备切换这类高时序任务里，团队不需要把每一步都死记在脑中。好的 checklist 让关键步骤外显化，让成员把有限注意力留给监控异常和交叉检查。
 
-- checklist 是认知支架，不只是记忆备忘录。
-- procedure 是组织对“正常情况下应该如何做”的稳定承诺。
-- 当团队共用同一套程序语言时，协调成本会下降，交接和复盘也更清楚。
+## 为什么它不能脱离真实工作
 
-## 好的程序设计在做什么
+如果 procedure 只反映 work as imagined，而不反映 work as done，那么一线人员迟早会觉得它太慢、太僵、太不贴近任务节奏，最后开始绕开它。那时程序还在，但防线功能已经衰减。
 
-- 把关键步骤摆在最可执行的顺序上
-- 让检查点能被看见、读出、回应和确认
-- 让异常情况有升级路径，而不是逼着操作者在模糊地带硬撑
+!!! note "一句话结论"
+    程序化真正的难点，不在于“有没有 checklist”，而在于 checklist 是否真的支持现实任务。
 
-## 难点讲解
+!!! warning "最容易误解的地方"
+    程序化不等于越死板越好。过度僵化的程序，常常会把真实工作推向绕行和临时补丁。
 
-这页最容易产生误解的地方，是把程序化理解成“越死板越好”。其实课程更想表达的是：
+## 本章总结
 
-- 标准化能减轻记忆负担
-- 但程序也必须和真实工作节奏匹配
-- 如果程序脱离 work as done，一线人员就会为了完成任务自行绕开它
+!!! tip "复习时重点记这几条"
+    - checklist 是认知支架，procedure 是组织承诺。
+    - 它们的价值在于标准化、可核对和协同支持。
+    - 好程序必须匹配真实工作，而不只是理想流程。
+    - 程序存在不等于防线仍有效。
 
-所以真正的人因问题不是“有没有 checklist”，而是“checklist 是否真能支持实际工作”。
-
-## 课件图示与页面预览
-
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/checklists-and-procedures-3-23-26/page-01.png" alt="Checklists and Procedures 3-23-26.pdf · 第 1 页预览" loading="lazy">
-    <figcaption>Checklists and Procedures 3-23-26.pdf · 第 1 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/checklists-and-procedures-3-23-26/page-02.png" alt="Checklists and Procedures 3-23-26.pdf · 第 2 页预览" loading="lazy">
-    <figcaption>Checklists and Procedures 3-23-26.pdf · 第 2 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/checklists-and-procedures-3-23-26/page-15.png" alt="Checklists and Procedures 3-23-26.pdf · 第 15 页预览" loading="lazy">
-    <figcaption>Checklists and Procedures 3-23-26.pdf · 第 15 页预览</figcaption>
-  </figure>
-</div>
 
 ## 资料范围与相关主题
 

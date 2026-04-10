@@ -1,67 +1,59 @@
 # Crew Resource Management
 
-This page summarizes communication, coordination, leadership, monitoring, and resource integration in CRM, extending HFE from individual to team performance.
+This CRM page is not simply about better interpersonal harmony. It is about how teams turn communication, authority, monitoring, and cross-checking into real safety barriers.
 
-## Lecture Flow in the Source Material
+!!! note "Core Question"
+    Why can technically competent crews still fail because communication, authority structure, and shared situation awareness break down?
 
-This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+## Key Takeaways
 
-### CRM 1-28-2026.pdf
+- CRM extends safety from individual skill to collective team performance.
+- Authority gradient, assertiveness, briefing, debriefing, workload sharing, and mutual monitoring form one system.
+- Many major accidents do not happen because nobody saw the problem, but because someone saw it and the team failed to absorb the signal.
+- CRM does not begin only in the emergency; it begins in the brief and continues into the debrief.
 
-1. CREW RESOURCE MANAGEMENT (CRM)
-2. TOPICS Origins of CRM
-3. ORIGINS OF CRM
-4. INTERNATIONAL CIVIL AVIATION ORGANIZATION (ICAO) SHELL MODEL (EDWARDS, 1972)
-5. SINCE THE SHELL MODEL… Expanded checklists, safety procedures, and regulations
-6. SOME ACCIDENTS THAT LED TO CRM CONCEPT
-7. SOME OBSERVED PROBLEMS “Chain of command" approach was more the norm
-8. WHAT IS CRM?
+## Remember This First
 
+!!! tip "Keep This Sentence in Mind"
+    Keep one sentence in mind: CRM exists to convert “someone in the team noticed the problem” into “the team actually changed action because of that signal.”
 
-## Reading Logic
+## What CRM Actually Solves
 
-Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+If safety depends only on the strongest individual, the team is fragile. CRM matters because it turns communication, challenge, confirmation, and backup into a stable practice that lets a multi-person system compensate for individual limits.
 
-1. Why CRM is a team-level HFE capability
-2. How communication and authority affect safety margins
-3. How team monitoring compensates for individual limits
+## The Elements This Page Wants You to Hold Onto
 
-## Core Idea
+The course keeps returning to a small set of elements:
 
-CRM is not just a soft-skills topic about getting along. It is a way of turning team resources into a real safety barrier in high-workload operations.
+- communication
+- leadership and followership
+- assertiveness
+- briefing / debriefing
+- workload management
+- mutual monitoring
+- shared mental model
 
-## Core Message
+## Why Authority Gradient Becomes a Safety Problem
 
-- CRM extends safety from individual skill to collective performance.
-- Communication matters, but so do leadership, followership, assertiveness, briefing, debriefing, workload management, and shared situational awareness.
-- A major failure mode is not that nobody noticed the problem, but that someone noticed and the team failed to absorb the signal.
+If the authority gradient is too steep, junior members may fail to challenge even when they see the problem. If it is too flat, critical moments may lack real leadership. CRM is not about erasing authority; it is about preserving role structure while still letting risk information move upward effectively.
 
-## What The Course Emphasizes
+!!! note "One-Sentence Conclusion"
+    Strong CRM is not “everyone talks more.” It is that the right risk information reaches the right person at the right time and is actually used.
 
-Historical accidents show how steep authority gradients, weak challenge behavior, and unshared mental models can defeat an otherwise technically capable crew.
+!!! warning "The Most Common Misunderstanding"
+    Do not treat CRM as a soft-skills add-on. In high-load team systems, it is itself one of the central safety mechanisms.
 
-## Common Difficulty
+!!! example "Example: Why Tenerife Is a Classic CRM Teaching Case"
+    Tenerife remains a CRM teaching case not because the technical details are unimportant, but because it vividly shows how authority gradient, ambiguous communication, and failed shared situation awareness can combine into catastrophic risk.
 
-CRM is not only what happens during an emergency. Strong CRM starts earlier through aligned plans, explicit workload distribution, and a team climate where questioning is normal and useful.
+## Chapter Summary
 
-## Slide Figures and Page Previews
+!!! tip "What To Carry Forward"
+    - CRM extends safety from individual performance to team performance.
+    - Its key function is turning risk signals into coordinated team action.
+    - Authority gradient is a structural team-safety variable.
+    - CRM starts in the brief, not only in the emergency.
 
-These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/crm-1-28-2026/page-01.png" alt="CRM 1-28-2026.pdf · page 1 preview" loading="lazy">
-    <figcaption>CRM 1-28-2026.pdf · page 1 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/crm-1-28-2026/page-04.png" alt="CRM 1-28-2026.pdf · page 4 preview" loading="lazy">
-    <figcaption>CRM 1-28-2026.pdf · page 4 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/crm-1-28-2026/page-14.png" alt="CRM 1-28-2026.pdf · page 14 preview" loading="lazy">
-    <figcaption>CRM 1-28-2026.pdf · page 14 preview</figcaption>
-  </figure>
-</div>
 
 ## Source Scope and Related Topics
 

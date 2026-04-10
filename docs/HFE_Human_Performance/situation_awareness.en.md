@@ -1,67 +1,55 @@
 # Situation Awareness
 
-This page covers the perception, comprehension, and projection layers of situation awareness and links current information to future-state prediction.
+This page breaks “seeing information” into three layers: perception, comprehension, and projection. The goal is to show that visible information and understandable situation are not the same thing.
 
-## Lecture Flow in the Source Material
+!!! note "Core Question"
+    Why can a system display large amounts of information and still leave the operator unable to understand the current situation or predict what happens next?
 
-This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+## Key Takeaways
 
-### Sp26_SituationAwareness_20260325.pdf
+- Situation awareness includes at least perception, comprehension, and projection.
+- Visible information does not guarantee meaning, and meaning does not guarantee prediction.
+- Many display, CRM, monitoring, and automation problems ultimately return to breaks in SA.
+- The essence of SA is not information quantity but whether information is organized into an actionable mental model.
 
-1. SITUATION AWARENESS
-2. SITUATION AWARENESS IN DECISION MAKING
-3. EXAMPLE OF SA ELEMENTS: DRIVING A CAR
-4. BREAKDOWNS IN SA Perception (Level 1):
-5. AMTRAK ACCIDENT REVISITED Where did the breakdown in
-6. TEAM SITUATION AWARENESS Endsley, 1995
-7. UBER ACCIDENT, MARCH 2018 Operator took self-driving car out of garage to
-8. UBER ACCIDENT, MARCH 2018 Software classified the pedestrian as an unknown
+## Remember This First
 
+!!! tip "Keep This Sentence in Mind"
+    Keep one sentence in mind: situation awareness is not merely about looking harder; it is about turning seen cues into an accurate current picture and one step of forward projection.
 
-## Reading Logic
+## What the Three Layers Actually Mean
 
-Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+The three layers in the course are:
 
-1. The three-layer structure of situation awareness
-2. Why visible information does not equal understanding
-3. Why future-state projection shapes effective intervention
+1. `perception`: whether the critical cues were noticed
+2. `comprehension`: whether the cues were integrated into the correct current picture
+3. `projection`: where the system is likely to go next if nobody intervenes
 
-## Core Idea
+## Why the Second and Third Layers Break So Easily
 
-Situation awareness is not a vague sense of being aware. In the course it has a three-level structure: perceive the cues, comprehend what they mean, and project what will happen next.
+Operators may see the readings, alerts, and state changes yet still not know which cue has priority, how several signals relate, or how the situation will evolve over the next seconds. In other words, the hard part of SA is often not noticing but organizing and projecting.
 
-## The Three Levels
+!!! warning "The Most Common Misunderstanding"
+    Seeing the data does not mean SA has been achieved. Many accidents unfold in the state where the data is present but the situation has not actually been assembled in the operator’s mind.
 
-1. `perception`: noticing the relevant signals
-2. `comprehension`: combining them into an accurate understanding of the current state
-3. `projection`: anticipating how the state will evolve
+!!! example "Example: Why “Visible Information” Is Still Not Enough"
+    A flight crew may see altitude, speed, and alerts and still fail to realize that the signals collectively point to a diverging flight state. The issue is not whether the data exists, but whether it has been integrated into the right picture and converted into early intervention.
 
-## Why Higher Levels Are Hard
+## Why So Many Course Topics Return to SA
 
-Information can be visible without being interpretable. Operators may see numbers and alerts yet still lack priority, relationship, or future-state understanding.
+The display page asks how information becomes visible, the CRM page asks how information becomes shared across the team, the monitoring page asks how state awareness is sustained, and the spatial-disorientation page asks whether the operator can still build the correct picture when sensory intuition conflicts with instruments. At root they all ask whether the system helps people form sufficient SA.
 
-## Common Difficulty
+!!! note "One-Sentence Conclusion"
+    The core of situation awareness is not “more information,” but whether information has been organized into understanding and prediction that support action.
 
-Many course topics return to situation awareness because displays, CRM, monitoring, automation, and spatial disorientation all ask whether the system helps build a timely and accurate mental model.
+## Chapter Summary
 
-## Slide Figures and Page Previews
+!!! tip "What To Carry Forward"
+    - SA includes perception, comprehension, and projection.
+    - Visible information does not equal true understanding.
+    - Many HFE topics ultimately return to whether SA breaks down.
+    - The key is forming an actionable mental model.
 
-These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-situationawareness-20260325/page-01.png" alt="Sp26_SituationAwareness_20260325.pdf · page 1 preview" loading="lazy">
-    <figcaption>Sp26_SituationAwareness_20260325.pdf · page 1 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-situationawareness-20260325/page-03.png" alt="Sp26_SituationAwareness_20260325.pdf · page 3 preview" loading="lazy">
-    <figcaption>Sp26_SituationAwareness_20260325.pdf · page 3 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-situationawareness-20260325/page-04.png" alt="Sp26_SituationAwareness_20260325.pdf · page 4 preview" loading="lazy">
-    <figcaption>Sp26_SituationAwareness_20260325.pdf · page 4 preview</figcaption>
-  </figure>
-</div>
 
 ## Source Scope and Related Topics
 

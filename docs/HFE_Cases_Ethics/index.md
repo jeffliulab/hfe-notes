@@ -4,10 +4,10 @@
 
 ## 主题页面
 
-- [Operational Risk](operational_risk.md): 本页围绕 operational risk 的构成因素、组织条件与现实运行约束，展示风险并不只属于单次任务，而是属于运行系统。
-- [Cardosi 案例](cardosi_case.md): 本页围绕 Cardosi 材料提炼具体案例中的显示、程序、沟通与情境理解问题，作为把方法落到案例的中间层。
-- [F16 分析提示](f16_analysis_prompts.md): 本页将 F16 prompts 视为案例分析模板，帮助读者把课程概念转化为结构化提问与论证路径。
-- [Boeing 737 Max 与伦理](boeing_737max_and_ethics.md): 本页把 Boeing 737 Max 作为技术、组织、监管与伦理问题交织的典型案例，说明 HFE 不能脱离治理与责任讨论。
+- [Operational Risk](operational_risk.md): Operational risk 这页要你看到的，是风险不只存在于某一次错误动作里，而是长期藏在运行条件、组织约束和 work as done 里。
+- [Cardosi 案例](cardosi_case.md): Cardosi 这一页真正有价值的地方，是把 ATC / aviation 的具体问题重新拉回一个人因视角：通信、显示、程序和团队理解是怎样在同一个系统里交织的。
+- [F16 分析提示](f16_analysis_prompts.md): F16 prompts 这一页本质上是“怎么分析案例”的脚手架，它不是直接给答案，而是给你一套不会漏掉关键维度的提问路径。
+- [Boeing 737 Max 与伦理](boeing_737max_and_ethics.md): 737 Max 这一页之所以被放在伦理部分，不是因为它脱离技术，而是因为这里的技术、组织、培训、监管和责任分配根本无法被拆开。
 
 ## 覆盖源文件
 

@@ -1,41 +1,56 @@
 # The EpiPen URRA Workbook
 
-This page uses the EpiPen workbook to turn task analysis, potential use error, hazard, harm, severity, critical tasks, and mitigation into a concrete working artifact.
+The EpiPen workbook page is not a new theory page. It compresses task analysis, critical tasks, and URRA writing into one concrete working document.
 
-## Lecture Flow in the Source Material
+!!! note "Core Question"
+    How does one workbook translate abstract concepts into risk entries that a team can actually write, review, and validate?
 
-This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+## The Most Important Case Conclusions
 
-No stable slide/page outline was extracted for this topic, but the full source transcription remains below.
+- The value of the example is that it shows what a strong URRA row actually looks like.
+- The workbook compresses task steps, critical tasks, use errors, harms, and mitigation into collaborative table language.
+- When reading it, distinguish descriptive fields from evaluative risk-judgment fields.
+- It is not an answer key template; it is a demonstration of writing order and discipline.
 
-## Reading Logic
+## Start with the Case Verdict
 
-Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+!!! tip "Keep This Case Judgment in Mind"
+    Keep this case-level judgment in mind: the example matters not because its format can be copied blindly, but because it teaches the writing order of task first, error second, harm third, and control last.
 
-1. How the table fields map to the risk chain
-2. How the workbook supports teamwork
-3. How workbook entries connect to validation tasks
+## Background and Stakes
 
-## Core Idea
+For a product such as the EpiPen, risk documentation matters because use often occurs in urgent settings, the user may not be a professional, time pressure is high, and the consequence lands directly on the patient. The workbook is therefore not paperwork rehearsal; it is an attempt to write the risk judgment realistically in advance.
 
-The EpiPen workbook is not a new theory page. It is a worked example that turns earlier concepts into something documentable.
+## What the Workbook Actually Connects
 
-## How To Read It
+The workbook connects use step, potential use error, hazard, harm, severity, critical task, and mitigation into a single row. Its value is that the team can see, in one place, how one step may fail, where the consequence path goes, and how the design intends to stop it.
 
-- how the use flow is decomposed
-- which steps become critical tasks
-- how each row moves from use step to hazard, harm, and control
-- which fields are descriptive versus evaluative
+!!! example "Example: Why One Strong Row Matters More than a Fully Filled Sheet"
+    If one row clearly links the task step, the concrete error, the patient harm, and the mitigation, the team can design a meaningful validation scenario from it. If the entire sheet is filled with vague phrases such as “improper use,” “possible harm,” and “training required,” the workbook looks complete but adds little analytic value.
 
-## Why It Matters
+## How to Read the Example Effectively
 
-Examples are valuable because the hardest part of risk work is often translating concepts into disciplined document language.
+When reading a workbook like this, use a fixed sequence:
 
-## Slide Figures and Page Previews
+1. check whether the task steps are decomposed finely enough
+2. identify which steps are marked as critical tasks
+3. inspect whether error, hazard, and harm truly form a chain
+4. judge whether mitigation comes back to design, instructions, workflow, or validation
 
-These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
+!!! note "One-Sentence Conclusion"
+    This page is not about memorizing workbook column names. It is about learning how to translate abstract HFE concepts into executable documentation.
 
-No displayable visual assets were extracted for this page, but the raw files and full transcription remain available below.
+!!! warning "The Most Common Failure Mode"
+    The most common misunderstanding is to treat the example as a template to copy line by line. What matters is the sequence and discipline behind it, not the surface phrasing.
+
+## What To Take Away from This Case
+
+!!! tip "What To Carry Forward"
+    - The workbook page is about seeing what a strong URRA row actually looks like.
+    - It compresses task flow, critical task, harm, and mitigation into collaborative document language.
+    - When reading the example, separate descriptive fields from evaluative fields.
+    - What matters most is the writing order, not blind format copying.
+
 
 ## Source Scope and Related Topics
 

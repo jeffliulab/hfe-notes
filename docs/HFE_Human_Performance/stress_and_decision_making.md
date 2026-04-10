@@ -1,94 +1,51 @@
 # 压力、决策与分心
 
-本页将压力、决策、分心与认知偏差放在一起，说明高负荷场景下操作者为何更容易走向次优选择。
+压力、决策与分心这一页讲的不是“人一紧张就变差”这么简单，而是压力怎样缩窄注意和策略空间，让人更容易走向次优判断。
 
-## 课件里的讲解顺序
+!!! note "本页主问题"
+    为什么高压力、高时间压力和多任务分心会让人更容易看漏、想偏、过快下结论，或者反而迟迟下不了决策？
 
-这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+## 本章重点
 
-### Sp26_StressDecisionMaking_20260225.pdf
+- 压力会占用认知资源，缩窄搜索和比较范围。
+- 分心会打断计划执行，让人更容易漏步、失去时间线或忘掉中间状态。
+- 时间压力会推动启发式判断和 satisficing。
+- 关键不是要求人“更冷静”，而是看系统有没有减轻还是继续加码认知负担。
 
-1. Dr. Andrew Liu STRESS, WORKLOAD,
-2. AIR FRANCE 447 – SUCCESSION OF EVENTS
-3. EFFECTS OF HIGH TASK DEMANDS (STRESS?) Selective attention/ attention narrowing
-4. YERKES-DODSON LAW An observed relationship between
-5. MENTAL WORKLOAD
-6. MENTAL WORKLOAD “Workload is a general term used to describe the cost of accomplishing task
-7. RESOURCE MODELS – SINGLE RESOURCE MODEL Kahneman, 1973
-8. RESOURCE MODELS – MULTIPLE RESOURCE MODEL
+## 先记住一句话
 
-### Sp26_DecisionMakingDistraction_20260302.pdf
+!!! tip "复习时先记住这句话"
+    先记住一句话：压力最危险的地方，不是让人“感觉不好”，而是让人只剩下更少的线索和更少的策略可用。
 
-1. Dr. Andrew Liu DECISION MAKING &
-2. HUMAN INFORMATION PROCESSING MODEL
-3. F.D. Raslau (2014)
-4. RASMUSSEN LEVELS OF INFORMATION PROCESSING Rasmussen, 1983
-5. DECISION MAKING FRAMEWORK o Normative Decisions
-6. DECISION MAKING FRAMEWORK Naturalistic Decisions
-7. NATURALISTIC DECISION MODELS
-8. KAHNEMAN’S TWO SYSTEMS MODEL OF THINKING System 1
+## 压力、分心和决策为什么会连在一起
 
+压力占用认知资源，分心打断执行链条，时间压力缩短比较窗口。三者叠加时，操作者更容易依赖最熟悉的路径，而不是继续搜索和修正。
 
-## 这页的逻辑顺序
+## 为什么很多人明明看见了信息却没用上
 
-建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+高压力场景里，问题常常不是完全没看见，而是新信息没有进入当前判断框架。换句话说，压力和预设会让人更倾向于抓住已有解释，而不是重新组织局面。
 
-1. 压力如何缩窄注意与策略空间
-2. 分心如何侵蚀程序执行与监控
-3. 决策偏差为何常与时间压力绑定
+!!! warning "最容易误解的地方"
+    压力不总会让表现立刻下降；更危险的是持续高压加不完整信息，会让人越来越依赖熟悉路径而忽略新线索。
 
-## 核心概念
+## 这页对系统设计提出什么要求
 
-压力、决策与分心这一页讲的是：人在高负荷下不是简单“变差”，而是会把注意和策略缩窄到更少的选项上，于是更容易看漏、想偏、决策过快或者过慢。
+面对高负荷场景，系统不应该继续堆更多模糊信息和额外任务，而应帮助保留关键线索、减少无意义切换、明确优先级，并让团队协作真正减负。
 
-## 这页的核心链条
+!!! note "一句话结论"
+    压力下的差决策，很多时候不是“人太差”，而是系统没有帮人保住足够好的判断条件。
 
-- 压力会占用认知资源，缩窄搜索范围。
-- 分心会打断计划执行，让人更容易漏步、跳步或失去时间线。
-- 时间压力会推动启发式判断和 satisficing，而不是完整比较。
+!!! example "案例：为什么“更快做决定”有时反而更危险"
+    在时间压力极高时，操作者可能很快给出一个看似果断的答案，但这个答案建立在过窄的信息搜索上。系统如果没有帮助保留关键线索和第二视角，快速决策就可能只是快速收错。
 
-## 读这页时最重要的判断
+## 本章总结
 
-当一个环境又快、又乱、又有后果时，要问的不是“为什么操作者不更冷静”，而是：
+!!! tip "复习时重点记这几条"
+    - 压力会缩窄注意和策略空间。
+    - 分心会打断计划执行和时间线维护。
+    - 时间压力会推动启发式和 satisficing。
+    - 系统设计的任务是帮人保住判断条件。
 
-- 系统有没有帮他保留关键线索
-- 决策空间是不是被组织或界面压得太窄
-- 团队、程序和告警有没有减轻负担，而不是继续加码
-
-## 难点讲解
-
-压力不总会导致错误，有时还会暂时提升警觉；真正危险的是过高压力、持续时间过长、信息又不完整时，操作者开始依赖最熟悉的路径，忽略不符合预期的新线索。这也是很多复杂事件里“明明看到了信息却没用上”的根源。
-
-## 课件图示与页面预览
-
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-stressdecisionmaking-20260225/page-01.png" alt="Sp26_StressDecisionMaking_20260225.pdf · 第 1 页预览" loading="lazy">
-    <figcaption>Sp26_StressDecisionMaking_20260225.pdf · 第 1 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-stressdecisionmaking-20260225/page-03.png" alt="Sp26_StressDecisionMaking_20260225.pdf · 第 3 页预览" loading="lazy">
-    <figcaption>Sp26_StressDecisionMaking_20260225.pdf · 第 3 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-stressdecisionmaking-20260225/page-04.png" alt="Sp26_StressDecisionMaking_20260225.pdf · 第 4 页预览" loading="lazy">
-    <figcaption>Sp26_StressDecisionMaking_20260225.pdf · 第 4 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-decisionmakingdistraction-20260302/page-01.png" alt="Sp26_DecisionMakingDistraction_20260302.pdf · 第 1 页预览" loading="lazy">
-    <figcaption>Sp26_DecisionMakingDistraction_20260302.pdf · 第 1 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-decisionmakingdistraction-20260302/page-02.png" alt="Sp26_DecisionMakingDistraction_20260302.pdf · 第 2 页预览" loading="lazy">
-    <figcaption>Sp26_DecisionMakingDistraction_20260302.pdf · 第 2 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-decisionmakingdistraction-20260302/page-03.png" alt="Sp26_DecisionMakingDistraction_20260302.pdf · 第 3 页预览" loading="lazy">
-    <figcaption>Sp26_DecisionMakingDistraction_20260302.pdf · 第 3 页预览</figcaption>
-  </figure>
-</div>
 
 ## 资料范围与相关主题
 

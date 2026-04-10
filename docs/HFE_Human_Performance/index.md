@@ -4,11 +4,11 @@
 
 ## 主题页面
 
-- [注意与监控](attention_and_monitoring.md): 本页整理注意资源、监控任务、automation complacency 与 vigilance decrement 等核心问题。
-- [疲劳与睡眠](fatigue_and_sleep.md): 本页围绕疲劳、生理节律与睡眠不足对表现的影响，整理人因工程里对生理约束的理解。
-- [压力、决策与分心](stress_and_decision_making.md): 本页将压力、决策、分心与认知偏差放在一起，说明高负荷场景下操作者为何更容易走向次优选择。
-- [情境意识](situation_awareness.md): 本页围绕 perception、comprehension、projection 三层情境意识展开，连接信息获取与未来状态预判。
-- [空间定向错觉](spatial_disorientation.md): 本页整理空间定向错觉的生理基础、知觉陷阱与操作风险，强调感官系统与仪表信息冲突时的人因问题。
+- [注意与监控](attention_and_monitoring.md): 注意与监控这一页最重要的结论是：持续监控并不是轻松任务，它恰恰是最容易衰退的任务类型之一。
+- [疲劳与睡眠](fatigue_and_sleep.md): 疲劳与睡眠这一页要你看到：疲劳不是“有点累”的主观抱怨，而是会系统性改变反应、判断、记忆和监控能力的生理约束。
+- [压力、决策与分心](stress_and_decision_making.md): 压力、决策与分心这一页讲的不是“人一紧张就变差”这么简单，而是压力怎样缩窄注意和策略空间，让人更容易走向次优判断。
+- [情境意识](situation_awareness.md): 情境意识这一页把“看见信息”拆成三层：先感知，再理解，再预测。重点是让你看到信息可见和局面可理解之间还有很长一段距离。
+- [空间定向错觉](spatial_disorientation.md): 空间定向错觉这一页最关键的提醒是：人的感觉系统在飞行环境里并不总可靠，直觉姿态和真实姿态可以完全相反。
 
 ## 覆盖源文件
 

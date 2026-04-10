@@ -4,10 +4,10 @@
 
 ## 主题页面
 
-- [错误分析与调查流程](error_analysis_methods.md): 本页把调查流程、NTSB 取证逻辑与错误分析方法放在一起，说明事故与事件分析如何从事实收集走向可执行的因果解释。
-- [任务分析](task_analysis.md): 本页围绕 task analysis 的拆解逻辑，整理如何把使用流程变成可观察、可评估、可映射风险的任务与子任务结构。
-- [URRA 方法](urra_methods.md): 本页整理 Use-Related Risk Analysis 的写法、输入输出与判定思路，突出 URRA 在人因风险管理中的中枢作用。
-- [Known Problem Analysis 与事件树](known_problem_and_event_tree.md): 本页把 known problem analysis 与 event tree 思维放在一起，展示如何从已知问题、先前经验和事件演化来补强风险分析。
+- [错误分析与调查流程](error_analysis_methods.md): 这一页讲的是：当事故、事件或险情已经发生后，我们怎样把它分析清楚，而不是只写成一段带结论的故事。
+- [任务分析](task_analysis.md): 任务分析这一页的作用，是把一段连续使用过程拆成可观察、可讨论、可映射风险的步骤链。
+- [URRA 方法](urra_methods.md): URRA 这一页讲的不是一种表格格式，而是一条完整风险链：任务步骤、使用错误、危险情境、伤害后果和控制措施怎样被写到同一个结构里。
+- [Known Problem Analysis 与事件树](known_problem_and_event_tree.md): 这一页把两种补盲方法放在一起：Known Problem Analysis 是向后看历史问题，Event Tree 是向前看起始事件的后果分支。
 
 ## 覆盖源文件
 

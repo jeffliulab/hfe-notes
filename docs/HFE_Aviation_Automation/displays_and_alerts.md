@@ -1,77 +1,55 @@
 # 显示与告警
 
-本页聚焦显示系统与告警设计，整理 salience、prioritization、false alarm 与 workload 之间的取舍。
+显示与告警这一页讲的核心矛盾是：你必须让关键信息足够显眼，但又不能把操作者淹没在噪声里。
 
-## 课件里的讲解顺序
+!!! note "本页主问题"
+    怎样让操作者在关键时刻既能注意到重要信号，又能立刻理解系统状态和下一步动作？
 
-这一部分不是我主观概括，而是根据 PPT / PDF 的标题行和页首内容还原老师大致的课堂展开顺序。
+## 本章重点
 
-### Displays and Alerts 2-4-26.pdf
+- display 负责让系统状态可见，alert 负责在关键时刻重新分配注意力。
+- 好的告警不是“更响更亮”，而是“更可信、更可判断、更能引导动作”。
+- false alarm 会侵蚀信任，最后导致真正重要的告警也被忽略。
+- 显示层级和告警设计，本质上都在做注意资源管理。
 
-1. DISPLAYS AND ALERTS Dr. Divya C. Chandra
-2. TOPICS Visual displays
-3. VISUAL DISPLAYS
-4. VISUAL DISPLAY DESIGN CONSIDERATIONS Display size
-5. VISUAL DISPLAY DESIGN PRINCIPLES Principle of Information Need
-6. AUDITORY DISPLAYS
-7. TYPES OF AUDITORY DISPLAYS Symbolic
-8. AUDITORY ALARMS Primarily used for emergency alarms and warning signals
+## 先记住一句话
 
+!!! tip "复习时先记住这句话"
+    先记住一句话：告警设计的目标不是制造刺激，而是让人及时把注意力转到真正需要看的地方，并且知道接下来该做什么。
 
-## 这页的逻辑顺序
+## 显示和告警分别承担什么角色
 
-建议按下面的顺序读这页，这样会更像老师在课堂上带着你展开概念。
+display 的任务是让状态可见、可比较、可推断；alert 的任务是把注意力在关键时刻拉过去。如果两者脱节，就会出现“看见了但看不懂”或“听见了但不知道怎么做”的问题。
 
-1. 告警为什么既要显著又不能淹没操作者
-2. 显示层级如何支持快速诊断
-3. false alarm 与 trust erosion 的关系
+## 读这页时要固定问哪三个问题
 
-## 核心概念
+看到一个告警系统时，先固定问：
 
-显示与告警设计的核心矛盾是：你必须让关键信息足够显眼，但又不能把操作者淹没在噪声里。真正好的告警系统，不是“更响、更亮”，而是“更可判断、更可信”。
+1. 这个告警真的代表高优先级风险吗？
+2. 告警出现时，操作者能快速看懂系统处于什么状态吗？
+3. 告警之后，下一步动作清楚吗？
 
-## 这页的分析主轴
+## 为什么 false alarm 最后会变成信任问题
 
-- `display` 负责把系统状态变得可见、可比较、可推断。
-- `alert` 负责在时机关键时把注意力拉到该看的地方。
-- 两者如果分开设计，就容易出现看得见但看不懂，或者听得见却不知道要怎么做。
+如果系统经常发出低价值告警，操作者就会学会延迟响应、选择性忽略，甚至对告警系统整体失去信任。这样一来，真正关键的告警也会被拖慢处理。
 
-## 读这页时要抓的三个判断
+!!! note "一句话结论"
+    显示与告警设计的本质，不是“做得更热闹”，而是让注意力、理解和行动重新对齐。
 
-1. 这条告警是否真的代表高优先级风险。
-2. 告警出现时，操作者能不能立刻知道系统处于什么状态。
-3. 告警之后，是否有清晰的下一步动作。
+!!! warning "最容易误解的地方"
+    “更多告警更安全”通常是错的。低价值告警过多时，系统是在消耗注意力，而不是保护注意力。
 
-如果其中任何一个环节缺失，告警就可能只会增加 workload。
+!!! example "案例：为什么 alarm fatigue 最后会拖慢真正关键的反应"
+    如果病房监护系统不断发出噪声很大的低优先级告警，护理人员会逐渐降低对告警的整体响应敏感度。等到真正危及生命的信号出现时，系统早已失去“被立即认真对待”的资格。
 
-## 难点讲解
+## 本章总结
 
-课程里一个很重要的点是 false alarm 和 trust erosion。告警并不是越多越安全，因为：
+!!! tip "复习时重点记这几条"
+    - display 让状态可见，alert 让注意力转向关键处。
+    - 好的告警必须同时支持理解和行动。
+    - false alarm 会侵蚀长期信任。
+    - 这页本质上在讲注意资源管理。
 
-- 过多低价值告警会造成 alarm fatigue
-- 操作者会逐渐学会忽略、延迟响应或降低信任
-- 一旦真正关键的告警出现，系统可能已经失去“被立刻认真对待”的资格
-
-所以显示与告警设计，本质上是在做注意资源管理。
-
-## 课件图示与页面预览
-
-下面展示从原始 PPT/PDF 中自动提取出的配图或页面预览。它们不是装饰图，而是正文讲解时应该对照着看的课堂材料。
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/displays-and-alerts-2-4-26/page-01.png" alt="Displays and Alerts 2-4-26.pdf · 第 1 页预览" loading="lazy">
-    <figcaption>Displays and Alerts 2-4-26.pdf · 第 1 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/displays-and-alerts-2-4-26/page-09.png" alt="Displays and Alerts 2-4-26.pdf · 第 9 页预览" loading="lazy">
-    <figcaption>Displays and Alerts 2-4-26.pdf · 第 9 页预览</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/displays-and-alerts-2-4-26/page-21.png" alt="Displays and Alerts 2-4-26.pdf · 第 21 页预览" loading="lazy">
-    <figcaption>Displays and Alerts 2-4-26.pdf · 第 21 页预览</figcaption>
-  </figure>
-</div>
 
 ## 资料范围与相关主题
 

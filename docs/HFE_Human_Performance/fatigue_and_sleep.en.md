@@ -1,67 +1,51 @@
 # Fatigue and Sleep
 
-This page focuses on fatigue, circadian rhythm, and sleep loss as physiological constraints on performance.
+This page asks you to see fatigue not as a vague feeling of tiredness, but as a physiological constraint that systematically alters reaction, judgment, memory, and monitoring.
 
-## Lecture Flow in the Source Material
+!!! note "Core Question"
+    Why can fatigue management not rely on personal discipline alone, but must be treated as a system problem created by scheduling, task length, timing, and organizational demands?
 
-This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+## Key Takeaways
 
-### Sp26_Fatigue+Sleep_20260211.pdf
+- Sleep loss degrades critical cognitive functions even when the person still feels capable of working.
+- Circadian rhythm changes the risk window across different times of day.
+- Fatigue is often jointly produced by shifts, night work, task duration, and organizational demand.
+- Fatigue management belongs in scheduling, handoff design, and high-risk task planning rather than only in wellness advice.
 
-1. FATIGUE & SLEEP Dr. Andrew Liu
-2. WHAT IS FATIGUE? 1999 US DOT Operational Definition
-3. SLEEP DEPRIVATION AND FATIGUE PREVALENCE
-4. FATIGUE AND DRIVING
-5. FATIGUE AND MEDICAL ERRORS
-6. WHAT FACTORS INFLUENCE SLEEP/FATIGUE?
-7. BORBÉLY TWO PROCESS MODEL OF SLEEP Process C (Circadian process):
-8. CIRCADIAN RHYTHM (PROCESS C) A group of nerve cells in the
+## Remember This First
 
+!!! tip "Keep This Sentence in Mind"
+    Keep one sentence in mind: even the best interface, procedure, and training must still pass through a human who may already be fatigued.
 
-## Reading Logic
+## What Fatigue Actually Alters
 
-Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+Fatigue alters reaction time, working memory, judgment quality, monitoring endurance, and recovery ability. The danger is that people do not always recognize how much they have declined, so subjective feeling and actual performance may diverge sharply.
 
-1. How fatigue affects response, judgment, and monitoring
-2. Why circadian rhythm changes the risk window
-3. Why fatigue management cannot rely on personal discipline alone
+## Why the Same Task Carries Different Risk at Different Times
 
-## Core Idea
+Circadian rhythm matters because risk is not uniformly distributed across the day. Night work, early-morning lows, long-duration tasks, and accumulated sleep debt all change how vulnerable the same task becomes over time.
 
-Fatigue is not merely a feeling of tiredness. It is a physiological constraint that degrades reaction time, working memory, judgment, monitoring, and recovery.
+!!! example "Example: Why the Same Task Becomes More Dangerous on a Night Shift"
+    The same monitoring or operational task is not equivalent on day shift and night shift. Circadian low points degrade alertness, judgment, and recovery speed, turning what seemed like an acceptable workload into a higher-risk window.
 
-## Core Message
+## Why Fatigue Management Is a Design Problem
 
-- sleep loss can leave people functional enough to continue working while quietly degrading important cognitive abilities
-- circadian rhythm changes the risk profile across time of day
-- fatigue management cannot rely only on personal willpower because schedules, task length, and night work generate fatigue systemically
+If scheduling, task duration, night-work burden, and high-risk task timing are poorly designed, telling people to rest more will not solve the problem. A stronger approach treats fatigue as a risk source that must be designed around and buffered against.
 
-## Why It Matters
+!!! note "One-Sentence Conclusion"
+    Fatigue is not personal weakness; it is a physiological constraint the system must take seriously.
 
-Interfaces, procedures, and training are all filtered through a fatigued human operator. That makes fatigue a system-design issue, not just a personal habit issue.
+!!! warning "The Most Common Misunderstanding"
+    Reducing fatigue management to “tell people to sleep more” is not enough. The more dangerous variables usually sit inside scheduling and task design.
 
-## Common Difficulty
+## Chapter Summary
 
-Telling people to rest more is not enough. Stronger approaches treat fatigue as a design variable in scheduling, task timing, handoff design, and high-risk cross-checking.
+!!! tip "What To Carry Forward"
+    - Fatigue systematically alters reaction, memory, judgment, and monitoring.
+    - Circadian rhythm changes the risk window.
+    - Fatigue is often co-produced by scheduling and organizational conditions.
+    - Fatigue management has to move into system design.
 
-## Slide Figures and Page Previews
-
-These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-fatigue-sleep-20260211/page-01.png" alt="Sp26_Fatigue+Sleep_20260211.pdf · page 1 preview" loading="lazy">
-    <figcaption>Sp26_Fatigue+Sleep_20260211.pdf · page 1 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-fatigue-sleep-20260211/page-04.png" alt="Sp26_Fatigue+Sleep_20260211.pdf · page 4 preview" loading="lazy">
-    <figcaption>Sp26_Fatigue+Sleep_20260211.pdf · page 4 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-fatigue-sleep-20260211/page-05.png" alt="Sp26_Fatigue+Sleep_20260211.pdf · page 5 preview" loading="lazy">
-    <figcaption>Sp26_Fatigue+Sleep_20260211.pdf · page 5 preview</figcaption>
-  </figure>
-</div>
 
 ## Source Scope and Related Topics
 

@@ -1,67 +1,51 @@
 # Spatial Disorientation
 
-This page summarizes the physiology, perceptual traps, and operational risk of spatial disorientation when sensory systems conflict with instruments.
+The central reminder of this page is that human sensory systems are not always reliable in flight; felt orientation and actual orientation can diverge completely.
 
-## Lecture Flow in the Source Material
+!!! note "Core Question"
+    Why do people in flight develop strong but wrong bodily sensations about aircraft attitude, and how should the system help them still make correct judgments inside that illusion?
 
-This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+## Key Takeaways
 
-### Sp26_SpDisorientation_20260330.pdf
+- Vestibular and bodily cues can mislead operators under certain acceleration, turning, and low-visibility conditions.
+- Instruments are usually more reliable than bodily intuition, but stress and surprise can reduce the operator’s ability to shift to them.
+- Spatial disorientation is a classic case of conflict between human sensing and system information.
+- Effective control depends on training, displays, and procedure rather than on willpower in the moment.
 
-1. SPATIAL DISORIENTATION Dr. Andrew Liu
-2. ANATOMY OF THE EAR virtualmedicalcentre.com
-3. VESTIBULAR SYSTEM
-4. OTOLITH ORGANS
-5. OTOLITH HAIR CELLS Stanfield, 2011
-6. DETECTING FORWARD ACCELERATION Stanfield, 2011
-7. DETECTING BACKWARD ACCELERATION Stanfield, 2011
-8. DETECTION OF ACCELERATION V. TILT? Stanfield, 2011
+## Remember This First
 
+!!! tip "Keep This Sentence in Mind"
+    Keep one sentence in mind: in spatial disorientation, the danger is not the absence of feeling, but the presence of a very convincing feeling that is nevertheless wrong.
 
-## Reading Logic
+## Why Sensory Systems and Instruments Conflict
 
-Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+Under some flight conditions, vestibular and bodily cues provide signals that do not match the actual attitude. Instruments provide the more reliable state information, but the bodily experience may feel stronger and more convincing.
 
-1. Why sensory systems can mislead operators
-2. How instrument scan counteracts illusion
-3. Why spatial disorientation is so hazardous
+## Why This Illusion Becomes Especially Dangerous
 
-## Core Idea
+Spatial disorientation is dangerous not only because it misleads perception, but because the person often trusts the sensation strongly. Once the operator uses that sensation to reinterpret the instruments, the control loop can deteriorate quickly.
 
-The key lesson in spatial disorientation is that human sensory intuition can be unreliable in flight. The felt motion of the aircraft may not match its actual state.
+!!! warning "The Most Common Misunderstanding"
+    Do not interpret spatial disorientation as something a pilot could solve merely by trying harder. The illusion is dangerous precisely because it feels deeply real to the person experiencing it.
 
-## Core Conflict
+## How the System Helps Counter the Illusion
 
-- vestibular and bodily cues can become misleading under specific acceleration, turning, and visibility conditions
-- instruments provide more reliable state information, but people do not always shift to them quickly under surprise or stress
-- risk escalates when bodily sensation is trusted over instrument information
+Effective control cannot depend only on “stay calm in the moment.” More realistic defenses include training for anticipated illusions, disciplined instrument scan, display support, procedural cross-checking, and explicit suspicion toward bodily intuition in high-risk phases.
 
-## Why It Matters
+!!! note "One-Sentence Conclusion"
+    The essence of spatial disorientation is whether the system offers a strong enough alternative path back to correct judgment when sensory intuition becomes unreliable.
 
-Spatial disorientation is a classic human-factors conflict: human sensing can mislead, so design, training, and procedure must explicitly compensate for that weakness.
+!!! example "Example: Why Instrument Scan Is a Critical Defense Against Illusion"
+    When the body tells the operator that the aircraft is banking in a certain direction, instrument scan offers a structured alternative path that pulls judgment back to system information. If that scan habit is weak, the illusion more easily drives the action.
 
-## Common Difficulty
+## Chapter Summary
 
-These illusions often feel compelling to the person experiencing them. That is why effective control depends on prior training, display support, and procedural cross-checking rather than willpower alone.
+!!! tip "What To Carry Forward"
+    - Spatial disorientation arises from conflict between sensory intuition and actual state.
+    - Its danger lies in how convincing the illusion feels.
+    - Instruments, training, and procedure are the primary defenses.
+    - This page is a classic case of conflict between human perception and system information.
 
-## Slide Figures and Page Previews
-
-These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-spdisorientation-20260330/page-01.png" alt="Sp26_SpDisorientation_20260330.pdf · page 1 preview" loading="lazy">
-    <figcaption>Sp26_SpDisorientation_20260330.pdf · page 1 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-spdisorientation-20260330/page-02.png" alt="Sp26_SpDisorientation_20260330.pdf · page 2 preview" loading="lazy">
-    <figcaption>Sp26_SpDisorientation_20260330.pdf · page 2 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/sp26-spdisorientation-20260330/page-03.png" alt="Sp26_SpDisorientation_20260330.pdf · page 3 preview" loading="lazy">
-    <figcaption>Sp26_SpDisorientation_20260330.pdf · page 3 preview</figcaption>
-  </figure>
-</div>
 
 ## Source Scope and Related Topics
 

@@ -4,10 +4,10 @@ This section organizes the analytic methods in the course, including investigati
 
 ## Topic Pages
 
-- [Error Analysis and Investigation Flow](error_analysis_methods.en.md): This page joins the investigative process, NTSB logic, and error-analysis methods to show how event analysis moves from evidence gathering to causal explanation.
-- [Task Analysis](task_analysis.en.md): This page explains how task analysis decomposes use flow into observable tasks and subtasks that can later be evaluated for risk.
-- [URRA Methods](urra_methods.en.md): This page captures how Use-Related Risk Analysis is structured, what inputs and outputs it requires, and why it sits at the center of HFE risk work.
-- [Known Problem Analysis and Event Trees](known_problem_and_event_tree.en.md): This page pairs known problem analysis with event-tree thinking to show how prior issues and event evolution enrich risk analysis.
+- [Error Analysis and Investigation Flow](error_analysis_methods.en.md): This page asks how to analyze an accident, incident, or near miss in a disciplined way instead of collapsing it into a story with a premature conclusion.
+- [Task Analysis](task_analysis.en.md): The job of task analysis is to decompose a continuous use episode into a sequence of observable, discussable, and risk-mappable steps.
+- [URRA Methods](urra_methods.en.md): URRA is not merely a table format. It is a full risk chain that links task steps, use errors, hazardous situations, harms, and controls in one structure.
+- [Known Problem Analysis and Event Trees](known_problem_and_event_tree.en.md): This page pairs two gap-finding methods: Known Problem Analysis looks backward to historical issues, while Event Tree analysis looks forward from an initiating event into downstream consequence branches.
 
 ## Covered Source Files
 

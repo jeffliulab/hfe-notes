@@ -1,184 +1,422 @@
 from __future__ import annotations
 
-from textwrap import dedent
+from note_blueprints import callout, page_blueprint, section
 
 
-def pair(zh: str, en: str) -> dict[str, str]:
-    return {
-        "zh": dedent(zh).strip(),
-        "en": dedent(en).strip(),
-    }
+MEDICAL_DEVICES_CONTENT: dict[str, dict] = {
+    "iso_14971": page_blueprint(
+        template_type="method",
+        page_intro_zh="ISO 14971 这一页讲的不是单张表，而是一套贯穿医疗器械全生命周期的风险管理语言和流程。",
+        page_intro_en="This page treats ISO 14971 not as a single worksheet, but as the language and process framework for risk management across the medical-device lifecycle.",
+        core_question_zh="ISO 14971 怎样把 hazard、hazardous situation、harm、control 和上市后反馈组织成一个闭环风险管理过程？",
+        core_question_en="How does ISO 14971 organize hazard, hazardous situation, harm, control, and post-market feedback into a closed-loop risk-management process?",
+        must_learn_points_zh=[
+            "ISO 14971 的重点不是填表，而是用一致语言管理风险。",
+            "`hazard`、`hazardous situation`、`harm` 必须严格分开。",
+            "风险管理不是一次性动作，而是计划、识别、控制、验证和上市后回看的连续过程。",
+            "人因工作在这里的重要性，是很多 hazardous situation 都经由使用路径触发。",
+        ],
+        must_learn_points_en=[
+            "The point of ISO 14971 is not paperwork; it is a consistent language for managing risk.",
+            "`hazard`, `hazardous situation`, and `harm` must stay clearly separated.",
+            "Risk management is not a one-time activity but a continuous process of planning, identification, control, verification, and post-market review.",
+            "Human-factors work matters here because many hazardous situations arise through use.",
+        ],
+        memory_anchor_zh="先记住这个标准的定位：它不是替代设计，而是逼团队把设计风险、使用风险和伤害后果放到同一个闭环里。",
+        memory_anchor_en="Remember the role of the standard this way: it does not replace design work; it forces the team to place design risk, use risk, and harm consequence inside one closed loop.",
+        sections=[
+            section(
+                "terms",
+                "## 这个方法解决什么问题",
+                "## What Problem This Method Solves",
+                body_zh="ISO 14971 解决的是团队对风险对象说不清楚的问题。它要求大家用同一套语言去区分潜在伤害源、暴露情境和真正发生的伤害，从而让设计、临床、法规和人因讨论能接起来。",
+                body_en="ISO 14971 solves the problem of teams talking about risk imprecisely. It forces a shared language that separates sources of harm, exposure situations, and actual harm so design, clinical, regulatory, and human-factors discussions can connect.",
+            ),
+            section(
+                "io",
+                "## 输入与输出是什么",
+                "## What the Inputs and Outputs Are",
+                body_zh="""
+输入包括：设计信息、预期用途、用户场景、危害识别、测试信息和上市后反馈。
 
+输出至少包括：
 
-MEDICAL_DEVICES_CONTENT: dict[str, dict[str, str]] = {
-    "iso_14971": pair(
-        """
-        ## 一眼看懂
+- 风险管理计划
+- 风险分析条目
+- 控制与剩余风险判断
+- 上市后信息回流机制
+""",
+                body_en="""
+Inputs include design information, intended use, user scenarios, hazard identification, testing information, and post-market feedback.
 
-        ISO 14971 不是一张表，而是一整套医疗器械风险管理语言。它要求团队持续识别 hazard、hazardous situation 和 harm，并把控制、验证与上市后反馈接成闭环。
+Outputs include at least:
 
-        ## 先把几个容易混的词分开
+- a risk-management plan
+- risk-analysis entries
+- control and residual-risk judgments
+- a mechanism for feeding post-market information back into the system
+""",
+            ),
+            section(
+                "steps",
+                "## 操作步骤怎么走",
+                "## How the Method Proceeds",
+                body_zh="""
+可以把标准流程记成六步：
 
-        - `hazard`：潜在伤害源
-        - `hazardous situation`：人或环境暴露在 hazard 下的具体情境
-        - `harm`：真正发生的不良影响
+1. 建风险管理计划。
+2. 识别 hazard 和 foreseeable use situation。
+3. 估计并评价风险。
+4. 实施风险控制。
+5. 判断剩余风险和整体可接受性。
+6. 用生产和上市后信息持续回看。
+""",
+                body_en="""
+The process can be remembered in six steps:
 
-        这三个词不分清，后面的风险文件几乎都会写乱。
-
-        ## 标准的流程框架
-
-        1. 建立风险管理计划
-        2. 识别危害与可预见使用场景
-        3. 估计并评价风险
-        4. 实施风险控制
-        5. 验证剩余风险与整体可接受性
-        6. 用生产和上市后信息持续回看
-
-        ## 难点讲解
-
-        学 ISO 14971 最容易误解的地方，是把它看成“法规文书工作”。其实它真正的价值，是强迫团队用一致的语言把设计、临床、使用和伤害后果连起来。人因工作之所以重要，就是因为很多 hazardous situation 正是由使用路径触发的。
-        """,
-        """
-        ## At a Glance
-
-        ISO 14971 is not just a table format. It is the language and process framework for medical-device risk management.
-
-        ## Three Terms To Separate
-
-        - `hazard`: a potential source of harm
-        - `hazardous situation`: the circumstance in which people or property are exposed to that hazard
-        - `harm`: the actual injury or damage
-
-        ## Process Logic
-
-        1. plan risk management
-        2. identify hazards and foreseeable use situations
-        3. estimate and evaluate risk
-        4. implement controls
-        5. judge residual risk
-        6. feed post-production information back into the system
-
-        ## Why It Matters
-
-        The standard is valuable because it forces consistent reasoning across design, use, and clinical consequence. Human-factors work matters here because many hazardous situations arise through use.
-        """,
+1. establish the risk-management plan
+2. identify hazards and foreseeable use situations
+3. estimate and evaluate risk
+4. implement risk controls
+5. judge residual risk and overall acceptability
+6. feed production and post-market information back into the process
+""",
+                note_title_zh="一句话结论",
+                note_title_en="One-Sentence Conclusion",
+                note_body_zh="ISO 14971 的强项，是让团队始终用同一套结构去看风险，而不是每个部门各说各话。",
+                note_body_en="The strength of ISO 14971 is that it keeps the team using one shared risk structure instead of letting each function describe risk in its own language.",
+            ),
+            section(
+                "relation",
+                "## 和人因工作是什么关系",
+                "## How It Connects to Human Factors",
+                body_zh="人因工作不是标准外的附加项。很多 hazardous situation 正是通过使用错误、界面诱发、标签误读和任务环境限制出现的，所以 medical-device URRA 和 use-error 页会继续把这条线展开。",
+                body_en="Human factors is not an external add-on to the standard. Many hazardous situations appear through use error, interface-induced confusion, labeling issues, and task-context limits, which is why the later medical-device URRA and use-error pages continue the same line.",
+            ),
+        ],
+        warnings=[
+            callout(
+                "warning",
+                "terms",
+                "最容易做错的地方",
+                "The Most Common Failure Mode",
+                body_zh="最常见的错误，是把 `hazard`、`hazardous situation` 和 `harm` 混写成同一个层级。一旦这三个词没分清，后面的控制和验证就会一起变乱。",
+                body_en="The most common error is collapsing `hazard`, `hazardous situation`, and `harm` into the same layer. Once those three are blurred, later controls and verification logic drift with them.",
+            )
+        ],
+        examples=[
+            callout(
+                "example",
+                "steps",
+                "worked example：一个注射器风险链怎样写清楚",
+                "Worked Example: How to Write a Syringe Risk Chain Clearly",
+                body_zh="如果装置的剂量窗口难读，`hazard` 可能是药物输送能力本身，`hazardous situation` 是用户把剂量读错并完成过量给药，`harm` 则是患者受到不良生理后果。把这三层分开后，控制措施才能分别落到窗口设计、确认流程和验证测试上。",
+                body_en="If a dose window is hard to read, the `hazard` may be the drug-delivery capability itself, the `hazardous situation` is the user misreading the dose and delivering too much, and the `harm` is the patient’s adverse physiological outcome. Once those layers are separated, controls can be assigned correctly to display design, confirmation workflow, and validation testing.",
+            )
+        ],
+        summary_points_zh=[
+            "ISO 14971 提供的是统一风险语言和闭环流程。",
+            "hazard、hazardous situation、harm 必须严格区分。",
+            "风险管理贯穿计划、控制、验证和上市后反馈。",
+            "人因工作在医疗器械风险链里不是附属品。",
+        ],
+        summary_points_en=[
+            "ISO 14971 provides a common risk language and a closed-loop process.",
+            "`hazard`, `hazardous situation`, and `harm` must remain distinct.",
+            "Risk management spans planning, control, verification, and post-market feedback.",
+            "Human factors is not peripheral inside the medical-device risk chain.",
+        ],
     ),
-    "medical_device_urra": pair(
-        """
-        ## 一眼看懂
+    "medical_device_urra": page_blueprint(
+        template_type="method",
+        page_intro_zh="这一页把 URRA 放到医疗器械监管语境里：同样是 use-related risk，这里更强调 patient harm、critical task 和可追踪控制。",
+        page_intro_en="This page places URRA inside the medical-device regulatory context, where use-related risk is tied more explicitly to patient harm, critical tasks, and traceable controls.",
+        core_question_zh="在医疗器械场景里，URRA 和一般任务风险分析相比，究竟多了哪些判断要求？",
+        core_question_en="Inside medical devices, what additional judgment demands does URRA impose beyond a generic task-risk analysis?",
+        must_learn_points_zh=[
+            "医疗器械 URRA 更强调可预见 use scenario、critical task 和 patient harm 路径。",
+            "控制措施不能只停在培训，必须优先考虑界面、标签、IFU 和物理设计。",
+            "监管语境要求风险链条可追踪、可验证、可回看。",
+            "这页是 ISO 14971 和具体 use error 工作之间的桥。",
+        ],
+        must_learn_points_en=[
+            "Medical-device URRA places stronger emphasis on foreseeable use scenarios, critical tasks, and patient-harm pathways.",
+            "Controls cannot stop at training; interface, labeling, IFU, and physical design changes take priority.",
+            "The regulatory context requires the risk chain to be traceable, verifiable, and reviewable.",
+            "This page bridges ISO 14971 and concrete use-error work.",
+        ],
+        memory_anchor_zh="先记住这个方法的定位：医疗器械 URRA 不是普通风险表，它必须写到足以证明团队真的知道病人会怎样受伤、设计又该怎样改。",
+        memory_anchor_en="Remember the purpose of medical-device URRA this way: it is not a generic risk table; it must be written clearly enough to show how patients may be harmed and how design should respond.",
+        sections=[
+            section(
+                "problem",
+                "## 这个方法解决什么问题",
+                "## What Problem This Method Solves",
+                body_zh="医疗器械 URRA 解决的是“使用风险怎么被写成监管上可接受的证据”这个问题。它要求团队把 use scenario、critical task、use error、hazardous situation、harm 和 control 写成一条完整链条。",
+                body_en="Medical-device URRA solves the problem of turning use risk into evidence that is acceptable in a regulated setting. It requires the team to write use scenario, critical task, use error, hazardous situation, harm, and control as one complete chain.",
+            ),
+            section(
+                "io",
+                "## 输入与输出是什么",
+                "## What the Inputs and Outputs Are",
+                body_zh="""
+输入通常包括：任务分析、用户群体、使用环境、器械设计、标签/IFU、已知问题和伤害后果判断。
 
-        医疗器械场景下的 URRA，比一般风险分析更强调“使用情境是否可预见”“任务是否 critical”“错误是否会通向病人伤害”，因为这里的后果往往直接落在患者安全上。
+输出则应让团队明确：
 
-        ## 这页最重要的三个连接
+- 哪些步骤是 critical task
+- 哪些错误会直通 patient harm
+- 哪些控制需要在设计里体现
+- 哪些点必须进入 validation
+""",
+                body_en="""
+Typical inputs include task analysis, user groups, use environment, device design, labeling and IFU, known issues, and harm assessment.
 
-        - 从任务分析连接到 critical task
-        - 从 use error 连接到 hazardous situation 与 harm
-        - 从 harm 再连接回界面、标签、IFU、培训与物理设计控制
+The output should make it clear:
 
-        ## 为什么医疗器械里的 URRA 更严格
-
-        - 使用者不一定是专家
-        - 使用环境可能嘈杂、紧急、光线差或时间极紧
-        - 病人状态会放大错误后果
-        - 监管要求你证明风险识别和控制逻辑是完整、可追踪、可验证的
-
-        ## 难点讲解
-
-        很多团队会把 control 写成“培训用户”。这往往不够。课程里更想强调的是：如果界面、器械形态、信息呈现本身可以改，就不应该把主要风险压给培训和注意力。
-        """,
-        """
-        ## At a Glance
-
-        URRA in medical devices is stricter than a generic use-risk exercise because use conditions, critical tasks, and harm pathways directly affect patient safety.
-
-        ## Three Key Connections
-
-        - task analysis into critical task identification
-        - use error into hazardous situation and harm
-        - harm back into interface, labeling, IFU, training, and physical design controls
-
-        ## Common Difficulty
-
-        Teams often overuse “training” as the main control. The course pushes a stronger principle: if the interface or device can be redesigned, risk should not be left mainly to attention and training.
-        """,
+- which steps are critical tasks
+- which errors can lead directly to patient harm
+- which controls must appear in design
+- which points must enter validation
+""",
+            ),
+            section(
+                "steps",
+                "## 操作步骤怎么走",
+                "## How the Method Proceeds",
+                body_zh="做法上和一般 URRA 相同，但要求更严格：从 use scenario 开始，明确 critical task，写出具体 use error，再推进到 hazardous situation、harm 和 control，最后把这些条目回接到 validation 计划。",
+                body_en="The logic is similar to generic URRA but held to a stricter standard: begin with the use scenario, identify the critical task, define the concrete use error, push the chain into hazardous situation, harm, and control, and then feed the row back into validation planning.",
+                note_title_zh="一句话结论",
+                note_title_en="One-Sentence Conclusion",
+                note_body_zh="医疗器械 URRA 的关键，不是把“风险存在”写出来，而是把“病人可能怎样受伤、系统准备怎样拦住它”写具体。",
+                note_body_en="The key move in medical-device URRA is not simply stating that risk exists, but specifying how the patient may be harmed and how the system intends to intercept that path.",
+            ),
+            section(
+                "relation",
+                "## 和前后页面是什么关系",
+                "## How It Connects to the Neighboring Pages",
+                body_zh="它前接 ISO 14971 的标准语言，后接 use-error 分析和 EpiPen workbook 的具体文档写法，是医疗器械分区里最像“中枢枢纽”的一页。",
+                body_en="This page inherits the standardized language of ISO 14971 and feeds forward into use-error analysis and the EpiPen workbook. It is the hub page inside the medical-device section.",
+            ),
+        ],
+        warnings=[
+            callout(
+                "warning",
+                "steps",
+                "最容易做错的地方",
+                "The Most Common Failure Mode",
+                body_zh="最容易出现的弱控制，是凡事都写成“加强培训”。如果界面、反馈、标签或物理形态本身可以改，主要风险不应该压给培训和注意力。",
+                body_en="The weakest recurring control is to write everything as “better training.” If interface, feedback, labeling, or physical form can be redesigned, the primary risk should not be left to training and attention.",
+            )
+        ],
+        examples=[
+            callout(
+                "example",
+                "steps",
+                "worked example：critical task 为什么必须被单独标出来",
+                "Worked Example: Why a Critical Task Must Be Marked Explicitly",
+                body_zh="例如注射器“设定剂量”这一步，一旦错误就可能直接进入 patient harm 路径，所以它必须被标成 critical task。只有这样，团队才会在设计评审和 validation 里对这一步给出更高等级的控制和测试关注。",
+                body_en="Suppose the syringe step is “set dose.” If failure there can lead directly to patient harm, that step must be marked as a critical task. Only then will the design review and validation plan allocate the higher level of control and testing attention it deserves.",
+            )
+        ],
+        summary_points_zh=[
+            "医疗器械 URRA 更强调 critical task 和 patient harm。",
+            "输入包括任务流、用户情境、设计和标签信息。",
+            "输出必须能反推控制和 validation 计划。",
+            "培训不能成为默认主控制。",
+        ],
+        summary_points_en=[
+            "Medical-device URRA places stronger emphasis on critical tasks and patient harm.",
+            "Its inputs include task flow, user context, design, and labeling information.",
+            "Its outputs must support both controls and validation planning.",
+            "Training cannot become the default primary control.",
+        ],
     ),
-    "medical_device_use_errors": pair(
-        """
-        ## 一眼看懂
+    "medical_device_use_errors": page_blueprint(
+        template_type="concept",
+        page_intro_zh="这一页专门解决“用错了到底算什么”的问题：device failure、无意 use error、异常使用和故意偏离规则，不能混成一个桶。",
+        page_intro_en="This page is about classifying what “used incorrectly” really means. Device failure, unintended use error, abnormal use, and deliberate deviation cannot all be thrown into one bucket.",
+        core_question_zh="当医疗器械使用出了问题时，我们怎样区分设计诱发的 use error、器械本身失效、异常使用和故意违规？",
+        core_question_en="When medical-device use goes wrong, how do we distinguish design-induced use error from device failure, abnormal use, and deliberate rule deviation?",
+        must_learn_points_zh=[
+            "不是所有不良使用都叫 use error。",
+            "判断时必须看行为是否在可预见使用范围内、设计是否放大了错误机会、恢复空间是否存在。",
+            "use error 分析的重点，是把问题重新拉回具体任务和具体情境。",
+            "如果问题类型定义错了，后面的控制措施也会跑偏。",
+        ],
+        must_learn_points_en=[
+            "Not every bad use episode is a use error.",
+            "The classification depends on foreseeability, design contribution, and whether recovery opportunities existed.",
+            "Good use-error analysis pushes the discussion back to specific tasks and contexts.",
+            "If the problem type is misclassified, the later controls will drift as well.",
+        ],
+        memory_anchor_zh="记这一页最简单的方法是：先别急着说“用户用错了”，先问设计、环境和情境是不是已经把正确操作变得很难。",
+        memory_anchor_en="The shortest way to remember this page is: before saying “the user used it incorrectly,” ask whether design, environment, and context already made correct use unusually hard.",
+        sections=[
+            section(
+                "definition",
+                "## 什么叫医疗器械中的 use error",
+                "## What Use Error Means in Medical Devices",
+                body_zh="这页不是在扩大 blame，而是在缩小误判。它要求团队把“错误行为”放回可预见使用场景里，看它到底是无意偏差、器械失效、异常使用，还是故意偏离规则。",
+                body_en="This page is not broadening blame; it is reducing misclassification. It asks the team to place the visible behavior back into the foreseeable use context and judge whether it reflects unintended deviation, device failure, abnormal use, or deliberate rule departure.",
+            ),
+            section(
+                "importance",
+                "## 为什么这个区分会直接影响控制策略",
+                "## Why the Distinction Directly Changes the Control Strategy",
+                body_zh="""
+一旦定义错了，改法就会跟着错：
 
-        医疗器械 use error 这一页想解决的问题是：当不良后果发生时，我们怎样区分“器械本身失效”“用户无意出错”“用户故意偏离”“环境把正确操作变得很难”。
+- 明明是界面诱发错误，却只补培训，风险会回来。
+- 明明是异常使用，却按普通 use error 写，控制会失焦。
+- 明明是器械失效，却把责任压给用户，设计问题就被遮掉了。
+""",
+                body_en="""
+Once the classification is wrong, the response drifts with it:
 
-        ## 这页要建立的判断习惯
-
-        - 不要把所有不良使用都叫 use error
-        - 要看错误是否在可预见使用范围内
-        - 要看设计是否放大了误选、漏做、误判或顺序错误
-        - 要看恢复机会是否存在
-
-        ## 为什么这个区分重要
-
-        因为一旦你把问题定义错了，后面的改进就会跑偏：
-
-        - 如果明明是界面诱发错误，却只去补培训，风险还会回来
-        - 如果本质是异常使用或故意违规，却按普通 use error 处理，控制措施也会失真
-
-        ## 难点讲解
-
-        这页真正难的地方不是下定义，而是承认“错误行为”常常是设计、时间压力、包装、标签和工作环境共同塑造出来的。也因此，人因分析必须回到具体任务和情境。
-        """,
-        """
-        ## At a Glance
-
-        This topic asks how to distinguish device failure, unintended use error, deliberate deviation, and environmental pressure when something goes wrong.
-
-        ## Analytical Habit To Build
-
-        - do not label every bad use episode as use error
-        - judge whether the behavior was foreseeable
-        - examine how design may have amplified selection, omission, judgment, or sequence errors
-        - check whether recovery opportunities existed
-
-        ## Why It Matters
-
-        If the problem type is misclassified, the control strategy will also drift. Good human-factors analysis stays tied to specific tasks and contexts.
-        """,
+- if an interface-induced error is treated as a training problem, the risk returns
+- if abnormal use is treated as ordinary use error, controls lose focus
+- if device failure is pushed onto the user, the design problem is hidden
+""",
+            ),
+            section(
+                "application",
+                "## 这页真正想建立的分析习惯",
+                "## The Analytical Habit This Page Tries to Build",
+                body_zh="看到错误行为时，不要立刻贴标签。先回到具体 use step、具体场景、具体信息显示和具体环境条件，再问设计有没有让误选、漏做、误判或顺序错误变得更容易。",
+                body_en="When a visible error appears, do not label it immediately. Return first to the specific use step, scenario, display context, and environment, and then ask whether design made mis-selection, omission, misjudgment, or sequence error easier.",
+                note_title_zh="一句话结论",
+                note_title_en="One-Sentence Conclusion",
+                note_body_zh="医疗器械里的 use error 分析，本质上是在判断系统有没有把使用者推到容易出错的位置。",
+                note_body_en="Medical-device use-error analysis is fundamentally about judging whether the system pushed the user into an error-prone position.",
+            ),
+        ],
+        warnings=[
+            callout(
+                "warning",
+                "importance",
+                "最容易做错的地方",
+                "The Most Common Failure Mode",
+                body_zh="最常见的误区，是把所有不良后果都收成一句“user error”。这样一来，界面、标签、环境和组织条件都会从视野里消失。",
+                body_en="The most common mistake is compressing every bad outcome into the phrase “user error.” Once that happens, interface, labeling, environment, and organizational conditions disappear from view.",
+            )
+        ],
+        examples=[
+            callout(
+                "example",
+                "application",
+                "案例：明明看起来像“用错了”，其实是界面在诱发错误",
+                "Example: It Looks Like “Wrong Use,” but the Interface Is Doing the Pushing",
+                body_zh="如果两种给药模式在界面上只用细小字母区分，用户在紧急场景中选错模式后，表面上像是“user selected the wrong mode”。但更重要的分析结论可能是：系统把高后果选择设计得过于难辨认。",
+                body_en="If two dosing modes are separated only by small textual labels, and the user selects the wrong mode in an urgent setting, the surface description is “the user selected the wrong mode.” The more important conclusion may be that the system made a high-consequence choice too difficult to discriminate.",
+            )
+        ],
+        summary_points_zh=[
+            "不是所有不良使用都等于 use error。",
+            "分类时要看可预见性、设计诱发和恢复空间。",
+            "如果问题定义错了，控制策略也会错。",
+            "分析必须回到具体任务和具体情境。",
+        ],
+        summary_points_en=[
+            "Not every poor use episode is a use error.",
+            "Classification depends on foreseeability, design contribution, and recovery opportunity.",
+            "If the problem definition is wrong, the control strategy will also be wrong.",
+            "Analysis must return to the concrete task and context.",
+        ],
     ),
-    "epipen_workbook": pair(
-        """
-        ## 一眼看懂
+    "epipen_workbook": page_blueprint(
+        template_type="case",
+        page_intro_zh="EpiPen workbook 这一页不是新理论，而是把前面讲过的 task analysis、critical task 和 URRA 写法压缩进一个具体工作底稿里。",
+        page_intro_en="The EpiPen workbook page is not a new theory page. It compresses task analysis, critical tasks, and URRA writing into one concrete working document.",
+        core_question_zh="一张 workbook 表怎样把抽象概念翻译成团队真的能写、能审、能验证的风险条目？",
+        core_question_en="How does one workbook translate abstract concepts into risk entries that a team can actually write, review, and validate?",
+        must_learn_points_zh=[
+            "样例页的价值，在于让你看到“好的一行 URRA”到底长什么样。",
+            "workbook 会把任务步骤、critical task、use error、harm 和 mitigation 压成可协作的表格语言。",
+            "读样例时要分清哪些栏位在描述事实，哪些栏位在做风险判断。",
+            "它不是标准答案模板，而是写法顺序的示范。",
+        ],
+        must_learn_points_en=[
+            "The value of the example is that it shows what a strong URRA row actually looks like.",
+            "The workbook compresses task steps, critical tasks, use errors, harms, and mitigation into collaborative table language.",
+            "When reading it, distinguish descriptive fields from evaluative risk-judgment fields.",
+            "It is not an answer key template; it is a demonstration of writing order and discipline.",
+        ],
+        memory_anchor_zh="先记住这个案例页的一句话判断：样例的真正价值，不在于抄格式，而在于学会“先任务、再错误、再伤害、最后控制”的书写顺序。",
+        memory_anchor_en="Keep this case-level judgment in mind: the example matters not because its format can be copied blindly, but because it teaches the writing order of task first, error second, harm third, and control last.",
+        sections=[
+            section(
+                "background",
+                "## 背景与 stakes",
+                "## Background and Stakes",
+                body_zh="EpiPen 这类产品的风险文档之所以重要，是因为使用往往发生在紧急场景下，用户可能不是专业人员，时间压力高，错误后果又直接落到患者身上。所以 workbook 不是文书练习，而是把风险判断提前写实。",
+                body_en="For a product such as the EpiPen, risk documentation matters because use often occurs in urgent settings, the user may not be a professional, time pressure is high, and the consequence lands directly on the patient. The workbook is therefore not paperwork rehearsal; it is an attempt to write the risk judgment realistically in advance.",
+            ),
+            section(
+                "chain",
+                "## 这张表到底在串什么",
+                "## What the Workbook Actually Connects",
+                body_zh="workbook 会把 use step、potential use error、hazard、harm、severity、critical task 和 mitigation 串成一行。它的好处，是让团队在一页里看到“这一步如果错了，会沿什么路径走向后果，以及准备怎样拦住它”。",
+                body_en="The workbook connects use step, potential use error, hazard, harm, severity, critical task, and mitigation into a single row. Its value is that the team can see, in one place, how one step may fail, where the consequence path goes, and how the design intends to stop it.",
+            ),
+            section(
+                "application",
+                "## 读样例时应该怎样下手",
+                "## How to Read the Example Effectively",
+                body_zh="""
+读这种 workbook 时，建议顺着下面这条线走：
 
-        EpiPen 工作簿这一页不是新的理论，而是把前面讲过的 task analysis、critical task、URRA 写法真正落到一个可操作的样例里。
+1. 先看任务步骤是否拆得够细。
+2. 再看哪些步骤被标成 critical task。
+3. 接着看 error、hazard、harm 有没有真的连成链。
+4. 最后看 mitigation 是不是回到了设计、说明、流程或验证上。
+""",
+                body_en="""
+When reading a workbook like this, use a fixed sequence:
 
-        ## 读这种 workbook 时要看什么
-
-        - 它如何把使用流程拆成一行行任务
-        - 哪些步骤被标成 critical task
-        - 每一行如何从 use step 走到 hazard、harm 与 control
-        - 文档里哪些栏位只是描述，哪些栏位是在做风险判断
-
-        ## 为什么样例很重要
-
-        真正写风险文件时，最难的往往不是理解概念，而是把抽象概念翻译成表格中的具体语言。样例的价值就在这里：它让你看到“好的一行 URRA”到底长什么样。
-
-        ## 难点讲解
-
-        不要把 workbook 当成答案模板去硬套。更好的做法是学会它背后的写法顺序：任务先明确，错误再具体，伤害后果写完整，最后才回头判断控制是否足够。
-        """,
-        """
-        ## At a Glance
-
-        The EpiPen workbook is not a new theory page. It is a worked example that turns earlier concepts into something documentable.
-
-        ## How To Read It
-
-        - how the use flow is decomposed
-        - which steps become critical tasks
-        - how each row moves from use step to hazard, harm, and control
-        - which fields are descriptive versus evaluative
-
-        ## Why It Matters
-
-        Examples are valuable because the hardest part of risk work is often translating concepts into disciplined document language.
-        """,
+1. check whether the task steps are decomposed finely enough
+2. identify which steps are marked as critical tasks
+3. inspect whether error, hazard, and harm truly form a chain
+4. judge whether mitigation comes back to design, instructions, workflow, or validation
+""",
+                note_title_zh="一句话结论",
+                note_title_en="One-Sentence Conclusion",
+                note_body_zh="这页不是让你背 workbook 栏位名称，而是让你学会如何把抽象 HFE 概念翻译成可执行文档。",
+                note_body_en="This page is not about memorizing workbook column names. It is about learning how to translate abstract HFE concepts into executable documentation.",
+            ),
+        ],
+        warnings=[
+            callout(
+                "warning",
+                "application",
+                "最容易做错的地方",
+                "The Most Common Failure Mode",
+                body_zh="最容易出现的误解，是把样例当成可直接照抄的模板。真正该学的是它背后的顺序和约束，而不是句式表面。",
+                body_en="The most common misunderstanding is to treat the example as a template to copy line by line. What matters is the sequence and discipline behind it, not the surface phrasing.",
+            )
+        ],
+        examples=[
+            callout(
+                "example",
+                "chain",
+                "案例：为什么“一行写得好”比“整张表写满”更重要",
+                "Example: Why One Strong Row Matters More than a Fully Filled Sheet",
+                body_zh="如果某一行能把任务步骤、具体 error、患者 harm 和 mitigation 写得非常清楚，团队就能据此设计验证场景。反过来，如果整张表都只是“使用不当”“可能伤害”“需要培训”这种泛词，表填满了也没有真正分析价值。",
+                body_en="If one row clearly links the task step, the concrete error, the patient harm, and the mitigation, the team can design a meaningful validation scenario from it. If the entire sheet is filled with vague phrases such as “improper use,” “possible harm,” and “training required,” the workbook looks complete but adds little analytic value.",
+            )
+        ],
+        summary_points_zh=[
+            "workbook 页的重点是看“好的一行 URRA”长什么样。",
+            "它把任务流、critical task、harm 和 mitigation 压成团队可协作的文档语言。",
+            "读样例时要区分描述字段和判断字段。",
+            "真正该学的是写法顺序，而不是抄格式。",
+        ],
+        summary_points_en=[
+            "The workbook page is about seeing what a strong URRA row actually looks like.",
+            "It compresses task flow, critical task, harm, and mitigation into collaborative document language.",
+            "When reading the example, separate descriptive fields from evaluative fields.",
+            "What matters most is the writing order, not blind format copying.",
+        ],
     ),
 }
+

@@ -1,67 +1,51 @@
 # Automated Vehicles
 
-This page extends the automation discussion to automated vehicles, focusing on monitoring, handoff, trust calibration, and responsibility allocation.
+The automated-vehicles page does not merely repeat aviation automation. It examines how risk is reorganized when takeover, trust calibration, and responsibility allocation enter the driving context.
 
-## Lecture Flow in the Source Material
+!!! note "Core Question"
+    Why is the most dangerous point in automated vehicles often not normal automated performance, but the handoff boundary where responsibility shifts between the human and the system?
 
-This section reconstructs the lecture flow from slide titles and page-leading text instead of relying only on a hand-written summary.
+## The Most Important Case Conclusions
 
-### Automated Vehicles 3-11-26-2.pdf
+- The central problem in automated vehicles is handoff rather than stable cruise.
+- Trust calibration matters more than simply making users trust the system; it requires avoiding both over-trust and under-use.
+- Mode confusion, monitoring decay, and automation surprise from aviation transfer strongly into this domain.
+- If responsibility boundaries stay unclear, takeover failure becomes a gray zone jointly produced by design and use.
 
-1. AUTOMATED VEHICLES Dr. Divya C. Chandra
-2. PLAN Driving tasks and vocabulary
-3. DRIVING Tasks and Vocabulary
-4. WHAT DOES IT MEAN TO “DRIVE”? DDT – Dynamic Driving Task
-5. AUTOMATED-SYSTEMS FOR DRIVING Earlier Systems
-6. CONFUSING TERMS (A FEW EXAMPLES) Similar names but different concepts
-7. SAE LEVELS OF AUTOMATION SAE International
-8. TRANSLATION 0. No automation. Driver is totally involved.
+## Start with the Case Verdict
 
+!!! tip "Keep This Case Judgment in Mind"
+    Keep this case judgment in mind: the most dangerous moment in automated vehicles often arrives when the system says “take over now” while the human is no longer cognitively in the same situation.
 
-## Reading Logic
+## Background and Stakes
 
-Read the page in this order to follow the lecture logic rather than treating it as a flat summary.
+Driving automation and aviation automation share the same basic shift: humans are moved into a low-engagement role that still carries high responsibility at critical moments. The difference is that the roadway environment changes faster, users are more heterogeneous, and the boundary is easier to misunderstand, making the takeover window especially fragile.
 
-1. The takeover problem in vehicle automation
-2. How trust calibration shapes reliance and intervention
-3. Which lessons transfer from aviation automation
+## Where the Event Chain Most Easily Breaks
 
-## Core Idea
+The real question in automated vehicles is not whether the system can drive itself for a while, but whether the user retains enough situation awareness, mode understanding, and action readiness to resume control once the ODD boundary arrives.
 
-Automated vehicles extend the automation discussion into a takeover problem: people are often disengaged during routine operation and then expected to resume high-quality control with little warning.
+!!! example "Example: Why Handoff Becomes a High-Risk Window"
+    A user spends a long period in passive supervision while the automated mode is active. When a takeover request arrives, the user must rapidly rebuild environmental understanding, identify the system boundary, and act. If any link in that chain is delayed, risk escalates quickly.
 
-## Core Logic
+## The System-Level Lesson of the Case
 
-- the hardest problem is often handoff, not steady-state automation
-- low-engagement monitoring weakens readiness, situation awareness, and response timing
-- trust calibration matters more than simply increasing trust
+If the system assumes the human will remain suitably vigilant while the design itself pushes the human out of the primary task for long periods, the design assumption becomes self-contradictory. Automated vehicles therefore become a classic HFE problem: interface, alerts, mode explanation, handoff timing, and responsibility allocation must be designed together.
 
-## Connection To Aviation
+!!! note "One-Sentence Conclusion"
+    The hardest part of automated vehicles is not making the system do more, but making the human and system line up at the takeover boundary.
 
-The course uses automated vehicles because they inherit familiar automation challenges: surprise, mode confusion, monitoring decay, short takeover windows, and ambiguous responsibility.
+!!! warning "The Most Common Misunderstanding"
+    Do not reduce the issue to “the driver was inattentive.” If the system is designed to make sustained attention unnecessary and then suddenly demands high-quality takeover, the design assumption itself is the problem.
 
-## Common Difficulty
+## What To Take Away from This Case
 
-It is too easy to say the driver should pay more attention. If system design encourages long periods of disengagement, the expectation of instant high-quality takeover may itself be unrealistic.
+!!! tip "What To Carry Forward"
+    - The central problem in automated vehicles is handoff.
+    - Trust calibration matters more than simply increasing trust.
+    - Many aviation-automation lessons transfer directly into this domain.
+    - Responsibility at the takeover boundary must be designed explicitly.
 
-## Slide Figures and Page Previews
-
-These figures and page previews are extracted from the source slides/PDFs and are meant to be read together with the note content.
-
-<div class="note-visual-grid">
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/automated-vehicles-3-11-26-2/page-01.png" alt="Automated Vehicles 3-11-26-2.pdf · page 1 preview" loading="lazy">
-    <figcaption>Automated Vehicles 3-11-26-2.pdf · page 1 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/automated-vehicles-3-11-26-2/page-02.png" alt="Automated Vehicles 3-11-26-2.pdf · page 2 preview" loading="lazy">
-    <figcaption>Automated Vehicles 3-11-26-2.pdf · page 2 preview</figcaption>
-  </figure>
-  <figure class="note-visual">
-    <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/automated-vehicles-3-11-26-2/page-08.png" alt="Automated Vehicles 3-11-26-2.pdf · page 8 preview" loading="lazy">
-    <figcaption>Automated Vehicles 3-11-26-2.pdf · page 8 preview</figcaption>
-  </figure>
-</div>
 
 ## Source Scope and Related Topics
 
