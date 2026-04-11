@@ -1,0 +1,2372 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Jeff Liu">
+      
+      
+        <link rel="canonical" href="https://jeffliulab.github.io/hfe-notes/ENP112/operational_risk/">
+      
+      
+        <link rel="prev" href="../spatial_disorientation/">
+      
+      
+        <link rel="next" href="../cardosi_case/">
+      
+      
+        
+          <link rel="alternate" href="./" hreflang="zh">
+        
+          <link rel="alternate" href="../../en/ENP112/operational_risk/" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>Operational Risk - 人因工程课程笔记</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="../../site_extra_styles/stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../site_extra_styles/stylesheets/correct_bullet_point.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#operational-risk" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="人因工程课程笔记" class="md-header__button md-logo" aria-label="人因工程课程笔记" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            人因工程课程笔记
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Operational Risk
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="选择当前语言">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="zh" class="md-select__link">
+              中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../en/ENP112/operational_risk/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ENP111/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  ENP111 Use-related Risks
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  ENP112 Engineering Forensics
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="人因工程课程笔记" class="md-nav__button md-logo" aria-label="人因工程课程笔记" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    人因工程课程笔记
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ENP111/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ENP111 Use-related Risks
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ENP111 Use-related Risks
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP111/human_factors_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    人因导论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP111/human_error_frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    人为失误框架
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP111/swiss_cheese/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Swiss Cheese 模型
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP111/task_analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    任务分析
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP111/urra_methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    URRA方法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP111/known_problem_and_event_tree/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Known Problem 与事件树
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP111/iso_14971/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ISO 14971
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP111/medical_device_urra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    医疗器械URRA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP111/medical_device_use_errors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    医疗器械使用错误
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP111/epipen_workbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EpiPen工作簿
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ENP112 Engineering Forensics
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ENP112 Engineering Forensics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../course_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程导论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../error_analysis_methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    错误分析方法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../aviation_automation_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    航空与自动化导论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../crew_resource_management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CRM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../displays_and_alerts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    显示与告警
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../checklists_and_procedures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    检查单与程序
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../automated_vehicles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    自动化车辆
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../attention_and_monitoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    注意与监控
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fatigue_and_sleep/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    疲劳与睡眠
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../stress_and_decision_making/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    压力与决策
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../situation_awareness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    情境意识
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../spatial_disorientation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    空间定向错觉
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operational Risk
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operational Risk
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章重点
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先记住一句话
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operational-risk_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        operational risk 到底在看什么
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#work-as-imagined-work-as-done" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 work as imagined 和 work as done 的差距会变成风险
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        这页为什么会成为很多案例页的底板
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么运行风险经常以“慢慢偏掉”的形式出现
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operational-risk_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 operational risk 最后会变成治理问题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        运行风险真正该盯住哪些早期信号
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operational-risk_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 operational risk 还要看“表面相似、实际不同”的运行环境
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#threat-and-error-management-operational-risk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 Threat and Error Management 会成为 operational risk 的日常读法
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#human-contribution-to-safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么这页还要讨论 human contribution to safety
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operational-risk_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 operational risk 分析离不开观察与运行数据，而不能只靠办公室推断
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资料范围与相关主题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        相关主题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原文转写与来源映射
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cardosi_case/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cardosi案例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../f16_analysis_prompts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F16分析提示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../boeing_737max_and_ethics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Boeing 737 Max与伦理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章重点
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先记住一句话
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operational-risk_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        operational risk 到底在看什么
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#work-as-imagined-work-as-done" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 work as imagined 和 work as done 的差距会变成风险
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        这页为什么会成为很多案例页的底板
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么运行风险经常以“慢慢偏掉”的形式出现
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operational-risk_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 operational risk 最后会变成治理问题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        运行风险真正该盯住哪些早期信号
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operational-risk_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 operational risk 还要看“表面相似、实际不同”的运行环境
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#threat-and-error-management-operational-risk" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 Threat and Error Management 会成为 operational risk 的日常读法
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#human-contribution-to-safety" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么这页还要讨论 human contribution to safety
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operational-risk_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 operational risk 分析离不开观察与运行数据，而不能只靠办公室推断
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资料范围与相关主题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        相关主题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原文转写与来源映射
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="导航栏" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    首页
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    ENP112 Engineering Forensics
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+
+
+<h1 id="operational-risk">Operational Risk</h1>
+<p>Operational risk 这页要你看到的，是风险不只存在于某一次错误动作里，而是长期藏在运行条件、组织约束和 work as done 里。</p>
+<div class="admonition note">
+<p class="admonition-title">本页主问题</p>
+<p>为什么真正的运行风险往往不是一次事件才突然出现，
+而是系统在日常运行中慢慢积累出来的？</p>
+</div>
+<h2 id="_1">本章重点</h2>
+<ul>
+<li>operational risk 关注的是日常运行系统，
+  而不只是单次失误。</li>
+<li>work as imagined 和 work as done 往往存在结构性差距。</li>
+<li>组织约束、
+  时间压力、
+  环境变化和一线补丁行为会持续重塑风险水平。</li>
+<li>这页把 Swiss Cheese、
+  fatigue、
+  stress、
+  procedure 等页面重新拉回同一运行视角。</li>
+</ul>
+<h2 id="_2">先记住一句话</h2>
+<div class="admonition tip">
+<p class="admonition-title">复习时先记住这句话</p>
+<p>先记住一句话：
+运行风险不是事故发生后才有的东西，
+它通常在事故前很久就已经存在于工作条件里。</p>
+</div>
+<h2 id="operational-risk_1">operational risk 到底在看什么</h2>
+<p>这页关心的不是单个动作的对错，
+而是系统在持续运行时有没有逐步变脆。
+换句话说，
+它问的是：
+班次、
+资源、
+流程、
+组织目标和现场补救行为，
+是否正在侵蚀原本设计好的安全边界。</p>
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/operational-risk-2-18-2026/page-01.png" alt="这张图要看懂的是：运行风险不是单点问题，而是随着运行条件持续变化的一组系统约束。" loading="lazy">
+  <figcaption>这张图要看懂的是：运行风险不是单点问题，而是随着运行条件持续变化的一组系统约束。</figcaption>
+</figure>
+
+<div class="admonition warning">
+<p class="admonition-title">最容易误解的地方</p>
+<p>不要把 operational risk 理解成“又一个风险清单”。
+它更像是一种持续追问运行条件是否在侵蚀防线的视角。</p>
+</div>
+<h2 id="work-as-imagined-work-as-done">为什么 work as imagined 和 work as done 的差距会变成风险</h2>
+<p>管理和设计往往先写出一个理想流程，
+但一线工作会受到时间压力、
+设备状态、
+环境变化和资源限制影响。
+如果系统长期只检查“有没有按理想流程做”，
+却不看实际工作如何被挤压和变形，
+风险就会被低估。</p>
+<div class="admonition example">
+<p class="admonition-title">案例：为什么长期 workaround 会变成运行风险信号</p>
+<p>如果一线人员长期用临时补丁绕过某条程序，
+那通常不是“员工不守规矩”这么简单，
+而是一个更深的运行信号：
+程序可能已经不再适配真实任务节奏，
+系统正在靠脆弱补丁维持表面正常。</p>
+</div>
+<h2 id="_3">这页为什么会成为很多案例页的底板</h2>
+<p>很多案例页最后都会回到 operational risk，
+因为一线错误很少是孤立的。
+背后常常已经累积了长期的组织张力、
+任务负荷和现实约束，
+而这些因素平时就已经在慢慢改变风险结构。</p>
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/operational-risk-2-18-2026/page-02.png" alt="这张图要看懂的是：运行风险 mitigation 不是只盯一线个体，它同时分布在个人、组织、系统设计和具体运行条件四层。" loading="lazy">
+  <figcaption>这张图要看懂的是：运行风险 mitigation 不是只盯一线个体，它同时分布在个人、组织、系统设计和具体运行条件四层。</figcaption>
+</figure>
+
+<div class="admonition note">
+<p class="admonition-title">一句话结论</p>
+<p>operational risk 的价值，
+是提醒你把事故看成运行系统的产物，
+而不是看成单次偶发偏差。</p>
+</div>
+<h2 id="_4">为什么运行风险经常以“慢慢偏掉”的形式出现</h2>
+<p>operational risk 最值得注意的，
+不是灾难时刻本身，
+而是系统在灾难前已经偏了多久。
+很多风险不会突然生成，
+而是在日常运行中一点点被正常化：</p>
+<ul>
+<li>workaround 变成默认做法</li>
+<li>时间压力逐渐吞掉缓冲</li>
+<li>资源紧张让团队接受更脆弱的运行方式</li>
+<li>原本只是例外的偏差开始被当成“正常现实”</li>
+</ul>
+<p>这种 drift 最危险的地方在于，
+它平时看起来还能工作，
+所以系统会越来越低估自己已经变脆了多少。</p>
+<div class="admonition example">
+<p class="admonition-title">案例：为什么“大家都这么做”本身就可能是高风险信号</p>
+<p>当一线人员普遍用某种 workaround 完成任务时，
+这并不自动说明他们不专业。
+更重要的解释可能是：
+正式流程已经长期不贴合 work as done，
+而系统正在依赖一套没有被正式承认的脆弱运行方式维持表面稳定。</p>
+</div>
+<h2 id="operational-risk_2">为什么 operational risk 最后会变成治理问题</h2>
+<p>运行风险不会只停留在一线层。
+只要资源配置、
+目标压力、
+排班、
+维护窗口和监督机制长期塑造了现场条件，
+那么 operational risk 本质上就已经进入治理层。</p>
+<p>这也是为什么这页在课程里位置很重要：
+它提醒你，
+很多一线失误如果反复出现，
+问题就不该再被看成 frontline discipline，
+而要被看成 management of operating conditions。</p>
+<h2 id="_5">运行风险真正该盯住哪些早期信号</h2>
+<p>operational risk 很少没有前兆。
+真正难的是，
+这些前兆平时看起来往往像“小问题”：
+交接越来越赶、
+维护窗口越来越短、
+例外审批越来越频繁、
+现场越来越依赖个人经验而不是正式流程。</p>
+<p>这些信号单独看都不一定像事故种子，
+但只要它们长期一起出现，
+就说明系统正在失去缓冲。
+也因此，
+运行风险管理最有价值的部分往往不是事故后追责，
+而是事故前识别这些慢性变脆的信号。</p>
+<h2 id="operational-risk_3">为什么 operational risk 还要看“表面相似、实际不同”的运行环境</h2>
+<p>运行风险分析不能只看流程名字一样，
+就默认风险结构也一样。
+哪怕两个机场都有相似跑道编号、
+相近业务类型或相近任务名称，
+实际的空间布局、
+交通密度和周边约束仍可能完全不同。</p>
+<p>这也是 operational risk 的一个关键提醒：
+风险不是挂在流程标题上的，
+它挂在真实运行条件上。
+只要真实条件不同，
+work as done 和缓冲结构就会一起变化。</p>
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/operational-risk-2-18-2026/page-16.png" alt="这张图要看懂的是：即便表面标签相似，不同运行场景的空间布局和环境约束也会让风险结构明显不同。" loading="lazy">
+  <figcaption>这张图要看懂的是：即便表面标签相似，不同运行场景的空间布局和环境约束也会让风险结构明显不同。</figcaption>
+</figure>
+
+<h2 id="threat-and-error-management-operational-risk">为什么 Threat and Error Management 会成为 operational risk 的日常读法</h2>
+<p>operational risk 之所以会和 TEM 连在一起，
+是因为这门课不把威胁和错误看成异常插曲，
+而是看成 everyday operations 里本来就会持续出现、
+需要被管理的东西。
+TEM 的价值，
+在于它让团队把注意力放在“威胁如何被发现、
+错误如何被恢复、
+undesired state 怎样被挡住”这些日常管理动作上。</p>
+<p>这会把视角从“事故发生时谁错了”转向“平时系统如何处理不断出现的小偏差”。
+也正因为如此，
+operational risk 不是只研究失败，
+而是研究运行系统平时怎样维持安全边界，
+以及边界又是怎样慢慢被削薄的。</p>
+<h2 id="human-contribution-to-safety">为什么这页还要讨论 human contribution to safety</h2>
+<p>如果 operational risk 只会问“人怎样出错”，
+它就会漏掉另一半：
+人在日常运行里也一直在补位、
+识别弱信号、
+修正偏差、
+维持系统不出事。
+课件把 human error 和 human contribution to safety 放在一起，
+正是为了打断那种只在事故后才想起人的视角。</p>
+<p>这不是否认错误存在，
+而是提醒你：
+同样一套 frontline adaptation，
+平时可能在保住系统，
+失手时才会暴露成事故链的一部分。
+真正成熟的运行风险分析，
+既看错误是怎样发生的，
+也看系统平时靠什么被勉强维持住。</p>
+<div class="admonition example">
+<p class="admonition-title">案例：为什么同一套 frontline adaptation 平时是在保安全，失手时却会被看成风险来源</p>
+<p>一线人员为了让工作继续推进，
+经常会提前协调、
+额外 cross-check、
+口头补程序、
+临时调整节奏。
+这些动作很多时候是在帮系统撑住。
+但一旦运行负荷继续上升、
+交接变差或外部条件恶化，
+同样的补位动作也可能撑不住，
+最后暴露出系统原本就缺少正式缓冲。
+这正是 operational risk 要看的：
+不仅是哪里出了错，
+也是谁一直在替系统补洞。</p>
+</div>
+<h2 id="operational-risk_4">为什么 operational risk 分析离不开观察与运行数据，而不能只靠办公室推断</h2>
+<p>这页真正难的地方，
+是很多运行风险在办公室里看不出来。
+只有当团队去看 line operations、
+handoff、
+maintenance window、
+实际 traffic pattern 或事件报告时，
+很多慢性变脆信号才会浮出来。
+也正因为这样，
+LOSA、
+ASRS 一类材料在这条线里很重要。</p>
+<p>operational risk 不能只靠 imagined workflow 推断，
+因为真正的问题往往正藏在 imagined 和 done 的差距里。
+没有观察、
+没有运行数据、
+没有近失事件材料，
+团队就很容易高估程序稳定性，
+低估现实中的 workload 和 workaround。</p>
+<h2 id="_6">本章总结</h2>
+<div class="admonition tip">
+<p class="admonition-title">复习时重点记这几条</p>
+<ul>
+<li>operational risk 关注的是持续运行中的风险生成。</li>
+<li>理想流程和真实工作之间的差距会不断改变风险水平。</li>
+<li>组织约束和 workaround 是重要风险信号。</li>
+<li>这页为后面的案例分析提供系统运行视角。</li>
+</ul>
+</div>
+<h2 id="_7">资料范围与相关主题</h2>
+<p>正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。</p>
+<ul>
+<li>所属分区: <code>ENP112 Engineering Forensics</code></li>
+<li>关联源文件数: 1</li>
+<li>文本单元数: 251</li>
+<li>配图/预览数: 3</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Type</th>
+<th style="text-align: right;">Text Units</th>
+<th style="text-align: right;">Visuals</th>
+<th>Download</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Operational Risk 2-18-2026.pdf</code></td>
+<td><code>pdf</code></td>
+<td style="text-align: right;">251</td>
+<td style="text-align: right;">3</td>
+<td><a href="../../assets/source_files/ENP112/Operational%20Risk%202-18-2026.pdf">open</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_8">相关主题</h2>
+<ul>
+<li><a href="../../ENP111/swiss_cheese/">Swiss Cheese 模型</a></li>
+<li><a href="../error_analysis_methods/">错误分析与调查流程</a></li>
+<li><a href="../checklists_and_procedures/">检查单与程序</a></li>
+</ul>
+<h2 id="_9">原文转写与来源映射</h2>
+<p>下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 <code>unit_id</code> 都能在 <code>data/coverage_map.json</code> 中找到对应页面映射。</p>
+<details class="info">
+<summary>Operational Risk 2-18-2026.pdf | 251 text units</summary>
+<p>下载原件: <a href="../../assets/source_files/ENP112/Operational%20Risk%202-18-2026.pdf">Operational Risk 2-18-2026.pdf</a>
+映射页面: <code>operational_risk</code></p>
+<div class="highlight"><pre><span></span><code>[operational-risk-2-18-2026-0001] page:1:line:1 | OPERATIONAL RISK
+[operational-risk-2-18-2026-0002] page:1:line:2 | ENP-0112
+[operational-risk-2-18-2026-0003] page:1:line:3 | 2/18/2026
+[operational-risk-2-18-2026-0004] page:1:line:4 | Dr. Divya C. Chandra
+[operational-risk-2-18-2026-0005] page:1:line:5 | Hurricane Helene
+[operational-risk-2-18-2026-0006] page:1:line:6 | September 2024
+[operational-risk-2-18-2026-0007] page:2:line:1 | MITIGATIONS
+[operational-risk-2-18-2026-0008] page:2:line:2 | 2/18/26
+[operational-risk-2-18-2026-0009] page:2:line:3 | ENP-0112
+[operational-risk-2-18-2026-0010] page:2:line:4 | 2
+[operational-risk-2-18-2026-0011] page:2:line:5 | Individual
+[operational-risk-2-18-2026-0012] page:2:line:6 | • Selection and training (Knowledge, Skills, and Abilities)
+[operational-risk-2-18-2026-0013] page:2:line:7 | • Motivation, arousal (optimize attention)
+[operational-risk-2-18-2026-0014] page:2:line:8 | Organization
+[operational-risk-2-18-2026-0015] page:2:line:9 | • Policies and procedures (e.g., checklists)
+[operational-risk-2-18-2026-0016] page:2:line:10 | • Safety culture
+[operational-risk-2-18-2026-0017] page:2:line:11 | System Design
+[operational-risk-2-18-2026-0018] page:2:line:12 | • Controls (soft or hard), “Usability” (e.g., visibility of system state, interaction
+[operational-risk-2-18-2026-0019] page:2:line:13 | with data)
+[operational-risk-2-18-2026-0020] page:2:line:14 | • Automated systems? (take the operator out of the system)
+[operational-risk-2-18-2026-0021] page:2:line:15 | Operational Risk
+[operational-risk-2-18-2026-0022] page:2:line:16 | • Variation across each operation (e.g., across flights)
+[operational-risk-2-18-2026-0023] page:2:line:17 | • Work as imagined (theory) vs. work as done (reality)
+[operational-risk-2-18-2026-0024] page:2:line:18 | CRM
+[operational-risk-2-18-2026-0025] page:2:line:19 | Monitoring
+[operational-risk-2-18-2026-0026] page:2:line:20 | Fatigue
+[operational-risk-2-18-2026-0027] page:2:line:21 | Displays and Alerts
+[operational-risk-2-18-2026-0028] page:3:line:1 | TOPICS
+[operational-risk-2-18-2026-0029] page:3:line:2 | • Operations
+[operational-risk-2-18-2026-0030] page:3:line:3 | • Threat and error framework, sources of risk
+[operational-risk-2-18-2026-0031] page:3:line:4 | • Safety 1 and Safety 2
+[operational-risk-2-18-2026-0032] page:3:line:5 | • Human error vs. human contribution to safety
+[operational-risk-2-18-2026-0033] page:3:line:6 | • Analysis of a sample ASRS event
+[operational-risk-2-18-2026-0034] page:3:line:7 | • Limitations
+[operational-risk-2-18-2026-0035] page:3:line:8 | • What was the pilot’s contribution to safety?
+[operational-risk-2-18-2026-0036] page:3:line:9 | 2/18/26
+[operational-risk-2-18-2026-0037] page:3:line:10 | ENP-0112
+[operational-risk-2-18-2026-0038] page:3:line:11 | 3
+[operational-risk-2-18-2026-0039] page:4:line:1 | OPERATIONS
+[operational-risk-2-18-2026-0040] page:4:line:2 | 2/18/26
+[operational-risk-2-18-2026-0041] page:4:line:3 | ENP-0112
+[operational-risk-2-18-2026-0042] page:4:line:4 | 4
+[operational-risk-2-18-2026-0043] page:5:line:1 | THREAT AND ERROR MANAGEMENT (TEM)
+[operational-risk-2-18-2026-0044] page:5:line:2 | FRAMEWORK
+[operational-risk-2-18-2026-0045] page:5:line:3 | • Threats and errors are part of everyday aviation operations that must be managed by aviation
+[operational-risk-2-18-2026-0046] page:5:line:4 | professionals.
+[operational-risk-2-18-2026-0047] page:5:line:5 | • Undesired states carry the potential for unsafe outcomes.
+[operational-risk-2-18-2026-0048] page:5:line:6 | • Undesired state management largely represents the last opportunity to avoid an unsafe outcome and
+[operational-risk-2-18-2026-0049] page:5:line:7 | thus maintain safety margins in aviation operations.
+[operational-risk-2-18-2026-0050] page:5:line:8 | • TEM is analogous to “defensive driving.” It emphasizes techniques that minimize risks related to
+[operational-risk-2-18-2026-0051] page:5:line:9 | safety.
+[operational-risk-2-18-2026-0052] page:5:line:10 | 2/18/26
+[operational-risk-2-18-2026-0053] page:5:line:11 | ENP-0112
+[operational-risk-2-18-2026-0054] page:5:line:12 | 5
+[operational-risk-2-18-2026-0055] page:5:line:13 | https://skybrary.aero/articles/threat-and-error-management-tem
+[operational-risk-2-18-2026-0056] page:5:line:14 | Merritt &amp; Klinect (2006). Defensive Flying for Pilots: An Introduction to Threat and
+[operational-risk-2-18-2026-0057] page:5:line:15 | Error Management. https://skybrary.aero/sites/default/files/bookshelf/1982.pdf
+[operational-risk-2-18-2026-0058] page:6:line:1 | ORIGINS OF TEM
+[operational-risk-2-18-2026-0059] page:6:line:2 | Do the concepts taught in training transfer to normal everyday flight operations?
+[operational-risk-2-18-2026-0060] page:6:line:3 | • Assess through Line Operations Safety Audits (LOSA), now the LOSA Collaborative. (Originally a
+[operational-risk-2-18-2026-0061] page:6:line:4 | partnership between University of Texas researchers and airlines.)
+[operational-risk-2-18-2026-0062] page:6:line:5 | • Designed to assess the effectiveness of CRM training, expanded to address error and its
+[operational-risk-2-18-2026-0063] page:6:line:6 | management.
+[operational-risk-2-18-2026-0064] page:6:line:7 | • FAA endorses LOSA as a voluntary safety program (FAA AC 120-90)
+[operational-risk-2-18-2026-0065] page:6:line:8 | 2/18/26
+[operational-risk-2-18-2026-0066] page:6:line:9 | ENP-0112
+[operational-risk-2-18-2026-0067] page:6:line:10 | 6
+[operational-risk-2-18-2026-0068] page:7:line:1 | THREAT DEFINITION
+[operational-risk-2-18-2026-0069] page:7:line:2 | • Threats are events or errors that
+[operational-risk-2-18-2026-0070] page:7:line:3 | • Occur outside the influence of the flight crew (i.e., not caused by the crew)
+[operational-risk-2-18-2026-0071] page:7:line:4 | • Increase the operational complexity of a flight, and
+[operational-risk-2-18-2026-0072] page:7:line:5 | • Require crew attention and management if safety margins are to be maintained
+[operational-risk-2-18-2026-0073] page:7:line:6 | • Examples
+[operational-risk-2-18-2026-0074] page:7:line:7 | • High terrain, icing conditions, aircraft malfunction, other people’s errors (e.g., dispatcher error)
+[operational-risk-2-18-2026-0075] page:7:line:8 | • Two categories
+[operational-risk-2-18-2026-0076] page:7:line:9 | • Environmental threats are outside the control of the airline
+[operational-risk-2-18-2026-0077] page:7:line:10 | • Airline threats originate from the flight operations (e.g., aircraft malfunctions)
+[operational-risk-2-18-2026-0078] page:7:line:11 | • All are independent of flight crew, but must be managed by the crew
+[operational-risk-2-18-2026-0079] page:7:line:12 | 2/18/26
+[operational-risk-2-18-2026-0080] page:7:line:13 | ENP-0112
+[operational-risk-2-18-2026-0081] page:7:line:14 | 7
+[operational-risk-2-18-2026-0082] page:8:line:1 | ERROR DEFINITION
+[operational-risk-2-18-2026-0083] page:8:line:2 | • Errors are defined as flight crew actions or inactions that
+[operational-risk-2-18-2026-0084] page:8:line:3 | • Lead to a deviation from crew or organizational intentions or expectations
+[operational-risk-2-18-2026-0085] page:8:line:4 | • Reduce safety margins; and
+[operational-risk-2-18-2026-0086] page:8:line:5 | • Increase the probability of adverse operational events on the ground or during flight
+[operational-risk-2-18-2026-0087] page:8:line:6 | • Examples – Three Categories
+[operational-risk-2-18-2026-0088] page:8:line:7 | • Aircraft handling, e.g., errors related to manual flying, or managing automated systems
+[operational-risk-2-18-2026-0089] page:8:line:8 | • Communication errors, e.g., related to ATC communications, or pilot-to-pilot comms
+[operational-risk-2-18-2026-0090] page:8:line:9 | • Procedural errors, e.g., deviations from regulations or  standard operating procedures)
+[operational-risk-2-18-2026-0091] page:8:line:10 | 2/18/26
+[operational-risk-2-18-2026-0092] page:8:line:11 | ENP-0112
+[operational-risk-2-18-2026-0093] page:8:line:12 | 8
+[operational-risk-2-18-2026-0094] page:9:line:1 | MANAGING RISK: OPERATIONAL COMPLEXITY IN
+[operational-risk-2-18-2026-0095] page:9:line:2 | FLIGHT OPERATIONS
+[operational-risk-2-18-2026-0096] page:9:line:3 | 2/18/26
+[operational-risk-2-18-2026-0097] page:9:line:4 | ENP-0112
+[operational-risk-2-18-2026-0098] page:9:line:5 | 9
+[operational-risk-2-18-2026-0099] page:9:line:6 | Sources of Operational Complexity
+[operational-risk-2-18-2026-0100] page:9:line:7 | • ATC interventions
+[operational-risk-2-18-2026-0101] page:9:line:8 | • Aircraft equipment or performance
+[operational-risk-2-18-2026-0102] page:9:line:9 | • Crew factors
+[operational-risk-2-18-2026-0103] page:9:line:10 | • Operator factors
+[operational-risk-2-18-2026-0104] page:9:line:11 | • Environment factors
+[operational-risk-2-18-2026-0105] page:9:line:12 | Aircraft Factors
+[operational-risk-2-18-2026-0106] page:9:line:13 | •
+[operational-risk-2-18-2026-0107] page:9:line:14 | Lack or unreliability of automated
+[operational-risk-2-18-2026-0108] page:9:line:15 | systems
+[operational-risk-2-18-2026-0109] page:9:line:16 | •
+[operational-risk-2-18-2026-0110] page:9:line:17 | Performance characteristics
+[operational-risk-2-18-2026-0111] page:9:line:18 | ATC Intervention (such as)
+[operational-risk-2-18-2026-0112] page:9:line:19 | •
+[operational-risk-2-18-2026-0113] page:9:line:20 | (Late) route amendments
+[operational-risk-2-18-2026-0114] page:9:line:21 | •
+[operational-risk-2-18-2026-0115] page:9:line:22 | Unpublished restrictions
+[operational-risk-2-18-2026-0116] page:9:line:23 | •
+[operational-risk-2-18-2026-0117] page:9:line:24 | Vectors
+[operational-risk-2-18-2026-0118] page:9:line:25 | Environment Factors
+[operational-risk-2-18-2026-0119] page:9:line:26 | •
+[operational-risk-2-18-2026-0120] page:9:line:27 | Terrain
+[operational-risk-2-18-2026-0121] page:9:line:28 | •
+[operational-risk-2-18-2026-0122] page:9:line:29 | Traffic
+[operational-risk-2-18-2026-0123] page:9:line:30 | •
+[operational-risk-2-18-2026-0124] page:9:line:31 | Weather
+[operational-risk-2-18-2026-0125] page:9:line:32 | •
+[operational-risk-2-18-2026-0126] page:9:line:33 | Prohibited airspace
+[operational-risk-2-18-2026-0127] page:9:line:34 | Operator Factors
+[operational-risk-2-18-2026-0128] page:9:line:35 | •
+[operational-risk-2-18-2026-0129] page:9:line:36 | Independence vs. dependence on
+[operational-risk-2-18-2026-0130] page:9:line:37 | Dispatch
+[operational-risk-2-18-2026-0131] page:9:line:38 | •
+[operational-risk-2-18-2026-0132] page:9:line:39 | Clarity and consistency of pilot roles
+[operational-risk-2-18-2026-0133] page:9:line:40 | in reviewing route
+[operational-risk-2-18-2026-0134] page:9:line:41 | Crew Factors
+[operational-risk-2-18-2026-0135] page:9:line:42 | •
+[operational-risk-2-18-2026-0136] page:9:line:43 | Expectations (confirmation bias)
+[operational-risk-2-18-2026-0137] page:9:line:44 | •
+[operational-risk-2-18-2026-0138] page:9:line:45 | Fatigue
+[operational-risk-2-18-2026-0139] page:9:line:46 | •
+[operational-risk-2-18-2026-0140] page:9:line:47 | Communication style
+[operational-risk-2-18-2026-0141] page:9:line:48 | •
+[operational-risk-2-18-2026-0142] page:9:line:49 | Distractions
+[operational-risk-2-18-2026-0143] page:9:line:50 | •
+[operational-risk-2-18-2026-0144] page:9:line:51 | Local area familiarity
+[operational-risk-2-18-2026-0145] page:9:line:52 | •
+[operational-risk-2-18-2026-0146] page:9:line:53 | Familiarity with different types of routes
+[operational-risk-2-18-2026-0147] page:9:line:54 | Chandra, D.C., &amp; Markunas, R. (2017). “Line Pilot Perspectives on Complexity of Terminal Instrument Flight
+[operational-risk-2-18-2026-0148] page:9:line:55 | Procedures,” DOT-VNTSC-FAA-17-06. U.S. DOT Volpe National Transportation Systems Center.
+[operational-risk-2-18-2026-0149] page:10:line:1 | SAFETY 1 AND SAFETY 2
+[operational-risk-2-18-2026-0150] page:10:line:2 | 2/18/26
+[operational-risk-2-18-2026-0151] page:10:line:3 | ENP-0112
+[operational-risk-2-18-2026-0152] page:10:line:4 | 10
+[operational-risk-2-18-2026-0153] page:11:line:1 | SAFETY 1 AND SAFETY 2
+[operational-risk-2-18-2026-0154] page:11:line:2 | • Safety 1 examines what went wrong
+[operational-risk-2-18-2026-0155] page:11:line:3 | • Safety = absence of accidents or an acceptable level of risk
+[operational-risk-2-18-2026-0156] page:11:line:4 | • Analyze accident/incident investigations, look for remedies
+[operational-risk-2-18-2026-0157] page:11:line:5 | • Humans, organizations, and technology are a source of error, failure, and malfunctions
+[operational-risk-2-18-2026-0158] page:11:line:6 | • Accidents/incidents are relatively rare
+[operational-risk-2-18-2026-0159] page:11:line:7 | • In contrast, Safety 2 examines everything that what went right
+[operational-risk-2-18-2026-0160] page:11:line:8 | • Risks are always being managed, human variability is necessary and helpful in many situations.
+[operational-risk-2-18-2026-0161] page:11:line:9 | • The vast majority of flight operations are safe. Study these.
+[operational-risk-2-18-2026-0162] page:11:line:10 | 2/18/26
+[operational-risk-2-18-2026-0163] page:11:line:11 | ENP-0112
+[operational-risk-2-18-2026-0164] page:11:line:12 | 11
+[operational-risk-2-18-2026-0165] page:12:line:1 | MORE ON SAFETY 1 AND SAFETY 2
+[operational-risk-2-18-2026-0166] page:12:line:2 | • Safety 1 and Safety 2 are complementary views. Need to consider both.
+[operational-risk-2-18-2026-0167] page:12:line:3 | • In Safety 1, when things go right, it’s because the work went as designed/imagined.
+[operational-risk-2-18-2026-0168] page:12:line:4 | Reinforce compliance and eliminate variability. Systems are decomposable into
+[operational-risk-2-18-2026-0169] page:12:line:5 | components. Root cause can be identified.
+[operational-risk-2-18-2026-0170] page:12:line:6 | • In reality systems are complex and inter-dependent. Trying to constrain performance can
+[operational-risk-2-18-2026-0171] page:12:line:7 | make it more difficult to achieve the desired outcomes and be counterproductive. Human
+[operational-risk-2-18-2026-0172] page:12:line:8 | flexibility and adaptive behavior is necessary and can be a source of success (“work as
+[operational-risk-2-18-2026-0173] page:12:line:9 | done”).
+[operational-risk-2-18-2026-0174] page:12:line:10 | 2/18/26
+[operational-risk-2-18-2026-0175] page:12:line:11 | ENP-0112
+[operational-risk-2-18-2026-0176] page:12:line:12 | 12
+[operational-risk-2-18-2026-0177] page:13:line:1 | SAMPLE ASRS EVENT 1347601
+[operational-risk-2-18-2026-0178] page:13:line:2 | ASRS = Aviation Safety Reporting System
+[operational-risk-2-18-2026-0179] page:13:line:3 | 2/18/26
+[operational-risk-2-18-2026-0180] page:13:line:4 | ENP-0112
+[operational-risk-2-18-2026-0181] page:13:line:5 | 13
+[operational-risk-2-18-2026-0182] page:14:line:1 | LIMITATIONS OF ASRS RECORDS
+[operational-risk-2-18-2026-0183] page:14:line:2 | • Self-reported, subjective, and written from memory
+[operational-risk-2-18-2026-0184] page:14:line:3 | • May be incomplete or biased, based on a single perspective of the event
+[operational-risk-2-18-2026-0185] page:14:line:4 | • Generally filed because an undesirable outcome occurred or almost occurred. Not filed
+[operational-risk-2-18-2026-0186] page:14:line:5 | when all goes well.
+[operational-risk-2-18-2026-0187] page:14:line:6 | • Harder to evaluate Safety 2 in ASRS events.
+[operational-risk-2-18-2026-0188] page:14:line:7 | • Cannot make any statements about rates of events in general
+[operational-risk-2-18-2026-0189] page:14:line:8 | • Timing issues
+[operational-risk-2-18-2026-0190] page:14:line:9 | • May refer to out-of-date arrivals, departures, or approaches.
+[operational-risk-2-18-2026-0191] page:14:line:10 | • Old charts may not be available.
+[operational-risk-2-18-2026-0192] page:14:line:11 | • Delayed entry of events due to processing time (a few months).
+[operational-risk-2-18-2026-0193] page:14:line:12 | 2/18/26
+[operational-risk-2-18-2026-0194] page:14:line:13 | ENP-0112
+[operational-risk-2-18-2026-0195] page:14:line:14 | 14
+[operational-risk-2-18-2026-0196] page:15:line:1 | ACCESSION NUMBER (ACN) 1347601
+[operational-risk-2-18-2026-0197] page:15:line:2 | • Obtained from NASA public database, Aviation Safety Reporting System (ASRS)
+[operational-risk-2-18-2026-0198] page:15:line:3 | https://asrs.arc.nasa.gov/search/database.html
+[operational-risk-2-18-2026-0199] page:15:line:4 | • Coded fields include time/day (201604 = April 2016) and other facts about the submitted report.
+[operational-risk-2-18-2026-0200] page:15:line:5 | • Narrative has been de-identified.
+[operational-risk-2-18-2026-0201] page:15:line:6 | • Some acronyms
+[operational-risk-2-18-2026-0202] page:15:line:7 | FO = first officer
+[operational-risk-2-18-2026-0203] page:15:line:8 | DFW = Dallas-Fort Worth airport in Texas (TX)
+[operational-risk-2-18-2026-0204] page:15:line:9 | DAL = Dallas Love Field, TX
+[operational-risk-2-18-2026-0205] page:15:line:10 | FL### = Flight Level (altitude in thousands of feet), e.g., FL340 = 34,000 ft altitude
+[operational-risk-2-18-2026-0206] page:15:line:11 | ACARS = text messaging system for airline company communications
+[operational-risk-2-18-2026-0207] page:15:line:12 | ASAP = airlines’ internal safety reporting system for pilots
+[operational-risk-2-18-2026-0208] page:15:line:13 | MFD = multi-function display in the flight deck
+[operational-risk-2-18-2026-0209] page:15:line:14 | PA = public announcement
+[operational-risk-2-18-2026-0210] page:15:line:15 | 2/18/26
+[operational-risk-2-18-2026-0211] page:15:line:16 | ENP-0112
+[operational-risk-2-18-2026-0212] page:15:line:17 | 15
+[operational-risk-2-18-2026-0213] page:16:line:1 | DALLAS-FORT WORTH (DFW) AND DALLAS (DAL)
+[operational-risk-2-18-2026-0214] page:16:line:2 | 2/18/26
+[operational-risk-2-18-2026-0215] page:16:line:3 | ENP-0112
+[operational-risk-2-18-2026-0216] page:16:line:4 | 16
+[operational-risk-2-18-2026-0217] page:16:line:5 | DAL
+[operational-risk-2-18-2026-0218] page:16:line:6 | DFW
+[operational-risk-2-18-2026-0219] page:16:line:7 | Note that both airports have a “13L” runway, of similar lengths.
+[operational-risk-2-18-2026-0220] page:16:line:8 | The distance between these airports is about 10 miles.
+[operational-risk-2-18-2026-0221] page:16:line:9 | Chart images from airnav.com
+[operational-risk-2-18-2026-0222] page:17:line:1 | EXAMPLE ASRS EVENT
+[operational-risk-2-18-2026-0223] page:17:line:2 | • What happened? Summarize in your own words.
+[operational-risk-2-18-2026-0224] page:17:line:3 | • What was the sequence of events? (facts)
+[operational-risk-2-18-2026-0225] page:17:line:4 | • What were the “threats” in this situation?
+[operational-risk-2-18-2026-0226] page:17:line:5 | (See list on earlier slide, Operational Complexity, for ideas)
+[operational-risk-2-18-2026-0227] page:17:line:6 | • What information could you find online that would help you understand this event?
+[operational-risk-2-18-2026-0228] page:17:line:7 | • How did the flight crew contribute to safety?
+[operational-risk-2-18-2026-0229] page:17:line:8 | • What might have happened with a different crew?
+[operational-risk-2-18-2026-0230] page:17:line:9 | • What might have happened if there were no crew, but an autonomous system instead?
+[operational-risk-2-18-2026-0231] page:17:line:10 | 2/18/26
+[operational-risk-2-18-2026-0232] page:17:line:11 | ENP-0112
+[operational-risk-2-18-2026-0233] page:17:line:12 | 17
+[operational-risk-2-18-2026-0234] page:18:line:1 | EXTRA
+[operational-risk-2-18-2026-0235] page:18:line:2 | Connection to earlier reading
+[operational-risk-2-18-2026-0236] page:18:line:3 | 2/18/26
+[operational-risk-2-18-2026-0237] page:18:line:4 | ENP-0112
+[operational-risk-2-18-2026-0238] page:18:line:5 | 18
+[operational-risk-2-18-2026-0239] page:19:line:1 | LIMITS OF EXPERTISE
+[operational-risk-2-18-2026-0240] page:19:line:2 | • Why do highly skilled pilots make errors?
+[operational-risk-2-18-2026-0241] page:19:line:3 | • Important to avoid hindsight bias
+[operational-risk-2-18-2026-0242] page:19:line:4 | • Examine the situation as the pilots understood it at the time to understand their responses
+[operational-risk-2-18-2026-0243] page:19:line:5 | • Need to understand skilled performance and factors that affect the probability of
+[operational-risk-2-18-2026-0244] page:19:line:6 | errors
+[operational-risk-2-18-2026-0245] page:19:line:7 | • Human cognitive and perceptual limitations
+[operational-risk-2-18-2026-0246] page:19:line:8 | • Task demands
+[operational-risk-2-18-2026-0247] page:19:line:9 | • Events in the environment
+[operational-risk-2-18-2026-0248] page:19:line:10 | • Social and organizational factors
+[operational-risk-2-18-2026-0249] page:19:line:11 | 2/18/26
+[operational-risk-2-18-2026-0250] page:19:line:12 | ENP-0112
+[operational-risk-2-18-2026-0251] page:19:line:13 | 19
+</code></pre></div>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+  
+  
+  
+    
+    <hr>
+    
+    <h2 id="__comments">
+      评论
+      <a href="#__comments" class="headerlink" title="评论">#</a>
+    </h2>
+    
+    
+    <script src="https://giscus.app/client.js"
+            data-repo="jeffliulab/ai-notes-discussion"
+            data-repo-id="R_kgDOQnsUAQ"
+            data-category="General"
+            data-category-id="DIC_kwDOQnsUAc4Cztsg"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="preferred_color_scheme"
+            data-lang="zh-CN"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+    
+  
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.top", "navigation.path", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../site_extra_styles/javascripts/katex.js"></script>
+      
+        <script src="../../site_extra_styles/javascripts/tab_dropdown.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>

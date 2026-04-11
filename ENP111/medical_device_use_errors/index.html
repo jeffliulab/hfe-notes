@@ -1,0 +1,2264 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Jeff Liu">
+      
+      
+        <link rel="canonical" href="https://jeffliulab.github.io/hfe-notes/ENP111/medical_device_use_errors/">
+      
+      
+        <link rel="prev" href="../medical_device_urra/">
+      
+      
+        <link rel="next" href="../epipen_workbook/">
+      
+      
+        
+          <link rel="alternate" href="./" hreflang="zh">
+        
+          <link rel="alternate" href="../../en/ENP111/medical_device_use_errors/" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>医疗器械使用错误 - 人因工程课程笔记</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="../../site_extra_styles/stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../site_extra_styles/stylesheets/correct_bullet_point.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="人因工程课程笔记" class="md-header__button md-logo" aria-label="人因工程课程笔记" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            人因工程课程笔记
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              医疗器械使用错误
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="选择当前语言">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="zh" class="md-select__link">
+              中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../en/ENP111/medical_device_use_errors/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  ENP111 Use-related Risks
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ENP112/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  ENP112 Engineering Forensics
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="人因工程课程笔记" class="md-nav__button md-logo" aria-label="人因工程课程笔记" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    人因工程课程笔记
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ENP111 Use-related Risks
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ENP111 Use-related Risks
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../human_factors_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    人因导论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../human_error_frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    人为失误框架
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../swiss_cheese/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Swiss Cheese 模型
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../task_analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    任务分析
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../urra_methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    URRA方法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../known_problem_and_event_tree/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Known Problem 与事件树
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../iso_14971/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ISO 14971
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../medical_device_urra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    医疗器械URRA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    医疗器械使用错误
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    医疗器械使用错误
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章重点
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先记住一句话
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        什么叫医疗器械中的 use error
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么这个区分会直接影响控制策略
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        这页真正想建立的分析习惯
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么这页真正难的是划清边界
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么分类会直接改变你最后改什么
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pca-use-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 PCA 模型会帮助你把 use error 写得更准
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fda-not-caused-solely-by-device-failure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 FDA 定义里特别强调“not caused solely by device failure”
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-error_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么“最后没人受伤”也可能已经构成 use error
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hospital-bed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        hospital bed 例子真正要你看到的是一条多错误链
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资料范围与相关主题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        相关主题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原文转写与来源映射
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../epipen_workbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EpiPen工作簿
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ENP112/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ENP112 Engineering Forensics
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ENP112 Engineering Forensics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/course_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程导论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/error_analysis_methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    错误分析方法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/aviation_automation_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    航空与自动化导论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/crew_resource_management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CRM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/displays_and_alerts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    显示与告警
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/checklists_and_procedures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    检查单与程序
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/automated_vehicles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    自动化车辆
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/attention_and_monitoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    注意与监控
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/fatigue_and_sleep/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    疲劳与睡眠
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/stress_and_decision_making/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    压力与决策
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/situation_awareness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    情境意识
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/spatial_disorientation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    空间定向错觉
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/operational_risk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operational Risk
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/cardosi_case/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cardosi案例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/f16_analysis_prompts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F16分析提示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/boeing_737max_and_ethics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Boeing 737 Max与伦理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章重点
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先记住一句话
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        什么叫医疗器械中的 use error
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么这个区分会直接影响控制策略
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        这页真正想建立的分析习惯
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么这页真正难的是划清边界
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么分类会直接改变你最后改什么
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pca-use-error" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 PCA 模型会帮助你把 use error 写得更准
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fda-not-caused-solely-by-device-failure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 FDA 定义里特别强调“not caused solely by device failure”
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-error_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么“最后没人受伤”也可能已经构成 use error
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#hospital-bed" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        hospital bed 例子真正要你看到的是一条多错误链
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资料范围与相关主题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        相关主题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原文转写与来源映射
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="导航栏" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    首页
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    ENP111 Use-related Risks
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+
+
+<h1 id="_1">医疗器械中的使用错误</h1>
+<p>这一页专门解决“用错了到底算什么”的问题：device failure、无意 use error、异常使用和故意偏离规则，不能混成一个桶。</p>
+<div class="admonition note">
+<p class="admonition-title">本页主问题</p>
+<p>当医疗器械使用出了问题时，
+我们怎样区分设计诱发的 use error、
+器械本身失效、
+异常使用和故意违规？</p>
+</div>
+<h2 id="_2">本章重点</h2>
+<ul>
+<li>不是所有不良使用都叫 use error。</li>
+<li>判断时必须看行为是否在可预见使用范围内、
+  设计是否放大了错误机会、
+  恢复空间是否存在。</li>
+<li>use error 分析的重点，
+  是把问题重新拉回具体任务和具体情境。</li>
+<li>如果问题类型定义错了，
+  后面的控制措施也会跑偏。</li>
+</ul>
+<h2 id="_3">先记住一句话</h2>
+<div class="admonition tip">
+<p class="admonition-title">复习时先记住这句话</p>
+<p>记这一页最简单的方法是：
+先别急着说“用户用错了”，
+先问设计、
+环境和情境是不是已经把正确操作变得很难。</p>
+</div>
+<h2 id="use-error">什么叫医疗器械中的 use error</h2>
+<p>这页不是在扩大 blame，
+而是在缩小误判。
+它要求团队把“错误行为”放回可预见使用场景里，
+看它到底是无意偏差、
+器械失效、
+异常使用，
+还是故意偏离规则。</p>
+<h2 id="_4">为什么这个区分会直接影响控制策略</h2>
+<p>一旦定义错了，
+改法就会跟着错：</p>
+<ul>
+<li>明明是界面诱发错误，却只补培训，风险会回来。</li>
+<li>明明是异常使用，却按普通 use error 写，控制会失焦。</li>
+<li>明明是器械失效，却把责任压给用户，设计问题就被遮掉了。</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">最容易做错的地方</p>
+<p>最常见的误区，
+是把所有不良后果都收成一句“user error”。
+这样一来，
+界面、
+标签、
+环境和组织条件都会从视野里消失。</p>
+</div>
+<h2 id="_5">这页真正想建立的分析习惯</h2>
+<p>看到错误行为时，
+不要立刻贴标签。
+先回到具体 use step、
+具体场景、
+具体信息显示和具体环境条件，
+再问设计有没有让误选、
+漏做、
+误判或顺序错误变得更容易。</p>
+<div class="admonition note">
+<p class="admonition-title">一句话结论</p>
+<p>医疗器械里的 use error 分析，
+本质上是在判断系统有没有把使用者推到容易出错的位置。</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">案例：明明看起来像“用错了”，其实是界面在诱发错误</p>
+<p>如果两种给药模式在界面上只用细小字母区分，
+用户在紧急场景中选错模式后，
+表面上像是“user selected the wrong mode”。
+但更重要的分析结论可能是：
+系统把高后果选择设计得过于难辨认。</p>
+</div>
+<h2 id="_6">为什么这页真正难的是划清边界</h2>
+<p>医疗器械 use error 分析最容易被写浅的地方，
+就是团队太快把所有坏结果都装进“user error”这个桶里。
+真正的分析难点在于区分：</p>
+<ul>
+<li>是器械自己没有按设计工作</li>
+<li>还是用户在可预见场景里被设计推向了错误</li>
+<li>还是发生了明显超出预期的 abnormal use</li>
+<li>还是操作者明知规则却故意偏离</li>
+</ul>
+<p>这几个边界一旦没划清，
+后面的控制、
+责任判断和验证重点都会跟着乱掉。</p>
+<h2 id="_7">为什么分类会直接改变你最后改什么</h2>
+<p>这页最实用的价值在这里：
+不同类型的问题，
+对应的控制策略完全不同。</p>
+<ul>
+<li>如果是 device failure，重点回到 engineering reliability</li>
+<li>如果是 design-induced use error，重点回到界面、标签、流程和可恢复性</li>
+<li>如果是 abnormal use，重点回到边界说明和风险沟通</li>
+<li>如果是 violation，重点还要看激励、文化和程序现实性</li>
+</ul>
+<p>所以分类不是学术洁癖，
+而是决定后面到底改哪里。</p>
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-13-image5.jpeg" alt="这张图要看懂的是：像 AED 这类设备会把引导直接做进产品里，说明很多所谓 user error 实际上可以通过界面与流程设计显著降低。" loading="lazy">
+  <figcaption>这张图要看懂的是：像 AED 这类设备会把引导直接做进产品里，说明很多所谓 user error 实际上可以通过界面与流程设计显著降低。</figcaption>
+</figure>
+
+<div class="admonition example">
+<p class="admonition-title">案例：同样是“剂量不对”，为什么可能导向完全不同的改进</p>
+<p>如果剂量错误来自设备内部故障，
+改进重点应是硬件或软件可靠性；
+如果来自用户把 1.0 读成 10，
+重点就应回到显示、
+对比度、
+标记和确认流程；
+如果来自故意跳过检查，
+则还要看流程是不是过于脱离现实。
+结果一样，
+但控制路径完全不同。</p>
+</div>
+<h2 id="pca-use-error">为什么 PCA 模型会帮助你把 use error 写得更准</h2>
+<p>很多医疗器械错误表面上都像“动作做错了”，
+但真正导致动作错掉的，
+可能是前面的 perception 没抓到、
+cognition 解释错了，
+或者 action 执行本身不稳定。
+PCA 模型的价值，
+就是把这些层级重新拆开。</p>
+<p>一旦拆开，
+团队就不会停在“用户按错了”这种表述，
+而会继续问：
+是没有看到关键信息、
+理解错了界面含义，
+还是姿态与动作本身就容易失稳。
+这个差别会直接决定 mitigation 应该改显示、
+改理解支持，
+还是改物理操作。</p>
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-16-image6.png" alt="这张图要看懂的是：同一个 visible use error 可以向前追到 perception、cognition 或 action 三层里的不同断裂点，所以分析不能只盯最后那个动作。" loading="lazy">
+  <figcaption>这张图要看懂的是：同一个 visible use error 可以向前追到 perception、cognition 或 action 三层里的不同断裂点，所以分析不能只盯最后那个动作。</figcaption>
+</figure>
+
+<h2 id="fda-not-caused-solely-by-device-failure">为什么 FDA 定义里特别强调“not caused solely by device failure”</h2>
+<p>这一句非常关键，
+因为它把 use error 和纯器械失效切开了。
+如果设备自己坏了，
+团队当然也要分析，
+但那条线更多会回到硬件、
+软件、
+材料和可靠性；
+只有当用户动作或缺少动作参与了后果链，
+而且这条链不是单靠 device failure 就能解释时，
+use error 分析才真正站得住。</p>
+<p>这也是为什么这页不能只看结果，
+而必须回到动作与情境。
+相同的坏结果，
+有时是机械失效，
+有时是界面诱发误判，
+有时是多名使用者在交接中连续漏掉关键动作。
+定义里这句限制，
+正是在逼团队把这些路径分开。</p>
+<h2 id="use-error_1">为什么“最后没人受伤”也可能已经构成 use error</h2>
+<p>课件里 AED 例子特别适合讲这一点。
+使用者把电极片贴错了位置，
+但患者最后仍然被救回。
+这里最容易犯的错，
+是事后因为结局“还不错”，
+就误以为前面的错误不算问题。</p>
+<p>FDA 定义强调的是 <code>did or could result in harm</code>。
+也就是说，
+只要那条错误路径本来足以把系统推进到伤害边缘，
+它就已经值得被当成 use error 来分析。
+分析关注的是风险链是否成立，
+不只是最后结果有没有变成最坏情况。</p>
+<h2 id="hospital-bed">hospital bed 例子真正要你看到的是一条多错误链</h2>
+<p>hospital bed 例子的重要性，
+在于它明确告诉你：
+一次场景里完全可能出现多个 use error，
+而且它们发生在不同人、
+不同节点、
+不同交接边界上。
+课件里至少拆出了几层：</p>
+<ul>
+<li>第一位工作人员没有锁刹车</li>
+<li>本来打算口头提醒护士，却忘了交接</li>
+<li>后续护士在协助病人上床前，也没有先确认床已固定</li>
+</ul>
+<p>这类场景最容易被简化成“某个人忘了做一件事”。
+但更成熟的读法是：
+系统在搬运、
+交接、
+再定位和病人接触这几段之间，
+没有把关键状态稳定传下去。
+也就是说，
+问题不只是一个人漏做，
+而是一条 handoff 链条没有形成可靠屏障。</p>
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/07-use-errors/slide-09-image2.jpeg" alt="这张图要看懂的是：hospital bed 场景的风险不是孤立动作，而是搬运、交接和再次接触病人之间的状态信息没有被稳定传下去。" loading="lazy">
+  <figcaption>这张图要看懂的是：hospital bed 场景的风险不是孤立动作，而是搬运、交接和再次接触病人之间的状态信息没有被稳定传下去。</figcaption>
+</figure>
+
+<div class="admonition warning">
+<p class="admonition-title">最容易漏掉的判断</p>
+<p>一个场景里不一定只有一个 use error。
+只要任务跨人、
+跨时间或跨交接边界展开，
+多个小错误就可能串成同一条 harm path。
+把它硬压成单点错误，
+会让后面的控制设计过于单薄。</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">案例：为什么 hospital bed 场景不该写成“护士粗心”</p>
+<p>如果最后只写成“护士在病人上床前没检查床是否锁住”，
+分析就会漏掉前面已经发生的两件关键事：
+前一位工作人员为了便于 reposition 故意先不锁刹车，
+以及原本应该发生的口头交接没有发生。
+真正要写出来的不是一个人的粗心，
+而是关键状态没有被稳定传递、
+也没有被下一层防线重新确认。</p>
+</div>
+<h2 id="_8">本章总结</h2>
+<div class="admonition tip">
+<p class="admonition-title">复习时重点记这几条</p>
+<ul>
+<li>不是所有不良使用都等于 use error。</li>
+<li>分类时要看可预见性、
+  设计诱发和恢复空间。</li>
+<li>如果问题定义错了，
+  控制策略也会错。</li>
+<li>分析必须回到具体任务和具体情境。</li>
+</ul>
+</div>
+<h2 id="_9">资料范围与相关主题</h2>
+<p>正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。</p>
+<ul>
+<li>所属分区: <code>ENP111 Use-related Risks</code></li>
+<li>关联源文件数: 1</li>
+<li>文本单元数: 156</li>
+<li>配图/预览数: 10</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Type</th>
+<th style="text-align: right;">Text Units</th>
+<th style="text-align: right;">Visuals</th>
+<th>Download</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>07 Use Errors.pptx</code></td>
+<td><code>pptx</code></td>
+<td style="text-align: right;">156</td>
+<td style="text-align: right;">10</td>
+<td><a href="../../assets/source_files/ENP111/07%20Use%20Errors.pptx">open</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_10">相关主题</h2>
+<ul>
+<li><a href="../iso_14971/">ISO 14971 与医疗器械风险管理</a></li>
+<li><a href="../medical_device_urra/">医疗器械中的 URRA</a></li>
+<li><a href="../task_analysis/">任务分析</a></li>
+</ul>
+<h2 id="_11">原文转写与来源映射</h2>
+<p>下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 <code>unit_id</code> 都能在 <code>data/coverage_map.json</code> 中找到对应页面映射。</p>
+<details class="info">
+<summary>07 Use Errors.pptx | 156 text units</summary>
+<p>下载原件: <a href="../../assets/source_files/ENP111/07%20Use%20Errors.pptx">07 Use Errors.pptx</a>
+映射页面: <code>medical_device_use_errors</code></p>
+<div class="highlight"><pre><span></span><code>[07-use-errors-0001] slide:1:p:1 | ENP  111 – Use Related Risk Analysis
+[07-use-errors-0002] slide:1:p:2 | Sami Durrani PhD and Eric Bergman PhD
+[07-use-errors-0003] slide:1:p:3 | Use Errors
+[07-use-errors-0004] slide:2:p:1 | 2
+[07-use-errors-0005] slide:2:p:2 | FDA definition: User action or lack of action that was different from that expected by the manufacturer and caused a result that:
+[07-use-errors-0006] slide:2:p:3 | (1) was different from the result expected by the user and
+[07-use-errors-0007] slide:2:p:4 | (2) was not caused solely by device failure and
+[07-use-errors-0008] slide:2:p:5 | (3) did or could result in harm
+[07-use-errors-0009] slide:2:p:6 | What is a use error?
+[07-use-errors-0010] slide:3:p:1 | Let’s look at a few case studies
+[07-use-errors-0011] slide:4:p:1 | Hospital Bed
+[07-use-errors-0012] slide:4:p:2 | A hospital staff member is transporting a hospital bed from one room to another.
+[07-use-errors-0013] slide:4:p:3 | After positioning the hospital bed in the new room, the staff member is unsure of the exact desired bed placement, so decides to leave without locking the brakes to enable the station nurse to easily reposition the bed.
+[07-use-errors-0014] slide:4:p:4 | The staff member meant to inform the duty nurse that the bed’s brakes were not set but forgets to do.
+[07-use-errors-0015] slide:4:p:5 | 4
+[07-use-errors-0016] slide:5:p:1 | Hospital Bed
+[07-use-errors-0017] slide:5:p:2 | New patient arrives and the duty nurse helps patient into bed. Nurse starts to pull the side rails up, which causes the bed to move and spin out of control.
+[07-use-errors-0018] slide:5:p:3 | 5
+[07-use-errors-0019] slide:6:p:1 | 6
+[07-use-errors-0020] slide:6:p:2 | Hospital Bed
+[07-use-errors-0021] slide:6:p:3 | 6
+[07-use-errors-0022] slide:6:p:4 | Thankfully, the nurse was able to catch the bed and secure it before anyone was hurt
+[07-use-errors-0023] slide:7:p:1 | 7
+[07-use-errors-0024] slide:7:p:2 | In a bustling hospital&#39;s echoing hall, a bed transported, wheels and all. From one room to next, it made its trip, with each turn and twist, a careful grip.
+[07-use-errors-0025] slide:7:p:3 | The staffer, with intent so kind, left the brakes unset, it slipped his mind. Thinking the nurse would adjust its station, he left, lost in his next task&#39;s fascination.
+[07-use-errors-0026] slide:7:p:4 | But as fate would have it, the tale unfolds, a new patient arrives, a story yet untold. The duty nurse, with care profound, helps the patient, with soft voices around.
+[07-use-errors-0027] slide:7:p:5 | Yet as he reached to secure the rail, the bed began to drift, starting a frail tale. It spun and twirled, a dance so wild, danger lurking, for nurse and the beguiled.
+[07-use-errors-0028] slide:7:p:6 | But quick in thought and swift in action, the nurse&#39;s grip became the main attraction. With strength and grace, he steadied the ride, ensuring the patient&#39;s safety, with pride on his side.
+[07-use-errors-0029] slide:7:p:7 | A lesson learned in that fleeting spell, in a hospital’s dance, where stories dwell. For in moments of haste, things may go astray, but vigilance and care will save the day!
+[07-use-errors-0030] slide:7:p:8 | Previous scenario as a poem
+[07-use-errors-0031] slide:8:p:1 | 8
+[07-use-errors-0032] slide:8:p:2 | Was there a use error?
+[07-use-errors-0033] slide:8:p:3 | Was there only one? Or multiple?
+[07-use-errors-0034] slide:8:p:4 | Hospital Bed
+[07-use-errors-0035] slide:9:p:1 | Hospital Bed
+[07-use-errors-0036] slide:9:p:2 | A hospital staff member is transporting a hospital bed from one room to another.
+[07-use-errors-0037] slide:9:p:3 | After positioning the hospital bed in the new room, the staff member is unsure of the exact desired bed placement, so decides to leave without locking the brakes to enable the station nurse to easily reposition the bed.
+[07-use-errors-0038] slide:9:p:4 | The staff member meant to inform the duty nurse that the bed’s brakes were not set but forgets to do.
+[07-use-errors-0039] slide:9:p:5 | 9
+[07-use-errors-0040] slide:10:p:1 | Hospital Bed
+[07-use-errors-0041] slide:10:p:2 | New patient comes.
+[07-use-errors-0042] slide:10:p:3 | Duty nurse helps patient into bed, and starts to pull the side rails up, which causes the bed to move and spin out of control
+[07-use-errors-0043] slide:10:p:4 | 10
+[07-use-errors-0044] slide:11:p:1 | 11
+[07-use-errors-0045] slide:11:p:2 | Hospital Bed
+[07-use-errors-0046] slide:11:p:3 | 11
+[07-use-errors-0047] slide:11:p:4 | Thankfully the nurse was able to catch the bed and secure it before anyone was hurt
+[07-use-errors-0048] slide:12:p:1 | 12
+[07-use-errors-0049] slide:12:p:2 | Was there a use error?
+[07-use-errors-0050] slide:12:p:3 | Yes
+[07-use-errors-0051] slide:12:p:4 | Was there only one? Or multiple?
+[07-use-errors-0052] slide:12:p:5 | Errors:
+[07-use-errors-0053] slide:12:p:6 | Unsure of bed placement/location
+[07-use-errors-0054] slide:12:p:7 | Does not lock brakes
+[07-use-errors-0055] slide:12:p:8 | Forgets to inform nurse that brakes not set
+[07-use-errors-0056] slide:12:p:9 | Does not set brakes before helping patient into bed
+[07-use-errors-0057] slide:12:p:10 | Hospital Bed
+[07-use-errors-0058] slide:12:p:11 | Not USE Error
+[07-use-errors-0059] slide:12:p:12 | Not USE Error
+[07-use-errors-0060] slide:12:p:13 | USE Error
+[07-use-errors-0061] slide:12:p:14 | USE Error
+[07-use-errors-0062] slide:13:p:1 | 13
+[07-use-errors-0063] slide:13:p:2 | Scenario: A layperson, trying to use an AED in an emergency, misreads the instructional graphics on the inside of the AED’s cover.
+[07-use-errors-0064] slide:13:p:3 | As a result, the layperson places the adhesive electrode pads in incorrect locations on the person suffering cardiac arrest’s chest before delivering the AED pulse. But thankfully, the AED pulse still saves the person’s life.
+[07-use-errors-0065] slide:13:p:4 | Did a use error occur?
+[07-use-errors-0066] slide:13:p:5 | Yes
+[07-use-errors-0067] slide:13:p:6 | Automated External Defibrillator (AED)
+[07-use-errors-0068] slide:14:p:1 | Errors in writing use errors
+[07-use-errors-0069] slide:15:p:1 | 15
+[07-use-errors-0070] slide:15:p:2 | User stores device incorrectly
+[07-use-errors-0071] slide:15:p:3 | User stores device in temperatures below -5F
+[07-use-errors-0072] slide:15:p:4 | User enters incorrect patient information
+[07-use-errors-0073] slide:15:p:5 | User enters patient’s date of birth incorrectly
+[07-use-errors-0074] slide:15:p:6 | User dials wrong dose amount
+[07-use-errors-0075] slide:15:p:7 | User dials dose amount 0% &lt; 20% prescribed
+[07-use-errors-0076] slide:15:p:8 | User dials dose amount 20% &lt; 50% prescribed
+[07-use-errors-0077] slide:15:p:9 | User dials dose amount &gt;50% prescribed
+[07-use-errors-0078] slide:15:p:10 | User dials dose amount 0% &gt; 20% prescribed
+[07-use-errors-0079] slide:15:p:11 | …and so on
+[07-use-errors-0080] slide:15:p:12 | Not being specific enough
+[07-use-errors-0081] slide:16:p:1 | 16
+[07-use-errors-0082] slide:16:p:2 | Before we go on: PCA model refresher
+[07-use-errors-0083] slide:16:p:3 | AAMI/IEC TIR62366-2
+[07-use-errors-0084] slide:17:p:1 | 17
+[07-use-errors-0085] slide:17:p:2 | FDA definition: User action or lack of action that was different from that expected by the manufacturer and caused a result that:
+[07-use-errors-0086] slide:17:p:3 | (1) was different from the result expected by the user and
+[07-use-errors-0087] slide:17:p:4 | (2) was not caused solely by device failure and
+[07-use-errors-0088] slide:17:p:5 | (3) did or could result in harm
+[07-use-errors-0089] slide:17:p:6 | Use error definition refresher
+[07-use-errors-0090] slide:17:p:7 | Key Point: Use errors are expressed by physical action or lack of required action
+[07-use-errors-0091] slide:18:p:1 | 18
+[07-use-errors-0092] slide:18:p:2 | Common mistake to use Perception Cognition and Action (PCA) model in task analysis to define a “use error” for each PCA line
+[07-use-errors-0093] slide:18:p:3 | For example:
+[07-use-errors-0094] slide:18:p:4 | User does not see warning
+[07-use-errors-0095] slide:18:p:5 | User does not comprehend instructions
+[07-use-errors-0096] slide:18:p:6 | Use errors are physical action based
+[07-use-errors-0097] slide:18:p:7 | You can’t be jailed for thinking about stealing You actually have to steal
+[07-use-errors-0098] slide:18:p:8 | Writing use errors that don’t include an action
+[07-use-errors-0099] slide:18:p:9 | These are not use errors
+[07-use-errors-0100] slide:19:p:1 | 19
+[07-use-errors-0101] slide:19:p:2 | User is inexperienced
+[07-use-errors-0102] slide:19:p:3 | User does not understand training
+[07-use-errors-0103] slide:19:p:4 | User does not hear alarm “X”
+[07-use-errors-0104] slide:19:p:5 | User does not respond to alarm “X”
+[07-use-errors-0105] slide:19:p:6 | User transposes numbers when reading prescription card
+[07-use-errors-0106] slide:19:p:7 | User dials dose amount 0% &lt; +20% prescribed
+[07-use-errors-0107] slide:19:p:8 | …etc
+[07-use-errors-0108] slide:19:p:9 | Incorrectly writing causes as use errors
+[07-use-errors-0109] slide:20:p:1 | 20
+[07-use-errors-0110] slide:20:p:2 | User does not check drug for discoloring
+[07-use-errors-0111] slide:20:p:3 | User injects drug that is discolored
+[07-use-errors-0112] slide:20:p:4 | User does not check device for leaks
+[07-use-errors-0113] slide:20:p:5 | User uses vial with leaking fluid
+[07-use-errors-0114] slide:20:p:6 | Home patient does check not expiration date on oral medication
+[07-use-errors-0115] slide:20:p:7 | Patient takes expired oral medication
+[07-use-errors-0116] slide:20:p:8 | Use errors that are not testable/observable
+[07-use-errors-0117] slide:21:p:1 | 21
+[07-use-errors-0118] slide:21:p:2 | User enters incorrectly high blood glucose value into an insulin dose calculator, which provides a 3x dose recommendation, leading user to overdose
+[07-use-errors-0119] slide:21:p:3 | User incorrectly enters blood glucose value &gt;X%
+[07-use-errors-0120] slide:21:p:4 | Writing a sequence of events as a use error
+[07-use-errors-0121] slide:22:p:1 | 22
+[07-use-errors-0122] slide:22:p:2 | User dials dose amount 0% &lt; +20% prescribed
+[07-use-errors-0123] slide:22:p:3 | User injects dose amount 0% &lt; 20% prescribed
+[07-use-errors-0124] slide:22:p:4 | Use words that imply actual device or medical operation, for example:
+[07-use-errors-0125] slide:22:p:5 | User injects
+[07-use-errors-0126] slide:22:p:6 | User infuses
+[07-use-errors-0127] slide:22:p:7 | User operates
+[07-use-errors-0128] slide:22:p:8 | ..etc
+[07-use-errors-0129] slide:22:p:9 | Bonus!
+[07-use-errors-0130] slide:22:p:10 | Where possible, write use actions so that they directly link to the action that can cause harm
+[07-use-errors-0131] notes:1:p:1 | Quick introductions
+[07-use-errors-0132] notes:10:p:1 | Worth noting that this entire topic is “fraught” and that there are some professionals out there who would say that some of these ARE use errors.We disagree, of course.
+[07-use-errors-0133] notes:11:p:1 | What is the use error?
+[07-use-errors-0134] notes:12:p:1 | Make sure to explain that here we provide tips to write use errors that are accurate and well described
+[07-use-errors-0135] notes:13:p:1 | The consequences, and hence harms or the severity of the harms (if the harms are the same) could be quite different for these different specific scenarios.
+[07-use-errors-0136] notes:13:p:2 | Being specific also helps with designers and engineers develop proper mitigations. Its important to note that often use errors will form the basis of requirements and unclear use errors can lead to unclear requirements which can lead to mitigations that are not sufficiently effective.
+[07-use-errors-0137] notes:13:p:3 | Also, being specific can help you when developing your validation test and setting your pass/fail criteria.
+[07-use-errors-0138] notes:13:p:4 | All this said, being too specific can also cause issues by leading to mitigations that don’t sufficiently generalize to a range of use scenarios.  For example, if you neglect to account for “user dials wrong dose amount” leading to underdose, then the analysis will be incomplete.
+[07-use-errors-0139] notes:14:p:1 | The Perception, Cognition, and manual Action (PCA) model may be used to further break down user interactions into specific user actions related to perceptual inputs, cognitive processing, and physical actions involved in performing the related step. [3].
+[07-use-errors-0140] notes:14:p:2 | Using the PCA model, tasks are decomposed down to the level of individual user interactions related to:
+[07-use-errors-0141] notes:14:p:3 | 1) Perception – Perceptual information to be noticed or detected by the user.
+[07-use-errors-0142] notes:14:p:4 | 2) Cognition – Cognitive components to be interpreted by the user.
+[07-use-errors-0143] notes:14:p:5 | 3) Action – Physical actions taken by the user.
+[07-use-errors-0144] notes:14:p:6 | Using the PCA model assists manufacturers in understanding the different PCA elements required for each task and further delineate use errors that may occur if the user if unable to meet these requirements. Additional steps or tasks may be revealed or uncovered that manufacturers were previously unaware of or may have glanced over in the initial task list.
+[07-use-errors-0145] notes:14:p:7 | Potential use-related problems can be identified by asking the following questions [2]:
+[07-use-errors-0146] notes:14:p:8 | 1) What if the user is unable to perceive x?
+[07-use-errors-0147] notes:14:p:9 | 2) What if the user is unable to interpret/process y?
+[07-use-errors-0148] notes:14:p:10 | 3) What if the user is unable to perform action z?
+[07-use-errors-0149] notes:14:p:11 | Although use errors are ultimately bound to an action (or inaction), analysis of perceptual information and cognitive elements may inform the cause of use errors that may occur. This breakdown of use errors then allow manufacturers to further inform their use-related risk analysis (URRA).
+[07-use-errors-0150] notes:17:p:1 | Another common error, often stemming from PCA analysis, observed issues in usability testing or field complaints. Do not confuse reasons for a use error for the use error itself.  This is a bit tricky, because the line isn’t always clear and here experience and judgement do come in. Sometimes its clear, sometimes its not. We’ll continue to tackle this via example throughout the semester.
+[07-use-errors-0151] notes:17:p:2 | For example, this first example. … I’ve seen 1000+ line items URRAs because they start listing every possible way something can get damaged.
+[07-use-errors-0152] notes:18:p:1 | This one is a bit about strategy. As an HF engineer, you want to develop a good product that safe and effective, but you also don’t want write user errors that artificially end up causing you to fail your HF validation study. There is no point in developing a great product that you can’t get to market because you hampered yourself in conducting your HF study.
+[07-use-errors-0153] notes:18:p:2 | On User does not check device for damage, be careful on wording selection. If you said user selects instead of uses, you might have ended up with a use error even the user did not actually intend to ever use it.
+[07-use-errors-0154] notes:19:p:1 | Particularly common in software as medical devices because often the harm is indirect.
+[07-use-errors-0155] notes:19:p:2 | It is important to note that the sequence of events is important, and that this point should not confuse you into thinking that one more use errors cannot contribute to a subsequent use error. They can, but in the example above, incorrectly entering the value is not necessarily a use error.
+[07-use-errors-0156] notes:20:p:1 | Ensure use action leading to harm is complete!
+</code></pre></div>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+  
+  
+  
+    
+    <hr>
+    
+    <h2 id="__comments">
+      评论
+      <a href="#__comments" class="headerlink" title="评论">#</a>
+    </h2>
+    
+    
+    <script src="https://giscus.app/client.js"
+            data-repo="jeffliulab/ai-notes-discussion"
+            data-repo-id="R_kgDOQnsUAQ"
+            data-category="General"
+            data-category-id="DIC_kwDOQnsUAc4Cztsg"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="preferred_color_scheme"
+            data-lang="zh-CN"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+    
+  
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.top", "navigation.path", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../site_extra_styles/javascripts/katex.js"></script>
+      
+        <script src="../../site_extra_styles/javascripts/tab_dropdown.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>

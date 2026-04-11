@@ -1,0 +1,2190 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Jeff Liu">
+      
+      
+        <link rel="canonical" href="https://jeffliulab.github.io/hfe-notes/ENP111/urra_methods/">
+      
+      
+        <link rel="prev" href="../task_analysis/">
+      
+      
+        <link rel="next" href="../known_problem_and_event_tree/">
+      
+      
+        
+          <link rel="alternate" href="./" hreflang="zh">
+        
+          <link rel="alternate" href="../../en/ENP111/urra_methods/" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>URRA方法 - 人因工程课程笔记</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="../../site_extra_styles/stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../site_extra_styles/stylesheets/correct_bullet_point.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#urra" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="人因工程课程笔记" class="md-header__button md-logo" aria-label="人因工程课程笔记" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            人因工程课程笔记
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              URRA方法
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="选择当前语言">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="zh" class="md-select__link">
+              中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../en/ENP111/urra_methods/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  ENP111 Use-related Risks
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ENP112/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  ENP112 Engineering Forensics
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="人因工程课程笔记" class="md-nav__button md-logo" aria-label="人因工程课程笔记" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    人因工程课程笔记
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ENP111 Use-related Risks
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ENP111 Use-related Risks
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../human_factors_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    人因导论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../human_error_frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    人为失误框架
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../swiss_cheese/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Swiss Cheese 模型
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../task_analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    任务分析
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    URRA方法
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    URRA方法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章重点
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先记住方法定位
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        这个方法解决什么问题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输入与输出是什么
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        操作步骤怎么走
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        和前后方法是什么关系
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#urra_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么一条 URRA 行本身就应该读得出完整风险故事
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#urra_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 URRA 最怕写成抽象大词
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#urra_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 URRA 最终一定要回到验证
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#urra_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 URRA 不应该只从团队脑子里“想风险”
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#urra_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 URRA 的书写顺序本身就在保护分析质量
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#urra-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎样判断一条 URRA 已经能顺利交给 validation 团队
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资料范围与相关主题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        相关主题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原文转写与来源映射
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../known_problem_and_event_tree/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Known Problem 与事件树
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../iso_14971/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ISO 14971
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../medical_device_urra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    医疗器械URRA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../medical_device_use_errors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    医疗器械使用错误
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../epipen_workbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EpiPen工作簿
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ENP112/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ENP112 Engineering Forensics
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ENP112 Engineering Forensics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/course_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程导论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/error_analysis_methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    错误分析方法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/aviation_automation_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    航空与自动化导论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/crew_resource_management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CRM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/displays_and_alerts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    显示与告警
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/checklists_and_procedures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    检查单与程序
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/automated_vehicles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    自动化车辆
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/attention_and_monitoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    注意与监控
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/fatigue_and_sleep/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    疲劳与睡眠
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/stress_and_decision_making/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    压力与决策
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/situation_awareness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    情境意识
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/spatial_disorientation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    空间定向错觉
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/operational_risk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operational Risk
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/cardosi_case/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cardosi案例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/f16_analysis_prompts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F16分析提示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/boeing_737max_and_ethics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Boeing 737 Max与伦理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章重点
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先记住方法定位
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        这个方法解决什么问题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输入与输出是什么
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        操作步骤怎么走
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        和前后方法是什么关系
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#urra_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么一条 URRA 行本身就应该读得出完整风险故事
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#urra_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 URRA 最怕写成抽象大词
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#urra_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 URRA 最终一定要回到验证
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#urra_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 URRA 不应该只从团队脑子里“想风险”
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#urra_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 URRA 的书写顺序本身就在保护分析质量
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#urra-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎样判断一条 URRA 已经能顺利交给 validation 团队
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资料范围与相关主题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        相关主题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原文转写与来源映射
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="导航栏" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    首页
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    ENP111 Use-related Risks
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+
+
+<h1 id="urra">URRA 方法</h1>
+<p>URRA 这一页讲的不是一种表格格式，而是一条完整风险链：任务步骤、使用错误、危险情境、伤害后果和控制措施怎样被写到同一个结构里。</p>
+<div class="admonition note">
+<p class="admonition-title">本页主问题</p>
+<p>Use-Related Risk Analysis 怎样把任务、
+错误、
+危害和控制措施串成一条可追踪、
+可验证、
+可回看的链？</p>
+</div>
+<h2 id="_1">本章重点</h2>
+<ul>
+<li>URRA 的中心作用，
+  是把 use step、
+  use error、
+  hazardous situation、
+  harm 和 control 连成一条链。</li>
+<li>书写顺序必须是任务与场景在前，
+  错误与后果在后，
+  控制措施最后。</li>
+<li>写得好的 URRA 足够具体，
+  能直接支持验证活动。</li>
+<li>写得差的 URRA 往往只有笼统用语，
+  既看不出真正风险，
+  也支撑不了后续测试。</li>
+</ul>
+<h2 id="_2">先记住方法定位</h2>
+<div class="admonition tip">
+<p class="admonition-title">先记住这个方法的定位</p>
+<p>先记住这个方法的定位：
+URRA 不是“把风险写进表里”，
+而是把风险路径写清楚到足以支持设计和验证。</p>
+</div>
+<h2 id="_3">这个方法解决什么问题</h2>
+<p>URRA 解决的是“风险信息分散在不同文件里”的问题。
+它把使用流程、
+潜在错误、
+危险情境、
+伤害和控制汇总到同一条链上，
+让团队能看见风险是怎样一步步长出来的。</p>
+<h2 id="_4">输入与输出是什么</h2>
+<p>URRA 的输入通常来自：</p>
+<ul>
+<li>task analysis</li>
+<li>user and use-environment assumptions</li>
+<li>已知 use error 或投诉信息</li>
+<li>设计特征、标签、IFU 和培训方案</li>
+</ul>
+<p>输出则是一组可追踪条目，
+能回答：</p>
+<ul>
+<li>哪一步可能出错</li>
+<li>错后会进入什么危险情境</li>
+<li>最终可能带来什么 harm</li>
+<li>现有控制够不够</li>
+</ul>
+<h2 id="_5">操作步骤怎么走</h2>
+<p>写 URRA 时，
+顺序非常关键：</p>
+<ol>
+<li>先从任务和 use scenario 出发。</li>
+<li>明确写出具体 use error，而不是“使用不当”这种大词。</li>
+<li>继续把错误推到 hazardous situation 和 harm。</li>
+<li>最后再看现有 control 是否足够，以及还要不要加设计或验证措施。</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">一句话结论</p>
+<p>如果控制措施写在前面，
+URRA 很容易变成设计辩护；
+如果风险链写在前面，
+URRA 才像真正的风险分析。</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">最容易做错的地方</p>
+<p>最常见的问题有两个：
+把 error 写得太泛，
+比如“误用”；
+以及把 harm 写得太近，
+只写“剂量错误”却没有继续写到患者伤害。</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">worked example：一条 URRA 记录应该怎样写</p>
+<p>例如某一步是“设定剂量”。
+好的 URRA 不会只写“可能出错”，
+而会写成：
+用户把 1.0 mL 读成 10 mL，
+导致危险情境是过量给药，
+潜在 harm 是低血糖或更严重不良反应；
+然后才回头讨论剂量窗口、
+视觉区分、
+确认步骤和验证测试。</p>
+</div>
+<h2 id="_6">和前后方法是什么关系</h2>
+<p>task analysis 给 URRA 提供任务骨架；
+medical-device pages 会进一步把这套逻辑放到监管语境里；
+EpiPen workbook 页则展示一条 URRA 记录实际长什么样。</p>
+<h2 id="urra_1">为什么一条 URRA 行本身就应该读得出完整风险故事</h2>
+<p>写 URRA 时，
+一个常见问题是每一列都填了字，
+但合起来仍然看不出真正发生了什么。
+强的 URRA 行应该让人顺着一条线读下去：
+谁在什么场景下做哪一步、
+会错成什么、
+错后会进入什么 hazardous situation、
+最终伤害是什么、
+现在靠什么拦。</p>
+<p>如果一行读完后团队还看不见这条完整路径，
+通常说明场景、
+动作、
+错误或 harm 写得还不够具体。
+URRA 的质量，
+不是表有多满，
+而是链是否完整。</p>
+<h2 id="urra_2">为什么 URRA 最怕写成抽象大词</h2>
+<p>URRA 一旦写成“误用”“使用不当”“可能受伤”这种大词，
+后面几乎所有栏位都会一起失焦。
+因为团队看不出到底是哪一步、
+哪种错误、
+哪条 harm path，
+也就不知道控制到底该落在哪个设计点上。</p>
+<p>所以一条好的 URRA 记录通常都有很强的具体性：
+具体场景、
+具体动作、
+具体误判、
+具体后果、
+具体控制。
+写到这个程度时，
+验证场景和风险沟通才会自然长出来。</p>
+<h2 id="urra_3">为什么 URRA 最终一定要回到验证</h2>
+<p>这门课不把 URRA 当成档案管理，
+而把它当成设计与验证的接口。
+原因很简单：
+如果一条风险链已经被写出来，
+团队就必须能回答“我们准备怎样证明控制真的有效”。</p>
+<p>这意味着 URRA 不是写完就结束，
+而是还要继续推动：</p>
+<ul>
+<li>哪些 risk control 需要在原型或正式产品里被体现</li>
+<li>哪些关键任务需要在 validation 中被专门观察</li>
+<li>哪些情境需要通过 representative user 和 representative use condition 去复现</li>
+</ul>
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/10-write-urra/slide-02-image2.png" alt="这张图要看懂的是：URRA 不是单向填表，它会在风险不可接受或引入新风险时反复回到控制和验证，直到链条站得住。" loading="lazy">
+  <figcaption>这张图要看懂的是：URRA 不是单向填表，它会在风险不可接受或引入新风险时反复回到控制和验证，直到链条站得住。</figcaption>
+</figure>
+
+<div class="admonition warning">
+<p class="admonition-title">另一个常见失误</p>
+<p>有些团队会把 URRA 写得看起来很完整，
+但没有任何一条真正能转进验证。
+这通常说明条目还不够具体，
+或者控制写得太空泛。</p>
+</div>
+<h2 id="urra_4">为什么 URRA 不应该只从团队脑子里“想风险”</h2>
+<p>课件里专门把 KPA、
+MAUDE、
+usability testing、
+expert review 和 previous device data 拉进来，
+是在强调一个很实用的判断：
+强的 URRA 不是凭空想象出来的，
+而是由多种证据源一起逼出来的。</p>
+<p>这点很重要，
+因为只靠会议室头脑风暴，
+团队往往更容易想到显眼的大风险，
+却漏掉那些历史上反复出现、
+但平时不太起眼的 use error。
+真正成熟的 URRA 会让 task analysis 提供任务骨架，
+再让历史数据、
+测试发现和专家判断把那条骨架补成可验证的风险链。</p>
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/10-write-urra/slide-05-image3.png" alt="这张图要看懂的是：URRA 的证据来源并不只来自当前任务流，像 MAUDE 这类历史数据库会把团队没想到的 use error 重新拉回分析里。" loading="lazy">
+  <figcaption>这张图要看懂的是：URRA 的证据来源并不只来自当前任务流，像 MAUDE 这类历史数据库会把团队没想到的 use error 重新拉回分析里。</figcaption>
+</figure>
+
+<h2 id="urra_5">为什么 URRA 的书写顺序本身就在保护分析质量</h2>
+<p>课程一直强调“先任务、
+再错误、
+再后果、
+最后控制”，
+这不只是书写习惯，
+而是在防止分析变成设计辩护。
+只要团队一开始就急着写 control，
+很容易出现先有答案、
+再回头找风险来配的情况。</p>
+<p>正确顺序的价值在于：
+它逼团队先把 scenario、
+action、
+error direction 和 harm path 写具体。
+只有前半条链站住了，
+后面的 mitigation 才不是拍脑袋。
+URRA 的很多质量问题，
+其实都不是不会写表，
+而是把顺序写反了。</p>
+<h2 id="urra-validation">怎样判断一条 URRA 已经能顺利交给 validation 团队</h2>
+<p>一条 URRA 记录真正成熟时，
+validation 团队应该能直接据此构造观察场景，
+而不用再回头猜“这里到底想测什么”。
+换句话说，
+条目至少要清楚到能回答：</p>
+<ul>
+<li>代表性用户是谁</li>
+<li>代表性任务和环境是什么</li>
+<li>哪一步必须被重点观察</li>
+<li>如果 control 失效，哪种 use error 会出现</li>
+<li>成功与失败的判据是什么</li>
+</ul>
+<p>如果这些信息还读不出来，
+就说明这条 URRA 还停在分析半成品阶段。
+真正强的 URRA，
+本来就是写给 design、
+validation 和 regulatory 同时能继续用的。</p>
+<div class="admonition example">
+<p class="admonition-title">案例：为什么“用户注射错误浓度”这句话还不够拿去做 validation</p>
+<p>如果条目只写“用户注射错误浓度”，
+validation 团队仍然不知道该复现什么。
+更成熟的写法会继续补清：
+是在确认产品规格时选错成人/儿童剂型，
+还是包装区分不明显，
+还是紧急状态下没有看到标签颜色提示。
+只有写到这个程度，
+团队才知道应当布置什么场景、
+观察什么行为，
+以及控制是否真的有效。</p>
+</div>
+<h2 id="_7">本章总结</h2>
+<div class="admonition tip">
+<p class="admonition-title">复习时重点记这几条</p>
+<ul>
+<li>URRA 的核心是写清风险链，
+  而不是填表本身。</li>
+<li>输入来自任务流、
+  用户场景和已知问题。</li>
+<li>写作顺序必须是任务/错误/后果/控制，
+  而不是倒着来。</li>
+<li>越具体的 URRA，
+  越能支持后续验证。</li>
+</ul>
+</div>
+<h2 id="_8">资料范围与相关主题</h2>
+<p>正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。</p>
+<ul>
+<li>所属分区: <code>ENP111 Use-related Risks</code></li>
+<li>关联源文件数: 1</li>
+<li>文本单元数: 52</li>
+<li>配图/预览数: 3</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Type</th>
+<th style="text-align: right;">Text Units</th>
+<th style="text-align: right;">Visuals</th>
+<th>Download</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>10 Write URRA.pptx</code></td>
+<td><code>pptx</code></td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">3</td>
+<td><a href="../../assets/source_files/ENP111/10%20Write%20URRA.pptx">open</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_9">相关主题</h2>
+<ul>
+<li><a href="../task_analysis/">任务分析</a></li>
+<li><a href="../medical_device_urra/">医疗器械中的 URRA</a></li>
+<li><a href="../epipen_workbook/">EpiPen URRA 工作簿</a></li>
+</ul>
+<h2 id="_10">原文转写与来源映射</h2>
+<p>下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 <code>unit_id</code> 都能在 <code>data/coverage_map.json</code> 中找到对应页面映射。</p>
+<details class="info">
+<summary>10 Write URRA.pptx | 52 text units</summary>
+<p>下载原件: <a href="../../assets/source_files/ENP111/10%20Write%20URRA.pptx">10 Write URRA.pptx</a>
+映射页面: <code>urra_methods</code></p>
+<div class="highlight"><pre><span></span><code>[10-write-urra-0001] slide:1:p:1 | Sami Durrani PhD and Eric Bergman PhD
+[10-write-urra-0002] slide:1:p:2 | Developing the URRA
+[10-write-urra-0003] slide:2:p:1 | Review: Use-related risk analysis process (as defined by FDA)
+[10-write-urra-0004] slide:2:p:2 | Ongoing activity
+[10-write-urra-0005] slide:3:p:1 | 3
+[10-write-urra-0006] slide:3:p:2 | Identifying potential use errors?
+[10-write-urra-0007] slide:4:p:1 | 4
+[10-write-urra-0008] slide:4:p:2 | Typical sources of data (not a comprehensive list)
+[10-write-urra-0009] slide:4:p:3 | Previous version of device
+[10-write-urra-0010] slide:4:p:4 | Similar devices, included competitors
+[10-write-urra-0011] slide:4:p:5 | Devices with a similar UI, user interactions, or uses
+[10-write-urra-0012] slide:4:p:6 | Post market surveillance data
+[10-write-urra-0013] slide:4:p:7 | In-house from your company’s post market surveillance group (typically part of a Quality department)
+[10-write-urra-0014] slide:4:p:8 | Customer support department
+[10-write-urra-0015] slide:4:p:9 | On-line databases, for example MAUDE
+[10-write-urra-0016] slide:4:p:10 | Known problems analysis (KPA)
+[10-write-urra-0017] slide:5:p:1 | 5
+[10-write-urra-0018] slide:5:p:2 | MAUDE
+[10-write-urra-0019] slide:5:p:3 | See separate video on conducting a known problems analysis
+[10-write-urra-0020] slide:6:p:1 | 6
+[10-write-urra-0021] slide:6:p:2 | Previously we conducted a Task Analysis…
+[10-write-urra-0022] slide:6:p:3 | …Assume now we performed a KPA, Expert Reviews, and Usability Testing and identified the following additional use errors:
+[10-write-urra-0023] slide:6:p:4 | User does not dispose of AI in sharps container
+[10-write-urra-0024] slide:6:p:5 | User injects with expired drug
+[10-write-urra-0025] slide:6:p:6 | User injects with damaged AI
+[10-write-urra-0026] slide:6:p:7 | User injects with leaking AI
+[10-write-urra-0027] slide:6:p:8 | Now, lets work through our EpiPen example to develop the URRA
+[10-write-urra-0028] slide:6:p:9 | Recall our EpiPen Auto-Injector (AI) Example
+[10-write-urra-0029] slide:7:p:1 | 7
+[10-write-urra-0030] slide:7:p:2 | A URRA needs to contain the following:
+[10-write-urra-0031] slide:7:p:3 | Reference number
+[10-write-urra-0032] slide:7:p:4 | Task description
+[10-write-urra-0033] slide:7:p:5 | Potential use errors
+[10-write-urra-0034] slide:7:p:6 | Potential hazards and harms
+[10-write-urra-0035] slide:7:p:7 | Severity of harm
+[10-write-urra-0036] slide:7:p:8 | Critical task (yes or no)
+[10-write-urra-0037] slide:7:p:9 | Risk mitigations
+[10-write-urra-0038] slide:7:p:10 | Reference to validation of risk mitigation effectiveness
+[10-write-urra-0039] slide:7:p:11 | URRA document decomposed
+[10-write-urra-0040] notes:1:p:1 | Quick introductions
+[10-write-urra-0041] notes:2:p:1 | As a reminder the HF process in medical device development is important because medical devices, whether they are simple tools or complex machines, are often used in critical situations where a mistake can have serious consequences. A design that does not consider the user&#39;s needs, abilities, and limitations can lead to errors and patient harm.
+[10-write-urra-0042] notes:2:p:2 | The overall process in begins by understanding who the users are, their needs, and the environments in which they will use the device, then we conduct an iterative use-related risk analysis. We then design the device, making sure to incorporate human factors principles into the design process to make the UI resistant to use errors (and to also increase usability and user satisfaction). As we design the device we update our use-related risk analysis to match the device design and uncover if any new use related risks have been introduced and we conduct testing along the way to ensure that the designs that we develop are effective in controlling risk.
+[10-write-urra-0043] notes:2:p:3 | In other lectures conducting a task analysis to identify potential use errors, as well as how to write good use errors.
+[10-write-urra-0044] notes:3:p:1 | But its also important to note that there are many other sources of use errors that we need to look to conduct a comprehensive use related risk analysis. In this lecture we will work though an example of going through from a task analysis to a URRA document.
+[10-write-urra-0045] notes:4:p:1 | A KPA helps identify how people have made mistakes or otherwise struggled using products similar to the one being developed. This can be your own products, a previous version of it, or similar ones you have in the market, or it could be products that competitors might make. Over even a product with just a similar user interfaces, user interactions and/or uses. Online data-sources, such as Manufacturer and User Facility Device Experience (MAUDE). Are a great source of data. Manufacturer and User Facility Device Experience (MAUDE) database represents reports of adverse events involving medical devices.
+[10-write-urra-0046] notes:4:p:2 | The searchable database contains the last 10 years of medical device report (MDR) data.
+[10-write-urra-0047] notes:6:p:1 | Important notes to mention:
+[10-write-urra-0048] notes:6:p:2 | -The URRA and your task analysis will go through several iterations.
+[10-write-urra-0049] notes:6:p:3 | -In practical sense, its easiest to use you task analysis as your draft URRA, add in all your other UEs there and when it comes time to make your final URRA draft, simplify for it for the agency.
+[10-write-urra-0050] notes:6:p:4 | When is it time to make your final URRA draft: once we have completed the process, our design is locked, we develop a final draft of our URRA. This final draft becomes the basis of the validation study. I say final draft because if we’ve done our jobs correctly, we shouldn’t expect to see any new use errors and our results should validate that all of our implemented are effective. But that’s not always the case, so you can’t really finalize your URRA until after you have had a successful validation study.
+[10-write-urra-0051] notes:7:p:1 | As a reminder, here is the structure of a URRA, as requested by the FDA&gt;
+[10-write-urra-0052] notes:7:p:2 | When is it time to make your final URRA draft: once we have completed the process, our design is locked, we develop a final draft of our URRA. This final draft becomes the basis of the validation study. I say final draft because if we’ve done our jobs correctly, we shouldn’t expect to see any new use errors and our results should validate that all of our implemented are effective. But that’s not always the case, so you can’t really finalize your URRA until after you have had a successful validation study.
+</code></pre></div>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+  
+  
+  
+    
+    <hr>
+    
+    <h2 id="__comments">
+      评论
+      <a href="#__comments" class="headerlink" title="评论">#</a>
+    </h2>
+    
+    
+    <script src="https://giscus.app/client.js"
+            data-repo="jeffliulab/ai-notes-discussion"
+            data-repo-id="R_kgDOQnsUAQ"
+            data-category="General"
+            data-category-id="DIC_kwDOQnsUAc4Cztsg"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="preferred_color_scheme"
+            data-lang="zh-CN"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+    
+  
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.top", "navigation.path", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../site_extra_styles/javascripts/katex.js"></script>
+      
+        <script src="../../site_extra_styles/javascripts/tab_dropdown.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>

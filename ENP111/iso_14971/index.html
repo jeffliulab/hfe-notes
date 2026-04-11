@@ -1,0 +1,2549 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Jeff Liu">
+      
+      
+        <link rel="canonical" href="https://jeffliulab.github.io/hfe-notes/ENP111/iso_14971/">
+      
+      
+        <link rel="prev" href="../known_problem_and_event_tree/">
+      
+      
+        <link rel="next" href="../medical_device_urra/">
+      
+      
+        
+          <link rel="alternate" href="./" hreflang="zh">
+        
+          <link rel="alternate" href="../../en/ENP111/iso_14971/" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>ISO 14971 - 人因工程课程笔记</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="../../site_extra_styles/stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../site_extra_styles/stylesheets/correct_bullet_point.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#iso-14971" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="人因工程课程笔记" class="md-header__button md-logo" aria-label="人因工程课程笔记" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            人因工程课程笔记
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              ISO 14971
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="选择当前语言">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="zh" class="md-select__link">
+              中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../en/ENP111/iso_14971/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  ENP111 Use-related Risks
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ENP112/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  ENP112 Engineering Forensics
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="人因工程课程笔记" class="md-nav__button md-logo" aria-label="人因工程课程笔记" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    人因工程课程笔记
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ENP111 Use-related Risks
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ENP111 Use-related Risks
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../human_factors_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    人因导论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../human_error_frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    人为失误框架
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../swiss_cheese/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Swiss Cheese 模型
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../task_analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    任务分析
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../urra_methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    URRA方法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../known_problem_and_event_tree/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Known Problem 与事件树
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ISO 14971
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ISO 14971
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章重点
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先记住方法定位
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        这个方法解决什么问题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输入与输出是什么
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        操作步骤怎么走
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        和人因工作是什么关系
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        风险控制在这个标准里为什么不是“想到什么就补什么”
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么标准语言必须这么严格
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么概率分级能帮助讨论，却不能被当成绝对真值
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iso-14971_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 ISO 14971 一上来就把全生命周期放进来
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qms-design-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么这套标准最后一定会接到 QMS 和 design controls
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-market-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 post-market information 在这个标准里不是收尾动作
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资料范围与相关主题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        相关主题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原文转写与来源映射
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../medical_device_urra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    医疗器械URRA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../medical_device_use_errors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    医疗器械使用错误
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../epipen_workbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EpiPen工作簿
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ENP112/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ENP112 Engineering Forensics
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ENP112 Engineering Forensics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/course_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程导论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/error_analysis_methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    错误分析方法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/aviation_automation_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    航空与自动化导论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/crew_resource_management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CRM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/displays_and_alerts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    显示与告警
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/checklists_and_procedures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    检查单与程序
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/automated_vehicles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    自动化车辆
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/attention_and_monitoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    注意与监控
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/fatigue_and_sleep/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    疲劳与睡眠
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/stress_and_decision_making/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    压力与决策
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/situation_awareness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    情境意识
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/spatial_disorientation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    空间定向错觉
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/operational_risk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operational Risk
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/cardosi_case/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cardosi案例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/f16_analysis_prompts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F16分析提示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/boeing_737max_and_ethics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Boeing 737 Max与伦理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章重点
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先记住方法定位
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        这个方法解决什么问题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输入与输出是什么
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        操作步骤怎么走
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        和人因工作是什么关系
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        风险控制在这个标准里为什么不是“想到什么就补什么”
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么标准语言必须这么严格
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么概率分级能帮助讨论，却不能被当成绝对真值
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#iso-14971_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 ISO 14971 一上来就把全生命周期放进来
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#qms-design-controls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么这套标准最后一定会接到 QMS 和 design controls
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#post-market-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 post-market information 在这个标准里不是收尾动作
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资料范围与相关主题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        相关主题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原文转写与来源映射
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="导航栏" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    首页
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    ENP111 Use-related Risks
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+
+
+<h1 id="iso-14971">ISO 14971 与医疗器械风险管理</h1>
+<p>ISO 14971 这一页讲的不是单张表，而是一套贯穿医疗器械全生命周期的风险管理语言和流程。</p>
+<div class="admonition note">
+<p class="admonition-title">本页主问题</p>
+<p>ISO 14971 怎样把 hazard、
+hazardous situation、
+harm、
+control 和上市后反馈组织成一个闭环风险管理过程？</p>
+</div>
+<h2 id="_1">本章重点</h2>
+<ul>
+<li>ISO 14971 的重点不是填表，
+  而是用一致语言管理风险。</li>
+<li><code>hazard</code>、
+  <code>hazardous situation</code>、
+  <code>harm</code> 必须严格分开。</li>
+<li>风险管理不是一次性动作，
+  而是计划、
+  识别、
+  控制、
+  验证和上市后回看的连续过程。</li>
+<li>人因工作在这里的重要性，
+  是很多 hazardous situation 都经由使用路径触发。</li>
+</ul>
+<h2 id="_2">先记住方法定位</h2>
+<div class="admonition tip">
+<p class="admonition-title">先记住这个方法的定位</p>
+<p>先记住这个标准的定位：
+它不是替代设计，
+而是逼团队把设计风险、
+使用风险和伤害后果放到同一个闭环里。</p>
+</div>
+<h2 id="_3">这个方法解决什么问题</h2>
+<p>ISO 14971 解决的是团队对风险对象说不清楚的问题。
+它要求大家用同一套语言去区分潜在伤害源、
+暴露情境和真正发生的伤害，
+从而让设计、
+临床、
+法规和人因讨论能接起来。</p>
+<div class="admonition warning">
+<p class="admonition-title">最容易做错的地方</p>
+<p>最常见的错误，
+是把 <code>hazard</code>、
+<code>hazardous situation</code> 和 <code>harm</code> 混写成同一个层级。
+一旦这三个词没分清，
+后面的控制和验证就会一起变乱。</p>
+</div>
+<h2 id="_4">输入与输出是什么</h2>
+<p>输入包括：
+设计信息、
+预期用途、
+用户场景、
+危害识别、
+测试信息和上市后反馈。</p>
+<p>输出至少包括：</p>
+<ul>
+<li>风险管理计划</li>
+<li>风险分析条目</li>
+<li>控制与剩余风险判断</li>
+<li>上市后信息回流机制</li>
+</ul>
+<h2 id="_5">操作步骤怎么走</h2>
+<p>可以把标准流程记成六步：</p>
+<ol>
+<li>建风险管理计划。</li>
+<li>识别 hazard 和 foreseeable use situation。</li>
+<li>估计并评价风险。</li>
+<li>实施风险控制。</li>
+<li>判断剩余风险和整体可接受性。</li>
+<li>用生产和上市后信息持续回看。</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">一句话结论</p>
+<p>ISO 14971 的强项，
+是让团队始终用同一套结构去看风险，
+而不是每个部门各说各话。</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">worked example：一个注射器风险链怎样写清楚</p>
+<p>如果装置的剂量窗口难读，
+<code>hazard</code> 可能是药物输送能力本身，
+<code>hazardous situation</code> 是用户把剂量读错并完成过量给药，
+<code>harm</code> 则是患者受到不良生理后果。
+把这三层分开后，
+控制措施才能分别落到窗口设计、
+确认流程和验证测试上。</p>
+</div>
+<h2 id="_6">和人因工作是什么关系</h2>
+<p>人因工作不是标准外的附加项。
+很多 hazardous situation 正是通过使用错误、
+界面诱发、
+标签误读和任务环境限制出现的，
+所以 medical-device URRA 和 use-error 页会继续把这条线展开。</p>
+<h2 id="_7">风险控制在这个标准里为什么不是“想到什么就补什么”</h2>
+<p>ISO 14971 真正强调的，
+不是风险列得够不够多，
+而是控制有没有逻辑顺序。
+课程里反复暗示的一条判断是：
+如果危险可以通过设计本身被消掉，
+就不应该先把希望寄托在标签提醒或培训上。</p>
+<p>这背后其实是在建立一个控制层级：</p>
+<ul>
+<li>先改设计本身，尽量从源头降低风险</li>
+<li>再看 protective measure 或系统层防线</li>
+<li>最后才是信息、说明、培训和告警</li>
+</ul>
+<p>这样做不是因为后面的手段没用，
+而是因为越靠近源头的控制，
+通常越稳定、
+越不依赖用户在高压下始终做对。</p>
+<div class="admonition example">
+<p class="admonition-title">案例：为什么“说明书里写清楚了”通常不能算第一层主控制</p>
+<p>如果一个高风险误用本来就可以通过窗口设计、
+结构限制、
+接口区分或强制确认来降低，
+那么把主控制写成“在 IFU 中提醒用户注意”通常不够。
+这不是否定 IFU，
+而是说明标准更关心稳定控制，
+而不是事后把风险交给阅读和记忆。</p>
+</div>
+<h2 id="_8">为什么标准语言必须这么严格</h2>
+<p>很多人第一次看 ISO 14971 会觉得定义太细、
+太烦。
+但这恰恰是标准有用的原因。
+只要团队在 <code>hazard</code>、
+<code>hazardous situation</code>、
+<code>harm</code> 之间说混了，
+后面就会出现三个连锁问题：</p>
+<ul>
+<li>控制措施不知道该控哪一层</li>
+<li>验证活动不知道要证明什么</li>
+<li>剩余风险讨论会变成不同部门各说各话</li>
+</ul>
+<p>所以标准语言看起来像术语要求，
+本质上其实是在保护团队的因果结构不被写乱。</p>
+<h2 id="_9">为什么概率分级能帮助讨论，却不能被当成绝对真值</h2>
+<p>ISO 14971 里常见的 <code>Frequent / Probable / Occasional / Remote / Improbable</code> 之类等级，
+主要作用是帮助团队形成同一套排序语言，
+而不是宣称所有风险都能被算到非常精确。</p>
+<p>尤其在 use-related risk 上，
+很多问题受场景、
+用户差异和控制强度影响很大。
+更成熟的做法，
+是把概率分级当成沟通框架，
+再结合 severity、
+detectability 和控制可靠性一起看，
+而不是只盯一个等级标签。</p>
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/iso-14971-and-medical-device-rm/slide-20-image11.png" alt="这张图要看懂的是：概率等级的价值在于给团队统一排序口径，而不是制造一种“风险已经被精确算清”的错觉。" loading="lazy">
+  <figcaption>这张图要看懂的是：概率等级的价值在于给团队统一排序口径，而不是制造一种“风险已经被精确算清”的错觉。</figcaption>
+</figure>
+
+<h2 id="iso-14971_1">为什么 ISO 14971 一上来就把全生命周期放进来</h2>
+<p>这页不是只讲开发期风险，
+而是把制造、
+储存、
+运输、
+使用、
+服务和处置都放进范围。
+这个范围设计本身就在表达一个判断：
+病人风险不会只在使用当下生成，
+很多危险条件在更早的制造、
+储运和维护环节就已经埋下了。</p>
+<p>这也是为什么风险管理不能只由设计团队单独承担。
+只要 lifecycle 被纳入，
+质量、
+制造、
+售后、
+post-market surveillance 和 human factors 就都必须接进同一个闭环里。</p>
+<h2 id="qms-design-controls">为什么这套标准最后一定会接到 QMS 和 design controls</h2>
+<p>ISO 14971 真正强的地方，
+不只是有一套术语，
+而是它会把风险判断嵌进质量体系。
+也就是说，
+风险管理不是孤立文件，
+而要能影响 design input、
+design review、
+verification、
+validation 和上市后 CAPA。</p>
+<p>这也是为什么课程把它和 ISO 13485、
+62366、
+软件标准等放在一起提。
+标准之间不是平行存在，
+而是在告诉团队：
+风险语言必须真的流进质量管理系统，
+否则风险分析就会停在纸面上。</p>
+<h2 id="post-market-information">为什么 post-market information 在这个标准里不是收尾动作</h2>
+<p>很多团队容易把 post-market 视作“产品上市以后再看”的尾声，
+但 ISO 14971 把它放进闭环，
+是在强调另一点：
+真实世界里的 complaint、
+service data、
+misuse pattern 和 field issue 会反过来修正前面的风险判断。</p>
+<p>换句话说，
+这不是最后一章，
+而是重新开始。
+只要现场出现了新的 failure mode、
+新的 user population 或新的环境压力，
+前面的 hazard、
+control 和 residual risk 判断都应该被重新审视。</p>
+<div class="admonition example">
+<p class="admonition-title">案例：为什么一条上市后投诉会逼团队重写前面的 residual risk 判断</p>
+<p>如果现场投诉持续显示用户在运输后更难读清剂量窗口，
+这就不只是售后问题，
+而是在告诉团队：
+原先关于 readability、
+storage/transport condition 和 residual risk acceptability 的判断可能过于乐观。
+ISO 14971 的闭环要求团队把这种真实世界信息重新送回风险链，
+而不是只把它留在客服数据库里。</p>
+</div>
+<h2 id="_10">本章总结</h2>
+<div class="admonition tip">
+<p class="admonition-title">复习时重点记这几条</p>
+<ul>
+<li>ISO 14971 提供的是统一风险语言和闭环流程。</li>
+<li>hazard、
+  hazardous situation、
+  harm 必须严格区分。</li>
+<li>风险管理贯穿计划、
+  控制、
+  验证和上市后反馈。</li>
+<li>人因工作在医疗器械风险链里不是附属品。</li>
+</ul>
+</div>
+<h2 id="_11">资料范围与相关主题</h2>
+<p>正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。</p>
+<ul>
+<li>所属分区: <code>ENP111 Use-related Risks</code></li>
+<li>关联源文件数: 1</li>
+<li>文本单元数: 425</li>
+<li>配图/预览数: 5</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Type</th>
+<th style="text-align: right;">Text Units</th>
+<th style="text-align: right;">Visuals</th>
+<th>Download</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>ISO 14971 and Medical Device RM.pptx</code></td>
+<td><code>pptx</code></td>
+<td style="text-align: right;">425</td>
+<td style="text-align: right;">5</td>
+<td><a href="../../assets/source_files/ENP111/ISO%2014971%20and%20Medical%20Device%20RM.pptx">open</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_12">相关主题</h2>
+<ul>
+<li><a href="../medical_device_urra/">医疗器械中的 URRA</a></li>
+<li><a href="../medical_device_use_errors/">医疗器械中的使用错误</a></li>
+<li><a href="../epipen_workbook/">EpiPen URRA 工作簿</a></li>
+</ul>
+<h2 id="_13">原文转写与来源映射</h2>
+<p>下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 <code>unit_id</code> 都能在 <code>data/coverage_map.json</code> 中找到对应页面映射。</p>
+<details class="info">
+<summary>ISO 14971 and Medical Device RM.pptx | 425 text units</summary>
+<p>下载原件: <a href="../../assets/source_files/ENP111/ISO%2014971%20and%20Medical%20Device%20RM.pptx">ISO 14971 and Medical Device RM.pptx</a>
+映射页面: <code>iso_14971</code></p>
+<div class="highlight"><pre><span></span><code>[iso-14971-and-medical-device-rm-0001] slide:1:p:1 | Dave Bonnett and Eric Bergman PhD
+[iso-14971-and-medical-device-rm-0002] slide:1:p:2 | ISO 14971 and Medical Device Risk Management
+[iso-14971-and-medical-device-rm-0003] slide:2:p:1 | What is medical device Risk Management (RM)?
+[iso-14971-and-medical-device-rm-0004] slide:2:p:2 | Systematic application of management policies, procedures, and practices to the tasks of analyzing, evaluating, controlling and monitoring risk. (ISO 14971:2019)
+[iso-14971-and-medical-device-rm-0005] slide:2:p:3 | Primary goal:
+[iso-14971-and-medical-device-rm-0006] slide:2:p:4 | Ensure safety and effectiveness
+[iso-14971-and-medical-device-rm-0007] slide:2:p:5 | Safety = “Freedom from unacceptable risk”
+[iso-14971-and-medical-device-rm-0008] slide:2:p:6 | Secondary goal:
+[iso-14971-and-medical-device-rm-0009] slide:2:p:7 | Meet legal requirements from regulatory bodies
+[iso-14971-and-medical-device-rm-0010] slide:3:p:1 | Scope of medical device RM
+[iso-14971-and-medical-device-rm-0011] slide:3:p:2 | In scope
+[iso-14971-and-medical-device-rm-0012] slide:3:p:3 | Medical devices
+[iso-14971-and-medical-device-rm-0013] slide:3:p:4 | Device portion of a drug/device combination product
+[iso-14971-and-medical-device-rm-0014] slide:3:p:5 | Impacts of cybersecurity risks on patient safety
+[iso-14971-and-medical-device-rm-0015] slide:3:p:6 | Out of scope
+[iso-14971-and-medical-device-rm-0016] slide:3:p:7 | Products not considered medical devices
+[iso-14971-and-medical-device-rm-0017] slide:3:p:8 | Drug products and drug product portion of a combination product
+[iso-14971-and-medical-device-rm-0018] slide:3:p:9 | Business, Project, and Financial risks
+[iso-14971-and-medical-device-rm-0019] slide:3:p:10 | Risk management is an expansive field of which device RM is a subset. There are numerous other standards that govern other types of risk management (e.g., ICH Q9 for drug product RM and ISO 31000 for organizational risk management)
+[iso-14971-and-medical-device-rm-0020] slide:4:p:1 | Key Principles
+[iso-14971-and-medical-device-rm-0021] slide:4:p:2 | Device risk management:
+[iso-14971-and-medical-device-rm-0022] slide:4:p:3 | Applies to risks to the patient, user, and environment
+[iso-14971-and-medical-device-rm-0023] slide:4:p:4 | Is based on the context – the intended use, intended users and intended use environment
+[iso-14971-and-medical-device-rm-0024] slide:4:p:5 | Is required throughout the device’s entire lifecycle
+[iso-14971-and-medical-device-rm-0025] slide:4:p:6 | Development, manufacturing, storage, distribution, use, service, disposal
+[iso-14971-and-medical-device-rm-0026] slide:4:p:7 | Is commensurate with the level of risk to the patient, user, etc.
+[iso-14971-and-medical-device-rm-0027] slide:4:p:8 | Is integrated with many other elements of a device quality management system (QMS) including design controls
+[iso-14971-and-medical-device-rm-0028] slide:4:p:9 | Is required by regulatory bodies
+[iso-14971-and-medical-device-rm-0029] slide:5:p:1 | Regulations, Standards and Guidance
+[iso-14971-and-medical-device-rm-0030] slide:5:p:2 | Law
+[iso-14971-and-medical-device-rm-0031] slide:5:p:3 | Regulation
+[iso-14971-and-medical-device-rm-0032] slide:5:p:4 | Standards
+[iso-14971-and-medical-device-rm-0033] slide:5:p:5 | Guidance
+[iso-14971-and-medical-device-rm-0034] slide:5:p:6 | Procedures
+[iso-14971-and-medical-device-rm-0035] slide:6:p:1 | Relevant Standards &amp; Guidance
+[iso-14971-and-medical-device-rm-0036] slide:6:p:2 | ISO 14971:2019 Medical devices - Application of risk management to medical devices
+[iso-14971-and-medical-device-rm-0037] slide:6:p:3 | ISO/TR 24971:2020 Medical devices - Guidance on the application of ISO 14971
+[iso-14971-and-medical-device-rm-0038] slide:6:p:4 | ANSI/AAMI/IEC 62366-1 Medical devices – Part 1: Application of usability engineering to medical devices
+[iso-14971-and-medical-device-rm-0039] slide:6:p:5 | ANSI/AAMI/IEC 62304 - Medical device software - Software life cycle processes
+[iso-14971-and-medical-device-rm-0040] slide:6:p:6 | AAMI TIR45 - Guidance On The Use Of AGILE Practices In The Development Of Medical Device Software
+[iso-14971-and-medical-device-rm-0041] slide:6:p:7 | ANSI/AAMI/IEC TIR80002-1 - Medical device software - Part 1: Guidance on the application of ISO 14971 to medical device software
+[iso-14971-and-medical-device-rm-0042] slide:7:p:1 | Relevant Standards &amp; Guidance
+[iso-14971-and-medical-device-rm-0043] slide:7:p:2 | ISO 13485 Medical devices – Quality management systems – Requirements for regulatory purposes
+[iso-14971-and-medical-device-rm-0044] slide:7:p:3 | IEC 60601-1 Medical electrical equipment – Part 1: General requirements for basic safety and essential performance
+[iso-14971-and-medical-device-rm-0045] slide:7:p:4 | IEC 60601-2-xxx Particular standards for specific devices
+[iso-14971-and-medical-device-rm-0046] slide:7:p:5 | ISO 11608-1 Needle-based injection systems for medical use – Requirements and test methods
+[iso-14971-and-medical-device-rm-0047] slide:7:p:6 | ISO 10993-1 Biological evaluation of medical devices - Part 1: Evaluation and testing within a risk management process
+[iso-14971-and-medical-device-rm-0048] slide:8:p:1 | Relevant Standards &amp; Guidance
+[iso-14971-and-medical-device-rm-0049] slide:8:p:2 | To search for FDA recognized medical device standards:
+[iso-14971-and-medical-device-rm-0050] slide:8:p:3 | https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfstandards/search.cfm
+[iso-14971-and-medical-device-rm-0051] slide:8:p:4 | For EU harmonized standards:
+[iso-14971-and-medical-device-rm-0052] slide:8:p:5 | https://ec.europa.eu/docsroom/documents/48579
+[iso-14971-and-medical-device-rm-0053] slide:8:p:6 | FDA Guidance Documents
+[iso-14971-and-medical-device-rm-0054] slide:9:p:1 | ISO 14971:2019
+[iso-14971-and-medical-device-rm-0055] slide:9:p:2 | Recognized by FDA, and EU (in harmonized version)
+[iso-14971-and-medical-device-rm-0056] slide:9:p:3 | Required by several other recognized medical device product/process standards (e.g., IEC 60601, IEC 62366-1, IEC 62304)
+[iso-14971-and-medical-device-rm-0057] slide:9:p:4 | Provides the basis/framework for a device risk management processes
+[iso-14971-and-medical-device-rm-0058] slide:10:p:1 | RM Process
+[iso-14971-and-medical-device-rm-0059] slide:10:p:2 | Key risk management activities from ISO 14971:
+[iso-14971-and-medical-device-rm-0060] slide:10:p:3 | Risk management planning
+[iso-14971-and-medical-device-rm-0061] slide:10:p:4 | Risk analysis
+[iso-14971-and-medical-device-rm-0062] slide:10:p:5 | Risk evaluation
+[iso-14971-and-medical-device-rm-0063] slide:10:p:6 | Risk control
+[iso-14971-and-medical-device-rm-0064] slide:10:p:7 | Overall residual risk evaluation
+[iso-14971-and-medical-device-rm-0065] slide:10:p:8 | Risk management review
+[iso-14971-and-medical-device-rm-0066] slide:10:p:9 | Production and post-production activities
+[iso-14971-and-medical-device-rm-0067] slide:10:p:10 | From ISO14971:2019 Figure 1
+[iso-14971-and-medical-device-rm-0068] slide:11:p:1 | RM and Usability
+[iso-14971-and-medical-device-rm-0069] slide:11:p:2 | Key interactions between the RM process defined in ISO 14971 and the Usability Engineering process from IEC 62366-1
+[iso-14971-and-medical-device-rm-0070] slide:12:p:1 | Definitions
+[iso-14971-and-medical-device-rm-0071] slide:12:p:2 | Benefit: positive impact or desirable outcome of the use of a medical device on the health of an individual, or a positive impact on patient management or public health
+[iso-14971-and-medical-device-rm-0072] slide:12:p:3 | Harm: Injury or damage to the health of people, or damage to property or the environment
+[iso-14971-and-medical-device-rm-0073] slide:12:p:4 | Hazard: Potential source of harm
+[iso-14971-and-medical-device-rm-0074] slide:12:p:5 | Hazardous situation: Circumstance in which people, property, or the environment is/are exposed to one or more hazards
+[iso-14971-and-medical-device-rm-0075] slide:12:p:6 | Intended use: Intended purpose; use for which a product, process or service is intended according to the specifications, instructions, and information provided by the manufacturer
+[iso-14971-and-medical-device-rm-0076] slide:12:p:7 | Life cycle: Series of all phases in the life of a medical device, from the initial conception to final decommissioning and disposal
+[iso-14971-and-medical-device-rm-0077] slide:12:p:8 | Reasonably foreseeable misuse: use of a product or system in a way not intended by the manufacturer but which can result from readily predictable human behavior
+[iso-14971-and-medical-device-rm-0078] slide:12:p:9 | Residual risk: risk remaining after risk control measures have been implemented
+[iso-14971-and-medical-device-rm-0079] slide:12:p:10 | Risk: combination of the probability of occurrence of harm and the severity of that harm
+[iso-14971-and-medical-device-rm-0080] slide:12:p:11 | Risk analysis: Systematic use of available information to identify hazards and to estimate the risk
+[iso-14971-and-medical-device-rm-0081] slide:12:p:12 | Risk assessment: Overall process comprising a risk analysis and a risk evaluation
+[iso-14971-and-medical-device-rm-0082] slide:13:p:1 | Definitions - continued
+[iso-14971-and-medical-device-rm-0083] slide:13:p:2 | Risk control: Process in which decisions are made and measures implemented by which risks are reduced to, or maintained within, specified levels
+[iso-14971-and-medical-device-rm-0084] slide:13:p:3 | Risk estimation: Process used to assign values to the probability of occurrence of harm and the severity of that harm
+[iso-14971-and-medical-device-rm-0085] slide:13:p:4 | Risk evaluation: Process of comparing the estimated risk against given risk criteria to determine the acceptability of the risk
+[iso-14971-and-medical-device-rm-0086] slide:13:p:5 | Risk Management File (RMF): Set of records and other documents that are produced by risk management
+[iso-14971-and-medical-device-rm-0087] slide:13:p:6 | Safety: Freedom from unacceptable risk
+[iso-14971-and-medical-device-rm-0088] slide:13:p:7 | Severity: Measure of the possible consequences of a hazard
+[iso-14971-and-medical-device-rm-0089] slide:13:p:8 | Use error: User action or lack of user action while using a medical device that leads to a different result than intended by the manufacturer or expected by the user
+[iso-14971-and-medical-device-rm-0090] slide:13:p:9 | Verification: Confirmation, through the provision of objective evidence, that specified requirements have been fulfilled
+[iso-14971-and-medical-device-rm-0091] slide:14:p:1 | Risk Analysis
+[iso-14971-and-medical-device-rm-0092] slide:14:p:2 | From ISO 14971:2019 Figure C.1
+[iso-14971-and-medical-device-rm-0093] slide:14:p:3 | Risk analysis: Systematic use of available information to identify hazards and to estimate the risk
+[iso-14971-and-medical-device-rm-0094] slide:15:p:1 | Risk Analysis
+[iso-14971-and-medical-device-rm-0095] slide:15:p:2 | Risk Analysis is the process used to identify hazards and to estimate risk. It includes identifying:
+[iso-14971-and-medical-device-rm-0096] slide:15:p:3 | The intended use, intended users, and intended use environment of the device*
+[iso-14971-and-medical-device-rm-0097] slide:15:p:4 | Reasonably foreseeable misuses of the device*
+[iso-14971-and-medical-device-rm-0098] slide:15:p:5 | The characteristics of the device that could impact safety
+[iso-14971-and-medical-device-rm-0099] slide:15:p:6 | The Hazards associated with design, manufacturing, and use of the device
+[iso-14971-and-medical-device-rm-0100] slide:15:p:7 | Hazardous situations that could arise from the hazards (i.e. how people, property, the environment can be exposed to a hazard)
+[iso-14971-and-medical-device-rm-0101] slide:15:p:8 | The resulting harms (i.e. consequences of the exposure to the hazardous situation)
+[iso-14971-and-medical-device-rm-0102] slide:15:p:9 | Estimating the risk (i.e., the severity of the harm the probability of the harm occurring)
+[iso-14971-and-medical-device-rm-0103] slide:15:p:10 | * Intended use, users and use environment as well as foreseeable misuses are inputs to the risk analysis process from the “Use Specification” - an output of the Usability Engineering process
+[iso-14971-and-medical-device-rm-0104] slide:16:p:1 | Risk Analysis: Key Concepts
+[iso-14971-and-medical-device-rm-0105] slide:16:p:2 | All risk analysis is based on the device’s intended use, intended users, and intended use environment and must include “reasonably foreseeable misuses” of the device and consider risks arising in in normal and fault conditions
+[iso-14971-and-medical-device-rm-0106] slide:16:p:3 | Hazards can be associated with design (including software), manufacturing, and use of the device as well as its distribution, storage and servicing
+[iso-14971-and-medical-device-rm-0107] slide:16:p:4 | A hazardous situation occurs when people, property or the environment are exposed to a potential source of harm (hazard) through a sequence of events. (Not all hazards lead to hazardous situations)
+[iso-14971-and-medical-device-rm-0108] slide:16:p:5 | An injury (harm) can only occur after exposure to the hazard
+[iso-14971-and-medical-device-rm-0109] slide:16:p:6 | A hazardous situation may lead to different harms
+[iso-14971-and-medical-device-rm-0110] slide:16:p:7 | Clinical expertise is necessary to identify harms and estimate the consequences of the harms (severity)
+[iso-14971-and-medical-device-rm-0111] slide:16:p:8 | Risk analysis starts early during product development and continues throughout the product’s life cycle (iterative)
+[iso-14971-and-medical-device-rm-0112] slide:16:p:9 | From ISO 14971:2019 Figure C.1
+[iso-14971-and-medical-device-rm-0113] slide:17:p:1 | Risk Analysis – Sources of hazards
+[iso-14971-and-medical-device-rm-0114] slide:17:p:2 | From ISO 14971:2019 Table C.1
+[iso-14971-and-medical-device-rm-0115] slide:17:p:3 | ISO 14971 has a list of potential hazards and examples of hazardous situations
+[iso-14971-and-medical-device-rm-0116] slide:17:p:4 | Relevant product safety standards (e.g., IEC 60601-1) will also list hazards
+[iso-14971-and-medical-device-rm-0117] slide:17:p:5 | IEC 62366-1 Annex B provides examples of hazardous situations related to usability
+[iso-14971-and-medical-device-rm-0118] slide:17:p:6 | Data from similar types of devices/designs should also be evaluated during hazard identification
+[iso-14971-and-medical-device-rm-0119] slide:18:p:1 | Examples of hazards, SoEs, hazardous situations and harms
+[iso-14971-and-medical-device-rm-0120] slide:18:p:2 | From ISO 14971:2019 Table C.3
+[iso-14971-and-medical-device-rm-0121] slide:18:p:3 | From IEC 62366-1:2015+A1:2020 Table B.2
+[iso-14971-and-medical-device-rm-0122] slide:19:p:1 | Risk Analysis - Risk Estimation
+[iso-14971-and-medical-device-rm-0123] slide:19:p:2 | Risk estimation is the process used to assign values to the probability of occurrence of harm and the severity of that harm.
+[iso-14971-and-medical-device-rm-0124] slide:19:p:3 | Severity
+[iso-14971-and-medical-device-rm-0125] slide:19:p:4 | Severity of harm is a continuum that will depend on numerous factors (such as the level of exposure to the hazardous situation, a patient’s pre-existing conditions and co-morbidities)
+[iso-14971-and-medical-device-rm-0126] slide:19:p:5 | To simply risk analysis a few discrete levels are generally used to categorize severity using common terms and descriptors appropriate for the medical device
+[iso-14971-and-medical-device-rm-0127] slide:19:p:6 | Each harm is assigned a severity level which is determined using clinical/medical expertise and can be based on the reasonable worst-case consequence
+[iso-14971-and-medical-device-rm-0128] slide:19:p:7 | The severity rating does not include probability
+[iso-14971-and-medical-device-rm-0129] slide:19:p:8 | Examples of common Severity terms and descriptions from ISO 24971:2020 Table 4
+[iso-14971-and-medical-device-rm-0130] slide:20:p:1 | Risk Analysis - Risk Estimation
+[iso-14971-and-medical-device-rm-0131] slide:20:p:2 | Probability of Harm
+[iso-14971-and-medical-device-rm-0132] slide:20:p:3 | The probability of harm can be either qualitative or quantitative. Qualitative estimates should be used for new products
+[iso-14971-and-medical-device-rm-0133] slide:20:p:4 | Like severity, probability is also a continuum and discrete levels are generally used to categorize it
+[iso-14971-and-medical-device-rm-0134] slide:20:p:5 | The probability of harm is sometimes broken into two parts – the probability of the hazardous situation occurring (P1) and the probability that the harm of specified severity occurs when the hazardous situation has occurred (P2)
+[iso-14971-and-medical-device-rm-0135] slide:20:p:6 | Examples of common probability terms and descriptions from ISO 24971
+[iso-14971-and-medical-device-rm-0136] slide:20:p:7 | P1 includes elements of the sequence of events that lead to the exposure to the hazard. The individuals assigned to estimate the probability P1 should be familiar with the design, construction, use and servicing of the medical device, as well as have an adequate understanding of the use environment.
+[iso-14971-and-medical-device-rm-0137] slide:21:p:1 | Risk Analysis - Risk Estimation
+[iso-14971-and-medical-device-rm-0138] slide:21:p:2 | The P2 estimate will include a clinical aspect thus the individuals assigned to estimate P2 should be familiar with the medical use of the device
+[iso-14971-and-medical-device-rm-0139] slide:21:p:3 | P2 is often estimated using expert clinical judgment and experience with similar devices, informed by adverse event data, medical literature and information from post-production.
+[iso-14971-and-medical-device-rm-0140] slide:21:p:4 | Detailed understanding of the performance of the medical device is generally not needed to estimate P2
+[iso-14971-and-medical-device-rm-0141] slide:21:p:5 | Combining the severity of harm and the probability of harm produces the risk estimate
+[iso-14971-and-medical-device-rm-0142] slide:21:p:6 | Severity of Harm
+[iso-14971-and-medical-device-rm-0143] slide:21:p:7 | Negligible
+[iso-14971-and-medical-device-rm-0144] slide:21:p:8 | (S1)
+[iso-14971-and-medical-device-rm-0145] slide:21:p:9 | Minor
+[iso-14971-and-medical-device-rm-0146] slide:21:p:10 | (S2)
+[iso-14971-and-medical-device-rm-0147] slide:21:p:11 | Serious/ Major (S3)
+[iso-14971-and-medical-device-rm-0148] slide:21:p:12 | Critical
+[iso-14971-and-medical-device-rm-0149] slide:21:p:13 | (S4)
+[iso-14971-and-medical-device-rm-0150] slide:21:p:14 | Fatal (S5)
+[iso-14971-and-medical-device-rm-0151] slide:21:p:15 | Probability of Occurrence (Ph)
+[iso-14971-and-medical-device-rm-0152] slide:21:p:16 | Frequent
+[iso-14971-and-medical-device-rm-0153] slide:21:p:17 | (Ph5)
+[iso-14971-and-medical-device-rm-0154] slide:21:p:18 | S1P5
+[iso-14971-and-medical-device-rm-0155] slide:21:p:19 | Medium Risk
+[iso-14971-and-medical-device-rm-0156] slide:21:p:20 | S2P5
+[iso-14971-and-medical-device-rm-0157] slide:21:p:21 | Medium Risk
+[iso-14971-and-medical-device-rm-0158] slide:21:p:22 | S3P5
+[iso-14971-and-medical-device-rm-0159] slide:21:p:23 | High Risk
+[iso-14971-and-medical-device-rm-0160] slide:21:p:24 | S4P5
+[iso-14971-and-medical-device-rm-0161] slide:21:p:25 | High Risk
+[iso-14971-and-medical-device-rm-0162] slide:21:p:26 | S5P5
+[iso-14971-and-medical-device-rm-0163] slide:21:p:27 | High Risk
+[iso-14971-and-medical-device-rm-0164] slide:21:p:28 | Probable
+[iso-14971-and-medical-device-rm-0165] slide:21:p:29 | (Ph4)
+[iso-14971-and-medical-device-rm-0166] slide:21:p:30 | S1P4
+[iso-14971-and-medical-device-rm-0167] slide:21:p:31 | Medium Risk
+[iso-14971-and-medical-device-rm-0168] slide:21:p:32 | S2P4
+[iso-14971-and-medical-device-rm-0169] slide:21:p:33 | Medium Risk
+[iso-14971-and-medical-device-rm-0170] slide:21:p:34 | S3P4
+[iso-14971-and-medical-device-rm-0171] slide:21:p:35 | Medium Risk
+[iso-14971-and-medical-device-rm-0172] slide:21:p:36 | S4P4
+[iso-14971-and-medical-device-rm-0173] slide:21:p:37 | High Risk
+[iso-14971-and-medical-device-rm-0174] slide:21:p:38 | S5P4
+[iso-14971-and-medical-device-rm-0175] slide:21:p:39 | High Risk
+[iso-14971-and-medical-device-rm-0176] slide:21:p:40 | Occasional (Ph3)
+[iso-14971-and-medical-device-rm-0177] slide:21:p:41 | S1P3
+[iso-14971-and-medical-device-rm-0178] slide:21:p:42 | Low Risk
+[iso-14971-and-medical-device-rm-0179] slide:21:p:43 | S2P3
+[iso-14971-and-medical-device-rm-0180] slide:21:p:44 | Medium Risk
+[iso-14971-and-medical-device-rm-0181] slide:21:p:45 | S3P3
+[iso-14971-and-medical-device-rm-0182] slide:21:p:46 | Medium Risk
+[iso-14971-and-medical-device-rm-0183] slide:21:p:47 | S4P3
+[iso-14971-and-medical-device-rm-0184] slide:21:p:48 | Medium Risk
+[iso-14971-and-medical-device-rm-0185] slide:21:p:49 | S5P3
+[iso-14971-and-medical-device-rm-0186] slide:21:p:50 | High Risk
+[iso-14971-and-medical-device-rm-0187] slide:21:p:51 | Remote
+[iso-14971-and-medical-device-rm-0188] slide:21:p:52 | (Ph2)
+[iso-14971-and-medical-device-rm-0189] slide:21:p:53 | S1P2
+[iso-14971-and-medical-device-rm-0190] slide:21:p:54 | Low Risk
+[iso-14971-and-medical-device-rm-0191] slide:21:p:55 | S2P2
+[iso-14971-and-medical-device-rm-0192] slide:21:p:56 | Low Risk
+[iso-14971-and-medical-device-rm-0193] slide:21:p:57 | S3P2
+[iso-14971-and-medical-device-rm-0194] slide:21:p:58 | Medium Risk
+[iso-14971-and-medical-device-rm-0195] slide:21:p:59 | S4P2
+[iso-14971-and-medical-device-rm-0196] slide:21:p:60 | Medium Risk
+[iso-14971-and-medical-device-rm-0197] slide:21:p:61 | S5P2
+[iso-14971-and-medical-device-rm-0198] slide:21:p:62 | Medium Risk
+[iso-14971-and-medical-device-rm-0199] slide:21:p:63 | Improbable (Ph1)
+[iso-14971-and-medical-device-rm-0200] slide:21:p:64 | S1P1
+[iso-14971-and-medical-device-rm-0201] slide:21:p:65 | Low Risk
+[iso-14971-and-medical-device-rm-0202] slide:21:p:66 | S2P1
+[iso-14971-and-medical-device-rm-0203] slide:21:p:67 | Low Risk
+[iso-14971-and-medical-device-rm-0204] slide:21:p:68 | S3P1
+[iso-14971-and-medical-device-rm-0205] slide:21:p:69 | Low Risk
+[iso-14971-and-medical-device-rm-0206] slide:21:p:70 | S4P1
+[iso-14971-and-medical-device-rm-0207] slide:21:p:71 | Medium Risk
+[iso-14971-and-medical-device-rm-0208] slide:21:p:72 | S5P1
+[iso-14971-and-medical-device-rm-0209] slide:21:p:73 | Medium Risk
+[iso-14971-and-medical-device-rm-0210] slide:21:p:74 | A risk matrix is often used to show the combination of the severity level and the probability of harm level (S x Ph)
+[iso-14971-and-medical-device-rm-0211] slide:21:p:75 | Each Severity x Probability of harm combination is assigned a risk level (e.g., Low, Medium, High) that is then used to evaluate the risk
+[iso-14971-and-medical-device-rm-0212] slide:22:p:1 | Risk Evaluation
+[iso-14971-and-medical-device-rm-0213] slide:22:p:2 | Risk evaluation: Process of comparing the estimated risk against given risk criteria to determine the acceptability of the risk
+[iso-14971-and-medical-device-rm-0214] slide:22:p:3 | Risk evaluation is used to determine if risk control is required to reduce a risk to an acceptable level
+[iso-14971-and-medical-device-rm-0215] slide:23:p:1 | Risk Evaluation
+[iso-14971-and-medical-device-rm-0216] slide:23:p:2 | The criteria used to determine the acceptability of individual risks is defined prior to starting risk analysis
+[iso-14971-and-medical-device-rm-0217] slide:23:p:3 | ISO 14971 does not specify risk acceptability criteria since what is acceptable differs by culture, regulatory agencies and even at an individual level. Thus, each medical device manufacturer is required to define its own risk acceptability criteria
+[iso-14971-and-medical-device-rm-0218] slide:23:p:4 | Risk Level
+[iso-14971-and-medical-device-rm-0219] slide:23:p:5 | Risk Acceptability
+[iso-14971-and-medical-device-rm-0220] slide:23:p:6 | Definition
+[iso-14971-and-medical-device-rm-0221] slide:23:p:7 | Low Risk
+[iso-14971-and-medical-device-rm-0222] slide:23:p:8 | Acceptable
+[iso-14971-and-medical-device-rm-0223] slide:23:p:9 | Residual risk is acceptable and additional risk reduction/risk control measures are not required.
+[iso-14971-and-medical-device-rm-0224] slide:23:p:10 | Medium Risk
+[iso-14971-and-medical-device-rm-0225] slide:23:p:11 | Broadly Acceptable
+[iso-14971-and-medical-device-rm-0226] slide:23:p:12 | Residual risk is broadly acceptable. However, risk reduction should be investigated. Application of “state of the art” risk control measures such as meeting safety requirements identified in applicable standards shall be considered to reduce risk to an acceptable level.
+[iso-14971-and-medical-device-rm-0227] slide:23:p:13 | High Risk
+[iso-14971-and-medical-device-rm-0228] slide:23:p:14 | Unacceptable
+[iso-14971-and-medical-device-rm-0229] slide:23:p:15 | Residual risk is unacceptable and additional risk control measures shall be implemented. If implementing additional risk control measures is not possible a benefit risk analysis must be performed to ensure that the clinical/medical benefits outweigh the residual risk.
+[iso-14971-and-medical-device-rm-0230] slide:23:p:16 | Device manufacturers often use the risk levels determined during risk estimation as a starting point for risk acceptability.
+[iso-14971-and-medical-device-rm-0231] slide:23:p:17 | Low risks are often deemed acceptable without risk reduction being required
+[iso-14971-and-medical-device-rm-0232] slide:23:p:18 | Medium and high risks will require additional action to reduce the risk
+[iso-14971-and-medical-device-rm-0233] slide:23:p:19 | Common risk acceptance criteria include:
+[iso-14971-and-medical-device-rm-0234] slide:23:p:20 | Risk must be reduced “As far as possible” considering generally accepted state of the art technology
+[iso-14971-and-medical-device-rm-0235] slide:23:p:21 | Requirements from relevant safety standards have been implemented
+[iso-14971-and-medical-device-rm-0236] slide:24:p:1 | Risk Control
+[iso-14971-and-medical-device-rm-0237] slide:24:p:2 | Risk control: Process in which decisions are made and measures implemented by which risks are reduced to, or maintained within, specified levels.
+[iso-14971-and-medical-device-rm-0238] slide:25:p:1 | Risk Control
+[iso-14971-and-medical-device-rm-0239] slide:25:p:2 | Risk Control is a process step in ISO 14971 that includes:
+[iso-14971-and-medical-device-rm-0240] slide:25:p:3 | Risk control option analysis
+[iso-14971-and-medical-device-rm-0241] slide:25:p:4 | Risk control measure (RCM) implementation
+[iso-14971-and-medical-device-rm-0242] slide:25:p:5 | Residual risk evaluation
+[iso-14971-and-medical-device-rm-0243] slide:25:p:6 | Benefit-risk analysis (for unacceptable residual risks)
+[iso-14971-and-medical-device-rm-0244] slide:25:p:7 | Identifying and analyzing risks arising from risk control measures
+[iso-14971-and-medical-device-rm-0245] slide:25:p:8 | Checking completeness of risk control
+[iso-14971-and-medical-device-rm-0246] slide:25:p:9 | All risks that do not fall into an acceptable range must be reduced
+[iso-14971-and-medical-device-rm-0247] slide:25:p:10 | Risk Control Measures (RCM) are used to reduce risks
+[iso-14971-and-medical-device-rm-0248] slide:26:p:1 | Risk Control – Key Concepts
+[iso-14971-and-medical-device-rm-0249] slide:26:p:2 | All risks that do not fall into an acceptable range must be reduced
+[iso-14971-and-medical-device-rm-0250] slide:26:p:3 | If Risk Reduction is not possible, a benefit-risk analysis must be performed to ensure that the clinical benefits outweigh the risk
+[iso-14971-and-medical-device-rm-0251] slide:26:p:4 | Risk Control Measures (RCM) are used to reduce risks
+[iso-14971-and-medical-device-rm-0252] slide:26:p:5 | The term “risk control” is often used interchangeably for risk control measures and the ISO 14971 risk control process step
+[iso-14971-and-medical-device-rm-0253] slide:26:p:6 | A main focus of device RM should be on reducing identified risks - not in risk estimation
+[iso-14971-and-medical-device-rm-0254] slide:26:p:7 | ISO 14971 lists three types/categories of risk control measures:
+[iso-14971-and-medical-device-rm-0255] slide:26:p:8 | inherently safe design and manufacture
+[iso-14971-and-medical-device-rm-0256] slide:26:p:9 | protective measures in the medical device itself or in the manufacturing process
+[iso-14971-and-medical-device-rm-0257] slide:26:p:10 | information for safety and, where appropriate, training to user
+[iso-14971-and-medical-device-rm-0258] slide:26:p:11 | Priority should be given to inherent safety risk control measures followed by protective measures and finally information for safety
+[iso-14971-and-medical-device-rm-0259] slide:26:p:12 | Multiple risk control measures may be required to reduce a risk to an acceptable level
+[iso-14971-and-medical-device-rm-0260] slide:26:p:13 | Testing is not considered a risk control measure under ISO 14971
+[iso-14971-and-medical-device-rm-0261] slide:26:p:14 | All RCMs must be implemented and verified to be effective in reducing risk
+[iso-14971-and-medical-device-rm-0262] slide:27:p:1 | Risk Control
+[iso-14971-and-medical-device-rm-0263] slide:27:p:2 | Risk Control Measure types/categories:
+[iso-14971-and-medical-device-rm-0264] slide:27:p:3 | Examples from ISO 24971
+[iso-14971-and-medical-device-rm-0265] slide:28:p:1 | Risk Control
+[iso-14971-and-medical-device-rm-0266] slide:28:p:2 | Examples of Inherent Safety RCMs:
+[iso-14971-and-medical-device-rm-0267] slide:28:p:3 | Description
+[iso-14971-and-medical-device-rm-0268] slide:28:p:4 | Example
+[iso-14971-and-medical-device-rm-0269] slide:28:p:5 | - eliminating a particular hazard
+[iso-14971-and-medical-device-rm-0270] slide:28:p:6 | Eliminating the hazard of sharp edges that can cause injury by designing the surfaces with rounded edges.
+[iso-14971-and-medical-device-rm-0271] slide:28:p:7 | Eliminating the hazard of electric shock by using a manually operated pump instead of an electrical pump.
+[iso-14971-and-medical-device-rm-0272] slide:28:p:8 | - reducing the probability of occurrence of the harm
+[iso-14971-and-medical-device-rm-0273] slide:28:p:9 | Reducing the probability of fibrillation harm due to an electric shock by having no accessible live parts. Reducing the probability of unauthorized access to data by identity management.
+[iso-14971-and-medical-device-rm-0274] slide:28:p:10 | Reducing the probability of biological reactions due to microbial contamination by using cleanroom technologies or sterilization.
+[iso-14971-and-medical-device-rm-0275] slide:28:p:11 | - reducing the severity of the harm
+[iso-14971-and-medical-device-rm-0276] slide:28:p:12 | Reducing the severity of harm from being squeezed by a moving part by using a low-power motor and low speed.
+[iso-14971-and-medical-device-rm-0277] slide:28:p:13 | Reducing the severity of harm from an electric shock by using low electric voltage (below 42 V).
+[iso-14971-and-medical-device-rm-0278] slide:28:p:14 | Examples of Inherent Safety RCMs for use-related hazards:
+[iso-14971-and-medical-device-rm-0279] slide:28:p:15 | Option
+[iso-14971-and-medical-device-rm-0280] slide:28:p:16 | Examples
+[iso-14971-and-medical-device-rm-0281] slide:28:p:17 | Inherent safety by design
+[iso-14971-and-medical-device-rm-0282] slide:28:p:18 | • Use specific connectors that cannot be connected to the wrong component.
+[iso-14971-and-medical-device-rm-0283] slide:28:p:19 | • Remove features that can be mistakenly selected or eliminate an interaction when it could lead to use error.
+[iso-14971-and-medical-device-rm-0284] slide:28:p:20 | • Improve the detectability or readability of controls, labels, and displays.
+[iso-14971-and-medical-device-rm-0285] slide:28:p:21 | • Automate device functions that are prone to use error when users perform the task manually.
+[iso-14971-and-medical-device-rm-0286] slide:28:p:22 | Examples from ISO 24971
+[iso-14971-and-medical-device-rm-0287] slide:28:p:23 | Examples from IEC 62366-1
+[iso-14971-and-medical-device-rm-0288] slide:29:p:1 | Risk Control
+[iso-14971-and-medical-device-rm-0289] slide:29:p:2 | Examples of Protective Measure RCMs:
+[iso-14971-and-medical-device-rm-0290] slide:29:p:3 | Examples of Protective Measure RCMs for use-related hazards:
+[iso-14971-and-medical-device-rm-0291] slide:29:p:4 | Description
+[iso-14971-and-medical-device-rm-0292] slide:29:p:5 | Example
+[iso-14971-and-medical-device-rm-0293] slide:29:p:6 | - preventing the occurrence of a hazardous situation
+[iso-14971-and-medical-device-rm-0294] slide:29:p:7 | Using automatic cut-off or over-pressure valves.
+[iso-14971-and-medical-device-rm-0295] slide:29:p:8 | Protective covers of electrical wires and power units (covered plugs, sockets and connectors).
+[iso-14971-and-medical-device-rm-0296] slide:29:p:9 | Guards for moving parts or to prevent patients falling off a table or out of bed. Inspection testing in manufacturing to detect non-conforming products.
+[iso-14971-and-medical-device-rm-0297] slide:29:p:10 | - preventing a hazardous situation from leading to harm
+[iso-14971-and-medical-device-rm-0298] slide:29:p:11 | Using visual or acoustic alarms to alert the user to a hazardous situation.
+[iso-14971-and-medical-device-rm-0299] slide:29:p:12 | Option
+[iso-14971-and-medical-device-rm-0300] slide:29:p:13 | Examples
+[iso-14971-and-medical-device-rm-0301] slide:29:p:14 | Protective measures in the medical device itself or in the manufacturing process
+[iso-14971-and-medical-device-rm-0302] slide:29:p:15 | • Incorporate safety mechanisms such as physical safety guards, shielded elements, or software or hardware interlocks.
+[iso-14971-and-medical-device-rm-0303] slide:29:p:16 | • Include warning screens to advise the user of essential conditions that should exist prior to proceeding with device use, such as specific data entry.
+[iso-14971-and-medical-device-rm-0304] slide:29:p:17 | • Use alerts for hazardous conditions, such as a “low battery” alert when an unexpected loss of the device’s operation could cause harm or death.
+[iso-14971-and-medical-device-rm-0305] slide:29:p:18 | • Use device technologies that require less maintenance or are “maintenance free.”
+[iso-14971-and-medical-device-rm-0306] slide:29:p:19 | Examples from ISO 24971
+[iso-14971-and-medical-device-rm-0307] slide:29:p:20 | Examples from IEC 62366-1
+[iso-14971-and-medical-device-rm-0308] slide:30:p:1 | Risk Control
+[iso-14971-and-medical-device-rm-0309] slide:30:p:2 | Examples of Information for Safety RCMs:
+[iso-14971-and-medical-device-rm-0310] slide:30:p:3 | Risk Control Option
+[iso-14971-and-medical-device-rm-0311] slide:30:p:4 | Example
+[iso-14971-and-medical-device-rm-0312] slide:30:p:5 | - placing warnings on the medical device;
+[iso-14971-and-medical-device-rm-0313] slide:30:p:6 | Warning: Do not use after [expiry date].
+[iso-14971-and-medical-device-rm-0314] slide:30:p:7 | - including contra-indications in the accompanying documentation;
+[iso-14971-and-medical-device-rm-0315] slide:30:p:8 | Do not use with neonates.
+[iso-14971-and-medical-device-rm-0316] slide:30:p:9 | - providing instructions to support correct use and to avoid use error;
+[iso-14971-and-medical-device-rm-0317] slide:30:p:10 | Apply epinephrine injector to the middle of your outer thigh (upper leg), through clothing if necessary. Do not inject into your veins, buttocks, fingers, toes, hands or feet. Hold the leg of young children firmly in place before and during injection to prevent injuries.
+[iso-14971-and-medical-device-rm-0318] slide:30:p:11 | - providing instructions to use personal protective equipment;
+[iso-14971-and-medical-device-rm-0319] slide:30:p:12 | Use gloves and eyeglasses when handling toxic or hazardous materials.
+[iso-14971-and-medical-device-rm-0320] slide:30:p:13 | - providing instructions about measures to reduce the severity of harm;
+[iso-14971-and-medical-device-rm-0321] slide:30:p:14 | Rinse immediately with water after contamination with hazardous substances.
+[iso-14971-and-medical-device-rm-0322] slide:30:p:15 | - providing training to users on how to use the medical device correctly;
+[iso-14971-and-medical-device-rm-0323] slide:30:p:16 | Training program for operators of radiotherapy equipment or for home-use dialysis machines. Note: Operators may be required to certify to training completion.
+[iso-14971-and-medical-device-rm-0324] slide:30:p:17 | - providing instructions relating to installation and maintenance during the lifetime of the medical device
+[iso-14971-and-medical-device-rm-0325] slide:30:p:18 | Maintenance intervals, maximum expected lifetime, how to dispose of the medical device properly.
+[iso-14971-and-medical-device-rm-0326] slide:31:p:1 | Risk Control
+[iso-14971-and-medical-device-rm-0327] slide:31:p:2 | Examples of RCM options for various devices:
+[iso-14971-and-medical-device-rm-0328] slide:31:p:3 | Examples from ISO 24971
+[iso-14971-and-medical-device-rm-0329] slide:31:p:4 | Examples from IEC 62366-1
+[iso-14971-and-medical-device-rm-0330] slide:32:p:1 | Risk Control - Verification
+[iso-14971-and-medical-device-rm-0331] slide:32:p:2 | Verification of implementation and effectiveness of the risk control measures:
+[iso-14971-and-medical-device-rm-0332] slide:32:p:3 | Objective evidence must be provided to show that all risk control measures have been implemented and that the RCMs effectively reduce risk
+[iso-14971-and-medical-device-rm-0333] slide:32:p:4 | Examples of RCM verification of implementation may include design documentation, design specifications, manufacturing process documentation and process qualification
+[iso-14971-and-medical-device-rm-0334] slide:32:p:5 | Examples of verification of RCM effectiveness may include design verification, design validation – including usability validation, and manufacturing process validation
+[iso-14971-and-medical-device-rm-0335] slide:33:p:1 | Risk Control - Verification
+[iso-14971-and-medical-device-rm-0336] slide:33:p:2 | Verification of implementation and effectiveness examples
+[iso-14971-and-medical-device-rm-0337] slide:33:p:3 | Examples from ISO 24971
+[iso-14971-and-medical-device-rm-0338] slide:34:p:1 | Risk Control - Residual Risk Evaluation
+[iso-14971-and-medical-device-rm-0339] slide:34:p:2 | Residual risk is the risk remaining after risk control measures have been implemented and verified to be effective
+[iso-14971-and-medical-device-rm-0340] slide:34:p:3 | The risk is re-estimated and re-evaluated using the same risk estimation and risk evaluation process described in detail above
+[iso-14971-and-medical-device-rm-0341] slide:34:p:4 | If a residual risk is not judged acceptable using the defined acceptability criteria, further risk control measures must be considered
+[iso-14971-and-medical-device-rm-0342] slide:34:p:5 | If further risk control is not practicable for an unacceptable risk, a benefit-risk analysis must be performed to determine if the benefits of the intended use outweigh the residual risk
+[iso-14971-and-medical-device-rm-0343] slide:34:p:6 | If the benefits do not outweigh the residual risk, then the manufacturer may consider modifying the medical device or its intended use. Otherwise, the risk remains unacceptable
+[iso-14971-and-medical-device-rm-0344] slide:35:p:1 | Evaluation of Overall Residual Risk
+[iso-14971-and-medical-device-rm-0345] slide:35:p:2 | After all risk control measures have been implemented and verified, the manufacturer shall evaluate the overall residual risk posed by the medical device, taking into account the contributions of all residual risks, in relation to the benefits of the intended use, using the method and the criteria for acceptability of the overall residual risk defined in the risk management plan
+[iso-14971-and-medical-device-rm-0346] slide:36:p:1 | Evaluation of Overall Residual Risk (vs. Benefit)
+[iso-14971-and-medical-device-rm-0347] slide:36:p:2 | The evaluation of overall residual risk is the point where residual risk is viewed from a broad perspective
+[iso-14971-and-medical-device-rm-0348] slide:36:p:3 | Even though all individual risks have been reduced to an acceptable level (or have been accepted based on benefit-risk analysis) from the risk control process step, the overall device risk must be evaluated against the benefit the device provides:
+[iso-14971-and-medical-device-rm-0349] slide:36:p:4 | Benefit: positive impact or desirable outcome of the use of a medical device on the health of an individual, or a positive impact on patient management or public health
+[iso-14971-and-medical-device-rm-0350] slide:36:p:5 | This step is particularly important for complex medical devices and for medical devices with many individual risks. The evaluation can lead to the conclusion that the medical device is safe and effective – but only if its benefits outweigh its risks
+[iso-14971-and-medical-device-rm-0351] slide:36:p:6 | The overall residual risk must be evaluated by persons with the knowledge, experience and authority to perform such tasks. Ultimately, the evaluation should be based on expert judgment with essential roles for application knowledge and clinical expertise
+[iso-14971-and-medical-device-rm-0352] slide:36:p:7 | Only when a device’s clinical benefit exceeds its overall residual risk can it be commercialized
+[iso-14971-and-medical-device-rm-0353] slide:37:p:1 | Device Risk Management Key Takeaways
+[iso-14971-and-medical-device-rm-0354] slide:37:p:2 | ISO 14971 provides the framework for successful medical device risk management. Use it and other applicable standards as a baseline for developing safe and effective devices
+[iso-14971-and-medical-device-rm-0355] slide:37:p:3 | Safe and effective for their intended use with their intended users in their intended use environment
+[iso-14971-and-medical-device-rm-0356] slide:37:p:4 | All devices have some level of risk. The benefits of using a device must outweigh its risks
+[iso-14971-and-medical-device-rm-0357] slide:37:p:5 | Risk analysis and Risk control are key activities for successfully managing device risks
+[iso-14971-and-medical-device-rm-0358] slide:37:p:6 | Look to standards and guidance documents as well as readily available real-world data on your device for sources of hazards, hazardous situations, and harms
+[iso-14971-and-medical-device-rm-0359] slide:37:p:7 | Involve clinical and medical specialists when assessing harms and severities
+[iso-14971-and-medical-device-rm-0360] slide:38:p:1 | Q &amp; A
+[iso-14971-and-medical-device-rm-0361] notes:1:p:1 | Quick introductions
+[iso-14971-and-medical-device-rm-0362] notes:2:p:1 | All devices will have some level of risk. What is “Acceptable” varies from culture to culture and person to person. Device risk has to be considered in the context of the benefits it provides weighed against the risks. The broad definition of “Unacceptable risk” is if the benefits a device provides does not outweigh its risks
+[iso-14971-and-medical-device-rm-0363] notes:2:p:2 | Definition of Risk: the combination of the probability of occurrence of harm and the severity of that harm
+[iso-14971-and-medical-device-rm-0364] notes:2:p:3 | 2
+[iso-14971-and-medical-device-rm-0365] notes:3:p:1 | Goal is to present a high-level overview of some of the key elements of medical device RM based on ISO 14971 – internationally recognized device RM standard
+[iso-14971-and-medical-device-rm-0366] notes:3:p:2 | 3
+[iso-14971-and-medical-device-rm-0367] notes:4:p:1 | How does ISO 14971 fit into the regulatory framework? Standards are voluntary but in general can help implement the intent of the regulations
+[iso-14971-and-medical-device-rm-0368] notes:4:p:2 | Note: level of detail generally decreases moving up the triangle. Companies use standards and guidance to inform their policies and procedure to meet the requirements of the regulations and laws.
+[iso-14971-and-medical-device-rm-0369] notes:4:p:3 | 5
+[iso-14971-and-medical-device-rm-0370] notes:5:p:1 | There are many medical device standards that should be used to help develop safe and effective products. I’ve included a few for reference. Note specifically IEC 62366-1 for the usability engineering process.
+[iso-14971-and-medical-device-rm-0371] notes:5:p:2 | 6
+[iso-14971-and-medical-device-rm-0372] notes:6:p:1 | Note the difference between process standards and product safety standards. Process standards define requirements for a process while product safety standards identify hazards/risks and requirements for controlling those risks.
+[iso-14971-and-medical-device-rm-0373] notes:6:p:2 | 7
+[iso-14971-and-medical-device-rm-0374] notes:7:p:1 | Most standards are voluntary (at least for FDA). However, FDA and other regulatory bodies “recognize” certain standards as “state of the art” and being able to show conformance to a recognized standard reduces regulatory burden for companies. Product safety standards are good sources of hazards and possible controls. Same with FDA guidance documents.
+[iso-14971-and-medical-device-rm-0375] notes:7:p:2 | 8
+[iso-14971-and-medical-device-rm-0376] notes:8:p:1 | Note that 14971 provides high level requirements for RM but does not specify implementation. It leaves the actual implementation up to medical device manufacturers
+[iso-14971-and-medical-device-rm-0377] notes:8:p:2 | 9
+[iso-14971-and-medical-device-rm-0378] notes:9:p:1 | 14971 is a process standard – defines a standardized RM process framework. Steps in the process are defined in the flow chart. Note that process steps include inputs and generate outputs used in other steps. Also note that RM is iterative and outputs from the process are used in other QMS processes like design controls and human factors (and vice versa). Focus on Risk Analysis, Risk Evaluation, Risk Control, Evaluation of Overall Residual Risk
+[iso-14971-and-medical-device-rm-0379] notes:9:p:2 | 10
+[iso-14971-and-medical-device-rm-0380] notes:10:p:1 | Usability (and use error) is a key component of medical device risk management. This diagram taken from 62366-1 shows the interactions between the usability engineering process and the risk management process define in ISO 14971
+[iso-14971-and-medical-device-rm-0381] notes:10:p:2 | 11
+[iso-14971-and-medical-device-rm-0382] notes:11:p:1 | Definitions from ISO 14971 have been included for reference. Key concepts for analyzing risk are Intended use, Hazard, Hazardous situation and Harm.
+[iso-14971-and-medical-device-rm-0383] notes:11:p:2 | 12
+[iso-14971-and-medical-device-rm-0384] notes:12:p:1 | This is the process flow diagram from before. Discuss Risk analysis first. Defined as the Systematic use of available information to identify hazards and to estimate the risk
+[iso-14971-and-medical-device-rm-0385] notes:12:p:2 | 14
+[iso-14971-and-medical-device-rm-0386] notes:13:p:1 | Risk analysis is the “Systematic use of available information to identify hazards and to estimate the risk”
+[iso-14971-and-medical-device-rm-0387] notes:13:p:2 | Risk analysis includes several required steps listed here. The first two bullets are inputs to the RA process - generally taken directly from the usability engineering process. Refer to the 14971 – 62366-1 interaction diagram
+[iso-14971-and-medical-device-rm-0388] notes:13:p:3 | 15
+[iso-14971-and-medical-device-rm-0389] notes:14:p:1 | Emphasize: “reasonably foreseeable misuse” and “normal and fault conditions”
+[iso-14971-and-medical-device-rm-0390] notes:14:p:2 | and sources of risks – traditionally design, manufacturing and use
+[iso-14971-and-medical-device-rm-0391] notes:14:p:3 | 16
+[iso-14971-and-medical-device-rm-0392] notes:15:p:1 | Hazard identification is a key step in Risk analysis. Standards are a good source of examples of hazards and hazardous situations. Annex C in 14971 lists categories that many companies use a “checklist” when identifying hazards to be analyzed based on a specific device
+[iso-14971-and-medical-device-rm-0393] notes:15:p:2 | 17
+[iso-14971-and-medical-device-rm-0394] notes:16:p:1 | Here are some examples taken from 14971 and 62366. The analysis starts with identification of a hazard – e.g., high voltage, identifies a hazardous situation, the possible harms and a foreseeable sequence of events that could expose the patient to the hazard.
+[iso-14971-and-medical-device-rm-0395] notes:16:p:2 | After Hazards have been identified, Sequences of Events, Hazardous situations and potential harms have been identified the next step in Risk Analysis is to estimate the risk.
+[iso-14971-and-medical-device-rm-0396] notes:16:p:3 | 18
+[iso-14971-and-medical-device-rm-0397] notes:17:p:1 | Recall that risk consists of two parts – severity of harm and the probability that the harm (of a certain severity) occurs. Harm severity and probability are evaluated separately
+[iso-14971-and-medical-device-rm-0398] notes:17:p:2 | 19
+[iso-14971-and-medical-device-rm-0399] notes:18:p:1 | Qualitative vs Quantitative: quantitative should only be used when statistically significant probability data exists
+[iso-14971-and-medical-device-rm-0400] notes:18:p:2 | 20
+[iso-14971-and-medical-device-rm-0401] notes:19:p:1 | Note: the P1 x P2 approach is not required. This shows an example of a risk matrix and how it’s often used for risk evaluation in the device industry.  However, the approach is not required by 14971 although 24971 shows an example. Each manufacturer has to define its own risk estimation process and scales.
+[iso-14971-and-medical-device-rm-0402] notes:19:p:2 | 21
+[iso-14971-and-medical-device-rm-0403] notes:20:p:1 | After risk has been estimated it must be evaluated. Risk evaluation is used to determine if risk control is required to reduce a risk to an acceptable level, i.e., it’s input to the risk control process step
+[iso-14971-and-medical-device-rm-0404] notes:20:p:2 | 22
+[iso-14971-and-medical-device-rm-0405] notes:21:p:1 | This is a commonly used approach but is not in 14971. Each device company has to define its own risk evaluation process and risk acceptability. 24971 provides some examples.
+[iso-14971-and-medical-device-rm-0406] notes:21:p:2 | 23
+[iso-14971-and-medical-device-rm-0407] notes:22:p:1 | 24
+[iso-14971-and-medical-device-rm-0408] notes:23:p:1 | 26
+[iso-14971-and-medical-device-rm-0409] notes:24:p:1 | Definitions of what each type of control might entail. More specific examples to follow
+[iso-14971-and-medical-device-rm-0410] notes:24:p:2 | 27
+[iso-14971-and-medical-device-rm-0411] notes:25:p:1 | These are included for reference. Again, standards and TIRs are good sources for controls
+[iso-14971-and-medical-device-rm-0412] notes:25:p:2 | 28
+[iso-14971-and-medical-device-rm-0413] notes:26:p:1 | 29
+[iso-14971-and-medical-device-rm-0414] notes:27:p:1 | 30
+[iso-14971-and-medical-device-rm-0415] notes:28:p:1 | Examples for reference
+[iso-14971-and-medical-device-rm-0416] notes:28:p:2 | 31
+[iso-14971-and-medical-device-rm-0417] notes:29:p:1 | After risk control measures have been identified they are implemented in the design or manufacturing process and have to be verified to show that they are effective in reducing risk. Note: Design V&amp;V is sometimes used to show VoE but these are different concepts
+[iso-14971-and-medical-device-rm-0418] notes:29:p:2 | 32
+[iso-14971-and-medical-device-rm-0419] notes:30:p:1 | 33
+[iso-14971-and-medical-device-rm-0420] notes:31:p:1 | This is an iterative process
+[iso-14971-and-medical-device-rm-0421] notes:31:p:2 | 34
+[iso-14971-and-medical-device-rm-0422] notes:32:p:1 | One more key step – Overall Residual Risk acceptability
+[iso-14971-and-medical-device-rm-0423] notes:32:p:2 | 35
+[iso-14971-and-medical-device-rm-0424] notes:33:p:1 | Requires weighing the totality of risks against the benefits of using the device
+[iso-14971-and-medical-device-rm-0425] notes:33:p:2 | 36
+</code></pre></div>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+  
+  
+  
+    
+    <hr>
+    
+    <h2 id="__comments">
+      评论
+      <a href="#__comments" class="headerlink" title="评论">#</a>
+    </h2>
+    
+    
+    <script src="https://giscus.app/client.js"
+            data-repo="jeffliulab/ai-notes-discussion"
+            data-repo-id="R_kgDOQnsUAQ"
+            data-category="General"
+            data-category-id="DIC_kwDOQnsUAc4Cztsg"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="preferred_color_scheme"
+            data-lang="zh-CN"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+    
+  
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.top", "navigation.path", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../site_extra_styles/javascripts/katex.js"></script>
+      
+        <script src="../../site_extra_styles/javascripts/tab_dropdown.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>

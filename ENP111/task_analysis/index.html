@@ -1,0 +1,2180 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Jeff Liu">
+      
+      
+        <link rel="canonical" href="https://jeffliulab.github.io/hfe-notes/ENP111/task_analysis/">
+      
+      
+        <link rel="prev" href="../swiss_cheese/">
+      
+      
+        <link rel="next" href="../urra_methods/">
+      
+      
+        
+          <link rel="alternate" href="./" hreflang="zh">
+        
+          <link rel="alternate" href="../../en/ENP111/task_analysis/" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>任务分析 - 人因工程课程笔记</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="../../site_extra_styles/stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../site_extra_styles/stylesheets/correct_bullet_point.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="人因工程课程笔记" class="md-header__button md-logo" aria-label="人因工程课程笔记" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            人因工程课程笔记
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              任务分析
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="选择当前语言">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="zh" class="md-select__link">
+              中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../en/ENP111/task_analysis/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  ENP111 Use-related Risks
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ENP112/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  ENP112 Engineering Forensics
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="人因工程课程笔记" class="md-nav__button md-logo" aria-label="人因工程课程笔记" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    人因工程课程笔记
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ENP111 Use-related Risks
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ENP111 Use-related Risks
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../human_factors_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    人因导论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../human_error_frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    人为失误框架
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../swiss_cheese/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Swiss Cheese 模型
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    任务分析
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    任务分析
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章重点
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先记住方法定位
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        这个方法解决什么问题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输入与输出是什么
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        操作步骤怎么走
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        和前后方法是什么关系
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 task analysis 的颗粒度会直接决定后面分析质量
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-analysis-critical-task" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 task analysis 最后一定会走到 critical task
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pbj" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么课堂里的 PB&amp;J 例子其实很重要
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-analysis_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎样判断一张 task analysis 表已经能拿去做后续工作
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pbj_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        从 PB&amp;J 到正式使用任务，课堂真正想让你学会什么
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资料范围与相关主题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        相关主题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原文转写与来源映射
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../urra_methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    URRA方法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../known_problem_and_event_tree/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Known Problem 与事件树
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../iso_14971/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ISO 14971
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../medical_device_urra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    医疗器械URRA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../medical_device_use_errors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    医疗器械使用错误
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../epipen_workbook/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EpiPen工作簿
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ENP112/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ENP112 Engineering Forensics
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ENP112 Engineering Forensics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/course_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程导论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/error_analysis_methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    错误分析方法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/aviation_automation_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    航空与自动化导论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/crew_resource_management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CRM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/displays_and_alerts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    显示与告警
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/checklists_and_procedures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    检查单与程序
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/automated_vehicles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    自动化车辆
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/attention_and_monitoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    注意与监控
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/fatigue_and_sleep/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    疲劳与睡眠
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/stress_and_decision_making/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    压力与决策
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/situation_awareness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    情境意识
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/spatial_disorientation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    空间定向错觉
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/operational_risk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operational Risk
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/cardosi_case/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cardosi案例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/f16_analysis_prompts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F16分析提示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/boeing_737max_and_ethics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Boeing 737 Max与伦理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章重点
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先记住方法定位
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        这个方法解决什么问题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        输入与输出是什么
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        操作步骤怎么走
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        和前后方法是什么关系
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-analysis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 task analysis 的颗粒度会直接决定后面分析质量
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-analysis-critical-task" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 task analysis 最后一定会走到 critical task
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pbj" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么课堂里的 PB&amp;J 例子其实很重要
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#task-analysis_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        怎样判断一张 task analysis 表已经能拿去做后续工作
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pbj_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        从 PB&amp;J 到正式使用任务，课堂真正想让你学会什么
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        本章总结
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资料范围与相关主题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        相关主题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原文转写与来源映射
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="导航栏" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    首页
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    ENP111 Use-related Risks
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+
+
+<h1 id="_1">任务分析</h1>
+<p>任务分析这一页的作用，是把一段连续使用过程拆成可观察、可讨论、可映射风险的步骤链。</p>
+<div class="admonition note">
+<p class="admonition-title">本页主问题</p>
+<p>如果连任务本身都没拆清楚，
+我们又怎么知道错误会发生在哪一步、
+critical task 在哪里、
+控制措施该落到什么环节？</p>
+</div>
+<h2 id="_2">本章重点</h2>
+<ul>
+<li>任务分析的目标不是复述说明书，
+  而是把真实任务需求拆成步骤、
+  判断和信息需求。</li>
+<li>它是后续 critical task、
+  use error 和 URRA 的前提。</li>
+<li>好的 task analysis 既看理想流程，
+  也看真实工作中的偏差和替代路径。</li>
+<li>任务拆得越具体，
+  后续风险分析越能落地。</li>
+</ul>
+<h2 id="_3">先记住方法定位</h2>
+<div class="admonition tip">
+<p class="admonition-title">先记住这个方法的定位</p>
+<p>先记住这个方法的定位：
+如果任务流没有被拆出来，
+后面的风险分析几乎都会漂在空中。</p>
+</div>
+<h2 id="_4">这个方法解决什么问题</h2>
+<p>task analysis 把“用户在用产品”这件看起来连续的事，
+拆成一个个可分析的 use step、
+subtask、
+信息需求和操作要求。
+这样做的目的，
+是让后续所有讨论都能回到具体环节，
+而不是停留在抽象判断上。</p>
+<h2 id="_5">输入与输出是什么</h2>
+<p>输入通常包括：
+目标任务、
+用户特征、
+使用环境、
+设备说明、
+现有流程和观察到的真实使用方式。</p>
+<p>输出通常包括：</p>
+<ul>
+<li>明确的任务步骤</li>
+<li>每一步的信息、判断和动作要求</li>
+<li>关键失败点</li>
+<li>能进入 URRA 或 validation 的结构化任务表</li>
+</ul>
+<h2 id="_6">操作步骤怎么走</h2>
+<p>可以按这条线做：</p>
+<ol>
+<li>先明确用户目标和起止条件。</li>
+<li>把任务拆成能被观察和讨论的 use step。</li>
+<li>为每一步补上需要看见什么、判断什么、操作什么。</li>
+<li>标出一旦失败就会影响安全或疗效的关键步骤。</li>
+<li>再把这些关键步骤带入 use error 和 risk analysis。</li>
+</ol>
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-08-image8.png" alt="这张图要看懂的是：一张看似简单的操作说明，其实已经包含准备、姿态、方向、按压、保持和收尾等多个可拆分步骤。" loading="lazy">
+  <figcaption>这张图要看懂的是：一张看似简单的操作说明，其实已经包含准备、姿态、方向、按压、保持和收尾等多个可拆分步骤。</figcaption>
+</figure>
+
+<div class="admonition warning">
+<p class="admonition-title">最容易做错的地方</p>
+<p>最常见的问题，
+是把说明书顺序原样抄下来，
+却没有问用户在真实环境里会不会跳步、
+补救、
+回退或走替代路径。</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">worked example：注射器任务为什么不能只写“给药”</p>
+<p>如果表里只写“给药”，
+后面就看不见装配、
+剂量设定、
+确认、
+按压保持和废弃处理这些不同失败点。
+把任务拆开后，
+critical task 和风险控制才有地方落脚。</p>
+</div>
+<h2 id="_7">和前后方法是什么关系</h2>
+<p>前面 human error 页告诉你怎样读错误类型，
+task analysis 则告诉你错误会落在哪个任务节点上。
+后面的 URRA、
+critical task 和 workbook 页面，
+都会直接把这里拆出来的任务流拿去继续写。</p>
+<div class="admonition note">
+<p class="admonition-title">一句话结论</p>
+<p>task analysis 的价值，
+不在于“列步骤”，
+而在于把风险分析绑到真实工作流上。</p>
+</div>
+<h2 id="task-analysis">为什么 task analysis 的颗粒度会直接决定后面分析质量</h2>
+<p>task analysis 写得太粗时，
+后面所有风险判断都会被迫写粗。
+因为只要任务步骤仍然停在“准备设备”“完成给药”这种大块上，
+团队就看不见真正高风险的感知、
+确认、
+对齐、
+保持和恢复节点。</p>
+<p>所以这页真正要练的，
+不只是会拆步骤，
+而是会把步骤拆到足以支撑后续 use error、
+critical task 和 validation 的层级。
+颗粒度不是写得越碎越好，
+而是要碎到能支撑判断、
+但又不碎到失去任务结构。</p>
+<h2 id="task-analysis-critical-task">为什么 task analysis 最后一定会走到 critical task</h2>
+<p>任务分析不能停在“步骤列完了”。
+真正有价值的地方，
+是在步骤表里继续问：
+哪一步一旦出错，
+就会直接影响安全、
+疗效、
+剂量、
+识别或恢复机会。</p>
+<p>这就是 critical task 的来源。
+它不是额外附加的一列，
+而是 task analysis 真正的落点。
+因为只有把关键步骤标出来，
+团队才知道哪些节点值得投入更强的界面设计、
+确认机制、
+培训和验证资源。</p>
+<div class="admonition example">
+<p class="admonition-title">案例：为什么“确认针头已装好”这种步骤常常比“按压给药”更值得盯住</p>
+<p>很多团队天然会把最显眼的动作当成主步骤，
+但任务分析常常会发现，
+真正高风险的点在更早环节。
+例如装配确认、
+剂量核对、
+解锁顺序和使用前准备，
+一旦漏掉，
+后面的执行再熟练也救不回来。
+这正是为什么 task analysis 必须把前置步骤写细。</p>
+</div>
+<h2 id="pbj">为什么课堂里的 PB&amp;J 例子其实很重要</h2>
+<p>课件里用 PB&amp;J 不是为了讲一个轻松例子，
+而是为了证明一件事：
+只要任务开始被认真拆开，
+很多原本“理所当然”的隐含步骤就会浮出来。</p>
+<p>例如洗手、
+检查原料状态、
+准备顺序、
+清理和收尾，
+这些都不是装饰步骤。
+它们说明 task analysis 的核心不是“把主要动作写出来”，
+而是把真实完成任务所需要的全部支撑条件也写出来。
+医疗器械、
+航空程序和自动化系统里的任务分析，
+逻辑上完全一样。</p>
+<h2 id="task-analysis_1">怎样判断一张 task analysis 表已经能拿去做后续工作</h2>
+<p>一张 task analysis 表真正可用时，
+团队至少能用它稳定回答四个问题：</p>
+<ul>
+<li>用户这一步到底要完成什么</li>
+<li>这一步必须看到、判断和操作什么</li>
+<li>一旦在这里出错，后果会往哪条风险链走</li>
+<li>这一行能不能继续支撑 critical task、URRA 和 validation</li>
+</ul>
+<p>如果表只能告诉你“步骤名称”，
+却回答不了这些问题，
+它通常还只是半成品。
+task analysis 不是目录，
+而是后续风险工作的骨架。</p>
+<h2 id="pbj_1">从 PB&amp;J 到正式使用任务，课堂真正想让你学会什么</h2>
+<p>PB&amp;J 例子最有用的地方，
+在于它把“隐含步骤”硬生生拉到台面上。
+很多人一开始只会写“拿面包、
+抹花生酱、
+抹果酱、
+合上”，
+但课程故意提醒你：
+洗手、
+检查是否过期、
+准备位置、
+开封方式、
+清理收尾，
+这些都可能决定任务是否安全、
+干净、
+有效完成。</p>
+<p>这和正式产品任务没有本质区别。
+到了注射器、
+自动注射器或复杂设备场景，
+只是支持条件更多、
+后果更高而已。
+PB&amp;J 练的不是食物流程，
+而是把“看起来理所当然”的任务支撑条件全部写出来的习惯。</p>
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-04-image2.jpeg" alt="这张图要看懂的是：PB&amp;J 被放进课件里不是为了轻松一下，而是为了提醒你，看似简单的任务也隐藏着大量没有被说出口的步骤与前提。" loading="lazy">
+  <figcaption>这张图要看懂的是：PB&amp;J 被放进课件里不是为了轻松一下，而是为了提醒你，看似简单的任务也隐藏着大量没有被说出口的步骤与前提。</figcaption>
+</figure>
+
+<div class="admonition example">
+<p class="admonition-title">案例：把 PB&amp;J 改写成注射器任务表时，哪些隐藏步骤会突然变关键</p>
+<p>一旦把 PB&amp;J 的思路迁到注射器任务表里，
+隐藏步骤会迅速跳出来：
+确认药液与患者匹配、
+检查针头是否牢固、
+确认剂量窗口、
+保持注射时间、
+处理废弃物。
+这些都不是“附属细节”，
+而是决定 harm path 会不会被打开的关键节点。
+PB&amp;J 之所以重要，
+就是因为它先用低风险例子把这种观察方式练熟。</p>
+</div>
+<h2 id="_8">本章总结</h2>
+<div class="admonition tip">
+<p class="admonition-title">复习时重点记这几条</p>
+<ul>
+<li>task analysis 先把任务结构拆清楚，
+  再谈风险。</li>
+<li>输入包括用户、
+  环境、
+  流程和真实使用方式。</li>
+<li>输出应该支持 critical task、
+  URRA 和 validation。</li>
+<li>最怕把理想说明书当成真实工作流。</li>
+</ul>
+</div>
+<h2 id="_9">资料范围与相关主题</h2>
+<p>正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。</p>
+<ul>
+<li>所属分区: <code>ENP111 Use-related Risks</code></li>
+<li>关联源文件数: 1</li>
+<li>文本单元数: 80</li>
+<li>配图/预览数: 8</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Type</th>
+<th style="text-align: right;">Text Units</th>
+<th style="text-align: right;">Visuals</th>
+<th>Download</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>08 Task Analysis.pptx</code></td>
+<td><code>pptx</code></td>
+<td style="text-align: right;">80</td>
+<td style="text-align: right;">8</td>
+<td><a href="../../assets/source_files/ENP111/08%20Task%20Analysis.pptx">open</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_10">相关主题</h2>
+<ul>
+<li><a href="../urra_methods/">URRA 方法</a></li>
+<li><a href="../epipen_workbook/">EpiPen URRA 工作簿</a></li>
+<li><a href="../medical_device_use_errors/">医疗器械中的使用错误</a></li>
+</ul>
+<h2 id="_11">原文转写与来源映射</h2>
+<p>下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 <code>unit_id</code> 都能在 <code>data/coverage_map.json</code> 中找到对应页面映射。</p>
+<details class="info">
+<summary>08 Task Analysis.pptx | 80 text units</summary>
+<p>下载原件: <a href="../../assets/source_files/ENP111/08%20Task%20Analysis.pptx">08 Task Analysis.pptx</a>
+映射页面: <code>task_analysis</code></p>
+<div class="highlight"><pre><span></span><code>[08-task-analysis-0001] slide:1:p:1 | Sami Durrani PhD and Eric Bergman PhD
+[08-task-analysis-0002] slide:1:p:2 | Task Analysis
+[08-task-analysis-0003] slide:2:p:1 | 2
+[08-task-analysis-0004] slide:2:p:2 | There are many different forms of task analysis
+[08-task-analysis-0005] slide:2:p:3 | Hierarchical Task Analysis (HTA)
+[08-task-analysis-0006] slide:2:p:4 | Cognitive Task Analysis (CTA)
+[08-task-analysis-0007] slide:2:p:5 | And many more variations and modifications
+[08-task-analysis-0008] slide:2:p:6 | In medical device human factors, a “task analysis” is typically a modified HTA
+[08-task-analysis-0009] slide:2:p:7 | Types of task analysis
+[08-task-analysis-0010] slide:3:p:1 | 3
+[08-task-analysis-0011] slide:3:p:2 | Identify task
+[08-task-analysis-0012] slide:3:p:3 | Decompose task into sub-tasks (if needed)
+[08-task-analysis-0013] slide:3:p:4 | List use-steps (if known and if needed)
+[08-task-analysis-0014] slide:3:p:5 | Identify potential use-errors
+[08-task-analysis-0015] slide:3:p:6 | Use PCA to help identify potential causes and potential use errors
+[08-task-analysis-0016] slide:3:p:7 | Key steps in conducting a task analysis
+[08-task-analysis-0017] slide:4:p:1 | 4
+[08-task-analysis-0018] slide:4:p:2 | Simple Example: Peanut Butter &amp; Jelly
+[08-task-analysis-0019] slide:5:p:1 | 5
+[08-task-analysis-0020] slide:5:p:2 | Task 1: Gather supplies
+[08-task-analysis-0021] slide:5:p:3 | PB&amp;J
+[08-task-analysis-0022] slide:5:p:4 | Task 2: Prepare bread
+[08-task-analysis-0023] slide:5:p:5 | Use steps:
+[08-task-analysis-0024] slide:5:p:6 | Remove bag slip
+[08-task-analysis-0025] slide:5:p:7 | Open bag
+[08-task-analysis-0026] slide:5:p:8 | Grasp end piece
+[08-task-analysis-0027] slide:5:p:9 | Move it out of the way
+[08-task-analysis-0028] slide:5:p:10 | Grasp next two pieces
+[08-task-analysis-0029] slide:5:p:11 | Take them out of bag
+[08-task-analysis-0030] slide:5:p:12 | Place bread slices on plate, side-by-side
+[08-task-analysis-0031] slide:5:p:13 | BUT WAIT!
+[08-task-analysis-0032] slide:5:p:14 | We forgot to wash our hands!
+[08-task-analysis-0033] slide:5:p:15 | We also forgot to make sure the ingredients aren’t expired!
+[08-task-analysis-0034] slide:6:p:1 | 6
+[08-task-analysis-0035] slide:6:p:2 | Task 3: Spread peanut butter on slice 1
+[08-task-analysis-0036] slide:6:p:3 | Task 4: Spread jam on slice 2
+[08-task-analysis-0037] slide:6:p:4 | Task 5: Combine slices together
+[08-task-analysis-0038] slide:6:p:5 | Task 6: Cut sandwich diagonally (optional)
+[08-task-analysis-0039] slide:6:p:6 | Task 7: Eat
+[08-task-analysis-0040] slide:6:p:7 | Task 8: Clean up and store supplies
+[08-task-analysis-0041] slide:6:p:8 | PBJ
+[08-task-analysis-0042] slide:7:p:1 | 7
+[08-task-analysis-0043] slide:7:p:2 | Let’s do a quick task analysis: Autoinjector
+[08-task-analysis-0044] slide:8:p:1 | Autoinjector analysis continued…
+[08-task-analysis-0045] slide:8:p:2 | 8
+[08-task-analysis-0046] slide:9:p:1 | 9
+[08-task-analysis-0047] slide:9:p:2 | Define preliminary tasks and use steps
+[08-task-analysis-0048] slide:9:p:3 | OK to make assumptions early on
+[08-task-analysis-0049] slide:9:p:4 | Develop cognitive walkthrough and design sketches/mock-ups
+[08-task-analysis-0050] slide:9:p:5 | Do a preliminary hazard analysis (PHA)
+[08-task-analysis-0051] slide:9:p:6 | But what if you don’t have a design yet?
+[08-task-analysis-0052] slide:9:p:7 | Key concept:
+[08-task-analysis-0053] slide:9:p:8 | Don’t need a device design to start identifying potential use errors
+[08-task-analysis-0054] slide:10:p:1 | 10
+[08-task-analysis-0055] slide:10:p:2 | PHA Example:  Infusion Pump
+[08-task-analysis-0056] slide:10:p:3 | Hazard
+[08-task-analysis-0057] slide:10:p:4 | Potential Causes*
+[08-task-analysis-0058] slide:10:p:5 | *note: not UEs yet
+[08-task-analysis-0059] slide:10:p:6 | Potential Consequences
+[08-task-analysis-0060] slide:10:p:7 | Drug over-infusion
+[08-task-analysis-0061] slide:10:p:8 | User data entry error
+[08-task-analysis-0062] slide:10:p:9 | User does not understand amount programmed
+[08-task-analysis-0063] slide:10:p:10 | Overdose
+[08-task-analysis-0064] slide:10:p:11 | Battery dies mid-treatment
+[08-task-analysis-0065] slide:10:p:12 | User does not recharge battery
+[08-task-analysis-0066] slide:10:p:13 | User does not know battery state
+[08-task-analysis-0067] slide:10:p:14 | Underdose
+[08-task-analysis-0068] slide:10:p:15 | Contamination at infusion site
+[08-task-analysis-0069] slide:10:p:16 | User does not use sterile components
+[08-task-analysis-0070] slide:10:p:17 | Infection
+[08-task-analysis-0071] notes:1:p:1 | Quick introductions
+[08-task-analysis-0072] notes:2:p:1 | Hierarchical Task Analysis (HTA): HTA is one of the most widely used methods. It breaks down complex tasks into a hierarchical structure, showing the relationships between higher-level goals and lower-level sub-tasks. HTA is often used to design and evaluate user interfaces and to identify potential usability issues.
+[08-task-analysis-0073] notes:2:p:2 | Cognitive Task Analysis (CTA): CTA focuses on understanding the cognitive processes, strategies, and decision-making involved in completing a task. It is particularly useful in complex domains such as aviation, healthcare, and military operations. Techniques like think-aloud protocols, cognitive interviews, and knowledge elicitation are employed in CTA.
+[08-task-analysis-0074] notes:2:p:3 | Event-Based Task Analysis: Event-based analysis focuses on specific events or incidents within a task. It is useful for understanding how users respond to unexpected situations and how system design can support effective responses
+[08-task-analysis-0075] notes:3:p:1 | Key note, task analysis are hard, time consuming and require many iterations.
+[08-task-analysis-0076] notes:3:p:2 | OK, let’s assume that we went back and did the correction. Added in those key steps. Let’s keep on going.
+[08-task-analysis-0077] notes:4:p:1 | Oh man, I’m not even hungry even more. This simple example is isn’t as simple as I thought. To move us along, I am going to skip writing the use steps and talk about them.
+[08-task-analysis-0078] notes:4:p:2 | Two knives to avoid “contaminating” jar?
+[08-task-analysis-0079] notes:6:p:1 | Task analysis can be done even before a concrete design is available. At early stages, it&#39;s based on the intended use and functionality of the device or system rather than its specific design features.
+[08-task-analysis-0080] notes:6:p:2 | There’s several ways you can approach doing an early stage task analysis. And its important to know that the task analysis will grow as the team designs and develops the design.
+</code></pre></div>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+  
+  
+  
+    
+    <hr>
+    
+    <h2 id="__comments">
+      评论
+      <a href="#__comments" class="headerlink" title="评论">#</a>
+    </h2>
+    
+    
+    <script src="https://giscus.app/client.js"
+            data-repo="jeffliulab/ai-notes-discussion"
+            data-repo-id="R_kgDOQnsUAQ"
+            data-category="General"
+            data-category-id="DIC_kwDOQnsUAc4Cztsg"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="preferred_color_scheme"
+            data-lang="zh-CN"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+    
+  
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.top", "navigation.path", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../site_extra_styles/javascripts/katex.js"></script>
+      
+        <script src="../../site_extra_styles/javascripts/tab_dropdown.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>

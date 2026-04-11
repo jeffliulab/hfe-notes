@@ -1,0 +1,2251 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Jeff Liu">
+      
+      
+        <link rel="canonical" href="https://jeffliulab.github.io/hfe-notes/ENP111/epipen_workbook/">
+      
+      
+        <link rel="prev" href="../medical_device_use_errors/">
+      
+      
+        <link rel="next" href="../../ENP112/">
+      
+      
+        
+          <link rel="alternate" href="./" hreflang="zh">
+        
+          <link rel="alternate" href="../../en/ENP111/epipen_workbook/" hreflang="en">
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>EpiPen工作簿 - 人因工程课程笔记</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="../../site_extra_styles/stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../../site_extra_styles/stylesheets/correct_bullet_point.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#epipen-urra" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../.." title="人因工程课程笔记" class="md-header__button md-logo" aria-label="人因工程课程笔记" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            人因工程课程笔记
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              EpiPen工作簿
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+      <div class="md-header__option">
+  <div class="md-select">
+    
+    <button class="md-header__button md-icon" aria-label="选择当前语言">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m12.87 15.07-2.54-2.51.03-.03A17.5 17.5 0 0 0 14.07 6H17V4h-7V2H8v2H1v2h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2zm-2.62 7 1.62-4.33L19.12 17z"/></svg>
+    </button>
+    <div class="md-select__inner">
+      <ul class="md-select__list">
+        
+          <li class="md-select__item">
+            <a href="./" hreflang="zh" class="md-select__link">
+              中文
+            </a>
+          </li>
+        
+          <li class="md-select__item">
+            <a href="../../en/ENP111/epipen_workbook/" hreflang="en" class="md-select__link">
+              English
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../" class="md-tabs__link">
+          
+  
+  
+    
+  
+  ENP111 Use-related Risks
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../ENP112/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  ENP112 Engineering Forensics
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="人因工程课程笔记" class="md-nav__button md-logo" aria-label="人因工程课程笔记" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    人因工程课程笔记
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ENP111 Use-related Risks
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ENP111 Use-related Risks
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../human_factors_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    人因导论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../human_error_frameworks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    人为失误框架
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../swiss_cheese/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Swiss Cheese 模型
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../task_analysis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    任务分析
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../urra_methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    URRA方法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../known_problem_and_event_tree/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Known Problem 与事件树
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../iso_14971/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ISO 14971
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../medical_device_urra/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    医疗器械URRA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../medical_device_use_errors/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    医疗器械使用错误
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EpiPen工作簿
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    EpiPen工作簿
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        这个案例最重要的结论
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先记住这个案例的一句话判断
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stakes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        背景与 stakes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        这张表到底在串什么
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        读样例时应该怎样下手
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workbook" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        workbook 真正训练的是“翻译能力”
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workbook_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一张 workbook 应该怎样被团队拿来审
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#epipen-workbook" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 EpiPen workbook 特别适合练“从说明图到风险条目”
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workbook_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        真正读 workbook 时，应该顺着一行把因果链完整走一遍
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workbook_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 workbook 最有价值的是暴露“强条目”和“弱条目”的差别
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workbook_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 workbook 里最后一列特别重要
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        这个案例最后要带走什么
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资料范围与相关主题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        相关主题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原文转写与来源映射
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../ENP112/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ENP112 Engineering Forensics
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_3" id="__nav_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ENP112 Engineering Forensics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/course_overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程导论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/error_analysis_methods/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    错误分析方法
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/aviation_automation_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    航空与自动化导论
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/crew_resource_management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CRM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/displays_and_alerts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    显示与告警
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/checklists_and_procedures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    检查单与程序
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/automated_vehicles/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    自动化车辆
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/attention_and_monitoring/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    注意与监控
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/fatigue_and_sleep/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    疲劳与睡眠
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/stress_and_decision_making/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    压力与决策
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/situation_awareness/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    情境意识
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/spatial_disorientation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    空间定向错觉
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/operational_risk/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Operational Risk
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/cardosi_case/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cardosi案例
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/f16_analysis_prompts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    F16分析提示
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ENP112/boeing_737max_and_ethics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Boeing 737 Max与伦理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        这个案例最重要的结论
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        先记住这个案例的一句话判断
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#stakes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        背景与 stakes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        这张表到底在串什么
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        读样例时应该怎样下手
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workbook" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        workbook 真正训练的是“翻译能力”
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workbook_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一张 workbook 应该怎样被团队拿来审
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#epipen-workbook" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 EpiPen workbook 特别适合练“从说明图到风险条目”
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workbook_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        真正读 workbook 时，应该顺着一行把因果链完整走一遍
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workbook_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 workbook 最有价值的是暴露“强条目”和“弱条目”的差别
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#workbook_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        为什么 workbook 里最后一列特别重要
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        这个案例最后要带走什么
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        资料范围与相关主题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        相关主题
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        原文转写与来源映射
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+  <nav class="md-path" aria-label="导航栏" >
+    <ol class="md-path__list">
+      
+        
+  
+  
+    <li class="md-path__item">
+      <a href="../.." class="md-path__link">
+        
+  <span class="md-ellipsis">
+    首页
+  </span>
+
+      </a>
+    </li>
+  
+
+      
+      
+        
+  
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    ENP111 Use-related Risks
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+
+
+<h1 id="epipen-urra">EpiPen URRA 工作簿</h1>
+<p>EpiPen workbook 这一页不是新理论，而是把前面讲过的 task analysis、critical task 和 URRA 写法压缩进一个具体工作底稿里。</p>
+<div class="admonition note">
+<p class="admonition-title">本页主问题</p>
+<p>一张 workbook 表怎样把抽象概念翻译成团队真的能写、
+能审、
+能验证的风险条目？</p>
+</div>
+<h2 id="_1">这个案例最重要的结论</h2>
+<ul>
+<li>样例页的价值，
+  在于让你看到“好的一行 URRA”到底长什么样。</li>
+<li>workbook 会把任务步骤、
+  critical task、
+  use error、
+  harm 和 mitigation 压成可协作的表格语言。</li>
+<li>读样例时要分清哪些栏位在描述事实，
+  哪些栏位在做风险判断。</li>
+<li>它不是标准答案模板，
+  而是写法顺序的示范。</li>
+</ul>
+<h2 id="_2">先记住这个案例的一句话判断</h2>
+<div class="admonition tip">
+<p class="admonition-title">先记住这个案例的一句话判断</p>
+<p>先记住这个案例页的一句话判断：
+样例的真正价值，
+不在于抄格式，
+而在于学会“先任务、
+再错误、
+再伤害、
+最后控制”的书写顺序。</p>
+</div>
+<h2 id="stakes">背景与 stakes</h2>
+<p>EpiPen 这类产品的风险文档之所以重要，
+是因为使用往往发生在紧急场景下，
+用户可能不是专业人员，
+时间压力高，
+错误后果又直接落到患者身上。
+所以 workbook 不是文书练习，
+而是把风险判断提前写实。</p>
+<h2 id="_3">这张表到底在串什么</h2>
+<p>workbook 会把 use step、
+potential use error、
+hazard、
+harm、
+severity、
+critical task 和 mitigation 串成一行。
+它的好处，
+是让团队在一页里看到“这一步如果错了，
+会沿什么路径走向后果，
+以及准备怎样拦住它”。</p>
+<div class="admonition example">
+<p class="admonition-title">案例：为什么“一行写得好”比“整张表写满”更重要</p>
+<p>如果某一行能把任务步骤、
+具体 error、
+患者 harm 和 mitigation 写得非常清楚，
+团队就能据此设计验证场景。
+反过来，
+如果整张表都只是“使用不当”“可能伤害”“需要培训”这种泛词，
+表填满了也没有真正分析价值。</p>
+</div>
+<h2 id="_4">读样例时应该怎样下手</h2>
+<p>读这种 workbook 时，
+建议顺着下面这条线走：</p>
+<ol>
+<li>先看任务步骤是否拆得够细。</li>
+<li>再看哪些步骤被标成 critical task。</li>
+<li>接着看 error、hazard、harm 有没有真的连成链。</li>
+<li>最后看 mitigation 是不是回到了设计、说明、流程或验证上。</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">一句话结论</p>
+<p>这页不是让你背 workbook 栏位名称，
+而是让你学会如何把抽象 HFE 概念翻译成可执行文档。</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">最容易做错的地方</p>
+<p>最容易出现的误解，
+是把样例当成可直接照抄的模板。
+真正该学的是它背后的顺序和约束，
+而不是句式表面。</p>
+</div>
+<h2 id="workbook">workbook 真正训练的是“翻译能力”</h2>
+<p>这页的核心价值，
+不是让你认识表头，
+而是让你练习把前面学过的抽象概念翻译成工作文件。
+很多学生到了这里才会真正发现：
+知道 <code>critical task</code>、
+<code>hazardous situation</code> 和 <code>mitigation</code> 的定义，
+不等于会把它们写成一行清楚、
+能被团队继续使用的记录。</p>
+<p>workbook 的作用，
+就是逼你完成这一步翻译。</p>
+<h2 id="workbook_1">一张 workbook 应该怎样被团队拿来审</h2>
+<p>一张好的 workbook 不是个人作业，
+而应该能支持多人审读。
+设计、
+人因、
+法规和临床如果一起看同一行，
+至少应该能对四件事达成共识：</p>
+<ul>
+<li>这一步到底在做什么</li>
+<li>错误路径写得是否具体</li>
+<li>patient harm 有没有被写到位</li>
+<li>这个 mitigation 是不是足够强</li>
+</ul>
+<p>如果一行写出来后没人能稳定复述这四点，
+那它通常还不够好。</p>
+<div class="admonition example">
+<p class="admonition-title">案例：为什么 workbook 里最怕出现“表面完整、实质空心”的行</p>
+<p>有些条目看起来每一列都填了，
+但 error 写成“improper use”，
+harm 写成“injury”，
+mitigation 写成“training”。
+这种行表面完整，
+实际上既不能指导设计，
+也不能指导验证。
+真正好的 workbook 行应该让团队一眼就知道下一步该改什么、
+该测什么。</p>
+</div>
+<h2 id="epipen-workbook">为什么 EpiPen workbook 特别适合练“从说明图到风险条目”</h2>
+<p>EpiPen 场景特别适合训练 workbook 写法，
+因为它既有很清楚的步骤图，
+又有高时间压力和高后果环境。
+也就是说，
+团队既能看到任务分解本身，
+也能看到某一步一旦做错，
+后果会怎样迅速放大。</p>
+<p>这正是 workbook 最想训练的能力：
+不是抽象地说“可能误用”，
+而是把每一步 instruction 背后的失败点、
+harm path 和 mitigation 都真正写进文档里。</p>
+<figure class="note-inline-figure">
+  <img src="https://jeffliulab.github.io/hfe-notes/assets/visuals/08-task-analysis/slide-08-image8.png" alt="这张图要看懂的是：EpiPen 使用说明里已经自然包含准备、方向、解锁、按压、保持和移除等多个关键步骤，这些步骤都可以直接翻成 workbook 条目。" loading="lazy">
+  <figcaption>这张图要看懂的是：EpiPen 使用说明里已经自然包含准备、方向、解锁、按压、保持和移除等多个关键步骤，这些步骤都可以直接翻成 workbook 条目。</figcaption>
+</figure>
+
+<h2 id="workbook_2">真正读 workbook 时，应该顺着一行把因果链完整走一遍</h2>
+<p>workbook 最容易被看浅的地方，
+是把它当成一张“大表”。
+更有效的读法，
+是挑一行完整走一遍：
+先看 step 是什么，
+再看 critical task 有没有被正确标出来，
+然后看 potential cause、
+harm、
+mitigation 和 validation reference 是否真的彼此对得上。</p>
+<p>这样读时，
+你会发现一张强 workbook 的价值不在于行数多，
+而在于每一行都能独立成立。
+只要其中一行写得模糊，
+团队后面的 design、
+verification 和 validation 就会一起变虚。</p>
+<h2 id="workbook_3">为什么 workbook 最有价值的是暴露“强条目”和“弱条目”的差别</h2>
+<p>EpiPen workbook 很适合用来练一个能力：
+看出哪一行已经足够强，
+哪一行只是表面上填满了。
+强条目通常具备几个特征：
+task 写得具体、
+error direction 清楚、
+harm 不是停在中间状态、
+mitigation 不是只有 training、
+validation reference 能看出后面准备怎么证实控制。</p>
+<p>弱条目则往往只是看起来像风险分析：
+step 很笼统、
+error 用大词、
+harm 写得太近、
+control 太空。
+workbook 的训练价值，
+正是让团队在文档阶段就把这种质量差异看出来，
+而不是等到验证阶段才发现条目根本无法操作。</p>
+<h2 id="workbook_4">为什么 workbook 里最后一列特别重要</h2>
+<p>很多人读 workbook 时，
+前面的风险链会看得很仔细，
+最后一列 validation reference 却一带而过。
+但这一列其实是整张表最现实的约束之一：
+它逼团队回答“这条 mitigation 以后准备在哪里证明真的有效”。</p>
+<p>也正因为有这列，
+workbook 才不是静态文档。
+它会反向检验前面那一行是不是写得足够具体。
+只要 validation reference 很难落地，
+通常就说明前面的 critical task、
+error path 或 mitigation 还写得不够扎实。</p>
+<div class="admonition example">
+<p class="admonition-title">案例：为什么“字再大一点”这种 mitigation 写法如果没有 validation reference，仍然不够</p>
+<p>如果 workbook 里写了“把 expiry date 字号放大”，
+但没有说明后面准备在哪个 representative scenario 下验证用户真的能看见并正确判断它，
+这条 mitigation 仍然是不完整的。
+workbook 的难点不只是提出设计改动，
+而是把改动一直写到可验证、
+可追踪。</p>
+</div>
+<h2 id="_5">这个案例最后要带走什么</h2>
+<div class="admonition tip">
+<p class="admonition-title">复习时重点记这几条</p>
+<ul>
+<li>workbook 页的重点是看“好的一行 URRA”长什么样。</li>
+<li>它把任务流、
+  critical task、
+  harm 和 mitigation 压成团队可协作的文档语言。</li>
+<li>读样例时要区分描述字段和判断字段。</li>
+<li>真正该学的是写法顺序，
+  而不是抄格式。</li>
+</ul>
+</div>
+<h2 id="_6">资料范围与相关主题</h2>
+<p>正文先把知识点讲清楚；这里列出本页用到的原始文件，页尾折叠区块则保留完整逐行转写，便于你核对。</p>
+<ul>
+<li>所属分区: <code>ENP111 Use-related Risks</code></li>
+<li>关联源文件数: 1</li>
+<li>文本单元数: 168</li>
+<li>配图/预览数: 0</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Type</th>
+<th style="text-align: right;">Text Units</th>
+<th style="text-align: right;">Visuals</th>
+<th>Download</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>10 URRA EpiPen.xlsx</code></td>
+<td><code>xlsx</code></td>
+<td style="text-align: right;">168</td>
+<td style="text-align: right;">0</td>
+<td><a href="../../assets/source_files/ENP111/10%20URRA%20EpiPen.xlsx">open</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="_7">相关主题</h2>
+<ul>
+<li><a href="../task_analysis/">任务分析</a></li>
+<li><a href="../urra_methods/">URRA 方法</a></li>
+<li><a href="../medical_device_urra/">医疗器械中的 URRA</a></li>
+</ul>
+<h2 id="_8">原文转写与来源映射</h2>
+<p>下面的折叠区块保留逐页/逐幻灯/逐单元原文。每一行前面的 <code>unit_id</code> 都能在 <code>data/coverage_map.json</code> 中找到对应页面映射。</p>
+<details class="info">
+<summary>10 URRA EpiPen.xlsx | 168 text units</summary>
+<p>下载原件: <a href="../../assets/source_files/ENP111/10%20URRA%20EpiPen.xlsx">10 URRA EpiPen.xlsx</a>
+映射页面: <code>epipen_workbook</code></p>
+<div class="highlight"><pre><span></span><code>[10-urra-epipen-0001] sheet:Task Analysis!A1:line:1 | Ref
+[10-urra-epipen-0002] sheet:Task Analysis!B1:line:1 | Task
+[10-urra-epipen-0003] sheet:Task Analysis!C1:line:1 | Subtask
+[10-urra-epipen-0004] sheet:Task Analysis!D1:line:1 | Use Step
+[10-urra-epipen-0005] sheet:Task Analysis!E1:line:1 | Potential Use Error
+[10-urra-epipen-0006] sheet:Task Analysis!F1:line:1 | Hazard
+[10-urra-epipen-0007] sheet:Task Analysis!G1:line:1 | Hazardous Situation
+[10-urra-epipen-0008] sheet:Task Analysis!H1:line:1 | Potential Harm
+[10-urra-epipen-0009] sheet:Task Analysis!I1:line:1 | Severity
+[10-urra-epipen-0010] sheet:Task Analysis!J1:line:1 | Critical Task
+[10-urra-epipen-0011] sheet:Task Analysis!K1:line:1 | Potential Causes
+[10-urra-epipen-0012] sheet:Task Analysis!L1:line:1 | Mitigation / Control
+[10-urra-epipen-0013] sheet:Task Analysis!M1:line:1 | Validation Reference
+[10-urra-epipen-0014] sheet:Task Analysis!A2:line:1 | Ins-exp
+[10-urra-epipen-0015] sheet:Task Analysis!B2:line:1 | Inspect
+[10-urra-epipen-0016] sheet:Task Analysis!C2:line:1 | Confirm AI is not expired
+[10-urra-epipen-0017] sheet:Task Analysis!E2:line:1 | User injects with expired drug
+[10-urra-epipen-0018] sheet:Task Analysis!F2:line:1 | Allergic reaction
+[10-urra-epipen-0019] sheet:Task Analysis!G2:line:1 | Reduced therapy
+[10-urra-epipen-0020] sheet:Task Analysis!H2:line:1 | Neurological damage
+[10-urra-epipen-0021] sheet:Task Analysis!I2:line:1 | 4
+[10-urra-epipen-0022] sheet:Task Analysis!J2:line:1 | yes
+[10-urra-epipen-0023] sheet:Task Analysis!K2:line:1 | Expiry date is not legible,
+[10-urra-epipen-0024] sheet:Task Analysis!K2:line:2 | Expiry date is not salient,
+[10-urra-epipen-0025] sheet:Task Analysis!K2:line:3 | Not aware that drug can expire,
+[10-urra-epipen-0026] sheet:Task Analysis!K2:line:4 | Does not check expiry date
+[10-urra-epipen-0027] sheet:Task Analysis!L2:line:1 | Req # XXX - Font size, color, and location
+[10-urra-epipen-0028] sheet:Task Analysis!L2:line:2 | Req # XXX - IFU warning
+[10-urra-epipen-0029] sheet:Task Analysis!M2:line:1 | Validation Study # 1 - Task 1
+[10-urra-epipen-0030] sheet:Task Analysis!A3:line:1 | Ins-dam
+[10-urra-epipen-0031] sheet:Task Analysis!C3:line:1 | Check AI is not compromised
+[10-urra-epipen-0032] sheet:Task Analysis!E3:line:1 | User injects with damaged AI
+[10-urra-epipen-0033] sheet:Task Analysis!F3:line:1 | Pathogens
+[10-urra-epipen-0034] sheet:Task Analysis!G3:line:1 | Potential Pathogen Exposure
+[10-urra-epipen-0035] sheet:Task Analysis!H3:line:1 | Infection
+[10-urra-epipen-0036] sheet:Task Analysis!I3:line:1 | 4
+[10-urra-epipen-0037] sheet:Task Analysis!J3:line:1 | yes
+[10-urra-epipen-0038] sheet:Task Analysis!A4:line:1 | Ins-lea
+[10-urra-epipen-0039] sheet:Task Analysis!E4:line:1 | User injects with leaking AI
+[10-urra-epipen-0040] sheet:Task Analysis!F4:line:1 | Allergic reaction
+[10-urra-epipen-0041] sheet:Task Analysis!G4:line:1 | Insufficient drug injected
+[10-urra-epipen-0042] sheet:Task Analysis!H4:line:1 | Death
+[10-urra-epipen-0043] sheet:Task Analysis!I4:line:1 | 5
+[10-urra-epipen-0044] sheet:Task Analysis!J4:line:1 | yes
+[10-urra-epipen-0045] sheet:Task Analysis!A5:line:1 | Pre-Cap
+[10-urra-epipen-0046] sheet:Task Analysis!B5:line:1 | Prepare
+[10-urra-epipen-0047] sheet:Task Analysis!C5:line:1 | Remove AI from tube
+[10-urra-epipen-0048] sheet:Task Analysis!D5:line:1 | Flip open cap
+[10-urra-epipen-0049] sheet:Task Analysis!E5:line:1 | User does not flip open cap
+[10-urra-epipen-0050] sheet:Task Analysis!F5:line:1 | Allergic reaction
+[10-urra-epipen-0051] sheet:Task Analysis!G5:line:1 | Delay in therapy
+[10-urra-epipen-0052] sheet:Task Analysis!H5:line:1 | Neurological damage
+[10-urra-epipen-0053] sheet:Task Analysis!I5:line:1 | 4
+[10-urra-epipen-0054] sheet:Task Analysis!J5:line:1 | yes
+[10-urra-epipen-0055] sheet:Task Analysis!K5:line:1 | Does not see flip cap, Flip cap is too difficult to open
+[10-urra-epipen-0056] sheet:Task Analysis!L5:line:1 | Req #XXX - Cap is colored bright yellow, Cap is designed to opened by 5th percentile female child hand strength (Req #YYY
+[10-urra-epipen-0057] sheet:Task Analysis!A6:line:1 | Pre-Tip
+[10-urra-epipen-0058] sheet:Task Analysis!D6:line:1 | Tip and slide AI out of carrier tube
+[10-urra-epipen-0059] sheet:Task Analysis!E6:line:1 | User does not remove AI out of carrier tube
+[10-urra-epipen-0060] sheet:Task Analysis!F6:line:1 | Allergic reaction
+[10-urra-epipen-0061] sheet:Task Analysis!G6:line:1 | Delay in therapy
+[10-urra-epipen-0062] sheet:Task Analysis!H6:line:1 | Neurological damage
+[10-urra-epipen-0063] sheet:Task Analysis!I6:line:1 | 4
+[10-urra-epipen-0064] sheet:Task Analysis!J6:line:1 | yes
+[10-urra-epipen-0065] sheet:Task Analysis!A7:line:1 | Pre-001
+[10-urra-epipen-0066] sheet:Task Analysis!D7:line:1 | Confirm correct AI
+[10-urra-epipen-0067] sheet:Task Analysis!E7:line:1 | User injects wrong concentration (peds into Adult)
+[10-urra-epipen-0068] sheet:Task Analysis!F7:line:1 | Allergic reaction
+[10-urra-epipen-0069] sheet:Task Analysis!G7:line:1 | Insufficient drug injected
+[10-urra-epipen-0070] sheet:Task Analysis!H7:line:1 | Death
+[10-urra-epipen-0071] sheet:Task Analysis!I7:line:1 | 5
+[10-urra-epipen-0072] sheet:Task Analysis!J7:line:1 | yes
+[10-urra-epipen-0073] sheet:Task Analysis!A8:line:1 | Pre-002
+[10-urra-epipen-0074] sheet:Task Analysis!E8:line:1 | User injects wrong concentration (Adult into peds)
+[10-urra-epipen-0075] sheet:Task Analysis!F8:line:1 | Epinephrine
+[10-urra-epipen-0076] sheet:Task Analysis!G8:line:1 | Overdose
+[10-urra-epipen-0077] sheet:Task Analysis!H8:line:1 | Tachycardia
+[10-urra-epipen-0078] sheet:Task Analysis!I8:line:1 | 3
+[10-urra-epipen-0079] sheet:Task Analysis!J8:line:1 | yes
+[10-urra-epipen-0080] sheet:Task Analysis!C9:line:1 | Orient AI
+[10-urra-epipen-0081] sheet:Task Analysis!D9:line:1 | Hold AI in Fist with Orange Tip pointing downward
+[10-urra-epipen-0082] sheet:Task Analysis!E9:line:1 | User orients AI incorrectly
+[10-urra-epipen-0083] sheet:Task Analysis!F9:line:1 | Needle
+[10-urra-epipen-0084] sheet:Task Analysis!G9:line:1 | Needle Stick into hand &amp; Drug not injected
+[10-urra-epipen-0085] sheet:Task Analysis!H9:line:1 | Bruising
+[10-urra-epipen-0086] sheet:Task Analysis!I9:line:1 | 2
+[10-urra-epipen-0087] sheet:Task Analysis!J9:line:1 | no
+[10-urra-epipen-0088] sheet:Task Analysis!C10:line:1 | Remove safety release
+[10-urra-epipen-0089] sheet:Task Analysis!D10:line:1 | Pull safety release straight up, without bending or twisting
+[10-urra-epipen-0090] sheet:Task Analysis!E10:line:1 | User does not remove safety release
+[10-urra-epipen-0091] sheet:Task Analysis!F10:line:1 | Allergic reaction
+[10-urra-epipen-0092] sheet:Task Analysis!G10:line:1 | Delay in Therapy
+[10-urra-epipen-0093] sheet:Task Analysis!H10:line:1 | Neurological damage
+[10-urra-epipen-0094] sheet:Task Analysis!I10:line:1 | 4
+[10-urra-epipen-0095] sheet:Task Analysis!J10:line:1 | yes
+[10-urra-epipen-0096] sheet:Task Analysis!E11:line:1 | User damages safety release
+[10-urra-epipen-0097] sheet:Task Analysis!F11:line:1 | Allergic reaction
+[10-urra-epipen-0098] sheet:Task Analysis!G11:line:1 | Drug not injected
+[10-urra-epipen-0099] sheet:Task Analysis!H11:line:1 | Death
+[10-urra-epipen-0100] sheet:Task Analysis!I11:line:1 | 5
+[10-urra-epipen-0101] sheet:Task Analysis!J11:line:1 | yes
+[10-urra-epipen-0102] sheet:Task Analysis!B12:line:1 | Administer
+[10-urra-epipen-0103] sheet:Task Analysis!C12:line:1 | Position AI
+[10-urra-epipen-0104] sheet:Task Analysis!D12:line:1 | Place orange tip at right angle against thigh
+[10-urra-epipen-0105] sheet:Task Analysis!E12:line:1 | User injects under skin instead of in muscle
+[10-urra-epipen-0106] sheet:Task Analysis!F12:line:1 | Allergic reaction
+[10-urra-epipen-0107] sheet:Task Analysis!G12:line:1 | Insufficient drug injected
+[10-urra-epipen-0108] sheet:Task Analysis!H12:line:1 | Death
+[10-urra-epipen-0109] sheet:Task Analysis!I12:line:1 | 5
+[10-urra-epipen-0110] sheet:Task Analysis!J12:line:1 | yes
+[10-urra-epipen-0111] sheet:Task Analysis!E13:line:1 | User injects in location besides thigh
+[10-urra-epipen-0112] sheet:Task Analysis!F13:line:1 | Allergic reaction
+[10-urra-epipen-0113] sheet:Task Analysis!G13:line:1 | Insufficient drug injected
+[10-urra-epipen-0114] sheet:Task Analysis!H13:line:1 | Death
+[10-urra-epipen-0115] sheet:Task Analysis!I13:line:1 | 5
+[10-urra-epipen-0116] sheet:Task Analysis!J13:line:1 | yes
+[10-urra-epipen-0117] sheet:Task Analysis!C14:line:1 | Inject
+[10-urra-epipen-0118] sheet:Task Analysis!D14:line:1 | Push down AI until click
+[10-urra-epipen-0119] sheet:Task Analysis!E14:line:1 | User does not inject
+[10-urra-epipen-0120] sheet:Task Analysis!F14:line:1 | Allergic reaction
+[10-urra-epipen-0121] sheet:Task Analysis!G14:line:1 | Drug not injected
+[10-urra-epipen-0122] sheet:Task Analysis!H14:line:1 | Death
+[10-urra-epipen-0123] sheet:Task Analysis!I14:line:1 | 5
+[10-urra-epipen-0124] sheet:Task Analysis!J14:line:1 | yes
+[10-urra-epipen-0125] sheet:Task Analysis!D15:line:1 | Hold in place for at least 3 seconds
+[10-urra-epipen-0126] sheet:Task Analysis!E15:line:1 | User does not hold AI for 3 seconds
+[10-urra-epipen-0127] sheet:Task Analysis!F15:line:1 | Allergic reaction
+[10-urra-epipen-0128] sheet:Task Analysis!G15:line:1 | Insufficient drug injected
+[10-urra-epipen-0129] sheet:Task Analysis!H15:line:1 | Neurological damage
+[10-urra-epipen-0130] sheet:Task Analysis!I15:line:1 | 4
+[10-urra-epipen-0131] sheet:Task Analysis!J15:line:1 | yes
+[10-urra-epipen-0132] sheet:Task Analysis!E16:line:1 | User moves AI during injection
+[10-urra-epipen-0133] sheet:Task Analysis!F16:line:1 | Needle
+[10-urra-epipen-0134] sheet:Task Analysis!G16:line:1 | Needle injury
+[10-urra-epipen-0135] sheet:Task Analysis!H16:line:1 | Laceration
+[10-urra-epipen-0136] sheet:Task Analysis!I16:line:1 | 2
+[10-urra-epipen-0137] sheet:Task Analysis!J16:line:1 | no
+[10-urra-epipen-0138] sheet:Task Analysis!C17:line:1 | Remove
+[10-urra-epipen-0139] sheet:Task Analysis!D17:line:1 | Remove AI from leg
+[10-urra-epipen-0140] sheet:Task Analysis!E17:line:1 | User does not remove AI from inject site
+[10-urra-epipen-0141] sheet:Task Analysis!F17:line:1 | Needle
+[10-urra-epipen-0142] sheet:Task Analysis!G17:line:1 | Needle stick injury
+[10-urra-epipen-0143] sheet:Task Analysis!H17:line:1 | Bruising
+[10-urra-epipen-0144] sheet:Task Analysis!I17:line:1 | 2
+[10-urra-epipen-0145] sheet:Task Analysis!J17:line:1 | no
+[10-urra-epipen-0146] sheet:Task Analysis!C18:line:1 | Massage
+[10-urra-epipen-0147] sheet:Task Analysis!D18:line:1 | Massage injection area for 10 seconds
+[10-urra-epipen-0148] sheet:Task Analysis!E18:line:1 | User does not massage area
+[10-urra-epipen-0149] sheet:Task Analysis!F18:line:1 | Allergic reaction
+[10-urra-epipen-0150] sheet:Task Analysis!G18:line:1 | Slight delay in therapy
+[10-urra-epipen-0151] sheet:Task Analysis!H18:line:1 | No clinical impact
+[10-urra-epipen-0152] sheet:Task Analysis!I18:line:1 | 1
+[10-urra-epipen-0153] sheet:Task Analysis!J18:line:1 | no
+[10-urra-epipen-0154] sheet:Task Analysis!E19:line:1 | User does not massage area for at least 10 seconds
+[10-urra-epipen-0155] sheet:Task Analysis!F19:line:1 | Allergic reaction
+[10-urra-epipen-0156] sheet:Task Analysis!G19:line:1 | Slight delay in therapy
+[10-urra-epipen-0157] sheet:Task Analysis!H19:line:1 | No clinical impact
+[10-urra-epipen-0158] sheet:Task Analysis!I19:line:1 | 1
+[10-urra-epipen-0159] sheet:Task Analysis!J19:line:1 | no
+[10-urra-epipen-0160] sheet:Task Analysis!B20:line:1 | Get EM help
+[10-urra-epipen-0161] sheet:Task Analysis!D20:line:1 | Outside of product scope
+[10-urra-epipen-0162] sheet:Task Analysis!B21:line:1 | Dispose
+[10-urra-epipen-0163] sheet:Task Analysis!C21:line:1 | Dispose in sharps container
+[10-urra-epipen-0164] sheet:Task Analysis!D21:line:1 | Place used AI in sharps container
+[10-urra-epipen-0165] sheet:Task Analysis!E21:line:1 | User does not dispose of AI in sharps container
+[10-urra-epipen-0166] sheet:Task Analysis!G21:line:1 | Needle stick injury
+[10-urra-epipen-0167] sheet:Task Analysis!H21:line:1 | Transmission of blood-borne pathogens
+[10-urra-epipen-0168] sheet:Task Analysis!I21:line:1 | 4
+</code></pre></div>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+  
+  
+  
+    
+    <hr>
+    
+    <h2 id="__comments">
+      评论
+      <a href="#__comments" class="headerlink" title="评论">#</a>
+    </h2>
+    
+    
+    <script src="https://giscus.app/client.js"
+            data-repo="jeffliulab/ai-notes-discussion"
+            data-repo-id="R_kgDOQnsUAQ"
+            data-category="General"
+            data-category-id="DIC_kwDOQnsUAc4Cztsg"
+            data-mapping="pathname"
+            data-strict="0"
+            data-reactions-enabled="1"
+            data-emit-metadata="0"
+            data-input-position="top"
+            data-theme="preferred_color_scheme"
+            data-lang="zh-CN"
+            data-loading="lazy"
+            crossorigin="anonymous"
+            async>
+    </script>
+    
+  
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.indexes", "navigation.top", "navigation.path", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../site_extra_styles/javascripts/katex.js"></script>
+      
+        <script src="../../site_extra_styles/javascripts/tab_dropdown.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
+      
+    
+  </body>
+</html>
