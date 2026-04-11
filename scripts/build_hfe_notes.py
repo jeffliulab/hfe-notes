@@ -36,31 +36,31 @@ SOURCE_GROUPS = [
         "section_slug": "ENP111",
         "source_dir": "ENP 111 Use-related Risks",
         "asset_dir": "ENP111",
-        "zh_nav": "ENP111",
-        "en_nav": "ENP111",
-        "zh_index_nav": "ENP111总览",
-        "en_index_nav": "ENP111 Overview",
-        "zh_title": "ENP111",
-        "en_title": "ENP111",
-        "zh_intro": "本分区对应知识源目录 `ENP 111 Use-related Risks`，收纳 use-related risk、human factors 基础、URRA、任务分析、ISO 14971 与医疗器械使用错误等主题。",
-        "en_intro": "This section maps to the `ENP 111 Use-related Risks` source directory and covers use-related risk, human factors foundations, URRA, task analysis, ISO 14971, and medical-device use errors.",
-        "zh_card": "知识源目录 `ENP 111 Use-related Risks` 的笔记页，包括 HFE 基础、风险方法与医疗器械主题。",
-        "en_card": "Pages derived from the `ENP 111 Use-related Risks` source directory, including HFE foundations, risk methods, and medical-device topics.",
+        "zh_nav": "ENP111 Use-related Risks",
+        "en_nav": "ENP111 Use-related Risks",
+        "zh_index_nav": "ENP111 Use-related Risks 总览",
+        "en_index_nav": "ENP111 Use-related Risks Overview",
+        "zh_title": "ENP111 Use-related Risks",
+        "en_title": "ENP111 Use-related Risks",
+        "zh_intro": "本分区对应课程 `ENP111 Use-related Risks` 的知识源目录 `ENP 111 Use-related Risks`，收纳 use-related risk、human factors 基础、URRA、任务分析、ISO 14971 与医疗器械使用错误等主题。",
+        "en_intro": "This section maps to the `ENP111 Use-related Risks` course and its source directory `ENP 111 Use-related Risks`, covering use-related risk, human factors foundations, URRA, task analysis, ISO 14971, and medical-device use errors.",
+        "zh_card": "课程 `ENP111 Use-related Risks` 的笔记页，包括 HFE 基础、风险方法与医疗器械主题。",
+        "en_card": "Pages derived from the `ENP111 Use-related Risks` course, including HFE foundations, risk methods, and medical-device topics.",
     },
     {
         "section_slug": "ENP112",
         "source_dir": "ENP112 Engineering Forensics",
         "asset_dir": "ENP112",
-        "zh_nav": "ENP112",
-        "en_nav": "ENP112",
-        "zh_index_nav": "ENP112总览",
-        "en_index_nav": "ENP112 Overview",
-        "zh_title": "ENP112",
-        "en_title": "ENP112",
-        "zh_intro": "本分区对应知识源目录 `ENP112 Engineering Forensics`，收纳课程导论、调查分析、航空自动化、人的表现以及案例与伦理相关材料。",
-        "en_intro": "This section maps to the `ENP112 Engineering Forensics` source directory and covers course framing, investigation methods, aviation automation, human performance, and case/ethics material.",
-        "zh_card": "知识源目录 `ENP112 Engineering Forensics` 的笔记页，包括课程导论、航空自动化、人的表现与案例分析。",
-        "en_card": "Pages derived from the `ENP112 Engineering Forensics` source directory, including course framing, aviation automation, human performance, and case analysis.",
+        "zh_nav": "ENP112 Engineering Forensics",
+        "en_nav": "ENP112 Engineering Forensics",
+        "zh_index_nav": "ENP112 Engineering Forensics 总览",
+        "en_index_nav": "ENP112 Engineering Forensics Overview",
+        "zh_title": "ENP112 Engineering Forensics",
+        "en_title": "ENP112 Engineering Forensics",
+        "zh_intro": "本分区对应课程 `ENP112 Engineering Forensics` 的知识源目录 `ENP112 Engineering Forensics`，收纳课程导论、调查分析、航空自动化、人的表现以及案例与伦理相关材料。",
+        "en_intro": "This section maps to the `ENP112 Engineering Forensics` course and its source directory `ENP112 Engineering Forensics`, covering course framing, investigation methods, aviation automation, human performance, and case/ethics material.",
+        "zh_card": "课程 `ENP112 Engineering Forensics` 的笔记页，包括课程导论、航空自动化、人的表现与案例分析。",
+        "en_card": "Pages derived from the `ENP112 Engineering Forensics` course, including course framing, aviation automation, human performance, and case analysis.",
     },
 ]
 
@@ -1577,7 +1577,8 @@ def render_home_source_card(section_slug: str, lang: str) -> list[str]:
     if lang == "zh":
         label = "Knowledge Source"
         path_label = "源目录"
-        button = f"进入 {section_slug}"
+        heading = section["zh_title"]
+        button = f"进入 {section['zh_title']}"
         description = section["zh_card"]
         page_links = [
             f'<a href="{html.escape(page_doc_rel(page["slug"], "zh"))}">{html.escape(page["zh_nav"])}</a>'
@@ -1586,7 +1587,8 @@ def render_home_source_card(section_slug: str, lang: str) -> list[str]:
     else:
         label = "Knowledge Source"
         path_label = "Source Dir"
-        button = f"Open {section_slug}"
+        heading = section["en_title"]
+        button = f"Open {section['en_title']}"
         description = section["en_card"]
         page_links = [
             f'<a href="{html.escape(page_doc_rel(page["slug"], "en"))}">{html.escape(page["en_nav"])}</a>'
@@ -1596,7 +1598,7 @@ def render_home_source_card(section_slug: str, lang: str) -> list[str]:
     lines = [
         f'<article class="home-source-card home-source-card--{section_slug.lower()}">',
         f'  <p class="home-source-card__label">{html.escape(label)}</p>',
-        f'  <h3>{html.escape(section_slug)}</h3>',
+        f'  <h3>{html.escape(heading)}</h3>',
         f'  <p class="home-source-card__path"><span>{html.escape(path_label)}</span>{html.escape(SECTION_SOURCE_DIR[section_slug])}</p>',
         f'  <p class="home-source-card__body">{html.escape(description)}</p>',
         '  <div class="home-source-links">',
@@ -1620,47 +1622,47 @@ def render_home_page(lang: str, summary: dict) -> str:
     if lang == "zh":
         title = "人因工程课程笔记"
         eyebrow = "GitHub Pages Frontend"
-        lead = "站点首页现在直接按两个知识源 `ENP111` 与 `ENP112` 组织。你可以先从课程材料所在目录进入，再展开对应专题页、配图和逐行原文附录。"
+        lead = "站点首页现在直接按两个课程一级主题 `ENP111 Use-related Risks` 与 `ENP112 Engineering Forensics` 组织。你可以先从课程材料所在目录进入，再展开对应专题页、配图和逐行原文附录。"
         stats = [
             ("源文件", total_sources),
             ("文本单元", total_units),
             ("可视素材", total_visuals),
             ("语言", "2"),
         ]
-        section_title = "按知识源进入"
-        section_body = "两个一级主题分别对应两个知识源目录。每个卡片下面直接给出代表性子主题入口。"
+        section_title = "按课程进入"
+        section_body = "两个一级主题分别对应两门课程及其知识源目录。每个卡片下面直接给出代表性子主题入口。"
         flow_title = "阅读路径"
-        flow_intro = "新的 GitHub Pages 前端不再先按旧的 HFE 分组进入，而是先从知识源再到专题页。"
+        flow_intro = "新的 GitHub Pages 前端不再先按旧的 HFE 分组进入，而是先从课程再到专题页。"
         flow_steps = [
-            ("01", "选知识源", "先进入 `ENP111` 或 `ENP112`。"),
+            ("01", "选课程", "先进入 `ENP111 Use-related Risks` 或 `ENP112 Engineering Forensics`。"),
             ("02", "读主题页", "在对应分区下打开课程主题与案例页面。"),
             ("03", "看图示", "用自动提取的视觉材料对照正文。"),
             ("04", "查附录", "最后回到逐行原文做来源核对。"),
         ]
         compat_title = "迁移说明"
-        compat_body = "旧的 `HFE_*` 路径已经保留为兼容入口页，但正式入口和 GitHub Pages 前端导航都已切换到 `ENP111 / ENP112`。"
+        compat_body = "旧的 `HFE_*` 路径已经保留为兼容入口页，但正式入口和 GitHub Pages 前端导航都已切换到 `ENP111 Use-related Risks / ENP112 Engineering Forensics`。"
     else:
         title = "HFE Course Notes"
         eyebrow = "GitHub Pages Frontend"
-        lead = "The homepage now starts from the two source collections, `ENP111` and `ENP112`. From there, the site fans out into topic pages, extracted visuals, and line-by-line appendices."
+        lead = "The homepage now starts from the two course collections, `ENP111 Use-related Risks` and `ENP112 Engineering Forensics`. From there, the site fans out into topic pages, extracted visuals, and line-by-line appendices."
         stats = [
             ("source files", total_sources),
             ("text units", total_units),
             ("visuals", total_visuals),
             ("languages", "2"),
         ]
-        section_title = "Start by Source Collection"
-        section_body = "Each top-level card maps to one source directory and exposes representative child topics directly on the homepage."
+        section_title = "Start by Course"
+        section_body = "Each top-level card maps to one course and its source directory, and exposes representative child topics directly on the homepage."
         flow_title = "Reading Flow"
-        flow_intro = "The GitHub Pages frontend now guides readers from source collection to topic page instead of starting with the old HFE category buckets."
+        flow_intro = "The GitHub Pages frontend now guides readers from course collection to topic page instead of starting with the old HFE category buckets."
         flow_steps = [
-            ("01", "Pick a source", "Start with `ENP111` or `ENP112`."),
+            ("01", "Pick a course", "Start with `ENP111 Use-related Risks` or `ENP112 Engineering Forensics`."),
             ("02", "Open a topic", "Move into the relevant concept, method, or case page."),
             ("03", "Check visuals", "Use extracted figures and previews alongside the explanation."),
             ("04", "Verify appendix", "Finish with the line-by-line source appendix."),
         ]
         compat_title = "Migration Note"
-        compat_body = "Legacy `HFE_*` paths are still available as compatibility pages, but the canonical GitHub Pages frontend and navigation now use `ENP111 / ENP112`."
+        compat_body = "Legacy `HFE_*` paths are still available as compatibility pages, but the canonical GitHub Pages frontend and navigation now use `ENP111 Use-related Risks / ENP112 Engineering Forensics`."
 
     lines = [
         "---",

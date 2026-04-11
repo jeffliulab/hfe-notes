@@ -29,10 +29,10 @@ plugins:
           site_name: HFE Course Notes
           nav_translations:
             首页: "Home"
-            ENP111: "ENP111"
-            ENP111总览: "ENP111 Overview"
-            ENP112: "ENP112"
-            ENP112总览: "ENP112 Overview"
+            ENP111 Use-related Risks: "ENP111 Use-related Risks"
+            ENP111 Use-related Risks 总览: "ENP111 Use-related Risks Overview"
+            ENP112 Engineering Forensics: "ENP112 Engineering Forensics"
+            ENP112 Engineering Forensics 总览: "ENP112 Engineering Forensics Overview"
             课程导论: "Course Overview"
             人因导论: "Introduction to Human Factors"
             人为失误框架: "Human Error Frameworks"
@@ -84,8 +84,8 @@ extra_css:
 
 nav:
   - 首页: index.md
-  - ENP111:
-    - ENP111总览: ENP111/index.md
+  - ENP111 Use-related Risks:
+    - ENP111 Use-related Risks 总览: ENP111/index.md
     - 人因导论: ENP111/human_factors_intro.md
     - 人为失误框架: ENP111/human_error_frameworks.md
     - Swiss Cheese 模型: ENP111/swiss_cheese.md
@@ -96,8 +96,8 @@ nav:
     - 医疗器械URRA: ENP111/medical_device_urra.md
     - 医疗器械使用错误: ENP111/medical_device_use_errors.md
     - EpiPen工作簿: ENP111/epipen_workbook.md
-  - ENP112:
-    - ENP112总览: ENP112/index.md
+  - ENP112 Engineering Forensics:
+    - ENP112 Engineering Forensics 总览: ENP112/index.md
     - 课程导论: ENP112/course_overview.md
     - 错误分析方法: ENP112/error_analysis_methods.md
     - 航空与自动化导论: ENP112/aviation_automation_intro.md

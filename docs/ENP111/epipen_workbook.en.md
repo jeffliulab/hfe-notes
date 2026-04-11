@@ -204,7 +204,7 @@ or mitigation is still too weakly written.
 
 The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
-- Section: `ENP111`
+- Section: `ENP111 Use-related Risks`
 - Source files: 1
 - Text units: 168
 - Visuals/previews: 0

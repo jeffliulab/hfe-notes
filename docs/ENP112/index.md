@@ -1,6 +1,6 @@
-# ENP112
+# ENP112 Engineering Forensics
 
-本分区对应知识源目录 `ENP112 Engineering Forensics`，收纳课程导论、调查分析、航空自动化、人的表现以及案例与伦理相关材料。
+本分区对应课程 `ENP112 Engineering Forensics` 的知识源目录 `ENP112 Engineering Forensics`，收纳课程导论、调查分析、航空自动化、人的表现以及案例与伦理相关材料。
 
 ## 主题页面
 

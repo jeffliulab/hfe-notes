@@ -1,6 +1,6 @@
-# ENP111
+# ENP111 Use-related Risks
 
-This section maps to the `ENP 111 Use-related Risks` source directory and covers use-related risk, human factors foundations, URRA, task analysis, ISO 14971, and medical-device use errors.
+This section maps to the `ENP111 Use-related Risks` course and its source directory `ENP 111 Use-related Risks`, covering use-related risk, human factors foundations, URRA, task analysis, ISO 14971, and medical-device use errors.
 
 ## Topic Pages
 

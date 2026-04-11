@@ -183,7 +183,7 @@ and training attention.
 
 The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
-- Section: `ENP111`
+- Section: `ENP111 Use-related Risks`
 - Source files: 2
 - Text units: 112
 - Visuals/previews: 18

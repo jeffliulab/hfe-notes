@@ -198,7 +198,7 @@ and governance.
 
 The teaching notes come first. This section lists the source files used on the page, and the appendix keeps the full line-by-line transcription for verification.
 
-- Section: `ENP112`
+- Section: `ENP112 Engineering Forensics`
 - Source files: 1
 - Text units: 245
 - Visuals/previews: 3

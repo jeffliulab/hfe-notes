@@ -1,6 +1,6 @@
-# ENP112
+# ENP112 Engineering Forensics
 
-This section maps to the `ENP112 Engineering Forensics` source directory and covers course framing, investigation methods, aviation automation, human performance, and case/ethics material.
+This section maps to the `ENP112 Engineering Forensics` course and its source directory `ENP112 Engineering Forensics`, covering course framing, investigation methods, aviation automation, human performance, and case/ethics material.
 
 ## Topic Pages
 
