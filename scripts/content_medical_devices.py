@@ -965,3 +965,123 @@ MEDICAL_DEVICES_CONTENT["medical_device_urra"]["inline_visuals"].append(
         asset_name_contains="slide-18-image31",
     )
 )
+
+MEDICAL_DEVICES_CONTENT["iso_14971"]["sections"].extend(
+    [
+        section(
+            "lifecycle",
+            "## 为什么 ISO 14971 一上来就把全生命周期放进来",
+            "## Why ISO 14971 Brings the Full Lifecycle into Scope from the Start",
+            body_zh="""
+            这页不是只讲开发期风险，而是把制造、储存、运输、使用、服务和处置都放进范围。这个范围设计本身就在表达一个判断：病人风险不会只在使用当下生成，很多危险条件在更早的制造、储运和维护环节就已经埋下了。
+
+            这也是为什么风险管理不能只由设计团队单独承担。只要 lifecycle 被纳入，质量、制造、售后、post-market surveillance 和 human factors 就都必须接进同一个闭环里。
+            """,
+            body_en="""
+            This page is not limited to development-time risk. It explicitly places manufacturing, storage, transport, use, service, and disposal inside scope. That scope itself expresses a judgment: patient risk is not generated only at the moment of use. Many hazardous conditions are planted earlier in manufacturing, distribution, or maintenance.
+
+            That is also why risk management cannot belong to the design team alone. Once lifecycle is included, quality, manufacturing, service, post-market surveillance, and human factors all have to connect inside the same loop.
+            """,
+        ),
+        section(
+            "qms",
+            "## 为什么这套标准最后一定会接到 QMS 和 design controls",
+            "## Why the Standard Ultimately Has to Connect to the QMS and Design Controls",
+            body_zh="""
+            ISO 14971 真正强的地方，不只是有一套术语，而是它会把风险判断嵌进质量体系。也就是说，风险管理不是孤立文件，而要能影响 design input、design review、verification、validation 和上市后 CAPA。
+
+            这也是为什么课程把它和 ISO 13485、62366、软件标准等放在一起提。标准之间不是平行存在，而是在告诉团队：风险语言必须真的流进质量管理系统，否则风险分析就会停在纸面上。
+            """,
+            body_en="""
+            The real strength of ISO 14971 is not only that it provides vocabulary. It embeds risk judgment into the quality system. Risk management therefore cannot remain an isolated document. It has to influence design input, design review, verification, validation, and post-market CAPA.
+
+            That is also why the course mentions it alongside ISO 13485, 62366, and software standards. The standards are not listed as parallel trivia. They signal that risk language must flow into the quality-management system, otherwise risk analysis stays on paper.
+            """,
+        ),
+        section(
+            "postmarket",
+            "## 为什么 post-market information 在这个标准里不是收尾动作",
+            "## Why Post-Market Information Is Not Merely an End-of-Process Add-On",
+            body_zh="""
+            很多团队容易把 post-market 视作“产品上市以后再看”的尾声，但 ISO 14971 把它放进闭环，是在强调另一点：真实世界里的 complaint、service data、misuse pattern 和 field issue 会反过来修正前面的风险判断。
+
+            换句话说，这不是最后一章，而是重新开始。只要现场出现了新的 failure mode、新的 user population 或新的环境压力，前面的 hazard、control 和 residual risk 判断都应该被重新审视。
+            """,
+            body_en="""
+            Many teams treat post-market information as the epilogue that begins only after launch, but ISO 14971 places it inside the loop to emphasize something else: real-world complaints, service data, misuse patterns, and field issues are supposed to revise the earlier risk judgments.
+
+            In other words, this is not the final chapter. It is the start of the next cycle. Once the field shows a new failure mode, a new user population, or a new environmental pressure, the earlier hazard, control, and residual-risk judgments should be revisited.
+            """,
+        ),
+    ]
+)
+MEDICAL_DEVICES_CONTENT["iso_14971"]["examples"].append(
+    callout(
+        "example",
+        "postmarket",
+        "案例：为什么一条上市后投诉会逼团队重写前面的 residual risk 判断",
+        "Example: Why One Post-Market Complaint Can Force the Team to Revisit Earlier Residual-Risk Judgments",
+        body_zh="如果现场投诉持续显示用户在运输后更难读清剂量窗口，这就不只是售后问题，而是在告诉团队：原先关于 readability、storage/transport condition 和 residual risk acceptability 的判断可能过于乐观。ISO 14971 的闭环要求团队把这种真实世界信息重新送回风险链，而不是只把它留在客服数据库里。",
+        body_en="If field complaints repeatedly show that users struggle to read the dose window after transport exposure, that is not merely a service issue. It signals that earlier assumptions about readability, storage and transport condition, and residual-risk acceptability may have been too optimistic. The ISO 14971 loop expects the team to send that real-world information back into the risk chain rather than leaving it in a customer-support database.",
+    )
+)
+
+MEDICAL_DEVICES_CONTENT["epipen_workbook"]["sections"].extend(
+    [
+        section(
+            "row_walkthrough",
+            "## 真正读 workbook 时，应该顺着一行把因果链完整走一遍",
+            "## When Reading the Workbook, You Should Walk One Row Through as a Full Causal Chain",
+            body_zh="""
+            workbook 最容易被看浅的地方，是把它当成一张“大表”。更有效的读法，是挑一行完整走一遍：先看 step 是什么，再看 critical task 有没有被正确标出来，然后看 potential cause、harm、mitigation 和 validation reference 是否真的彼此对得上。
+
+            这样读时，你会发现一张强 workbook 的价值不在于行数多，而在于每一行都能独立成立。只要其中一行写得模糊，团队后面的 design、verification 和 validation 就会一起变虚。
+            """,
+            body_en="""
+            The easiest way to read the workbook too shallowly is to treat it as one large spreadsheet. A more effective approach is to take one row and walk it all the way through: identify the step, check whether the critical task flag is justified, and then see whether potential cause, harm, mitigation, and validation reference really line up.
+
+            When read this way, you see that the value of a strong workbook is not the number of rows. It is that each row can stand on its own. Once one row is vague, the later design, verification, and validation work built on it also becomes vague.
+            """,
+        ),
+        section(
+            "strong_vs_weak",
+            "## 为什么 workbook 最有价值的是暴露“强条目”和“弱条目”的差别",
+            "## Why the Workbook Is Most Valuable When It Exposes the Difference Between Strong and Weak Rows",
+            body_zh="""
+            EpiPen workbook 很适合用来练一个能力：看出哪一行已经足够强，哪一行只是表面上填满了。强条目通常具备几个特征：task 写得具体、error direction 清楚、harm 不是停在中间状态、mitigation 不是只有 training、validation reference 能看出后面准备怎么证实控制。
+
+            弱条目则往往只是看起来像风险分析：step 很笼统、error 用大词、harm 写得太近、control 太空。workbook 的训练价值，正是让团队在文档阶段就把这种质量差异看出来，而不是等到验证阶段才发现条目根本无法操作。
+            """,
+            body_en="""
+            The EpiPen workbook is useful because it trains one important skill: recognizing which row is already strong and which only looks complete on the surface. Strong rows are usually specific about the task, clear about the error direction, explicit about harm rather than stopping at an intermediate state, stronger than training-only mitigation, and concrete enough in the validation reference to show how effectiveness will be demonstrated.
+
+            Weak rows merely resemble risk analysis. Their steps are vague, their errors are generic labels, their harms stop too early, and their controls stay thin. The training value of the workbook is that the team can see that quality difference at document stage rather than discovering during validation that the rows are unusable.
+            """,
+        ),
+        section(
+            "validation_link",
+            "## 为什么 workbook 里最后一列特别重要",
+            "## Why the Final Validation-Reference Column Matters So Much",
+            body_zh="""
+            很多人读 workbook 时，前面的风险链会看得很仔细，最后一列 validation reference 却一带而过。但这一列其实是整张表最现实的约束之一：它逼团队回答“这条 mitigation 以后准备在哪里证明真的有效”。
+
+            也正因为有这列，workbook 才不是静态文档。它会反向检验前面那一行是不是写得足够具体。只要 validation reference 很难落地，通常就说明前面的 critical task、error path 或 mitigation 还写得不够扎实。
+            """,
+            body_en="""
+            Many readers inspect the earlier risk chain carefully and then skim past the final validation-reference column. In practice that column is one of the strongest constraints in the whole worksheet: it forces the team to answer where the mitigation will later be shown to work.
+
+            That is also why the workbook is not static paperwork. The last column tests whether the earlier row is concrete enough. Once the validation reference becomes hard to define, it usually means the earlier critical task, error path, or mitigation is still too weakly written.
+            """,
+        ),
+    ]
+)
+MEDICAL_DEVICES_CONTENT["epipen_workbook"]["examples"].append(
+    callout(
+        "example",
+        "validation_link",
+        "案例：为什么“字再大一点”这种 mitigation 写法如果没有 validation reference，仍然不够",
+        "Example: Why a Mitigation Like “Make the Text Larger” Is Still Incomplete Without a Validation Reference",
+        body_zh="如果 workbook 里写了“把 expiry date 字号放大”，但没有说明后面准备在哪个 representative scenario 下验证用户真的能看见并正确判断它，这条 mitigation 仍然是不完整的。workbook 的难点不只是提出设计改动，而是把改动一直写到可验证、可追踪。",
+        body_en="If the workbook says “increase the expiry-date font size” but never specifies in which representative scenario the team will later verify that users can actually see and judge it correctly, the mitigation remains incomplete. The hard part of the workbook is not only proposing a design change. It is writing the change all the way through to something verifiable and traceable.",
+    )
+)

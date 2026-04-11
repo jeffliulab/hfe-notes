@@ -25,11 +25,17 @@
 ## Workflow
 
 1. Read the source file and identify the real teaching question and course position.
-2. Extract the main line and decide whether the page is a `concept`, `method`, or `case` page.
-3. Select only the visuals that help explain the body.
-4. Write the Chinese teaching page first, then add the English mirror page.
-5. Confirm that line-by-line source coverage still remains complete in the appendix.
-6. Run `python scripts/build_hfe_notes.py` and `python -m mkdocs build` for final validation.
+2. Decide first whether the source belongs to `ENP111` or `ENP112`; top-level grouping always follows the source directory.
+3. Extract the main line and decide whether the page is a `concept`, `method`, or `case` page.
+4. Select only the visuals that help explain the body.
+5. Write the Chinese teaching page first, then add the English mirror page.
+6. Confirm that line-by-line source coverage still remains complete in the appendix.
+7. Run `python scripts/build_hfe_notes.py` and `python -m mkdocs build` for final validation.
+
+## Directory Rules
+
+- Canonical page paths live under `docs/ENP111/` or `docs/ENP112/`
+- Old `docs/HFE_*` paths are kept only as compatibility entry pages, not as canonical locations
 
 ## Page Skeletons
 
@@ -39,4 +45,3 @@
   `Key Takeaways -> What This Method Is For -> What Problem It Solves -> Inputs and Outputs -> Steps -> Common Failure Mode -> Worked Example -> Relation to Other Methods -> Chapter Summary`
 - Case page:
   `Case Conclusions -> Start with the Case Verdict -> Background and Stakes -> Event / Failure Chain -> Concepts Used for Analysis -> System-Level Lesson -> Chapter Summary`
-

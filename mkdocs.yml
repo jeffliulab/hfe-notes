@@ -29,18 +29,10 @@ plugins:
           site_name: HFE Course Notes
           nav_translations:
             首页: "Home"
-            HFE基础: "HFE Foundations"
-            HFE基础总览: "HFE Foundations Overview"
-            风险方法: "Risk Methods"
-            风险方法总览: "Risk Methods Overview"
-            医疗器械: "Medical Devices"
-            医疗器械总览: "Medical Devices Overview"
-            航空与自动化: "Aviation & Automation"
-            航空与自动化总览: "Aviation & Automation Overview"
-            人的表现: "Human Performance"
-            人的表现总览: "Human Performance Overview"
-            案例与伦理: "Cases & Ethics"
-            案例与伦理总览: "Cases & Ethics Overview"
+            ENP111: "ENP111"
+            ENP111总览: "ENP111 Overview"
+            ENP112: "ENP112"
+            ENP112总览: "ENP112 Overview"
             课程导论: "Course Overview"
             人因导论: "Introduction to Human Factors"
             人为失误框架: "Human Error Frameworks"
@@ -67,7 +59,6 @@ plugins:
             Cardosi案例: "Cardosi Case"
             F16分析提示: "F16 Analysis Prompts"
             Boeing 737 Max与伦理: "Boeing 737 Max and Ethics"
-            笔记开发手册: "Note Development Guide"
 
 markdown_extensions:
   - attr_list
@@ -93,42 +84,33 @@ extra_css:
 
 nav:
   - 首页: index.md
-  - 笔记开发手册: NOTE_DEVELOPMENT_GUIDE.md
-  - HFE基础:
-    - HFE基础总览: HFE_Foundations/index.md
-    - 课程导论: HFE_Foundations/course_overview.md
-    - 人因导论: HFE_Foundations/human_factors_intro.md
-    - 人为失误框架: HFE_Foundations/human_error_frameworks.md
-    - Swiss Cheese 模型: HFE_Foundations/swiss_cheese.md
-  - 风险方法:
-    - 风险方法总览: HFE_Risk_Methods/index.md
-    - 错误分析方法: HFE_Risk_Methods/error_analysis_methods.md
-    - 任务分析: HFE_Risk_Methods/task_analysis.md
-    - URRA方法: HFE_Risk_Methods/urra_methods.md
-    - Known Problem 与事件树: HFE_Risk_Methods/known_problem_and_event_tree.md
-  - 医疗器械:
-    - 医疗器械总览: HFE_Medical_Devices/index.md
-    - ISO 14971: HFE_Medical_Devices/iso_14971.md
-    - 医疗器械URRA: HFE_Medical_Devices/medical_device_urra.md
-    - 医疗器械使用错误: HFE_Medical_Devices/medical_device_use_errors.md
-    - EpiPen工作簿: HFE_Medical_Devices/epipen_workbook.md
-  - 航空与自动化:
-    - 航空与自动化总览: HFE_Aviation_Automation/index.md
-    - 航空与自动化导论: HFE_Aviation_Automation/aviation_automation_intro.md
-    - CRM: HFE_Aviation_Automation/crew_resource_management.md
-    - 显示与告警: HFE_Aviation_Automation/displays_and_alerts.md
-    - 检查单与程序: HFE_Aviation_Automation/checklists_and_procedures.md
-    - 自动化车辆: HFE_Aviation_Automation/automated_vehicles.md
-  - 人的表现:
-    - 人的表现总览: HFE_Human_Performance/index.md
-    - 注意与监控: HFE_Human_Performance/attention_and_monitoring.md
-    - 疲劳与睡眠: HFE_Human_Performance/fatigue_and_sleep.md
-    - 压力与决策: HFE_Human_Performance/stress_and_decision_making.md
-    - 情境意识: HFE_Human_Performance/situation_awareness.md
-    - 空间定向错觉: HFE_Human_Performance/spatial_disorientation.md
-  - 案例与伦理:
-    - 案例与伦理总览: HFE_Cases_Ethics/index.md
-    - Operational Risk: HFE_Cases_Ethics/operational_risk.md
-    - Cardosi案例: HFE_Cases_Ethics/cardosi_case.md
-    - F16分析提示: HFE_Cases_Ethics/f16_analysis_prompts.md
-    - Boeing 737 Max与伦理: HFE_Cases_Ethics/boeing_737max_and_ethics.md
+  - ENP111:
+    - ENP111总览: ENP111/index.md
+    - 人因导论: ENP111/human_factors_intro.md
+    - 人为失误框架: ENP111/human_error_frameworks.md
+    - Swiss Cheese 模型: ENP111/swiss_cheese.md
+    - 任务分析: ENP111/task_analysis.md
+    - URRA方法: ENP111/urra_methods.md
+    - Known Problem 与事件树: ENP111/known_problem_and_event_tree.md
+    - ISO 14971: ENP111/iso_14971.md
+    - 医疗器械URRA: ENP111/medical_device_urra.md
+    - 医疗器械使用错误: ENP111/medical_device_use_errors.md
+    - EpiPen工作簿: ENP111/epipen_workbook.md
+  - ENP112:
+    - ENP112总览: ENP112/index.md
+    - 课程导论: ENP112/course_overview.md
+    - 错误分析方法: ENP112/error_analysis_methods.md
+    - 航空与自动化导论: ENP112/aviation_automation_intro.md
+    - CRM: ENP112/crew_resource_management.md
+    - 显示与告警: ENP112/displays_and_alerts.md
+    - 检查单与程序: ENP112/checklists_and_procedures.md
+    - 自动化车辆: ENP112/automated_vehicles.md
+    - 注意与监控: ENP112/attention_and_monitoring.md
+    - 疲劳与睡眠: ENP112/fatigue_and_sleep.md
+    - 压力与决策: ENP112/stress_and_decision_making.md
+    - 情境意识: ENP112/situation_awareness.md
+    - 空间定向错觉: ENP112/spatial_disorientation.md
+    - Operational Risk: ENP112/operational_risk.md
+    - Cardosi案例: ENP112/cardosi_case.md
+    - F16分析提示: ENP112/f16_analysis_prompts.md
+    - Boeing 737 Max与伦理: ENP112/boeing_737max_and_ethics.md

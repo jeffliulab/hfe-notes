@@ -937,3 +937,144 @@ RISK_METHODS_CONTENT["error_analysis_methods"]["inline_visuals"].extend(
         ),
     ]
 )
+
+RISK_METHODS_CONTENT["urra_methods"]["sections"].extend(
+    [
+        section(
+            "sources",
+            "## 为什么 URRA 不应该只从团队脑子里“想风险”",
+            "## Why URRA Should Not Be Built Only by “Thinking Up Risks” in a Meeting",
+            body_zh="""
+            课件里专门把 KPA、MAUDE、usability testing、expert review 和 previous device data 拉进来，是在强调一个很实用的判断：强的 URRA 不是凭空想象出来的，而是由多种证据源一起逼出来的。
+
+            这点很重要，因为只靠会议室头脑风暴，团队往往更容易想到显眼的大风险，却漏掉那些历史上反复出现、但平时不太起眼的 use error。真正成熟的 URRA 会让 task analysis 提供任务骨架，再让历史数据、测试发现和专家判断把那条骨架补成可验证的风险链。
+            """,
+            body_en="""
+            The lecture explicitly brings in KPA, MAUDE, usability testing, expert review, and previous-device data to make a practical point: strong URRA is not invented out of thin air. It is forced into shape by multiple evidence sources.
+
+            This matters because meeting-room brainstorming tends to surface only the most obvious risks while missing use errors that history has already repeated many times. Mature URRA lets task analysis provide the structural skeleton, and then uses historical data, test findings, and expert review to build that skeleton into a verifiable risk chain.
+            """,
+        ),
+        section(
+            "sequence",
+            "## 为什么 URRA 的书写顺序本身就在保护分析质量",
+            "## Why the Writing Order of URRA Itself Protects Analytic Quality",
+            body_zh="""
+            课程一直强调“先任务、再错误、再后果、最后控制”，这不只是书写习惯，而是在防止分析变成设计辩护。只要团队一开始就急着写 control，很容易出现先有答案、再回头找风险来配的情况。
+
+            正确顺序的价值在于：它逼团队先把 scenario、action、error direction 和 harm path 写具体。只有前半条链站住了，后面的 mitigation 才不是拍脑袋。URRA 的很多质量问题，其实都不是不会写表，而是把顺序写反了。
+            """,
+            body_en="""
+            The course keeps emphasizing “task first, then error, then consequence, then control.” That is not only a writing habit. It is a way to stop the analysis from turning into design defense. Once the team rushes to controls first, it becomes easy to start with the answer and then backfill a risk statement to justify it.
+
+            The value of the correct order is that it forces the team to write scenario, action, error direction, and harm path concretely before mitigation appears. Only when the first half of the chain stands on its own does the mitigation stop being guesswork. Many URRA quality failures are really failures of sequence.
+            """,
+        ),
+        section(
+            "handoff",
+            "## 怎样判断一条 URRA 已经能顺利交给 validation 团队",
+            "## How to Tell When a URRA Entry Is Ready to Hand Off to Validation",
+            body_zh="""
+            一条 URRA 记录真正成熟时，validation 团队应该能直接据此构造观察场景，而不用再回头猜“这里到底想测什么”。换句话说，条目至少要清楚到能回答：
+
+            - 代表性用户是谁
+            - 代表性任务和环境是什么
+            - 哪一步必须被重点观察
+            - 如果 control 失效，哪种 use error 会出现
+            - 成功与失败的判据是什么
+
+            如果这些信息还读不出来，就说明这条 URRA 还停在分析半成品阶段。真正强的 URRA，本来就是写给 design、validation 和 regulatory 同时能继续用的。
+            """,
+            body_en="""
+            A URRA row is truly mature when the validation team can build an observation scenario from it directly rather than guessing what the team intended to test. In practice the row should be clear enough to answer:
+
+            - who the representative user is
+            - what the representative task and environment are
+            - which step must receive focused observation
+            - which use error would appear if the control failed
+            - what counts as success and failure
+
+            If those details still cannot be read from the row, the URRA is still only half-finished analysis. Strong URRA is written so that design, validation, and regulatory teams can all continue using it.
+            """,
+        ),
+    ]
+)
+RISK_METHODS_CONTENT["urra_methods"]["examples"].append(
+    callout(
+        "example",
+        "handoff",
+        "案例：为什么“用户注射错误浓度”这句话还不够拿去做 validation",
+        "Example: Why the Phrase “The User Injects the Wrong Concentration” Is Still Too Weak for Validation",
+        body_zh="如果条目只写“用户注射错误浓度”，validation 团队仍然不知道该复现什么。更成熟的写法会继续补清：是在确认产品规格时选错成人/儿童剂型，还是包装区分不明显，还是紧急状态下没有看到标签颜色提示。只有写到这个程度，团队才知道应当布置什么场景、观察什么行为，以及控制是否真的有效。",
+        body_en="If the row only says “the user injects the wrong concentration,” the validation team still does not know what to recreate. A stronger row clarifies whether the error comes from selecting the wrong adult versus pediatric product, from weak packaging differentiation, or from missing a color-coded label cue in an emergency. Only at that level does the team know which scenario to build, which behaviors to observe, and whether the control is actually effective.",
+    )
+)
+RISK_METHODS_CONTENT["urra_methods"]["inline_visuals"].append(
+    visual(
+        "sources",
+        "10 Write URRA.pptx",
+        "这张图要看懂的是：URRA 的证据来源并不只来自当前任务流，像 MAUDE 这类历史数据库会把团队没想到的 use error 重新拉回分析里。",
+        "This figure should show that URRA evidence does not come only from the current task flow. Historical databases such as MAUDE pull overlooked use errors back into the analysis.",
+        asset_name_contains="slide-05-image3",
+    )
+)
+
+RISK_METHODS_CONTENT["known_problem_and_event_tree"]["sections"].extend(
+    [
+        section(
+            "kpa_steps",
+            "## 为什么 KPA 不只是“找案例”，而是一个三步筛选过程",
+            "## Why KPA Is Not Just “Finding Cases” but a Three-Step Filtering Process",
+            body_zh="""
+            课件把 KPA 明确拆成 `select sources -> collect and analyze -> document findings`，就是在提醒你：这不是资料搜集比赛。真正好的 KPA 先决定看哪些来源，再判断哪些问题真正与当前产品、界面和使用条件相关，最后才把有价值的发现转成风险与 mitigation 线索。
+
+            这个顺序很重要，因为如果不先筛来源和相似性，团队就很容易被海量历史案例淹没。KPA 的核心不是知道“以前出过很多事”，而是识别哪些旧问题在当前项目里仍然有复现机会。
+            """,
+            body_en="""
+            The lecture explicitly breaks KPA into `select sources -> collect and analyze -> document findings` to show that this is not a contest in gathering material. Strong KPA first decides which sources matter, then judges which issues are actually relevant to the current product, interface, and use conditions, and only then translates the useful findings into risk and mitigation clues.
+
+            That sequence matters because without source and similarity filtering, teams quickly drown in historical material. The core of KPA is not merely knowing that many bad things happened before. It is recognizing which old problems still have a realistic chance to recur in the current project.
+            """,
+        ),
+        section(
+            "event_logic",
+            "## 为什么 Event Tree 的重点不在画树，而在看防线在哪里断掉",
+            "## Why the Point of an Event Tree Is Not Drawing a Tree but Seeing Where Defenses Break",
+            body_zh="""
+            很多人第一次接触 Event Tree，会把注意力放在分叉图本身。课程真正想训练的是另一件事：从 initiating event 往后看时，系统到底有哪些本来可以阻断后果的机会点，而这些机会点是怎样一个个失守的。
+
+            也就是说，Event Tree 的价值不只是把结果分支展开，而是让团队把每个分支理解成“某道防线成功了还是失败了”。一旦这样读，树就不再只是结果图，而会变成对 recovery opportunity 的系统盘点。
+            """,
+            body_en="""
+            Many people first encounter Event Trees as branching diagrams and focus on the diagram itself. What the course really trains is something else: once you move forward from the initiating event, where were the opportunities to block escalation, and how did those opportunities fail one by one.
+
+            In that sense, the value of an Event Tree is not only consequence branching. It is that every branch becomes a statement about whether a defense succeeded or failed. Once read that way, the tree stops being only an outcome picture and becomes a structured inventory of recovery opportunity.
+            """,
+        ),
+        section(
+            "edge_cases",
+            "## 为什么这页特别适合补主流程分析最容易漏掉的低频高后果路径",
+            "## Why This Page Is Especially Good at Recovering Low-Frequency High-Consequence Paths Missed by Main Workflow Analysis",
+            body_zh="""
+            主流程分析通常最擅长看最常见、最稳定的路径，但系统里很多真正代价极高的事故链恰恰藏在边缘分支上。Known Problem Analysis 会提醒团队这些分支在历史上是否已经露头，Event Tree 则继续问：如果再次发生，后果会怎样层层放大。
+
+            所以这页最有价值的地方，是把低频不等于低重要性这件事重新拉回团队视野。很多分支不常见，不代表不该被设计、验证和训练认真对待。
+            """,
+            body_en="""
+            Main workflow analysis is usually strongest on the most common and stable path, yet many of the most costly accident chains live on edge branches. Known Problem Analysis reminds the team whether those branches have already surfaced historically, and Event Trees then ask how the consequence would amplify if they happened again.
+
+            The most useful lesson of this page is therefore that low frequency does not mean low importance. Many branches are rare, but still deserve serious design, validation, and training attention.
+            """,
+        ),
+    ]
+)
+RISK_METHODS_CONTENT["known_problem_and_event_tree"]["examples"].append(
+    callout(
+        "example",
+        "kpa_steps",
+        "案例：为什么 blood glucose meter 的旧问题不能只停在“抄一份投诉摘要”",
+        "Example: Why an Old Blood-Glucose-Meter Problem Cannot Stop at “Copying a Complaint Summary”",
+        body_zh="如果 KPA 只把旧投诉抄进文档，团队仍然不知道它跟当前设计有什么关系。更成熟的写法会继续判断：当前 strip 插入方式、上屏提示时机、血滴图标位置和操作节奏，是否仍然会诱发同类错误。只有这样，历史问题才会真正变成现项目的设计输入，而不是背景材料。",
+        body_en="If KPA only copies an old complaint into documentation, the team still does not know why it matters for the current design. A stronger KPA continues by asking whether the current strip-insertion method, prompt timing, blood-drop icon placement, and action rhythm could still induce the same failure. Only then does the historical issue become a design input for the present project rather than background reading.",
+    )
+)

@@ -6,8 +6,8 @@ import json
 import posixpath
 import re
 import shutil
-from urllib.parse import quote
 import zipfile
+from urllib.parse import quote
 from collections import Counter, OrderedDict, defaultdict
 from pathlib import Path, PurePosixPath
 import xml.etree.ElementTree as ET
@@ -31,93 +31,91 @@ REL_NS_URI = "http://schemas.openxmlformats.org/officeDocument/2006/relationship
 PKG_REL_NS = {"rel": "http://schemas.openxmlformats.org/package/2006/relationships"}
 SUPPORTED_VISUAL_EXTENSIONS = {".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp"}
 
-SOURCE_ARCHIVES = [
+SOURCE_GROUPS = [
     {
-        "zip_name": "ENP 111 Use-related Risks.zip",
-        "asset_dir": "ENP_111_Use_related_Risks",
+        "section_slug": "ENP111",
+        "source_dir": "ENP 111 Use-related Risks",
+        "asset_dir": "ENP111",
+        "zh_nav": "ENP111",
+        "en_nav": "ENP111",
+        "zh_index_nav": "ENP111总览",
+        "en_index_nav": "ENP111 Overview",
+        "zh_title": "ENP111",
+        "en_title": "ENP111",
+        "zh_intro": "本分区对应知识源目录 `ENP 111 Use-related Risks`，收纳 use-related risk、human factors 基础、URRA、任务分析、ISO 14971 与医疗器械使用错误等主题。",
+        "en_intro": "This section maps to the `ENP 111 Use-related Risks` source directory and covers use-related risk, human factors foundations, URRA, task analysis, ISO 14971, and medical-device use errors.",
+        "zh_card": "知识源目录 `ENP 111 Use-related Risks` 的笔记页，包括 HFE 基础、风险方法与医疗器械主题。",
+        "en_card": "Pages derived from the `ENP 111 Use-related Risks` source directory, including HFE foundations, risk methods, and medical-device topics.",
     },
     {
-        "zip_name": "Lectures_Spring____6_export.zip",
-        "asset_dir": "Lectures_Spring_2026",
+        "section_slug": "ENP112",
+        "source_dir": "ENP112 Engineering Forensics",
+        "asset_dir": "ENP112",
+        "zh_nav": "ENP112",
+        "en_nav": "ENP112",
+        "zh_index_nav": "ENP112总览",
+        "en_index_nav": "ENP112 Overview",
+        "zh_title": "ENP112",
+        "en_title": "ENP112",
+        "zh_intro": "本分区对应知识源目录 `ENP112 Engineering Forensics`，收纳课程导论、调查分析、航空自动化、人的表现以及案例与伦理相关材料。",
+        "en_intro": "This section maps to the `ENP112 Engineering Forensics` source directory and covers course framing, investigation methods, aviation automation, human performance, and case/ethics material.",
+        "zh_card": "知识源目录 `ENP112 Engineering Forensics` 的笔记页，包括课程导论、航空自动化、人的表现与案例分析。",
+        "en_card": "Pages derived from the `ENP112 Engineering Forensics` source directory, including course framing, aviation automation, human performance, and case analysis.",
     },
 ]
 
-SECTIONS = OrderedDict(
-    {
-        "HFE_Foundations": {
-            "zh_nav": "HFE基础",
-            "en_nav": "HFE Foundations",
-            "zh_index_nav": "HFE基础总览",
-            "en_index_nav": "HFE Foundations Overview",
-            "zh_title": "HFE基础",
-            "en_title": "HFE Foundations",
-            "zh_intro": "本分区聚焦课程导论、人因定义、人为失误框架与 Swiss Cheese 模型，帮助读者建立整个课程的语言体系与分析视角。",
-            "en_intro": "This section establishes the language of the course through the course overview, core human-factors definitions, human-error frameworks, and the Swiss Cheese model.",
-            "zh_card": "课程导论、人因定义、人为失误框架与 Swiss Cheese 模型。",
-            "en_card": "Course framing, HF definitions, human-error frameworks, and the Swiss Cheese model.",
-        },
-        "HFE_Risk_Methods": {
-            "zh_nav": "风险方法",
-            "en_nav": "Risk Methods",
-            "zh_index_nav": "风险方法总览",
-            "en_index_nav": "Risk Methods Overview",
-            "zh_title": "风险方法",
-            "en_title": "Risk Methods",
-            "zh_intro": "本分区整理课程中的分析方法论，包括调查流程、错误分析、任务分析、URRA、Known Problem Analysis 与事件树思路。",
-            "en_intro": "This section organizes the analytic methods in the course, including investigation flow, error analysis, task analysis, URRA, known problem analysis, and event-tree thinking.",
-            "zh_card": "调查流程、错误分析、任务分析、URRA 与事件树方法。",
-            "en_card": "Investigation flow, error analysis, task analysis, URRA, and event-tree methods.",
-        },
-        "HFE_Medical_Devices": {
-            "zh_nav": "医疗器械",
-            "en_nav": "Medical Devices",
-            "zh_index_nav": "医疗器械总览",
-            "en_index_nav": "Medical Devices Overview",
-            "zh_title": "医疗器械",
-            "en_title": "Medical Devices",
-            "zh_intro": "本分区将 ISO 14971、医疗器械 use error、URRA 实践与 EpiPen 工作簿整合成一套面向医疗器械风险管理的知识链路。",
-            "en_intro": "This section connects ISO 14971, medical-device use error, URRA practice, and the EpiPen workbook into a coherent medical-device risk-management track.",
-            "zh_card": "ISO 14971、use error、医疗器械 URRA 与 EpiPen 工作簿。",
-            "en_card": "ISO 14971, use error, medical-device URRA, and the EpiPen workbook.",
-        },
-        "HFE_Aviation_Automation": {
-            "zh_nav": "航空与自动化",
-            "en_nav": "Aviation & Automation",
-            "zh_index_nav": "航空与自动化总览",
-            "en_index_nav": "Aviation & Automation Overview",
-            "zh_title": "航空与自动化",
-            "en_title": "Aviation and Automation",
-            "zh_intro": "本分区覆盖航空环境中的自动化、人机界面、CRM、显示与告警、检查单及自动化车辆等典型应用。",
-            "en_intro": "This section covers aviation-flavored automation, HMI, CRM, displays and alerts, checklists, procedures, and automated vehicles.",
-            "zh_card": "航空自动化、CRM、显示与告警、检查单与自动化车辆。",
-            "en_card": "Aviation automation, CRM, displays and alerts, checklists, and automated vehicles.",
-        },
-        "HFE_Human_Performance": {
-            "zh_nav": "人的表现",
-            "en_nav": "Human Performance",
-            "zh_index_nav": "人的表现总览",
-            "en_index_nav": "Human Performance Overview",
-            "zh_title": "人的表现",
-            "en_title": "Human Performance",
-            "zh_intro": "本分区围绕注意、疲劳、压力、决策、情境意识与空间定向错觉，整理影响操作者表现的关键心理与生理变量。",
-            "en_intro": "This section focuses on attention, fatigue, stress, decision making, situation awareness, and spatial disorientation as key drivers of human performance.",
-            "zh_card": "注意、疲劳、压力、决策、情境意识与空间定向。",
-            "en_card": "Attention, fatigue, stress, decision making, situation awareness, and spatial orientation.",
-        },
-        "HFE_Cases_Ethics": {
-            "zh_nav": "案例与伦理",
-            "en_nav": "Cases & Ethics",
-            "zh_index_nav": "案例与伦理总览",
-            "en_index_nav": "Cases & Ethics Overview",
-            "zh_title": "案例与伦理",
-            "en_title": "Cases and Ethics",
-            "zh_intro": "本分区收束到案例分析与伦理讨论，涵盖 operational risk、Cardosi 案例、F16 prompts 与 Boeing 737 Max。",
-            "en_intro": "This section closes with case studies and ethics, including operational risk, the Cardosi case, F16 prompts, and Boeing 737 Max.",
-            "zh_card": "Operational risk、Cardosi、F16 分析 prompts 与 Boeing 737 Max。",
-            "en_card": "Operational risk, Cardosi, F16 prompts, and Boeing 737 Max.",
-        },
-    }
+LEGACY_GENERATED_SECTION_DIRS = (
+    "HFE_Foundations",
+    "HFE_Risk_Methods",
+    "HFE_Medical_Devices",
+    "HFE_Aviation_Automation",
+    "HFE_Human_Performance",
+    "HFE_Cases_Ethics",
 )
+
+
+def source_rel_path_is_noise(rel_path: PurePosixPath) -> bool:
+    return (
+        "__MACOSX" in rel_path.parts
+        or rel_path.name in {".DS_Store"}
+        or rel_path.name.startswith("._")
+    )
+
+
+def discover_source_files_by_section() -> dict[str, str]:
+    mapping: dict[str, str] = {}
+    for source_group in SOURCE_GROUPS:
+        source_dir = WORKSPACE_ROOT / source_group["source_dir"]
+        if not source_dir.exists():
+            raise FileNotFoundError(f"Missing source directory: {source_dir}")
+        for source_path in sorted(source_dir.rglob("*")):
+            if not source_path.is_file():
+                continue
+            rel_path = PurePosixPath(source_path.relative_to(source_dir).as_posix())
+            if source_rel_path_is_noise(rel_path):
+                continue
+            file_name = source_path.name
+            if file_name in mapping:
+                raise ValueError(f"Duplicate source file across source groups: {file_name}")
+            mapping[file_name] = source_group["section_slug"]
+    return mapping
+
+
+SOURCE_FILE_TO_SECTION = discover_source_files_by_section()
+
+SECTIONS = OrderedDict((group["section_slug"], {key: group[key] for key in (
+    "zh_nav",
+    "en_nav",
+    "zh_index_nav",
+    "en_index_nav",
+    "zh_title",
+    "en_title",
+    "zh_intro",
+    "en_intro",
+    "zh_card",
+    "en_card",
+)}) for group in SOURCE_GROUPS)
+SECTION_SOURCE_DIR = {group["section_slug"]: group["source_dir"] for group in SOURCE_GROUPS}
 
 PAGES = [
     {
@@ -486,6 +484,13 @@ PAGES = [
     },
 ]
 
+for page in PAGES:
+    page["legacy_section"] = page["section"]
+    page_sections = {SOURCE_FILE_TO_SECTION[source_file] for source_file in page["source_files"]}
+    if len(page_sections) != 1:
+        raise ValueError(f"Page {page['slug']} spans multiple source groups: {sorted(page_sections)}")
+    page["section"] = page_sections.pop()
+
 PAGE_BY_SLUG = {page["slug"]: page for page in PAGES}
 PAGE_TEMPLATE_MAP = {
     slug: content["template_type"]
@@ -506,6 +511,12 @@ def page_doc_rel(page_slug: str, lang: str = "zh") -> str:
     return f"{page['section']}/{page['slug']}{suffix}"
 
 
+def legacy_page_doc_rel(page_slug: str, lang: str = "zh") -> str:
+    page = PAGE_BY_SLUG[page_slug]
+    suffix = ".en.md" if lang == "en" else ".md"
+    return f"{page['legacy_section']}/{page['slug']}{suffix}"
+
+
 def rel_link(from_doc_rel: str, to_doc_rel: str) -> str:
     from_dir = posixpath.dirname(from_doc_rel)
     return posixpath.relpath(to_doc_rel, from_dir or ".")
@@ -520,22 +531,15 @@ def ensure_clean_generation_dirs() -> None:
     if VISUAL_ROOT.exists():
         shutil.rmtree(VISUAL_ROOT)
     VISUAL_ROOT.mkdir(parents=True, exist_ok=True)
+    for section_slug in LEGACY_GENERATED_SECTION_DIRS:
+        section_dir = DOCS_DIR / section_slug
+        if section_dir.exists():
+            shutil.rmtree(section_dir)
     for section_slug in SECTIONS:
         section_dir = DOCS_DIR / section_slug
         if section_dir.exists():
             shutil.rmtree(section_dir)
         section_dir.mkdir(parents=True, exist_ok=True)
-
-
-def zip_entry_is_noise(name: str) -> bool:
-    pure = PurePosixPath(name)
-    return (
-        name.endswith("/")
-        or name.startswith("__MACOSX/")
-        or pure.name in {".DS_Store"}
-        or pure.name.startswith("._")
-    )
-
 
 def stable_source_slug(name: str) -> str:
     stem = Path(name).stem.lower()
@@ -872,44 +876,47 @@ def extract_all_sources() -> tuple[list[dict], dict[str, dict], list[str], dict]
     counts = Counter()
     total_visuals = 0
 
-    for archive in SOURCE_ARCHIVES:
-        zip_path = WORKSPACE_ROOT / archive["zip_name"]
-        if not zip_path.exists():
-            raise FileNotFoundError(f"Missing source archive: {zip_path}")
-        with zipfile.ZipFile(zip_path) as outer:
-            for info in outer.infolist():
-                if zip_entry_is_noise(info.filename):
-                    continue
-                file_name = PurePosixPath(info.filename).name
-                if file_name not in SOURCE_TO_PAGE:
-                    raise ValueError(f"Unmapped source file: {file_name}")
-                payload = outer.read(info.filename)
-                source_type = Path(file_name).suffix.lower().lstrip(".")
-                topic_slug = SOURCE_TO_PAGE[file_name]
-                asset_rel = PurePosixPath("assets/source_files") / archive["asset_dir"] / file_name
-                asset_abs = DOCS_DIR / asset_rel
-                asset_abs.parent.mkdir(parents=True, exist_ok=True)
-                asset_abs.write_bytes(payload)
-                extractor = extractor_for(source_type)
-                units, source_warnings = extractor(payload, file_name, topic_slug, asset_rel.as_posix())
-                visual_extractor = visual_extractor_for(source_type)
-                visuals, visual_warnings = visual_extractor(payload, file_name)
-                warnings.extend(source_warnings)
-                warnings.extend(visual_warnings)
-                source_units.extend(units)
-                counts[source_type] += 1
-                total_visuals += len(visuals)
-                manifest[file_name] = {
-                    "source_file": file_name,
-                    "source_type": source_type,
-                    "topic_slug": topic_slug,
-                    "archive_zip": archive["zip_name"],
-                    "archive_entry": info.filename,
-                    "asset_rel_path": asset_rel.as_posix(),
-                    "unit_count": len(units),
-                    "visual_count": len(visuals),
-                    "visuals": visuals,
-                }
+    for source_group in SOURCE_GROUPS:
+        source_dir = WORKSPACE_ROOT / source_group["source_dir"]
+        if not source_dir.exists():
+            raise FileNotFoundError(f"Missing source directory: {source_dir}")
+        for source_path in sorted(source_dir.rglob("*")):
+            if not source_path.is_file():
+                continue
+            rel_path = PurePosixPath(source_path.relative_to(source_dir).as_posix())
+            if source_rel_path_is_noise(rel_path):
+                continue
+            file_name = source_path.name
+            if file_name not in SOURCE_TO_PAGE:
+                raise ValueError(f"Unmapped source file: {file_name}")
+            payload = source_path.read_bytes()
+            source_type = Path(file_name).suffix.lower().lstrip(".")
+            topic_slug = SOURCE_TO_PAGE[file_name]
+            asset_rel = PurePosixPath("assets/source_files") / source_group["asset_dir"] / file_name
+            asset_abs = DOCS_DIR / asset_rel
+            asset_abs.parent.mkdir(parents=True, exist_ok=True)
+            asset_abs.write_bytes(payload)
+            extractor = extractor_for(source_type)
+            units, source_warnings = extractor(payload, file_name, topic_slug, asset_rel.as_posix())
+            visual_extractor = visual_extractor_for(source_type)
+            visuals, visual_warnings = visual_extractor(payload, file_name)
+            warnings.extend(source_warnings)
+            warnings.extend(visual_warnings)
+            source_units.extend(units)
+            counts[source_type] += 1
+            total_visuals += len(visuals)
+            manifest[file_name] = {
+                "source_file": file_name,
+                "source_type": source_type,
+                "topic_slug": topic_slug,
+                "source_group": source_group["section_slug"],
+                "source_dir": source_group["source_dir"],
+                "source_rel_path": rel_path.as_posix(),
+                "asset_rel_path": asset_rel.as_posix(),
+                "unit_count": len(units),
+                "visual_count": len(visuals),
+                "visuals": visuals,
+            }
 
     expected_counts = {"pptx": 10, "pdf": 19, "xlsx": 1}
     if dict(counts) != expected_counts:
@@ -1511,27 +1518,149 @@ def render_section_index(section_slug: str, pages: list[dict], manifest: dict[st
     return "\n".join(lines).rstrip() + "\n"
 
 
-def render_home_page(lang: str) -> str:
+def render_legacy_section_index(legacy_section_slug: str, pages: list[dict], lang: str) -> str:
+    current_doc_rel = f"{legacy_section_slug}/index{'.en' if lang == 'en' else ''}.md"
     if lang == "zh":
-        title = "人因工程课程笔记"
-        intro = "这是一个围绕人因工程与 use-related risk 的双语 MkDocs 笔记站。内容按知识点主题组织，每一页都先讲知识点、再展示可提取图示，最后保留逐页/逐幻灯/逐单元的完整英文原文，确保每一行材料都能被追溯。"
-        card_cta = "进入 →"
-        coverage = [
-            "- 源资料总数：`10 PPTX + 19 PDF + 1 XLSX = 30` 个文件",
-            "- 组织方式：按知识点主题整理，不按原压缩包平铺",
-            "- 页面结构：先读讲解，再看配图/预览，最后用逐行原文核对细节",
-            "- 完整性机制：每个文本单元都写入 `data/source_units.jsonl`，并通过 `data/coverage_map.json` 一对一映射到页面底部折叠区块",
+        title = f"{legacy_section_slug}（兼容入口）"
+        intro = "这个旧分区路径保留为兼容入口。站点当前的一级主题已经改为 `ENP111` / `ENP112`，下面的链接会带你到新的页面位置。"
+        page_label = "## 已迁移页面"
+        make_line = lambda page: (
+            f"- [{page['zh_title']}]({rel_link(current_doc_rel, page_doc_rel(page['slug'], 'zh'))})"
+            f" -> 现位于 `{page['section']}`"
+        )
+    else:
+        title = f"{legacy_section_slug} (Compatibility Entry)"
+        intro = "This legacy section path is kept as a compatibility entry. The site now uses `ENP111` / `ENP112` as the top-level themes, and the links below point to the new page locations."
+        page_label = "## Moved Pages"
+        make_line = lambda page: (
+            f"- [{page['en_title']}]({rel_link(current_doc_rel, page_doc_rel(page['slug'], 'en'))})"
+            f" -> now under `{page['section']}`"
+        )
+
+    lines = [f"# {title}", "", intro, "", page_label, ""]
+    lines.extend(make_line(page) for page in pages)
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def render_legacy_redirect_page(page: dict, lang: str) -> str:
+    current_doc_rel = legacy_page_doc_rel(page["slug"], lang)
+    new_doc_rel = page_doc_rel(page["slug"], lang)
+    new_link = rel_link(current_doc_rel, new_doc_rel)
+    if lang == "zh":
+        title = page["zh_title"]
+        body = [
+            f'!!! info "页面已迁移"',
+            f"    这个旧路径仅保留为兼容入口。",
+            f"    当前正式位置：[{page['zh_title']}]({new_link})",
+            f"    新的一级主题：`{page['section']}`",
+            "",
+            "如果你是从旧的 `HFE_*` 路径打开这页，请后续改用新路径。",
         ]
     else:
-        title = "HFE Course Notes"
-        intro = "This bilingual MkDocs site organizes human factors engineering and use-related risk materials by concept rather than raw archive. Each page now teaches the concept first, shows extracted visuals or page previews next, and preserves the full English source transcription afterward."
-        card_cta = "Open →"
-        coverage = [
-            "- Source corpus: `10 PPTX + 19 PDF + 1 XLSX = 30` files",
-            "- Organization: concept-first knowledge pages rather than flat archive listings",
-            "- Page flow: explanation first, visuals/previews second, full source traceability last",
-            "- Completeness: every text unit is written to `data/source_units.jsonl` and mapped one-to-one in `data/coverage_map.json`",
+        title = page["en_title"]
+        body = [
+            f'!!! info "Page moved"',
+            "    This legacy path is kept only as a compatibility entry.",
+            f"    Current canonical location: [{page['en_title']}]({new_link})",
+            f"    New top-level theme: `{page['section']}`",
+            "",
+            "If you opened this page from the old `HFE_*` path, switch to the new location going forward.",
         ]
+    return "\n".join([f"# {title}", "", *body]).rstrip() + "\n"
+
+
+def render_home_source_card(section_slug: str, lang: str) -> list[str]:
+    section = SECTIONS[section_slug]
+    section_pages = [page for page in PAGES if page["section"] == section_slug]
+    section_index = f"{section_slug}/index{'.en' if lang == 'en' else ''}.md"
+    sample_pages = section_pages[:4]
+    if lang == "zh":
+        label = "Knowledge Source"
+        path_label = "源目录"
+        button = f"进入 {section_slug}"
+        description = section["zh_card"]
+        page_links = [
+            f'<a href="{html.escape(page_doc_rel(page["slug"], "zh"))}">{html.escape(page["zh_nav"])}</a>'
+            for page in sample_pages
+        ]
+    else:
+        label = "Knowledge Source"
+        path_label = "Source Dir"
+        button = f"Open {section_slug}"
+        description = section["en_card"]
+        page_links = [
+            f'<a href="{html.escape(page_doc_rel(page["slug"], "en"))}">{html.escape(page["en_nav"])}</a>'
+            for page in sample_pages
+        ]
+
+    lines = [
+        f'<article class="home-source-card home-source-card--{section_slug.lower()}">',
+        f'  <p class="home-source-card__label">{html.escape(label)}</p>',
+        f'  <h3>{html.escape(section_slug)}</h3>',
+        f'  <p class="home-source-card__path"><span>{html.escape(path_label)}</span>{html.escape(SECTION_SOURCE_DIR[section_slug])}</p>',
+        f'  <p class="home-source-card__body">{html.escape(description)}</p>',
+        '  <div class="home-source-links">',
+    ]
+    for link in page_links:
+        lines.append(f"    {link}")
+    lines.extend(
+        [
+            "  </div>",
+            f'  <a class="md-button home-source-card__button" href="{html.escape(section_index)}">{html.escape(button)}</a>',
+            "</article>",
+        ]
+    )
+    return lines
+
+
+def render_home_page(lang: str, summary: dict) -> str:
+    total_sources = str(summary.get("total_sources", 0))
+    total_units = f"{summary.get('total_units', 0):,}"
+    total_visuals = str(summary.get("total_visuals", 0))
+    if lang == "zh":
+        title = "人因工程课程笔记"
+        eyebrow = "GitHub Pages Frontend"
+        lead = "站点首页现在直接按两个知识源 `ENP111` 与 `ENP112` 组织。你可以先从课程材料所在目录进入，再展开对应专题页、配图和逐行原文附录。"
+        stats = [
+            ("源文件", total_sources),
+            ("文本单元", total_units),
+            ("可视素材", total_visuals),
+            ("语言", "2"),
+        ]
+        section_title = "按知识源进入"
+        section_body = "两个一级主题分别对应两个知识源目录。每个卡片下面直接给出代表性子主题入口。"
+        flow_title = "阅读路径"
+        flow_intro = "新的 GitHub Pages 前端不再先按旧的 HFE 分组进入，而是先从知识源再到专题页。"
+        flow_steps = [
+            ("01", "选知识源", "先进入 `ENP111` 或 `ENP112`。"),
+            ("02", "读主题页", "在对应分区下打开课程主题与案例页面。"),
+            ("03", "看图示", "用自动提取的视觉材料对照正文。"),
+            ("04", "查附录", "最后回到逐行原文做来源核对。"),
+        ]
+        compat_title = "迁移说明"
+        compat_body = "旧的 `HFE_*` 路径已经保留为兼容入口页，但正式入口和 GitHub Pages 前端导航都已切换到 `ENP111 / ENP112`。"
+    else:
+        title = "HFE Course Notes"
+        eyebrow = "GitHub Pages Frontend"
+        lead = "The homepage now starts from the two source collections, `ENP111` and `ENP112`. From there, the site fans out into topic pages, extracted visuals, and line-by-line appendices."
+        stats = [
+            ("source files", total_sources),
+            ("text units", total_units),
+            ("visuals", total_visuals),
+            ("languages", "2"),
+        ]
+        section_title = "Start by Source Collection"
+        section_body = "Each top-level card maps to one source directory and exposes representative child topics directly on the homepage."
+        flow_title = "Reading Flow"
+        flow_intro = "The GitHub Pages frontend now guides readers from source collection to topic page instead of starting with the old HFE category buckets."
+        flow_steps = [
+            ("01", "Pick a source", "Start with `ENP111` or `ENP112`."),
+            ("02", "Open a topic", "Move into the relevant concept, method, or case page."),
+            ("03", "Check visuals", "Use extracted figures and previews alongside the explanation."),
+            ("04", "Verify appendix", "Finish with the line-by-line source appendix."),
+        ]
+        compat_title = "Migration Note"
+        compat_body = "Legacy `HFE_*` paths are still available as compatibility pages, but the canonical GitHub Pages frontend and navigation now use `ENP111 / ENP112`."
 
     lines = [
         "---",
@@ -1540,33 +1669,74 @@ def render_home_page(lang: str) -> str:
         "  - toc",
         "---",
         "",
-        f"# {title}",
-        "",
-        intro,
-        "",
-        "---",
-        "",
-        '<div class="grid cards" markdown>',
-        "",
+        '<div class="home-shell">',
+        '  <section class="home-hero">',
+        f'    <p class="home-eyebrow">{html.escape(eyebrow)}</p>',
+        f'    <h1>{html.escape(title)}</h1>',
+        f'    <p class="home-lead">{html.escape(lead)}</p>',
+        '    <div class="home-stat-grid">',
     ]
-    for section_slug, section in SECTIONS.items():
-        heading = section["zh_title"] if lang == "zh" else section["en_title"]
-        body = section["zh_card"] if lang == "zh" else section["en_card"]
-        href = f"{section_slug}/index.md" if lang == "zh" else f"{section_slug}/index.en.md"
+    for label, value in stats:
         lines.extend(
             [
-                f"-   **{heading}**",
-                "",
-                "    ---",
-                "",
-                f"    {body}",
-                "",
-                f"    [{card_cta}]({href}){{ .md-button }}",
-                "",
+                '      <div class="home-stat">',
+                f'        <span class="home-stat__value">{html.escape(value)}</span>',
+                f'        <span class="home-stat__label">{html.escape(label)}</span>',
+                "      </div>",
             ]
         )
-    lines.extend(["</div>", "", "---", ""])
-    lines.extend(coverage)
+    lines.extend(
+        [
+            "    </div>",
+            "  </section>",
+            "",
+            '  <section class="home-section">',
+            '    <div class="home-section__intro">',
+            f'      <p class="home-kicker">{html.escape(eyebrow)}</p>',
+            f'      <h2>{html.escape(section_title)}</h2>',
+            f'      <p>{html.escape(section_body)}</p>',
+            "    </div>",
+            '    <div class="home-source-grid">',
+        ]
+    )
+    for section_slug in SECTIONS:
+        lines.extend(render_home_source_card(section_slug, lang))
+    lines.extend(
+        [
+            "    </div>",
+            "  </section>",
+            "",
+            '  <section class="home-section home-section--flow">',
+            '    <div class="home-section__intro">',
+            f'      <p class="home-kicker">{html.escape(eyebrow)}</p>',
+            f'      <h2>{html.escape(flow_title)}</h2>',
+            f'      <p>{html.escape(flow_intro)}</p>',
+            "    </div>",
+            '    <div class="home-flow-grid">',
+        ]
+    )
+    for step_no, step_title, step_body in flow_steps:
+        lines.extend(
+            [
+                '      <article class="home-flow-step">',
+                f'        <span class="home-flow-step__no">{html.escape(step_no)}</span>',
+                f'        <h3>{html.escape(step_title)}</h3>',
+                f'        <p>{html.escape(step_body)}</p>',
+                "      </article>",
+            ]
+        )
+    lines.extend(
+        [
+            "    </div>",
+            "  </section>",
+            "",
+            '  <section class="home-compat">',
+            f'    <p class="home-kicker">{html.escape(compat_title)}</p>',
+            f'    <p class="home-compat__body">{html.escape(compat_body)}</p>',
+            "  </section>",
+            "</div>",
+        ]
+    )
     return "\n".join(lines).rstrip() + "\n"
 
 
@@ -1690,18 +1860,20 @@ def build_coverage_map(source_units: list[dict]) -> dict:
 
 def build_docs(source_units: list[dict], manifest: dict[str, dict], summary: dict) -> None:
     pages_by_section: dict[str, list[dict]] = defaultdict(list)
+    pages_by_legacy_section: dict[str, list[dict]] = defaultdict(list)
     units_by_page: dict[str, list[dict]] = defaultdict(list)
     units_by_source: dict[str, list[dict]] = defaultdict(list)
 
     for page in PAGES:
         pages_by_section[page["section"]].append(page)
+        pages_by_legacy_section[page["legacy_section"]].append(page)
     for unit in source_units:
         units_by_page[unit["topic_slug"]].append(unit)
         units_by_source[unit["source_file"]].append(unit)
 
     write_file(REPO_ROOT / "mkdocs.yml", build_mkdocs_yml())
-    write_file(DOCS_DIR / "index.md", render_home_page("zh"))
-    write_file(DOCS_DIR / "index.en.md", render_home_page("en"))
+    write_file(DOCS_DIR / "index.md", render_home_page("zh", summary))
+    write_file(DOCS_DIR / "index.en.md", render_home_page("en", summary))
 
     for section_slug, section_pages in pages_by_section.items():
         write_file(DOCS_DIR / section_slug / "index.md", render_section_index(section_slug, section_pages, manifest, "zh"))
@@ -1709,6 +1881,13 @@ def build_docs(source_units: list[dict], manifest: dict[str, dict], summary: dic
         for page in section_pages:
             write_file(DOCS_DIR / section_slug / f"{page['slug']}.md", render_page(page, manifest, units_by_page, units_by_source, "zh"))
             write_file(DOCS_DIR / section_slug / f"{page['slug']}.en.md", render_page(page, manifest, units_by_page, units_by_source, "en"))
+
+    for legacy_section_slug, legacy_pages in pages_by_legacy_section.items():
+        write_file(DOCS_DIR / legacy_section_slug / "index.md", render_legacy_section_index(legacy_section_slug, legacy_pages, "zh"))
+        write_file(DOCS_DIR / legacy_section_slug / "index.en.md", render_legacy_section_index(legacy_section_slug, legacy_pages, "en"))
+        for page in legacy_pages:
+            write_file(DOCS_DIR / legacy_section_slug / f"{page['slug']}.md", render_legacy_redirect_page(page, "zh"))
+            write_file(DOCS_DIR / legacy_section_slug / f"{page['slug']}.en.md", render_legacy_redirect_page(page, "en"))
 
     write_file(
         DATA_DIR / "source_units.jsonl",
