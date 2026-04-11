@@ -42,12 +42,12 @@ hide:
   <p class="home-source-card__path"><span>源目录</span>ENP 111 Use-related Risks</p>
   <p class="home-source-card__body">课程 `ENP111 Use-related Risks` 的笔记页，包括 HFE 基础、风险方法与医疗器械主题。</p>
   <div class="home-source-links">
-    <a href="ENP111/human_factors_intro.md">人因导论</a>
-    <a href="ENP111/human_error_frameworks.md">人为失误框架</a>
-    <a href="ENP111/swiss_cheese.md">Swiss Cheese 模型</a>
-    <a href="ENP111/task_analysis.md">任务分析</a>
+    <a href="ENP111/human_factors_intro/">人因导论</a>
+    <a href="ENP111/human_error_frameworks/">人为失误框架</a>
+    <a href="ENP111/swiss_cheese/">Swiss Cheese 模型</a>
+    <a href="ENP111/task_analysis/">任务分析</a>
   </div>
-  <a class="md-button home-source-card__button" href="ENP111/index.md">进入 ENP111 Use-related Risks</a>
+  <a class="md-button home-source-card__button" href="ENP111/">进入 ENP111 Use-related Risks</a>
 </article>
 <article class="home-source-card home-source-card--enp112">
   <p class="home-source-card__label">Knowledge Source</p>
@@ -55,12 +55,12 @@ hide:
   <p class="home-source-card__path"><span>源目录</span>ENP112 Engineering Forensics</p>
   <p class="home-source-card__body">课程 `ENP112 Engineering Forensics` 的笔记页，包括课程导论、航空自动化、人的表现与案例分析。</p>
   <div class="home-source-links">
-    <a href="ENP112/course_overview.md">课程导论</a>
-    <a href="ENP112/error_analysis_methods.md">错误分析方法</a>
-    <a href="ENP112/aviation_automation_intro.md">航空与自动化导论</a>
-    <a href="ENP112/crew_resource_management.md">CRM</a>
+    <a href="ENP112/course_overview/">课程导论</a>
+    <a href="ENP112/error_analysis_methods/">错误分析方法</a>
+    <a href="ENP112/aviation_automation_intro/">航空与自动化导论</a>
+    <a href="ENP112/crew_resource_management/">CRM</a>
   </div>
-  <a class="md-button home-source-card__button" href="ENP112/index.md">进入 ENP112 Engineering Forensics</a>
+  <a class="md-button home-source-card__button" href="ENP112/">进入 ENP112 Engineering Forensics</a>
 </article>
     </div>
   </section>

@@ -522,6 +522,18 @@ def rel_link(from_doc_rel: str, to_doc_rel: str) -> str:
     return posixpath.relpath(to_doc_rel, from_dir or ".")
 
 
+def doc_rel_to_site_href(doc_rel: str) -> str:
+    if doc_rel.endswith("index.en.md"):
+        return doc_rel[: -len("index.en.md")]
+    if doc_rel.endswith("index.md"):
+        return doc_rel[: -len("index.md")]
+    if doc_rel.endswith(".en.md"):
+        return doc_rel[: -len(".en.md")] + "/"
+    if doc_rel.endswith(".md"):
+        return doc_rel[: -len(".md")] + "/"
+    return doc_rel
+
+
 def ensure_clean_generation_dirs() -> None:
     DATA_DIR.mkdir(parents=True, exist_ok=True)
     (DOCS_DIR / "assets").mkdir(parents=True, exist_ok=True)
@@ -1572,7 +1584,7 @@ def render_legacy_redirect_page(page: dict, lang: str) -> str:
 def render_home_source_card(section_slug: str, lang: str) -> list[str]:
     section = SECTIONS[section_slug]
     section_pages = [page for page in PAGES if page["section"] == section_slug]
-    section_index = f"{section_slug}/index{'.en' if lang == 'en' else ''}.md"
+    section_index = doc_rel_to_site_href(f"{section_slug}/index{'.en' if lang == 'en' else ''}.md")
     sample_pages = section_pages[:4]
     if lang == "zh":
         label = "Knowledge Source"
@@ -1581,7 +1593,7 @@ def render_home_source_card(section_slug: str, lang: str) -> list[str]:
         button = f"进入 {section['zh_title']}"
         description = section["zh_card"]
         page_links = [
-            f'<a href="{html.escape(page_doc_rel(page["slug"], "zh"))}">{html.escape(page["zh_nav"])}</a>'
+            f'<a href="{html.escape(doc_rel_to_site_href(page_doc_rel(page["slug"], "zh")))}">{html.escape(page["zh_nav"])}</a>'
             for page in sample_pages
         ]
     else:
@@ -1591,7 +1603,7 @@ def render_home_source_card(section_slug: str, lang: str) -> list[str]:
         button = f"Open {section['en_title']}"
         description = section["en_card"]
         page_links = [
-            f'<a href="{html.escape(page_doc_rel(page["slug"], "en"))}">{html.escape(page["en_nav"])}</a>'
+            f'<a href="{html.escape(doc_rel_to_site_href(page_doc_rel(page["slug"], "en")))}">{html.escape(page["en_nav"])}</a>'
             for page in sample_pages
         ]
 

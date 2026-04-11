@@ -42,12 +42,12 @@ hide:
   <p class="home-source-card__path"><span>Source Dir</span>ENP 111 Use-related Risks</p>
   <p class="home-source-card__body">Pages derived from the `ENP111 Use-related Risks` course, including HFE foundations, risk methods, and medical-device topics.</p>
   <div class="home-source-links">
-    <a href="ENP111/human_factors_intro.en.md">Introduction to Human Factors</a>
-    <a href="ENP111/human_error_frameworks.en.md">Human Error Frameworks</a>
-    <a href="ENP111/swiss_cheese.en.md">Swiss Cheese Model</a>
-    <a href="ENP111/task_analysis.en.md">Task Analysis</a>
+    <a href="ENP111/human_factors_intro/">Introduction to Human Factors</a>
+    <a href="ENP111/human_error_frameworks/">Human Error Frameworks</a>
+    <a href="ENP111/swiss_cheese/">Swiss Cheese Model</a>
+    <a href="ENP111/task_analysis/">Task Analysis</a>
   </div>
-  <a class="md-button home-source-card__button" href="ENP111/index.en.md">Open ENP111 Use-related Risks</a>
+  <a class="md-button home-source-card__button" href="ENP111/">Open ENP111 Use-related Risks</a>
 </article>
 <article class="home-source-card home-source-card--enp112">
   <p class="home-source-card__label">Knowledge Source</p>
@@ -55,12 +55,12 @@ hide:
   <p class="home-source-card__path"><span>Source Dir</span>ENP112 Engineering Forensics</p>
   <p class="home-source-card__body">Pages derived from the `ENP112 Engineering Forensics` course, including course framing, aviation automation, human performance, and case analysis.</p>
   <div class="home-source-links">
-    <a href="ENP112/course_overview.en.md">Course Overview</a>
-    <a href="ENP112/error_analysis_methods.en.md">Error Analysis Methods</a>
-    <a href="ENP112/aviation_automation_intro.en.md">Aviation and Automation Intro</a>
-    <a href="ENP112/crew_resource_management.en.md">CRM</a>
+    <a href="ENP112/course_overview/">Course Overview</a>
+    <a href="ENP112/error_analysis_methods/">Error Analysis Methods</a>
+    <a href="ENP112/aviation_automation_intro/">Aviation and Automation Intro</a>
+    <a href="ENP112/crew_resource_management/">CRM</a>
   </div>
-  <a class="md-button home-source-card__button" href="ENP112/index.en.md">Open ENP112 Engineering Forensics</a>
+  <a class="md-button home-source-card__button" href="ENP112/">Open ENP112 Engineering Forensics</a>
 </article>
     </div>
   </section>
